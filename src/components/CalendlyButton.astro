@@ -1,0 +1,59 @@
+---
+interface Props {
+  text?: string;
+  variant?: 'olive' | 'brown' | 'outline';
+  class?: string;
+  url?: string;
+}
+
+const calendlyUrl = import.meta.env.PUBLIC_CALENDLY_URL || 'https://calendly.com/aylaproperty';
+
+const {
+  text = 'Schedule a Call',
+  variant = 'olive',
+  class: className = '',
+  url = calendlyUrl,
+} = Astro.props;
+
+const variantClass =
+  variant === 'olive' ? 'btn-olive' :
+  variant === 'brown' ? 'btn-brown' :
+  'btn-outline';
+---
+<button
+  type="button"
+  data-calendly-url={url}
+  class:list={[variantClass, className]}
+>
+  {text}
+</button>
+
+<script>
+  // Lazy-load Calendly's popup widget the first time a button is clicked.
+  // This keeps the initial page load snappy.
+  function loadCalendly(): Promise<void> {
+    if ((window as any).Calendly) return Promise.resolve();
+    return new Promise((resolve) => {
+      const css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = 'https://assets.calendly.com/assets/external/widget.css';
+      document.head.appendChild(css);
+
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      script.onload = () => resolve();
+      document.body.appendChild(script);
+    });
+  }
+
+  document.addEventListener('click', async (e) => {
+    const target = (e.target as HTMLElement).closest('[data-calendly-url]') as HTMLElement | null;
+    if (!target) return;
+    e.preventDefault();
+    const url = target.getAttribute('data-calendly-url');
+    if (!url) return;
+    await loadCalendly();
+    (window as any).Calendly.initPopupWidget({ url });
+  });
+</script>

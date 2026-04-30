@@ -1,0 +1,70 @@
+---
+import CalendlyButton from './CalendlyButton.astro';
+
+const navItems = [
+  { label: 'Methodology', href: '/#methodology' },
+  { label: 'Team', href: '/#team' },
+  { label: 'Journal', href: '/journal' },
+  { label: 'Contact', href: '/#contact' },
+];
+---
+<header class="absolute top-0 left-0 right-0 z-50 px-6 lg:px-12 py-6">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <a href="/" class="flex items-center" aria-label="Ayla Property — home">
+      <img src="/logo.png" alt="Ayla Property" class="h-12 lg:h-14 w-auto" />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
+      {navItems.map(({ label, href }) => (
+        <a
+          href={href}
+          class="text-brown hover:text-olive transition-colors text-sm uppercase tracking-widest font-semibold"
+        >
+          {label}
+        </a>
+      ))}
+      <CalendlyButton text="Schedule a Call" variant="olive" />
+    </nav>
+
+    <button
+      id="mobile-menu-toggle"
+      class="md:hidden text-brown"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden absolute top-full left-0 right-0 bg-cream shadow-lg mt-2 mx-6 rounded-lg overflow-hidden"
+  >
+    <nav class="flex flex-col py-2" aria-label="Mobile">
+      {navItems.map(({ label, href }) => (
+        <a
+          href={href}
+          class="px-6 py-3 text-brown hover:bg-beige uppercase tracking-widest text-sm font-semibold"
+        >
+          {label}
+        </a>
+      ))}
+      <div class="px-6 py-3">
+        <CalendlyButton text="Schedule a Call" variant="olive" class="w-full text-center" />
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('hidden') === false;
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+</script>

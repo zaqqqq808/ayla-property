@@ -1,0 +1,67 @@
+---
+import CalendlyButton from './CalendlyButton.astro';
+
+const steps = [
+  {
+    number: '01',
+    title: 'Consultation',
+    description:
+      "We start with a deep dive into your goals — budget, ROI expectations, lifestyle preferences, and risk tolerance — so we understand exactly what you're looking for in Bali.",
+  },
+  {
+    number: '02',
+    title: 'Curation',
+    description:
+      'We access our huge database of Bali developers to find the offers that match your goals. So far, already better than 90% of Bali agencies.',
+  },
+  {
+    number: '03',
+    title: 'Research and Negotiation',
+    description:
+      'We shortlist the favourites and then perform rigourous research on the reputation, quality and reviews of the chosen developers. We then negotiate on your behalf to get the best deal.',
+  },
+];
+
+// Replace this with your actual YouTube video ID from your "Why I Don't Trust Bali Real Estate Agents" video.
+const youtubeId = 'YOUR_YOUTUBE_ID_HERE';
+---
+<section id="methodology" class="bg-white section-pad px-6 lg:px-12">
+  <div class="max-w-5xl mx-auto">
+    <div class="aspect-video rounded-2xl overflow-hidden shadow-lg mb-12 bg-beige">
+      <iframe
+        class="w-full h-full"
+        src={`https://www.youtube-nocookie.com/embed/${youtubeId}`}
+        title="Ayla Property — Our Methodology"
+        loading="lazy"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="text-center mb-16">
+      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-2">
+        Our Methodology
+      </p>
+      <p class="italic text-brown/80 text-lg">
+        First, watch the video. It's only 1 minute long…
+      </p>
+    </div>
+
+    <div class="space-y-16">
+      {steps.map((step) => (
+        <div class="text-center max-w-2xl mx-auto">
+          <p class="text-gold-dark text-3xl font-display italic mb-3">{step.number}</p>
+          <h3 class="text-brown text-xl lg:text-2xl uppercase tracking-widest font-display mb-4">
+            {step.title}
+          </h3>
+          <p class="text-brown/80 leading-relaxed">{step.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-16">
+      <CalendlyButton text="Book a Call" variant="brown" />
+    </div>
+  </div>
+</section>

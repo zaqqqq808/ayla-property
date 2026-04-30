@@ -1,0 +1,77 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import CalendlyButton from '@/components/CalendlyButton.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+<BaseLayout
+  title={`${post.data.title} | Ayla Journal`}
+  description={post.data.description}
+  ogImage={post.data.image}
+>
+  <Header />
+  <main class="bg-white pt-32 pb-20 px-6 lg:px-12">
+    <article class="max-w-3xl mx-auto">
+      <a
+        href="/journal"
+        class="text-olive uppercase tracking-wider text-sm font-semibold hover:underline"
+      >
+        ← Back to Journal
+      </a>
+
+      <header class="mt-8 mb-12 text-center">
+        <p class="text-brown/60 uppercase tracking-wider text-xs mb-4">
+          {post.data.publishDate.toLocaleDateString('en-GB', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
+        </p>
+        <h1 class="text-brown text-3xl lg:text-5xl font-display leading-tight">
+          {post.data.title}
+        </h1>
+        {post.data.description && (
+          <p class="text-brown/70 text-lg mt-6 italic max-w-2xl mx-auto">
+            {post.data.description}
+          </p>
+        )}
+      </header>
+
+      {post.data.image && (
+        <img
+          src={post.data.image}
+          alt={post.data.title}
+          class="w-full aspect-video object-cover rounded-lg mb-12"
+        />
+      )}
+
+      <div class="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-brown prose-headings:tracking-wide prose-a:text-olive prose-a:no-underline hover:prose-a:underline prose-strong:text-brown prose-blockquote:border-olive prose-blockquote:text-brown/80">
+        <Content />
+      </div>
+
+      <div class="mt-16 pt-12 border-t border-beige text-center">
+        <p class="text-brown text-lg mb-6">
+          Considering investing in Bali? Let's talk — book a no-obligation call.
+        </p>
+        <CalendlyButton text="Schedule a Call" variant="olive" />
+      </div>
+    </article>
+  </main>
+  <Footer />
+</BaseLayout>
