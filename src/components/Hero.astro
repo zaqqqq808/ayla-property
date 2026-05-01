@@ -3,18 +3,19 @@ import CalendlyButton from './CalendlyButton.astro';
 ---
 <section class="relative overflow-hidden min-h-screen flex items-center justify-center">
 
-  <!-- Background image -->
+  <!-- Background image — positioned to crop out top-left logo corner -->
   <img
     src="/images/hero-villa.jpg"
     alt="Luxury Bali villa with infinity pool overlooking the ocean at sunset"
-    class="absolute inset-0 w-full h-full object-cover object-center"
+    class="absolute inset-0 w-full h-full object-cover"
+    style="object-position: 65% 40%;"
     loading="eager"
     width="1024"
-    height="1433"
+    height="1024"
   />
 
-  <!-- Subtle overlay just to make text readable -->
-  <div class="absolute inset-0 bg-black/25"></div>
+  <!-- Subtle overlay for text readability -->
+  <div class="absolute inset-0 bg-black/30"></div>
 
   <!-- Content -->
   <div class="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 py-40 text-center flex flex-col items-center space-y-6">
