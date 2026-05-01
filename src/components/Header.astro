@@ -26,35 +26,41 @@ const navItems = [
       <CalendlyButton text="Schedule a Call" variant="olive" />
     </nav>
 
+    <!-- Animated hamburger button -->
     <button
       id="mobile-menu-toggle"
-      class="md:hidden text-white"
+      class="md:hidden text-white w-8 h-8 flex flex-col justify-center items-center gap-[5px] relative"
       aria-label="Open menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
-      <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+      <span id="bar-top"    class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300 origin-center"></span>
+      <span id="bar-mid"    class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300"></span>
+      <span id="bar-bot"    class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300 origin-center"></span>
     </button>
   </div>
 
-  <!-- Mobile menu -->
+  <!-- Mobile menu — animated slide + fade -->
   <div
     id="mobile-menu"
-    class="hidden md:hidden absolute top-full left-0 right-0 bg-cream shadow-lg mt-2 mx-6 rounded-lg overflow-hidden"
+    class="md:hidden absolute top-full left-0 right-0 mx-6 mt-2 rounded-xl overflow-hidden
+           bg-cream shadow-2xl border border-beige/60
+           transition-all duration-300 ease-out
+           opacity-0 -translate-y-2 pointer-events-none"
+    aria-hidden="true"
   >
-    <nav class="flex flex-col py-2" aria-label="Mobile">
-      {navItems.map(({ label, href }) => (
+    <nav class="flex flex-col py-3" aria-label="Mobile">
+      {navItems.map(({ label, href }, i) => (
         <a
           href={href}
-          class="px-6 py-3 text-brown hover:bg-beige uppercase tracking-widest text-sm font-semibold"
+          style={`transition-delay: ${60 + i * 40}ms`}
+          class="menu-item px-6 py-4 text-brown hover:bg-beige uppercase tracking-widest text-sm font-semibold border-b border-beige/50 last:border-0 transition-all duration-200 opacity-0 translate-x-2"
         >
           {label}
         </a>
       ))}
-      <div class="px-6 py-3">
-        <CalendlyButton text="Schedule a Call" variant="olive" class="w-full text-center" />
+      <div class="menu-item px-6 py-4 opacity-0 translate-x-2 transition-all duration-200" style="transition-delay: 220ms">
+        <CalendlyButton text="Schedule a Call" variant="olive" />
       </div>
     </nav>
   </div>
@@ -62,9 +68,58 @@ const navItems = [
 
 <script>
   const toggle = document.getElementById('mobile-menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-  toggle?.addEventListener('click', () => {
-    const isOpen = menu?.classList.toggle('hidden') === false;
-    toggle.setAttribute('aria-expanded', String(isOpen));
-  });
+  const menu   = document.getElementById('mobile-menu');
+  const barTop = document.getElementById('bar-top');
+  const barMid = document.getElementById('bar-mid');
+  const barBot = document.getElementById('bar-bot');
+  const items  = menu?.querySelectorAll('.menu-item');
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    toggle?.setAttribute('aria-expanded', 'true');
+    menu?.setAttribute('aria-hidden', 'false');
+
+    // Animate menu in
+    menu?.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
+    menu?.classList.add('opacity-100', 'translate-y-0');
+
+    // Stagger items in
+    items?.forEach((item) => {
+      item.classList.remove('opacity-0', 'translate-x-2');
+      item.classList.add('opacity-100', 'translate-x-0');
+    });
+
+    // Animate bars → X
+    barTop?.classList.add('rotate-45', 'translate-y-[7px]');
+    barMid?.classList.add('opacity-0', 'scale-x-0');
+    barBot?.classList.add('-rotate-45', '-translate-y-[7px]');
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    toggle?.setAttribute('aria-expanded', 'false');
+    menu?.setAttribute('aria-hidden', 'true');
+
+    // Animate menu out
+    menu?.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+    menu?.classList.remove('opacity-100', 'translate-y-0');
+
+    // Reset items
+    items?.forEach((item) => {
+      item.classList.add('opacity-0', 'translate-x-2');
+      item.classList.remove('opacity-100', 'translate-x-0');
+    });
+
+    // Animate bars → hamburger
+    barTop?.classList.remove('rotate-45', 'translate-y-[7px]');
+    barMid?.classList.remove('opacity-0', 'scale-x-0');
+    barBot?.classList.remove('-rotate-45', '-translate-y-[7px]');
+  }
+
+  toggle?.addEventListener('click', () => isOpen ? closeMenu() : openMenu());
+
+  // Close when a nav link is clicked
+  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 </script>
