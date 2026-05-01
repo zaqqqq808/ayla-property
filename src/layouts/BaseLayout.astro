@@ -5,6 +5,7 @@ interface Props {
   title?: string;
   description?: string;
   ogImage?: string;
+  ogType?: string;
   noindex?: boolean;
 }
 
@@ -12,11 +13,11 @@ const {
   title = 'Bali Real Estate Investment | High ROI Villas | Ayla Property',
   description = 'Specialist agency and property management for Bali villas and apartments. We help investors find high-ROI properties with end-to-end brokerage support.',
   ogImage = '/og-image.jpg',
+  ogType = 'website',
   noindex = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
 const siteBase = 'https://aylaproperty.com';
 
 const schemas = [
@@ -31,7 +32,8 @@ const schemas = [
       "@type": "ContactPoint",
       "contactType": "customer service",
       "url": "https://calendly.com/ayla-teamoperations/30min"
-    }
+    },
+    "sameAs": []
   },
   {
     "@context": "https://schema.org",
@@ -51,17 +53,17 @@ const schemas = [
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="canonical" href={canonicalURL} />
-  <meta name="generator" content={Astro.generator} />
 
   <title>{title}</title>
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={ogType} />
   <meta property="og:url" content={canonicalURL} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={new URL(ogImage, Astro.url)} />
   <meta property="og:site_name" content="Ayla Property" />
+  <meta property="og:locale" content="en_GB" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />

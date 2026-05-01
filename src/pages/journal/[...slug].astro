@@ -21,6 +21,7 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 
 const siteBase = 'https://aylaproperty.com';
+
 const articleSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
@@ -28,37 +29,47 @@ const articleSchema = JSON.stringify({
   "description": post.data.description ?? '',
   "image": post.data.image ? `${siteBase}${post.data.image}` : `${siteBase}/og-image.jpg`,
   "datePublished": post.data.publishDate.toISOString(),
+  "dateModified": post.data.publishDate.toISOString(),
+  "author": {
+    "@type": "Organization",
+    "name": "Ayla Property",
+    "url": siteBase
+  },
   "publisher": {
     "@type": "Organization",
     "name": "Ayla Property",
     "logo": { "@type": "ImageObject", "url": `${siteBase}/logo.png` }
   }
 });
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",    "item": siteBase },
+    { "@type": "ListItem", "position": 2, "name": "Journal", "item": `${siteBase}/journal/` },
+    { "@type": "ListItem", "position": 3, "name": post.data.title, "item": `${siteBase}/journal/${post.slug}/` }
+  ]
+});
 ---
 <BaseLayout
   title={`${post.data.title} | Ayla Property Journal`}
   description={post.data.description}
   ogImage={post.data.image}
+  ogType="article"
 >
-  <Fragment slot="head" set:html={`<script type="application/ld+json">${articleSchema}</script>`} />
+  <Fragment slot="head" set:html={`<script type="application/ld+json">${articleSchema}</script><script type="application/ld+json">${breadcrumbSchema}</script>`} />
 
   <Header />
   <main class="bg-white pt-32 pb-20 px-6 lg:px-12">
     <article class="max-w-3xl mx-auto">
-      <a
-        href="/journal"
-        class="text-olive uppercase tracking-wider text-sm font-semibold hover:underline"
-      >
+      <a href="/journal" class="text-olive uppercase tracking-wider text-sm font-semibold hover:underline">
         ← Back to Journal
       </a>
 
       <header class="mt-8 mb-12 text-center">
         <p class="text-brown/60 uppercase tracking-wider text-xs mb-4">
-          {post.data.publishDate.toLocaleDateString('en-GB', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })}
+          {post.data.publishDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}
         </p>
         <h1 class="text-brown text-3xl lg:text-5xl font-display leading-tight">
           {post.data.title}
