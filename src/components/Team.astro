@@ -3,7 +3,7 @@ const team = [
   {
     name: 'Silvia',
     role: 'President',
-    image: '/images/team-silvia.jpg', // Drop the photo file here when ready
+    image: '/images/team-silvia.jpg',
   },
   {
     name: 'Zaq',
@@ -28,14 +28,11 @@ const team = [
       Meet the Team
     </h2>
 
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Desktop: 4-column grid -->
+    <div class="hidden lg:grid grid-cols-4 gap-6">
       {team.map((member) => (
         <article class="bg-white/60 border border-beige rounded-lg overflow-hidden text-center transition-transform hover:-translate-y-1 hover:shadow-lg">
           <div class="aspect-square bg-beige/40 flex items-center justify-center relative">
-            {/*
-              Placeholder shows the first letter as a large monogram until you drop the photo in.
-              Once /public/images/team-{name}.jpg exists, this will display the photo automatically.
-            */}
             <img
               src={member.image}
               alt={`Photo of ${member.name}, ${member.role}`}
@@ -43,10 +40,7 @@ const team = [
               loading="lazy"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
-            <span
-              class="absolute inset-0 hidden items-center justify-center text-beige text-7xl font-display"
-              aria-hidden="true"
-            >
+            <span class="absolute inset-0 hidden items-center justify-center text-beige text-7xl font-display" aria-hidden="true">
               {member.name[0]}
             </span>
           </div>
@@ -57,5 +51,83 @@ const team = [
         </article>
       ))}
     </div>
+
+    <!-- Mobile: swipeable carousel -->
+    <div class="lg:hidden relative">
+      <div
+        id="team-carousel"
+        class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6"
+        style="scrollbar-width: none; -ms-overflow-style: none;"
+      >
+        {team.map((member) => (
+          <article class="flex-none w-[72vw] max-w-[280px] snap-center bg-white/60 border border-beige rounded-lg overflow-hidden text-center">
+            <div class="aspect-square bg-beige/40 flex items-center justify-center relative">
+              <img
+                src={member.image}
+                alt={`Photo of ${member.name}, ${member.role}`}
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <span class="absolute inset-0 hidden items-center justify-center text-beige text-7xl font-display" aria-hidden="true">
+                {member.name[0]}
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-brown text-lg font-display uppercase tracking-wide">{member.name}</h3>
+              <p class="text-brown/60 text-sm italic mt-1">{member.role}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Dot indicators -->
+      <div id="team-dots" class="flex justify-center gap-2 mt-4">
+        {team.map((_, i) => (
+          <button
+            class="team-dot w-2 h-2 rounded-full bg-beige transition-all duration-300"
+            data-index={i}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
+      </div>
+    </div>
   </div>
 </section>
+
+<style>
+  #team-carousel::-webkit-scrollbar { display: none; }
+</style>
+
+<script>
+  const carousel = document.getElementById('team-carousel');
+  const dots     = document.querySelectorAll('.team-dot');
+
+  function updateDots(index: number) {
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('bg-brown',   i === index);
+      dot.classList.toggle('w-4',        i === index);
+      dot.classList.toggle('bg-beige',   i !== index);
+      dot.classList.toggle('w-2',        i !== index);
+    });
+  }
+
+  // Update dots on scroll
+  carousel?.addEventListener('scroll', () => {
+    if (!carousel) return;
+    const cardWidth = (carousel.firstElementChild as HTMLElement)?.offsetWidth ?? 1;
+    const index = Math.round(carousel.scrollLeft / (cardWidth + 16));
+    updateDots(index);
+  }, { passive: true });
+
+  // Dot click → scroll to card
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      if (!carousel) return;
+      const cardWidth = (carousel.firstElementChild as HTMLElement)?.offsetWidth ?? 0;
+      carousel.scrollTo({ left: i * (cardWidth + 16), behavior: 'smooth' });
+    });
+  });
+
+  updateDots(0);
+</script>
