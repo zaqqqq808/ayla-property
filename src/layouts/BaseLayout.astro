@@ -6,7 +6,6 @@ interface Props {
   description?: string;
   ogImage?: string;
   noindex?: boolean;
-  schemaType?: 'article' | 'default';
   articleData?: {
     headline: string;
     description: string;
@@ -20,13 +19,12 @@ const {
   description = 'Specialist agency and property management for Bali villas and apartments. We help investors find high-ROI properties with end-to-end brokerage support.',
   ogImage = '/og-image.jpg',
   noindex = false,
-  schemaType = 'default',
   articleData,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const orgSchema = {
+const orgSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Ayla Property",
@@ -37,18 +35,17 @@ const orgSchema = {
     "@type": "ContactPoint",
     "contactType": "customer service",
     "url": "https://calendly.com/ayla-teamoperations/30min"
-  },
-  "sameAs": []
-};
+  }
+});
 
-const websiteSchema = {
+const websiteSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Ayla Property",
   "url": "https://aylaproperty.com"
-};
+});
 
-const articleSchema = articleData ? {
+const articleSchema = articleData ? JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": articleData.headline,
@@ -63,7 +60,7 @@ const articleSchema = articleData ? {
       "url": "https://aylaproperty.com/logo.png"
     }
   }
-} : null;
+}) : null;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -99,11 +96,11 @@ const articleSchema = articleData ? {
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
 
   <!-- Schema: Organization + WebSite -->
-  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
-  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <Fragment set:html={`<script type="application/ld+json">${orgSchema}</script>`} />
+  <Fragment set:html={`<script type="application/ld+json">${websiteSchema}</script>`} />
 
   <!-- Schema: Article (blog posts only) -->
-  {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
+  {articleSchema && <Fragment set:html={`<script type="application/ld+json">${articleSchema}</script>`} />}
 </head>
 <body class="bg-white min-h-screen flex flex-col">
   <slot />

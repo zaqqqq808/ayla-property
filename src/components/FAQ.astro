@@ -26,7 +26,7 @@ const faqs = [
   },
 ];
 
-const faqSchema = {
+const faqSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": faqs.map(faq => ({
@@ -37,7 +37,7 @@ const faqSchema = {
       "text": faq.a
     }
   }))
-};
+});
 ---
 <section class="bg-cream section-pad px-6 lg:px-12">
   <div class="max-w-4xl mx-auto">
@@ -64,4 +64,4 @@ const faqSchema = {
   </div>
 </section>
 
-<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+<Fragment set:html={`<script type="application/ld+json">${faqSchema}</script>`} />
