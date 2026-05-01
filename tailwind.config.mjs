@@ -22,7 +22,7 @@ export default {
       },
       fontFamily: {
         sans: ['"Times New Roman"', 'Times', 'serif'],
-        display: ['Cinzel', 'serif'],
+        display: ['Lato', 'sans-serif'],
         serif: ['Cinzel', 'serif'],
       },
       letterSpacing: {
