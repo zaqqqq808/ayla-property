@@ -2,7 +2,7 @@
   "name": "ayla-property",
   "type": "module",
   "version": "1.0.0",
-  "description": "Ayla Property — Bali villa investment & specialist agency website",
+  "description": "Ayla Property \u2014 Bali villa investment & specialist agency website",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -17,5 +17,8 @@
     "@tailwindcss/typography": "^0.5.15",
     "astro": "^4.16.7",
     "tailwindcss": "^3.4.14"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
