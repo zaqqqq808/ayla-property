@@ -1,7 +1,7 @@
 ---
 import CalendlyButton from './CalendlyButton.astro';
 ---
-<section class="relative overflow-hidden min-h-screen flex items-center">
+<section class="relative overflow-hidden min-h-screen flex items-center justify-center">
 
   <!-- Background image -->
   <img
@@ -13,27 +13,22 @@ import CalendlyButton from './CalendlyButton.astro';
     height="1433"
   />
 
-  <!-- Dark gradient overlay — left side for text readability -->
-  <div class="absolute inset-0 bg-gradient-to-r from-black/65 via-black/30 to-transparent"></div>
-
-  <!-- Top gradient so header nav stays readable -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent"></div>
+  <!-- Subtle overlay just to make text readable -->
+  <div class="absolute inset-0 bg-black/25"></div>
 
   <!-- Content -->
-  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-40 w-full">
-    <div class="max-w-xl space-y-6">
-      <p class="text-white/80 uppercase tracking-widest text-sm font-semibold">
-        Bali Real Estate Investment
-      </p>
-      <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-display leading-tight uppercase">
-        Earn 15%+<br />Returns<br />in Bali
-      </h1>
-      <p class="text-white/80 text-lg max-w-md leading-relaxed">
-        We find, vet, and negotiate the best Bali property deals for foreign investors — so you don't have to trust the wrong agent.
-      </p>
-      <div class="pt-2">
-        <CalendlyButton text="Book a Free Investment Call" variant="olive" />
-      </div>
+  <div class="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 py-40 text-center flex flex-col items-center space-y-6">
+    <p class="text-white/90 uppercase tracking-widest text-sm font-semibold">
+      Bali Real Estate Investment
+    </p>
+    <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-display leading-tight uppercase">
+      Earn 15%+<br />Returns in Bali
+    </h1>
+    <p class="text-white/85 text-lg max-w-md leading-relaxed">
+      We find, vet, and negotiate the best Bali property deals for foreign investors — so you don't have to trust the wrong agent.
+    </p>
+    <div class="pt-2">
+      <CalendlyButton text="Book a Free Investment Call" variant="olive" />
     </div>
   </div>
 
