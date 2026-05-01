@@ -4,21 +4,33 @@ import CalendlyButton from './CalendlyButton.astro';
 const reasons = [
   {
     stat: '17M+',
+    statTo: [17],
+    statSuffix: 'M+',
+    statSep: '',
     title: 'Tourists Per Year',
     description: 'Bali draws over 17 million visitors annually, creating massive and consistent demand for short-term villa rentals.',
   },
   {
     stat: '12–20%',
+    statTo: [12, 20],
+    statSuffix: '%',
+    statSep: '–',
     title: 'Rental Yields',
     description: 'Bali consistently delivers 12–20% gross rental yields — compared to 3–5% in the UK, Australia, or US.',
   },
   {
     stat: '10 Yr',
+    statTo: [10],
+    statSuffix: ' Yr',
+    statSep: '',
     title: 'Visa Now Available',
-    description: 'Indonesia\'s new 10-year visa makes it easier than ever for foreign investors to live, work, and invest in Bali.',
+    description: "Indonesia's new 10-year visa makes it easier than ever for foreign investors to live, work, and invest in Bali.",
   },
   {
     stat: '3–5×',
+    statTo: [3, 5],
+    statSuffix: '×',
+    statSep: '–',
     title: 'Capital Appreciation',
     description: 'Prime Bali areas have seen property values multiply 3–5× over the past decade, with no signs of slowing.',
   },
@@ -39,7 +51,15 @@ const reasons = [
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
       {reasons.map((reason) => (
         <div class="bg-white rounded-xl p-6 text-center shadow-sm border border-beige">
-          <p class="text-gold-dark text-3xl font-display font-bold mb-2">{reason.stat}</p>
+          <p
+            class="text-gold-dark text-3xl font-display font-bold mb-2 stat-counter"
+            data-to={JSON.stringify(reason.statTo)}
+            data-suffix={reason.statSuffix}
+            data-sep={reason.statSep}
+            data-final={reason.stat}
+          >
+            {reason.stat}
+          </p>
           <h3 class="text-brown font-display uppercase tracking-wide text-sm mb-2">{reason.title}</h3>
           <p class="text-brown/70 text-xs leading-relaxed hidden sm:block">{reason.description}</p>
         </div>
@@ -51,3 +71,42 @@ const reasons = [
     </div>
   </div>
 </section>
+
+<script>
+  const DURATION = 2000;
+
+  function easeOut(t: number): number {
+    return 1 - Math.pow(1 - t, 3);
+  }
+
+  function animateStat(el: HTMLElement) {
+    const targets: number[] = JSON.parse(el.dataset.to ?? '[0]');
+    const suffix  = el.dataset.suffix ?? '';
+    const sep     = el.dataset.sep    ?? '';
+    const start   = performance.now();
+
+    function render(now: number) {
+      const t       = Math.min((now - start) / DURATION, 1);
+      const eased   = easeOut(t);
+      const values  = targets.map(v => Math.round(eased * v));
+      el.textContent = values.join(sep) + suffix;
+      if (t < 1) requestAnimationFrame(render);
+    }
+
+    requestAnimationFrame(render);
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateStat(entry.target as HTMLElement);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.stat-counter').forEach(el => {
+    (el as HTMLElement).textContent = '0';
+    observer.observe(el);
+  });
+</script>
