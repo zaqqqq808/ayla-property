@@ -2,7 +2,7 @@
 title: "The Freehold Trap: Why Smart Foreign Investors Actually Prefer Leasehold for Higher ROI"
 description: ""
 publishDate: 2025-12-04
-image: /images/journal/leasehold-roi.jpg
+image: /images/journal/leasehold-vs-freehold.jpg
 tags: ["leasehold", "investment", "legal"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Case Study: How We Made $50k Profit in Under 6 Months For a Client (And The Exact Strategy We Used)"
 description: ""
 publishDate: 2025-12-04
-image: /images/journal/case-study.jpg
+image: /images/journal/six-months-client.jpg
 tags: ["case-study", "roi", "strategy"]
 ---
 
