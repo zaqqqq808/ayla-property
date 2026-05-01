@@ -26,7 +26,7 @@ const { Content } = await post.render();
   ogImage={post.data.image}
   articleData={{
     headline: post.data.title,
-    description: post.data.description,
+    description: post.data.description ?? '',
     image: post.data.image ?? '/og-image.jpg',
     datePublished: post.data.publishDate.toISOString(),
   }}
