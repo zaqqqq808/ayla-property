@@ -2,7 +2,7 @@
 import CalendlyButton from './CalendlyButton.astro';
 
 const navItems = [
-  { label: 'Our Method', href: '/#methodology' },
+  { label: 'Methodology', href: '/#methodology' },
   { label: 'Team', href: '/#team' },
   { label: 'Journal', href: '/journal' },
   { label: 'Contact', href: '/#contact' },
@@ -18,7 +18,7 @@ const navItems = [
       {navItems.map(({ label, href }) => (
         <a
           href={href}
-          class="text-white hover:text-gold transition-colors text-sm uppercase tracking-widest font-semibold drop-shadow-sm"
+          class="text-brown hover:text-olive transition-colors text-sm uppercase tracking-widest font-semibold"
         >
           {label}
         </a>
@@ -28,7 +28,7 @@ const navItems = [
 
     <button
       id="mobile-menu-toggle"
-      class="md:hidden text-white"
+      class="md:hidden text-brown"
       aria-label="Open menu"
       aria-expanded="false"
       aria-controls="mobile-menu"

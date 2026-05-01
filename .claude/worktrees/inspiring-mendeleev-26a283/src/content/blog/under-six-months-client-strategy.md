@@ -1,6 +1,6 @@
 ---
 title: "Case Study: How We Made $50k Profit in Under 6 Months For a Client (And The Exact Strategy We Used)"
-description: "We negotiated a 163k villa down to 130k, secured 15% net ROI, and added 50k in equity before completion. Here is the exact strategy we used for a client in under six months."
+description: ""
 publishDate: 2025-12-04
 image: /images/journal/six-months-client.jpg
 tags: ["case-study", "roi", "strategy"]

@@ -1,0 +1,61 @@
+---
+const team = [
+  {
+    name: 'Silvia',
+    role: 'President',
+    image: '/images/team-silvia.jpg', // Drop the photo file here when ready
+  },
+  {
+    name: 'Zaq',
+    role: 'Vice President',
+    image: '/images/team-zaq.jpg',
+  },
+  {
+    name: 'Willy',
+    role: 'Real Estate Agent',
+    image: '/images/team-willy.jpg',
+  },
+  {
+    name: 'Jackie',
+    role: 'AYLA team mascot',
+    image: '/images/team-jackie.jpg',
+  },
+];
+---
+<section id="team" class="bg-cream section-pad px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-brown text-4xl lg:text-5xl text-center font-display uppercase mb-16 tracking-wide">
+      Meet the Team
+    </h2>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      {team.map((member) => (
+        <article class="bg-white/60 border border-beige rounded-lg overflow-hidden text-center transition-transform hover:-translate-y-1 hover:shadow-lg">
+          <div class="aspect-square bg-beige/40 flex items-center justify-center relative">
+            {/*
+              Placeholder shows the first letter as a large monogram until you drop the photo in.
+              Once /public/images/team-{name}.jpg exists, this will display the photo automatically.
+            */}
+            <img
+              src={member.image}
+              alt={`Photo of ${member.name}, ${member.role}`}
+              class="w-full h-full object-cover"
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <span
+              class="absolute inset-0 hidden items-center justify-center text-beige text-7xl font-display"
+              aria-hidden="true"
+            >
+              {member.name[0]}
+            </span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-brown text-xl font-display uppercase tracking-wide">{member.name}</h3>
+            <p class="text-brown/60 text-sm italic mt-1">{member.role}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

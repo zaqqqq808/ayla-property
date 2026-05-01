@@ -25,6 +25,19 @@ const faqs = [
     a: 'Book a free 30-minute call and we can have initial property options in front of you within a week. Most clients go from first call to signed agreement within 4–8 weeks.',
   },
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a
+    }
+  }))
+};
 ---
 <section class="bg-cream section-pad px-6 lg:px-12">
   <div class="max-w-4xl mx-auto">
@@ -50,3 +63,5 @@ const faqs = [
     </div>
   </div>
 </section>
+
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

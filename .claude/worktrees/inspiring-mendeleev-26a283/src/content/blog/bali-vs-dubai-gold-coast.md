@@ -1,6 +1,6 @@
 ---
 title: "Bali Real Estate vs. The World: Why 2026 ROI Forecasts Outperform Dubai &amp; Gold Coast"
-description: "Bali delivers 12% net ROI vs Dubai’s 8% — and it’s not close. We compare real returns, legal structures, and lifestyle across three markets to show why smart investors are choosing Bali in 2026."
+description: ""
 publishDate: 2025-05-06
 image: /images/journal/bali-vs-world.jpg
 tags: ["comparison", "roi", "global"]

@@ -1,6 +1,6 @@
 ---
 title: "Is Bali Still A Good Investment In 2026?"
-description: "Wondering if Bali is still worth investing in? With 12–20% rental yields and Indonesia set to become the world’s 4th largest economy, the answer is yes. Here’s why — and the exact strategies investors are using in 2026."
+description: ""
 publishDate: 2026-02-19
 image: /images/journal/bali-investment-2026.jpg
 tags: ["market-analysis", "roi", "bali"]

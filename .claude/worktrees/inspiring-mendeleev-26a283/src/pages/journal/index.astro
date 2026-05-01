@@ -1,0 +1,65 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+---
+<BaseLayout
+  title="Ayla Journal | Bali Property Investment Insights"
+  description="Insights, market analysis and investor stories from Ayla Property — your specialist Bali real estate agency."
+>
+  <Header />
+  <main class="bg-beige/40 min-h-screen pt-32 pb-20 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto">
+      <header class="text-center mb-16">
+        <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-4">
+          Ayla Journal
+        </p>
+        <h1 class="text-brown text-4xl lg:text-6xl font-display uppercase tracking-wide">
+          Stay in the Know
+        </h1>
+        <p class="text-brown/70 text-lg mt-6 max-w-2xl mx-auto">
+          Market insights, investor case studies, and what we're seeing on the ground in Bali.
+        </p>
+      </header>
+
+      {posts.length === 0 ? (
+        <p class="text-center text-brown/60">No posts yet. Check back soon.</p>
+      ) : (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {posts.map((post) => (
+            <a href={`/journal/${post.slug}`} class="block group">
+              <div class="aspect-video bg-beige rounded-lg mb-4 overflow-hidden">
+                {post.data.image && (
+                  <img
+                    src={post.data.image}
+                    alt={post.data.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                )}
+              </div>
+              <p class="text-brown/60 text-xs uppercase tracking-wider">
+                {post.data.publishDate.toLocaleDateString('en-GB', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </p>
+              <h2 class="text-brown text-xl font-semibold mt-2 group-hover:text-olive transition-colors">
+                {post.data.title}
+              </h2>
+              {post.data.description && (
+                <p class="text-brown/70 text-sm mt-2 line-clamp-2">{post.data.description}</p>
+              )}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

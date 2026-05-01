@@ -1,6 +1,6 @@
 ---
 title: "Beyond Canggu: The 3 Emerging Neighbourhoods Where Smart Money is Moving in 2026"
-description: "Canggu is established — but where is the alpha in 2026? Our experts reveal the three emerging Bali neighbourhoods (Seseh, Kedungu, and The Bukit) where the smart money is moving now."
+description: ""
 publishDate: 2025-12-04
 image: /images/journal/emerging-neighbourhoods.jpg
 tags: ["neighbourhoods", "canggu", "investment"]

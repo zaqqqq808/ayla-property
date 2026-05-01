@@ -1,6 +1,6 @@
 ---
 title: "The Freehold Trap: Why Smart Foreign Investors Actually Prefer Leasehold for Higher ROI"
-description: "Most foreign investors demand freehold — but in Bali, that is often a mistake. Discover why leasehold consistently delivers 20% ROI vs 8% for freehold, and how to use it strategically."
+description: ""
 publishDate: 2025-12-04
 image: /images/journal/leasehold-vs-freehold.jpg
 tags: ["leasehold", "investment", "legal"]

@@ -6,13 +6,6 @@ interface Props {
   description?: string;
   ogImage?: string;
   noindex?: boolean;
-  schemaType?: 'article' | 'default';
-  articleData?: {
-    headline: string;
-    description: string;
-    image: string;
-    datePublished: string;
-  };
 }
 
 const {
@@ -20,50 +13,9 @@ const {
   description = 'Specialist agency and property management for Bali villas and apartments. We help investors find high-ROI properties with end-to-end brokerage support.',
   ogImage = '/og-image.jpg',
   noindex = false,
-  schemaType = 'default',
-  articleData,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Ayla Property",
-  "url": "https://aylaproperty.com",
-  "logo": "https://aylaproperty.com/logo.png",
-  "description": "Bali real estate investment brokers — we find, vet and negotiate the best villa deals for foreign investors.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "customer service",
-    "url": "https://calendly.com/ayla-teamoperations/30min"
-  },
-  "sameAs": []
-};
-
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Ayla Property",
-  "url": "https://aylaproperty.com"
-};
-
-const articleSchema = articleData ? {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": articleData.headline,
-  "description": articleData.description,
-  "image": articleData.image ? new URL(articleData.image, Astro.site).toString() : new URL(ogImage, Astro.site).toString(),
-  "datePublished": articleData.datePublished,
-  "publisher": {
-    "@type": "Organization",
-    "name": "Ayla Property",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://aylaproperty.com/logo.png"
-    }
-  }
-} : null;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -96,14 +48,6 @@ const articleSchema = articleData ? {
   <!-- Preconnect performance hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
-
-  <!-- Schema: Organization + WebSite -->
-  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
-  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
-
-  <!-- Schema: Article (blog posts only) -->
-  {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
 </head>
 <body class="bg-white min-h-screen flex flex-col">
   <slot />
