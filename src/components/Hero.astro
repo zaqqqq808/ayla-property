@@ -1,32 +1,40 @@
 ---
 import CalendlyButton from './CalendlyButton.astro';
 ---
-<section class="bg-[#D8C47F] relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-32 px-6 lg:px-12">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-    <div class="space-y-6 text-center flex flex-col items-center">
-      <p class="text-olive uppercase tracking-widest text-sm lg:text-base font-semibold">
+<section class="relative overflow-hidden min-h-screen flex items-center">
+
+  <!-- Background image -->
+  <img
+    src="/images/hero-villa.jpg"
+    alt="Luxury Bali villa with infinity pool overlooking the ocean at sunset"
+    class="absolute inset-0 w-full h-full object-cover object-center"
+    loading="eager"
+    width="1024"
+    height="1433"
+  />
+
+  <!-- Dark gradient overlay — left side for text readability -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/65 via-black/30 to-transparent"></div>
+
+  <!-- Top gradient so header nav stays readable -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-40 w-full">
+    <div class="max-w-xl space-y-6">
+      <p class="text-white/80 uppercase tracking-widest text-sm font-semibold">
         Bali Real Estate Investment
       </p>
-      <h1 class="text-brown text-4xl md:text-5xl lg:text-6xl font-display leading-tight uppercase">
-        Earn 15%+ Returns<br />Investing in Bali
+      <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-display leading-tight uppercase">
+        Earn 15%+<br />Returns<br />in Bali
       </h1>
-      <p class="text-brown/80 text-lg max-w-md">
+      <p class="text-white/80 text-lg max-w-md leading-relaxed">
         We find, vet, and negotiate the best Bali property deals for foreign investors — so you don't have to trust the wrong agent.
       </p>
-      <div class="pt-4 flex justify-center">
+      <div class="pt-2">
         <CalendlyButton text="Book a Free Investment Call" variant="olive" />
       </div>
     </div>
-
-    <div class="relative">
-      <img
-        src="/images/hero-villa.jpg"
-        alt="Luxury Bali villa with infinity pool overlooking the ocean at sunset"
-        class="rounded-2xl shadow-2xl w-full h-auto"
-        loading="eager"
-        width="1200"
-        height="900"
-      />
-    </div>
   </div>
+
 </section>
