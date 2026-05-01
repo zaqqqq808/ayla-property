@@ -1,0 +1,18 @@
+---
+const stats = [
+  { value: '50+', label: 'Investors Helped' },
+  { value: '12%', label: 'Avg Rental Yield' },
+  { value: '5★', label: 'Client Rating' },
+  { value: '3', label: 'Years in Bali' },
+];
+---
+<div class="bg-brown text-white py-6 px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+    {stats.map((stat) => (
+      <div>
+        <p class="text-gold text-3xl lg:text-4xl font-display font-bold">{stat.value}</p>
+        <p class="text-white/70 text-sm uppercase tracking-widest mt-1">{stat.label}</p>
+      </div>
+    ))}
+  </div>
+</div>

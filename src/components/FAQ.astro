@@ -1,0 +1,52 @@
+---
+const faqs = [
+  {
+    q: 'Can foreigners legally own property in Bali?',
+    a: 'Yes — through leasehold agreements (typically 25–30 years, renewable) or via a PMA company structure for freehold. We guide every client through the right ownership structure for their situation.',
+  },
+  {
+    q: 'What returns can I realistically expect?',
+    a: 'Rental yields in prime Bali areas typically range from 12–20% gross per year. Net returns after management fees are usually 8–14%. We only present properties where the numbers stack up independently.',
+  },
+  {
+    q: 'Do I need to visit Bali to invest?',
+    a: 'No. Many of our clients invest remotely. We handle site visits, developer meetings, due diligence, and legals on your behalf. You can be fully hands-off from day one.',
+  },
+  {
+    q: 'How is Ayla different from other Bali agencies?',
+    a: "We're brokers, not developers — so we have no incentive to push one project over another. We access dozens of developers, negotiate on your behalf, and only recommend what we'd invest in ourselves.",
+  },
+  {
+    q: 'What does working with Ayla actually cost?',
+    a: 'Our service is free to investors. We receive a commission from the developer upon completion — similar to how a mortgage broker works. You pay no more than going direct, and often less after our negotiation.',
+  },
+  {
+    q: 'How quickly can I get started?',
+    a: 'Book a free 30-minute call and we can have initial property options in front of you within a week. Most clients go from first call to signed agreement within 4–8 weeks.',
+  },
+];
+---
+<section class="bg-cream section-pad px-6 lg:px-12">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">FAQ</p>
+      <h2 class="text-brown text-4xl lg:text-5xl font-display uppercase tracking-wide">
+        Common Questions
+      </h2>
+    </div>
+
+    <div class="space-y-4">
+      {faqs.map((faq, i) => (
+        <details class="bg-white border border-beige rounded-xl overflow-hidden group" open={i === 0}>
+          <summary class="flex items-center justify-between px-8 py-6 cursor-pointer text-brown font-semibold uppercase tracking-wide text-sm list-none select-none hover:text-olive transition-colors">
+            {faq.q}
+            <span class="text-gold text-xl ml-4 flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+          </summary>
+          <div class="px-8 pb-6 text-brown/80 leading-relaxed border-t border-beige pt-4">
+            {faq.a}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

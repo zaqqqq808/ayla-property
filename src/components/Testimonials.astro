@@ -1,0 +1,50 @@
+---
+const testimonials = [
+  {
+    quote: "I'd been looking at Bali property for two years but couldn't find anyone I trusted. Ayla found us a villa in Canggu with a 16% yield and handled everything. Best financial decision we've made.",
+    name: 'James R.',
+    location: 'London, UK',
+    initials: 'JR',
+  },
+  {
+    quote: "They negotiated 12% off the developer's asking price and saved us months of due diligence. I don't know how you'd do this without them.",
+    name: 'Sarah & Tom K.',
+    location: 'Sydney, Australia',
+    initials: 'SK',
+  },
+  {
+    quote: "Zaq and the team are the real deal. No fluff, no pressure — just honest advice and a great property. Our villa has been fully booked since day one.",
+    name: 'Marcus D.',
+    location: 'Dubai, UAE',
+    initials: 'MD',
+  },
+];
+---
+<section class="bg-white section-pad px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">Client Results</p>
+      <h2 class="text-brown text-4xl lg:text-5xl font-display uppercase tracking-wide">
+        What Our Investors Say
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {testimonials.map((t) => (
+        <div class="bg-cream rounded-xl p-8 border border-beige flex flex-col">
+          <div class="text-gold text-4xl font-display mb-4">"</div>
+          <p class="text-brown/80 leading-relaxed flex-1 italic">{t.quote}</p>
+          <div class="flex items-center gap-4 mt-8">
+            <div class="w-12 h-12 rounded-full bg-brown flex items-center justify-center text-gold font-display font-bold text-sm flex-shrink-0">
+              {t.initials}
+            </div>
+            <div>
+              <p class="text-brown font-semibold text-sm">{t.name}</p>
+              <p class="text-brown/60 text-xs">{t.location}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

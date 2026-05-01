@@ -1,0 +1,53 @@
+---
+import CalendlyButton from './CalendlyButton.astro';
+
+const reasons = [
+  {
+    stat: '17M+',
+    title: 'Tourists Per Year',
+    description: 'Bali draws over 17 million visitors annually, creating massive and consistent demand for short-term villa rentals.',
+  },
+  {
+    stat: '12–20%',
+    title: 'Rental Yields',
+    description: 'Bali consistently delivers 12–20% gross rental yields — compared to 3–5% in the UK, Australia, or US.',
+  },
+  {
+    stat: '10 Yr',
+    title: 'Visa Now Available',
+    description: 'Indonesia\'s new 10-year visa makes it easier than ever for foreign investors to live, work, and invest in Bali.',
+  },
+  {
+    stat: '3–5×',
+    title: 'Capital Appreciation',
+    description: 'Prime Bali areas have seen property values multiply 3–5× over the past decade, with no signs of slowing.',
+  },
+];
+---
+<section class="bg-cream section-pad px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">The Opportunity</p>
+      <h2 class="text-brown text-4xl lg:text-5xl font-display uppercase mb-6 tracking-wide">
+        Why Smart Investors<br />Choose Bali
+      </h2>
+      <p class="text-brown/70 text-lg max-w-2xl mx-auto">
+        While Western property markets stagnate, Bali continues to deliver exceptional returns driven by surging tourism and limited prime land.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      {reasons.map((reason) => (
+        <div class="bg-white rounded-xl p-8 text-center shadow-sm border border-beige">
+          <p class="text-gold-dark text-4xl font-display font-bold mb-3">{reason.stat}</p>
+          <h3 class="text-brown font-display uppercase tracking-wide text-base mb-3">{reason.title}</h3>
+          <p class="text-brown/70 text-sm leading-relaxed">{reason.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center">
+      <CalendlyButton text="Find Out If Bali Is Right For You" variant="brown" />
+    </div>
+  </div>
+</section>
