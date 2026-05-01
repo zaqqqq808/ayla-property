@@ -6,12 +6,6 @@ interface Props {
   description?: string;
   ogImage?: string;
   noindex?: boolean;
-  articleData?: {
-    headline: string;
-    description: string;
-    image: string;
-    datePublished: string;
-  };
 }
 
 const {
@@ -19,48 +13,33 @@ const {
   description = 'Specialist agency and property management for Bali villas and apartments. We help investors find high-ROI properties with end-to-end brokerage support.',
   ogImage = '/og-image.jpg',
   noindex = false,
-  articleData,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const orgSchema = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Ayla Property",
-  "url": "https://aylaproperty.com",
-  "logo": "https://aylaproperty.com/logo.png",
-  "description": "Bali real estate investment brokers — we find, vet and negotiate the best villa deals for foreign investors.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "customer service",
-    "url": "https://calendly.com/ayla-teamoperations/30min"
-  }
-});
+const siteBase = 'https://aylaproperty.com';
 
-const websiteSchema = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Ayla Property",
-  "url": "https://aylaproperty.com"
-});
-
-const articleSchema = articleData ? JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": articleData.headline,
-  "description": articleData.description,
-  "image": articleData.image ? new URL(articleData.image, Astro.site).toString() : new URL(ogImage, Astro.site).toString(),
-  "datePublished": articleData.datePublished,
-  "publisher": {
+const schemas = [
+  {
+    "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Ayla Property",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://aylaproperty.com/logo.png"
+    "url": siteBase,
+    "logo": `${siteBase}/logo.png`,
+    "description": "Bali real estate investment brokers — we find, vet and negotiate the best villa deals for foreign investors.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "url": "https://calendly.com/ayla-teamoperations/30min"
     }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ayla Property",
+    "url": siteBase
   }
-}) : null;
+];
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -95,12 +74,12 @@ const articleSchema = articleData ? JSON.stringify({
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
 
-  <!-- Schema: Organization + WebSite -->
-  <Fragment set:html={`<script type="application/ld+json">${orgSchema}</script>`} />
-  <Fragment set:html={`<script type="application/ld+json">${websiteSchema}</script>`} />
+  <!-- Structured data -->
+  {schemas.map(s => (
+    <Fragment set:html={`<script type="application/ld+json">${JSON.stringify(s)}</script>`} />
+  ))}
 
-  <!-- Schema: Article (blog posts only) -->
-  {articleSchema && <Fragment set:html={`<script type="application/ld+json">${articleSchema}</script>`} />}
+  <slot name="head" />
 </head>
 <body class="bg-white min-h-screen flex flex-col">
   <slot />
