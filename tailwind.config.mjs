@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Ayla Property brand palette (sampled from current site)
         gold: {
           DEFAULT: '#C2A973',
           dark: '#A8915F',
@@ -22,9 +21,9 @@ export default {
         beige: '#DCD4C4',
       },
       fontFamily: {
-        serif: ['Marcellus', 'Cormorant Garamond', 'serif'],
-        sans: ['"Open Sans"', 'Inter', 'system-ui', 'sans-serif'],
-        display: ['Marcellus', 'serif'],
+        sans: ['"Times New Roman"', 'Times', 'serif'],
+        display: ['Cinzel', 'serif'],
+        serif: ['Cinzel', 'serif'],
       },
       letterSpacing: {
         widest: '0.2em',
