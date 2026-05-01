@@ -51,21 +51,21 @@ const youtubeId = 'T7At3AGvuHo';
     </div>
 
     <!-- Steps: 2x2 on mobile, 01+02 top row, 03 full width bottom row -->
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
       {steps.map((step) => (
         <div class:list={[
-          "rounded-xl p-6 text-center border",
+          "rounded-xl p-4 lg:p-6 text-center border",
           step.featured
             ? "col-span-2 lg:col-span-1 bg-brown border-brown text-white"
             : "bg-cream border-beige"
         ]}>
-          <p class:list={["text-2xl font-display italic mb-2", step.featured ? "text-gold" : "text-gold-dark"]}>
+          <p class:list={["text-lg lg:text-2xl font-display italic mb-1 lg:mb-2", step.featured ? "text-gold" : "text-gold-dark"]}>
             {step.number}
           </p>
-          <h3 class:list={["text-base lg:text-lg uppercase tracking-widest font-display mb-3", step.featured ? "text-white" : "text-brown"]}>
+          <h3 class:list={["text-xs lg:text-base uppercase tracking-widest font-display mb-2 lg:mb-3", step.featured ? "text-white" : "text-brown"]}>
             {step.title}
           </h3>
-          <p class:list={["text-sm leading-relaxed", step.featured ? "text-white/85" : "text-brown/75"]}>
+          <p class:list={["text-xs lg:text-sm leading-relaxed", step.featured ? "text-white/85" : "text-brown/75"]}>
             {step.description}
           </p>
         </div>
