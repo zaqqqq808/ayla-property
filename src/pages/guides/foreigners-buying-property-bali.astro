@@ -1,0 +1,453 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+import CalendlyButton from '@/components/CalendlyButton.astro';
+
+const siteBase = 'https://www.aylaproperty.com';
+
+const sections = [
+  { id: 'can-foreigners-buy',    label: 'Can Foreigners Buy?' },
+  { id: 'freehold-vs-leasehold', label: 'Freehold vs Leasehold' },
+  { id: 'individual-vs-ptpma',   label: 'Individual vs PT PMA' },
+  { id: 'payment-methods',       label: 'Payment Methods' },
+  { id: 'legal',                 label: 'Legal & Due Diligence' },
+  { id: 'management-rental',     label: 'Management & Rental Income' },
+  { id: 'tax',                   label: 'Tax Considerations' },
+  { id: 'process-timeline',      label: 'Process & Timeline' },
+];
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${siteBase}/` },
+    { "@type": "ListItem", "position": 2, "name": "Bali Property Ownership Guide for Foreigners 2026", "item": `${siteBase}/guides/foreigners-buying-property-bali/` },
+  ]
+});
+
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Can Foreigners Buy Property in Bali? Complete 2026 Guide",
+  "description": "A complete guide to buying property in Bali as a foreigner — covering freehold vs leasehold, PT PMA setup, payment methods, legal due diligence, and rental management.",
+  "author": { "@type": "Organization", "name": "Ayla Property", "url": siteBase },
+  "publisher": { "@type": "Organization", "name": "Ayla Property", "logo": { "@type": "ImageObject", "url": `${siteBase}/logo.png` } },
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-05-02",
+  "url": `${siteBase}/guides/foreigners-buying-property-bali/`,
+});
+---
+<BaseLayout
+  title="Can Foreigners Buy Property in Bali? Complete 2026 Guide | Ayla Property"
+  description="Yes — foreigners can legally buy property in Bali. This complete 2026 guide covers leasehold vs freehold, PT PMA, payment methods, legal due diligence, and rental management."
+  ogType="article"
+>
+  <Fragment slot="head">
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+    <Fragment set:html={`<script type="application/ld+json">${articleSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+
+  <!-- Hero -->
+  <section class="relative bg-brown pt-40 pb-16 px-6 lg:px-12 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/images/hero-villa.jpg')] bg-cover bg-center opacity-20"></div>
+    <div class="relative max-w-4xl mx-auto text-center">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Investor Guide · 2026</p>
+      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-display uppercase leading-tight mb-6">
+        Can Foreigners Buy<br />Property in Bali?
+      </h1>
+      <p class="text-white/75 text-lg max-w-2xl mx-auto mb-8">
+        Yes — and thousands do every year. This guide covers everything you need to know: ownership structures, legal process, payment methods, and how to manage your investment from anywhere in the world.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/downloads/ayla-bali-property-guide-2026.pdf"
+          download
+          class="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-brown font-semibold uppercase tracking-widest text-sm px-6 py-3 rounded-sm transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+          Download PDF Guide
+        </a>
+        <CalendlyButton text="Book a Free Call" variant="olive" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <div class="bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24 flex flex-col lg:flex-row gap-12 lg:gap-16">
+
+      <!-- Sticky sidebar TOC -->
+      <aside class="lg:w-64 shrink-0">
+        <div class="lg:sticky lg:top-8">
+          <p class="text-gold-dark uppercase tracking-widest text-xs font-semibold mb-4">In This Guide</p>
+          <nav class="space-y-1" aria-label="Guide sections">
+            {sections.map(s => (
+              <a
+                href={`#${s.id}`}
+                class="toc-link block text-sm text-brown/60 hover:text-olive py-1.5 border-l-2 border-transparent hover:border-olive pl-3 transition-all duration-150"
+              >
+                {s.label}
+              </a>
+            ))}
+          </nav>
+          <div class="mt-8 p-4 bg-white rounded-xl border border-beige text-center">
+            <p class="text-brown text-sm font-semibold mb-3">Ready to invest?</p>
+            <CalendlyButton text="Free Consultation" variant="brown" />
+          </div>
+          <a
+            href="/downloads/ayla-bali-property-guide-2026.pdf"
+            download
+            class="mt-4 flex items-center justify-center gap-2 w-full border border-gold/50 text-gold-dark hover:bg-gold/10 text-xs uppercase tracking-widest font-semibold px-4 py-3 rounded-sm transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+            Download PDF
+          </a>
+        </div>
+      </aside>
+
+      <!-- Article body -->
+      <article class="flex-1 max-w-3xl guide-content">
+
+        <!-- Section 1 -->
+        <section id="can-foreigners-buy" class="guide-section mb-16">
+          <h2>Can Foreigners Buy Property in Bali?</h2>
+          <p>The short answer is yes — and doing so is more straightforward than most people expect. Indonesia has clear legal frameworks for foreign property ownership, and Bali's villa market has been built substantially on foreign investment over the past two decades.</p>
+          <p>What foreigners cannot do is hold <strong>Hak Milik</strong> (freehold land title) directly in their own name — that is reserved for Indonesian citizens. However, there are two fully legal and widely used structures that give foreign investors secure, bankable property rights:</p>
+          <ul>
+            <li><strong>Leasehold (Hak Sewa / Hak Pakai)</strong> — the most common investment route, giving you full rights to a property for a fixed term (typically 25–30 years, renewable)</li>
+            <li><strong>PT PMA company structure</strong> — a foreign-owned Indonesian company that can hold Hak Guna Bangunan (building rights on freehold land)</li>
+          </ul>
+          <p>Both are legally enforceable, notarised, and registered with the Indonesian land authority (BPN). Thousands of foreign investors use these structures to own and operate villas in Bali every year.</p>
+          <div class="callout">
+            <strong>Important:</strong> Nominee ownership — putting a property in an Indonesian national's name on your behalf — is not a recognised legal structure and carries significant risk. Ayla Property never facilitates or recommends nominee arrangements.
+          </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="freehold-vs-leasehold" class="guide-section mb-16">
+          <h2>Freehold vs Leasehold</h2>
+          <p>Understanding the distinction between freehold and leasehold is the foundation of Bali property investment. Unlike Western markets where leasehold is often seen as inferior, in Bali it is the dominant investment vehicle — and for good reason.</p>
+
+          <h3>Leasehold (Hak Sewa / Hak Pakai)</h3>
+          <p>Leasehold gives you the right to use and rent out a property for a defined period. Standard terms are <strong>25+25</strong> or <strong>30+30 years</strong> — meaning an initial lease of 25–30 years with a contractual right to renew for the same period. Some premium developments offer 50-year initial terms.</p>
+          <p>Key advantages of leasehold for investors:</p>
+          <ul>
+            <li>Lower entry price than freehold — typically 20–40% less for equivalent land</li>
+            <li>Fully legal and notarised — enforceable under Indonesian law</li>
+            <li>No company formation required — can be held individually</li>
+            <li>Transferable and sellable during the lease term</li>
+            <li>Higher yield on invested capital due to lower entry cost</li>
+          </ul>
+          <p>Renewal is not automatic — it requires agreement from the landowner. This is why the <strong>renewal clause and pricing mechanism</strong> within your lease agreement is critical. Ayla's legal team reviews every lease to ensure renewal terms are clearly defined and fair.</p>
+
+          <h3>Freehold via PT PMA</h3>
+          <p>If you want freehold-equivalent ownership, a PT PMA (foreign investment company) can hold <strong>Hak Guna Bangunan</strong> (HGB) — building rights on freehold land. HGB is typically granted for 30 years, renewable, and offers stronger long-term security than leasehold.</p>
+          <p>This structure is preferable for investors planning multiple properties, running a formal hospitality business, or planning a very long holding period. The trade-off is higher setup cost and ongoing compliance obligations.</p>
+
+          <h3>Which Is Right for You?</h3>
+          <p>For most first-time Bali investors, leasehold is the right starting point — it's simpler, cheaper, and offers excellent returns. PT PMA makes more sense as a portfolio grows. We advise every client individually based on their goals, timeline, and budget.</p>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="individual-vs-ptpma" class="guide-section mb-16">
+          <h2>Buying as an Individual vs Setting Up a PT PMA</h2>
+
+          <h3>Individual Ownership</h3>
+          <p>As a foreign individual, you can hold property via <strong>Hak Pakai</strong> (right of use) — a formal title recognised by Indonesian law. This works well for leasehold investments and is the simplest, most cost-effective route for a single property purchase.</p>
+          <ul>
+            <li>No company formation required</li>
+            <li>Lower ongoing costs (no annual accounting/compliance)</li>
+            <li>Notarised directly in your name</li>
+            <li>Can be held by a couple or multiple individuals</li>
+            <li>Suitable for personal use as well as investment</li>
+          </ul>
+
+          <h3>PT PMA (Foreign-Owned Indonesian Company)</h3>
+          <p>A PT PMA is a fully foreign-owned Indonesian limited liability company. It unlocks access to commercial land titles and is required if you want to formally operate a rental villa as a registered business entity.</p>
+          <ul>
+            <li>Can hold Hak Guna Bangunan (freehold building rights)</li>
+            <li>Enables formal commercial operation (required for some permits)</li>
+            <li>Better structure for multiple properties</li>
+            <li>Cleaner inheritance and succession planning</li>
+            <li>Can open Indonesian business bank accounts</li>
+          </ul>
+          <p><strong>Setup cost:</strong> approximately $2,000–5,000 USD through a reputable legal firm. <strong>Annual compliance:</strong> accounting, tax filing, and company secretarial obligations typically cost $500–1,500/year depending on activity level.</p>
+
+          <div class="callout">
+            Ayla works with trusted legal partners who specialise in PT PMA formation for property investors. We can facilitate the entire process — from company registration to land title transfer.
+          </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="payment-methods" class="guide-section mb-16">
+          <h2>Payment Methods</h2>
+          <p>Bali's property market has evolved significantly in how it accepts payment. Two primary methods dominate — and both are well supported by Ayla and our developer partners.</p>
+
+          <h3>International Bank Transfer</h3>
+          <p>The most common payment method. Developers accept international SWIFT transfers in USD, AUD, GBP, EUR, and SGD. Payments go directly to the developer's corporate account, with proof of transfer serving as part of your legal documentation. We recommend always using a tracked transfer with a clear payment reference matching your sale agreement.</p>
+
+          <h3>Cryptocurrency</h3>
+          <p>Crypto is increasingly accepted — particularly <strong>USDT and USDC</strong> (stablecoins) and, to a lesser extent, BTC and ETH. A growing number of Bali developers actively court crypto buyers, and some offer a <strong>2–5% discount</strong> for crypto payment due to the speed and reduced banking friction.</p>
+          <p>Smart contracts are beginning to be used for staged payment escrow, adding an additional layer of security and transparency. Ayla can facilitate crypto transactions and connect you with developers who are crypto-friendly.</p>
+
+          <h3>Staged Payment Structures</h3>
+          <p>Off-plan purchases — the most common investment vehicle — are almost always sold on a staged payment basis tied to construction milestones:</p>
+          <ul>
+            <li><strong>30%</strong> on signing of sale agreement</li>
+            <li><strong>30%</strong> at structural completion (frame/roof)</li>
+            <li><strong>40%</strong> on handover and title transfer</li>
+          </ul>
+          <p>Some developers offer 50/50 splits, or extended payment plans of up to 12–18 months. This staged structure reduces your risk — you're not fully committed until you can see what you're getting.</p>
+
+          <h3>Financing</h3>
+          <p>Indonesian banks do not offer mortgages to foreign buyers. However, some investors use equity release or financing against assets in their home country to fund a Bali purchase. We can discuss what options may be available for your situation.</p>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="legal" class="guide-section mb-16">
+          <h2>Legal: Ownership, Due Diligence & Common Issues</h2>
+
+          <h3>Apartments vs Land (Villas)</h3>
+          <p>The vast majority of Bali investment purchases are <strong>land and villa</strong> transactions, processed through a PPAT (Land Deed Official) notary and registered with BPN (National Land Agency). Apartments using strata title (HMSRS) are technically available to foreigners but are far less common and have lower rental demand.</p>
+          <p>For villas and land, the key legal documents are:</p>
+          <ul>
+            <li><strong>SHM</strong> (Sertifikat Hak Milik) — the freehold land certificate</li>
+            <li><strong>SHGB</strong> (Sertifikat Hak Guna Bangunan) — building rights certificate (for PT PMA holdings)</li>
+            <li><strong>AJB / PPJB</strong> — the sale/lease deed, notarised and witnessed</li>
+            <li><strong>IMB / PBG</strong> — building permit (required for legal rental operation)</li>
+          </ul>
+
+          <h3>Due Diligence Checklist</h3>
+          <p>Before any purchase, a thorough due diligence process should cover:</p>
+          <ul>
+            <li>Title certificate check — confirming ownership chain and absence of encumbrances</li>
+            <li>Zoning verification — must confirm the land is zoned for villa/tourism use (not agricultural or residential-only)</li>
+            <li>Building permit (IMB/PBG) — without this, you cannot legally rent the property</li>
+            <li>Environmental permits (UKL/UPL) — required for commercial rental operations</li>
+            <li>Developer track record — previous completions, company standing, financial health</li>
+            <li>Notary independence — use your own recommended notary, not the developer's</li>
+          </ul>
+
+          <h3>Common Issues We See</h3>
+          <p>Buyers who purchase without proper due diligence often encounter:</p>
+          <ul>
+            <li><strong>Unclear title chains</strong> — family disputes, inherited land with multiple claimants</li>
+            <li><strong>Wrong zoning</strong> — villas built on agricultural land cannot be rented legally</li>
+            <li><strong>No building permit</strong> — makes the property uninsurable and illegally rentable</li>
+            <li><strong>Weak lease agreements</strong> — no renewal clause, ambiguous pricing, missing BPN registration</li>
+            <li><strong>Unverified developers</strong> — off-plan projects from developers with no track record or questionable financials</li>
+          </ul>
+
+          <h3>The Ayla Method</h3>
+          <p>Every property we present to clients has passed our internal due diligence screen before we show it to you. When you decide to proceed, we then conduct a full legal review through our independent notary partners — covering title, zoning, permits, and contract terms. We have no interest in pushing through a bad deal: our reputation is built on clients who succeed, not on transaction volume.</p>
+
+          <div class="callout">
+            We work with a panel of independent PPAT notaries in Bali with whom we have long-standing relationships. Using an independent notary — not the developer's — is non-negotiable for every Ayla client.
+          </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="management-rental" class="guide-section mb-16">
+          <h2>Property Management & Rental Income</h2>
+          <p>One of Bali's great advantages for investors is a mature, professional property management ecosystem. You do not need to be in Bali — or even visit — to run a profitable rental villa.</p>
+
+          <h3>Turnkey Management Solutions</h3>
+          <p>Specialist Bali villa management companies handle every aspect of the rental operation on your behalf:</p>
+          <ul>
+            <li>Listing and marketing across Airbnb, Booking.com, Villa Finder, and direct channels</li>
+            <li>Dynamic pricing optimisation</li>
+            <li>Guest communication, booking management, and check-in/check-out</li>
+            <li>Housekeeping, laundry, and villa preparation</li>
+            <li>Routine maintenance coordination</li>
+            <li>Monthly or quarterly owner reporting</li>
+          </ul>
+
+          <h3>Management Fees</h3>
+          <p>Typical management fees are <strong>15–25% of gross rental revenue</strong>, deducted before your payout. Some operators use a hybrid model (lower % plus a fixed monthly retainer). What's included varies — always confirm whether platform fees (Airbnb typically charges 3%), cleaning fees, and minor maintenance are covered within the management percentage or charged separately.</p>
+          <p>After management fees, operational costs, and platform charges, most well-located Bali villas net between <strong>10–14% per year</strong> on purchase price — significantly above what you'd achieve in most Western markets even on gross yield.</p>
+
+          <h3>Insurance & Guest Damage</h3>
+          <p>Property insurance in Bali is well established. Most management companies require you to hold building and contents insurance as a condition of their management agreement. Key protections include:</p>
+          <ul>
+            <li><strong>Building insurance</strong> — structural damage, fire, flooding</li>
+            <li><strong>Contents insurance</strong> — furniture, fixtures, appliances</li>
+            <li><strong>Public liability</strong> — guest injury or third-party claims, typically included in management packages</li>
+            <li><strong>Guest damage</strong> — management companies collect security deposits from guests. Damage beyond the deposit is covered by the management company's insurance pool. Ayla only partners with management operators who carry adequate coverage.</li>
+          </ul>
+
+          <h3>Getting Paid</h3>
+          <p>As an overseas investor, receiving your rental income is simple. Standard options include:</p>
+          <ul>
+            <li><strong>International bank transfer (SWIFT)</strong> — available in USD, AUD, GBP, EUR, SGD</li>
+            <li><strong>Cryptocurrency payouts</strong> — offered by progressive management companies, typically in USDT or USDC</li>
+          </ul>
+          <p><strong>Payment frequency:</strong> most operators pay monthly (15–30 days after month-end) or quarterly. Monthly is more common and preferable for cash-flow visibility.</p>
+          <p><strong>Developer income guarantees:</strong> some off-plan developers offer guaranteed rental income for the first 1–3 years (typically 8–12% net), which de-risks the ramp-up period while the villa builds its booking history. We assess these guarantees carefully — they are only valuable when backed by a financially solid developer.</p>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="tax" class="guide-section mb-16">
+          <h2>Tax Considerations</h2>
+          <p>Tax is an area where many investors don't get adequate advice upfront. Here's what you need to know:</p>
+
+          <h3>Indonesian Rental Income Tax</h3>
+          <p>Indonesia applies a <strong>10% final withholding tax</strong> on gross rental income earned by non-residents. This is typically deducted and remitted to the Indonesian tax authority (DJP) by your property management company on your behalf. If you operate via a PT PMA, the company is subject to standard Indonesian corporate income tax rules (22% on net profit).</p>
+
+          <h3>Capital Gains on Sale</h3>
+          <p>When selling, the seller pays a <strong>2.5% final income tax</strong> on the gross transaction value. This is relatively low compared to most Western jurisdictions and is a fixed rate regardless of profit. No separate capital gains tax applies.</p>
+
+          <h3>Home Country Tax Obligations</h3>
+          <p>Rental income earned in Bali is usually also taxable in your country of residence. Most countries tax worldwide income, so you'll generally need to declare Bali rental income on your home tax return. Indonesia has double taxation agreements (DTAs) with Australia, the UK, Singapore, and many other countries — meaning Indonesian withholding tax paid can usually be credited against your home country liability.</p>
+
+          <div class="callout">
+            Tax rules vary significantly by country and individual circumstance. We strongly recommend consulting a tax advisor in your home country before completing a purchase. Ayla can refer you to advisors who specialise in cross-border property investment.
+          </div>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="process-timeline" class="guide-section mb-16">
+          <h2>The Buying Process & Timeline</h2>
+          <p>Buying property in Bali through Ayla is a structured, transparent process. Most clients go from initial call to signed agreement in <strong>4–10 weeks</strong>.</p>
+
+          <div class="process-steps">
+            <div class="process-step">
+              <span class="step-num">01</span>
+              <div>
+                <h4>Discovery Call</h4>
+                <p>A free 30-minute consultation to understand your goals, budget, and timeline. We'll tell you honestly whether Bali is the right fit and which areas and structures suit your situation.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <span class="step-num">02</span>
+              <div>
+                <h4>Property Selection</h4>
+                <p>Within one week, we present a shortlist of pre-vetted properties matched to your criteria. We access off-market and off-plan deals not publicly listed.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <span class="step-num">03</span>
+              <div>
+                <h4>Due Diligence</h4>
+                <p>2–4 weeks of title checks, zoning verification, permit audit, and developer background checks — handled by our independent notary partners.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <span class="step-num">04</span>
+              <div>
+                <h4>Legal & Contract</h4>
+                <p>Sale agreement review, negotiation of final terms, and notarised signing. Remote signing is possible via power of attorney if you're not in Bali.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <span class="step-num">05</span>
+              <div>
+                <h4>Payment & Handover</h4>
+                <p>Staged payments tied to construction milestones (for off-plan) or a single payment (for completed villas). Title registration with BPN on completion.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <span class="step-num">06</span>
+              <div>
+                <h4>Management Setup</h4>
+                <p>We introduce you to our vetted management partners. Your villa is listed, staffed, and ready to generate income — often within weeks of handover.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Download CTA -->
+        <div class="bg-brown rounded-xl p-8 text-center mt-12">
+          <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-3">Save This Guide</p>
+          <h3 class="text-white text-2xl font-display uppercase mb-4">Download the Full PDF</h3>
+          <p class="text-white/70 mb-6">Get the complete guide as a PDF — print it, share it, or read it offline.</p>
+          <a
+            href="/downloads/ayla-bali-property-guide-2026.pdf"
+            download
+            class="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-brown font-semibold uppercase tracking-widest text-sm px-6 py-3 rounded-sm transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+            Download PDF Guide
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+  <ContactCTA />
+  <Footer />
+  <StickyButton />
+</BaseLayout>
+
+<style>
+  /* Guide typography */
+  .guide-content h2 {
+    @apply text-brown text-2xl lg:text-3xl font-display uppercase tracking-wide mb-4 mt-12 first:mt-0 pb-3 border-b border-beige;
+  }
+  .guide-content h3 {
+    @apply text-brown text-lg font-semibold mt-6 mb-3;
+  }
+  .guide-content h4 {
+    @apply text-brown font-semibold mb-1;
+  }
+  .guide-content p {
+    @apply text-brown/80 leading-relaxed mb-4;
+  }
+  .guide-content ul {
+    @apply space-y-2 mb-4 pl-0;
+  }
+  .guide-content ul li {
+    @apply text-brown/80 leading-relaxed pl-5 relative;
+  }
+  .guide-content ul li::before {
+    content: '—';
+    @apply absolute left-0 text-gold-dark font-bold;
+  }
+  .guide-content strong {
+    @apply text-brown font-semibold;
+  }
+
+  /* Callout boxes */
+  .callout {
+    @apply bg-white border-l-4 border-gold rounded-r-xl px-6 py-4 my-6 text-brown/80 text-sm leading-relaxed;
+  }
+
+  /* Process steps */
+  .process-steps {
+    @apply space-y-6 mt-6;
+  }
+  .process-step {
+    @apply flex gap-5 items-start bg-white rounded-xl p-5 border border-beige;
+  }
+  .step-num {
+    @apply text-gold-dark text-2xl font-display font-bold shrink-0 w-10;
+  }
+
+  /* Active TOC link */
+  .toc-link.active {
+    @apply text-olive border-olive;
+  }
+</style>
+
+<script>
+  // Active TOC highlight on scroll
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = document.querySelectorAll('.guide-section');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(link => link.classList.remove('active'));
+        const active = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
+        active?.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>
