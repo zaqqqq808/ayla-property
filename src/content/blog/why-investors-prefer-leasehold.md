@@ -1,6 +1,6 @@
 ---
 title: "The Freehold Trap: Why Smart Foreign Investors Actually Prefer Leasehold for Higher ROI"
-description: "Most foreign investors demand freehold — but in Bali, that is often a mistake. Discover why leasehold consistently delivers 20% ROI vs 8% for freehold, and how to use it strategically."
+description: "Most foreign investors demand freehold — in Bali that is a mistake. Discover why leasehold delivers higher ROI and how smart investors use it."
 publishDate: 2025-12-04
 image: /images/journal/leasehold-vs-freehold.jpg
 tags: ["leasehold", "investment", "legal"]
@@ -56,6 +56,67 @@ The play works like this:
 
 Even with fewer years left on the lease, the rise in daily land prices often means you can sell for a profit. You then take that capital and roll it into the *next* emerging area (like Kedungu or the West).
 
+
+## What a Good Lease Agreement Actually Looks Like
+
+Not all leasehold agreements are equal. The quality of the lease document itself is one of the most important factors determining how secure — and how valuable — your investment is. Here is what to look for and insist on:
+
+**Registered with BPN (National Land Agency).** A notarised lease that is not registered with BPN has significantly weaker legal standing. Always ensure your PPJB or lease deed is submitted for BPN registration. This is non-negotiable.
+
+**Clear renewal clause.** The renewal right should be explicitly stated in the contract — not implied or subject to future negotiation. Ideally, the renewal price or pricing formula (e.g. 10% above the original land value per year of the new term) is locked in at the time of the initial purchase.
+
+**Fixed term, not rolling.** A 25+25 year structure with a defined right of renewal is far stronger than a rolling lease that requires annual renewal. Rolling structures give the landowner leverage at every renewal point.
+
+**Transferability.** You need the explicit right to sell, sublet, or transfer the lease to a third party without requiring the landowner's approval (or with approval not to be unreasonably withheld). This is what gives you an exit.
+
+**Force majeure and government acquisition.** Rare but worth having: protection clauses for scenarios where government compulsory acquisition occurs during your lease period. In this case, compensation should flow to you, not the landowner.
+
+At Ayla, every lease our clients sign has been reviewed by our independent notary for all of the above points. We reject or renegotiate leases that don't meet the standard before recommending a purchase.
+
+## When Freehold (PT PMA) Does Make Sense
+
+It would be misleading to suggest leasehold is always the answer. There are specific scenarios where setting up a PT PMA and acquiring freehold title (Hak Guna Bangunan) is the right move:
+
+**You're planning to hold the property for 30+ years.** If this is a true forever investment — not something you intend to exit — the ongoing certainty of freehold and elimination of renewal risk may justify the higher entry cost.
+
+**You're building a portfolio of multiple properties.** A PT PMA becomes more cost-efficient as a vehicle when you're buying more than one property. The setup cost is fixed, but the benefit scales.
+
+**You want to operate a formal hospitality business.** If you're planning to run a villa as a licensed boutique hotel or commercial accommodation business under Indonesian law, a PT PMA is generally required.
+
+**You plan to retire to Bali.** The combination of freehold security and the ability to use the property as a personal residence indefinitely appeals to buyers who want more than just an investment.
+
+The key is to match the structure to the objective — which is exactly the kind of conversation we have with every client in our first call.
+
+## How to Exit a Leasehold Investment
+
+One of the most common questions: "How do I eventually sell a leasehold with fewer years remaining?"
+
+The answer is that a well-documented, BPN-registered leasehold with a solid rental history sells well — often better than the buyer expects. Here is why:
+
+The buyer you're selling to is not buying a depleting asset. They are buying a proven, income-producing business. A villa with two years of Airbnb reviews, documented 75% occupancy, and a professional management contract attached is worth more per year of remaining lease than a brand-new, unproven villa with a full fresh lease.
+
+Buyers in Bali's maturing market are increasingly sophisticated. They can model the remaining lease income, subtract management costs, and arrive at a fair price for the remaining years. Many buyers specifically target mid-lease properties because they are cheaper to enter than off-plan while still carrying income proof.
+
+The practical strategy: exit at year 7–10 of a 25-year lease, once the rental track record is established but while substantial lease life remains. This is consistently where the best seller returns are generated.
+
+## Common Leasehold Myths — Debunked
+
+**Myth: "A leasehold property is worthless at the end of the lease."**
+
+Reality: Your lease term should be structured to align with your investment horizon. If you are planning a 5–7 year hold, a 25-year lease starting today gives you 18–20 years of value remaining when you sell — more than enough to command a strong price. Very few investors hold Bali property for 25+ years in the current market.
+
+**Myth: "The landowner can refuse to renew."**
+
+Reality: With a well-drafted lease, the renewal right is contractual — not a favour. The landowner cannot refuse if the renewal clause is properly structured, and the price formula is set at the time of the original purchase. This is why lease document quality matters so much, and why we insist on independent notary review for every Ayla client.
+
+**Myth: "Banks won't finance leasehold."**
+
+Reality: Indonesian banks won't finance foreign buyers regardless of title type — that's not a leasehold issue. For overseas investors financing from their home country (using home equity or portfolio loans), the title type in Indonesia is largely irrelevant to the lender. They're lending against your assets at home, not the Indonesian property.
+
+**Myth: "You can't renovate or improve a leasehold property."**
+
+Reality: As the lessee, you have full rights to build, renovate, and improve the property during your lease term. Any improvements typically belong to you during the lease, with reversion to the landowner at expiry — which is another reason the 5–7 year exit strategy makes sense.
+
 ## The Verdict
 Freehold has its place—usually for people who want a forever home to retire in.
 
@@ -67,4 +128,4 @@ We can show you side-by-side comparisons of Freehold vs. Leasehold opportunities
 If you are interested and ready to invest, **[talk to us](https://calendly.com/zaq-lengmedia/30min)**.
 ---
 
-*See the leasehold strategy in action: [how we made $50k profit for a client in under 6 months](/journal/under-six-months-client-strategy/). Or if you are still researching the market, read [our full 2026 Bali investment overview](/journal/is-bali-still-good-investment-2026/).*
+*Ready to put leasehold strategy into practice? Browse our guides to [invest in Canggu](/invest/canggu/) and [invest in Uluwatu](/invest/uluwatu/), or read our complete [guide to buying property in Bali as a foreigner](/guides/foreigners-buying-property-bali/) — including a full breakdown of lease structures and renewal terms.*

@@ -1,6 +1,6 @@
 ---
 title: "Is Bali Still A Good Investment In 2026?"
-description: "Wondering if Bali is still worth investing in? With 15%+ rental yields and Indonesia set to become the world’s 4th largest economy, the answer is yes. Here’s why — and the exact strategies investors are using in 2026."
+description: "Is Bali still a good investment in 2026? With 15%+ rental yields and a booming economy, the answer is yes. Here are the strategies top investors are using."
 publishDate: 2026-02-19
 image: /images/journal/bali-investment-2026.jpg
 tags: ["market-analysis", "roi", "bali"]
@@ -39,7 +39,47 @@ While established areas like Canggu and Seminyak offer stability, the massive ca
 - **Flip It:** Sell the brand-new, ready-to-move-in villa at the current, much higher market rate.
 - **Rinse and Repeat:** Take your initial capital plus the profit, and roll it into an even bigger off-plan project. Compound your wealth with every cycle.
  
-Is Bali still a good investment? Absolutely. Between Indonesia's meteoric economic rise, the influx of global capital seeking a haven, and the highly lucrative leasehold and off-plan strategies, the market is ripe for the taking. The "wild west" days might be over, but the era of calculated, high-yield wealth building has just begun.
+## The Tourism Numbers Don't Lie
+
+Bali welcomed over 5.3 million international visitors in 2023, recovering strongly post-pandemic. By the end of 2024 that figure had climbed past 6.3 million, and 2025 projections exceeded 7 million. These aren't tourist-board estimates — they're immigration data from Ngurah Rai International Airport.
+
+What matters for property investors is not just the volume but the composition. The visitor mix has shifted materially since 2019. Pre-pandemic, Bali was dominated by Australian and Chinese package tourists. Today, the visitor profile is far more diverse — European, American, Middle Eastern, and Indian travellers, many of whom are high-spending and drawn by Bali's digital nomad reputation rather than just beach tourism.
+
+This matters because high-spending, longer-stay visitors generate stronger villa rental income than short-burst package tourists. Average daily villa rates in Canggu and Uluwatu have increased by 25–35% since 2021, even as supply has grown. That is a demand-led price increase, not developer inflation.
+
+## The Visa Tailwind
+
+Indonesia introduced the Digital Nomad Visa in 2023, allowing remote workers and freelancers to live in Indonesia for up to five years without paying Indonesian income tax on foreign-sourced income. This was a deliberate policy move to attract long-stay, high-spending visitors.
+
+The effect on Bali's rental market has been significant. The pool of people willing to pay $2,000–$5,000 per month for a well-managed villa in Canggu or Uluwatu has expanded dramatically. Monthly and quarterly rental bookings — which generate better yields and lower turnover costs than nightly Airbnb stays — have surged.
+
+For investors, this is a structural tailwind. Every person who arrives on a Digital Nomad Visa is a potential long-term rental customer. And Indonesia continues to expand and refine its visa offering, with the E35B retirement visa and the Golden Visa programme attracting older, wealthier buyers with a direct interest in property ownership.
+
+## The Risks (And Why They're Manageable)
+
+No honest investment guide leaves out the risk section. Bali property investment does carry risks — but they are largely manageable with the right approach.
+
+**Legal risk:** Buying through the wrong structure, using nominee arrangements, or skipping due diligence can result in title disputes or unenforceable agreements. This is the most common way investors lose money in Bali. The fix is straightforward: use an independent notary, verify title and zoning, and work with an agent who has legal accountability.
+
+**Developer risk:** Off-plan purchases carry construction and delivery risk. Developers occasionally face delays or, in rare cases, financial difficulties. Mitigate this by verifying the developer's track record, checking company financials, and structuring staged payments that only release funds against verified milestones.
+
+**Market saturation in specific areas:** Canggu in particular has seen rapid supply growth. Poorly located or under-managed villas are increasingly competing on price. Well-located, professionally managed properties are not affected — but the days of any villa generating strong yields regardless of quality are fading.
+
+**Currency exposure:** The IDR can weaken. Rental income is USD-denominated, which reduces this risk significantly, but repatriation at unfavourable exchange rates remains a consideration for some investors.
+
+None of these risks are unique to Bali. Every market has them. What distinguishes Bali is that the rewards — 15%+ yields, strong capital appreciation, low entry costs, and a genuinely thriving tourism economy — remain compelling enough to justify the risks when managed properly.
+
+## A Note on Timing
+
+A common question we hear is: "Have I missed the window?"
+
+The honest answer is that the window for buying any property in Bali at 2018 prices has passed. But that is true of every market that performs well — by definition, early buyers got in cheaper.
+
+What matters is whether today's entry price still generates a return that justifies the investment. At 15%+ gross yields, strong capital appreciation trajectories in emerging areas, and a tourism economy that is structurally growing, the answer is yes — today's prices still work.
+
+The investors who are asking "have I missed it?" will ask the same question in three years, looking back at today's prices wishing they had moved. The ones who act now are the ones those future investors will envy.
+
+Is Bali still a good investment? Absolutely.Is Bali still a good investment? Absolutely. Between Indonesia's meteoric economic rise, the influx of global capital seeking a haven, and the highly lucrative leasehold and off-plan strategies, the market is ripe for the taking. The "wild west" days might be over, but the era of calculated, high-yield wealth building has just begun.
 ---
 
-*Want to go deeper? See how [Bali's returns compare to Dubai and the Gold Coast](/journal/bali-vs-dubai-gold-coast/), and learn exactly [why leasehold delivers higher ROI than freehold for foreign investors](/journal/why-investors-prefer-leasehold/).*
+*Want to go deeper? Explore our area-specific investment guides for [Canggu](/invest/canggu/) and [Uluwatu](/invest/uluwatu/), or download our complete [Bali property ownership guide for foreign buyers](/guides/foreigners-buying-property-bali/).*

@@ -8,12 +8,13 @@ import PropertyCarousel from '@/components/PropertyCarousel.astro';
 import Methodology from '@/components/Methodology.astro';
 import Testimonials from '@/components/Testimonials.astro';
 import Team from '@/components/Team.astro';
+import Journal from '@/components/Journal.astro';
 import FAQ from '@/components/FAQ.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
 import Footer from '@/components/Footer.astro';
 import StickyButton from '@/components/StickyButton.astro';
 
-const uluwatуReasons = [
+const uluwatuReasons = [
   {
     stat: '15–18%',
     statTo: [15, 18],
@@ -48,7 +49,7 @@ const uluwatуReasons = [
   },
 ];
 
-const uluwatуFaqs = [
+const uluwatuFaqs = [
   {
     q: 'What makes Uluwatu different from Canggu for investment?',
     a: "Uluwatu appeals to a different type of buyer and guest. Where Canggu attracts digital nomads and surfers looking for community, Uluwatu draws high-spending luxury travellers and surf purists seeking dramatic clifftop views and world-class breaks. Nightly rates are typically higher, and the guest profile tends to spend more — which supports strong yields even at slightly lower occupancy than Canggu.",
@@ -89,6 +90,7 @@ const breadcrumbSchema = JSON.stringify({
   title="Invest in Uluwatu, Bali | Clifftop Villas & 15–18% Yields | Ayla Property"
   description="Buy a villa in Uluwatu — Bali's premium clifftop investment area. Dramatic ocean views, 15–18% rental yields, and scarce land supply. Free consultation with Ayla Property."
   ogType="website"
+  ogImage="/og-uluwatu.jpg"
 >
   <Fragment slot="head">
     <link rel="preload" as="image" href="/images/hero-villa.jpg" fetchpriority="high" />
@@ -129,7 +131,7 @@ const breadcrumbSchema = JSON.stringify({
       titleHtml="Why Investors<br />Choose Uluwatu"
       subtitle="Uluwatu's clifftop setting, luxury appeal, and finite land supply combine to create one of Bali's strongest investment cases — particularly for buyers focused on capital growth."
       ctaText="Find Out If Uluwatu Is Right For You"
-      reasons={uluwatуReasons}
+      reasons={uluwatuReasons}
     />
 
     <PropertyCarousel />
@@ -138,10 +140,11 @@ const breadcrumbSchema = JSON.stringify({
     <Testimonials />
     <Team />
 
+    <Journal />
     <FAQ
       eyebrow="Uluwatu Property FAQ"
       title="Uluwatu Questions Answered"
-      faqs={uluwatуFaqs}
+      faqs={uluwatuFaqs}
     />
 
     <ContactCTA />

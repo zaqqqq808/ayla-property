@@ -8,6 +8,7 @@ import PropertyCarousel from '@/components/PropertyCarousel.astro';
 import Methodology from '@/components/Methodology.astro';
 import Testimonials from '@/components/Testimonials.astro';
 import Team from '@/components/Team.astro';
+import Journal from '@/components/Journal.astro';
 import FAQ from '@/components/FAQ.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
 import Footer from '@/components/Footer.astro';
@@ -92,6 +93,7 @@ const breadcrumbSchema = JSON.stringify({
   title="Invest in Canggu, Bali | 15–20% Rental Yields | Ayla Property"
   description="Buy a villa in Canggu — Bali's most in-demand investment area. Earn 15–20% rental yields with year-round occupancy. Free investment consultation with Ayla Property."
   ogType="website"
+  ogImage="/og-canggu.jpg"
 >
   <Fragment slot="head">
     <link rel="preload" as="image" href="/images/hero-villa.jpg" fetchpriority="high" />
@@ -142,6 +144,7 @@ const breadcrumbSchema = JSON.stringify({
     <Testimonials />
     <Team />
 
+    <Journal />
     <FAQ
       eyebrow="Canggu Property FAQ"
       title="Canggu Questions Answered"
