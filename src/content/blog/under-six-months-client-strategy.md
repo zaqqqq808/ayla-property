@@ -67,3 +67,6 @@ Not bad, eh?
 If you want us to find you a deal like that—or if you want access to our "Uber spreadsheet"—get in touch.
 
 We know where the value is hiding in this market. If you are interested and ready to invest, **[talk to us](https://calendly.com/zaq-lengmedia/30min)**.
+---
+
+*The strategy we used relies on understanding the leasehold model — read [why smart foreign investors prefer leasehold](/journal/why-investors-prefer-leasehold/). And if you are still deciding whether Bali is right for you, start with [our 2026 market overview](/journal/is-bali-still-good-investment-2026/).*

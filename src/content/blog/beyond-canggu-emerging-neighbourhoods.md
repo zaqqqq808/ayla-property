@@ -51,3 +51,6 @@ The window to get into these areas at "early bird" prices is narrowing.
 If you are interested in these neighbourhoods and are ready to start investing, we are here to help. We have boots on the ground in Seseh, The Bukit, and Kedungu, scouting the best plots and villas before they hit the open market.
 
 Don't guess with your capital. [Talk to us. ](https://calendly.com/zaq-lengmedia/30min)
+---
+
+*Not sure whether to go leasehold or freehold in these emerging areas? Read [why smart investors prefer leasehold for higher ROI](/journal/why-investors-prefer-leasehold/). Or see a [real client case study from Kedungu](/journal/under-six-months-client-strategy/).*

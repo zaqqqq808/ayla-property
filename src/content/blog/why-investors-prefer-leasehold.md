@@ -65,3 +65,6 @@ But if you are an investor looking to maximise your capital, don't get hung up o
 We can show you side-by-side comparisons of Freehold vs. Leasehold opportunities available right now, so you can see precisely how the ROI differs.
 
 If you are interested and ready to invest, **[talk to us](https://calendly.com/zaq-lengmedia/30min)**.
+---
+
+*See the leasehold strategy in action: [how we made $50k profit for a client in under 6 months](/journal/under-six-months-client-strategy/). Or if you are still researching the market, read [our full 2026 Bali investment overview](/journal/is-bali-still-good-investment-2026/).*

@@ -1,7 +1,7 @@
 ---
 title: "Bali Real Estate vs. The World: Why 2026 ROI Forecasts Outperform Dubai & Gold Coast"
 description: "Bali delivers 12% net ROI vs Dubai’s 8% — and it’s not close. We compare real returns, legal structures, and lifestyle across three markets to show why smart investors are choosing Bali in 2026."
-publishDate: 2025-05-06
+publishDate: 2025-12-04
 image: /images/journal/bali-vs-world.jpg
 tags: ["comparison", "roi", "global"]
 ---
@@ -47,3 +47,7 @@ If you are waiting for the "bubble" to burst, you might be waiting a long time. 
 
 If you are tired of standard 4% returns and are ready to make your capital work harder, we should chat.
 We know the market, we know the numbers, and we know how to navigate Bali safely. If you are interested and ready to invest, [talk to us](https://calendly.com/zaq-lengmedia/30min).
+
+---
+
+*Interested in where specifically to invest? Read our guide to [the three emerging Bali neighbourhoods where smart money is moving in 2026](/journal/beyond-canggu-emerging-neighbourhoods/), or explore [whether Bali is still a good investment this year](/journal/is-bali-still-good-investment-2026/).*
