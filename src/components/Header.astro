@@ -2,10 +2,14 @@
 import CalendlyButton from './CalendlyButton.astro';
 
 const navItems = [
-  { label: 'Invest in Canggu', href: '/invest/canggu/' },
   { label: 'Our Method', href: '/#methodology' },
-  { label: 'Journal', href: '/journal' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'Journal',    href: '/journal' },
+  { label: 'Contact',    href: '/#contact' },
+];
+
+const locations = [
+  { label: 'Invest in Canggu',  href: '/invest/canggu/' },
+  { label: 'Invest in Uluwatu', href: '/invest/uluwatu/' },
 ];
 ---
 <header class="absolute top-0 left-0 right-0 z-50 px-6 lg:px-12 py-6">
@@ -14,7 +18,45 @@ const navItems = [
       <img src="/logo.png" alt="Ayla Property" class="h-12 lg:h-14 w-auto" />
     </a>
 
+    <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
+
+      <!-- Invest by Location dropdown -->
+      <div class="relative group">
+        <button
+          class="text-white hover:text-gold transition-colors text-sm uppercase tracking-widest font-semibold drop-shadow-sm flex items-center gap-1"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="location-menu-btn"
+        >
+          Invest by Location
+          <svg class="w-3 h-3 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+
+        <!-- Dropdown panel -->
+        <div
+          class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 rounded-xl bg-cream shadow-2xl border border-beige/60
+                 opacity-0 -translate-y-1 pointer-events-none
+                 group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
+                 transition-all duration-200 ease-out"
+          role="menu"
+        >
+          <div class="py-2">
+            {locations.map(({ label, href }) => (
+              <a
+                href={href}
+                role="menuitem"
+                class="block px-5 py-3 text-brown hover:bg-beige hover:text-olive transition-colors text-sm uppercase tracking-widest font-semibold"
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {navItems.map(({ label, href }) => (
         <a
           href={href}
@@ -23,10 +65,11 @@ const navItems = [
           {label}
         </a>
       ))}
+
       <CalendlyButton text="Schedule a Call" variant="olive" />
     </nav>
 
-    <!-- Animated hamburger button -->
+    <!-- Hamburger -->
     <button
       id="mobile-menu-toggle"
       class="md:hidden text-white w-8 h-8 flex flex-col justify-center items-center gap-[5px] relative"
@@ -34,13 +77,13 @@ const navItems = [
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
-      <span id="bar-top"    class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300 origin-center"></span>
-      <span id="bar-mid"    class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300"></span>
-      <span id="bar-bot"    class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300 origin-center"></span>
+      <span id="bar-top" class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300 origin-center"></span>
+      <span id="bar-mid" class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300"></span>
+      <span id="bar-bot" class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300 origin-center"></span>
     </button>
   </div>
 
-  <!-- Mobile menu — animated slide + fade -->
+  <!-- Mobile menu -->
   <div
     id="mobile-menu"
     class="md:hidden absolute top-full left-0 right-0 mx-6 mt-2 rounded-xl overflow-hidden
@@ -50,15 +93,42 @@ const navItems = [
     aria-hidden="true"
   >
     <nav class="flex flex-col py-3" aria-label="Mobile">
+
+      <!-- Invest by Location accordion -->
+      <div class="border-b border-beige/50">
+        <button
+          id="mobile-location-toggle"
+          class="menu-item w-full px-6 py-4 text-brown uppercase tracking-widest text-sm font-semibold opacity-0 translate-x-2 transition-all duration-200 flex items-center justify-between"
+          style="transition-delay: 60ms"
+          aria-expanded="false"
+        >
+          Invest by Location
+          <svg id="mobile-location-chevron" class="w-3 h-3 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="mobile-location-sub" class="hidden flex-col bg-beige/40">
+          {locations.map(({ label, href }) => (
+            <a
+              href={href}
+              class="mobile-sub-item px-8 py-3 text-brown/80 hover:text-olive uppercase tracking-widest text-xs font-semibold transition-colors"
+            >
+              {label}
+            </a>
+          ))}
+        </div>
+      </div>
+
       {navItems.map(({ label, href }, i) => (
         <a
           href={href}
-          style={`transition-delay: ${60 + i * 40}ms`}
+          style={`transition-delay: ${100 + i * 40}ms`}
           class="menu-item px-6 py-4 text-brown hover:bg-beige uppercase tracking-widest text-sm font-semibold border-b border-beige/50 last:border-0 transition-all duration-200 opacity-0 translate-x-2 text-center"
         >
           {label}
         </a>
       ))}
+
       <div class="menu-item px-6 py-4 opacity-0 translate-x-2 transition-all duration-200 text-center" style="transition-delay: 220ms">
         <CalendlyButton text="Schedule a Call" variant="olive" />
       </div>
@@ -67,6 +137,7 @@ const navItems = [
 </header>
 
 <script>
+  // ── Hamburger ────────────────────────────────────────────────────────────────
   const toggle = document.getElementById('mobile-menu-toggle');
   const menu   = document.getElementById('mobile-menu');
   const barTop = document.getElementById('bar-top');
@@ -80,18 +151,12 @@ const navItems = [
     isOpen = true;
     toggle?.setAttribute('aria-expanded', 'true');
     menu?.setAttribute('aria-hidden', 'false');
-
-    // Animate menu in
     menu?.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
     menu?.classList.add('opacity-100', 'translate-y-0');
-
-    // Stagger items in
-    items?.forEach((item) => {
+    items?.forEach(item => {
       item.classList.remove('opacity-0', 'translate-x-2');
       item.classList.add('opacity-100', 'translate-x-0');
     });
-
-    // Animate bars → X
     barTop?.classList.add('rotate-45', 'translate-y-[7px]');
     barMid?.classList.add('opacity-0', 'scale-x-0');
     barBot?.classList.add('-rotate-45', '-translate-y-[7px]');
@@ -101,25 +166,37 @@ const navItems = [
     isOpen = false;
     toggle?.setAttribute('aria-expanded', 'false');
     menu?.setAttribute('aria-hidden', 'true');
-
-    // Animate menu out
     menu?.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
     menu?.classList.remove('opacity-100', 'translate-y-0');
-
-    // Reset items
-    items?.forEach((item) => {
+    items?.forEach(item => {
       item.classList.add('opacity-0', 'translate-x-2');
       item.classList.remove('opacity-100', 'translate-x-0');
     });
-
-    // Animate bars → hamburger
     barTop?.classList.remove('rotate-45', 'translate-y-[7px]');
     barMid?.classList.remove('opacity-0', 'scale-x-0');
     barBot?.classList.remove('-rotate-45', '-translate-y-[7px]');
   }
 
   toggle?.addEventListener('click', () => isOpen ? closeMenu() : openMenu());
-
-  // Close when a nav link is clicked
   menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+  // ── Mobile location accordion ────────────────────────────────────────────────
+  const locToggle  = document.getElementById('mobile-location-toggle');
+  const locSub     = document.getElementById('mobile-location-sub');
+  const locChevron = document.getElementById('mobile-location-chevron');
+  let locOpen = false;
+
+  locToggle?.addEventListener('click', () => {
+    locOpen = !locOpen;
+    locToggle.setAttribute('aria-expanded', String(locOpen));
+    if (locOpen) {
+      locSub?.classList.remove('hidden');
+      locSub?.classList.add('flex');
+      locChevron?.classList.add('rotate-180');
+    } else {
+      locSub?.classList.add('hidden');
+      locSub?.classList.remove('flex');
+      locChevron?.classList.remove('rotate-180');
+    }
+  });
 </script>

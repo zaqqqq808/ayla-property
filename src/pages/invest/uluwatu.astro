@@ -1,0 +1,151 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header.astro';
+import Hero from '@/components/Hero.astro';
+import StatsBar from '@/components/StatsBar.astro';
+import WhyBali from '@/components/WhyBali.astro';
+import PropertyCarousel from '@/components/PropertyCarousel.astro';
+import Methodology from '@/components/Methodology.astro';
+import Testimonials from '@/components/Testimonials.astro';
+import Team from '@/components/Team.astro';
+import FAQ from '@/components/FAQ.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+
+const uluwatуReasons = [
+  {
+    stat: '15–18%',
+    statTo: [15, 18],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Rental Yields',
+    description: 'Uluwatu commands premium nightly rates due to its clifftop setting and luxury profile — delivering consistent 15–18% gross rental yields.',
+  },
+  {
+    stat: '70%+',
+    statTo: [70],
+    statSuffix: '%+',
+    statSep: '',
+    title: 'Average Occupancy',
+    description: "World-renowned surf breaks and Bali's most dramatic ocean views draw high-spending tourists year-round, sustaining strong villa occupancy.",
+  },
+  {
+    stat: '3–5×',
+    statTo: [3, 5],
+    statSuffix: '×',
+    statSep: '–',
+    title: 'Capital Appreciation',
+    description: 'Clifftop land in Uluwatu is finite and increasingly scarce. As demand grows and supply tightens, capital values continue their upward trajectory.',
+  },
+  {
+    stat: '30min',
+    statTo: [30],
+    statSuffix: 'min',
+    statSep: '',
+    title: 'From The Airport',
+    description: "Uluwatu sits just 30 minutes from Ngurah Rai International Airport — giving guests an effortless arrival and maximising your villa's booking appeal.",
+  },
+];
+
+const uluwatуFaqs = [
+  {
+    q: 'What makes Uluwatu different from Canggu for investment?',
+    a: "Uluwatu appeals to a different type of buyer and guest. Where Canggu attracts digital nomads and surfers looking for community, Uluwatu draws high-spending luxury travellers and surf purists seeking dramatic clifftop views and world-class breaks. Nightly rates are typically higher, and the guest profile tends to spend more — which supports strong yields even at slightly lower occupancy than Canggu.",
+  },
+  {
+    q: 'What types of property are available in Uluwatu?',
+    a: 'The Uluwatu market is predominantly private villas, many with infinity pools and Indian Ocean views. Clifftop plots are the most sought-after and the scarcest. Off-plan villa developments are active in the Bingin, Padang Padang, and Balangan areas — these typically offer the best entry pricing and strongest upside. We also see boutique villa estates of 3–6 units performing exceptionally well as managed investments.',
+  },
+  {
+    q: 'What are typical villa prices in Uluwatu?',
+    a: 'Leasehold villa prices in Uluwatu generally start from around $180,000–$250,000 USD for a 1–2 bedroom. Clifftop 3-bedroom villas with ocean views typically range from $350,000–$700,000. Premium compounds with direct cliff access can exceed $1M. Off-plan pricing often comes in 15–20% below completed market value, which is where we focus for investor clients.',
+  },
+  {
+    q: 'Is Uluwatu popular enough for short-term rentals?',
+    a: "Absolutely. Uluwatu has become one of Bali's most searched destinations on short-term rental platforms, particularly for luxury travellers and surf trips. The Bukit Peninsula — which encompasses Uluwatu, Bingin, Padang Padang and Balangan — attracts a high-value tourist who books longer stays and pays premium rates. Average nightly rates for a well-positioned Uluwatu villa can exceed those in Canggu.",
+  },
+  {
+    q: 'Can foreigners buy property in Uluwatu?',
+    a: 'Yes — the same ownership structures available across Bali apply in Uluwatu. Leasehold agreements (typically 25–30 years, renewable) are the most common route for foreign investors. Freehold ownership is possible via a PT PMA company structure. We walk every client through both options and help identify the right structure for their situation and long-term goals.',
+  },
+  {
+    q: 'What areas within Uluwatu are best for investment?',
+    a: "Within the broader Uluwatu area, Bingin and Padang Padang offer the best combination of surf access, views, and development activity. Balangan is emerging strongly with lower entry prices and growing infrastructure. Uluwatu village itself suits buyers seeking the most dramatic clifftop settings. We assess each micro-location based on access, view lines, rental comparables and planning permissions — and advise accordingly.",
+  },
+];
+
+const siteBase = 'https://www.aylaproperty.com';
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",             "item": `${siteBase}/` },
+    { "@type": "ListItem", "position": 2, "name": "Invest in Uluwatu","item": `${siteBase}/invest/uluwatu/` },
+  ]
+});
+---
+<BaseLayout
+  title="Invest in Uluwatu, Bali | Clifftop Villas & 15–18% Yields | Ayla Property"
+  description="Buy a villa in Uluwatu — Bali's premium clifftop investment area. Dramatic ocean views, 15–18% rental yields, and scarce land supply. Free consultation with Ayla Property."
+  ogType="website"
+>
+  <Fragment slot="head">
+    <link rel="preload" as="image" href="/images/hero-villa.jpg" fetchpriority="high" />
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+  <main>
+    <Hero
+      eyebrow="Bali Real Estate Investment — Uluwatu"
+      headlineHtml="Invest in<br />Uluwatu"
+      subline="Bali's premium clifftop market — dramatic ocean views, luxury demand, scarce land"
+      ctaText="Book a Free Investment Call"
+    />
+
+    <StatsBar />
+
+    <section class="bg-white py-16 px-6 lg:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-4">Why Uluwatu</p>
+        <p class="text-brown/80 text-lg leading-relaxed">
+          Perched on the dramatic limestone cliffs of Bali's Bukit Peninsula, Uluwatu offers something
+          no other area on the island can replicate — sweeping Indian Ocean views, world-class surf
+          breaks, and a sense of elevated seclusion that attracts high-spending travellers willing to
+          pay premium rates. It is Bali's luxury investment frontier.
+        </p>
+        <p class="text-brown/70 text-base leading-relaxed mt-4">
+          Clifftop land in Uluwatu is finite. As Bali's tourism numbers continue to grow and premium
+          travellers increasingly seek alternatives to Canggu's busier streets, Uluwatu's scarcity
+          premium only strengthens — making it one of the island's most compelling long-term
+          capital appreciation plays.
+        </p>
+      </div>
+    </section>
+
+    <WhyBali
+      eyebrow="The Uluwatu Opportunity"
+      titleHtml="Why Investors<br />Choose Uluwatu"
+      subtitle="Uluwatu's clifftop setting, luxury appeal, and finite land supply combine to create one of Bali's strongest investment cases — particularly for buyers focused on capital growth."
+      ctaText="Find Out If Uluwatu Is Right For You"
+      reasons={uluwatуReasons}
+    />
+
+    <PropertyCarousel />
+
+    <Methodology />
+    <Testimonials />
+    <Team />
+
+    <FAQ
+      eyebrow="Uluwatu Property FAQ"
+      title="Uluwatu Questions Answered"
+      faqs={uluwatуFaqs}
+    />
+
+    <ContactCTA />
+  </main>
+  <Footer />
+  <StickyButton />
+</BaseLayout>
