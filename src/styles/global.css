@@ -28,18 +28,16 @@
     @apply inline-block px-8 py-3 font-semibold uppercase tracking-widest text-sm transition-all duration-200 cursor-pointer rounded-full;
   }
   .btn-olive {
-    @apply btn;
-    background: #7ED49A;
-    color: #0f2d1a;
-    border: 1.5px solid rgba(0,0,0,0.10);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.06);
-    text-shadow: none;
+    @apply btn text-white;
+    background: #2A7A55;
+    border: 1.5px solid rgba(0,0,0,0.12);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.14), 0 1px 2px rgba(0,0,0,0.08);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.18);
   }
   .btn-olive:hover {
-    background: #69C688;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.08);
+    background: #1E6244;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18), 0 1px 4px rgba(0,0,0,0.10);
     transform: translateY(-1px);
-    border-color: rgba(0,0,0,0.14);
   }
   .btn-brown {
     @apply btn text-white;
