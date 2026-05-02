@@ -1,0 +1,87 @@
+---
+// PropertyCarousel.astro
+// Auto-scrolling property image strip — no interaction, pure wow factor
+// Replace the src values below with real property images when ready
+
+const images = [
+  { src: '/carousel/property-1.jpg', alt: 'Luxury Bali villa with pool' },
+  { src: '/carousel/property-2.jpg', alt: 'Modern villa in Canggu' },
+  { src: '/carousel/property-3.jpg', alt: 'Tropical villa in Seminyak' },
+  { src: '/carousel/property-4.jpg', alt: 'Investment property Uluwatu' },
+  { src: '/carousel/property-5.jpg', alt: 'Private villa with rice field views' },
+  { src: '/carousel/property-6.jpg', alt: 'Luxury pool villa Kedungu' },
+];
+
+// Duplicate for seamless infinite loop
+const doubled = [...images, ...images];
+---
+
+<div class="carousel-wrapper" aria-hidden="true">
+  <div class="carousel-track">
+    {doubled.map((img) => (
+      <div class="carousel-slide">
+        <img
+          src={img.src}
+          alt={img.alt}
+          draggable="false"
+          onerror="this.style.background='#1a1a1a';this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'"
+        />
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    user-select: none;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    background: #111;
+  }
+
+  .carousel-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 28s linear infinite;
+    will-change: transform;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .carousel-track {
+      animation: none;
+    }
+  }
+
+  .carousel-slide {
+    flex-shrink: 0;
+    width: 420px;
+    height: 280px;
+    border-right: 1px solid #1a1a1a;
+    overflow: hidden;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-slide {
+      width: 280px;
+      height: 200px;
+    }
+    .carousel-track {
+      animation-duration: 20s;
+    }
+  }
+</style>
