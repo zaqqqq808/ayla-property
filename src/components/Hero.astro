@@ -1,33 +1,51 @@
 ---
 import CalendlyButton from './CalendlyButton.astro';
+
+interface Props {
+  eyebrow?:       string;
+  headlineHtml?:  string;
+  subline?:       string;
+  image?:         string;
+  imageAlt?:      string;
+  imagePosition?: string;
+  ctaText?:       string;
+}
+
+const {
+  eyebrow       = 'Bali Real Estate Investment',
+  headlineHtml  = 'Earn 15%+<br />Returns in Bali',
+  subline       = 'We find, vet and negotiate you the best deal for your individual needs',
+  image         = '/images/hero-villa.jpg',
+  imageAlt      = 'Luxury Bali villa with infinity pool overlooking the ocean at sunset',
+  imagePosition = '65% 40%',
+  ctaText       = 'Book a Free Investment Call',
+} = Astro.props;
 ---
 <section class="relative overflow-hidden min-h-screen flex items-center justify-center">
 
-  <!-- Background image — positioned to crop out top-left logo corner -->
   <img
-    src="/images/hero-villa.jpg"
-    alt="Luxury Bali villa with infinity pool overlooking the ocean at sunset"
+    src={image}
+    alt={imageAlt}
     class="absolute inset-0 w-full h-full object-cover"
-    style="object-position: 65% 40%;"
+    style={`object-position: ${imagePosition};`}
     loading="eager"
   />
 
-  <!-- Subtle overlay for text readability -->
   <div class="absolute inset-0 bg-black/30"></div>
 
-  <!-- Content -->
   <div class="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 py-40 text-center flex flex-col items-center space-y-6">
     <p class="text-white uppercase tracking-widest text-sm font-semibold">
-      Bali Real Estate Investment
+      {eyebrow}
     </p>
-    <h1 class="text-white/85 text-5xl md:text-6xl lg:text-7xl font-display leading-tight uppercase">
-      Earn 15%+<br />Returns in Bali
-    </h1>
+    <h1
+      class="text-white/85 text-5xl md:text-6xl lg:text-7xl font-display leading-tight uppercase"
+      set:html={headlineHtml}
+    />
     <p class="text-white uppercase tracking-widest text-sm font-semibold">
-      We find, vet and negotiate you the best deal for your individual needs
+      {subline}
     </p>
     <div class="pt-2">
-      <CalendlyButton text="Book a Free Investment Call" variant="olive" />
+      <CalendlyButton text={ctaText} variant="olive" />
     </div>
   </div>
 

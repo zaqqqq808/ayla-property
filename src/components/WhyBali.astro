@@ -1,51 +1,63 @@
 ---
 import CalendlyButton from './CalendlyButton.astro';
 
-const reasons = [
+interface Reason {
+  stat:       string;
+  statTo:     number[];
+  statSuffix: string;
+  statSep:    string;
+  title:      string;
+  description: string;
+}
+
+interface Props {
+  eyebrow?:  string;
+  titleHtml?: string;
+  subtitle?: string;
+  ctaText?:  string;
+  reasons?:  Reason[];
+}
+
+const defaultReasons: Reason[] = [
   {
-    stat: '17M+',
-    statTo: [17],
-    statSuffix: 'M+',
-    statSep: '',
+    stat: '17M+', statTo: [17], statSuffix: 'M+', statSep: '',
     title: 'Tourists Per Year',
     description: 'Bali draws over 17 million visitors annually, creating massive and consistent demand for short-term villa rentals.',
   },
   {
-    stat: '15%+',
-    statTo: [15],
-    statSuffix: '%+',
-    statSep: '',
+    stat: '15%+', statTo: [15], statSuffix: '%+', statSep: '',
     title: 'Rental Yields',
     description: 'Bali consistently delivers 15%+ gross rental yields — compared to 3–5% in the UK, Australia, or US.',
   },
   {
-    stat: '10 Yr',
-    statTo: [10],
-    statSuffix: ' Yr',
-    statSep: '',
+    stat: '10 Yr', statTo: [10], statSuffix: ' Yr', statSep: '',
     title: 'Visa Now Available',
     description: "Indonesia's new 10-year visa makes it easier than ever for foreign investors to live, work, and invest in Bali.",
   },
   {
-    stat: '3–5×',
-    statTo: [3, 5],
-    statSuffix: '×',
-    statSep: '–',
+    stat: '3–5×', statTo: [3, 5], statSuffix: '×', statSep: '–',
     title: 'Capital Appreciation',
     description: 'Prime Bali areas have seen property values multiply 3–5× over the past decade, with no signs of slowing.',
   },
 ];
+
+const {
+  eyebrow  = 'The Opportunity',
+  titleHtml = 'Why Smart Investors<br />Choose Bali',
+  subtitle = 'While Western property markets stagnate, Bali continues to deliver exceptional returns driven by surging tourism and limited prime land.',
+  ctaText  = 'Find Out If Bali Is Right For You',
+  reasons  = defaultReasons,
+} = Astro.props;
 ---
 <section class="bg-cream pt-8 pb-20 lg:py-32 px-6 lg:px-12">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-10">
-      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">The Opportunity</p>
-      <h2 class="text-brown text-3xl lg:text-4xl font-display uppercase mb-6 tracking-wide">
-        Why Smart Investors<br />Choose Bali
-      </h2>
-      <p class="text-brown/70 text-lg max-w-2xl mx-auto">
-        While Western property markets stagnate, Bali continues to deliver exceptional returns driven by surging tourism and limited prime land.
-      </p>
+      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">{eyebrow}</p>
+      <h2
+        class="text-brown text-3xl lg:text-4xl font-display uppercase mb-6 tracking-wide"
+        set:html={titleHtml}
+      />
+      <p class="text-brown/70 text-lg max-w-2xl mx-auto">{subtitle}</p>
     </div>
 
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -67,7 +79,7 @@ const reasons = [
     </div>
 
     <div class="text-center">
-      <CalendlyButton text="Find Out If Bali Is Right For You" variant="brown" />
+      <CalendlyButton text={ctaText} variant="brown" />
     </div>
   </div>
 </section>

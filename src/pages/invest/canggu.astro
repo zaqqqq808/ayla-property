@@ -1,0 +1,155 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header.astro';
+import Hero from '@/components/Hero.astro';
+import StatsBar from '@/components/StatsBar.astro';
+import WhyBali from '@/components/WhyBali.astro';
+import PropertyCarousel from '@/components/PropertyCarousel.astro';
+import Methodology from '@/components/Methodology.astro';
+import Testimonials from '@/components/Testimonials.astro';
+import Team from '@/components/Team.astro';
+import FAQ from '@/components/FAQ.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+
+// ── Canggu-specific stats ─────────────────────────────────────────────────────
+const cangguReasons = [
+  {
+    stat: '33%',
+    statTo: [33],
+    statSuffix: '%',
+    statSep: '',
+    title: 'Of Bali Transactions',
+    description: "Canggu accounts for roughly a third of all villa transactions on the island — making it Bali's most liquid and in-demand property market.",
+  },
+  {
+    stat: '15–20%',
+    statTo: [15, 20],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Rental Yields',
+    description: 'Premium short-term rental demand from tourists and digital nomads pushes Canggu yields above the Bali average — consistently 15–20% gross.',
+  },
+  {
+    stat: '85%+',
+    statTo: [85],
+    statSuffix: '%+',
+    statSep: '',
+    title: 'Average Occupancy',
+    description: 'The digital nomad community fills gaps between peak tourist seasons, keeping Canggu villas occupied year-round at rates other areas cannot match.',
+  },
+  {
+    stat: '3–5×',
+    statTo: [3, 5],
+    statSuffix: '×',
+    statSep: '–',
+    title: 'Capital Appreciation',
+    description: "Prime Canggu land values have multiplied 3–5× over the past decade as the area transformed from a surf village into Bali's most sought-after address.",
+  },
+];
+
+// ── Canggu-specific FAQs ──────────────────────────────────────────────────────
+const cangguFaqs = [
+  {
+    q: 'What types of property are available in Canggu?',
+    a: 'The Canggu market is dominated by private villas — ranging from 1–2 bedroom boutique villas to larger 4–5 bedroom luxury compounds. Off-plan developments are increasingly common, often offering the best yields and capital growth potential. We source across all types and match you to what fits your budget and goals.',
+  },
+  {
+    q: 'What are typical villa prices in Canggu?',
+    a: 'Entry-level Canggu villas start from around $150,000–$200,000 USD for a 1–2 bedroom on leasehold. Mid-range 3-bedroom villas in premium locations typically sit between $300,000–$500,000. Larger compounds and freehold titles command $600,000+. Off-plan pricing is often 15–20% below completed market value.',
+  },
+  {
+    q: 'What rental yields can I expect from a Canggu villa?',
+    a: 'Canggu consistently delivers 15–20% gross rental yields, with net returns of 10–14% after management fees and running costs. Short-term rental platforms (Airbnb, Booking.com) drive strong occupancy, and digital nomad demand keeps revenue flowing outside peak tourist months.',
+  },
+  {
+    q: 'Is Canggu good for short-term rentals?',
+    a: "Canggu is one of Bali's strongest short-term rental markets. It attracts digital nomads year-round, surfers in the dry season, and mainstream tourists throughout. This diversity of demand means you're not reliant on a single visitor type — which stabilises occupancy and reduces seasonal dips.",
+  },
+  {
+    q: 'How does Canggu compare to Uluwatu or Seminyak for investment?',
+    a: "Canggu leads on transaction volume and liquidity — it's easier to buy and sell here than anywhere else in Bali. Uluwatu offers strong yields with a more upscale, cliff-top profile. Seminyak is more established but has less room for capital growth. Canggu tends to offer the best balance of yield, growth, and exit flexibility.",
+  },
+  {
+    q: 'Is Canggu becoming oversupplied?',
+    a: "It's a fair question. New supply is entering the market, but demand has grown at a faster rate. The digital nomad population in Canggu has increased year-on-year since 2021, and Bali's tourism numbers continue to break records. Well-located, well-managed villas are not experiencing softening — but location and quality selection matters more than ever, which is exactly where we add value.",
+  },
+];
+
+// ── Schema ────────────────────────────────────────────────────────────────────
+const siteBase = 'https://www.aylaproperty.com';
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",            "item": `${siteBase}/` },
+    { "@type": "ListItem", "position": 2, "name": "Invest in Canggu","item": `${siteBase}/invest/canggu/` },
+  ]
+});
+---
+<BaseLayout
+  title="Invest in Canggu, Bali | 15–20% Rental Yields | Ayla Property"
+  description="Buy a villa in Canggu — Bali's most in-demand investment area. Earn 15–20% rental yields with year-round occupancy. Free investment consultation with Ayla Property."
+  ogType="website"
+>
+  <Fragment slot="head">
+    <link rel="preload" as="image" href="/images/hero-villa.jpg" fetchpriority="high" />
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+  <main>
+    <Hero
+      eyebrow="Bali Real Estate Investment — Canggu"
+      headlineHtml="Invest in<br />Canggu"
+      subline="Bali's #1 investment area — 15–20% yields, year-round rental demand"
+      ctaText="Book a Free Investment Call"
+    />
+
+    <StatsBar />
+
+    <!-- Canggu area intro -->
+    <section class="bg-white py-16 px-6 lg:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-4">Why Canggu</p>
+        <p class="text-brown/80 text-lg leading-relaxed">
+          Once a quiet surf village on Bali's southwest coast, Canggu has become the island's most
+          dynamic investment hub. A thriving digital nomad scene, world-class surf breaks, and a
+          dense cluster of restaurants, co-working spaces and beach clubs drive year-round occupancy
+          that few other Bali areas can match. Villa prices remain accessible compared to Western
+          markets — while yields consistently outperform them.
+        </p>
+        <p class="text-brown/70 text-base leading-relaxed mt-4">
+          Canggu accounts for roughly 33% of all Bali villa transactions, making it the island's
+          most liquid market. That liquidity matters — it means a clear exit path when you're ready
+          to sell, and strong comparable data when negotiating your purchase price.
+        </p>
+      </div>
+    </section>
+
+    <WhyBali
+      eyebrow="The Canggu Opportunity"
+      titleHtml="Why Investors<br />Choose Canggu"
+      subtitle="Canggu delivers Bali's strongest combination of rental yield, occupancy, and capital growth — backed by the island's highest-demand rental market."
+      ctaText="Find Out If Canggu Is Right For You"
+      reasons={cangguReasons}
+    />
+
+    <PropertyCarousel />
+
+    <Methodology />
+    <Testimonials />
+    <Team />
+
+    <FAQ
+      eyebrow="Canggu Property FAQ"
+      title="Canggu Questions Answered"
+      faqs={cangguFaqs}
+    />
+
+    <ContactCTA />
+  </main>
+  <Footer />
+  <StickyButton />
+</BaseLayout>

@@ -1,5 +1,16 @@
 ---
-const faqs = [
+interface FaqItem {
+  q: string;
+  a: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  title?:   string;
+  faqs?:    FaqItem[];
+}
+
+const defaultFaqs: FaqItem[] = [
   {
     q: 'Can foreigners legally own property in Bali?',
     a: 'Yes — through leasehold agreements (typically 25–30 years, renewable) or via a PMA company structure for freehold. We guide every client through the right ownership structure for their situation.',
@@ -26,6 +37,12 @@ const faqs = [
   },
 ];
 
+const {
+  eyebrow = 'FAQ',
+  title   = 'Common Questions',
+  faqs    = defaultFaqs,
+} = Astro.props;
+
 const faqSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -42,9 +59,9 @@ const faqSchema = JSON.stringify({
 <section class="bg-cream pt-8 pb-20 lg:pt-12 lg:pb-32 px-6 lg:px-12">
   <div class="max-w-4xl mx-auto">
     <div class="text-center mb-16">
-      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">FAQ</p>
+      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">{eyebrow}</p>
       <h2 class="text-brown text-4xl lg:text-5xl font-display uppercase tracking-wide">
-        Common Questions
+        {title}
       </h2>
     </div>
 
