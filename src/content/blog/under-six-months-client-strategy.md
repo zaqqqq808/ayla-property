@@ -21,7 +21,7 @@ To me, this translated to a particular checklist:
 
 Here is how we turned that brief into a massive win.
 
-### The "Uber Spreadsheet"
+## The "Uber Spreadsheet"
 Here at Ayla, we pride ourselves on our data. We don't just guess; we track everything. We have an "Uber spreadsheet" containing information on almost every credible developer in Bali and every active project.
 
 We started filtering. We looked for a minimum 28-year leaseholds (to maximise ROI runway) and filtered the market down to 6 specific developments that fit the criteria.
@@ -30,7 +30,7 @@ From those 6, we compared them head-to-head. We looked at potential rent, land s
 
 We eventually cut that list down to 3 strong contenders. Then, we went to work.
 
-### Going to War
+## Going to War
 Once we picked the target, we went to war for our clients.
 
 I am not going to divulge our exact negotiation tactics (trade secrets, after all), but here is the deal we structured.
@@ -41,7 +41,7 @@ Most agents would have stopped there. We didn't. Based on the promise of one sin
 
 Even we were impressed with ourselves on that one.
 
-### The "Runt of the Litter" Strategy
+## The "Runt of the Litter" Strategy
 Now, here is the secret sauce. The unit we bought was technically the "runt of the litter."
 
 It was relatively the "worst" positioned unit in a pool of 6 apartments being built in **Umalas**. If you were buying a home to live in, this might be a negative. But if you are investing? It was a stroke of genius.
@@ -52,7 +52,7 @@ In this specific development, the rental income is pooled. The revenue from all 
 
 By buying the cheapest unit (the "runt") for $130k, our clients get the same return as the guys who paid full price for the "best" unit.
 
-### The Result
+## The Result
 The numbers speak for themselves.
 
 Based on conservative estimates, the rental ROI for this place—after all management fees and taxes—will sit around **15%**.
@@ -63,7 +63,7 @@ Because we bought well and negotiated hard, our clients are sitting on an immedi
 
 Not bad, eh?
 
-### Ready to invest?
+## Ready to invest?
 If you want us to find you a deal like that—or if you want access to our "Uber spreadsheet"—get in touch.
 
 We know where the value is hiding in this market. If you are interested and ready to invest, **[talk to us](https://calendly.com/zaq-lengmedia/30min)**.
