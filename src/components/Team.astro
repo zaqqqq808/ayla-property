@@ -24,15 +24,15 @@ const team = [
 ---
 <section id="team" class="bg-cream pt-20 pb-8 lg:pt-32 lg:pb-12 px-6 lg:px-12">
   <div class="max-w-7xl mx-auto">
-    <h2 class="text-brown text-4xl lg:text-5xl text-center font-display uppercase mb-4 tracking-wide">
+    <h2 class="text-brown text-4xl lg:text-5xl text-center font-display uppercase mb-6 tracking-wide">
       Meet the Team
     </h2>
-    <p class="text-brown/60 text-center text-sm tracking-widest uppercase mb-16">
-      Between us, 18 years of experience and 6 languages spoken. Jackie keeps the office free from mice and birds.
+    <p class="text-brown/60 text-center text-sm mb-6">
+      Between team AYLA, we have 18 years of experience and speak 6 languages (and also keep the office free from mice and birds).
     </p>
 
     <!-- Desktop: 4-column grid -->
-    <div class="hidden lg:grid grid-cols-4 gap-6">
+    <div class="hidden lg:grid grid-cols-4 gap-6 mt-6">
       {team.map((member) => (
         <article class="bg-white/60 border border-beige rounded-lg overflow-hidden text-center transition-transform hover:-translate-y-1 hover:shadow-lg">
           <div class="aspect-square bg-beige/40 flex items-center justify-center relative">
@@ -56,7 +56,7 @@ const team = [
     </div>
 
     <!-- Mobile: swipeable carousel -->
-    <div class="lg:hidden relative">
+    <div class="lg:hidden relative mt-6">
       <div
         id="team-carousel"
         class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6"
