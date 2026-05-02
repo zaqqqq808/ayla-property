@@ -36,15 +36,15 @@ const locations = [
           </svg>
         </button>
 
-        <!-- Dropdown panel -->
+        <!-- Dropdown panel — outer div bridges gap (no margin), inner div has visual styling -->
         <div
-          class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 rounded-xl bg-cream shadow-2xl border border-beige/60
+          class="absolute top-full left-1/2 -translate-x-1/2 w-52 pt-2
                  opacity-0 -translate-y-1 pointer-events-none
                  group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
                  transition-all duration-200 ease-out"
           role="menu"
         >
-          <div class="py-2">
+          <div class="rounded-xl bg-cream shadow-2xl border border-beige/60 py-2">
             {locations.map(({ label, href }) => (
               <a
                 href={href}
