@@ -1,11 +1,11 @@
 ---
 // InstagramFeed.astro
-// Replace public/images/instagram/post-1.jpg through post-4.jpg
-// with screenshots of your actual Instagram posts to update the feed.
+// Live feed pulled from Instagram Graph API via /api/instagram (Vercel serverless).
+// Falls back to static placeholder images if token is not yet configured.
 
 const igUrl = 'https://www.instagram.com/aylaproperty/';
 
-const posts = [
+const fallbackPosts = [
   { src: '/images/instagram/post-1.jpg', alt: 'Ayla Property Instagram post 1' },
   { src: '/images/instagram/post-2.jpg', alt: 'Ayla Property Instagram post 2' },
   { src: '/images/instagram/post-3.jpg', alt: 'Ayla Property Instagram post 3' },
@@ -34,24 +34,30 @@ const posts = [
     </a>
   </div>
 
-  <!-- Swipeable carousel -->
-  <div class="ig-track">
-    {posts.map((post) => (
-      <a
-        href={igUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="ig-slide"
-        aria-label="View on Instagram"
-      >
-        <img
-          src={post.src}
-          alt={post.alt}
-          loading="lazy"
-          draggable="false"
-        />
-      </a>
-    ))}
+  <!-- Swipeable carousel — populated by client-side JS from /api/instagram -->
+  <div class="ig-track" id="ig-track" data-ig-url={igUrl}>
+
+    <!-- Skeleton placeholders shown while JS fetches live data -->
+    <div class="ig-skeleton" id="ig-skeleton">
+      {[1,2,3,4].map(() => (
+        <div class="ig-slide ig-slide--skeleton" aria-hidden="true">
+          <div class="ig-skeleton-inner" />
+        </div>
+      ))}
+    </div>
+
+    <!-- Fallback markup (hidden by default, shown if API fails) -->
+    <div class="ig-fallback" id="ig-fallback" style="display:none">
+      {fallbackPosts.map((post) => (
+        <a href={igUrl} target="_blank" rel="noopener noreferrer" class="ig-slide" aria-label="View on Instagram">
+          <img src={post.src} alt={post.alt} loading="lazy" draggable="false" />
+        </a>
+      ))}
+    </div>
+
+    <!-- Live posts injected here by JS -->
+    <div class="ig-live" id="ig-live" style="display:none"></div>
+
   </div>
 </section>
 
@@ -67,12 +73,14 @@ const posts = [
     cursor: grab;
   }
 
-  .ig-track::-webkit-scrollbar {
-    display: none;
-  }
+  .ig-track::-webkit-scrollbar { display: none; }
+  .ig-track:active { cursor: grabbing; }
 
-  .ig-track:active {
-    cursor: grabbing;
+  /* Skeleton & live containers sit side-by-side in the flex row */
+  .ig-skeleton,
+  .ig-fallback,
+  .ig-live {
+    display: contents; /* children participate directly in the flex layout */
   }
 
   .ig-slide {
@@ -83,9 +91,12 @@ const posts = [
     border-radius: 10px;
     overflow: hidden;
     display: block;
+    position: relative;
+    background: #f0ebe4;
   }
 
-  .ig-slide img {
+  .ig-slide img,
+  .ig-slide video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -93,37 +104,115 @@ const posts = [
     transition: transform 0.4s ease;
   }
 
-  .ig-slide:hover img {
+  .ig-slide:hover img,
+  .ig-slide:hover video {
     transform: scale(1.04);
   }
 
+  /* Skeleton shimmer */
+  .ig-slide--skeleton .ig-skeleton-inner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ede8e2 25%, #e0d8cf 50%, #ede8e2 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* Play icon overlay for videos */
+  .ig-play-icon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .ig-play-icon svg {
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+    opacity: 0.85;
+  }
+
   @media (max-width: 768px) {
-    .ig-slide {
-      width: 180px;
-    }
+    .ig-slide { width: 180px; }
   }
 </style>
 
 <script>
-  // Drag to scroll on desktop
-  const track = document.querySelector('.ig-track') as HTMLElement;
-  if (track) {
-    let isDown = false;
-    let startX = 0;
-    let scrollLeft = 0;
+  const igUrl = document.getElementById('ig-track')?.dataset.igUrl || 'https://www.instagram.com/aylaproperty/';
 
+  async function loadInstagramFeed() {
+    const skeleton = document.getElementById('ig-skeleton');
+    const fallback  = document.getElementById('ig-fallback');
+    const live      = document.getElementById('ig-live');
+    if (!live) return;
+
+    try {
+      const res = await fetch('/api/instagram', { cache: 'no-store' });
+      const data = await res.json();
+
+      if (!res.ok || data.fallback || !data.data?.length) {
+        throw new Error(data.error || 'No posts returned');
+      }
+
+      // Build live post cards
+      const posts = data.data.slice(0, 6);
+      const html = posts.map((post: any) => {
+        const isVideo = post.media_type === 'VIDEO';
+        const imgSrc  = isVideo ? post.thumbnail_url : post.media_url;
+        const caption = post.caption ? post.caption.replace(/"/g, '&quot;').slice(0, 125) : 'Ayla Property — Bali real estate';
+        const playIcon = isVideo
+          ? `<div class="ig-play-icon">
+               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <circle cx="20" cy="20" r="20" fill="rgba(0,0,0,0.35)"/>
+                 <polygon points="16,12 30,20 16,28" fill="white"/>
+               </svg>
+             </div>`
+          : '';
+        return `
+          <a href="${post.permalink}" target="_blank" rel="noopener noreferrer"
+             class="ig-slide" aria-label="${caption}">
+            <img src="${imgSrc}" alt="${caption}" loading="lazy" draggable="false" />
+            ${playIcon}
+          </a>`;
+      }).join('');
+
+      live.innerHTML = html;
+      live.style.display = 'contents';
+
+      // Hide skeleton
+      if (skeleton) (skeleton as HTMLElement).style.display = 'none';
+
+    } catch (err) {
+      console.warn('[InstagramFeed] API unavailable, showing fallback:', err);
+      // Show static fallback images
+      if (skeleton) (skeleton as HTMLElement).style.display = 'none';
+      if (fallback)  (fallback as HTMLElement).style.display = 'contents';
+    }
+  }
+
+  loadInstagramFeed();
+
+  // Drag-to-scroll on desktop
+  const track = document.getElementById('ig-track') as HTMLElement;
+  if (track) {
+    let isDown = false, startX = 0, scrollLeft = 0;
     track.addEventListener('mousedown', (e) => {
       isDown = true;
       startX = e.pageX - track.offsetLeft;
       scrollLeft = track.scrollLeft;
     });
     track.addEventListener('mouseleave', () => { isDown = false; });
-    track.addEventListener('mouseup', () => { isDown = false; });
-    track.addEventListener('mousemove', (e) => {
+    track.addEventListener('mouseup',    () => { isDown = false; });
+    track.addEventListener('mousemove',  (e) => {
       if (!isDown) return;
       e.preventDefault();
-      const x = e.pageX - track.offsetLeft;
-      track.scrollLeft = scrollLeft - (x - startX) * 1.5;
+      track.scrollLeft = scrollLeft - (e.pageX - track.offsetLeft - startX) * 1.5;
     });
   }
 </script>
