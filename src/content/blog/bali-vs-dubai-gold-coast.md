@@ -50,7 +50,7 @@ One thing the headline yield numbers don't capture is how much it costs to *get 
 | **Dubai** | $300k–$1M+ | 4% DLD fee | ~2–4% |
 | **Gold Coast** | $600k–$1.5M+ | 3–5% stamp duty | ~2–3% |
 
-Bali wins on entry cost at every tier. You can own a fully managed, income-producing villa in Bali for what a one-bedroom Gold Coast apartment costs — and generate triple the yield while doing it.
+Bali wins on entry cost at every tier. You can own a fully managed, income-producing villa in Bali for what a one-bedroom Gold Coast apartment costs, while generating triple the yield.
 
 ## The Gold Coast Reality Check
 
@@ -66,7 +66,7 @@ One question investors always ask: what happens if the Indonesian Rupiah weakens
 
 The good news is that Bali's rental market is almost entirely USD-denominated. Developers price in USD, short-term rental platforms charge guests in USD or their home currency, and management companies pay out in USD. The IDR is largely irrelevant to your returns unless you're converting large amounts back to a home currency at an unfavourable time.
 
-This is actually an advantage over the Gold Coast, where your rental income, property value, and eventual sale proceeds are all in AUD — fully exposed to currency fluctuation relative to your home currency.
+This is actually an advantage over the Gold Coast, where your rental income, property value, and eventual sale proceeds are all in AUD, fully exposed to currency fluctuation relative to your home currency.
 
 ## Airbnb Restrictions: A Growing Risk in Western Markets
 
@@ -90,7 +90,7 @@ Gross yield comparisons look great on paper. Net yield is what lands in your acc
 | Maintenance reserve | 2–3% of value/year | 1–2% of value/year | 1–2% of value/year |
 | Insurance | ~$500–1,000/year | ~$1,500–2,500/year | ~$2,000–4,000/year |
 
-The Gold Coast column is where the real damage occurs. Once Australian marginal income tax rates are applied to rental income, a nominal 5% gross yield can shrink to 2.5–3% net for a higher-rate taxpayer. Bali's 10% final withholding is fixed and predictable — and if your home country has a DTA with Indonesia, it is often creditable against your domestic liability.
+The Gold Coast column is where the real damage occurs. Once Australian marginal income tax rates are applied to rental income, a nominal 5% gross yield can shrink to 2.5–3% net for a higher-rate taxpayer. Bali's 10% final withholding is fixed and predictable. If your home country has a DTA with Indonesia, it is often creditable against your domestic liability.
 
 ## The Verdict
 

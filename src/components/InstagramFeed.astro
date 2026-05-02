@@ -165,7 +165,7 @@ const fallbackPosts = [
       const html = posts.map((post: any) => {
         const isVideo = post.media_type === 'VIDEO';
         const imgSrc  = isVideo ? post.thumbnail_url : post.media_url;
-        const caption = post.caption ? post.caption.replace(/"/g, '&quot;').slice(0, 125) : 'Ayla Property — Bali real estate';
+        const caption = post.caption ? post.caption.replace(/"/g, '&quot;').slice(0, 125) : 'Ayla Property, Bali real estate';
         const playIcon = isVideo
           ? `<div class="ig-play-icon">
                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
