@@ -28,7 +28,7 @@
     @apply inline-block px-8 py-3 font-semibold uppercase tracking-widest text-sm transition-all duration-200 cursor-pointer rounded-full;
   }
   .btn-olive {
-    @apply btn bg-olive text-white border-2 border-white/25 hover:scale-105 hover:border-white/60 hover:shadow-lg;
+    @apply btn bg-olive text-white border-2 border-black/30 hover:scale-105 hover:border-black/50 hover:shadow-lg;
   }
   .btn-brown {
     @apply btn bg-brown text-white hover:bg-brown-dark;
