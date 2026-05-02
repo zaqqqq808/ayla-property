@@ -10,7 +10,7 @@ interface Props {
 }
 
 const {
-  title = 'Bali Real Estate Investment | High ROI Villas | Ayla Property',
+  title = 'Bali Real Estate Investment | 15%+ Rental Yields | Ayla Property',
   description = 'Specialist agency and property management for Bali villas and apartments. We help investors find high-ROI properties with end-to-end brokerage support.',
   ogImage = '/og-image.jpg',
   ogType = 'website',
@@ -33,7 +33,7 @@ const schemas = [
       "contactType": "customer service",
       "url": "https://calendly.com/ayla-teamoperations/30min"
     },
-    "sameAs": []
+    "sameAs": ["https://www.instagram.com/aylaproperty/"]
   },
   {
     "@context": "https://schema.org",
@@ -77,7 +77,13 @@ const schemas = [
   <link rel="dns-prefetch" href="https://assets.calendly.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+    media="print"
+    onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" />
+  </noscript>
 
   <!-- Structured data -->
   {schemas.map(s => (

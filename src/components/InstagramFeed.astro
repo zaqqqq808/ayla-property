@@ -1,0 +1,129 @@
+---
+// InstagramFeed.astro
+// Replace public/images/instagram/post-1.jpg through post-4.jpg
+// with screenshots of your actual Instagram posts to update the feed.
+
+const igUrl = 'https://www.instagram.com/aylaproperty/';
+
+const posts = [
+  { src: '/images/instagram/post-1.jpg', alt: 'Ayla Property Instagram post 1' },
+  { src: '/images/instagram/post-2.jpg', alt: 'Ayla Property Instagram post 2' },
+  { src: '/images/instagram/post-3.jpg', alt: 'Ayla Property Instagram post 3' },
+  { src: '/images/instagram/post-4.jpg', alt: 'Ayla Property Instagram post 4' },
+];
+---
+
+<section class="bg-white py-16 px-0 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 mb-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div>
+      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-2">On the Ground in Bali</p>
+      <h2 class="text-brown text-3xl lg:text-4xl font-display uppercase tracking-wide">Follow Us on Instagram</h2>
+    </div>
+    <a
+      href={igUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-2 text-brown/60 hover:text-olive transition-colors text-sm uppercase tracking-widest font-semibold shrink-0"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+      </svg>
+      @aylaproperty
+    </a>
+  </div>
+
+  <!-- Swipeable carousel -->
+  <div class="ig-track">
+    {posts.map((post) => (
+      <a
+        href={igUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="ig-slide"
+        aria-label="View on Instagram"
+      >
+        <img
+          src={post.src}
+          alt={post.alt}
+          loading="lazy"
+          draggable="false"
+        />
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  .ig-track {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 max(24px, calc((100vw - 1280px) / 2 + 24px));
+    cursor: grab;
+  }
+
+  .ig-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ig-track:active {
+    cursor: grabbing;
+  }
+
+  .ig-slide {
+    flex-shrink: 0;
+    width: 240px;
+    aspect-ratio: 9 / 16;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+  }
+
+  .ig-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  .ig-slide:hover img {
+    transform: scale(1.04);
+  }
+
+  @media (max-width: 768px) {
+    .ig-slide {
+      width: 180px;
+    }
+  }
+</style>
+
+<script>
+  // Drag to scroll on desktop
+  const track = document.querySelector('.ig-track') as HTMLElement;
+  if (track) {
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+
+    track.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+    track.addEventListener('mouseleave', () => { isDown = false; });
+    track.addEventListener('mouseup', () => { isDown = false; });
+    track.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - track.offsetLeft;
+      track.scrollLeft = scrollLeft - (x - startX) * 1.5;
+    });
+  }
+</script>

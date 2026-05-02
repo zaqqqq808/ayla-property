@@ -21,7 +21,7 @@ Before looking at a single villa, you have to look at the country backing it. In
 For foreign investors, the leasehold model is the absolute sweet spot for maximising Return on Investment (ROI) without the legal hurdles of freehold ownership. If executed correctly, a leasehold property actually defies normal depreciation.
 **The Playbook:**
 - **Acquire Long-Term:** Buy a premium villa with a 30-year (or more) leasehold in a high-demand area.
-- **Cash Flow It:** Put the property on the short-term or yearly rental market. Bali's rental yields are incredibly strong, often netting between 10% to 15% annually when professionally managed.
+- **Cash Flow It:** Put the property on the short-term or yearly rental market. Bali's rental yields are incredibly strong, consistently achieving 15%+ annually when professionally managed.
 - **Recoup Your Capital:** Let rental income pay off your initial investment within 5 to 7 years.
 - **Sell the Business:** Here is the secret—when you sell a leasehold villa with a proven, profitable rental history, you aren't just selling the remaining 23 years on a lease; you are selling a *turnkey, cash-flowing business*. You can then sell the property for maximum profit, walking away with both your rental gains and a massive lump sum.
 

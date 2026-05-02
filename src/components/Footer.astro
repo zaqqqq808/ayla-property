@@ -14,9 +14,25 @@ const year = new Date().getFullYear();
       <a href="/#contact" class="text-brown/70 hover:text-olive transition-colors">Contact</a>
     </nav>
 
-    <div class="text-center md:text-right text-brown/60 text-sm">
-      <p>© {year} Ayla Property</p>
-      <p class="mt-1">Bali villa investment &amp; property management</p>
+    <div class="flex flex-col items-center md:items-end gap-3">
+      <!-- Instagram -->
+      <a
+        href="https://www.instagram.com/aylaproperty/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ayla Property on Instagram"
+        class="text-brown/50 hover:text-olive transition-colors"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <div class="text-center md:text-right text-brown/60 text-sm">
+        <p>© {year} Ayla Property</p>
+        <p class="mt-1">Bali villa investment &amp; property management</p>
+      </div>
     </div>
   </div>
 </footer>
