@@ -10,8 +10,8 @@ export default {
           light: '#D4BF8E',
         },
         olive: {
-          DEFAULT: '#8E9E56',
-          dark: '#6e7e3a',
+          DEFAULT: '#7ED49A',
+          dark: '#4fa872',
         },
         brown: {
           DEFAULT: '#5C2E1F',
