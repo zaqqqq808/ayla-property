@@ -6,6 +6,7 @@ interface Props {
   headlineHtml?:  string;
   subline?:       string;
   image?:         string;
+  imageMobile?:   string;
   imageAlt?:      string;
   imagePosition?: string;
   ctaText?:       string;
@@ -15,21 +16,28 @@ const {
   eyebrow       = 'Bali Real Estate Investment',
   headlineHtml  = 'Earn 15%+<br />Returns in Bali',
   subline       = 'We find, vet and negotiate you the best deal for your individual needs',
-  image         = '/images/hero-villa.jpg',
-  imageAlt      = 'Luxury Bali villa with infinity pool overlooking the ocean at sunset',
-  imagePosition = '65% 40%',
+  image         = '/images/hero-villa-landscape.webp',
+  imageMobile   = '/images/hero-villa-portrait.webp',
+  imageAlt      = 'Luxury Bali villa with infinity pool surrounded by tropical rice terraces',
+  imagePosition = '70% 50%',
   ctaText       = 'Book a Free Investment Call',
 } = Astro.props;
 ---
 <section class="relative overflow-hidden min-h-screen flex items-center justify-center">
 
-  <img
-    src={image}
-    alt={imageAlt}
-    class="absolute inset-0 w-full h-full object-cover"
-    style={`object-position: ${imagePosition};`}
-    loading="eager"
-  />
+  <picture>
+    <source media="(max-width: 767px)" srcset={imageMobile} />
+    <img
+      src={image}
+      alt={imageAlt}
+      class="absolute inset-0 w-full h-full object-cover"
+      style={`object-position: ${imagePosition};`}
+      loading="eager"
+      fetchpriority="high"
+      width="1440"
+      height="810"
+    />
+  </picture>
 
   <div class="absolute inset-0 bg-black/30"></div>
 
