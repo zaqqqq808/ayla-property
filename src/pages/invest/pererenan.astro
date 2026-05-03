@@ -1,0 +1,159 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Header from '@/components/Header.astro';
+import Hero from '@/components/Hero.astro';
+import StatsBar from '@/components/StatsBar.astro';
+import WhyBali from '@/components/WhyBali.astro';
+import PropertyCarousel from '@/components/PropertyCarousel.astro';
+import Methodology from '@/components/Methodology.astro';
+import Testimonials from '@/components/Testimonials.astro';
+import Team from '@/components/Team.astro';
+import Journal from '@/components/Journal.astro';
+import FAQ from '@/components/FAQ.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+
+// ── Pererenan-specific stats ──────────────────────────────────────────────────
+const pererenanReasons = [
+  {
+    stat: '12–16%',
+    statTo: [12, 16],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Rental Yields',
+    description: 'Pererenan villas consistently deliver 12–16% gross rental yields, driven by strong spillover demand from Canggu and a growing base of discerning long-stay guests.',
+  },
+  {
+    stat: '50–70%',
+    statTo: [50, 70],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Land Appreciation Since 2021',
+    description: "Pererenan land prices have risen faster than Canggu's in the past four years as investors and developers recognised the area's trajectory before prices caught up.",
+  },
+  {
+    stat: '20–30%',
+    statTo: [20, 30],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Below Canggu Prices',
+    description: 'Equivalent villa product in Pererenan is typically priced 20–30% below Canggu, offering a lower entry point with comparable rental demand and stronger growth headroom.',
+  },
+  {
+    stat: '5 min',
+    statTo: [5],
+    statSuffix: ' min',
+    statSep: '',
+    title: 'From Canggu Echo Beach',
+    description: "Pererenan sits directly adjacent to Canggu's Echo Beach corridor, giving guests immediate access to Canggu's restaurants, surf breaks, and co-working scene without the noise and congestion.",
+  },
+];
+
+// ── Pererenan-specific FAQs ───────────────────────────────────────────────────
+const pererenanFaqs = [
+  {
+    q: 'Where exactly is Pererenan?',
+    a: "Pererenan is a coastal village on Bali's southwest coast, located immediately west of Canggu's Echo Beach. It sits between Canggu and Seseh, roughly 20 minutes from Seminyak and 35 minutes from Ngurah Rai International Airport. It shares Canggu's coastline and surf breaks, but retains a quieter, more open character with more rice paddy land still available for development.",
+  },
+  {
+    q: 'How does Pererenan compare to Canggu for investment?',
+    a: "Pererenan is where Canggu was five to six years ago. Entry prices are 20–30% lower for equivalent product, land is still available, and rental demand is growing rapidly as guests spill over from Canggu's tighter, more congested market. The trade-off is liquidity: Canggu has a larger transaction volume, so exit options are broader there. But for investors focused on capital growth and yield, Pererenan currently offers better value.",
+  },
+  {
+    q: 'What types of property are available in Pererenan?',
+    a: 'The market is dominated by private leasehold villas, ranging from 1–2 bedroom boutique builds to larger 3–4 bedroom compounds, many with rice paddy views. Off-plan development has accelerated significantly since 2023, and pre-launch pricing in Pererenan remains attractively below comparable completed product. We source across both ready-to-rent and off-plan opportunities.',
+  },
+  {
+    q: 'What are typical villa prices in Pererenan?',
+    a: 'Leasehold entry points for a 1–2 bedroom villa start from approximately $120,000–$180,000 USD. Mid-range 3-bedroom villas with rice paddy views typically sit between $220,000–$380,000. Off-plan pricing is often a further 15–20% below completed market value, and these are the deals that generate the strongest total returns.',
+  },
+  {
+    q: 'What rental yields can I expect from a Pererenan villa?',
+    a: 'Well-positioned Pererenan villas are achieving 12–16% gross rental yields, with net returns of 8–12% after management fees and running costs. Yields are on a rising trend as the area matures and average daily rates increase with stronger demand. Properties with rice paddy views command a premium on both nightly rate and occupancy.',
+  },
+  {
+    q: 'Who rents villas in Pererenan?',
+    a: "Pererenan attracts digitally mobile professionals, wellness travellers, artists, and longer-stay visitors who want Canggu's proximity without the congestion. The guest profile trends slightly more discerning than central Canggu, which supports higher average daily rates and longer average stays. Monthly and quarterly bookings, which deliver better net yields, are increasingly common in Pererenan.",
+  },
+];
+
+// ── Schema ────────────────────────────────────────────────────────────────────
+const siteBase = 'https://www.aylaproperty.com';
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",                "item": `${siteBase}/` },
+    { "@type": "ListItem", "position": 2, "name": "Invest in Pererenan", "item": `${siteBase}/invest/pererenan/` },
+  ]
+});
+---
+<BaseLayout
+  title="Invest in Pererenan, Bali | 12–16% Yields | The New Canggu | Ayla Property"
+  description="Buy a villa in Pererenan, Bali's fastest-appreciating investment area. Entry prices 20–30% below Canggu, 12–16% rental yields, and strong capital growth. Free consultation."
+  ogType="website"
+  ogImage="/og-image.jpg"
+>
+  <Fragment slot="head">
+    <link rel="preload" as="image" href="/images/hero-villa-landscape.webp" fetchpriority="high" />
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+  <main>
+    <Hero
+      eyebrow="Bali Real Estate Investment: Pererenan"
+      headlineHtml="Invest in<br />Pererenan"
+      subline="Canggu's western neighbour. Lower entry prices, faster appreciation, same rental demand."
+      ctaText="Book a Free Investment Call"
+    />
+
+    <StatsBar />
+
+    <!-- Pererenan area intro -->
+    <section class="bg-white py-16 px-6 lg:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-4">Why Pererenan</p>
+        <p class="text-brown/80 text-lg leading-relaxed">
+          Pererenan is where Canggu was five years ago: underpriced relative to its fundamentals,
+          rapidly developing, and attracting exactly the kind of guest profile that delivers strong
+          rental returns. Situated directly west of Echo Beach, it shares Canggu's coastline,
+          surf breaks, and lifestyle scene while retaining the open rice paddy landscape and quieter
+          atmosphere that appeal to discerning long-stay visitors.
+        </p>
+        <p class="text-brown/70 text-base leading-relaxed mt-4">
+          For investors, Pererenan offers a rare combination: lower entry cost, faster land
+          appreciation, and rental demand that grows each year as Canggu's own supply tightens.
+          Entry-level villa prices remain 20–30% below comparable Canggu product, and that
+          gap is closing. The window for value-led entry is narrowing.
+        </p>
+      </div>
+    </section>
+
+    <WhyBali
+      eyebrow="The Pererenan Opportunity"
+      titleHtml="Why Smart Money<br />Is Moving to Pererenan"
+      subtitle="Lower entry price, faster land appreciation, and Canggu-level rental demand make Pererenan one of Bali's most compelling investment opportunities right now."
+      ctaText="Explore Pererenan Investment Options"
+      reasons={pererenanReasons}
+    />
+
+    <PropertyCarousel />
+
+    <Methodology />
+    <Testimonials />
+    <Team />
+
+    <Journal />
+    <FAQ
+      eyebrow="Pererenan Property FAQ"
+      title="Pererenan Questions Answered"
+      faqs={pererenanFaqs}
+    />
+
+    <ContactCTA />
+  </main>
+  <Footer />
+  <StickyButton />
+</BaseLayout>
