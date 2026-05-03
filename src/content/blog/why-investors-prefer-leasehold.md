@@ -125,7 +125,7 @@ But if you are an investor looking to maximise your capital, don't get hung up o
 ## Ready to run the numbers?
 We can show you side-by-side comparisons of Freehold vs. Leasehold opportunities available right now, so you can see precisely how the ROI differs.
 
-If you are interested and ready to invest, **[talk to us](https://calendly.com/zaq-lengmedia/30min)**.
+If you are interested and ready to invest, **[talk to us](https://calendly.com/ayla-teamoperations/30min)**.
 ---
 
 *Ready to put leasehold strategy into practice? Browse our guides to [invest in Canggu](/invest/canggu/) and [invest in Uluwatu](/invest/uluwatu/), or read our complete [guide to buying property in Bali as a foreigner](/guides/foreigners-buying-property-bali/), including a full breakdown of lease structures and renewal terms.*

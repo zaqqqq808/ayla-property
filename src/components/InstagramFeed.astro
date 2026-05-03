@@ -160,12 +160,35 @@ const fallbackPosts = [
         throw new Error(data.error || 'No posts returned');
       }
 
+      // Sanitise a value to a safe https:// URL — rejects javascript:, data:, etc.
+      function safeUrl(val: unknown): string {
+        try {
+          const u = new URL(String(val));
+          if (u.protocol === 'https:') return u.href;
+        } catch {}
+        return '';
+      }
+
+      // Strip all HTML tags and escape quotes for use in attributes
+      function safeText(val: unknown, max = 125): string {
+        return String(val ?? '')
+          .replace(/<[^>]*>/g, '')
+          .replace(/&/g, '&amp;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .slice(0, max);
+      }
+
       // Build live post cards
       const posts = data.data.slice(0, 6);
       const html = posts.map((post: any) => {
-        const isVideo = post.media_type === 'VIDEO';
-        const imgSrc  = isVideo ? post.thumbnail_url : post.media_url;
-        const caption = post.caption ? post.caption.replace(/"/g, '&quot;').slice(0, 125) : 'Ayla Property, Bali real estate';
+        const isVideo   = post.media_type === 'VIDEO';
+        const imgSrc    = safeUrl(isVideo ? post.thumbnail_url : post.media_url);
+        const permalink = safeUrl(post.permalink);
+        const caption   = post.caption ? safeText(post.caption) : 'Ayla Property, Bali real estate';
+        if (!imgSrc || !permalink) return '';
         const playIcon = isVideo
           ? `<div class="ig-play-icon">
                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +198,7 @@ const fallbackPosts = [
              </div>`
           : '';
         return `
-          <a href="${post.permalink}" target="_blank" rel="noopener noreferrer"
+          <a href="${permalink}" target="_blank" rel="noopener noreferrer"
              class="ig-slide" aria-label="${caption}">
             <img src="${imgSrc}" alt="${caption}" loading="lazy" draggable="false" />
             ${playIcon}

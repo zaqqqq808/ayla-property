@@ -100,7 +100,7 @@ The window to get into these areas at "early bird" prices is narrowing.
 
 If you are interested in these neighbourhoods and are ready to start investing, we are here to help. We have boots on the ground in Seseh, The Bukit, and Kedungu, scouting the best plots and villas before they hit the open market.
 
-Don't guess with your capital. [Talk to us. ](https://calendly.com/zaq-lengmedia/30min)
+Don't guess with your capital. [Talk to us. ](https://calendly.com/ayla-teamoperations/30min)
 ---
 
 *Ready to invest in one of these emerging areas? Start with our in-depth guides: [invest in Canggu](/invest/canggu/), Bali's most liquid market, or [invest in Uluwatu](/invest/uluwatu/) for premium clifftop returns. New to Bali property? Read our [complete guide for foreign buyers](/guides/foreigners-buying-property-bali/).*

@@ -129,7 +129,7 @@ It is not ideal for investors who want a trophy property they can use personally
 ## Ready to invest?
 If you want us to find you a deal like that, or if you want access to our "Uber spreadsheet," get in touch.
 
-We know where the value is hiding in this market. If you are interested and ready to invest, **[talk to us](https://calendly.com/zaq-lengmedia/30min)**.
+We know where the value is hiding in this market. If you are interested and ready to invest, **[talk to us](https://calendly.com/ayla-teamoperations/30min)**.
 ---
 
 *The villa in this case study was located in the Canggu corridor. Read our full [Canggu investment guide](/invest/canggu/) to understand why it remains Bali's most in-demand market, and our [foreigners buying guide](/guides/foreigners-buying-property-bali/) to understand the legal process step by step.*

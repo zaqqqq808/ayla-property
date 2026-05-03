@@ -99,7 +99,7 @@ If you are waiting for the "bubble" to burst, you might be waiting a long time. 
 ## Ready to improve your ROI?
 
 If you are tired of standard 4% returns and are ready to make your capital work harder, we should chat.
-We know the market, we know the numbers, and we know how to navigate Bali safely. If you are interested and ready to invest, [talk to us](https://calendly.com/zaq-lengmedia/30min).
+We know the market, we know the numbers, and we know how to navigate Bali safely. If you are interested and ready to invest, [talk to us](https://calendly.com/ayla-teamoperations/30min).
 
 ---
 
