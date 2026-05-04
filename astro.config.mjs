@@ -5,4 +5,5 @@ export default defineConfig({
   site: 'https://www.aylaproperty.com',
   integrations: [tailwind()],
   output: 'static',
+  trailingSlash: 'always',
 });
