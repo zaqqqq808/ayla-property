@@ -55,6 +55,17 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "aylaproperty.com"
+        }
+      ],
+      "destination": "https://www.aylaproperty.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/listing-inner",
       "destination": "/",
       "permanent": true

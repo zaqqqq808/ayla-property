@@ -26,19 +26,39 @@ const steps = [
 ];
 
 const youtubeId = 'T7At3AGvuHo';
+const thumbUrl = `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
+const embedUrl = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0`;
 ---
 <section id="methodology" class="bg-white pt-20 pb-10 lg:pt-32 lg:pb-12 px-6 lg:px-12">
   <div class="max-w-5xl mx-auto">
-    <div class="aspect-video rounded-2xl overflow-hidden shadow-lg mb-12 bg-beige">
-      <iframe
-        class="w-full h-full"
-        src={`https://www.youtube-nocookie.com/embed/${youtubeId}`}
-        title="Ayla Property: Our Method"
+
+    <!-- YouTube facade: loads thumbnail only; injects iframe on click -->
+    <div
+      class="yt-facade aspect-video rounded-2xl overflow-hidden shadow-lg mb-12 bg-black cursor-pointer relative group"
+      data-yt-id={youtubeId}
+      data-yt-embed={embedUrl}
+      role="button"
+      tabindex="0"
+      aria-label="Play video: Ayla Property — Our Method"
+    >
+      <!-- Thumbnail -->
+      <img
+        src={thumbUrl}
+        alt="Ayla Property — Our Method video thumbnail"
+        class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-200"
         loading="lazy"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+        width="1280"
+        height="720"
+        decoding="async"
+      />
+      <!-- Play button overlay -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-red-600 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
+          <svg class="w-6 h-6 lg:w-8 lg:h-8 text-white ml-1" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </div>
+      </div>
     </div>
 
     <div class="text-center mb-12">
@@ -79,16 +99,44 @@ const youtubeId = 'T7At3AGvuHo';
   </div>
 </section>
 
+<script>
+  // Replace YouTube facade with real iframe on click or Enter key
+  function activateFacade(el: HTMLElement) {
+    const embedUrl = el.dataset.ytEmbed;
+    if (!embedUrl) return;
+    const iframe = document.createElement('iframe');
+    iframe.src = embedUrl;
+    iframe.title = 'Ayla Property — Our Method';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.className = 'w-full h-full';
+    iframe.style.border = 'none';
+    el.innerHTML = '';
+    el.appendChild(iframe);
+    el.classList.remove('cursor-pointer', 'group');
+  }
+
+  document.querySelectorAll<HTMLElement>('.yt-facade').forEach(el => {
+    el.addEventListener('click', () => activateFacade(el));
+    el.addEventListener('keydown', (e) => {
+      if ((e as KeyboardEvent).key === 'Enter' || (e as KeyboardEvent).key === ' ') {
+        e.preventDefault();
+        activateFacade(el);
+      }
+    });
+  });
+</script>
+
 <Fragment set:html={`<script type="application/ld+json">${JSON.stringify({
   "@context": "https://schema.org",
   "@type": "VideoObject",
   "name": "How Ayla Property Works — Our Method",
   "description": "A 1-minute overview of how Ayla Property finds, vets and negotiates Bali real estate deals for foreign investors.",
-  "thumbnailUrl": "https://img.youtube.com/vi/T7At3AGvuHo/maxresdefault.jpg",
+  "thumbnailUrl": thumbUrl,
   "uploadDate": "2025-01-01",
   "duration": "PT1M",
-  "embedUrl": "https://www.youtube-nocookie.com/embed/T7At3AGvuHo",
-  "url": "https://www.youtube.com/watch?v=T7At3AGvuHo",
+  "embedUrl": `https://www.youtube-nocookie.com/embed/${youtubeId}`,
+  "url": `https://www.youtube.com/watch?v=${youtubeId}`,
   "publisher": {
     "@type": "Organization",
     "name": "Ayla Property",
