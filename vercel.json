@@ -89,6 +89,46 @@
       "source": "/listing-inner/",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/hiddencity-ubud",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/hiddencity-ubud/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/feed/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/alpha-villas-mare-nost",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/alpha-villas-mare-nost/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/calypsodmprjct",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/calypsodmprjct/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/2-br-free-hold-villas-ubud/",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
