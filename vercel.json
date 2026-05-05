@@ -66,6 +66,21 @@
       "permanent": true
     },
     {
+      "source": "/writer/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/elementor-page-768/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/listing-inner",
       "destination": "/",
       "permanent": true
