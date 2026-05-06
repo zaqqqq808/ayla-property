@@ -2,11 +2,11 @@
   "name": "ayla-property",
   "type": "module",
   "version": "1.0.0",
-  "description": "Ayla Property — Bali villa investment & specialist agency website",
+  "description": "Ayla Property \u2014 Bali villa investment & specialist agency website",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/patch-runtime.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
