@@ -1,5 +1,6 @@
 ---
 import CalendlyButton from './CalendlyButton.astro';
+import { SITE_URL } from '@/config';
 
 const steps = [
   {
@@ -140,6 +141,6 @@ const embedUrl = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1
   "publisher": {
     "@type": "Organization",
     "name": "Ayla Property",
-    "url": "https://www.aylaproperty.com"
+    "url": SITE_URL
   }
 })}</script>`} />

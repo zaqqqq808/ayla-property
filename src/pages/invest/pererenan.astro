@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_URL } from '@/config';
 import Header from '@/components/Header.astro';
 import Hero from '@/components/Hero.astro';
 import StatsBar from '@/components/StatsBar.astro';
@@ -79,13 +80,13 @@ const pererenanFaqs = [
 ];
 
 // ── Schema ────────────────────────────────────────────────────────────────────
-const siteBase = 'https://www.aylaproperty.com';
+
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home",                "item": `${siteBase}/` },
-    { "@type": "ListItem", "position": 2, "name": "Invest in Pererenan", "item": `${siteBase}/invest/pererenan/` },
+    { "@type": "ListItem", "position": 1, "name": "Home",                "item": `${SITE_URL}/` },
+    { "@type": "ListItem", "position": 2, "name": "Invest in Pererenan", "item": `${SITE_URL}/invest/pererenan/` },
   ]
 });
 ---

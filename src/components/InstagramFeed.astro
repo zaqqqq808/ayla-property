@@ -1,9 +1,9 @@
 ---
-// InstagramFeed.astro
+import { INSTAGRAM_URL } from '@/config';
 // Live feed pulled from Instagram Graph API via /api/instagram (Vercel serverless).
 // Falls back to static placeholder images if token is not yet configured.
 
-const igUrl = 'https://www.instagram.com/aylaproperty/';
+const igUrl = INSTAGRAM_URL;
 
 const fallbackPosts = [
   { src: '/images/instagram/post-1.jpg', alt: 'Ayla Property Instagram post 1' },
@@ -144,7 +144,7 @@ const fallbackPosts = [
 </style>
 
 <script>
-  const igUrl = document.getElementById('ig-track')?.dataset.igUrl || 'https://www.instagram.com/aylaproperty/';
+  const igUrl = document.getElementById('ig-track')?.dataset.igUrl ?? 'https://www.instagram.com/aylaproperty/';
 
   async function loadInstagramFeed() {
     const skeleton = document.getElementById('ig-skeleton');

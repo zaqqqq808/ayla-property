@@ -201,4 +201,18 @@ const locations = [
       locChevron?.classList.remove('rotate-180');
     }
   });
+
+  // ── Desktop location dropdown — sync aria-expanded with hover state ──────────
+  const desktopDropdownBtn = document.getElementById('location-menu-btn');
+  const desktopDropdownParent = desktopDropdownBtn?.closest('.group');
+  if (desktopDropdownParent && desktopDropdownBtn) {
+    desktopDropdownParent.addEventListener('mouseenter', () =>
+      desktopDropdownBtn.setAttribute('aria-expanded', 'true'));
+    desktopDropdownParent.addEventListener('mouseleave', () =>
+      desktopDropdownBtn.setAttribute('aria-expanded', 'false'));
+    desktopDropdownBtn.addEventListener('focus', () =>
+      desktopDropdownBtn.setAttribute('aria-expanded', 'true'));
+    desktopDropdownBtn.addEventListener('blur', () =>
+      desktopDropdownBtn.setAttribute('aria-expanded', 'false'));
+  }
 </script>

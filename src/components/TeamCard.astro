@@ -1,0 +1,30 @@
+---
+interface Props {
+  name:  string;
+  role:  string;
+  image: string;
+}
+
+const { name, role, image } = Astro.props;
+---
+<article class="bg-white/60 border border-beige rounded-lg overflow-hidden text-center transition-transform hover:-translate-y-1 hover:shadow-lg">
+  <div class="aspect-square bg-beige/40 flex items-center justify-center relative">
+    <img
+      src={image}
+      alt={`Photo of ${name}, ${role}`}
+      class="w-full h-full object-cover"
+      loading="lazy"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+    />
+    <span
+      class="absolute inset-0 hidden items-center justify-center text-beige text-7xl font-display"
+      aria-hidden="true"
+    >
+      {name[0]}
+    </span>
+  </div>
+  <div class="p-6">
+    <h3 class="text-brown text-xl font-display uppercase tracking-wide">{name}</h3>
+    <p class="text-brown/60 text-sm italic mt-1">{role}</p>
+  </div>
+</article>

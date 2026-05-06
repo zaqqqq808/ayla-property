@@ -1,4 +1,6 @@
 ---
+import { CALENDLY_URL } from '@/config';
+
 interface Props {
   text?: string;
   variant?: 'olive' | 'brown' | 'outline';
@@ -6,7 +8,7 @@ interface Props {
   url?: string;
 }
 
-const calendlyUrl = import.meta.env.PUBLIC_CALENDLY_URL || 'https://calendly.com/ayla-teamoperations/30min';
+const calendlyUrl = import.meta.env.PUBLIC_CALENDLY_URL ?? CALENDLY_URL;
 
 const {
   text = 'Schedule a Call',

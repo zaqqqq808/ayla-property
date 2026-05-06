@@ -1,5 +1,6 @@
 ---
 import '@/styles/global.css';
+import { SITE_URL } from '@/config';
 
 interface Props {
   title?: string;
@@ -18,31 +19,30 @@ const {
 } = Astro.props;
 
 const rawPath = Astro.url.pathname;
-const canonicalPath = rawPath.endsWith("/") ? rawPath : rawPath + "/";
+const canonicalPath = rawPath.endsWith('/') ? rawPath : rawPath + '/';
 const canonicalURL = new URL(canonicalPath, Astro.site);
-const siteBase = 'https://www.aylaproperty.com';
 
 const schemas = [
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Ayla Property",
-    "url": siteBase,
-    "logo": `${siteBase}/logo.png`,
-    "description": "Bali real estate investment brokers — we find, vet and negotiate the best villa deals for foreign investors.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "url": "https://calendly.com/ayla-teamoperations/30min"
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Ayla Property',
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
+    description: 'Bali real estate investment brokers — we find, vet and negotiate the best villa deals for foreign investors.',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      url: 'https://calendly.com/ayla-teamoperations/30min',
     },
-    "sameAs": ["https://www.instagram.com/aylaproperty/"]
+    sameAs: ['https://www.instagram.com/aylaproperty/'],
   },
   {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Ayla Property",
-    "url": siteBase
-  }
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Ayla Property',
+    url: SITE_URL,
+  },
 ];
 ---
 <!DOCTYPE html>
@@ -76,20 +76,22 @@ const schemas = [
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={new URL(ogImage, Astro.url)} />
 
-  <!-- Preconnect performance hints -->
+  <!-- Performance hints -->
   <link rel="dns-prefetch" href="https://assets.calendly.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet"
+  <link
+    rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
     media="print"
-    onload="this.media='all'" />
+    onload="this.media='all'"
+  />
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" />
   </noscript>
 
   <!-- Structured data -->
-  {schemas.map(s => (
+  {schemas.map((s) => (
     <Fragment set:html={`<script type="application/ld+json">${JSON.stringify(s)}</script>`} />
   ))}
 

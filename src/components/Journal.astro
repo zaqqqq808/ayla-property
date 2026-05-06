@@ -46,14 +46,8 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
         </div>
 
         <div class="text-center mt-12">
-          <a
-            href="/journal"
-            class="inline-flex items-center gap-2 text-brown border border-brown px-8 py-3 uppercase tracking-widest text-sm font-semibold hover:bg-brown hover:text-white transition-colors rounded"
-          >
+          <a href="/journal/" class="btn btn-outline">
             View All Articles
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
           </a>
         </div>
       </>

@@ -1,25 +1,11 @@
 ---
+import TeamCard from './TeamCard.astro';
+
 const team = [
-  {
-    name: 'Silvia',
-    role: 'President',
-    image: '/images/team-silvia.webp',
-  },
-  {
-    name: 'Zaq',
-    role: 'Vice President',
-    image: '/images/team-zaq.webp',
-  },
-  {
-    name: 'Willy',
-    role: 'Real Estate Agent',
-    image: '/images/team-willy.webp',
-  },
-  {
-    name: 'Jackie',
-    role: 'AYLA team mascot',
-    image: '/images/team-jackie.webp',
-  },
+  { name: 'Silvia', role: 'President',          image: '/images/team-silvia.webp' },
+  { name: 'Zaq',    role: 'Vice President',      image: '/images/team-zaq.webp'   },
+  { name: 'Willy',  role: 'Real Estate Agent',   image: '/images/team-willy.webp' },
+  { name: 'Jackie', role: 'AYLA team mascot',    image: '/images/team-jackie.webp'},
 ];
 ---
 <section id="team" class="bg-cream pt-20 pb-8 lg:pt-32 lg:pb-12 px-6 lg:px-12">
@@ -33,26 +19,7 @@ const team = [
 
     <!-- Desktop: 4-column grid -->
     <div class="hidden lg:grid grid-cols-4 gap-6 mt-6">
-      {team.map((member) => (
-        <article class="bg-white/60 border border-beige rounded-lg overflow-hidden text-center transition-transform hover:-translate-y-1 hover:shadow-lg">
-          <div class="aspect-square bg-beige/40 flex items-center justify-center relative">
-            <img
-              src={member.image}
-              alt={`Photo of ${member.name}, ${member.role}`}
-              class="w-full h-full object-cover"
-              loading="lazy"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
-            <span class="absolute inset-0 hidden items-center justify-center text-beige text-7xl font-display" aria-hidden="true">
-              {member.name[0]}
-            </span>
-          </div>
-          <div class="p-6">
-            <h3 class="text-brown text-xl font-display uppercase tracking-wide">{member.name}</h3>
-            <p class="text-brown/60 text-sm italic mt-1">{member.role}</p>
-          </div>
-        </article>
-      ))}
+      {team.map((member) => <TeamCard {...member} />)}
     </div>
 
     <!-- Mobile: swipeable carousel -->
@@ -63,24 +30,9 @@ const team = [
         style="scrollbar-width: none; -ms-overflow-style: none;"
       >
         {team.map((member) => (
-          <article class="flex-none w-[72vw] max-w-[280px] snap-center bg-white/60 border border-beige rounded-lg overflow-hidden text-center">
-            <div class="aspect-square bg-beige/40 flex items-center justify-center relative">
-              <img
-                src={member.image}
-                alt={`Photo of ${member.name}, ${member.role}`}
-                class="w-full h-full object-cover"
-                loading="lazy"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-              />
-              <span class="absolute inset-0 hidden items-center justify-center text-beige text-7xl font-display" aria-hidden="true">
-                {member.name[0]}
-              </span>
-            </div>
-            <div class="p-5">
-              <h3 class="text-brown text-lg font-display uppercase tracking-wide">{member.name}</h3>
-              <p class="text-brown/60 text-sm italic mt-1">{member.role}</p>
-            </div>
-          </article>
+          <div class="flex-none w-[72vw] max-w-[280px] snap-center">
+            <TeamCard {...member} />
+          </div>
         ))}
       </div>
 
@@ -108,14 +60,13 @@ const team = [
 
   function updateDots(index: number) {
     dots.forEach((dot, i) => {
-      dot.classList.toggle('bg-brown',   i === index);
-      dot.classList.toggle('w-4',        i === index);
-      dot.classList.toggle('bg-beige',   i !== index);
-      dot.classList.toggle('w-2',        i !== index);
+      dot.classList.toggle('bg-brown', i === index);
+      dot.classList.toggle('w-4',      i === index);
+      dot.classList.toggle('bg-beige', i !== index);
+      dot.classList.toggle('w-2',      i !== index);
     });
   }
 
-  // Update dots on scroll
   carousel?.addEventListener('scroll', () => {
     if (!carousel) return;
     const cardWidth = (carousel.firstElementChild as HTMLElement)?.offsetWidth ?? 1;
@@ -123,7 +74,6 @@ const team = [
     updateDots(index);
   }, { passive: true });
 
-  // Dot click → scroll to card
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
       if (!carousel) return;

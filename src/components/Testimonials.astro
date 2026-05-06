@@ -1,5 +1,18 @@
 ---
-const testimonials = [
+interface Testimonial {
+  quote:    string;
+  name:     string;
+  location: string;
+  initials: string;
+}
+
+interface Props {
+  eyebrow?:      string;
+  title?:        string;
+  testimonials?: Testimonial[];
+}
+
+const defaultTestimonials: Testimonial[] = [
   {
     quote: "I'd been looking at Bali property for two years but couldn't find anyone I trusted. Ayla found us a villa in Canggu with a 16% yield and handled everything. Best financial decision we've made.",
     name: 'James R.',
@@ -19,13 +32,19 @@ const testimonials = [
     initials: 'MD',
   },
 ];
+
+const {
+  eyebrow      = 'Client Results',
+  title        = 'What Our Investors Say',
+  testimonials = defaultTestimonials,
+} = Astro.props;
 ---
 <section class="bg-white pt-10 pb-20 px-6 lg:px-12">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">Client Results</p>
+      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">{eyebrow}</p>
       <h2 class="text-brown text-4xl lg:text-5xl font-display uppercase tracking-wide">
-        What Our Investors Say
+        {title}
       </h2>
     </div>
 
