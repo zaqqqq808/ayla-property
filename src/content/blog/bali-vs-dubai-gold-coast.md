@@ -1,6 +1,6 @@
 ---
-title: "Bali Real Estate vs. The World: Why 2026 ROI Forecasts Outperform Dubai & Gold Coast"
-description: "Bali vs Dubai vs Gold Coast: which delivers the best ROI in 2026? We compare real returns, legal structures, and lifestyle. Bali wins on every metric."
+title: "Bali vs Dubai vs Gold Coast Property ROI: Real Numbers for 2026"
+description: "I own investment properties in both Bali and Dubai. Here is the real 2026 ROI comparison covering yields, legal structures and which market actually wins."
 publishDate: 2025-12-04
 image: /images/journal/bali-vs-world.jpg
 tags: ["comparison", "roi", "global"]
