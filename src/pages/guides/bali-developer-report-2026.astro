@@ -1,0 +1,376 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_URL } from '@/config';
+import Header from '@/components/Header.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+import CalendlyButton from '@/components/CalendlyButton.astro';
+
+const sections = [
+  { id: 'about-report',     label: 'About This Report' },
+  { id: 'market-overview',  label: 'Market Overview' },
+  { id: 'key-findings',     label: 'Key Findings' },
+  { id: 'area-analysis',    label: 'Area Analysis by Price' },
+  { id: 'roi-by-area',      label: 'ROI by Area' },
+  { id: 'pipeline',         label: 'Pipeline & Delivery' },
+  { id: 'methodology',      label: 'Methodology' },
+];
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` },
+    { "@type": "ListItem", "position": 2, "name": "Bali Property Market Report 2026", "item": `${SITE_URL}/guides/bali-developer-report-2026/` },
+  ]
+});
+
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Bali Property Market Report 2026: 511 Listings, 80 Developers, 15 Areas",
+  "description": "The most comprehensive independent dataset of the Bali new-build and off-plan property market. 511 active listings analysed across 80 developers and 15 areas in Bali.",
+  "author": { "@type": "Organization", "name": "Ayla Property", "url": SITE_URL },
+  "publisher": { "@type": "Organization", "name": "Ayla Property", "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png` } },
+  "datePublished": "2026-05-01",
+  "dateModified": "2026-05-10",
+  "url": `${SITE_URL}/guides/bali-developer-report-2026/`,
+});
+
+const datasetSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Bali Property Market Report 2026",
+  "description": "511 active property listings from 80 developers across 15 Bali areas. Includes pricing, ROI projections, property types, and pipeline data.",
+  "creator": { "@type": "Organization", "name": "Ayla Property", "url": SITE_URL },
+  "datePublished": "2026-05-01",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": ["Bali property", "Bali developers", "Bali real estate market", "Bali investment ROI"],
+});
+---
+<BaseLayout
+  title="Bali Property Market Report 2026 | 80 Developers, 511 Listings Analysed | Ayla Property"
+  description="The only independent dataset of the Bali property market. We analysed 511 active listings from 80 developers across 15 areas. Download free. Data by Ayla Property."
+  ogType="article"
+  ogImage="/og-guide.jpg"
+>
+  <Fragment slot="head">
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+    <Fragment set:html={`<script type="application/ld+json">${articleSchema}</script>`} />
+    <Fragment set:html={`<script type="application/ld+json">${datasetSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+
+  <!-- Hero -->
+  <section class="relative bg-brown pt-40 pb-16 px-6 lg:px-12 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/images/hero-villa.jpg')] bg-cover bg-center opacity-20"></div>
+    <div class="relative max-w-4xl mx-auto text-center">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Market Research · 2026 Edition</p>
+      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-display uppercase leading-tight mb-6">
+        Bali Property<br />Market Report 2026
+      </h1>
+      <p class="text-white/75 text-lg max-w-2xl mx-auto mb-4">
+        511 active listings. 80 developers. 15 areas across the island. This is the most complete independent dataset of the Bali new-build and off-plan property market ever published. We built it ourselves, from scratch, through direct developer relationships.
+      </p>
+      <p class="text-gold/80 text-sm uppercase tracking-widest mb-8">Free to download and cite with attribution</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="/downloads/bali-developer-report-2026.pdf"
+          download
+          class="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-brown font-semibold uppercase tracking-widest text-sm px-6 py-3 rounded-sm transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+          Download Free Report
+        </a>
+        <CalendlyButton text="Discuss the Data" variant="olive" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats bar -->
+  <div class="bg-olive text-white py-6 px-6 lg:px-12">
+    <div class="max-w-5xl mx-auto grid grid-cols-2 lg:grid-cols-5 gap-6 text-center">
+      <div>
+        <p class="text-gold text-2xl lg:text-3xl font-display font-bold">511</p>
+        <p class="text-white/70 text-xs uppercase tracking-widest mt-1">Listings Analysed</p>
+      </div>
+      <div>
+        <p class="text-gold text-2xl lg:text-3xl font-display font-bold">80+</p>
+        <p class="text-white/70 text-xs uppercase tracking-widest mt-1">Active Developers</p>
+      </div>
+      <div>
+        <p class="text-gold text-2xl lg:text-3xl font-display font-bold">15+</p>
+        <p class="text-white/70 text-xs uppercase tracking-widest mt-1">Bali Areas</p>
+      </div>
+      <div>
+        <p class="text-gold text-2xl lg:text-3xl font-display font-bold">$290K</p>
+        <p class="text-white/70 text-xs uppercase tracking-widest mt-1">Median Entry Price</p>
+      </div>
+      <div>
+        <p class="text-gold text-2xl lg:text-3xl font-display font-bold">10.6%</p>
+        <p class="text-white/70 text-xs uppercase tracking-widest mt-1">Median ROI</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24 flex flex-col lg:flex-row gap-12 lg:gap-16">
+
+      <!-- Sticky sidebar TOC -->
+      <aside class="lg:w-64 shrink-0">
+        <div class="lg:sticky lg:top-8">
+          <p class="text-gold-dark uppercase tracking-widest text-xs font-semibold mb-4">In This Report</p>
+          <nav class="space-y-1" aria-label="Report sections">
+            {sections.map(s => (
+              <a
+                href={`#${s.id}`}
+                class="toc-link block text-sm text-brown/60 hover:text-olive py-1.5 border-l-2 border-transparent hover:border-olive pl-3 transition-all duration-150"
+              >
+                {s.label}
+              </a>
+            ))}
+          </nav>
+          <div class="mt-8 p-4 bg-white rounded-xl border border-beige text-center">
+            <p class="text-brown text-sm font-semibold mb-1">Want to invest?</p>
+            <p class="text-brown/60 text-xs mb-3">We can walk you through what the data means for your budget.</p>
+            <CalendlyButton text="Free Consultation" variant="brown" />
+          </div>
+          <a
+            href="/downloads/bali-developer-report-2026.pdf"
+            download
+            class="mt-4 flex items-center justify-center gap-2 w-full border border-gold/50 text-gold-dark hover:bg-gold/10 text-xs uppercase tracking-widest font-semibold px-4 py-3 rounded-sm transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+            Download PDF Report
+          </a>
+        </div>
+      </aside>
+
+      <!-- Article body -->
+      <article class="flex-1 max-w-3xl guide-content">
+
+        <section id="about-report" class="guide-section mb-16">
+          <h2>About This Report</h2>
+          <p>The Bali Property Market Report 2026 is the first publicly available, independently compiled dataset of the Bali new-build and off-plan property market. There is no other source for this data. It does not exist anywhere else.</p>
+          <p>We built it ourselves. Between January 2025 and May 2026, the Ayla Property team contacted developers directly across the island, collected listing data, verified pricing, requested ROI projections, and recorded payment terms. 83.7% of first contacts fall within a structured two-month outreach sprint in mid-2025. The database is maintained and updated on an ongoing basis.</p>
+          <p>We are sharing it publicly, free to download and cite, because better information makes for better decisions. Investors who understand the market make better investments. And better investments are good for the entire Bali property ecosystem.</p>
+          <div class="callout">
+            <strong>Free to cite.</strong> This report is free to share and reference with attribution: <em>"Source: Ayla Property Bali Market Report 2026, aylaproperty.com"</em>
+          </div>
+          <p>What this report covers:</p>
+          <ul>
+            <li>Full market overview with price distribution across 511 listings</li>
+            <li>Area-by-area price comparison across 15 major Bali investment locations</li>
+            <li>ROI analysis by area, including conservative and optimistic projections</li>
+            <li>Property type breakdown across villas, apartments, townhouses, and hotel units</li>
+            <li>Pipeline data showing which years carry the highest delivery volume</li>
+            <li>Five key market findings that challenge common assumptions about Bali property</li>
+          </ul>
+          <p>What it does not cover: secondary resale transactions, private listings, or the vacation rental resale market. This is a new-build and off-plan dataset only.</p>
+        </section>
+
+        <section id="market-overview" class="guide-section mb-16">
+          <h2>Market Overview</h2>
+          <p>As of May 2026, the Bali new-build and off-plan property market comprises at least 511 active listings from 80 active developers, spanning 15 or more distinct investment areas. The median listing price across all 511 properties is <strong>$290,000 USD</strong>. The market is broadly accessible, with more than half of all listings priced under $300,000.</p>
+
+          <div class="data-table">
+            <table>
+              <thead>
+                <tr><th>Price Range (USD)</th><th>Listings</th><th>Market Share</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Under $100,000</td><td>13</td><td>2.6%</td></tr>
+                <tr><td>$100,000 to $200,000</td><td>132</td><td>26.6%</td></tr>
+                <tr><td>$200,000 to $300,000</td><td>117</td><td>23.5%</td></tr>
+                <tr><td>$300,000 to $400,000</td><td>94</td><td>18.9%</td></tr>
+                <tr><td>$400,000 to $500,000</td><td>41</td><td>8.2%</td></tr>
+                <tr><td>$500,000 to $750,000</td><td>37</td><td>7.4%</td></tr>
+                <tr><td>$750,000 to $1,000,000</td><td>31</td><td>6.2%</td></tr>
+                <tr><td>$1,000,000 and above</td><td>32</td><td>6.4%</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The market is heavily concentrated in off-plan product: <strong>71% of listings are pre-completion</strong>. Market concentration at the developer level is also notable: the top 6 developers (LOYO Development, Nuanu Property Group, Mirah Development, Breig, OXO Development, and HQC Bali) account for 199 of 511 listings, which is 39% of the market from just 7.5% of operators. The vast majority of Bali developers are small, single-project businesses.</p>
+          <p>One figure stands out across the entire market: <strong>94% of developers charge exactly 5% agent commission</strong>. What this means for buyers is explained in Finding 5 below.</p>
+        </section>
+
+        <section id="key-findings" class="guide-section mb-16">
+          <h2>Key Findings</h2>
+          <p>Five findings from the data that challenge common assumptions about investing in Bali.</p>
+
+          <div class="finding-card">
+            <span class="finding-num">01</span>
+            <div>
+              <h3 class="mt-0">Canggu Commands No Yield Premium</h3>
+              <p>Despite being Bali's most searched investment location, Canggu's conservative ROI median is 10.0%, exactly at the market median. Melasti, Pecatu, and Pererenan all deliver 12%. Investors paying the Canggu name premium receive no yield compensation for it.</p>
+            </div>
+          </div>
+
+          <div class="finding-card">
+            <span class="finding-num">02</span>
+            <div>
+              <h3 class="mt-0">79% of Bali Developers Accept Cryptocurrency</h3>
+              <p>This makes Bali one of the world's most crypto-friendly property markets by volume. No comparable market-wide figure exists for any other Asian real estate market. USDT and USDC are the dominant accepted tokens, with some developers offering a 2 to 5% discount for crypto payment.</p>
+            </div>
+          </div>
+
+          <div class="finding-card">
+            <span class="finding-num">03</span>
+            <div>
+              <h3 class="mt-0">Ready Stock Offers No Yield Discount vs Off-Plan</h3>
+              <p>Conservative ROI median for ready stock is 10.5% versus 10.4% for off-plan. The market does not price construction risk into off-plan yields. Ready stock delivers the same projected return with no construction risk and immediate rental income.</p>
+            </div>
+          </div>
+
+          <div class="finding-card">
+            <span class="finding-num">04</span>
+            <div>
+              <h3 class="mt-0">The Freehold Anomaly</h3>
+              <p>82 listings (16%) offer freehold or a freehold option, despite freehold ownership being legally restricted for foreign nationals in Indonesia. Always verify title structure with an independent PPAT notary before committing to any purchase described as freehold.</p>
+            </div>
+          </div>
+
+          <div class="finding-card">
+            <span class="finding-num">05</span>
+            <div>
+              <h3 class="mt-0">The Commission Market Is Fully Commoditised</h3>
+              <p>94% of developers pay exactly 5% agent commission, a uniform rate across the entire market. Agents working on a developer-aligned basis have zero financial incentive to recommend one developer over another. The only genuinely independent advice comes from a buyer-side broker.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="area-analysis" class="guide-section mb-16">
+          <h2>Area Analysis by Price</h2>
+          <p>The 12 major Bali investment areas in our dataset show significant price variation. The most expensive areas are not always the best-yielding.</p>
+
+          <div class="data-table">
+            <table>
+              <thead>
+                <tr><th>Area</th><th>Listings</th><th>Median Price</th><th>Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Nuanu</strong></td><td>44</td><td>$401K</td><td>Planned city. Villas and hotel units only.</td></tr>
+                <tr><td><strong>Uluwatu</strong></td><td>49</td><td>$363K</td><td>32.5% hotel-investment product.</td></tr>
+                <tr><td><strong>Pecatu</strong></td><td>24</td><td>$350K</td><td>High ROI, emerging area.</td></tr>
+                <tr><td><strong>Nusa Dua</strong></td><td></td><td>Premium</td><td>100% villas. Highest ROI claims.</td></tr>
+                <tr><td><strong>Canggu</strong></td><td></td><td>At median</td><td>Most balanced mix. Widest price range.</td></tr>
+                <tr><td><strong>Pererenan</strong></td><td></td><td>Below median</td><td>Apartment-dominant. 12% median ROI.</td></tr>
+                <tr><td><strong>Melasti</strong></td><td></td><td>Below median</td><td>Emerging. 12% median ROI.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>Nuanu</strong> is the only major planned-city development in the dataset. Zero apartments. A completely distinct investment profile from the rest of Bali. <strong>Pererenan</strong> is the only major area where apartments outnumber villas. <strong>Uluwatu</strong> has the highest proportion of hotel-investment product. <strong>Canggu</strong> has the most balanced product mix, with the widest entry price range of any area on the island.</p>
+          <div class="callout">
+            Download the full report for the complete area price table including median, mean, minimum, maximum, and price per m² for all 15 areas.
+          </div>
+        </section>
+
+        <section id="roi-by-area" class="guide-section mb-16">
+          <h2>ROI by Area</h2>
+          <p>The market-wide median conservative ROI is <strong>10.6%</strong>, with a median optimistic ROI of <strong>16.4%</strong>. These are developer-stated projections. Actual returns vary with occupancy, management quality, platform fees, and maintenance costs.</p>
+          <p><strong>Nusa Dua</strong> records the highest ROI claims in the dataset alongside its strong land values. <strong>Melasti and Pecatu</strong> both deliver conservative ROI medians of 12%, two full points above the market median. <strong>Pererenan</strong> also delivers 12% at the conservative median, with a lower entry price than Canggu.</p>
+          <p>A 10.6% conservative ROI on a $290,000 property implies approximately $30,740 per year in gross rental income. After a typical management fee of 20 to 25% of gross revenue, net income is approximately $23,000 to $24,600 per year. That is a net yield of 7.9% to 8.5%, which remains significantly stronger than most Western property markets even at its most conservative.</p>
+        </section>
+
+        <section id="pipeline" class="guide-section mb-16">
+          <h2>Pipeline and Delivery Timeline</h2>
+          <p>Of 511 listings, 459 carry a stated completion date. The delivery pipeline is heavily concentrated in 2026 and 2027, with 2026 the single largest delivery year in the dataset.</p>
+
+          <div class="data-table">
+            <table>
+              <thead>
+                <tr><th>Completion Period</th><th>Listings</th><th>Share of Pipeline</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Already completed</td><td>52</td><td>11.3%</td></tr>
+                <tr><td>Completing 2025</td><td>87</td><td>19.0%</td></tr>
+                <tr><td><strong>Completing 2026</strong></td><td><strong>145</strong></td><td><strong>31.6%</strong></td></tr>
+                <tr><td>Completing 2027</td><td>94</td><td>20.5%</td></tr>
+                <tr><td>Completing 2028 and beyond</td><td>28</td><td>6.1%</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>239 units are completing in 2025 and 2026 combined. This represents a meaningful expansion of rental supply and is worth factoring into occupancy projections for properties in high-concentration areas. The top 6 developers account for 39% of the entire pipeline. Developer track record and financial health are especially important in the current delivery environment.</p>
+        </section>
+
+        <section id="methodology" class="guide-section mb-16">
+          <h2>Methodology</h2>
+          <p>This dataset was built through direct developer outreach by Ayla Property. We contacted developers across Bali, requested listing data, verified pricing where possible, and recorded developer-stated ROI projections and payment terms. The work was done by us, in-house, using our own developer relationships built through years of active brokerage on the island.</p>
+          <p>83.7% of first-contact dates in the database fall within a two-month window in mid-2025, reflecting a structured outreach sprint. The database is maintained on a rolling basis and updated as new information is received.</p>
+          <p>This dataset covers new-build and off-plan product only. ROI figures are developer-stated projections and have not been independently verified. Managed rental returns will vary with occupancy, platform fees, management costs (typically 20 to 30% of gross revenue), and maintenance expenditure.</p>
+
+          <h3>Why We Did This</h3>
+          <p>No independent market data of this kind existed for Bali before this report. Most market commentary in the Bali real estate space comes from developers marketing their own projects, or from agents with a financial interest in specific sales. We built this dataset because investors deserve access to real market data, not marketing material dressed up as research.</p>
+          <p>Ayla Property is an independent broker. We work for buyers, not developers. We are paid by developers only on successful completion, at the same 5% rate the entire market charges. Our interest is in matching the right buyer to the right property, not in maximising transaction volume.</p>
+
+          <div class="callout">
+            <strong>About Ayla Property</strong><br />
+            Ayla Property is a Bali-based independent property brokerage helping foreign investors access the Bali villa and leasehold market. We source across the full developer landscape, conduct independent due diligence, and provide trusted connections to PPAT notary partners. We never push a property we would not invest in ourselves.
+          </div>
+        </section>
+
+        <!-- Download CTA -->
+        <div class="bg-brown rounded-xl p-8 text-center mt-12">
+          <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-3">Get the Full Dataset</p>
+          <h3 class="text-white text-2xl font-display uppercase mb-4">Download the Free Report</h3>
+          <p class="text-white/70 mb-2">All 511 listings. All 15 areas. All five key findings.</p>
+          <p class="text-white/50 text-sm mb-6">Free to download. Free to cite with attribution.</p>
+          <a
+            href="/downloads/bali-developer-report-2026.pdf"
+            download
+            class="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-brown font-semibold uppercase tracking-widest text-sm px-6 py-3 rounded-sm transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+            Download Free PDF Report
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+  <ContactCTA />
+  <Footer />
+  <StickyButton />
+</BaseLayout>
+
+<style>
+  .guide-content h2 { @apply text-brown text-2xl lg:text-3xl font-display uppercase tracking-wide mb-4 mt-12 first:mt-0 pb-3 border-b border-beige; }
+  .guide-content h3 { @apply text-brown text-lg font-semibold mt-6 mb-3; }
+  .guide-content p { @apply text-brown/80 leading-relaxed mb-4; }
+  .guide-content ul { @apply space-y-2 mb-4 pl-0; }
+  .guide-content ul li { @apply text-brown/80 leading-relaxed pl-5 relative; }
+  .guide-content ul li::before { content: '—'; @apply absolute left-0 text-gold-dark font-bold; }
+  .guide-content strong { @apply text-brown font-semibold; }
+  .callout { @apply bg-white border-l-4 border-gold rounded-r-xl px-6 py-4 my-6 text-brown/80 text-sm leading-relaxed; }
+  .data-table { @apply my-6 overflow-x-auto rounded-xl border border-beige; }
+  .data-table table { @apply w-full text-sm; }
+  .data-table thead { @apply bg-brown text-white; }
+  .data-table thead th { @apply px-4 py-3 text-left text-xs uppercase tracking-widest font-semibold; }
+  .data-table tbody tr { @apply border-t border-beige even:bg-white odd:bg-cream/60; }
+  .data-table tbody td { @apply px-4 py-3 text-brown/80; }
+  .finding-card { @apply flex gap-5 items-start bg-white rounded-xl p-6 border border-beige mb-4; }
+  .finding-num { @apply text-gold-dark text-2xl font-display font-bold shrink-0 w-10; }
+  .finding-card h3 { @apply mt-0 mb-2; }
+  .toc-link.active { @apply text-olive border-olive; }
+</style>
+
+<script>
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = document.querySelectorAll('.guide-section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(link => link.classList.remove('active'));
+        document.querySelector(`.toc-link[href="#${entry.target.id}"]`)?.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
