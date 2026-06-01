@@ -6,8 +6,6 @@ image: /images/journal/six-months-client.jpg
 tags: ["case-study", "roi", "strategy"]
 ---
 
-**December 2025-**
-
 I love it when a client knows exactly what they want.
 
 Recently, a couple came to me with an obvious scenario: "We live in Spain, we have just sold our apartment in Belgium, and we want to invest that capital into Bali. We have no intention of ever living there; we want rental income. Capital appreciation would be a bonus. Oh, and by the way, we don't want to lift a finger when it comes to management."
@@ -80,7 +78,7 @@ This covered four areas:
 
 ## Setting Up the Management
 
-Our clients were in Spain. They had no intention of visiting Bali before or after the purchase , which is completely normal and fully supported by how the Bali property market works.
+Our clients were in Spain. They had no intention of visiting Bali before or after the purchase, which is completely normal and fully supported by how the Bali property market works.
 
 Within two weeks of the agreement being signed, we had introduced them to our preferred property management partner for the Umalas area. The management agreement was signed remotely, with an agreed fee structure of 20% of gross rental revenue covering: all booking platform management, housekeeping, guest communication, maintenance coordination, and monthly reporting.
 

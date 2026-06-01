@@ -8,7 +8,7 @@ tags: ["market-analysis", "roi", "data"]
 
 The question we get asked more than any other is this: *Is buying property in Bali actually a good investment, or is it hype?*
 
-Most of what you read online is anecdotal — someone's personal win, a developer's marketing, or a forum post from someone who never actually bought. We wanted real data. So we built it ourselves.
+Most of what you read online is anecdotal: someone's personal win, a developer's marketing, or a forum post from someone who never actually bought. We wanted real data. So we built it ourselves.
 
 In 2026, Ayla Property compiled the most comprehensive independent dataset of the Bali new-build and off-plan property market ever published: **511 active listings, 80 developers, 15 areas** across the island. Here is what the numbers say.
 
@@ -28,7 +28,7 @@ Before diving in, here is what our dataset shows at a glance:
 | Top-performing area yield | 14.8% (Canggu) |
 | Lowest entry price area | USD $165,000 (East Bali) |
 
-The short answer: yes, Bali is a genuinely good investment in 2026 — but the return is highly dependent on area, developer quality, and property management. The island average masks a wide spread.
+The short answer: yes, Bali is a genuinely good investment in 2026, but the return is highly dependent on area, developer quality, and property management. The island average masks a wide spread.
 
 ---
 
@@ -45,7 +45,7 @@ To put the 10.6% average yield in context, here is how Bali compares to the mark
 | Dubai (residential) | 6.5% |
 | Gold Coast | 4.8% |
 
-Bali is not marginally better — it is in a different category. Even at the lower end of our dataset, the worst-performing areas still delivered 7.2% gross yields. That is still double most Australian capital city returns.
+Bali is not marginally better. It is in a different category. Even at the lower end of our dataset, the worst-performing areas still delivered 7.2% gross yields. That is still double most Australian capital city returns.
 
 ---
 
@@ -54,16 +54,16 @@ Bali is not marginally better — it is in a different category. Even at the low
 Our data shows a clear pattern: the highest yields come from areas with high tourist footfall and strong short-term rental demand. The lower yields come from lifestyle areas where buyers pay a premium for exclusivity.
 
 **Highest yielding areas (gross, 2026 data):**
-- Canggu: 14.8% — driven by digital nomad demand and year-round occupancy
-- Seminyak: 13.1% — established luxury short-stay market
-- Uluwatu / The Bukit: 12.4% — premium cliffside villas, high nightly rates
+- Canggu: 14.8%, driven by digital nomad demand and year-round occupancy
+- Seminyak: 13.1%, established luxury short-stay market
+- Uluwatu / The Bukit: 12.4%, premium cliffside villas and high nightly rates
 
 **Strong mid-tier areas:**
-- Ubud: 9.6% — cultural tourism, strong occupancy but lower nightly rates
-- Sanur: 8.9% — family market, longer-stay guests, lower management intensity
-- Kedungu: 11.2% — emerging, supply still tight relative to demand
+- Ubud: 9.6%, cultural tourism with strong occupancy but lower nightly rates
+- Sanur: 8.9%, family market with longer-stay guests and lower management intensity
+- Kedungu: 11.2%, emerging area where supply is still tight relative to demand
 
-**Important caveat:** these are gross yields. Net yields after management fees (typically 15% to 25% of gross), maintenance, and tax run approximately 20% to 30% below gross. A 14.8% gross yield in Canggu translates to roughly 10% to 12% net — still exceptional by any global benchmark.
+**Important caveat:** these are gross yields. Net yields after management fees (typically 15% to 25% of gross), maintenance, and tax run approximately 20% to 30% below gross. A 14.8% gross yield in Canggu translates to roughly 10% to 12% net, which is still exceptional by any global benchmark.
 
 ---
 
@@ -82,11 +82,11 @@ The lowest entry in our dataset is USD $165,000 in East Bali for a two-bedroom v
 
 ---
 
-## The Risks — And How Real They Are
+## The Risks, And How Real They Are
 
 Any honest investment analysis has to cover the downside. Here are the real risks in the Bali property market and how significant each is in practice:
 
-**Developer delivery risk.** Off-plan properties are bought before they are built. Some developers deliver late; a small number do not deliver at all. This is the single biggest risk in the Bali market. Our research identified significant quality variation across the 80 developers in our dataset — this is exactly why independent developer due diligence matters. Ayla only works with developers with a verified delivery track record.
+**Developer delivery risk.** Off-plan properties are bought before they are built. Some developers deliver late; a small number do not deliver at all. This is the single biggest risk in the Bali market. Our research identified significant quality variation across the 80 developers in our dataset, which is exactly why independent developer due diligence matters. Ayla only works with developers with a verified delivery track record.
 
 **Leasehold risk.** You do not own the land freehold. If your lease is not properly structured, you have limited legal protection if the landowner disputes the arrangement. Solved by using a qualified Indonesian notary and ensuring the lease is publicly registered with the BPN.
 
@@ -94,7 +94,7 @@ Any honest investment analysis has to cover the downside. Here are the real risk
 
 **Regulatory risk.** Indonesian property law applies to foreigners and does change. The fundamental leasehold and PT PMA structures have been in place for decades and show no signs of changing, but any regulatory environment can shift.
 
-**Management dependency.** A Bali villa without good local management can see occupancy rates fall sharply. This is not unique to Bali — any short-term rental investment is management-dependent — but the physical distance from most buyers makes it more acute.
+**Management dependency.** A Bali villa without good local management can see occupancy rates fall sharply. This is not unique to Bali. Any short-term rental investment is management-dependent, but the physical distance from most buyers makes it more acute.
 
 ---
 
@@ -114,15 +114,15 @@ This is not a speculative play. It is a cash-flow-positive asset from year one, 
 
 ## What Our Data Cannot Tell You
 
-No dataset answers everything. Our analysis covers listed prices and projected yields — not actual achieved occupancy or management outcomes. The difference between a 60% and 85% occupancy rate on the same villa is roughly 40% of your annual income. Property management quality is the variable that determines whether you hit the top or bottom of the yield range.
+No dataset answers everything. Our analysis covers listed prices and projected yields, not actual achieved occupancy or management outcomes. The difference between a 60% and 85% occupancy rate on the same villa is roughly 40% of your annual income. Property management quality is the variable that determines whether you hit the top or bottom of the yield range.
 
-We also cannot predict regulatory changes, currency moves, or macroeconomic shocks. What we can say is that Bali has absorbed multiple external shocks over the past 20 years — the 2008 financial crisis, COVID-19, various regional disruptions — and in each case the property market recovered and continued to grow.
+We also cannot predict regulatory changes, currency moves, or macroeconomic shocks. What we can say is that Bali has absorbed multiple external shocks over the past 20 years: the 2008 financial crisis, COVID-19, various regional disruptions. In each case the property market recovered and continued to grow.
 
 ---
 
 ## Download the Full Dataset
 
-The complete Bali Property Market Report 2026 — including area-by-area price breakdowns, ROI tables, developer pipeline data, and our full methodology — is available free to download.
+The complete Bali Property Market Report 2026, including area-by-area price breakdowns, ROI tables, developer pipeline data, and our full methodology, is available free to download.
 
 <div class="not-prose my-8 text-center">
   <a href="/guides/bali-developer-report-2026/" class="inline-block bg-olive text-white uppercase tracking-widest text-sm font-semibold px-8 py-4 rounded-full hover:bg-brown transition-colors">View the Full Report</a>

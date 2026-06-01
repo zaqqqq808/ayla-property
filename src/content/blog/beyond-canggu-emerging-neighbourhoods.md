@@ -6,8 +6,6 @@ image: /images/journal/emerging-neighbourhoods.jpg
 tags: ["neighbourhoods", "canggu", "investment"]
 ---
 
-**December 2025-**
-
 When people think of investing in Bali, they usually rattle off the same four names: Ubud, Seminyak, Canggu, and maybe Uluwatu.
 
 And you know what? Investing in Canggu and Uluwatu is definitely not a bad idea. Those markets are still growing, the occupancy is high, and the demand is real. But if you want to find the "alpha," the kind of returns you get from buying *before* the masses arrive. You need to look where the smart money is moving right now.

@@ -1,12 +1,12 @@
 ---
 title: "Can Australians Buy Property in Bali? The Complete 2026 Guide"
-description: "Yes, Australians can buy property in Bali — but the rules matter. This guide covers leasehold vs freehold, PT PMA structures, legal steps, tax, and how Australian buyers actually do it in 2026."
+description: "Yes, Australians can buy property in Bali, but the rules matter. This guide covers leasehold vs freehold, PT PMA structures, legal steps, tax, and how Australian buyers actually do it in 2026."
 publishDate: 2026-06-01
 image: /images/journal/best-areas-bali-2026.jpg
 tags: ["legal", "australia", "buyers-guide"]
 ---
 
-Australia is Bali's single largest source of foreign property buyers. Thousands of Australians own villas, investment properties and holiday homes across the island. So yes — Australians can absolutely buy property in Bali. What matters is understanding *how* the ownership structures work, what the legal protections look like, and how to avoid the common mistakes that trip up first-time buyers.
+Australia is Bali's single largest source of foreign property buyers. Thousands of Australians own villas, investment properties and holiday homes across the island. So yes, Australians can absolutely buy property in Bali. What matters is understanding *how* the ownership structures work, what the legal protections look like, and how to avoid the common mistakes that trip up first-time buyers.
 
 This guide covers everything an Australian buyer needs to know in 2026.
 
@@ -18,13 +18,13 @@ The short answer is yes, with the right structure. Indonesian law does not permi
 
 ### Option 1: Leasehold (Hak Sewa)
 
-The most common route for Australian buyers. A leasehold agreement gives you the right to use and rent out a property for a defined term — typically 25 to 30 years, with options to extend. Leasehold is:
+The most common route for Australian buyers. A leasehold agreement gives you the right to use and rent out a property for a defined term, typically 25 to 30 years, with options to extend. Leasehold is:
 
 - **Fully legal** and recognised under Indonesian law
 - **The preferred structure** for investment villas and short-term rental properties
 - **Lower entry cost** than freehold in comparable markets
-- **Extendable** — most agreements include renewal options for another 20 to 30 years
-- **Sellable** — you can sell the remaining leasehold term at any point
+- **Extendable**, meaning most agreements include renewal options for another 20 to 30 years
+- **Sellable**: you can sell the remaining leasehold term at any point
 
 The key to a strong leasehold is getting the notarised agreement right from day one. The lease must be registered with a notary (PPAT), clearly define renewal terms and conditions, and include protections against the landowner selling the underlying land during your lease period.
 
@@ -40,7 +40,7 @@ Most Australian buyers starting with one or two properties begin with leasehold 
 
 You may hear about "nominee" structures where a local Indonesian individual holds the land title on behalf of a foreign buyer. **Ayla strongly advises against this.** Nominee arrangements are not legally recognised in Indonesia and have no enforceability in Indonesian courts. If the arrangement breaks down, you have no legal recourse to recover your property or funds.
 
-Stick to leasehold or PT PMA — both are legitimate, widely used and fully enforceable.
+Stick to leasehold or PT PMA. Both are legitimate, widely used and fully enforceable.
 
 ---
 
@@ -75,7 +75,7 @@ Before signing anything, a qualified Indonesian notary (PPAT) checks the land ti
 A small holding deposit (typically USD $2,000 to $5,000) secures the property while due diligence completes. This is refundable if due diligence reveals issues.
 
 **Step 3: Notarised Lease Agreement**
-The full leasehold agreement is drawn up by the notary, translated into both English and Bahasa Indonesia, and signed by both parties. This is the critical document — it defines your ownership rights, renewal terms, and protections.
+The full leasehold agreement is drawn up by the notary, translated into both English and Bahasa Indonesia, and signed by both parties. This is the critical document, the one that defines your ownership rights, renewal terms, and protections.
 
 **Step 4: Payment**
 Most Bali developers offer staged payment plans: typically 30% to 40% on signing, with the remainder paid in instalments tied to construction milestones (for off-plan) or immediately (for ready villas).
@@ -95,7 +95,7 @@ The whole process typically takes 4 to 8 weeks from first payment to signed and 
 - Capital gains on sale: approximately 2.5% of gross sale proceeds
 
 **Australian tax obligations:**
-Australian residents are taxed on worldwide income, including Bali rental income. You must declare rental income from your Bali property in your Australian tax return. You can generally claim deductions for property management fees, maintenance costs, and interest on any borrowings. Depreciation rules differ from Australian property — speak to a tax accountant experienced in offshore property.
+Australian residents are taxed on worldwide income, including Bali rental income. You must declare rental income from your Bali property in your Australian tax return. You can generally claim deductions for property management fees, maintenance costs, and interest on any borrowings. Depreciation rules differ from Australian property, so speak to a tax accountant experienced in offshore property.
 
 The Australia-Indonesia double tax agreement (DTA) means you generally receive a credit in Australia for taxes already paid in Indonesia, avoiding double taxation.
 
@@ -115,7 +115,7 @@ The Australia-Indonesia double tax agreement (DTA) means you generally receive a
 
 ## Ready to Take the Next Step?
 
-Ayla Property works exclusively with Australian, Singaporean and regional Asian investors entering the Bali market. We have direct relationships with the island's most reputable developers and provide independent guidance — we do not take commissions from developers.
+Ayla Property works exclusively with Australian, Singaporean and regional Asian investors entering the Bali market. We have direct relationships with the island's most reputable developers and provide independent guidance. We do not take commissions from developers.
 
 If you are considering buying property in Bali as an Australian, the best first step is a free 30-minute call to walk through your specific situation, budget and goals.
 
@@ -125,6 +125,6 @@ If you are considering buying property in Bali as an Australian, the best first 
 
 You may also find these resources useful:
 
-- [Bali Buyers Guide 2026](/guides/foreigners-buying-property-bali/) — the complete legal and process guide for all foreign buyers
-- [Bali Developer Report 2026](/guides/bali-developer-report-2026/) — our independent analysis of 511 listings across 80 developers
-- [Best Areas to Invest in Bali 2026](/journal/best-areas-invest-bali-2026/) — where we are telling clients to put their money right now
+- [Bali Buyers Guide 2026](/guides/foreigners-buying-property-bali/): the complete legal and process guide for all foreign buyers
+- [Bali Developer Report 2026](/guides/bali-developer-report-2026/): our independent analysis of 511 listings across 80 developers
+- [Best Areas to Invest in Bali 2026](/journal/best-areas-invest-bali-2026/): where we are telling clients to put their money right now

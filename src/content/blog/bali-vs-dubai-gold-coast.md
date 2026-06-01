@@ -6,7 +6,6 @@ image: /images/journal/bali-vs-world.jpg
 tags: ["comparison", "roi", "global"]
 ---
 
-**December 2025-**
 Everyone is talking about Bali right now. If you are looking to invest, you probably don't want the fluff about sunsets and coconuts. You want to know if the numbers actually stack up.
 I am not going to drop a bunch of stats and run away. I want to explain precisely why Bali is still the king of real estate ROI and why it looks set to stay that way for the foreseeable future.
 ## My own portfolio: Dubai vs. Bali

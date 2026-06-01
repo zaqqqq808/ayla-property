@@ -6,9 +6,7 @@ image: /images/journal/leasehold-vs-freehold.jpg
 tags: ["leasehold", "investment", "legal"]
 ---
 
-**December 2025-**
-
-**When** most people start looking at real estate in Bali, their first instinct is: *"I want Freehold."*
+When most people start looking at real estate in Bali, their first instinct is: *"I want Freehold."*
 
 It makes sense. In Europe, Australia, or the US, owning the land forever is the gold standard. Why would you "rent" land for 25 or 30 years when you could own it outright?
 
