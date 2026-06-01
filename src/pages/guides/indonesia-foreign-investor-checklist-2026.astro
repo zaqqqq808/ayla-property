@@ -64,6 +64,13 @@ const articleSchema = JSON.stringify({
         Indonesia's most significant property and investment regulations in a decade came into effect in 2025 and 2026. This checklist covers every requirement foreign investors must meet: visas, ownership structures, licensing, compliance deadlines, and due diligence.
       </p>
       <p class="text-gold/80 text-xs uppercase tracking-widest">Last updated June 2026 · Free to cite with attribution to Ayla Property</p>
+      <div class="flex items-center justify-center gap-3 mt-6">
+        <img src="/images/team-zaq.webp" alt="Zaq Qureshi" class="w-10 h-10 rounded-full object-cover border-2 border-white/30" />
+        <div class="text-left">
+          <p class="text-white text-sm font-semibold">Zaq Qureshi</p>
+          <p class="text-white/60 text-xs">Bali property broker · Founder, Ayla Property · Based in Bali since 2023</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -237,10 +244,12 @@ const articleSchema = JSON.stringify({
               "Investor KITAS holders should verify their visa category is compatible with property ownership activities",
               "Check whether your nationality requires a sponsor letter and which Indonesian authority is the appropriate sponsor for investor visas",
             ].map(item => (
-              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
-                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
-                <p class="text-sm text-brown">{item}</p>
-              </div>
+              <label class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige cursor-pointer hover:border-olive transition-colors group checklist-item">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5 flex items-center justify-center transition-colors checkbox-box">
+                  <svg class="w-3 h-3 text-white hidden check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p class="text-sm text-brown group-[.checked]:line-through group-[.checked]:text-brown/40 transition-all">{item}</p>
+              </label>
             ))}
           </div>
         </section>
@@ -261,10 +270,12 @@ const articleSchema = JSON.stringify({
               "Check for force majeure and government compulsory acquisition clauses: compensation must flow to the leaseholder, not the landowner",
               "Avoid nominee arrangements: these have no legal recognition under Indonesian law and cannot be enforced in Indonesian courts",
             ].map(item => (
-              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
-                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
-                <p class="text-sm text-brown">{item}</p>
-              </div>
+              <label class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige cursor-pointer hover:border-olive transition-colors group checklist-item">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5 flex items-center justify-center transition-colors checkbox-box">
+                  <svg class="w-3 h-3 text-white hidden check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p class="text-sm text-brown group-[.checked]:line-through group-[.checked]:text-brown/40 transition-all">{item}</p>
+              </label>
             ))}
           </div>
 
@@ -280,10 +291,12 @@ const articleSchema = JSON.stringify({
               "Conduct annual compliance: financial reporting, tax filing, and company secretarial obligations",
               "For existing PT PMAs: verify your KBLI codes align with KBLI 2025 classifications by June 2026 (6-month transition from December 2025 publication date)",
             ].map(item => (
-              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
-                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
-                <p class="text-sm text-brown">{item}</p>
-              </div>
+              <label class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige cursor-pointer hover:border-olive transition-colors group checklist-item">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5 flex items-center justify-center transition-colors checkbox-box">
+                  <svg class="w-3 h-3 text-white hidden check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p class="text-sm text-brown group-[.checked]:line-through group-[.checked]:text-brown/40 transition-all">{item}</p>
+              </label>
             ))}
           </div>
         </section>
@@ -308,10 +321,12 @@ const articleSchema = JSON.stringify({
               "Obtain a valid environmental permit (UKL-UPL or SPPL) if your development exceeds the threshold for environmental impact assessment",
               "Register for Pajak Hotel dan Restoran (Hotel and Restaurant Tax) with your local Badan Pendapatan Daerah if collecting accommodation tax from guests",
             ].map(item => (
-              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
-                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
-                <p class="text-sm text-brown">{item}</p>
-              </div>
+              <label class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige cursor-pointer hover:border-olive transition-colors group checklist-item">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5 flex items-center justify-center transition-colors checkbox-box">
+                  <svg class="w-3 h-3 text-white hidden check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p class="text-sm text-brown group-[.checked]:line-through group-[.checked]:text-brown/40 transition-all">{item}</p>
+              </label>
             ))}
           </div>
         </section>
@@ -333,10 +348,12 @@ const articleSchema = JSON.stringify({
               "Confirm the property's rental management structure: pooled income, individual rental, or management-only arrangements each carry different financial implications",
               "Verify the property has a valid PBG and Sertifikat Laik Fungsi (SLF, certificate of functional eligibility) before handover: occupancy without SLF is technically non-compliant",
             ].map(item => (
-              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
-                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
-                <p class="text-sm text-brown">{item}</p>
-              </div>
+              <label class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige cursor-pointer hover:border-olive transition-colors group checklist-item">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5 flex items-center justify-center transition-colors checkbox-box">
+                  <svg class="w-3 h-3 text-white hidden check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p class="text-sm text-brown group-[.checked]:line-through group-[.checked]:text-brown/40 transition-all">{item}</p>
+              </label>
             ))}
           </div>
         </section>
@@ -355,10 +372,12 @@ const articleSchema = JSON.stringify({
               "VAT (PPN): applies to new property sales from developers at 12% as of 2026, increased from 11% under the Tax Harmonization Law (UU HPP) and Ministry of Finance Regulation PMK 131/2024. Not typically applicable to resale leasehold transfers",
               "For PT PMA operators: Corporate Income Tax (PPh Badan) applies to net profit at 22%. Annual tax returns must be filed by April 30 each year",
             ].map(item => (
-              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
-                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
-                <p class="text-sm text-brown">{item}</p>
-              </div>
+              <label class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige cursor-pointer hover:border-olive transition-colors group checklist-item">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5 flex items-center justify-center transition-colors checkbox-box">
+                  <svg class="w-3 h-3 text-white hidden check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p class="text-sm text-brown group-[.checked]:line-through group-[.checked]:text-brown/40 transition-all">{item}</p>
+              </label>
             ))}
           </div>
 
@@ -372,10 +391,12 @@ const articleSchema = JSON.stringify({
               "UK: Indonesian rental income must be declared to HMRC. Foreign tax credit relief applies under the UK-Indonesia DTA",
               "Consult a tax adviser experienced in cross-border property in your home country before purchase: tax treatment varies significantly by residency status and structure",
             ].map(item => (
-              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
-                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
-                <p class="text-sm text-brown">{item}</p>
-              </div>
+              <label class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige cursor-pointer hover:border-olive transition-colors group checklist-item">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5 flex items-center justify-center transition-colors checkbox-box">
+                  <svg class="w-3 h-3 text-white hidden check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p class="text-sm text-brown group-[.checked]:line-through group-[.checked]:text-brown/40 transition-all">{item}</p>
+              </label>
             ))}
           </div>
 
@@ -388,10 +409,12 @@ const articleSchema = JSON.stringify({
               "International bank transfer (SWIFT) and major stablecoins (USDT, USDC) are both widely accepted by Bali developers",
               "Ensure your transfer documentation clearly references the property purchase: this forms part of your legal file",
             ].map(item => (
-              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
-                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
-                <p class="text-sm text-brown">{item}</p>
-              </div>
+              <label class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige cursor-pointer hover:border-olive transition-colors group checklist-item">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5 flex items-center justify-center transition-colors checkbox-box">
+                  <svg class="w-3 h-3 text-white hidden check-icon" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <p class="text-sm text-brown group-[.checked]:line-through group-[.checked]:text-brown/40 transition-all">{item}</p>
+              </label>
             ))}
           </div>
         </section>
@@ -497,6 +520,7 @@ const articleSchema = JSON.stringify({
   <StickyButton />
 
   <script>
+    // TOC active state
     const tocLinks = document.querySelectorAll('.toc-link');
     const sections = document.querySelectorAll('.guide-section');
     const observer = new IntersectionObserver((entries) => {
@@ -509,5 +533,36 @@ const articleSchema = JSON.stringify({
       });
     }, { rootMargin: '-20% 0px -70% 0px' });
     sections.forEach(s => observer.observe(s));
+
+    // Interactive checklist — tick and untick items, persist via localStorage
+    const STORAGE_KEY = 'ayla-checklist-2026';
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+
+    document.querySelectorAll('.checklist-item').forEach((label, i) => {
+      const box = label.querySelector('.checkbox-box');
+      const icon = label.querySelector('.check-icon');
+
+      const setChecked = (checked) => {
+        if (checked) {
+          box.classList.add('bg-olive', 'border-olive');
+          icon.classList.remove('hidden');
+          label.classList.add('checked');
+        } else {
+          box.classList.remove('bg-olive', 'border-olive');
+          icon.classList.add('hidden');
+          label.classList.remove('checked');
+        }
+      };
+
+      // Restore saved state
+      if (saved[i]) setChecked(true);
+
+      label.addEventListener('click', () => {
+        const nowChecked = !label.classList.contains('checked');
+        setChecked(nowChecked);
+        saved[i] = nowChecked;
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+      });
+    });
   </script>
 </BaseLayout>
