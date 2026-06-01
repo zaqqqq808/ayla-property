@@ -1,0 +1,456 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_URL } from '@/config';
+import Header from '@/components/Header.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+import CalendlyButton from '@/components/CalendlyButton.astro';
+
+const sections = [
+  { id: 'regulatory-overview', label: '2026 Regulatory Overview' },
+  { id: 'visa-checklist',      label: 'Visa and Residency' },
+  { id: 'ownership-checklist', label: 'Ownership Structures' },
+  { id: 'licensing-checklist', label: 'Licensing and Compliance' },
+  { id: 'due-diligence',       label: 'Due Diligence' },
+  { id: 'tax-financial',       label: 'Tax and Finance' },
+  { id: 'key-dates',           label: 'Key 2026 Dates' },
+];
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` },
+    { "@type": "ListItem", "position": 2, "name": "Indonesia Foreign Investor Checklist 2026", "item": `${SITE_URL}/guides/indonesia-foreign-investor-checklist-2026/` },
+  ]
+});
+
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Indonesia Foreign Investor Checklist 2026: Visas, Property, Licensing and Compliance",
+  "description": "The complete 2026 regulatory checklist for foreign investors buying property in Indonesia and Bali. Covers new KBLI licensing rules, Golden Visa thresholds, PT PMA capital changes, and OTA compliance deadlines.",
+  "author": { "@type": "Organization", "name": "Ayla Property", "url": SITE_URL },
+  "publisher": { "@type": "Organization", "name": "Ayla Property", "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png` } },
+  "datePublished": "2026-06-01",
+  "dateModified": "2026-06-01",
+  "url": `${SITE_URL}/guides/indonesia-foreign-investor-checklist-2026/`,
+});
+---
+
+<BaseLayout
+  title="Indonesia Foreign Investor Checklist 2026 | Visas, Property, Licensing | Ayla Property"
+  description="The complete 2026 regulatory checklist for foreign investors in Indonesia. Covers new KBLI licensing rules, Golden Visa thresholds, PT PMA changes, Second Home Visa, and OTA compliance deadlines."
+  ogType="article"
+  ogImage="/og-guide.jpg"
+>
+  <Fragment slot="head">
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+    <Fragment set:html={`<script type="application/ld+json">${articleSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+
+  <!-- Hero -->
+  <section class="relative bg-brown pt-40 pb-16 px-6 lg:px-12 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/images/hero-villa.jpg')] bg-cover bg-center opacity-20"></div>
+    <div class="relative max-w-4xl mx-auto text-center">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Regulatory Guide · June 2026</p>
+      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-display uppercase leading-tight mb-6">
+        Indonesia Foreign<br />Investor Checklist 2026
+      </h1>
+      <p class="text-white/75 text-lg max-w-2xl mx-auto mb-8">
+        Indonesia's most significant property and investment regulations in a decade came into effect in 2025 and 2026. This checklist covers every requirement foreign investors must meet: visas, ownership structures, licensing, compliance deadlines, and due diligence.
+      </p>
+      <p class="text-gold/80 text-xs uppercase tracking-widest">Last updated June 2026 · Free to cite with attribution to Ayla Property</p>
+    </div>
+  </section>
+
+  <!-- Alert bar -->
+  <div class="bg-gold/10 border-b border-gold/30 py-4 px-6">
+    <div class="max-w-4xl mx-auto flex items-start gap-3">
+      <svg class="w-5 h-5 text-gold-dark shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+      <p class="text-brown text-sm"><strong>Key deadline:</strong> All short-term rental properties operating on OTA platforms (Airbnb, Booking.com, Expedia) were required to hold a valid NIB business licence by March 2026. Properties without verified licensing face delisting.</p>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24 flex flex-col lg:flex-row gap-12 lg:gap-16">
+
+      <!-- Sticky sidebar -->
+      <aside class="lg:w-64 shrink-0">
+        <div class="lg:sticky lg:top-8">
+          <p class="text-gold-dark uppercase tracking-widest text-xs font-semibold mb-4">Sections</p>
+          <nav class="space-y-1" aria-label="Checklist sections">
+            {sections.map(s => (
+              <a href={`#${s.id}`} class="toc-link block text-sm text-brown/60 hover:text-olive py-1.5 border-l-2 border-transparent hover:border-olive pl-3 transition-all duration-150">{s.label}</a>
+            ))}
+          </nav>
+          <div class="mt-8 p-4 bg-white rounded-xl border border-beige text-center">
+            <p class="text-brown text-sm font-semibold mb-1">Questions about compliance?</p>
+            <p class="text-brown/60 text-xs mb-3">Book a free call with Ayla</p>
+            <CalendlyButton text="Free Consultation" variant="brown" />
+          </div>
+          <a href="/guides/foreigners-buying-property-bali/" class="mt-4 flex items-center justify-center gap-2 w-full border border-gold/50 text-gold-dark hover:bg-gold/10 text-xs uppercase tracking-widest font-semibold px-4 py-3 rounded-sm transition-colors">
+            Full Buyers Guide &rarr;
+          </a>
+        </div>
+      </aside>
+
+      <!-- Article body -->
+      <article class="flex-1 max-w-3xl guide-content">
+
+        <!-- Regulatory Overview -->
+        <section id="regulatory-overview" class="guide-section mb-16">
+          <h2>2026 Regulatory Overview</h2>
+          <p>Three major regulatory shifts have reshaped the landscape for foreign property investors in Indonesia since late 2025. Each has direct compliance implications for anyone buying, building, or operating rental property in Bali or elsewhere in Indonesia.</p>
+
+          <h3>1. KBLI 2025 Business Classification Update</h3>
+          <p>BPS Regulation No. 7 of 2025, published on 17 December 2025, introduced a revised Indonesian Standard Industrial Classification (KBLI) system. All businesses involved in accommodation, property rental, and hospitality are required to realign their company registrations to the new codes within approximately six months of publication. The key new codes affecting villa investors are:</p>
+          <ul>
+            <li><strong>KBLI 55203</strong>: Villa Activity (the primary code for PT PMA villa operators)</li>
+            <li><strong>KBLI 55106</strong>: Non-Star Hotel</li>
+            <li><strong>KBLI 55204</strong>: Serviced Apartment</li>
+            <li><strong>KBLI 55209</strong>: Glamping and nature accommodation</li>
+          </ul>
+          <p>The era of operating villa rentals under informal or mismatched business classifications has effectively ended. The government has made clear that property investment is now treated as a formal business activity requiring correct licensing from day one.</p>
+
+          <h3>2. PT PMA Capital Requirement Reduction</h3>
+          <p>BKPM Regulation 5/2025 reduced the minimum paid-up capital requirement for a PT PMA (foreign-owned Indonesian company) from IDR 10 billion to IDR 2.5 billion. This makes the PT PMA route meaningfully more accessible for individual foreign investors and represents the most significant reduction in the structure's setup cost in over a decade.</p>
+
+          <h3>3. OTA Platform Licensing Enforcement</h3>
+          <p>The Indonesian government, in coordination with major online travel agencies, implemented mandatory NIB (Nomor Induk Berusaha) verification for all properties listed on Airbnb, Booking.com, and Expedia. The enforcement deadline was March 2026. Properties operating without valid licensing now face removal from these platforms.</p>
+        </section>
+
+        <!-- Visa Checklist -->
+        <section id="visa-checklist" class="guide-section mb-16">
+          <h2>Visa and Residency Checklist</h2>
+          <p>Indonesia now offers three distinct long-stay pathways for foreign property investors. The right choice depends on your investment size, intended use, and whether you plan to reside in Indonesia.</p>
+
+          <h3>Golden Visa (E28C) — Updated 2026 Thresholds</h3>
+          <div class="overflow-x-auto mt-4">
+            <table class="w-full text-sm border-collapse">
+              <thead>
+                <tr class="bg-brown text-white">
+                  <th class="text-left px-4 py-3 font-semibold">Visa Type</th>
+                  <th class="text-left px-4 py-3 font-semibold">Duration</th>
+                  <th class="text-left px-4 py-3 font-semibold">Investment Requirement</th>
+                  <th class="text-left px-4 py-3 font-semibold">Eligible Instruments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-beige bg-white">
+                  <td class="px-4 py-3 font-semibold">Golden Visa (Individual)</td>
+                  <td class="px-4 py-3">5 years</td>
+                  <td class="px-4 py-3">USD $350,000</td>
+                  <td class="px-4 py-3">Government bonds, IDX shares, mutual funds</td>
+                </tr>
+                <tr class="border-b border-beige bg-cream/50">
+                  <td class="px-4 py-3 font-semibold">Golden Visa (Individual)</td>
+                  <td class="px-4 py-3">10 years</td>
+                  <td class="px-4 py-3">USD $700,000</td>
+                  <td class="px-4 py-3">Government bonds, IDX shares, or residential apartment</td>
+                </tr>
+                <tr class="border-b border-beige bg-white">
+                  <td class="px-4 py-3 font-semibold">Golden Visa (Property Route)</td>
+                  <td class="px-4 py-3">10 years</td>
+                  <td class="px-4 py-3">USD $1,000,000+</td>
+                  <td class="px-4 py-3">Residential apartment purchase</td>
+                </tr>
+                <tr class="border-b border-beige bg-cream/50">
+                  <td class="px-4 py-3 font-semibold">Second Home Visa</td>
+                  <td class="px-4 py-3">5 years (renewable)</td>
+                  <td class="px-4 py-3">IDR 2 billion (~USD $130,000)</td>
+                  <td class="px-4 py-3">Property ownership OR bank deposit</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="mt-8">Visa Checklist</h3>
+          <div class="space-y-3 mt-4">
+            {[
+              "Determine which visa pathway matches your investment size and residency intention",
+              "For Golden Visa: confirm your investment instrument qualifies (government bonds, IDX-listed shares, mutual funds registered with OJK, or qualifying residential apartment)",
+              "For Second Home Visa: confirm property value meets IDR 2 billion minimum OR prepare equivalent bank deposit documentation",
+              "Apply through the Directorate General of Immigration (imigrasi.go.id) or authorised immigration consultants",
+              "Note: Golden Visa is renewable and does not grant permanent residency. KITAP (permanent stay permit) follows a separate pathway",
+              "Investor KITAS holders should verify their visa category is compatible with property ownership activities",
+              "Check whether your nationality requires a sponsor letter and which Indonesian authority is the appropriate sponsor for investor visas",
+            ].map(item => (
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
+                <p class="text-sm text-brown">{item}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Ownership Structures -->
+        <section id="ownership-checklist" class="guide-section mb-16">
+          <h2>Ownership Structure Checklist</h2>
+          <p>Foreign nationals cannot hold Hak Milik (freehold) title directly. The two compliant structures are leasehold (Hak Sewa / Hak Pakai) and the PT PMA route for Hak Guna Bangunan. Selecting the wrong structure at purchase is expensive to unwind.</p>
+
+          <h3>Leasehold (Hak Sewa / Hak Pakai)</h3>
+          <div class="space-y-3 mt-4">
+            {[
+              "Confirm the lease term: minimum recommended is 25 years initial term with a contracted right of renewal for a further 25 years",
+              "Verify the renewal clause is explicit, not implied: the renewal price formula must be defined in the original agreement, not left to future negotiation",
+              "Confirm the lease is notarised by a qualified PPAT (Pejabat Pembuat Akta Tanah) notary",
+              "Confirm the lease is registered with the BPN (Badan Pertanahan Nasional, the National Land Agency): unregistered leases have significantly weaker legal standing",
+              "Verify transferability: the agreement must grant you the explicit right to sell or transfer the lease without requiring the landowner's approval (or with approval not to be unreasonably withheld)",
+              "Check for force majeure and government compulsory acquisition clauses: compensation must flow to the leaseholder, not the landowner",
+              "Avoid nominee arrangements: these have no legal recognition under Indonesian law and cannot be enforced in Indonesian courts",
+            ].map(item => (
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
+                <p class="text-sm text-brown">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="mt-8">PT PMA (Foreign-Owned Company)</h3>
+          <div class="space-y-3 mt-4">
+            {[
+              "Confirm PT PMA is registered with BKPM (OSS system) with the correct KBLI codes for your intended property activity",
+              "New 2026 requirement: paid-up capital minimum is IDR 2.5 billion (reduced from IDR 10 billion under BKPM Regulation 5/2025)",
+              "Ensure your KBLI registration matches your actual business activity: KBLI 55203 for villa operations, KBLI 55193 for villa rental, or appropriate accommodation codes",
+              "Register for Indonesian tax (NPWP) in the PT PMA's name",
+              "Open a corporate bank account with an Indonesian bank in the PT PMA's name for rental income receipt",
+              "Appoint a local director if required by your business activity classification",
+              "Conduct annual compliance: financial reporting, tax filing, and company secretarial obligations",
+              "For existing PT PMAs: verify your KBLI codes align with KBLI 2025 classifications by June 2026 (6-month transition from December 2025 publication date)",
+            ].map(item => (
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
+                <p class="text-sm text-brown">{item}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Licensing and Compliance -->
+        <section id="licensing-checklist" class="guide-section mb-16">
+          <h2>Licensing and Compliance Checklist</h2>
+          <p>This is the area of most significant change in 2025 and 2026. Operating a rental property without the correct licences is now an enforced compliance risk, not merely a theoretical one.</p>
+
+          <div class="callout mb-6">
+            <strong>Critical note:</strong> Foreigners cannot legally hold a Pondok Wisata (homestay) licence. Under Permenpar 18/2016, this licence is restricted to Indonesian citizens. The compliant route for foreign-owned rental villas is a PT PMA holding KBLI 55203 (Villa Activity) or KBLI 55193 (Villa Rental).
+          </div>
+
+          <div class="space-y-3">
+            {[
+              "Obtain a NIB (Nomor Induk Berusaha) through the OSS (Online Single Submission) system at oss.go.id: this is the primary business registration number required for all OTA platform listings",
+              "Obtain the correct accommodation licence for your property type: Villa licence (KBLI 55203) for villas, not a Pondok Wisata (which requires Indonesian citizenship)",
+              "Obtain TDUP (Tanda Daftar Usaha Pariwisata): tourism business registration, required for any accommodation offering short-stay rentals",
+              "Confirm your building permit (PBG, formerly IMB) is valid and matches the current use of the property",
+              "Confirm zoning (RTRW): the land must be zoned for commercial or tourism use, not agricultural. Villas on agricultural-zoned land cannot legally be rented out",
+              "Existing OTA operators: verify your NIB has been submitted to and verified by your OTA platforms (Airbnb, Booking.com, Expedia) before the March 2026 enforcement deadline",
+              "Obtain a valid environmental permit (UKL-UPL or SPPL) if your development exceeds the threshold for environmental impact assessment",
+              "Register for Pajak Hotel dan Restoran (Hotel and Restaurant Tax) with your local Badan Pendapatan Daerah if collecting accommodation tax from guests",
+            ].map(item => (
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
+                <p class="text-sm text-brown">{item}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Due Diligence -->
+        <section id="due-diligence" class="guide-section mb-16">
+          <h2>Due Diligence Checklist</h2>
+          <p>The steps below apply to every property purchase, regardless of structure. Skipping any one of them is the most common cause of Bali property disputes.</p>
+
+          <div class="space-y-3">
+            {[
+              "Instruct an independent PPAT notary (not the developer's notary) to run a full title check on the land certificate (sertifikat tanah)",
+              "Verify the land certificate is free of encumbrances, liens, or disputes via the BPN database",
+              "Confirm the seller has the legal authority to sell: for company-owned land, verify company directors' authority and obtain corporate resolutions",
+              "Check the building permit (PBG) is valid, correctly names the owner, and matches the actual built footprint",
+              "Confirm zoning status with the local DPMPTSP (investment and licensing agency): tourist accommodation zones, residential zones, and agricultural zones carry different legal permissions",
+              "For off-plan properties: verify the developer's track record across all completed projects. Request completion certificates and speak with previous buyers",
+              "Review the PPJB (sale and purchase agreement) or lease deed in full before signing. Key clauses: payment milestones, penalties for late delivery, renewal terms (for leasehold), and dispute resolution",
+              "Confirm the property's rental management structure: pooled income, individual rental, or management-only arrangements each carry different financial implications",
+              "Verify the property has a valid PBG and Sertifikat Laik Fungsi (SLF, certificate of functional eligibility) before handover: occupancy without SLF is technically non-compliant",
+            ].map(item => (
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
+                <p class="text-sm text-brown">{item}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Tax and Finance -->
+        <section id="tax-financial" class="guide-section mb-16">
+          <h2>Tax and Financial Checklist</h2>
+
+          <h3>Indonesian Tax Obligations</h3>
+          <div class="space-y-3 mt-4">
+            {[
+              "PBB (Pajak Bumi dan Bangunan, Land and Building Tax): approximately 0.5% of assessed value per year, payable annually",
+              "Rental income withholding tax: 10% final withholding tax on gross rental income for properties managed by a licensed operator",
+              "Capital gains on sale: approximately 2.5% of gross sale proceeds (BPHTB seller-side tax), payable at the time of sale",
+              "BPHTB buyer-side acquisition tax: 5% of the property value above the NJOPTKP threshold, payable by the buyer on purchase",
+              "VAT (PPN): applies to new property sales from developers at 11%. Not typically applicable to resale leasehold transfers",
+              "For PT PMA operators: Corporate Income Tax (PPh Badan) applies to net profit at 22%. Annual tax returns must be filed by April 30 each year",
+            ].map(item => (
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
+                <p class="text-sm text-brown">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="mt-8">Home Country Tax Obligations</h3>
+          <div class="space-y-3 mt-4">
+            {[
+              "Declare Indonesian rental income in your home country tax return: most countries (including Australia, UK, Singapore, and the Netherlands) tax residents on worldwide income",
+              "Check your home country's Double Tax Agreement (DTA) with Indonesia: most DTAs allow credit for Indonesian withholding tax paid, reducing or eliminating double taxation",
+              "Australia-Indonesia DTA: Indonesian rental income must be declared in Australia. Tax paid in Indonesia is creditable against Australian tax liability under the DTA",
+              "Singapore: Indonesian rental income is generally not taxable in Singapore for non-remitted foreign-sourced income, but remittances may be assessable",
+              "UK: Indonesian rental income must be declared to HMRC. Foreign tax credit relief applies under the UK-Indonesia DTA",
+              "Consult a tax adviser experienced in cross-border property in your home country before purchase: tax treatment varies significantly by residency status and structure",
+            ].map(item => (
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
+                <p class="text-sm text-brown">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="mt-8">Financial Structure</h3>
+          <div class="space-y-3 mt-4">
+            {[
+              "Indonesian banks typically offer loan-to-value ratios of 50% to 70% for foreign borrowers: plan for a minimum 30% to 50% cash deposit",
+              "Most Bali property transactions are denominated in USD: factor exchange rate risk into your financial planning if your home currency is not USD",
+              "Staged payment plans are standard for off-plan purchases: typically 30% to 40% on signing, with the balance in milestones tied to construction progress",
+              "International bank transfer (SWIFT) and major stablecoins (USDT, USDC) are both widely accepted by Bali developers",
+              "Ensure your transfer documentation clearly references the property purchase: this forms part of your legal file",
+            ].map(item => (
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg border border-beige">
+                <div class="w-5 h-5 rounded border-2 border-olive shrink-0 mt-0.5"></div>
+                <p class="text-sm text-brown">{item}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Key Dates -->
+        <section id="key-dates" class="guide-section mb-16">
+          <h2>Key 2026 Regulatory Dates</h2>
+          <div class="overflow-x-auto mt-4">
+            <table class="w-full text-sm border-collapse">
+              <thead>
+                <tr class="bg-brown text-white">
+                  <th class="text-left px-4 py-3 font-semibold">Date</th>
+                  <th class="text-left px-4 py-3 font-semibold">Regulation</th>
+                  <th class="text-left px-4 py-3 font-semibold">What It Means</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-beige bg-white">
+                  <td class="px-4 py-3 font-semibold">17 December 2025</td>
+                  <td class="px-4 py-3">BPS Regulation No. 7/2025 (KBLI 2025)</td>
+                  <td class="px-4 py-3">New business classification codes published. 6-month transition period begins.</td>
+                </tr>
+                <tr class="border-b border-beige bg-cream/50">
+                  <td class="px-4 py-3 font-semibold">March 2026</td>
+                  <td class="px-4 py-3">OTA NIB enforcement deadline</td>
+                  <td class="px-4 py-3">All rental properties on Airbnb, Booking.com, Expedia must hold verified NIB. Non-compliant listings face delisting.</td>
+                </tr>
+                <tr class="border-b border-beige bg-white">
+                  <td class="px-4 py-3 font-semibold">June 2026</td>
+                  <td class="px-4 py-3">KBLI 2025 transition deadline</td>
+                  <td class="px-4 py-3">All PT PMA and business entities must have updated their KBLI codes to the 2025 classifications.</td>
+                </tr>
+                <tr class="border-b border-beige bg-cream/50">
+                  <td class="px-4 py-3 font-semibold">Ongoing</td>
+                  <td class="px-4 py-3">BKPM Regulation 5/2025 (PT PMA capital)</td>
+                  <td class="px-4 py-3">New PT PMA minimum paid-up capital: IDR 2.5 billion (down from IDR 10 billion). Applies to new incorporations.</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-4 py-3 font-semibold">Ongoing</td>
+                  <td class="px-4 py-3">Golden Visa E28C</td>
+                  <td class="px-4 py-3">5-year visa from USD $350,000 investment. 10-year from USD $700,000. Property route requires USD $1,000,000+ apartment.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-8 p-6 bg-white border border-beige rounded-xl">
+            <h3 class="text-brown font-semibold mb-2">About This Checklist</h3>
+            <p class="text-sm text-brown/70">This checklist was compiled by Ayla Property in June 2026 based on BKPM Regulation 5/2025, BPS Regulation No. 7/2025, Permenpar 18/2016, and current immigration rules from the Directorate General of Immigration. It is provided for informational purposes and does not constitute legal or tax advice. Regulations change: always verify current requirements with a qualified Indonesian legal practitioner before transacting.</p>
+            <p class="text-sm text-brown/70 mt-2">Free to cite and republish with attribution to Ayla Property (<a href={SITE_URL} class="text-olive hover:underline">aylaproperty.com</a>).</p>
+          </div>
+        </section>
+
+        <!-- Related resources -->
+        <section class="guide-section mb-8">
+          <h2>Related Resources</h2>
+          <div class="grid sm:grid-cols-2 gap-4 mt-6">
+            <a href="/guides/foreigners-buying-property-bali/" class="flex items-center gap-4 p-4 bg-white border border-beige rounded-xl hover:border-olive transition-colors group">
+              <div class="w-10 h-10 bg-olive/10 rounded-lg flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-olive" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.966 8.966 0 00-6 2.292m0-14.25v14.25"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm text-brown group-hover:text-olive transition-colors">Bali Buyers Guide 2026</p>
+                <p class="text-xs text-brown/60 mt-0.5">Complete legal and process guide</p>
+              </div>
+            </a>
+            <a href="/guides/bali-developer-report-2026/" class="flex items-center gap-4 p-4 bg-white border border-beige rounded-xl hover:border-olive transition-colors group">
+              <div class="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-gold-dark" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm text-brown group-hover:text-olive transition-colors">Developer Report 2026</p>
+                <p class="text-xs text-brown/60 mt-0.5">511 listings, 80 developers, 15 areas</p>
+              </div>
+            </a>
+            <a href="/guides/bali-property-investment/" class="flex items-center gap-4 p-4 bg-white border border-beige rounded-xl hover:border-olive transition-colors group">
+              <div class="w-10 h-10 bg-brown/10 rounded-lg flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-brown" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm text-brown group-hover:text-olive transition-colors">Investment Guide 2026</p>
+                <p class="text-xs text-brown/60 mt-0.5">Yields, structures, best areas</p>
+              </div>
+            </a>
+            <a href="https://calendly.com/ayla-teamoperations/30min" class="flex items-center gap-4 p-4 bg-olive border border-olive rounded-xl hover:bg-brown transition-colors group">
+              <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-sm text-white">Book a Free Call</p>
+                <p class="text-xs text-white/70 mt-0.5">Talk through your compliance questions</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </div>
+
+  <ContactCTA />
+  <Footer />
+  <StickyButton />
+
+  <script>
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const sections = document.querySelectorAll('.guide-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(l => l.classList.remove('border-olive','text-olive'));
+          const active = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
+          active?.classList.add('border-olive','text-olive');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    sections.forEach(s => observer.observe(s));
+  </script>
+</BaseLayout>
