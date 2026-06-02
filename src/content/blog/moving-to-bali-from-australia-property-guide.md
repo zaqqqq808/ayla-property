@@ -8,6 +8,18 @@ tags: ["australia", "expat", "buyers-guide"]
 
 Australians are the largest single group of foreign buyers I work with in Bali, by a significant margin. That is not a coincidence. The geographic proximity, direct flights from every major Australian city, and a shared cultural comfort with the island all play a role. But increasingly, the driver is financial. Moving to Bali from Australia has gone from a lifestyle choice to a genuinely smart economic decision, and the numbers explain why.
 
+---
+
+**📌 Moving from Australia to Bali: 2026 Executive Summary**
+
+- **The Rent vs Buy Reality:** Renting a quality 2 to 3 bedroom villa in expat hubs like Canggu or Pererenan costs $24,000 to $36,000 USD per year in dead capital. Purchasing a leasehold villa has a current median entry point of $290,000 USD, shifting an ongoing expense into an equity-retaining asset.
+- **The Passive Income Play:** Bali's tourism demand allows Australian expats to generate significant cash flow. Canggu commands a 14.8% average gross yield when units are placed on the short-term rental market during visits back to Australia, making it highly viable to offset ownership costs entirely.
+- **Residency and Visa Compliance:** Clean legal pathways such as the Golden Visa (E28C) provide stable long-term residency. These visas are designed for remote workers earning offshore income and strictly prohibit taking local Indonesian employment without a PT PMA structure.
+- **Tax and Income Guardrails:** Remote workers earning AUD from Australian companies face a seamless transition. Under the Australia-Indonesia Double Tax Agreement, Indonesian withholding taxes paid can generally be credited against Australian tax liabilities, avoiding double taxation.
+- **Lifestyle Arbitrage:** Local staff, dining, gyms, and daily living costs run at a fraction of coastal Australian prices. Imported goods, electronics, and Australian-sourced products carry a premium, so the lifestyle saving is greatest for those who adapt to what Bali does well.
+
+---
+
 ## The Scale of Australian Migration to Bali
 
 Indonesian immigration data consistently shows Australians as one of the top nationalities taking longer-term stay visas in Bali. The shift accelerated post-2020 as remote work normalised and Australians realised they could earn in AUD while living in a place where that income goes three to four times as far.
