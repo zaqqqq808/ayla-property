@@ -6,13 +6,25 @@ image: /images/journal/emerging-neighbourhoods.jpg
 tags: ["neighbourhoods", "canggu", "investment"]
 ---
 
-**December 2025-**
-
 When people think of investing in Bali, they usually rattle off the same four names: Ubud, Seminyak, Canggu, and maybe Uluwatu.
 
 And you know what? Investing in Canggu and Uluwatu is definitely not a bad idea. Those markets are still growing, the occupancy is high, and the demand is real. But if you want to find the "alpha," the kind of returns you get from buying *before* the masses arrive. You need to look where the smart money is moving right now.
 
 We are seeing a shift. The developers and investors who built Canggu five years ago are now looking at new postcodes. Here is where they are going.
+
+<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
+  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
+  <ul class="space-y-2 text-sm text-brown">
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>4 emerging areas beating Canggu:</strong> Seseh, Bukit (Ungasan/Melasti), Kedungu, and Sanur. All pass the infrastructure, developer activity, and rental comparable test.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Kedungu is the top long-hold pick:</strong> Nuanu City as anchor catalyst, wide roads already built, and pricing still where Canggu was 7 years ago. Target 2x–3x land value growth.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Seseh captures the "graduated" crowd:</strong> Buyers who have outgrown Canggu's noise but still want proximity to it. Boutique luxury, premium daily rates, strong short-term rental profile.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Sanur is the defensive choice:</strong> Medical tourism, island gateway, family expat demand. Lower volatility, strong year-round occupancy, price has not yet caught up with fundamentals.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>The window is narrowing:</strong> Pererenan was "next Canggu" in 2020. Today it is Canggu prices. The investors who waited for more certainty are paying a premium that has already been baked in.</span></li>
+  </ul>
+</div>
+
+<img src="/images/journal/chart-emerging-neighbourhoods.svg" alt="Bali emerging neighbourhood investment lifecycle comparison 2026" class="my-6 w-full rounded-lg" loading="lazy" />
+
 
 ## 1. Seseh
 Think of Seseh as the bougie cousin of Canggu. It sits right on the edge of the action, just north of Pererenan.

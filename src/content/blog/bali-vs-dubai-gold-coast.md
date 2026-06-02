@@ -6,9 +6,22 @@ image: /images/journal/bali-vs-world.jpg
 tags: ["comparison", "roi", "global"]
 ---
 
-**December 2025-**
 Everyone is talking about Bali right now. If you are looking to invest, you probably don't want the fluff about sunsets and coconuts. You want to know if the numbers actually stack up.
 I am not going to drop a bunch of stats and run away. I want to explain precisely why Bali is still the king of real estate ROI and why it looks set to stay that way for the foreseeable future.
+<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
+  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
+  <ul class="space-y-2 text-sm text-brown">
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Bali outperforms both markets:</strong> The author personally earns 12% net in Bali vs 8% net in Dubai — the same capital generates 50% more income.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Net yields after all costs:</strong> Bali 10–14%, Dubai 6–7%, Gold Coast 3.5–5.5%. Gold Coast marginal income tax can shrink a 5% gross yield to 2.5–3% net.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Lower entry, higher upside:</strong> A fully-managed Bali villa costs what a single-bedroom Gold Coast apartment costs, at three times the yield.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>USD-denominated income:</strong> Bali rents are quoted and paid in USD, not IDR. Currency risk is largely irrelevant to your returns.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>No Airbnb restrictions:</strong> Bali operates freely. Dubai, Australia, and Europe are all tightening short-term rental regulation.</span></li>
+  </ul>
+</div>
+
+<img src="/images/journal/chart-bali-vs-dubai-gold-coast.svg" alt="Bali vs Dubai vs Gold Coast property ROI comparison chart 2026" class="my-6 w-full rounded-lg" loading="lazy" />
+
+
 ## My own portfolio: Dubai vs. Bali
 I don't just advise clients on this. I put my own money into these markets. I currently own investment properties in both Dubai and Bali, so I can give you a direct comparison based on what hits my bank account every month.
 My Dubai investment is a solid 2-bedroom apartment. It is a stable asset and has definitely benefited from capital appreciation over the last few years. However, when I look at the cash flow, it usually sits around **8% ROI, after all fees and taxes.**

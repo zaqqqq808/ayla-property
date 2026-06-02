@@ -14,6 +14,20 @@ I love that question. Because most people asking it are thinking about Canggu, S
 
 So I told them what I am about to tell you.
 
+<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
+  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
+  <ul class="space-y-2 text-sm text-brown">
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>4 top capital appreciation picks:</strong> Kedungu, Sanur, The Bukit, and Cemagi are where informed money is moving in 2026. Canggu's easy gains have already been made.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Kedungu is the sweet spot right now:</strong> No longer a secret but not yet saturated. HNW buyers and developers are already moving in, while pricing remains below its trajectory.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Cemagi has the biggest upside:</strong> Cheapest land on the list. New road connections to Pererenan and Canggu are the catalyst. Early pricing, infrastructure-driven repricing incoming.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Sanur is the defensive pick:</strong> Lower volatility, strong domestic and expat demand, medical tourism anchor. Fundamentals are strong, price has not yet caught up.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>The recommended strategy:</strong> Target 15–20% annual returns, insist on 28+ year leasehold, and sell at year 3. Roll profits into the next emerging area.</span></li>
+  </ul>
+</div>
+
+<img src="/images/journal/chart-best-areas-bali-2026.svg" alt="Best areas to invest in Bali 2026 - capital appreciation comparison chart" class="my-6 w-full rounded-lg" loading="lazy" />
+
+
 ## Kedungu: The Quiet One That is Already Turning Loud
 
 If you have been paying attention to Bali's property scene over the past 18 months, you have probably heard Kedungu mentioned. Some people dismiss it because it is still relatively undeveloped. That is exactly why I like it.

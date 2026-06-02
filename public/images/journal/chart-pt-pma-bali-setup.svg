@@ -1,0 +1,81 @@
+<svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="440" fill="#F5EDE0" rx="12"/>
+  <rect width="800" height="60" fill="#5C2E1F" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#5C2E1F"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">PT PMA BALI: COSTS, PROCESS, AND WHEN YOU ACTUALLY NEED ONE</text>
+
+  <!-- Do I need it? -->
+  <text x="40" y="84" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">DO YOU NEED A PT PMA?</text>
+
+  <!-- YES box -->
+  <rect x="30" y="92" width="350" height="130" fill="white" rx="8" stroke="#2A7A55" stroke-width="2"/>
+  <rect x="30" y="92" width="350" height="26" fill="#2A7A55" rx="8"/>
+  <rect x="30" y="106" width="350" height="12" fill="#2A7A55"/>
+  <text x="205" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">YES — SET UP A PT PMA WHEN:</text>
+  <text x="50" y="132" fill="#5C2E1F" font-size="11">✓ Buying 2 or more properties</text>
+  <text x="50" y="150" fill="#5C2E1F" font-size="11">✓ Running formal hospitality business at scale</text>
+  <text x="50" y="168" fill="#5C2E1F" font-size="11">✓ Holding 30+ years (want BPN-registered HGB title)</text>
+  <text x="50" y="186" fill="#5C2E1F" font-size="11">✓ Property value above $600k–$800k</text>
+  <text x="50" y="210" fill="#8B7355" font-size="10">KBLI code 55203 required for villa STR licensing under PT PMA</text>
+
+  <!-- NO box -->
+  <rect x="420" y="92" width="350" height="130" fill="white" rx="8" stroke="#8B7355" stroke-width="1.5"/>
+  <rect x="420" y="92" width="350" height="26" fill="#8B7355" rx="8"/>
+  <rect x="420" y="106" width="350" height="12" fill="#8B7355"/>
+  <text x="595" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">NO — LEASEHOLD IS FINE WHEN:</text>
+  <text x="440" y="132" fill="#5C2E1F" font-size="11">✗ Single investment villa (first purchase)</text>
+  <text x="440" y="150" fill="#5C2E1F" font-size="11">✗ Hold period under 25 years</text>
+  <text x="440" y="168" fill="#5C2E1F" font-size="11">✗ Property value under $400k</text>
+  <text x="440" y="186" fill="#5C2E1F" font-size="11">✗ Still exploring whether Bali is right for you</text>
+  <text x="440" y="210" fill="#8B7355" font-size="10">A leasehold saves cost and complexity with no proportional downside</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="236" x2="760" y2="236" stroke="#DCD4C4" stroke-width="1.5"/>
+
+  <!-- Cost breakdown -->
+  <text x="40" y="256" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">PT PMA COST BREAKDOWN (2025 REGULATIONS)</text>
+
+  <rect x="30" y="264" width="218" height="100" fill="white" rx="8" stroke="#DCD4C4"/>
+  <text x="139" y="284" text-anchor="middle" fill="#5C2E1F" font-size="10" font-weight="bold">ONE-TIME SETUP</text>
+  <line x1="46" y1="290" x2="232" y2="290" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="139" y="312" text-anchor="middle" fill="#2A7A55" font-size="22" font-weight="bold">$2,000–$5,000</text>
+  <text x="139" y="330" text-anchor="middle" fill="#8B7355" font-size="10">Legal firm (OSS + NIB + notarial deed)</text>
+  <text x="139" y="348" text-anchor="middle" fill="#8B7355" font-size="10">Range = complexity of structure</text>
+  <text x="139" y="360" text-anchor="middle" fill="#8B7355" font-size="10">Timeline: 6–10 weeks</text>
+
+  <rect x="262" y="264" width="218" height="100" fill="white" rx="8" stroke="#DCD4C4"/>
+  <text x="371" y="284" text-anchor="middle" fill="#5C2E1F" font-size="10" font-weight="bold">ANNUAL COMPLIANCE</text>
+  <line x1="278" y1="290" x2="464" y2="290" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="371" y="312" text-anchor="middle" fill="#C2A973" font-size="22" font-weight="bold">$500–$1,500</text>
+  <text x="371" y="330" text-anchor="middle" fill="#8B7355" font-size="10">BKPM reporting + tax compliance</text>
+  <text x="371" y="348" text-anchor="middle" fill="#8B7355" font-size="10">Corporate tax returns (even pre-income)</text>
+  <text x="371" y="360" text-anchor="middle" fill="#8B7355" font-size="10">Applies from day one of setup</text>
+
+  <rect x="494" y="264" width="276" height="100" fill="white" rx="8" stroke="#DCD4C4"/>
+  <text x="632" y="284" text-anchor="middle" fill="#5C2E1F" font-size="10" font-weight="bold">2025 CAPITAL CHANGE (KEY)</text>
+  <line x1="510" y1="290" x2="754" y2="290" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="510" y="310" fill="#5C2E1F" font-size="10">Paid-up capital: IDR 10B → IDR 2.5B</text>
+  <text x="510" y="328" fill="#5C2E1F" font-size="10">($630k → ~$155k USD at current rates)</text>
+  <text x="510" y="350" fill="#E85A3A" font-size="10" font-weight="bold">BUT: Total Investment Plan still IDR 10B</text>
+  <text x="510" y="366" fill="#8B7355" font-size="10">Property value counts toward IDR 10B threshold</text>
+
+  <!-- Setup process -->
+  <text x="40" y="386" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">THE 5-STAGE SETUP PROCESS</text>
+  <rect x="30" y="394" width="140" height="32" fill="#2A7A55" rx="4"/>
+  <text x="100" y="407" text-anchor="middle" fill="white" font-size="9" font-weight="bold">1. OSS</text>
+  <text x="100" y="420" text-anchor="middle" fill="#DCD4C4" font-size="8">Online registration</text>
+  <rect x="178" y="394" width="140" height="32" fill="#C2A973" rx="4"/>
+  <text x="248" y="407" text-anchor="middle" fill="white" font-size="9" font-weight="bold">2. NIB</text>
+  <text x="248" y="420" text-anchor="middle" fill="#F5EDE0" font-size="8">Business ID number</text>
+  <rect x="326" y="394" width="140" height="32" fill="#2A7A55" rx="4"/>
+  <text x="396" y="407" text-anchor="middle" fill="white" font-size="9" font-weight="bold">3. KBLI Code</text>
+  <text x="396" y="420" text-anchor="middle" fill="#DCD4C4" font-size="8">55203 for villa STR</text>
+  <rect x="474" y="394" width="140" height="32" fill="#C2A973" rx="4"/>
+  <text x="544" y="407" text-anchor="middle" fill="white" font-size="9" font-weight="bold">4. Bank + NPWP</text>
+  <text x="544" y="420" text-anchor="middle" fill="#F5EDE0" font-size="8">Account + tax number</text>
+  <rect x="622" y="394" width="148" height="32" fill="#2A7A55" rx="4"/>
+  <text x="696" y="407" text-anchor="middle" fill="white" font-size="9" font-weight="bold">5. BKPM Reporting</text>
+  <text x="696" y="420" text-anchor="middle" fill="#DCD4C4" font-size="8">Investment filings</text>
+
+  <text x="400" y="436" text-anchor="middle" fill="#8B7355" font-size="9">Source: BKPM Regulation 5/2025 · Indonesian OSS system · Ayla Property legal advisory 2026</text>
+</svg>

@@ -6,8 +6,6 @@ image: /images/journal/six-months-client.jpg
 tags: ["case-study", "roi", "strategy"]
 ---
 
-**December 2025-**
-
 I love it when a client knows exactly what they want.
 
 Recently, a couple came to me with an obvious scenario: "We live in Spain, we have just sold our apartment in Belgium, and we want to invest that capital into Bali. We have no intention of ever living there; we want rental income. Capital appreciation would be a bonus. Oh, and by the way, we don't want to lift a finger when it comes to management."
@@ -20,6 +18,19 @@ To me, this translated to a particular checklist:
 - **Management:** 100% hands-off.
 
 Here is how we turned that brief into a massive win.
+
+<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
+  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
+  <ul class="space-y-2 text-sm text-brown">
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Negotiated 20% below list price:</strong> $163,000 listed → $130,000 secured. A single lump-sum cash payment created the leverage. $33,000 saved before the investment even started.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>The "runt of the litter" strategy:</strong> Pooled income development means every owner earns the same regardless of unit position. Buy the cheapest unit, earn the same yield as the most expensive.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>$50,000 equity at completion:</strong> Property worth $180k–$190k at handover on a $130k purchase. Capital returned + $50k gain before a single guest checked in.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>15% net ROI projected:</strong> ~$19,500/year. Capital payback period of 6.7 years. Everything after that is profit with the asset still generating income.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Speed matters:</strong> First contact to signed agreement in 11 days. The best off-plan deals reprice or disappear fast. Analysis paralysis is expensive in this market.</span></li>
+  </ul>
+</div>
+
+<img src="/images/journal/chart-six-months-client-case-study.svg" alt="Bali property case study - $50k profit in 6 months deal breakdown" class="my-6 w-full rounded-lg" loading="lazy" />
 
 ## The "Uber Spreadsheet"
 Here at Ayla, we pride ourselves on our data. We don't just guess; we track everything. We have an "Uber spreadsheet" containing information on almost every credible developer in Bali and every active project.
@@ -80,7 +91,7 @@ This covered four areas:
 
 ## Setting Up the Management
 
-Our clients were in Spain. They had no intention of visiting Bali before or after the purchase , which is completely normal and fully supported by how the Bali property market works.
+Our clients were in Spain. They had no intention of visiting Bali before or after the purchase, which is completely normal and fully supported by how the Bali property market works.
 
 Within two weeks of the agreement being signed, we had introduced them to our preferred property management partner for the Umalas area. The management agreement was signed remotely, with an agreed fee structure of 20% of gross rental revenue covering: all booking platform management, housekeeping, guest communication, maintenance coordination, and monthly reporting.
 

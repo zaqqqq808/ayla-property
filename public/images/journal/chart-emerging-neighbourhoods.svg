@@ -1,0 +1,113 @@
+<svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="440" fill="#F5EDE0" rx="12"/>
+  <rect width="800" height="60" fill="#2A7A55" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">BALI AREA INVESTMENT LIFECYCLE: WHERE IS YOUR MARKET?</text>
+
+  <!-- Timeline bar -->
+  <rect x="40" y="80" width="720" height="10" fill="#DCD4C4" rx="5"/>
+  <!-- Timeline stages -->
+  <rect x="40" y="80" width="180" height="10" fill="#8B7355" rx="5"/>
+  <rect x="220" y="80" width="180" height="10" fill="#C2A973" rx="5"/>
+  <rect x="400" y="80" width="180" height="10" fill="#2A7A55" rx="5"/>
+  <rect x="580" y="80" width="180" height="10" fill="#1E6244" rx="5"/>
+
+  <text x="130" y="104" text-anchor="middle" fill="#8B7355" font-size="10" font-weight="bold">UNKNOWN</text>
+  <text x="310" y="104" text-anchor="middle" fill="#C2A973" font-size="10" font-weight="bold">EMERGING</text>
+  <text x="490" y="104" text-anchor="middle" fill="#2A7A55" font-size="10" font-weight="bold">GROWTH</text>
+  <text x="670" y="104" text-anchor="middle" fill="#1E6244" font-size="10" font-weight="bold">ESTABLISHED</text>
+
+  <!-- Area markers on timeline -->
+  <!-- Sanur marker -->
+  <circle cx="310" cy="85" r="8" fill="#C2A973"/>
+  <text x="310" y="89" text-anchor="middle" fill="white" font-size="9" font-weight="bold">SAN</text>
+  <!-- Seseh marker -->
+  <circle cx="370" cy="85" r="8" fill="#C2A973"/>
+  <text x="370" y="89" text-anchor="middle" fill="white" font-size="9" font-weight="bold">SES</text>
+  <!-- Kedungu marker -->
+  <circle cx="430" cy="85" r="8" fill="#2A7A55"/>
+  <text x="430" y="89" text-anchor="middle" fill="white" font-size="9" font-weight="bold">KED</text>
+  <!-- Bukit marker -->
+  <circle cx="510" cy="85" r="8" fill="#2A7A55"/>
+  <text x="510" y="89" text-anchor="middle" fill="white" font-size="9" font-weight="bold">BUK</text>
+  <!-- Canggu marker -->
+  <circle cx="620" cy="85" r="8" fill="#1E6244"/>
+  <text x="620" y="89" text-anchor="middle" fill="white" font-size="9" font-weight="bold">CAN</text>
+  <!-- Seminyak marker -->
+  <circle cx="700" cy="85" r="8" fill="#1E6244"/>
+  <text x="700" y="89" text-anchor="middle" fill="white" font-size="9" font-weight="bold">SEM</text>
+
+  <!-- Area detail cards -->
+  <!-- Seseh -->
+  <rect x="30" y="120" width="170" height="130" fill="white" rx="8" stroke="#C2A973" stroke-width="1.5"/>
+  <rect x="30" y="120" width="170" height="28" fill="#C2A973" rx="8"/>
+  <rect x="30" y="136" width="170" height="12" fill="#C2A973"/>
+  <text x="115" y="138" text-anchor="middle" fill="white" font-size="13" font-weight="bold">SESEH</text>
+  <text x="115" y="156" text-anchor="middle" fill="#5C2E1F" font-size="11">Emerging · North of Pererenan</text>
+  <text x="115" y="174" text-anchor="middle" fill="#C2A973" font-size="16" font-weight="bold">$200k–$350k</text>
+  <text x="115" y="192" text-anchor="middle" fill="#8B7355" font-size="10">entry range</text>
+  <line x1="50" y1="200" x2="180" y2="200" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="50" y="216" fill="#5C2E1F" font-size="10">Boutique luxury crowd</text>
+  <text x="50" y="230" fill="#5C2E1F" font-size="10">Graduated from Canggu</text>
+  <text x="50" y="244" fill="#2A7A55" font-size="10" font-weight="bold">Play: Premium daily rates</text>
+
+  <!-- Bukit Ungasan -->
+  <rect x="215" y="120" width="170" height="130" fill="white" rx="8" stroke="#2A7A55" stroke-width="1.5"/>
+  <rect x="215" y="120" width="170" height="28" fill="#2A7A55" rx="8"/>
+  <rect x="215" y="136" width="170" height="12" fill="#2A7A55"/>
+  <text x="300" y="138" text-anchor="middle" fill="white" font-size="13" font-weight="bold">BUKIT (UNGASAN)</text>
+  <text x="300" y="156" text-anchor="middle" fill="#5C2E1F" font-size="11">Growth · Spillover from Uluwatu</text>
+  <text x="300" y="174" text-anchor="middle" fill="#2A7A55" font-size="16" font-weight="bold">$250k–$500k</text>
+  <text x="300" y="192" text-anchor="middle" fill="#8B7355" font-size="10">entry range</text>
+  <line x1="235" y1="200" x2="365" y2="200" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="235" y="216" fill="#5C2E1F" font-size="10">Near Savaya + Nusa Dua</text>
+  <text x="235" y="230" fill="#5C2E1F" font-size="10">Cheaper than Bingin cliffs</text>
+  <text x="235" y="244" fill="#2A7A55" font-size="10" font-weight="bold">Play: Capital appreciation</text>
+
+  <!-- Kedungu -->
+  <rect x="400" y="120" width="170" height="130" fill="white" rx="8" stroke="#2A7A55" stroke-width="2"/>
+  <rect x="400" y="120" width="170" height="28" fill="#2A7A55" rx="8"/>
+  <rect x="400" y="136" width="170" height="12" fill="#2A7A55"/>
+  <text x="485" y="138" text-anchor="middle" fill="white" font-size="13" font-weight="bold">KEDUNGU ★</text>
+  <text x="485" y="156" text-anchor="middle" fill="#5C2E1F" font-size="11">Growth · Nuanu City catalyst</text>
+  <text x="485" y="174" text-anchor="middle" fill="#2A7A55" font-size="16" font-weight="bold">$200k–$320k</text>
+  <text x="485" y="192" text-anchor="middle" fill="#8B7355" font-size="10">entry range</text>
+  <line x1="420" y1="200" x2="550" y2="200" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="420" y="216" fill="#5C2E1F" font-size="10">Wide roads, high-net-worth</text>
+  <text x="420" y="230" fill="#5C2E1F" font-size="10">7 yrs behind Canggu curve</text>
+  <text x="420" y="244" fill="#2A7A55" font-size="10" font-weight="bold">Play: 2x–3x land value</text>
+
+  <!-- Sanur -->
+  <rect x="585" y="120" width="170" height="130" fill="white" rx="8" stroke="#C2A973" stroke-width="1.5"/>
+  <rect x="585" y="120" width="170" height="28" fill="#C2A973" rx="8"/>
+  <rect x="585" y="136" width="170" height="12" fill="#C2A973"/>
+  <text x="670" y="138" text-anchor="middle" fill="white" font-size="13" font-weight="bold">SANUR</text>
+  <text x="670" y="156" text-anchor="middle" fill="#5C2E1F" font-size="11">Emerging · Quiet achiever</text>
+  <text x="670" y="174" text-anchor="middle" fill="#C2A973" font-size="16" font-weight="bold">$220k–$380k</text>
+  <text x="670" y="192" text-anchor="middle" fill="#8B7355" font-size="10">entry range</text>
+  <line x1="605" y1="200" x2="735" y2="200" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="605" y="216" fill="#5C2E1F" font-size="10">Medical tourism anchor</text>
+  <text x="605" y="230" fill="#5C2E1F" font-size="10">Island gateway (fast boats)</text>
+  <text x="605" y="244" fill="#2A7A55" font-size="10" font-weight="bold">Play: Defensive + yield</text>
+
+  <!-- Framework box -->
+  <rect x="30" y="262" width="740" height="130" fill="white" rx="8" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="46" y="282" fill="#2A7A55" font-size="12" font-weight="bold">HOW TO EVALUATE AN EMERGING AREA BEFORE BUYING</text>
+  <line x1="46" y1="288" x2="754" y2="288" stroke="#DCD4C4" stroke-width="1"/>
+
+  <text x="60" y="308" fill="#5C2E1F" font-size="11">✓ Infrastructure signals</text>
+  <text x="60" y="324" fill="#8B7355" font-size="10">Roads improving, electricity/water investment by government</text>
+  <text x="270" y="308" fill="#5C2E1F" font-size="11">✓ Anchor developments</text>
+  <text x="270" y="324" fill="#8B7355" font-size="10">1–2 quality hotels/restaurants = operators with money on the line</text>
+  <text x="480" y="308" fill="#5C2E1F" font-size="11">✓ Developer activity</text>
+  <text x="480" y="324" fill="#8B7355" font-size="10">Canggu/Seminyak devs breaking ground = strong validation</text>
+
+  <text x="60" y="348" fill="#5C2E1F" font-size="11">✓ Land price trajectory</text>
+  <text x="60" y="364" fill="#8B7355" font-size="10">Cross-reference with Canggu historical price curve</text>
+  <text x="270" y="348" fill="#5C2E1F" font-size="11">✓ Rental comparables</text>
+  <text x="270" y="364" fill="#8B7355" font-size="10">Airbnb 70%+ occupancy in area = you're still in time to buy</text>
+  <text x="480" y="348" fill="#5C2E1F" font-size="11">✓ Zone verification</text>
+  <text x="480" y="364" fill="#8B7355" font-size="10">Agricultural zone = cannot legally rent. Always check before viewing</text>
+
+  <text x="400" y="430" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property broker analysis 2026</text>
+</svg>

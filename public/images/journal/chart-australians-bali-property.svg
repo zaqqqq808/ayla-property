@@ -1,0 +1,58 @@
+<svg viewBox="0 0 800 430" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="430" fill="#F5EDE0" rx="12"/>
+  <rect width="800" height="60" fill="#2A7A55" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">AUSTRALIANS BUYING IN BALI: OWNERSHIP STRUCTURES + YIELD COMPARISON</text>
+
+  <!-- Left: Ownership Options -->
+  <text x="40" y="84" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">TWO LEGAL OWNERSHIP PATHS FOR AUSTRALIANS</text>
+
+  <!-- Leasehold card -->
+  <rect x="30" y="92" width="350" height="150" fill="white" rx="8" stroke="#2A7A55" stroke-width="2"/>
+  <rect x="30" y="92" width="350" height="32" fill="#2A7A55" rx="8"/>
+  <rect x="30" y="112" width="350" height="12" fill="#2A7A55"/>
+  <text x="205" y="112" text-anchor="middle" fill="white" font-size="13" font-weight="bold">OPTION 1: LEASEHOLD (HAK SEWA)</text>
+  <text x="205" y="132" text-anchor="middle" fill="#2A7A55" font-size="11" font-weight="bold">Most popular for Australians</text>
+  <text x="50" y="152" fill="#5C2E1F" font-size="11">✓  25–30 year term, extendable to 50–80 yrs total</text>
+  <text x="50" y="170" fill="#5C2E1F" font-size="11">✓  Fully sellable at any point</text>
+  <text x="50" y="188" fill="#5C2E1F" font-size="11">✓  Lower entry cost (20–40% below freehold equiv.)</text>
+  <text x="50" y="206" fill="#5C2E1F" font-size="11">✓  No ongoing company obligations</text>
+  <text x="50" y="224" fill="#8B7355" font-size="10">Best for: first property, under $400k, under 25yr hold</text>
+
+  <!-- PT PMA card -->
+  <rect x="395" y="92" width="375" height="150" fill="white" rx="8" stroke="#C2A973" stroke-width="2"/>
+  <rect x="395" y="92" width="375" height="32" fill="#C2A973" rx="8"/>
+  <rect x="395" y="112" width="375" height="12" fill="#C2A973"/>
+  <text x="582" y="112" text-anchor="middle" fill="white" font-size="13" font-weight="bold">OPTION 2: PT PMA COMPANY</text>
+  <text x="582" y="132" text-anchor="middle" fill="#C2A973" font-size="11" font-weight="bold">For portfolio builders</text>
+  <text x="415" y="152" fill="#5C2E1F" font-size="11">✓  Holds HGB (freehold-equivalent) BPN-registered title</text>
+  <text x="415" y="170" fill="#5C2E1F" font-size="11">✓  Stronger legal security for long-term holds</text>
+  <text x="415" y="188" fill="#5C2E1F" font-size="11">✓  Setup cost: $2,000–$5,000 (one-time)</text>
+  <text x="415" y="206" fill="#5C2E1F" font-size="11">✓  Annual compliance: $500–$1,500</text>
+  <text x="415" y="224" fill="#8B7355" font-size="10">Best for: 2+ properties, 30yr+ holds, formal hospitality biz</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="258" x2="760" y2="258" stroke="#DCD4C4" stroke-width="1.5"/>
+
+  <!-- Yield comparison -->
+  <text x="40" y="278" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">AUD $450,000 INVESTED: BALI VILLA vs AUSTRALIAN PROPERTY</text>
+
+  <!-- Bar: Bali -->
+  <rect x="40" y="288" width="550" height="34" fill="#2A7A55" rx="4"/>
+  <text x="56" y="310" fill="white" font-size="13" font-weight="bold">BALI VILLA (12% gross)</text>
+  <text x="600" y="310" fill="#2A7A55" font-size="20" font-weight="bold"> AUD $54,000/yr</text>
+
+  <!-- Bar: Sydney -->
+  <rect x="40" y="330" width="155" height="34" fill="#8B7355" rx="4"/>
+  <text x="56" y="352" fill="white" font-size="13" font-weight="bold">SYDNEY APT (3.5%)</text>
+  <text x="204" y="352" fill="#8B7355" font-size="20" font-weight="bold"> AUD $15,750/yr</text>
+
+  <!-- Bar: Melbourne -->
+  <rect x="40" y="372" width="160" height="34" fill="#8B7355" rx="4" opacity="0.7"/>
+  <text x="56" y="394" fill="white" font-size="13" font-weight="bold">MELBOURNE APT (3.4%)</text>
+  <text x="210" y="394" fill="#8B7355" font-size="20" font-weight="bold"> AUD $15,300/yr</text>
+
+  <!-- Nominee warning -->
+  <rect x="40" y="412" width="720" height="14" fill="#E85A3A" rx="3" opacity="0.15"/>
+  <text x="400" y="422" text-anchor="middle" fill="#E85A3A" font-size="10" font-weight="bold">⚠ NEVER use nominee arrangements. Not legally recognised in Indonesia. Zero court protection if it breaks down.</text>
+</svg>

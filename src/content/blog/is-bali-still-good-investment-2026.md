@@ -9,6 +9,20 @@ tags: ["market-analysis", "roi", "bali"]
 If you are looking at the global real estate market right now, you are probably asking yourself one major question: *Is Bali still a good investment, or have I missed the boat?*
 The short answer is **yes, Bali is still a phenomenal investment.** The rules of the game have evolved. The days of throwing money at any random patch of land and hoping for a quick buck are over. Today, the Bali property market is a mature, highly lucrative landscape that rewards strategic, data-driven investors.
 At Ayla Property, we've watched this island transform from a seasonal holiday destination into a global real estate powerhouse. Here is exactly why Bali real estate should still be at the top of your portfolio, and the exact strategies savvy investors are using to generate massive returns.
+<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
+  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
+  <ul class="space-y-2 text-sm text-brown">
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Yes — but the rules have evolved:</strong> Random land purchases are gone. Today the market rewards strategic, data-driven investors with 15%+ rental yields in the right areas.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Indonesia is becoming an economic powerhouse:</strong> On track to be the world's 4th largest economy. Foreign capital is rotating out of volatile Western markets into Southeast Asia.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Tourism is a structural tailwind:</strong> Arrivals grew from 5.3M (2023) to 6.3M (2024), with 7M+ projected. The visitor profile has shifted to high-spend, long-stay digital nomads — not package tourists.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>The Digital Nomad Visa is a rental engine:</strong> Remote workers living 12-month stints generate $2,000–$5,000/month in long-term rental income with lower turnover and better yields.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Two proven strategies:</strong> The 30-year leasehold cash-flow engine (15%+ yield, capital recouped in 5–7 years) or the off-plan flip in emerging areas (Kedungu, Bukit, Sanur).</span></li>
+  </ul>
+</div>
+
+<img src="/images/journal/chart-bali-investment-2026.svg" alt="Is Bali still a good investment 2026 - tourism growth and investment strategies chart" class="my-6 w-full rounded-lg" loading="lazy" />
+
+
 ## The Macro Picture: Why Indonesia is an Economic Juggernaut
 
 Before looking at a single villa, you have to look at the country backing it. Indonesia is no longer just a developing nation; it is a global economic anchor.
