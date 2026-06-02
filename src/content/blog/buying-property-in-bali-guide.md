@@ -28,15 +28,19 @@ For investors who like certainty over speculation, 2026 is actually the better t
 
 ## Price by Area
 
-The market is not uniform and pretending it is will cost you money. Here is where things stand across the main areas:
+The market is not uniform and pretending it is will cost you money. Here is where things stand across the main areas in 2026:
 
-Seminyak is the highest-priced market, averaging around $420,000 for a quality investment villa. It is mature, well-established, and attracts premium guests. Yields are solid but lower than emerging areas because the entry price is higher.
+| Area | Median Entry (USD) | Avg Gross Yield | Profile |
+|---|---|---|---|
+| Seminyak | $420,000 | 13.1% | Mature luxury market, premium guests, reliable cash flow |
+| Canggu | $380,000 | 14.8% | Highest yield, strongest demand, digital nomad hub |
+| Ubud | $290,000 | 9.6% | Cultural tourism, longer-stay guests, lower management intensity |
+| Kedungu | $245,000 | 11.2% | Emerging west coast, most new developer launches in 2026 |
+| East Bali | $165,000 | 7.2% | Lowest entry, diving and eco tourism, yield depends heavily on operator |
 
-Canggu sits at around $380,000 median and delivers the strongest overall yield performance at 14.8% gross average. The combination of demand, strong management infrastructure, and a large international visitor pool makes it the best-performing market in the island on a yield basis.
+*Source: Ayla Property 2026 dataset, 511 active listings across 80 developers and 15 areas. Yields are gross projections.*
 
-Kedungu is an emerging area on the west coast, north of Canggu, that has seen significant developer activity in the last 18 months. Entry prices are around $245,000 and yields are competitive for early buyers in the right locations. This is where I am seeing the most new developer launches in 2026.
-
-East Bali, primarily around Amed, Candidasa, and the Karangasem area, offers the lowest entry prices at around $165,000 for a quality villa, with a different tourism profile built around diving, quieter beaches, and the slower-paced experience of the island. Yields vary more here and depend heavily on the management operator. It is not a market for set-and-forget investors.
+A few things worth knowing about this table. Canggu delivering 14.8% at a $380,000 entry is a function of extremely high short-term rental demand and year-round occupancy. Kedungu's 11.2% is an early-adopter figure that reflects constrained supply, not developed rental infrastructure, so it is for investors who are comfortable with a 12 to 18 month ramp-up period. East Bali yields vary more than anywhere else on the island and depend heavily on the quality of the management operator.
 
 ## The Buying Process in Plain Terms
 
@@ -46,9 +50,9 @@ First is the brief: what are your yield requirements, hold period, budget, and p
 
 Second is selection: your broker presents shortlisted properties matched to that brief, you review, and you physically or virtually inspect the ones worth further consideration.
 
-Third is due diligence: title search confirming clear ownership and no encumbrances, zone verification confirming tourism or residential use is permitted, PBG (building permit) check, SLF (certificate of laik function) check confirming the structure meets regulatory standards, and review of any existing management contracts.
+Third is due diligence: title search confirming clear ownership and no encumbrances, zone verification confirming tourism or residential use is permitted, PBG (building permit) check, SLF (Sertifikat Laik Fungsi / Certificate of Functional Eligibility) check confirming the structure is certified for occupancy and meets regulatory standards, and review of any existing management contracts.
 
-Fourth is legal: a licensed PPAT notary prepares the lease agreement or sale agreement, your independent legal counsel reviews it, any required power of attorney is executed if you are buying remotely.
+Fourth is legal: a licensed PPAT notary prepares the lease agreement or sale agreement, your independent legal counsel reviews it, any required power of attorney is executed if you are buying remotely. For a complete legal breakdown of ownership structures, title types, and what to check in every agreement, read our comprehensive [Foreigners Buying Guide](/guides/foreigners-buying-property-bali/).
 
 Fifth is payment: typically a small deposit to hold the property during due diligence, then staged payments aligned to the agreed schedule. New builds use a different payment schedule tied to construction milestones.
 
