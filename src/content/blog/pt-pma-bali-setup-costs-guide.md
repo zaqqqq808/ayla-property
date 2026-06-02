@@ -2,7 +2,7 @@
 title: "PT PMA in Bali: Setup Costs, What It Gets You, and Whether You Actually Need One"
 description: "A PT PMA is not always necessary for foreign property investors in Bali. Here is when it makes sense, what it costs, and exactly how to set one up."
 publishDate: 2026-06-02
-image: /images/journal/six-months-client.jpg
+image: /images/journal/pt-pma-bali.jpg
 tags: ["legal", "pt-pma", "investment"]
 ---
 

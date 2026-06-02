@@ -2,7 +2,7 @@
 title: "Buying Property in Bali in 2026: What the Market Actually Looks Like Right Now"
 description: "We analysed 511 active listings across 80 Bali developers. Here is what buying property in Bali actually looks like in 2026: prices, yields, process, and what to avoid."
 publishDate: 2026-06-02
-image: /images/journal/bali-vs-world.jpg
+image: /images/journal/buying-property-bali-2026.jpg
 tags: ["market-analysis", "buyers-guide", "2026"]
 ---
 

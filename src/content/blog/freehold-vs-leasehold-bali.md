@@ -2,7 +2,7 @@
 title: "Freehold vs Leasehold in Bali: A Broker Answers the Questions Everyone Asks"
 description: "Every week someone calls me asking about freehold vs leasehold in Bali. Here is exactly how that conversation goes, and the answers that actually matter before you buy."
 publishDate: 2026-06-02
-image: /images/journal/leasehold-vs-freehold.jpg
+image: /images/journal/freehold-vs-leasehold-bali.jpg
 tags: ["leasehold", "legal", "investment"]
 ---
 

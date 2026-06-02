@@ -2,7 +2,7 @@
 title: "Retiring to Bali: Should You Buy Property?"
 description: "More Australians are retiring to Bali than ever before. Here is the honest case for buying vs renting in retirement, using real 2026 yield data and visa options."
 publishDate: 2026-06-02
-image: /images/journal/bali-investment-2026.jpg
+image: /images/journal/retiring-to-bali.jpg
 tags: ["retirement", "investment", "australia"]
 ---
 

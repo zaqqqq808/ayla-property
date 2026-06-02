@@ -2,7 +2,7 @@
 title: "Moving to Bali from Australia: Why More Aussies Are Buying Instead of Renting"
 description: "Thousands of Australians move to Bali every year. Here is why buying property makes more financial sense than renting long term, and exactly how to do it."
 publishDate: 2026-06-02
-image: /images/journal/emerging-neighbourhoods.jpg
+image: /images/journal/moving-to-bali-australia.jpg
 tags: ["australia", "expat", "buyers-guide"]
 ---
 
