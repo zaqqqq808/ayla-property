@@ -1,5 +1,5 @@
 ---
-title: "Moving to Bali from Australia: Why More Aussies Are Buying Instead of Renting"
+title: "Moving to Bali from Australia: 2026 Buying & Property Guide"
 description: "Thousands of Australians move to Bali every year. Here is why buying property makes more financial sense than renting long term, and exactly how to do it."
 publishDate: 2026-06-02
 image: /images/journal/moving-to-bali-australia.jpg
@@ -24,17 +24,30 @@ Over five years, that is $120,000 to $180,000 gone. The landlord benefits. You g
 
 Now consider buying. A leasehold villa in the same neighbourhoods, same quality, entry-level investment grade, is available from around $290,000, which is the current median across our 511 listings. You put down the purchase price, take a 25 to 30 year lease with a renewal clause, and you now own the right to occupy and rent the property for decades.
 
+The numbers make the case more clearly in a table:
+
+| Financial Metric | Renting a 2 to 3 Bed Villa (Canggu) | Buying a Median Leasehold Villa |
+|---|---|---|
+| Annual Cost | $24,000 to $36,000 (lost capital) | $290,000 (asset acquisition) |
+| 5-Year Total | $120,000 to $180,000 spent | Equity retained in leasehold |
+| Passive Cash Flow | 0% (pure expense) | 14.8% average gross yield when renting out |
+| Asset at End of Term | None | Realisable secondary market resale value |
+
 The practical upside is significant. When you are travelling or back in Australia visiting family, you put the property on the short-term rental market. In Canggu, average gross yields are running at 14.8% across current data. On a $300,000 villa, that is $44,400 per year in gross rental income at full commercial occupancy. Even at 60% occupancy during your absent months, you are generating $15,000 to $20,000 per year that offsets your cost of ownership entirely.
 
 You are not just saving rent. You are generating income. That is the real difference between renting and owning in Bali.
 
 ## The Visa Advantage of Owning
 
-This is a point most guides miss. Owning a qualifying property in Indonesia (IDR 2 billion minimum value) makes you eligible for the Second Home Visa, a 5-year renewable visa that gives you legal, stable residency in Bali without the complexity of a work visa.
+This is a point most guides miss. Australians who invest at the right level unlock two meaningful long-stay visa pathways that remove the visa-run cycle entirely.
 
-For an Australian who has moved here and wants to stay long term, that visa stability matters. Constantly managing visa runs or relying on tourist extensions is manageable short term but becomes exhausting and carries risk. Owning property at the right price point gives you a clean legal pathway to stay.
+The Golden Visa (E28C) is the most relevant for property investors. It offers 5-year renewable residency for individuals who invest at least USD $350,000 in qualifying instruments, or 10-year residency for investments of USD $700,000 or above. There is also a property-specific route at the 10-year tier for residential apartment purchases of USD $1,000,000 or above. This visa covers a spouse and dependents.
 
-The Second Home Visa also covers a spouse and dependents, which is relevant if you are relocating as a family.
+The Investor KITAS is the other pathway, typically used when the investment is structured through a PT PMA company. It requires the company to meet its investment plan obligations and is the route to take if you are also planning to operate a commercial rental business.
+
+One compliance point that is critical for remote workers: both of these residency pathways strictly prohibit earning local Indonesian income or taking local employment. They are designed precisely for Australians earning remotely in AUD from Australian companies, which is the profile of most buyers I work with. If you want to work locally, employ local staff directly, or run a business that earns Indonesian income, you need a PT PMA structure and the appropriate commercial permits. The residency visa alone does not cover this.
+
+For most Australian remote workers and investors, the Golden Visa or Investor KITAS gives you legal, stable long-term residency without the administrative burden of constant visa renewals.
 
 ## Can Australians Actually Buy Property in Bali?
 
@@ -48,11 +61,11 @@ The short answer to the legal question is yes, and it is more straightforward th
 
 Not every part of Bali works the same way for Australian buyers. Here is an honest take on the three areas that consistently attract Aussie expats.
 
-Canggu remains the centre of gravity for younger Australians and remote workers. Strong café culture, good gyms and surf, active social scene, and a large Australian community. Property prices reflect the demand, with entry around $350,000 to $380,000 for a quality investment villa, but yields justify the price at 14.8% gross average.
+Canggu remains the centre of gravity for younger Australians and remote workers. Strong café culture, good gyms and surf, active social scene, and a large Australian community. Property prices reflect the demand, with entry around $350,000 to $380,000 for a quality investment villa, but yields justify the price at 14.8% gross average. [Explore property in Canggu](/invest/canggu/).
 
-Pererenan is where a lot of Canggu overflow has landed in the last two years. It is quieter, slightly cheaper, and still close enough to Canggu's amenities to matter. For buyers who want the same vibe with 15 to 20% off the entry price, this is the area worth looking at closely.
+Pererenan is where a lot of Canggu overflow has landed in the last two years. It is quieter, slightly cheaper, and still close enough to Canggu's amenities to matter. For buyers who want the same vibe with 15 to 20% off the entry price, this is the area worth looking at closely. [View available villas in Pererenan](/invest/canggu/).
 
-Sanur is a different character entirely. It is more settled, more family-oriented, with a long-standing Australian expat community that has been there for decades. Villa prices are lower than Canggu, yields are more moderate, and it suits buyers who want a quieter pace of life without sacrificing connection to the broader expat community.
+Sanur is a different character entirely. It is more settled, more family-oriented, with a long-standing Australian expat community that has been there for decades. Villa prices are lower than Canggu, yields are more moderate, and it suits buyers who want a quieter pace of life without sacrificing connection to the broader expat community. [See what is available in Sanur](/invest/sanur/).
 
 ## The Lifestyle Reality
 
