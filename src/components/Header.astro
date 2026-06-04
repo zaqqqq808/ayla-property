@@ -256,6 +256,7 @@ const tools = [
   const barMid = document.getElementById('bar-mid');
   const barBot = document.getElementById('bar-bot');
   const items  = menu?.querySelectorAll('.menu-item');
+  const sticky = document.getElementById('sticky-cta');
 
   let isOpen = false;
 
@@ -272,6 +273,7 @@ const tools = [
     barTop?.classList.add('rotate-45', 'translate-y-[7px]');
     barMid?.classList.add('opacity-0', 'scale-x-0');
     barBot?.classList.add('-rotate-45', '-translate-y-[7px]');
+    sticky?.classList.add('!opacity-0', '!pointer-events-none');
   }
 
   function closeMenu() {
@@ -287,6 +289,7 @@ const tools = [
     barTop?.classList.remove('rotate-45', 'translate-y-[7px]');
     barMid?.classList.remove('opacity-0', 'scale-x-0');
     barBot?.classList.remove('-rotate-45', '-translate-y-[7px]');
+    sticky?.classList.remove('!opacity-0', '!pointer-events-none');
   }
 
   toggle?.addEventListener('click', () => isOpen ? closeMenu() : openMenu());
