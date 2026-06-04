@@ -1,0 +1,164 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_URL } from '@/config';
+import Header from '@/components/Header.astro';
+import Hero from '@/components/Hero.astro';
+import StatsBar from '@/components/StatsBar.astro';
+import WhyBali from '@/components/WhyBali.astro';
+import PropertyCarousel from '@/components/PropertyCarousel.astro';
+import Methodology from '@/components/Methodology.astro';
+import Testimonials from '@/components/Testimonials.astro';
+import Team from '@/components/Team.astro';
+import Journal from '@/components/Journal.astro';
+import FAQ from '@/components/FAQ.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+
+// ── Kedungu-specific stats ────────────────────────────────────────────────────
+const kedunguReasons = [
+  {
+    stat: '11–15%',
+    statTo: [11, 15],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Rental Yields',
+    description: 'Kedungu villa yields are tracking 11–15% gross as short-term rental demand builds. Properties near the coast and adjacent to Nuanu City command the upper end of the range, with yields expected to rise as the area matures.',
+  },
+  {
+    stat: '40–70%',
+    statTo: [40, 70],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Land Appreciation Since 2022',
+    description: 'Kedungu land prices have risen 40–70% since 2022 as developers who built Canggu recognised its trajectory early and began acquiring. The appreciation curve is still in its early phase relative to where comparable areas eventually settled.',
+  },
+  {
+    stat: '$245K',
+    statTo: [245],
+    statSuffix: 'K',
+    statSep: '',
+    title: 'Median Entry (USD)',
+    description: 'The median investment-grade villa in Kedungu sits at $245,000, approximately 35% below Canggu for comparable product. This entry point, combined with emerging yield performance, gives Kedungu one of the strongest risk-adjusted return profiles in the current Bali market.',
+  },
+  {
+    stat: '20 min',
+    statTo: [20],
+    statSuffix: ' min',
+    statSep: '',
+    title: 'From Canggu',
+    description: 'Kedungu sits 20 minutes north of Canggu along the west coast, close enough to access its restaurants, surf, and co-working scene while remaining in a quieter, more spacious setting that increasingly defines the appeal for the high-spending visitor segment.',
+  },
+];
+
+// ── Kedungu-specific FAQs ─────────────────────────────────────────────────────
+const kedunguFaqs = [
+  {
+    q: 'Where exactly is Kedungu?',
+    a: "Kedungu sits on the west coast of Bali, north of Seseh and directly adjacent to Nuanu City, approximately 20 minutes from Canggu. It is characterised by wide roads, a working surf break, and open rice paddies. The area is still developing but the infrastructure is clearly investment-grade and the trajectory is well established.",
+  },
+  {
+    q: 'What is Nuanu City and why does it matter for Kedungu investment?',
+    a: "Nuanu City is a large-scale creative and cultural development being built directly adjacent to Kedungu, bringing world-class events, art installations, and a new international visitor demographic to the area. Anchor developments of this scale are historically one of the strongest predictors of surrounding property value growth. For Kedungu investors, Nuanu City functions as a structural demand driver that most comparable emerging areas simply do not have.",
+  },
+  {
+    q: 'How does Kedungu compare to Canggu and Seseh for investment?',
+    a: "Canggu is the most liquid market in Bali but carries the highest entry costs and is the most saturated. Seseh is the premium boutique play, with lower supply and higher price points. Kedungu is the early-mover capital appreciation play: lower entry than either, faster price growth than any established area, and the largest remaining window for buying before the market reprices. If you are optimising for total return over a five to ten year horizon, Kedungu is the most compelling case in the current market.",
+  },
+  {
+    q: 'What types of property are available in Kedungu?',
+    a: 'The market currently offers private leasehold villas, off-plan launches from established developers, and land plots for custom builds. Off-plan is the dominant vehicle at this stage of the market cycle, with pre-launch pricing often 20–25% below completed market value. For investors who want to capture the full appreciation curve, entering at the off-plan stage in Kedungu right now is the equivalent of buying in Canggu seven years ago.',
+  },
+  {
+    q: 'What are typical entry prices in Kedungu?',
+    a: 'Off-plan and smaller villa entries start from around $180,000. Mid-range investment-grade product sits between $220,000 and $350,000. Premium coastal villas and those directly adjacent to the Nuanu City site are priced from $400,000 and above. The median across investment-grade stock is currently $245,000.',
+  },
+  {
+    q: 'What rental yields can I expect in Kedungu?',
+    a: 'Current yields are tracking 11–15% gross, with net returns of 7–11% after management fees and operating costs. Yields are on a rising trajectory as occupancy builds alongside the area\'s profile. The best-positioned properties near the coast and the Nuanu City site are already achieving the upper end of that range.',
+  },
+  {
+    q: 'Can I buy in Kedungu remotely?',
+    a: 'Yes, the process is the same as all Ayla purchases. We handle due diligence, title verification, and notary coordination on your behalf via a notarised power of attorney. Staged payments can be made by international bank transfer or stablecoin. Most of our Kedungu buyers complete the process without visiting Bali until handover.',
+  },
+];
+
+// ── Schema ────────────────────────────────────────────────────────────────────
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",               "item": `${SITE_URL}/` },
+    { "@type": "ListItem", "position": 2, "name": "Invest in Kedungu", "item": `${SITE_URL}/invest/kedungu/` },
+  ]
+});
+---
+<BaseLayout
+  title="Invest in Kedungu, Bali | 11–15% Yields | Early-Mover Opportunity | Ayla Property"
+  description="Kedungu is where Canggu was 7 years ago. Early-mover entry prices, 11–15% gross yields, and Nuanu City as a demand catalyst. Free investment consultation with Ayla."
+  ogType="website"
+  ogImage="/og-image.jpg"
+>
+  <Fragment slot="head">
+    <link rel="preload" as="image" href="/images/hero-villa-landscape.webp" fetchpriority="high" />
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+  <main>
+    <Hero
+      eyebrow="Bali Real Estate Investment: Kedungu"
+      headlineHtml="Invest in<br />Kedungu"
+      subline="The next Canggu. Wide roads, surf, and Nuanu City as a demand engine. Buy before the market reprices."
+      ctaText="Book a Free Investment Call"
+    />
+
+    <StatsBar />
+
+    <!-- Kedungu area intro -->
+    <section class="bg-white py-16 px-6 lg:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-4">Why Kedungu</p>
+        <p class="text-brown/80 text-lg leading-relaxed">
+          Kedungu is where Canggu was seven years ago: wide roads, a working surf break, open rice paddies,
+          and entry prices that have not yet caught up with the fundamentals. Situated on Bali's west coast
+          directly north of Seseh and adjacent to Nuanu City, a major creative and cultural development
+          now under construction, Kedungu has the kind of structural demand driver that most emerging
+          areas never get.
+        </p>
+        <p class="text-brown/70 text-base leading-relaxed mt-4">
+          For investors, the opportunity is straightforward. Entry prices sit approximately 35% below
+          Canggu for comparable product. Land has already appreciated 40–70% since 2022 as the first
+          wave of developers moved in. And yields are tracking 11–15% gross with room to rise as
+          occupancy builds. The window for early-mover positioning is still open, but it is closing.
+        </p>
+      </div>
+    </section>
+
+    <WhyBali
+      eyebrow="The Kedungu Opportunity"
+      titleHtml="Why Kedungu Is Bali's<br />Best Early-Mover Play"
+      subtitle="Lower entry than Canggu, faster appreciation than any established area, and a major anchor development driving demand. The window is still open."
+      ctaText="Explore Kedungu Investment Options"
+      reasons={kedunguReasons}
+    />
+
+    <PropertyCarousel />
+
+    <Methodology />
+    <Testimonials />
+    <Team />
+
+    <Journal />
+    <FAQ
+      eyebrow="Kedungu Property FAQ"
+      title="Kedungu Investment Questions Answered"
+      faqs={kedunguFaqs}
+    />
+
+    <ContactCTA />
+  </main>
+  <Footer />
+  <StickyButton />
+</BaseLayout>

@@ -1,0 +1,312 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_URL } from '@/config';
+import Header from '@/components/Header.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` },
+    { "@type": "ListItem", "position": 2, "name": "Bali Property ROI Calculator", "item": `${SITE_URL}/bali-roi-calculator/` },
+  ]
+});
+---
+
+<BaseLayout
+  title="Bali Property ROI Calculator 2026 | Calculate Your Villa Yield | Ayla Property"
+  description="Calculate the real return on a Bali villa investment. Enter your purchase price, occupancy rate, nightly rate, and management costs to see gross yield, net yield, and payback period."
+  ogType="website"
+  ogImage="/og-image.jpg"
+>
+  <Fragment slot="head">
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+
+  <!-- Hero -->
+  <section class="relative bg-brown pt-40 pb-16 px-6 lg:px-12 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/images/hero-villa.jpg')] bg-cover bg-center opacity-20"></div>
+    <div class="relative max-w-3xl mx-auto text-center">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Free Tool · 2026</p>
+      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-display uppercase leading-tight mb-6">
+        Bali Property<br />ROI Calculator
+      </h1>
+      <p class="text-white/75 text-lg max-w-2xl mx-auto">
+        Enter your numbers to see gross yield, net yield, annual income, and how long until your investment pays for itself.
+      </p>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <div class="bg-cream min-h-screen py-16 px-6 lg:px-12">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+
+        <!-- Inputs -->
+        <div class="bg-white rounded-2xl border border-beige p-8 shadow-sm">
+          <h2 class="text-brown font-display uppercase text-2xl tracking-wide mb-8">Your Investment Details</h2>
+
+          <div class="space-y-6">
+
+            <div>
+              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">Purchase Price (USD)</label>
+              <div class="relative">
+                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-brown/40 font-semibold">$</span>
+                <input id="purchase" type="number" value="290000" min="50000" max="5000000" step="5000"
+                  class="w-full pl-8 pr-4 py-3 border border-beige rounded-xl text-brown font-semibold focus:outline-none focus:border-olive transition-colors" />
+              </div>
+              <p class="text-xs text-brown/40 mt-1">2026 market median is $290,000 USD</p>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">Average Nightly Rate (USD)</label>
+              <div class="relative">
+                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-brown/40 font-semibold">$</span>
+                <input id="nightly" type="number" value="250" min="50" max="5000" step="10"
+                  class="w-full pl-8 pr-4 py-3 border border-beige rounded-xl text-brown font-semibold focus:outline-none focus:border-olive transition-colors" />
+              </div>
+              <p class="text-xs text-brown/40 mt-1">Canggu villas average $200 to $350 per night</p>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">
+                Occupancy Rate: <span id="occupancyLabel" class="text-olive">72%</span>
+              </label>
+              <input id="occupancy" type="range" min="20" max="100" value="72" step="1"
+                class="w-full accent-olive" />
+              <div class="flex justify-between text-xs text-brown/40 mt-1">
+                <span>20%</span><span>Conservative 55% | Market avg 72% | Top 90%</span><span>100%</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">
+                Management Fee: <span id="mgmtLabel" class="text-olive">20%</span>
+              </label>
+              <input id="mgmt" type="range" min="10" max="35" value="20" step="1"
+                class="w-full accent-olive" />
+              <div class="flex justify-between text-xs text-brown/40 mt-1">
+                <span>10%</span><span>Typical 15–25%</span><span>35%</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">
+                Annual Maintenance: <span id="maintLabel" class="text-olive">4%</span> of property value
+              </label>
+              <input id="maint" type="range" min="1" max="10" value="4" step="0.5"
+                class="w-full accent-olive" />
+              <div class="flex justify-between text-xs text-brown/40 mt-1">
+                <span>1%</span><span>Tropical climate typical 3–5%</span><span>10%</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">Indonesian Withholding Tax on Rental</label>
+              <select id="tax" class="w-full px-4 py-3 border border-beige rounded-xl text-brown font-semibold focus:outline-none focus:border-olive transition-colors">
+                <option value="10" selected>10% (standard for foreign owners)</option>
+                <option value="0">0% (PT PMA corporate — check with advisor)</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="space-y-4 lg:sticky lg:top-8">
+
+          <!-- Yield cards -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-brown rounded-2xl p-6 text-center">
+              <p class="text-white/60 text-xs uppercase tracking-widest mb-2">Gross Yield</p>
+              <p id="grossYield" class="text-white text-4xl font-display font-bold">—</p>
+              <p class="text-white/40 text-xs mt-1">Before costs</p>
+            </div>
+            <div class="bg-olive rounded-2xl p-6 text-center">
+              <p class="text-white/70 text-xs uppercase tracking-widest mb-2">Net Yield</p>
+              <p id="netYield" class="text-white text-4xl font-display font-bold">—</p>
+              <p class="text-white/50 text-xs mt-1">After all costs</p>
+            </div>
+          </div>
+
+          <!-- Income breakdown -->
+          <div class="bg-white rounded-2xl border border-beige p-6 space-y-4">
+            <h3 class="text-brown font-semibold uppercase tracking-widest text-sm">Annual Income Breakdown</h3>
+
+            <div class="space-y-3">
+              <div class="flex justify-between items-center py-2 border-b border-beige/50">
+                <span class="text-sm text-brown/70">Gross Rental Income</span>
+                <span id="grossIncome" class="font-semibold text-brown">—</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-beige/50">
+                <span class="text-sm text-brown/70">Management Fees</span>
+                <span id="mgmtCost" class="font-semibold text-red-500">—</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-beige/50">
+                <span class="text-sm text-brown/70">Maintenance & Repairs</span>
+                <span id="maintCost" class="font-semibold text-red-500">—</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-beige/50">
+                <span class="text-sm text-brown/70">Indonesian Withholding Tax</span>
+                <span id="taxCost" class="font-semibold text-red-500">—</span>
+              </div>
+              <div class="flex justify-between items-center py-3 bg-olive/5 rounded-xl px-3 -mx-3">
+                <span class="font-semibold text-brown">Net Annual Income</span>
+                <span id="netIncome" class="font-bold text-olive text-lg">—</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payback + 5-year -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white rounded-2xl border border-beige p-5 text-center">
+              <p class="text-brown/60 text-xs uppercase tracking-widest mb-2">Payback Period</p>
+              <p id="payback" class="text-brown text-3xl font-display font-bold">—</p>
+              <p class="text-brown/40 text-xs mt-1">Years to recoup capital</p>
+            </div>
+            <div class="bg-white rounded-2xl border border-beige p-5 text-center">
+              <p class="text-brown/60 text-xs uppercase tracking-widest mb-2">5-Year Net Income</p>
+              <p id="fiveYear" class="text-brown text-3xl font-display font-bold">—</p>
+              <p class="text-brown/40 text-xs mt-1">Cumulative net returns</p>
+            </div>
+          </div>
+
+          <!-- Benchmark comparison -->
+          <div class="bg-white rounded-2xl border border-beige p-6">
+            <h3 class="text-brown font-semibold uppercase tracking-widest text-sm mb-4">How This Compares</h3>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="flex-1">
+                  <div class="flex justify-between text-xs mb-1">
+                    <span class="text-brown/70">Your Bali villa</span>
+                    <span id="barLabel" class="font-semibold text-olive">—</span>
+                  </div>
+                  <div class="h-2 bg-beige rounded-full overflow-hidden">
+                    <div id="barBali" class="h-full bg-olive rounded-full transition-all duration-500" style="width:0%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="flex-1">
+                  <div class="flex justify-between text-xs mb-1">
+                    <span class="text-brown/70">Dubai residential</span>
+                    <span class="font-semibold text-brown/50">6.5%</span>
+                  </div>
+                  <div class="h-2 bg-beige rounded-full overflow-hidden">
+                    <div class="h-full bg-brown/20 rounded-full" style="width:43%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="flex-1">
+                  <div class="flex justify-between text-xs mb-1">
+                    <span class="text-brown/70">Sydney residential</span>
+                    <span class="font-semibold text-brown/50">3.2%</span>
+                  </div>
+                  <div class="h-2 bg-beige rounded-full overflow-hidden">
+                    <div class="h-full bg-brown/20 rounded-full" style="width:21%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="flex-1">
+                  <div class="flex justify-between text-xs mb-1">
+                    <span class="text-brown/70">Singapore residential</span>
+                    <span class="font-semibold text-brown/50">2.8%</span>
+                  </div>
+                  <div class="h-2 bg-beige rounded-full overflow-hidden">
+                    <div class="h-full bg-brown/20 rounded-full" style="width:19%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-xs text-brown/40 mt-4 italic">Benchmark figures are gross residential yields 2026. Your Bali figure is net after costs.</p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-brown rounded-2xl p-6 text-center">
+            <p class="text-white font-semibold mb-1">Want us to find a property that hits these numbers?</p>
+            <p class="text-white/60 text-sm mb-4">Book a free 30-minute call. We will show you what is live in the market right now.</p>
+            <a href="https://calendly.com/ayla-teamoperations/30min"
+              class="inline-block bg-gold hover:bg-gold-dark text-brown font-semibold uppercase tracking-widest text-sm px-6 py-3 rounded-full transition-colors">
+              Book a Free Call
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Disclaimer -->
+      <p class="text-xs text-brown/40 text-center mt-12 max-w-2xl mx-auto">
+        This calculator provides indicative estimates only. Actual returns depend on property location, condition, management quality, seasonal occupancy patterns, and market conditions. Figures do not constitute financial advice. Always conduct independent due diligence before investing.
+      </p>
+
+    </div>
+  </div>
+
+  <ContactCTA />
+  <Footer />
+  <StickyButton />
+
+</BaseLayout>
+
+<script>
+  function fmt(n: number): string {
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+  function pct(n: number): string {
+    return n.toFixed(1) + '%';
+  }
+
+  function calc() {
+    const purchase   = parseFloat((document.getElementById('purchase') as HTMLInputElement).value) || 0;
+    const nightly    = parseFloat((document.getElementById('nightly') as HTMLInputElement).value) || 0;
+    const occupancy  = parseFloat((document.getElementById('occupancy') as HTMLInputElement).value) / 100;
+    const mgmtPct    = parseFloat((document.getElementById('mgmt') as HTMLInputElement).value) / 100;
+    const maintPct   = parseFloat((document.getElementById('maint') as HTMLInputElement).value) / 100;
+    const taxPct     = parseFloat((document.getElementById('tax') as HTMLSelectElement).value) / 100;
+
+    const grossIncome = nightly * 365 * occupancy;
+    const mgmtCost    = grossIncome * mgmtPct;
+    const taxCost     = grossIncome * taxPct;
+    const maintCost   = purchase * maintPct;
+    const netIncome   = grossIncome - mgmtCost - taxCost - maintCost;
+
+    const grossYield  = purchase > 0 ? (grossIncome / purchase) * 100 : 0;
+    const netYield    = purchase > 0 ? (netIncome / purchase) * 100 : 0;
+    const payback     = netIncome > 0 ? purchase / netIncome : 0;
+    const fiveYear    = netIncome * 5;
+
+    (document.getElementById('grossIncome') as HTMLElement).textContent  = fmt(grossIncome);
+    (document.getElementById('mgmtCost') as HTMLElement).textContent     = '-' + fmt(mgmtCost);
+    (document.getElementById('taxCost') as HTMLElement).textContent      = '-' + fmt(taxCost);
+    (document.getElementById('maintCost') as HTMLElement).textContent    = '-' + fmt(maintCost);
+    (document.getElementById('netIncome') as HTMLElement).textContent    = fmt(netIncome);
+    (document.getElementById('grossYield') as HTMLElement).textContent   = pct(grossYield);
+    (document.getElementById('netYield') as HTMLElement).textContent     = pct(netYield);
+    (document.getElementById('payback') as HTMLElement).textContent      = payback > 0 ? payback.toFixed(1) + ' yrs' : '—';
+    (document.getElementById('fiveYear') as HTMLElement).textContent     = fmt(fiveYear);
+
+    // Comparison bar — scale against 15% as 100%
+    const barPct = Math.min((netYield / 15) * 100, 100);
+    (document.getElementById('barBali') as HTMLElement).style.width = barPct + '%';
+    (document.getElementById('barLabel') as HTMLElement).textContent = pct(netYield) + ' net';
+
+    // Slider labels
+    (document.getElementById('occupancyLabel') as HTMLElement).textContent = Math.round(occupancy * 100) + '%';
+    (document.getElementById('mgmtLabel') as HTMLElement).textContent      = Math.round(mgmtPct * 100) + '%';
+    (document.getElementById('maintLabel') as HTMLElement).textContent     = (maintPct * 100).toFixed(1) + '%';
+  }
+
+  ['purchase','nightly','occupancy','mgmt','maint','tax'].forEach(id => {
+    document.getElementById(id)?.addEventListener('input', calc);
+  });
+
+  calc();
+</script>
