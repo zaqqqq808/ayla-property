@@ -14,19 +14,19 @@ interface Props {
 
 const defaultTestimonials: Testimonial[] = [
   {
-    quote: "I'd been looking at Bali property for two years but couldn't find anyone I trusted. Ayla found us a villa in Canggu with a 16% yield and handled everything. Best financial decision we've made.",
+    quote: "Every developer I looked at online had five-star reviews. I had no way to tell who was legitimate. Ayla pulled actual delivery data on the projects I was considering and flagged two I should walk away from. We went with their recommendation and hit 14% gross in year one.",
     name: 'James R.',
     location: 'London, UK',
     initials: 'JR',
   },
   {
-    quote: "They negotiated 12% off the developer's asking price and saved us months of due diligence. I don't know how you'd do this without them.",
+    quote: "As Australians we had no idea if we could even legally own property in Bali. Ayla explained the leasehold structure, had our contract reviewed by an independent notary, and handled the whole thing remotely. We settled without stepping on a plane.",
     name: 'Sarah & Tom K.',
     location: 'Sydney, Australia',
     initials: 'SK',
   },
   {
-    quote: "Zaq and the team are the real deal. No fluff, no pressure. Just honest advice and a great property. Our villa has been fully booked since day one.",
+    quote: "My biggest fear was owning a rental property 7,000km away with nobody I trusted on the ground. Ayla introduced us to the management company before handover. I get a monthly report and have not dealt with a single operational problem.",
     name: 'Marcus D.',
     location: 'Dubai, UAE',
     initials: 'MD',
@@ -39,21 +39,21 @@ const {
   testimonials = defaultTestimonials,
 } = Astro.props;
 ---
-<section class="bg-white pt-10 pb-20 px-6 lg:px-12">
+<section class="bg-white pt-8 pb-12 px-6 lg:px-12">
   <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
+    <div class="text-center mb-8">
       <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">{eyebrow}</p>
-      <h2 class="text-brown text-4xl lg:text-5xl font-display uppercase tracking-wide">
+      <h2 class="text-brown text-3xl lg:text-4xl font-display uppercase tracking-wide">
         {title}
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
       {testimonials.map((t) => (
-        <div class="bg-cream rounded-xl p-8 border border-beige flex flex-col">
-          <p class="text-brown/80 leading-relaxed flex-1 italic">{t.quote}</p>
-          <div class="flex items-center gap-4 mt-8">
-            <div class="w-12 h-12 rounded-full bg-brown flex items-center justify-center text-gold font-display font-bold text-sm flex-shrink-0">
+        <div class="bg-cream rounded-xl p-5 border border-beige flex flex-col">
+          <p class="text-brown/80 text-sm leading-relaxed flex-1 italic">{t.quote}</p>
+          <div class="flex items-center gap-3 mt-5">
+            <div class="w-9 h-9 rounded-full bg-brown flex items-center justify-center text-gold font-display font-bold text-xs flex-shrink-0">
               {t.initials}
             </div>
             <div>
