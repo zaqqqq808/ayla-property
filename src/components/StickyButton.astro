@@ -26,3 +26,9 @@ import CalendlyButton from './CalendlyButton.astro';
 
   if (hero) observer.observe(hero);
 </script>
+
+<style>
+  :global(body.mobile-menu-open) #sticky-cta {
+    display: none !important;
+  }
+</style>
