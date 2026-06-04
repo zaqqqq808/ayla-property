@@ -3,7 +3,6 @@ import CalendlyButton from './CalendlyButton.astro';
 
 const navItems = [
   { label: 'Our Method', href: '/#methodology' },
-  { label: 'Contact',    href: '/#contact' },
 ];
 
 const locations = [
@@ -130,6 +129,10 @@ const tools = [
         </div>
       </div>
 
+      <a href="/#contact" class="text-white hover:text-gold transition-colors text-sm uppercase tracking-widest font-semibold drop-shadow-sm">
+        Contact
+      </a>
+
       <a href="/journal/" class="inline-block bg-brown hover:bg-brown-dark text-white text-sm uppercase tracking-widest font-semibold px-5 py-2.5 rounded-full transition-colors">
         Journal
       </a>
@@ -243,6 +246,9 @@ const tools = [
           Journal
         </a>
         <CalendlyButton text="Schedule a Call" variant="olive" />
+        <a href="/#contact" class="text-brown/50 hover:text-brown text-xs uppercase tracking-widest font-semibold transition-colors mt-2">
+          Contact
+        </a>
       </div>
     </nav>
   </div>
