@@ -1,0 +1,162 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_URL } from '@/config';
+import Header from '@/components/Header.astro';
+import Hero from '@/components/Hero.astro';
+import StatsBar from '@/components/StatsBar.astro';
+import WhyBali from '@/components/WhyBali.astro';
+import PropertyCarousel from '@/components/PropertyCarousel.astro';
+import Methodology from '@/components/Methodology.astro';
+import Testimonials from '@/components/Testimonials.astro';
+import Team from '@/components/Team.astro';
+import Journal from '@/components/Journal.astro';
+import FAQ from '@/components/FAQ.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+
+const sanurReasons = [
+  {
+    stat: '8–12%',
+    statTo: [8, 12],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Rental Yields',
+    description: 'Sanur villas deliver 8–12% gross rental yields driven by a stable, year-round occupancy from longer-stay expats, medical tourists, and family visitors. Lower volatility than the Canggu corridor with predictable monthly income.',
+  },
+  {
+    stat: '30–50%',
+    statTo: [30, 50],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Below Canggu Entry Price',
+    description: 'Sanur remains 30–50% below comparable Canggu property on entry price, offering investors a lower capital commitment with established infrastructure, international schools, and world-class healthcare nearby.',
+  },
+  {
+    stat: '5 min',
+    statTo: [5],
+    statSuffix: ' min',
+    statSep: '',
+    title: 'To Sanur Beach',
+    description: 'Sanur fronts one of the calmest beaches in Bali — protected by a reef, ideal for swimming and morning walks. The beach promenade draws long-stay residents and health-conscious visitors who stay longer and spend more per visit.',
+  },
+  {
+    stat: '$220K',
+    statTo: [220],
+    statSuffix: 'K',
+    statSep: '',
+    title: 'Median Entry (USD)',
+    description: 'Quality investment-grade villas in Sanur start from approximately $180,000 with a median around $220,000. The lower entry point relative to west Bali makes it accessible for first-time investors and ideal for lower-risk portfolio diversification.',
+  },
+];
+
+const sanurFaqs = [
+  {
+    q: 'Where exactly is Sanur?',
+    a: "Sanur is a coastal town on Bali's southeast coast, approximately 15 minutes from Ngurah Rai International Airport and 20 minutes from Seminyak. It sits on a protected bay facing the Lombok Strait, with one of the calmest beaches on the island. Sanur is the main departure point for ferries to Nusa Penida and Nusa Lembongan, and is home to BIMC Hospital — one of Bali's leading international medical facilities.",
+  },
+  {
+    q: 'Who invests in Sanur?',
+    a: 'Sanur attracts a different investor profile from Canggu. Buyers here tend to be focused on stable, lower-volatility income rather than maximum yield. The guest profile skews older, higher-spending, and longer-stay: European and Australian families, retirees, medical tourists visiting BIMC, and long-term expats who value the calmer pace. This creates reliable monthly income without the occupancy spikes and troughs common in party-destination markets.',
+  },
+  {
+    q: 'How does Sanur compare to Canggu for investment?',
+    a: "Canggu delivers higher gross yields but at a higher entry price and with more seasonal volatility. Sanur delivers 8–12% yields at 30–50% lower entry cost, with more consistent year-round occupancy driven by non-tourist traffic: medical visits, expat families, and long-stay residents. For investors seeking lower risk and stable income, Sanur is the more defensive choice. For maximum capital appreciation, Canggu or Kedungu are better suited.",
+  },
+  {
+    q: 'What is the Sanur medical tourism angle?',
+    a: 'BIMC Hospital Sanur is one of the most advanced international medical facilities in Indonesia, and Sanur has positioned itself as Bali\'s medical tourism hub. Patients travelling for treatment, their accompanying family members, and long-stay medical recovery guests represent a growing and predictable rental demand segment. Properties within easy reach of BIMC consistently outperform on occupancy in the lower season.',
+  },
+  {
+    q: 'What types of property are available in Sanur?',
+    a: 'Sanur is primarily a villa and bungalow market. Private leasehold villas range from compact 2-bedroom properties to larger family compounds. The area also has a growing number of boutique apartment-style developments suited to longer-stay guests. Unlike Canggu, Sanur has limited off-plan activity — most purchases are completed or near-complete properties with existing rental histories.',
+  },
+  {
+    q: 'What are typical entry prices in Sanur?',
+    a: 'Entry-level 2-bedroom villas start from approximately $150,000 to $180,000 USD. Mid-range investment-grade properties sit between $200,000 and $350,000. Beachfront and direct-access properties with strong rental histories command $400,000 and above. Sanur represents the best value per square metre of beach proximity on the island.',
+  },
+  {
+    q: 'Can I buy in Sanur remotely?',
+    a: 'Yes. Ayla handles the full purchase process remotely via notarised power of attorney. Title check, zoning verification, permit audit, and contract review are all conducted by our on-the-ground legal partners. Payment by international bank transfer or stablecoin is fully supported. Many of our Sanur clients have never visited the property before handover.',
+  },
+];
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",           "item": `${SITE_URL}/` },
+    { "@type": "ListItem", "position": 2, "name": "Invest in Sanur","item": `${SITE_URL}/invest/sanur/` },
+  ]
+});
+---
+<BaseLayout
+  title="Invest in Sanur, Bali | 8–12% Yields | Stable Income | Ayla Property"
+  description="Buy a villa in Sanur, Bali's most stable investment area. Lower entry than Canggu, 8–12% reliable yields, year-round expat and medical tourism demand. Free consultation."
+  ogType="website"
+  ogImage="/og-image.jpg"
+>
+  <Fragment slot="head">
+    <link rel="preload" as="image" href="/images/hero-villa-landscape.webp" fetchpriority="high" />
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+  <main>
+    <Hero
+      eyebrow="Bali Real Estate Investment: Sanur"
+      headlineHtml="Invest in<br />Sanur"
+      subline="Bali's most stable investment market. Lower entry, reliable income, and a guest profile that stays longer and spends more."
+      ctaText="Book a Free Investment Call"
+    />
+
+    <StatsBar />
+
+    <section class="bg-white py-16 px-6 lg:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-4">Why Sanur</p>
+        <p class="text-brown/80 text-lg leading-relaxed">
+          Sanur is Bali's quiet achiever. While Canggu attracts digital nomads and Uluwatu draws surfers,
+          Sanur has quietly built the most stable rental income base on the island: long-stay expat
+          families, medical tourists visiting BIMC Hospital, retirees, and wellness travellers who
+          book months at a time rather than nights.
+        </p>
+        <p class="text-brown/70 text-base leading-relaxed mt-4">
+          The result is predictable, year-round occupancy with less seasonal volatility than
+          the west coast corridor. Entry prices remain 30–50% below Canggu for comparable
+          quality, and the area's infrastructure — international schools, world-class healthcare,
+          the Nusa Penida ferry port — continues to attract a growing permanent expat community
+          that underpins long-term rental demand.
+        </p>
+        <p class="text-brown/70 text-base leading-relaxed mt-4">
+          For investors who want reliable income over maximum yield, Sanur is the most
+          defensively positioned market in Bali right now.
+        </p>
+      </div>
+    </section>
+
+    <WhyBali
+      eyebrow="The Sanur Opportunity"
+      titleHtml="Why Sanur Is Bali's<br />Most Reliable Income Market"
+      subtitle="Stable year-round occupancy, lower entry than Canggu, and a guest profile that generates predictable rental income. The defensive choice for income-focused investors."
+      ctaText="Explore Sanur Investment Options"
+      reasons={sanurReasons}
+    />
+
+    <PropertyCarousel />
+    <Methodology />
+    <Testimonials />
+    <Team />
+    <Journal />
+
+    <FAQ
+      eyebrow="Sanur Property FAQ"
+      title="Sanur Investment Questions Answered"
+      faqs={sanurFaqs}
+    />
+
+    <ContactCTA />
+  </main>
+  <Footer />
+  <StickyButton />
+</BaseLayout>
