@@ -12,7 +12,20 @@ This guide covers everything an Australian buyer needs to know in 2026.
 
 ---
 
+<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
+  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
+  <ul class="space-y-2 text-sm text-brown">
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Yes, Australians can legally buy in Bali</strong> via two well-established structures: leasehold (Hak Sewa) or a PT PMA foreign-owned company. Thousands of Australians already own property here.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Leasehold is the most common route:</strong> 25–30 year terms, extendable to 50–80 years total, fully sellable, lower entry cost. Right for most first-time buyers.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Never use nominee arrangements:</strong> No legal standing in Indonesian courts. Zero protection if it breaks down. Stick to leasehold or PT PMA.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>The yield gap is enormous:</strong> AUD $450,000 in a Bali villa at 12% gross = AUD $54,000/year. The same capital in a Sydney apartment at 3.5% = AUD $15,750/year.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Australian tax obligations apply:</strong> You must declare Bali rental income in Australia, but the Australia-Indonesia DTA means Indonesian tax paid is usually creditable against your Australian liability.</span></li>
+  </ul>
+</div>
+
 ## Can Australians Legally Own Property in Bali?
+
+<img src="/images/journal/dataviz-australians-buying-bali.png" alt="AUD $450,000 invested: Bali villa vs Australian property yield comparison infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 The short answer is yes, with the right structure. Indonesian law does not permit foreigners to hold freehold (Hak Milik) title on land or property. This is the same for all foreign nationals, not just Australians. However, there are two well-established, legally recognised pathways that Australian investors use every day.
 
@@ -125,6 +138,6 @@ If you are considering buying property in Bali as an Australian, the best first 
 
 You may also find these resources useful:
 
-- [Bali Buyers Guide 2026](/guides/foreigners-buying-property-bali/): the complete legal and process guide for all foreign buyers
+- [can foreigners buy property in Bali — complete legal guide](/guides/foreigners-buying-property-bali/)
 - [Bali Developer Report 2026](/guides/bali-developer-report-2026/): our independent analysis of 511 listings across 80 developers
 - [Best Areas to Invest in Bali 2026](/journal/best-areas-invest-bali-2026/): where we are telling clients to put their money right now
