@@ -1,0 +1,166 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_URL } from '@/config';
+import Header from '@/components/Header.astro';
+import Hero from '@/components/Hero.astro';
+import StatsBar from '@/components/StatsBar.astro';
+import WhyBali from '@/components/WhyBali.astro';
+import PropertyCarousel from '@/components/PropertyCarousel.astro';
+import Methodology from '@/components/Methodology.astro';
+import Testimonials from '@/components/Testimonials.astro';
+import Team from '@/components/Team.astro';
+import Journal from '@/components/Journal.astro';
+import FAQ from '@/components/FAQ.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+
+// ── Seseh-specific stats ──────────────────────────────────────────────────────
+const seshReasons = [
+  {
+    stat: '13–17%',
+    statTo: [13, 17],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Rental Yields',
+    description: 'Seseh villas command premium nightly rates driven by a high-spending, privacy-focused guest profile. Boutique properties with rice paddy or ocean views consistently achieve 13–17% gross yields.',
+  },
+  {
+    stat: '60–90%',
+    statTo: [60, 90],
+    statSuffix: '%',
+    statSep: '–',
+    title: 'Land Appreciation Since 2022',
+    description: 'Seseh land prices have accelerated sharply as major developers and high-net-worth buyers recognised the area before it attracted mainstream attention. Early movers have seen 60–90% appreciation on land acquisitions since 2022.',
+  },
+  {
+    stat: '8 min',
+    statTo: [8],
+    statSuffix: ' min',
+    statSep: '',
+    title: 'From Echo Beach, Canggu',
+    description: 'Seseh sits directly north of Pererenan, giving guests effortless access to Canggu\'s restaurant and surf scene while remaining in a quieter, more private setting that premium guests actively pay more to experience.',
+  },
+  {
+    stat: '$350K',
+    statTo: [350],
+    statSuffix: 'K',
+    statSep: '',
+    title: 'Median Entry (USD)',
+    description: 'Quality investment villas in Seseh start from approximately $280,000 with a median around $350,000. Premium clifftop and ocean-view properties command $500,000 and above. Entry is still meaningfully below where comparable product ends up once an area matures.',
+  },
+];
+
+// ── Seseh-specific FAQs ───────────────────────────────────────────────────────
+const seshFaqs = [
+  {
+    q: 'Where exactly is Seseh?',
+    a: "Seseh is a coastal village on Bali's southwest coast, situated directly north of Pererenan and approximately 8 minutes from Canggu's Echo Beach. It sits between Pererenan to the south and Cemagi to the north, with a coastline that delivers dramatic sunsets and a rice paddy hinterland that still feels untouched. Despite its proximity to Canggu, Seseh retains a genuinely quiet and private character that is now drawing significant developer and buyer attention.",
+  },
+  {
+    q: 'Why is serious money moving into Seseh now?',
+    a: "Seseh is where the high-net-worth developers who built Canggu are now deploying capital. The infrastructure signals are there: wider roads, high-quality boutique hotels already open, and a growing cluster of premium restaurants and wellness venues. The guest profile it attracts, privacy-seeking visitors willing to pay for exclusivity, supports nightly rates that justify the entry price. Supply is still constrained, which protects both yield and future capital value.",
+  },
+  {
+    q: 'How does Seseh compare to Pererenan and Canggu for investment?',
+    a: "Canggu has the deepest liquidity but the highest entry price and most saturated supply. Pererenan is the value-led play, offering Canggu-level demand at a 20–30% discount. Seseh sits above both on the quality spectrum: higher entry point, higher nightly rates, and a guest profile that drives stronger per-night revenue. It is best suited to investors who want a premium boutique product rather than a volume rental strategy.",
+  },
+  {
+    q: 'What types of property are available in Seseh?',
+    a: 'Seseh is primarily a boutique villa market. The dominant product is private leasehold villas with between 2 and 5 bedrooms, typically with rice paddy views, private pools, and high-end finishes. Off-plan development from established developers has accelerated since late 2023. Land plots are also available for investors wanting to develop their own project, though suitable plots in the best locations are becoming scarce.',
+  },
+  {
+    q: 'What are typical entry prices in Seseh?',
+    a: 'Entry-level boutique villas start from approximately $250,000 to $280,000 USD on leasehold. Mid-range investment-grade villas with premium finishes and rice paddy frontage typically sit between $350,000 and $550,000. Ocean-view and premium clifftop properties reach $700,000 and above. Off-plan pricing from reputable developers is typically 15–20% below completed market value at launch.',
+  },
+  {
+    q: 'What rental yields does Seseh achieve?',
+    a: 'Well-positioned Seseh villas are achieving 13–17% gross rental yields on current data, with net yields of 9–13% after management and operational costs. The premium guest profile allows for higher average daily rates than Pererenan or central Canggu equivalents, which is the primary driver of the yield differential. Properties with genuine privacy and standout design command the upper end of the range.',
+  },
+  {
+    q: 'Can I buy in Seseh remotely without visiting Bali?',
+    a: 'Yes. The majority of Ayla clients complete their purchase remotely via notarised power of attorney. Due diligence, legal review, notarisation, and staged payments can all be handled with the right team on the ground. We have processed fully remote purchases for clients in Australia, Singapore, and the UK who have never visited the specific property before handover.',
+  },
+];
+
+// ── Schema ────────────────────────────────────────────────────────────────────
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",             "item": `${SITE_URL}/` },
+    { "@type": "ListItem", "position": 2, "name": "Invest in Seseh",  "item": `${SITE_URL}/invest/seseh/` },
+  ]
+});
+---
+<BaseLayout
+  title="Invest in Seseh, Bali | 13–17% Yields | Premium Villa Investment | Ayla Property"
+  description="Seseh is Bali's new premium investment area. Big money is moving in early. 13–17% gross yields, rapid land appreciation, and a high-spending guest profile. Free investment consultation."
+  ogType="website"
+  ogImage="/og-image.jpg"
+>
+  <Fragment slot="head">
+    <link rel="preload" as="image" href="/images/hero-villa-landscape.webp" fetchpriority="high" />
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+  <main>
+    <Hero
+      eyebrow="Bali Real Estate Investment: Seseh"
+      headlineHtml="Invest in<br />Seseh"
+      subline="Where Bali's serious money is moving. Premium boutique villas, privacy-seeking guests, and early-mover land prices."
+      ctaText="Book a Free Investment Call"
+    />
+
+    <StatsBar />
+
+    <!-- Seseh area intro -->
+    <section class="bg-white py-16 px-6 lg:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-4">Why Seseh</p>
+        <p class="text-brown/80 text-lg leading-relaxed">
+          Seseh is the area the developers who built Canggu are now buying into themselves. Situated
+          directly north of Pererenan, it shares the same dramatic west-coast coastline and rice paddy
+          landscape while operating at a distinctly higher register: quieter, more private, and
+          attracting a guest profile that expects and pays for exclusivity.
+        </p>
+        <p class="text-brown/70 text-base leading-relaxed mt-4">
+          The infrastructure signals are already visible. High-quality boutique hotels are open.
+          Premium restaurants and wellness venues are established. The roads are wide and
+          well-maintained. What has not yet happened is the full price correction that follows
+          when an area reaches mainstream awareness. That window is narrowing fast.
+        </p>
+        <p class="text-brown/70 text-base leading-relaxed mt-4">
+          For investors who want a premium boutique product with strong yield and serious capital
+          appreciation potential, Seseh is the most compelling location in Bali right now.
+        </p>
+      </div>
+    </section>
+
+    <WhyBali
+      eyebrow="The Seseh Opportunity"
+      titleHtml="Why Serious Money<br />Is Moving to Seseh"
+      subtitle="Premium guest profile, 13–17% gross yields, and land appreciation that has already outpaced Canggu. The early-mover window is still open."
+      ctaText="Explore Seseh Investment Options"
+      reasons={seshReasons}
+    />
+
+    <PropertyCarousel />
+
+    <Methodology />
+    <Testimonials />
+    <Team />
+
+    <Journal />
+    <FAQ
+      eyebrow="Seseh Property FAQ"
+      title="Seseh Investment Questions Answered"
+      faqs={seshFaqs}
+    />
+
+    <ContactCTA />
+  </main>
+  <Footer />
+  <StickyButton />
+</BaseLayout>
