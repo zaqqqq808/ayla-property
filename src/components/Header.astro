@@ -56,7 +56,8 @@ const tools = [
       <span></span><span></span><span></span>
     </button>
   </div>
-  <div class="mobile-nav" id="mobileNav">
+</header>
+<div class="mobile-nav" id="mobileNav">
     <div class="group">
       <div class="group-title">Invest by Location</div>
       {locations.map(({ label, href }) => <a href={href}>{label}</a>)}
@@ -76,7 +77,6 @@ const tools = [
     </div>
     <CalendlyButton text="Schedule a Call" variant="gold" />
   </div>
-</header>
 
 <script is:inline>
   (function () {
