@@ -71,3 +71,48 @@
     @apply py-20 lg:py-32;
   }
 }
+
+/* ===== Compact mobile pass (mimics pre-redesign mobile rhythm) ===== */
+@media(max-width:768px){
+  section{padding:44px 0 60px}
+  .carousel-section{padding:0 0 60px}
+  h2{font-size:clamp(1.7rem,6.5vw,2.1rem)}
+  .section-head{margin-bottom:0}
+  .section-sub{font-size:.98rem}
+  .eyebrow{font-size:.72rem;margin-bottom:14px}
+  .opp-grid{grid-template-columns:repeat(2,1fr);gap:14px;margin:30px 0 28px}
+  .opp-card{padding:20px 16px}
+  .opp-card .num{font-size:1.9rem}
+  .opp-card h3{font-size:.88rem;margin-top:6px}
+  .marquee-item{width:240px;height:170px;border-radius:12px}
+  .method-video{margin:0 auto 36px}
+  .steps{gap:14px}
+  .step{padding:20px 18px;gap:12px}
+  .step-num{width:44px;height:44px;font-size:1.15rem;border-radius:11px}
+  .step p{font-size:.9rem}
+  .method-cta{margin-top:12px}
+  .testi-grid{gap:14px;margin-top:28px}
+  .testi-card{padding:22px 20px;gap:14px}
+  .testi-card p{font-size:.92rem}
+  .testi-card .quote-mark{font-size:3rem;height:22px}
+  .team-grid{grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+  .team-meta{padding:12px 14px 16px}
+  .team-meta h3{font-size:1.05rem}
+  .team-meta .role{font-size:.72rem}
+  .faq-list{margin:26px auto 0;gap:10px}
+  .faq-q{padding:16px 18px;font-size:.95rem}
+  .faq-a p{padding:0 18px 18px;font-size:.92rem}
+  .journal-grid{gap:14px;margin-top:28px}
+  .journal-card{padding:22px 20px;gap:10px}
+  .journal-card h3{font-size:1.08rem}
+  .journal-more{margin-top:26px}
+  .contact-cta{padding:56px 0}
+  .cta-card{padding:44px 20px}
+  .cta-card p{margin-bottom:26px}
+  .footer-top{gap:24px}
+  footer{padding:44px 0 28px}
+  .footer-bottom{margin-top:28px;padding-top:20px}
+}
+@media(max-width:560px){
+  .marquee-item{width:220px;height:160px}
+}
