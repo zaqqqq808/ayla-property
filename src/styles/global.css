@@ -365,7 +365,7 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
   border:1px solid rgba(180,80,42,0.35);color:var(--terra-deep);
 }
 .step h3{margin-bottom:8px}
-.step p{color:var(--text-muted);font-size:.66rem}
+.step p{color:var(--text-muted);font-size:.875rem}
 .step-featured{
   background:linear-gradient(135deg,#6b3624 0%,#5c2e1f 50%,#3d1c10 100%);
   border-color:rgba(180,80,42,0.4);
@@ -557,7 +557,7 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
   .steps{gap:14px}
   .step{padding:20px 18px;gap:12px}
   .step-num{width:44px;height:44px;font-size:1.15rem;border-radius:11px}
-  .step p{font-size:.9rem}
+  .step p{font-size:.72rem}
   .method-cta{margin-top:12px}
   .testi-grid{gap:14px;margin-top:28px}
   .testi-card{padding:22px 20px;gap:14px}
