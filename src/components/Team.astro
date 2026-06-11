@@ -1,86 +1,25 @@
 ---
-import TeamCard from './TeamCard.astro';
-
 const team = [
-  { name: 'Silvia', role: 'President',          image: '/images/team-silvia.webp' },
-  { name: 'Zaq',    role: 'Vice President',      image: '/images/team-zaq.webp'   },
-  { name: 'Willy',  role: 'Real Estate Agent',   image: '/images/team-willy.webp' },
-  { name: 'Jackie', role: 'AYLA team mascot',    image: '/images/team-jackie.webp'},
+  { name: 'Silvia', role: 'President',         image: '/images/team-silvia.webp' },
+  { name: 'Zaq',    role: 'Vice President',    image: '/images/team-zaq.webp'    },
+  { name: 'Willy',  role: 'Real Estate Agent', image: '/images/team-willy.webp'  },
+  { name: 'Jackie', role: 'AYLA team mascot',  image: '/images/team-jackie.webp' },
 ];
 ---
-<section id="team" class="bg-cream pt-20 pb-8 lg:pt-32 lg:pb-12 px-6 lg:px-12">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-brown text-4xl lg:text-5xl text-center font-display uppercase mb-6 tracking-wide">
-      Meet the Team
-    </h2>
-    <p class="text-brown/60 text-center text-sm mb-6">
-      Our backgrounds include 18 years of real estate, data science, engineering and foraging for rodents
-    </p>
-
-    <!-- Desktop: 4-column grid -->
-    <div class="hidden lg:grid grid-cols-4 gap-6 mt-6">
-      {team.map((member) => <TeamCard {...member} />)}
+<section class="team" id="team">
+  <div class="container">
+    <div class="reveal section-head">
+      <span class="eyebrow">The Team</span>
+      <h2>Meet the <span class="grad-text">Team</span></h2>
+      <p class="section-sub">Our backgrounds include 18 years of real estate, data science, engineering and foraging for rodents</p>
     </div>
-
-    <!-- Mobile: swipeable carousel -->
-    <div class="lg:hidden relative mt-6">
-      <div
-        id="team-carousel"
-        class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6"
-        style="scrollbar-width: none; -ms-overflow-style: none;"
-      >
-        {team.map((member) => (
-          <div class="flex-none w-[72vw] max-w-[280px] snap-center">
-            <TeamCard {...member} />
-          </div>
-        ))}
-      </div>
-
-      <!-- Dot indicators -->
-      <div id="team-dots" class="flex justify-center gap-2 mt-4">
-        {team.map((_, i) => (
-          <button
-            class="team-dot w-2 h-2 rounded-full bg-beige transition-all duration-300"
-            data-index={i}
-            aria-label={`Go to slide ${i + 1}`}
-          />
-        ))}
-      </div>
+    <div class="team-grid reveal-stagger">
+      {team.map((member) => (
+        <div class="team-card glass">
+          <img src={member.image} alt={`Photo of ${member.name}, ${member.role}`} loading="lazy" />
+          <div class="team-meta"><h3>{member.name}</h3><div class="role">{member.role}</div></div>
+        </div>
+      ))}
     </div>
   </div>
 </section>
-
-<style>
-  #team-carousel::-webkit-scrollbar { display: none; }
-</style>
-
-<script>
-  const carousel = document.getElementById('team-carousel');
-  const dots     = document.querySelectorAll('.team-dot');
-
-  function updateDots(index: number) {
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('bg-brown', i === index);
-      dot.classList.toggle('w-4',      i === index);
-      dot.classList.toggle('bg-beige', i !== index);
-      dot.classList.toggle('w-2',      i !== index);
-    });
-  }
-
-  carousel?.addEventListener('scroll', () => {
-    if (!carousel) return;
-    const cardWidth = (carousel.firstElementChild as HTMLElement)?.offsetWidth ?? 1;
-    const index = Math.round(carousel.scrollLeft / (cardWidth + 16));
-    updateDots(index);
-  }, { passive: true });
-
-  dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
-      if (!carousel) return;
-      const cardWidth = (carousel.firstElementChild as HTMLElement)?.offsetWidth ?? 0;
-      carousel.scrollTo({ left: i * (cardWidth + 16), behavior: 'smooth' });
-    });
-  });
-
-  updateDots(0);
-</script>

@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="420" fill="#F5EDE0" rx="10"/>
+  <rect width="800" height="56" fill="#2A7A55" rx="10"/>
+  <rect y="44" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="34" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">MONTHLY COST OF LIVING — BALI vs SYDNEY/MELBOURNE (2026)</text>
+
+  <!-- Table headers -->
+  <rect x="20" y="68" width="380" height="26" fill="#2A7A55" rx="4"/>
+  <text x="210" y="86" text-anchor="middle" fill="white" font-size="13" font-weight="bold">BALI</text>
+  <rect x="410" y="68" width="370" height="26" fill="#8B7355" rx="4"/>
+  <text x="595" y="86" text-anchor="middle" fill="white" font-size="13" font-weight="bold">SYDNEY / MELBOURNE</text>
+
+  <!-- Row 1 -->
+  <rect x="20" y="98" width="760" height="34" fill="white" rx="3"/>
+  <text x="30" y="120" fill="#5C2E1F" font-size="12" font-weight="bold">Villa rental (pool included)</text>
+  <text x="395" y="120" text-anchor="end" fill="#2A7A55" font-size="14" font-weight="bold">$2,000–$3,000/mo</text>
+  <text x="778" y="120" text-anchor="end" fill="#8B7355" font-size="14">$3,500–$5,500/mo</text>
+
+  <!-- Row 2 -->
+  <rect x="20" y="136" width="760" height="34" fill="#EEF7F2" rx="3"/>
+  <text x="30" y="158" fill="#5C2E1F" font-size="12" font-weight="bold">Full-time housekeeper</text>
+  <text x="395" y="158" text-anchor="end" fill="#2A7A55" font-size="14" font-weight="bold">$250/mo</text>
+  <text x="778" y="158" text-anchor="end" fill="#8B7355" font-size="14">N/A</text>
+
+  <!-- Row 3 -->
+  <rect x="20" y="174" width="760" height="34" fill="white" rx="3"/>
+  <text x="30" y="196" fill="#5C2E1F" font-size="12" font-weight="bold">Private healthcare / insurance</text>
+  <text x="395" y="196" text-anchor="end" fill="#2A7A55" font-size="14" font-weight="bold">$80–$150/mo</text>
+  <text x="778" y="196" text-anchor="end" fill="#8B7355" font-size="14">$350–$700/mo</text>
+
+  <!-- Row 4 -->
+  <rect x="20" y="212" width="760" height="34" fill="#EEF7F2" rx="3"/>
+  <text x="30" y="234" fill="#5C2E1F" font-size="12" font-weight="bold">Food and dining out</text>
+  <text x="395" y="234" text-anchor="end" fill="#2A7A55" font-size="14" font-weight="bold">$500–$800/mo</text>
+  <text x="778" y="234" text-anchor="end" fill="#8B7355" font-size="14">$1,500–$3,000/mo</text>
+
+  <!-- Row 5 -->
+  <rect x="20" y="250" width="760" height="34" fill="white" rx="3"/>
+  <text x="30" y="272" fill="#5C2E1F" font-size="12" font-weight="bold">World-class gym / wellness</text>
+  <text x="395" y="272" text-anchor="end" fill="#2A7A55" font-size="14" font-weight="bold">$80–$120/mo</text>
+  <text x="778" y="272" text-anchor="end" fill="#8B7355" font-size="14">$100–$250/mo</text>
+
+  <!-- Total row -->
+  <rect x="20" y="288" width="760" height="36" fill="#2A7A55" rx="4"/>
+  <text x="30" y="312" fill="white" font-size="13" font-weight="bold">TOTAL MONTHLY (all-in estimate)</text>
+  <text x="395" y="312" text-anchor="end" fill="white" font-size="18" font-weight="bold">$2,500–$4,000</text>
+  <text x="778" y="312" text-anchor="end" fill="#DCD4C4" font-size="18" font-weight="bold">$6,000–$12,000+</text>
+
+  <!-- Visa boxes -->
+  <rect x="20" y="336" width="370" height="62" fill="white" rx="6" stroke="#C2A973" stroke-width="1.5"/>
+  <rect x="20" y="336" width="370" height="22" fill="#C2A973" rx="6"/>
+  <rect x="20" y="346" width="370" height="12" fill="#C2A973"/>
+  <text x="205" y="350" text-anchor="middle" fill="white" font-size="12" font-weight="bold">SECOND HOME VISA</text>
+  <text x="36" y="372" fill="#5C2E1F" font-size="11">Requirement: IDR 2B property or deposit (~$125k USD)</text>
+  <text x="36" y="390" fill="#5C2E1F" font-size="11">Duration: 5 years + 1 renewal (5 more) · Includes spouse</text>
+
+  <rect x="410" y="336" width="370" height="62" fill="white" rx="6" stroke="#2A7A55" stroke-width="1.5"/>
+  <rect x="410" y="336" width="370" height="22" fill="#2A7A55" rx="6"/>
+  <rect x="410" y="346" width="370" height="12" fill="#2A7A55"/>
+  <text x="595" y="350" text-anchor="middle" fill="white" font-size="12" font-weight="bold">GOLDEN VISA</text>
+  <text x="426" y="372" fill="#5C2E1F" font-size="11">Requirement: USD $350,000+ property investment</text>
+  <text x="426" y="390" fill="#5C2E1F" font-size="11">Duration: 5–10 years · Best for serious long-term buyers</text>
+
+  <text x="400" y="412" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property 2026 · Indonesian Immigration Directorate · BIMC Hospital Bali pricing</text>
+</svg>

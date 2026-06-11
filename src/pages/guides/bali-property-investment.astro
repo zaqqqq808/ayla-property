@@ -1,0 +1,516 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_URL } from '@/config';
+import Header from '@/components/Header.astro';
+import ContactCTA from '@/components/ContactCTA.astro';
+import Footer from '@/components/Footer.astro';
+import StickyButton from '@/components/StickyButton.astro';
+import CalendlyButton from '@/components/CalendlyButton.astro';
+
+const sections = [
+  { id: 'why-bali',         label: 'Why Bali?' },
+  { id: 'ownership',        label: 'Ownership Structures' },
+  { id: 'returns',          label: 'Returns & Yields' },
+  { id: 'areas',            label: 'Best Areas to Invest' },
+  { id: 'process',          label: 'The Investment Process' },
+  { id: 'buyers-guide',     label: 'Full Buyers Guide' },
+  { id: 'developer-report', label: 'Developer Report 2026' },
+  { id: 'faq',              label: 'FAQ' },
+];
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` },
+    { "@type": "ListItem", "position": 2, "name": "Bali Property Investment Guide 2026", "item": `${SITE_URL}/guides/bali-property-investment/` },
+  ]
+});
+
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Bali Property Investment Guide 2026: Yields, Structures and How to Buy",
+  "description": "The complete guide to Bali property investment in 2026. Covers rental yields, ownership structures, the best areas to invest, and the step-by-step buying process for foreign investors.",
+  "author": { "@type": "Organization", "name": "Ayla Property", "url": SITE_URL },
+  "publisher": { "@type": "Organization", "name": "Ayla Property", "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png` } },
+  "datePublished": "2026-06-01",
+  "dateModified": "2026-06-01",
+  "url": `${SITE_URL}/guides/bali-property-investment/`,
+});
+---
+
+<BaseLayout
+  title="Bali Property Investment Guide 2026 | Yields, Structures & How to Buy | Ayla Property"
+  description="The complete guide to investing in Bali property in 2026. Average yields of 10.6%, median entry from $290K USD. Covers leasehold, PT PMA, best areas, and buying process for foreign investors."
+  ogType="article"
+  ogImage="/og-guide.jpg"
+>
+  <Fragment slot="head">
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+    <Fragment set:html={`<script type="application/ld+json">${articleSchema}</script>`} />
+  </Fragment>
+
+  <Header />
+
+  <!-- Hero -->
+  <section class="relative bg-brown pt-40 pb-16 px-6 lg:px-12 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/images/hero-villa.jpg')] bg-cover bg-center opacity-20"></div>
+    <div class="relative max-w-4xl mx-auto text-center">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Investor Guide · 2026 Edition</p>
+      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-display uppercase leading-tight mb-6">
+        Bali Property<br />Investment Guide
+      </h1>
+      <p class="text-white/75 text-lg max-w-2xl mx-auto mb-8">
+        Average yields of 10.6%. Median entry from USD $290,000. A mature, cash-flow positive market with a clear legal framework for foreign investors. Here is everything you need to know.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <CalendlyButton text="Free Investment Consultation" variant="gold" />
+        <a href="#returns" class="text-white/70 hover:text-white text-sm uppercase tracking-widest font-semibold transition-colors">View the Data &darr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats bar -->
+  <div class="bg-olive py-8 px-6">
+    <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <p class="text-white text-3xl font-display font-bold">10.6%</p>
+        <p class="text-white/60 text-xs uppercase tracking-widest mt-1">Avg Gross Yield</p>
+      </div>
+      <div>
+        <p class="text-white text-3xl font-display font-bold">$290K</p>
+        <p class="text-white/60 text-xs uppercase tracking-widest mt-1">Median Entry (USD)</p>
+      </div>
+      <div>
+        <p class="text-white text-3xl font-display font-bold">511</p>
+        <p class="text-white/60 text-xs uppercase tracking-widest mt-1">Listings Analysed</p>
+      </div>
+      <div>
+        <p class="text-white text-3xl font-display font-bold">80+</p>
+        <p class="text-white/60 text-xs uppercase tracking-widest mt-1">Developers Tracked</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="bg-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24 flex flex-col lg:flex-row gap-12 lg:gap-16">
+
+      <!-- Sticky sidebar TOC -->
+      <aside class="lg:w-64 shrink-0">
+        <div class="lg:sticky lg:top-8">
+          <p class="text-gold-dark uppercase tracking-widest text-xs font-semibold mb-4">In This Guide</p>
+          <nav class="space-y-1" aria-label="Guide sections">
+            {sections.map(s => (
+              <a
+                href={`#${s.id}`}
+                class="toc-link block text-sm text-brown/60 hover:text-olive py-1.5 border-l-2 border-transparent hover:border-olive pl-3 transition-all duration-150"
+              >
+                {s.label}
+              </a>
+            ))}
+          </nav>
+          <div class="mt-8 p-4 bg-white rounded-xl border border-beige text-center">
+            <p class="text-brown text-sm font-semibold mb-1">Ready to invest?</p>
+            <p class="text-brown/60 text-xs mb-3">Free 30-min call with Zaq</p>
+            <CalendlyButton text="Book a Call" variant="brown" />
+          </div>
+          <a
+            href="/guides/bali-developer-report-2026/"
+            class="mt-4 flex items-center justify-center gap-2 w-full border border-gold/50 text-gold-dark hover:bg-gold/10 text-xs uppercase tracking-widest font-semibold px-4 py-3 rounded-sm transition-colors"
+          >
+            View 2026 Market Data &rarr;
+          </a>
+        </div>
+      </aside>
+
+      <!-- Article body -->
+      <article class="flex-1 max-w-3xl guide-content">
+
+        <!-- Why Bali -->
+        <section id="why-bali" class="guide-section mb-16">
+          <h2>Why Invest in Bali Property?</h2>
+          <p>Bali sits at an unusual intersection: it is one of the world's most visited destinations, a lifestyle magnet for digital nomads and expats, and a property market where foreign investors can achieve yields that are simply not available in most Western markets.</p>
+          <p>The structural drivers are strong and well-established:</p>
+          <ul>
+            <li><strong>Sustained tourism demand.</strong> Bali receives over 5 million international visitors per year. Short-term rental demand is structural, not cyclical, and has recovered strongly post-COVID.</li>
+            <li><strong>Digital nomad and expat growth.</strong> A growing population of long-term residents creates sustained demand for quality rental properties beyond the tourist season.</li>
+            <li><strong>Limited prime land supply.</strong> The best areas of Bali (Canggu, Seminyak, Uluwatu) are geographically constrained. Supply cannot expand infinitely, which supports long-term capital appreciation.</li>
+            <li><strong>Clear legal framework.</strong> Leasehold and PT PMA structures give foreign investors genuine, enforceable property rights. This is not a grey market.</li>
+            <li><strong>Indonesia's economic trajectory.</strong> Indonesia is on course to become the world's 4th largest economy within the decade. A rising middle class and increasing FDI create a supportive macroeconomic backdrop for property.</li>
+          </ul>
+          <p>The yield gap between Bali and major Western markets is the defining investment case. Gross yields of 10% to 15% in Bali compare to 3% to 5% in Sydney, Melbourne, or Singapore. Even accounting for management costs and risk, the return differential is substantial.</p>
+        </section>
+
+        <!-- Ownership -->
+        <section id="ownership" class="guide-section mb-16">
+          <h2>Ownership Structures for Foreign Investors</h2>
+          <p>Foreign nationals cannot hold freehold (Hak Milik) land title directly in Indonesia. There are two primary legal structures used by international investors:</p>
+
+          <div class="not-prose space-y-4 mt-6">
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <div class="flex items-center gap-3 mb-3">
+                <p class="font-semibold text-brown text-base">Leasehold (Hak Sewa)</p>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-olive/10 text-olive">Most Common</span>
+              </div>
+              <p class="text-sm text-brown/70 mb-3">The most common investment structure. A leasehold gives you the right to use, live in and rent out a property for a defined term, typically 25 to 30 years with a contracted right of renewal. Key facts:</p>
+              <ul class="space-y-1.5 text-sm text-brown/70">
+                <li class="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-gold-dark before:font-bold">Fully notarised and registered with the BPN (Indonesian land authority)</li>
+                <li class="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-gold-dark before:font-bold">Transferable and sellable during the lease term</li>
+                <li class="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-gold-dark before:font-bold">Lower entry price than freehold equivalents, generating higher yields on invested capital</li>
+                <li class="pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-gold-dark before:font-bold">Standard terms: 25+25 or 30+30 years, total of 50 to 60 years</li>
+              </ul>
+              <p class="text-sm text-brown/70 mt-3">The renewal clause is the most critical element of any leasehold. Ayla reviews every lease agreement to ensure renewal terms and pricing mechanisms are fair, clear and enforceable.</p>
+            </div>
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <div class="flex items-center gap-3 mb-3">
+                <p class="font-semibold text-brown text-base">PT PMA (Foreign-Owned Indonesian Company)</p>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-brown/10 text-brown">For Portfolios</span>
+              </div>
+              <p class="text-sm text-brown/70">A PT PMA can hold Hak Guna Bangunan (HGB), the Indonesian equivalent of freehold building rights on land. This structure is preferred for investors building a portfolio, those requiring a formal business registration, or those seeking maximum long-term security. Setup costs typically range from USD $2,000 to $5,000.</p>
+            </div>
+
+          </div>
+
+          <div class="callout">
+            <strong>Avoid nominee arrangements.</strong> Some buyers are offered the option to put property in an Indonesian national's name on their behalf. This has no legal standing in Indonesia and cannot be enforced in court. Ayla never facilitates nominee structures.
+          </div>
+
+          <p>For a full breakdown of ownership structures, legal due diligence, payment methods and more, see our complete <a href="/guides/foreigners-buying-property-bali/">Foreigners Buying Property in Bali guide</a>.</p>
+        </section>
+
+        <!-- Returns -->
+        <section id="returns" class="guide-section mb-16">
+          <h2>Returns and Rental Yields</h2>
+          <p>Our 2026 dataset, compiled from 511 active listings across 80 developers and 15 Bali areas, gives us the clearest independent picture of actual achievable returns in the market today.</p>
+
+          <h3>Yield Overview</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border-collapse mt-4">
+              <thead>
+                <tr class="bg-brown text-white">
+                  <th class="text-left px-4 py-3 font-semibold">Area</th>
+                  <th class="text-left px-4 py-3 font-semibold">Avg Gross Yield</th>
+                  <th class="text-left px-4 py-3 font-semibold">Median Entry (USD)</th>
+                  <th class="text-left px-4 py-3 font-semibold">Profile</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-beige bg-white">
+                  <td class="px-4 py-3 font-semibold">Canggu</td>
+                  <td class="px-4 py-3 text-olive font-bold">14.8%</td>
+                  <td class="px-4 py-3">$380,000</td>
+                  <td class="px-4 py-3">Highest demand, digital nomad hub</td>
+                </tr>
+                <tr class="border-b border-beige bg-cream/50">
+                  <td class="px-4 py-3 font-semibold">Seminyak</td>
+                  <td class="px-4 py-3 text-olive font-bold">13.1%</td>
+                  <td class="px-4 py-3">$420,000</td>
+                  <td class="px-4 py-3">Established luxury short-stay</td>
+                </tr>
+                <tr class="border-b border-beige bg-white">
+                  <td class="px-4 py-3 font-semibold">Uluwatu / Bukit</td>
+                  <td class="px-4 py-3 text-olive font-bold">12.4%</td>
+                  <td class="px-4 py-3">$350,000</td>
+                  <td class="px-4 py-3">Premium cliffside, high nightly rates</td>
+                </tr>
+                <tr class="border-b border-beige bg-cream/50">
+                  <td class="px-4 py-3 font-semibold">Kedungu</td>
+                  <td class="px-4 py-3 text-olive font-bold">11.2%</td>
+                  <td class="px-4 py-3">$245,000</td>
+                  <td class="px-4 py-3">Emerging, strong supply scarcity</td>
+                </tr>
+                <tr class="border-b border-beige bg-white">
+                  <td class="px-4 py-3 font-semibold">Ubud</td>
+                  <td class="px-4 py-3">9.6%</td>
+                  <td class="px-4 py-3">$290,000</td>
+                  <td class="px-4 py-3">Cultural, lifestyle-focused buyers</td>
+                </tr>
+                <tr class="border-b border-beige bg-cream/50">
+                  <td class="px-4 py-3 font-semibold">Sanur</td>
+                  <td class="px-4 py-3">8.9%</td>
+                  <td class="px-4 py-3">$260,000</td>
+                  <td class="px-4 py-3">Family market, longer-stay guests</td>
+                </tr>
+                <tr class="bg-white">
+                  <td class="px-4 py-3 font-semibold">East Bali</td>
+                  <td class="px-4 py-3">7.2%</td>
+                  <td class="px-4 py-3">$165,000</td>
+                  <td class="px-4 py-3">Lowest entry, emerging eco market</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-sm text-brown/60 mt-2 italic">Source: Ayla Property 2026 Dataset. 511 listings, 80 developers, 15 areas. Yields are gross projections.</p>
+
+          <h3>Net vs Gross Yields</h3>
+          <p>Gross yields do not account for operating costs. Typical deductions from gross rental income:</p>
+          <ul>
+            <li>Property management fees: 15% to 25% of gross income</li>
+            <li>Maintenance and repairs: approximately 3% to 5% of property value per year</li>
+            <li>Indonesian withholding tax on rental income: 10%</li>
+            <li>Insurance, utilities, platform fees: varies</li>
+          </ul>
+          <p>A realistic net yield is typically 25% to 35% below gross. A 14.8% gross yield in Canggu becomes approximately 10% to 11% net, still exceptional by any global standard.</p>
+        </section>
+
+        <!-- Areas -->
+        <section id="areas" class="guide-section mb-16">
+          <h2>Best Areas to Invest in Bali</h2>
+          <p>The right area depends entirely on your investment goal. For yield-focused investors, Canggu and Seminyak consistently outperform. For capital appreciation and lower entry, emerging areas like Kedungu offer better risk-adjusted returns. For lifestyle plus income, Ubud and Sanur suit longer-stay and wellness-focused rental markets.</p>
+
+          <div class="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="font-semibold text-brown">Canggu</p>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-olive/10 text-olive">14.8% yield</span>
+              </div>
+              <p class="text-sm text-brown/70">Bali's highest-demand area for digital nomads and young international visitors. Short-term rental occupancy regularly exceeds 80% in peak periods.</p>
+            </div>
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="font-semibold text-brown">Seminyak</p>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-olive/10 text-olive">13.1% yield</span>
+              </div>
+              <p class="text-sm text-brown/70">The original high-end villa destination with strong, consistent demand from affluent short-stay guests. Reliable cash flow, less upside than Canggu.</p>
+            </div>
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="font-semibold text-brown">Uluwatu / The Bukit</p>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-olive/10 text-olive">12.4% yield</span>
+              </div>
+              <p class="text-sm text-brown/70">Land scarcity and dramatic ocean-view locations command premium nightly rates. Suits investors with a 7 to 10 year horizon.</p>
+            </div>
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <div class="flex items-center justify-between mb-2">
+                <p class="font-semibold text-brown">Kedungu</p>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-olive/10 text-olive">11.2% yield</span>
+              </div>
+              <p class="text-sm text-brown/70">The next Canggu. Entry prices still relatively low, demand growing fast, supply tight. Highest appreciation potential in our current dataset.</p>
+            </div>
+
+          </div>
+
+          <p>For a deeper breakdown of each area's investment case, read our <a href="/journal/best-areas-invest-bali-2026/">Best Areas to Invest in Bali 2026</a> article.</p>
+        </section>
+
+        <!-- Process -->
+        <section id="process" class="guide-section mb-16">
+          <h2>The Investment Process</h2>
+          <p>Buying property in Bali as a foreign investor typically takes 4 to 10 weeks from initial enquiry to signed and registered agreement. Here is how it works:</p>
+
+          <div class="not-prose space-y-0 mt-6">
+
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-9 h-9 rounded-full bg-olive flex items-center justify-center shrink-0 z-10">
+                  <span class="text-white text-sm font-bold">1</span>
+                </div>
+                <div class="w-0.5 bg-beige flex-1 mt-1 mb-1"></div>
+              </div>
+              <div class="pb-8">
+                <p class="font-semibold text-brown mb-1">Define Your Brief</p>
+                <p class="text-sm text-brown/70">Budget, target yield, preferred area, holding period, and level of personal involvement in management. A 30-minute call with Ayla is the fastest way to establish this and match it to what is actually available in the market.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-9 h-9 rounded-full bg-olive flex items-center justify-center shrink-0 z-10">
+                  <span class="text-white text-sm font-bold">2</span>
+                </div>
+                <div class="w-0.5 bg-beige flex-1 mt-1 mb-1"></div>
+              </div>
+              <div class="pb-8">
+                <p class="font-semibold text-brown mb-1">Property Selection and Developer Due Diligence</p>
+                <p class="text-sm text-brown/70">Ayla presents options matched to your brief, with honest commentary on each. For off-plan properties, we verify the developer's track record, existing project delivery history, permits, and financial standing. We only work with developers who pass this check.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-9 h-9 rounded-full bg-olive flex items-center justify-center shrink-0 z-10">
+                  <span class="text-white text-sm font-bold">3</span>
+                </div>
+                <div class="w-0.5 bg-beige flex-1 mt-1 mb-1"></div>
+              </div>
+              <div class="pb-8">
+                <p class="font-semibold text-brown mb-1">Legal Due Diligence</p>
+                <p class="text-sm text-brown/70">An independent Indonesian notary (PPAT) verifies the land title, checks for encumbrances, confirms all permits are in order, and drafts the lease or purchase agreement in both English and Bahasa Indonesia.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-9 h-9 rounded-full bg-olive flex items-center justify-center shrink-0 z-10">
+                  <span class="text-white text-sm font-bold">4</span>
+                </div>
+                <div class="w-0.5 bg-beige flex-1 mt-1 mb-1"></div>
+              </div>
+              <div class="pb-8">
+                <p class="font-semibold text-brown mb-1">Signing and Payment</p>
+                <p class="text-sm text-brown/70">Most Bali developers use staged payment structures: typically 30% to 40% on signing, with the balance paid in instalments tied to construction milestones. Full settlement on handover. International bank transfer and major stablecoins (USDT/USDC) are both widely accepted.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-9 h-9 rounded-full bg-olive flex items-center justify-center shrink-0 z-10">
+                  <span class="text-white text-sm font-bold">5</span>
+                </div>
+                <div class="w-0.5 bg-beige flex-1 mt-1 mb-1"></div>
+              </div>
+              <div class="pb-8">
+                <p class="font-semibold text-brown mb-1">Registration</p>
+                <p class="text-sm text-brown/70">The notarised agreement is registered with the Badan Pertanahan Nasional (BPN), Indonesia's national land authority. This public registration is the legal foundation of your ownership rights.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="flex flex-col items-center">
+                <div class="w-9 h-9 rounded-full bg-olive flex items-center justify-center shrink-0 z-10">
+                  <span class="text-white text-sm font-bold">6</span>
+                </div>
+              </div>
+              <div class="pb-2">
+                <p class="font-semibold text-brown mb-1">Handover and Management Setup</p>
+                <p class="text-sm text-brown/70">For rental investments, Ayla connects you with vetted local property management teams who handle guest operations, maintenance, and income reporting. Most clients are fully hands-off from this point.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Buyers Guide CTA -->
+        <section id="buyers-guide" class="guide-section mb-16">
+          <h2>Complete Buyers Guide</h2>
+          <p>For the full legal breakdown covering ownership structures in detail, payment methods including cryptocurrency, Indonesian tax obligations, due diligence checklist, and the rental management process, see our dedicated guide:</p>
+          <a href="/guides/foreigners-buying-property-bali/" class="not-prose flex items-center gap-6 p-6 bg-white border border-beige rounded-xl hover:border-olive transition-colors group mt-6">
+            <div class="w-12 h-12 bg-olive/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-olive/20 transition-colors">
+              <svg class="w-6 h-6 text-olive" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.966 8.966 0 00-6 2.292m0-14.25v14.25"/></svg>
+            </div>
+            <div>
+              <p class="font-semibold text-brown group-hover:text-olive transition-colors">Bali Buyers Guide 2026</p>
+              <p class="text-sm text-brown/60 mt-0.5">Ownership structures, legal process, tax, management and more. The complete reference guide for foreign investors.</p>
+            </div>
+            <svg class="w-5 h-5 text-brown/30 ml-auto shrink-0 group-hover:text-olive transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </section>
+
+        <!-- Developer Report CTA -->
+        <section id="developer-report" class="guide-section mb-16">
+          <h2>Bali Developer Report 2026</h2>
+          <p>Our independent market dataset covers 511 active listings from 80 developers across 15 areas. It includes area-by-area price tables, ROI projections, developer pipeline data, and property type breakdowns. It is free to access and cite.</p>
+          <a href="/guides/bali-developer-report-2026/" class="not-prose flex items-center gap-6 p-6 bg-white border border-beige rounded-xl hover:border-olive transition-colors group mt-6">
+            <div class="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors">
+              <svg class="w-6 h-6 text-gold-dark" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+            </div>
+            <div>
+              <p class="font-semibold text-brown group-hover:text-olive transition-colors">Bali Property Market Report 2026</p>
+              <p class="text-sm text-brown/60 mt-0.5">511 listings. 80 developers. 15 areas. The most comprehensive independent dataset of the Bali new-build market.</p>
+            </div>
+            <svg class="w-5 h-5 text-brown/30 ml-auto shrink-0 group-hover:text-olive transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="guide-section mb-16">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="not-prose space-y-3 mt-6">
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <p class="font-bold text-brown mb-2">Is Bali property a good investment in 2026?</p>
+              <p class="text-sm text-brown/70">Yes. Average gross yields across our 2026 dataset are 10.6%, with top areas like Canggu reaching 14.8%. Net yields after management and costs remain well above comparable markets in Australia, Singapore, and the UK. The structural drivers (sustained tourism demand, growing expat population, limited prime land supply) remain firmly in place.</p>
+            </div>
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <p class="font-bold text-brown mb-2">Can foreigners buy property in Bali?</p>
+              <p class="text-sm text-brown/70">Yes. Foreign nationals cannot hold freehold title directly, but leasehold (Hak Sewa) and PT PMA structures provide fully legal, notarised and enforceable ownership rights. Thousands of foreign investors own property in Bali through these structures.</p>
+            </div>
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <p class="font-bold text-brown mb-2">What is the minimum investment in Bali property?</p>
+              <p class="text-sm text-brown/70">Based on our 2026 dataset, entry-level new-build villas start from approximately USD $165,000 in East Bali. The majority of investor-grade properties sit between USD $200,000 and $500,000. Median entry across all 511 listings in our dataset is USD $290,000.</p>
+            </div>
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <p class="font-bold text-brown mb-2">How long does the buying process take?</p>
+              <p class="text-sm text-brown/70">Typically 4 to 10 weeks from first payment to a signed, registered agreement. Off-plan builds then take an additional 10 to 18 months to complete and hand over.</p>
+            </div>
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <p class="font-bold text-brown mb-2">Do I need to visit Bali to buy?</p>
+              <p class="text-sm text-brown/70">No. Many of Ayla's clients complete the entire process remotely. Legal documents can be signed via notarised Power of Attorney, payments are made by international bank transfer or crypto, and property management handles ongoing operations entirely on your behalf.</p>
+            </div>
+
+            <div class="bg-white border border-beige rounded-xl p-5">
+              <p class="font-bold text-brown mb-2">What are the ongoing costs of owning a Bali villa?</p>
+              <p class="text-sm text-brown/70">Main ongoing costs: property management (15% to 25% of gross rental income), annual land and building tax (approximately 0.5% of assessed value), maintenance budget (3% to 5% of value per year), and Indonesian withholding tax on rental income (10%). For most well-managed villas, rental income covers all costs comfortably and still generates strong net positive cash flow.</p>
+            </div>
+
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </div>
+
+  <ContactCTA />
+  <Footer />
+  <StickyButton />
+
+  <script>
+    // Active TOC highlight on scroll
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const sections = document.querySelectorAll('.guide-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(l => l.classList.remove('border-olive','text-olive'));
+          const active = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
+          active?.classList.add('border-olive','text-olive');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+  <style>
+    .guide-content h2 {
+      @apply text-brown text-2xl lg:text-3xl font-display uppercase tracking-wide mb-4 mt-12 first:mt-0 pb-3 border-b border-beige;
+    }
+    .guide-content h3 {
+      @apply text-brown text-lg font-semibold mt-6 mb-3;
+    }
+    .guide-content p {
+      @apply text-brown/80 leading-relaxed mb-4;
+    }
+    .guide-content ul {
+      @apply space-y-2 mb-4 pl-0;
+    }
+    .guide-content ul li {
+      @apply text-brown/80 leading-relaxed pl-5 relative;
+    }
+    .guide-content ul li::before {
+      content: '\2013';
+      @apply absolute left-0 text-gold-dark font-bold;
+    }
+    .guide-content strong {
+      @apply text-brown font-semibold;
+    }
+    .callout {
+      @apply bg-white border-l-4 border-gold rounded-r-xl px-6 py-4 my-6 text-brown/80 text-sm leading-relaxed;
+    }
+    .toc-link.active {
+      @apply text-olive border-olive;
+    }
+  </style>
+</BaseLayout>

@@ -1,15 +1,17 @@
 ---
-import CalendlyButton from './CalendlyButton.astro';
+import { CALENDLY_URL } from '@/config';
 ---
-<section id="contact" class="bg-brown text-white section-pad px-6 lg:px-12">
-  <div class="max-w-3xl mx-auto text-center">
-    <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Get Started</p>
-    <h2 class="text-4xl lg:text-5xl font-display uppercase mb-6 tracking-wide">Ready to Invest?</h2>
-    <p class="text-white/80 text-lg mb-10 leading-relaxed">
-      Book a free 30-minute call with our team. No pressure, no obligation. Just honest advice on whether Bali is the right move for you.
-    </p>
-
-    <CalendlyButton text="Book Your Free 30-Min Call" variant="olive" />
-    <p class="text-white/50 text-sm mt-4">Free · No obligation · We reply within 24 hours</p>
+<section class="contact-cta" id="contact">
+  <div class="container">
+    <div class="cta-card glass reveal">
+      <span class="eyebrow" style="justify-content:center">Get Started</span>
+      <h2>Ready to <span class="grad-text">Invest?</span></h2>
+      <p>Book a free 30-minute call with our team. No pressure, no obligation. Just honest advice on whether Bali is the right move for you.</p>
+      <button type="button" class="btn btn-gold" data-calendly-url={CALENDLY_URL}>
+        Book Your Free 30-Min Call
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <p class="cta-fine">Free · No obligation · We reply within 24 hours</p>
+    </div>
   </div>
 </section>

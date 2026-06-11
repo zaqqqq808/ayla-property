@@ -19,10 +19,10 @@ I am not going to drop a bunch of stats and run away. I want to explain precisel
   </ul>
 </div>
 
-<img src="/images/journal/chart-bali-vs-dubai-gold-coast.svg" alt="Bali vs Dubai vs Gold Coast property ROI comparison chart 2026" class="my-6 w-full rounded-lg" loading="lazy" />
-
-
 ## My own portfolio: Dubai vs. Bali
+
+<img src="/images/journal/dataviz-bali-vs-dubai-gold-coast.png" alt="Bali vs Dubai vs Gold Coast rental yield and entry cost comparison infographic 2026" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+
 I don't just advise clients on this. I put my own money into these markets. I currently own investment properties in both Dubai and Bali, so I can give you a direct comparison based on what hits my bank account every month.
 My Dubai investment is a solid 2-bedroom apartment. It is a stable asset and has definitely benefited from capital appreciation over the last few years. However, when I look at the cash flow, it usually sits around **8% ROI, after all fees and taxes.**
 My Bali apartment is a different story. Right now, that property is sitting comfortably around **12%, net.**
@@ -51,7 +51,6 @@ When you remove those tasks entirely, you get hours of your life back. That crea
 While you might not find the sheer density of Michelin stars you get in London, the mid-level food is unmatched. It is healthy, plentiful, and affordable. You can eat incredible meals three times a day for a fraction of the cost of living in the US or Europe.
 **It is genuinely livable**. This isn't just a holiday island anymore. We have great shopping, boutique cinemas, and activities ranging from paintball to pottery to dirt biking. It is a fully functioning society that costs much less than Dubai or Australia while maintaining a high quality of life.
 Plus, you have the nicest local population in the world and cute dogs running around the streets. Who doesn't love that?
-
 
 ## Entry Costs & Total Investment Compared
 

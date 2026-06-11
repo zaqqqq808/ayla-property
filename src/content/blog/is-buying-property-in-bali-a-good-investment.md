@@ -25,10 +25,9 @@ In 2026, Ayla Property compiled the most comprehensive independent dataset of th
   </ul>
 </div>
 
-<img src="/images/journal/chart-bali-global-yield-comparison.svg" alt="Bali property investment yield comparison vs global markets 2026 - 511 listings data" class="my-6 w-full rounded-lg" loading="lazy" />
-
-
 ## The Headline Numbers
+
+<img src="/images/journal/dataviz-bali-good-investment.png" alt="Global rental yield comparison 2026 - Bali vs Dubai vs Australia vs Singapore data infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 Before diving in, here is what our dataset shows at a glance:
 

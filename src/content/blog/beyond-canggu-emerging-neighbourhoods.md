@@ -23,10 +23,10 @@ We are seeing a shift. The developers and investors who built Canggu five years 
   </ul>
 </div>
 
-<img src="/images/journal/chart-emerging-neighbourhoods.svg" alt="Bali emerging neighbourhood investment lifecycle comparison 2026" class="my-6 w-full rounded-lg" loading="lazy" />
-
-
 ## 1. Seseh
+
+<img src="/images/journal/svg-beyond-canggu.svg" alt="Bali area investment lifecycle 2026 - market maturity timeline infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+
 Think of Seseh as the bougie cousin of Canggu. It sits right on the edge of the action, just north of Pererenan.
 
 In fact, it feels precisely like Pererenan did three years ago. It is quickly becoming the "quiet rich" neighbourhood for digital nomads and expats who want the quality of life without the chaos. You won't find the late-night clubs or the traffic jams here. Leave that to Berawa.
@@ -57,7 +57,6 @@ Kedungu is shaping up to be a high-net-worth area. It feels spacious and premium
 
 **The Investment Play:** Long-term hold. Kedungu is currently where Canggu was 7 years ago. If you are looking for that 2x or 3x land value growth over the next cycle, this is the one to watch.
 
-
 ## 4. Sanur: The Quiet Achiever
 
 Every list of emerging Bali areas should include Sanur, and it's consistently underrated. Traditionally known as a calm, family-oriented beach town on Bali's east coast, Sanur is undergoing a quiet but significant transformation.
@@ -81,7 +80,6 @@ Not every "up and coming" area actually comes up. Here is the framework we use a
 **5. Rental comparables.** Can you find rental data, even limited, for the area? Even a few comparable properties on Airbnb showing strong occupancy is meaningful evidence. No rentals at all means you're too early. A dozen properties averaging 70%+ occupancy means you're still in time.
 
 All four areas above (Seseh, Bukit, Kedungu, and Sanur) pass this framework. Which one is right for your budget and timeline is a conversation worth having.
-
 
 ## What Makes a Bad Emerging Area Investment
 

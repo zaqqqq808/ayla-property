@@ -30,9 +30,10 @@ Here is how we turned that brief into a massive win.
   </ul>
 </div>
 
-<img src="/images/journal/chart-six-months-client-case-study.svg" alt="Bali property case study - $50k profit in 6 months deal breakdown" class="my-6 w-full rounded-lg" loading="lazy" />
-
 ## The "Uber Spreadsheet"
+
+<img src="/images/journal/svg-case-study-6-months.svg" alt="Bali property case study 50000 dollar profit 6 months deal numbers infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+
 Here at Ayla, we pride ourselves on our data. We don't just guess; we track everything. We have an "Uber spreadsheet" containing information on almost every credible developer in Bali and every active project.
 
 We started filtering. We looked for a minimum 28-year leaseholds (to maximise ROI runway) and filtered the market down to 6 specific developments that fit the criteria.
@@ -73,7 +74,6 @@ But the real win is the equity. As soon as the apartment is completed and ready 
 Because we bought well and negotiated hard, our clients are sitting on an immediate **$50,000 profit** if they choose to flip it the day they get the keys.
 
 Not bad, eh?
-
 
 ## The Due Diligence Process
 

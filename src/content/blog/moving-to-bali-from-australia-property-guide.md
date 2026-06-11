@@ -20,9 +20,9 @@ Australians are the largest single group of foreign buyers I work with in Bali, 
 
 ---
 
-<img src="/images/journal/chart-moving-to-bali-australia.svg" alt="Moving to Bali from Australia - cost comparison and visa options 2026" class="my-6 w-full rounded-lg" loading="lazy" />
-
 ## The Scale of Australian Migration to Bali
+
+<img src="/images/journal/svg-moving-to-bali-australia.svg" alt="Monthly cost of living Bali vs Sydney Melbourne 2026 infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 Indonesian immigration data consistently shows Australians as one of the top nationalities taking longer-term stay visas in Bali. The shift accelerated post-2020 as remote work normalised and Australians realised they could earn in AUD while living in a place where that income goes three to four times as far.
 
@@ -77,7 +77,7 @@ Not every part of Bali works the same way for Australian buyers. Here is an hone
 
 Canggu remains the centre of gravity for younger Australians and remote workers. Strong café culture, good gyms and surf, active social scene, and a large Australian community. Property prices reflect the demand, with entry around $350,000 to $380,000 for a quality investment villa, but yields justify the price at 14.8% gross average. [Explore property in Canggu](/invest/canggu/).
 
-Pererenan is where a lot of Canggu overflow has landed in the last two years. It is quieter, slightly cheaper, and still close enough to Canggu's amenities to matter. For buyers who want the same vibe with 15 to 20% off the entry price, this is the area worth looking at closely. [View available villas in Pererenan](/invest/canggu/).
+Pererenan is where a lot of Canggu overflow has landed in the last two years. It is quieter, slightly cheaper, and still close enough to Canggu's amenities to matter. For buyers who want the same vibe with 15 to 20% off the entry price, this is the area worth looking at closely. [View available villas in Pererenan](/invest/pererenan/).
 
 Sanur is a different character entirely. It is more settled, more family-oriented, with a long-standing Australian expat community that has been there for decades. Villa prices are lower than Canggu, yields are more moderate, and it suits buyers who want a quieter pace of life without sacrificing connection to the broader expat community. [See what is available in Sanur](/invest/sanur/).
 

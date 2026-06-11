@@ -72,4 +72,49 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://www.aylaproperty.com/guides/bali-property-investment/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.aylaproperty.com/journal/can-australians-buy-property-in-bali/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aylaproperty.com/journal/is-buying-property-in-bali-a-good-investment/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aylaproperty.com/guides/indonesia-foreign-investor-checklist-2026/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.aylaproperty.com/invest/seseh/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aylaproperty.com/invest/kedungu/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aylaproperty.com/bali-roi-calculator/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.aylaproperty.com/journal/how-to-vet-a-bali-developer/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aylaproperty.com/invest/sanur/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -20,10 +20,9 @@ At Ayla Property, we've watched this island transform from a seasonal holiday de
   </ul>
 </div>
 
-<img src="/images/journal/chart-bali-investment-2026.svg" alt="Is Bali still a good investment 2026 - tourism growth and investment strategies chart" class="my-6 w-full rounded-lg" loading="lazy" />
-
-
 ## The Macro Picture: Why Indonesia is an Economic Juggernaut
+
+<img src="/images/journal/dataviz-bali-investment-2026.png" alt="Bali international arrivals growth and investment strategies 2026 infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 Before looking at a single villa, you have to look at the country backing it. Indonesia is no longer just a developing nation; it is a global economic anchor.
 - **A Safe Haven Amidst Global Turmoil:** With ongoing geopolitical tensions and war uncertainty involving Russia, Ukraine, and other regions, global capital is seeking safe, alternative havens. Investors are actively shifting their funds away from volatile European and Western markets into Southeast Asia. Indonesia, with its neutral political stance and booming domestic market, is thriving as a premier alternative investment destination.
@@ -96,4 +95,4 @@ The investors who are asking "have I missed it?" will ask the same question in t
 Is Bali still a good investment? Absolutely.Is Bali still a good investment? Absolutely. Between Indonesia's meteoric economic rise, the influx of global capital seeking a haven, and the highly lucrative leasehold and off-plan strategies, the market is ripe for the taking. The "wild west" days might be over, but the era of calculated, high-yield wealth building has just begun.
 ---
 
-*Want to go deeper? Explore our area-specific investment guides for [Canggu](/invest/canggu/) and [Uluwatu](/invest/uluwatu/), or download our complete [Bali property ownership guide for foreign buyers](/guides/foreigners-buying-property-bali/).*
+*Want to go deeper? Explore our area-specific investment guides for [buying property in Canggu](/invest/canggu/) and [investing in Uluwatu](/invest/uluwatu/), or read our complete [guide to buying property in Bali as a foreigner](/guides/foreigners-buying-property-bali/).*

@@ -25,10 +25,9 @@ So I told them what I am about to tell you.
   </ul>
 </div>
 
-<img src="/images/journal/chart-best-areas-bali-2026.svg" alt="Best areas to invest in Bali 2026 - capital appreciation comparison chart" class="my-6 w-full rounded-lg" loading="lazy" />
-
-
 ## Kedungu: The Quiet One That is Already Turning Loud
+
+<img src="/images/journal/svg-best-areas-bali-2026.svg" alt="Top Bali capital appreciation areas 2026 - projected growth infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 If you have been paying attention to Bali's property scene over the past 18 months, you have probably heard Kedungu mentioned. Some people dismiss it because it is still relatively undeveloped. That is exactly why I like it.
 

@@ -21,9 +21,9 @@ Here is what I tell them after two-plus years of doing this on the ground.
   </ul>
 </div>
 
-<img src="/images/journal/chart-retiring-to-bali.svg" alt="Retiring to Bali - buy vs rent financial comparison and visa options 2026" class="my-6 w-full rounded-lg" loading="lazy" />
-
 ## Why Retirees Are Choosing Bali Over Coastal Australia
+
+<img src="/images/journal/dataviz-retiring-to-bali.png" alt="5-year financial scenario renting vs buying Bali property retirement infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 The conversation used to be about lifestyle. Now it is just as much about money. Retiring on the Sunshine Coast or in Port Macquarie is not cheap anymore. A modest house close to the beach is $800K or above, council rates, strata fees, and health insurance keep climbing, and the dollar does not stretch the way it once did.
 

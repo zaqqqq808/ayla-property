@@ -14,6 +14,8 @@ Here is how that conversation went.
 
 ---
 
+<img src="/images/journal/svg-freehold-vs-leasehold.svg" alt="Freehold vs leasehold Bali ROI comparison same villa different return infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+
 **"So can I actually own property in Bali as a foreigner? I keep reading that you can't."**
 
 You can. What you cannot do is hold Hak Milik, which is the Indonesian freehold land title that is reserved for Indonesian citizens. But there are two fully legal structures that give you genuine, enforceable property rights, and thousands of foreign investors use them every day.

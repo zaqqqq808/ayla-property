@@ -21,9 +21,9 @@ The honest answer is more nuanced than either of those positions. Here is a clea
   </ul>
 </div>
 
-<img src="/images/journal/chart-pt-pma-bali-setup.svg" alt="PT PMA Bali setup costs and process infographic 2026" class="my-6 w-full rounded-lg" loading="lazy" />
-
 ## What a PT PMA Is
+
+<img src="/images/journal/dataviz-pt-pma-bali.png" alt="PT PMA Bali decision flowchart - setup costs and when you need one infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 PT PMA stands for Perseroan Terbatas Penanaman Modal Asing, which translates roughly as a foreign direct investment limited liability company. It is a legal entity incorporated under Indonesian law that can be majority or wholly owned by foreign nationals or foreign entities.
 

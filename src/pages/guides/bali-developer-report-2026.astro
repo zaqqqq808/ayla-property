@@ -160,16 +160,36 @@ const datasetSchema = JSON.stringify({
           <div class="callout">
             <strong>Free to cite.</strong> This report is free to share and reference with attribution: <em>"Source: Ayla Property Bali Market Report 2026, aylaproperty.com"</em>
           </div>
-          <p>What this report covers:</p>
-          <ul>
-            <li>Full market overview with price distribution across 511 listings</li>
-            <li>Area-by-area price comparison across 15 major Bali investment locations</li>
-            <li>ROI analysis by area, including conservative and optimistic projections</li>
-            <li>Property type breakdown across villas, apartments, townhouses, and hotel units</li>
-            <li>Pipeline data showing which years carry the highest delivery volume</li>
-            <li>Five key market findings that challenge common assumptions about Bali property</li>
-          </ul>
-          <p>What it does not cover: secondary resale transactions, private listings, or the vacation rental resale market. This is a new-build and off-plan dataset only.</p>
+
+          <p class="font-semibold text-brown mt-6 mb-3">What this report covers:</p>
+          <div class="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
+            <div class="bg-white border border-beige rounded-xl p-4 flex gap-3 items-start">
+              <div class="w-2 h-2 rounded-full bg-olive shrink-0 mt-1.5"></div>
+              <p class="text-sm text-brown/70">Full market overview with price distribution across 511 listings</p>
+            </div>
+            <div class="bg-white border border-beige rounded-xl p-4 flex gap-3 items-start">
+              <div class="w-2 h-2 rounded-full bg-olive shrink-0 mt-1.5"></div>
+              <p class="text-sm text-brown/70">Area-by-area price comparison across 15 major Bali investment locations</p>
+            </div>
+            <div class="bg-white border border-beige rounded-xl p-4 flex gap-3 items-start">
+              <div class="w-2 h-2 rounded-full bg-olive shrink-0 mt-1.5"></div>
+              <p class="text-sm text-brown/70">ROI analysis by area, including conservative and optimistic projections</p>
+            </div>
+            <div class="bg-white border border-beige rounded-xl p-4 flex gap-3 items-start">
+              <div class="w-2 h-2 rounded-full bg-olive shrink-0 mt-1.5"></div>
+              <p class="text-sm text-brown/70">Property type breakdown across villas, apartments, townhouses, and hotel units</p>
+            </div>
+            <div class="bg-white border border-beige rounded-xl p-4 flex gap-3 items-start">
+              <div class="w-2 h-2 rounded-full bg-olive shrink-0 mt-1.5"></div>
+              <p class="text-sm text-brown/70">Pipeline data showing which years carry the highest delivery volume</p>
+            </div>
+            <div class="bg-white border border-beige rounded-xl p-4 flex gap-3 items-start">
+              <div class="w-2 h-2 rounded-full bg-olive shrink-0 mt-1.5"></div>
+              <p class="text-sm text-brown/70">Five key market findings that challenge common assumptions about Bali property</p>
+            </div>
+          </div>
+
+          <p class="mt-6">What it does not cover: secondary resale transactions, private listings, or the vacation rental resale market. This is a new-build and off-plan dataset only.</p>
         </section>
 
         <section id="market-overview" class="guide-section mb-16">
@@ -273,6 +293,25 @@ const datasetSchema = JSON.stringify({
         <section id="roi-by-area" class="guide-section mb-16">
           <h2>ROI by Area</h2>
           <p>The market-wide median conservative ROI is <strong>10.6%</strong>, with a median optimistic ROI of <strong>16.4%</strong>. These are developer-stated projections. Actual returns vary with occupancy, management quality, platform fees, and maintenance costs.</p>
+
+          <div class="not-prose grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 mb-6">
+            <div class="bg-white border border-beige rounded-xl p-4 text-center">
+              <p class="text-2xl font-display font-bold text-olive">12%</p>
+              <p class="text-sm font-semibold text-brown mt-1">Melasti &amp; Pecatu</p>
+              <p class="text-xs text-brown/60 mt-1">Two points above market median</p>
+            </div>
+            <div class="bg-white border border-beige rounded-xl p-4 text-center">
+              <p class="text-2xl font-display font-bold text-olive">12%</p>
+              <p class="text-sm font-semibold text-brown mt-1">Pererenan</p>
+              <p class="text-xs text-brown/60 mt-1">Lower entry than Canggu</p>
+            </div>
+            <div class="bg-white border border-beige rounded-xl p-4 text-center">
+              <p class="text-2xl font-display font-bold text-brown/40">10%</p>
+              <p class="text-sm font-semibold text-brown mt-1">Canggu</p>
+              <p class="text-xs text-brown/60 mt-1">At market median, despite premium price</p>
+            </div>
+          </div>
+
           <p><strong>Nusa Dua</strong> records the highest ROI claims in the dataset alongside its strong land values. <strong>Melasti and Pecatu</strong> both deliver conservative ROI medians of 12%, two full points above the market median. <strong>Pererenan</strong> also delivers 12% at the conservative median, with a lower entry price than Canggu.</p>
           <p>A 10.6% conservative ROI on a $290,000 property implies approximately $30,740 per year in gross rental income. After a typical management fee of 20 to 25% of gross revenue, net income is approximately $23,000 to $24,600 per year. That is a net yield of 7.9% to 8.5%, which remains significantly stronger than most Western property markets even at its most conservative.</p>
         </section>
@@ -305,9 +344,11 @@ const datasetSchema = JSON.stringify({
           <p>83.7% of first-contact dates in the database fall within a two-month window in mid-2025, reflecting a structured outreach sprint. The database is maintained on a rolling basis and updated as new information is received.</p>
           <p>This dataset covers new-build and off-plan product only. ROI figures are developer-stated projections and have not been independently verified. Managed rental returns will vary with occupancy, platform fees, management costs (typically 20 to 30% of gross revenue), and maintenance expenditure.</p>
 
-          <h3>Why We Did This</h3>
-          <p>No independent market data of this kind existed for Bali before this report. Most market commentary in the Bali real estate space comes from developers marketing their own projects, or from agents with a financial interest in specific sales. We built this dataset because investors deserve access to real market data, not marketing material dressed up as research.</p>
-          <p>Ayla Property is an independent broker. We work for buyers, not developers. We are paid by developers only on successful completion, at the same 5% rate the entire market charges. Our interest is in matching the right buyer to the right property, not in maximising transaction volume.</p>
+          <div class="not-prose bg-white border border-beige rounded-xl p-5 mt-6 mb-6">
+            <p class="font-semibold text-brown mb-3">Why We Did This</p>
+            <p class="text-sm text-brown/70 mb-3">No independent market data of this kind existed for Bali before this report. Most market commentary in the Bali real estate space comes from developers marketing their own projects, or from agents with a financial interest in specific sales. We built this dataset because investors deserve access to real market data, not marketing material dressed up as research.</p>
+            <p class="text-sm text-brown/70">Ayla Property is an independent broker. We work for buyers, not developers. We are paid by developers only on successful completion, at the same 5% rate the entire market charges. Our interest is in matching the right buyer to the right property, not in maximising transaction volume.</p>
+          </div>
 
           <div class="callout">
             <strong>About Ayla Property</strong><br />
@@ -346,7 +387,7 @@ const datasetSchema = JSON.stringify({
   .guide-content p { @apply text-brown/80 leading-relaxed mb-4; }
   .guide-content ul { @apply space-y-2 mb-4 pl-0; }
   .guide-content ul li { @apply text-brown/80 leading-relaxed pl-5 relative; }
-  .guide-content ul li::before { content: '—'; @apply absolute left-0 text-gold-dark font-bold; }
+  .guide-content ul li::before { content: '\2013'; @apply absolute left-0 text-gold-dark font-bold; }
   .guide-content strong { @apply text-brown font-semibold; }
   .callout { @apply bg-white border-l-4 border-gold rounded-r-xl px-6 py-4 my-6 text-brown/80 text-sm leading-relaxed; }
   .data-table { @apply my-6 overflow-x-auto rounded-xl border border-beige; }

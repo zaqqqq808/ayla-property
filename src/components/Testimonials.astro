@@ -14,19 +14,19 @@ interface Props {
 
 const defaultTestimonials: Testimonial[] = [
   {
-    quote: "I'd been looking at Bali property for two years but couldn't find anyone I trusted. Ayla found us a villa in Canggu with a 16% yield and handled everything. Best financial decision we've made.",
+    quote: "I'd spent two years reading about Bali property and still could not tell the legitimate developers from the ones with bought reviews. Ayla pulled actual delivery records on the projects I was looking at and quietly told me to walk away from two of them. We went with their shortlist. The villa hit 14% gross in year one.",
     name: 'James R.',
     location: 'London, UK',
     initials: 'JR',
   },
   {
-    quote: "They negotiated 12% off the developer's asking price and saved us months of due diligence. I don't know how you'd do this without them.",
+    quote: "Honestly, we did not even know Australians could legally buy property in Bali. We'd heard too many horror stories about dodgy lease agreements to just trust someone's word. Ayla got an independent notary to check every clause and we signed the whole thing from our kitchen table in Sydney. Couldn't have been simpler.",
     name: 'Sarah & Tom K.',
     location: 'Sydney, Australia',
     initials: 'SK',
   },
   {
-    quote: "Zaq and the team are the real deal. No fluff, no pressure. Just honest advice and a great property. Our villa has been fully booked since day one.",
+    quote: "My concern was straightforward: I'm in Dubai, who is actually watching the property? Ayla had the management company in place and briefed before we even got the keys. First monthly report came in at 81% occupancy. I haven't had to think about it since!",
     name: 'Marcus D.',
     location: 'Dubai, UAE',
     initials: 'MD',
@@ -38,27 +38,28 @@ const {
   title        = 'What Our Investors Say',
   testimonials = defaultTestimonials,
 } = Astro.props;
----
-<section class="bg-white pt-10 pb-20 px-6 lg:px-12">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">{eyebrow}</p>
-      <h2 class="text-brown text-4xl lg:text-5xl font-display uppercase tracking-wide">
-        {title}
-      </h2>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+const titleHtml = title === 'What Our Investors Say'
+  ? 'What Our <span class="grad-text">Investors Say</span>'
+  : title;
+---
+<section class="testimonials">
+  <div class="container">
+    <div class="reveal section-head">
+      <span class="eyebrow">{eyebrow}</span>
+      <h2 set:html={titleHtml} />
+    </div>
+    <div class="testi-grid reveal-stagger">
       {testimonials.map((t) => (
-        <div class="bg-cream rounded-xl p-8 border border-beige flex flex-col">
-          <p class="text-brown/80 leading-relaxed flex-1 italic">{t.quote}</p>
-          <div class="flex items-center gap-4 mt-8">
-            <div class="w-12 h-12 rounded-full bg-brown flex items-center justify-center text-gold font-display font-bold text-sm flex-shrink-0">
-              {t.initials}
-            </div>
+        <div class="testi-card glass">
+          <div class="quote-mark" aria-hidden="true">"</div>
+          <p>{t.quote}</p>
+          <div class="testi-author">
+            <div class="avatar" aria-hidden="true">{t.initials}</div>
             <div>
-              <p class="text-brown font-semibold text-sm">{t.name}</p>
-              <p class="text-brown/60 text-xs">{t.location}</p>
+              <div class="name">{t.name}</div>
+              <div class="loc">{t.location}</div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
             </div>
           </div>
         </div>
