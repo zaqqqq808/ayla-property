@@ -51,8 +51,8 @@ const embedUrl = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1
         <p class="video-note">Watch: Our Method in 60 seconds</p>
       </div>
       <div class="steps reveal-stagger">
-        {steps.map((step) => (
-          <div class="step glass">
+        {steps.map((step, i) => (
+          <div class:list={["step", i === steps.length - 1 ? "step-featured" : "glass"]}>
             <div class="step-num">{step.number}</div>
             <div>
               <h3>{step.title}</h3>
