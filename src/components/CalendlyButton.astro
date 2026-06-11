@@ -3,7 +3,7 @@ import { CALENDLY_URL } from '@/config';
 
 interface Props {
   text?: string;
-  variant?: 'olive' | 'brown' | 'outline' | 'gold' | 'ghost';
+  variant?: 'olive' | 'brown' | 'outline' | 'gold' | 'ghost' | 'orange';
   class?: string;
   url?: string;
 }
@@ -18,10 +18,11 @@ const {
 } = Astro.props;
 
 const variantClass =
-  variant === 'gold'  ? 'btn btn-gold' :
-  variant === 'ghost' ? 'btn btn-ghost' :
-  variant === 'olive' ? 'btn-olive' :
-  variant === 'brown' ? 'btn-brown' :
+  variant === 'gold'   ? 'btn btn-gold'   :
+  variant === 'ghost'  ? 'btn btn-ghost'  :
+  variant === 'orange' ? 'btn btn-orange' :
+  variant === 'olive'  ? 'btn-olive'      :
+  variant === 'brown'  ? 'btn-brown'      :
   'btn-outline';
 ---
 <button

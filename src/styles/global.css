@@ -161,6 +161,11 @@ h3{font-size:1.3rem}
 .btn-ghost:hover{background:rgba(122,92,52,0.15);transform:translateY(-2px)}
 .hero .btn-ghost{background:rgba(255,255,255,0.14);color:#FFF8EC;border-color:rgba(255,255,255,0.4)}
 .hero .btn-ghost:hover{background:rgba(255,255,255,0.24)}
+.btn-orange{
+  background:linear-gradient(120deg,#D95F20 0%,#F07535 55%,#E06828 100%);color:#FFF8EC;
+  box-shadow:0 8px 28px -8px rgba(217,95,32,0.5);
+}
+.btn-orange:hover{transform:translateY(-2px);box-shadow:0 14px 36px -8px rgba(217,95,32,0.65)}
 .btn:focus-visible{outline:3px solid rgba(180,80,42,0.55);outline-offset:3px}
 a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border-radius:6px}
 
@@ -488,7 +493,8 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
   .testi-grid{grid-template-columns:1fr;max-width:620px;margin-left:auto;margin-right:auto}
   .team-grid{grid-template-columns:repeat(2,1fr)}
   .journal-grid{grid-template-columns:1fr;max-width:620px;margin-left:auto;margin-right:auto}
-  .steps{grid-template-columns:1fr;max-width:620px;margin:0 auto}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step:last-child{grid-column:1/-1}
 }
 @media(max-width:880px){
   .nav-links{display:none}
