@@ -21,9 +21,9 @@ export default {
         beige: '#DCD4C4',
       },
       fontFamily: {
-        sans: ['"Times New Roman"', 'Times', 'serif'],
-        display: ['Lato', 'sans-serif'],
-        serif: ['Cinzel', 'serif'],
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       letterSpacing: {
         widest: '0.2em',

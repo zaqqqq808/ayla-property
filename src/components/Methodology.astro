@@ -8,21 +8,18 @@ const steps = [
     title: 'Consultation',
     description:
       "We start with a deep dive into your goals: budget, ROI expectations, lifestyle preferences, and risk tolerance. We understand exactly what you're looking for in Bali.",
-    featured: false,
   },
   {
     number: '02',
     title: 'Curation',
     description:
       'We access our huge database of Bali developers to find the offers that match your goals. So far, already better than 90% of Bali agencies.',
-    featured: false,
   },
   {
     number: '03',
     title: 'Research and Negotiation',
     description:
       'We shortlist the favourites and then perform rigourous research on the reputation, quality and reviews of the chosen developers. We then negotiate on your behalf to get the best deal.',
-    featured: true,
   },
 ];
 
@@ -30,102 +27,72 @@ const youtubeId = 'T7At3AGvuHo';
 const thumbUrl = `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`;
 const embedUrl = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0`;
 ---
-<section id="methodology" class="bg-white pt-20 pb-10 lg:pt-32 lg:pb-12 px-6 lg:px-12">
-  <div class="max-w-5xl mx-auto">
-
-    <!-- YouTube facade: loads thumbnail only; injects iframe on click -->
-    <div
-      class="yt-facade aspect-video rounded-2xl overflow-hidden shadow-lg mb-12 bg-black cursor-pointer relative group"
-      data-yt-id={youtubeId}
-      data-yt-embed={embedUrl}
-      role="button"
-      tabindex="0"
-      aria-label="Play video: Ayla Property — Our Method"
-    >
-      <!-- Thumbnail -->
-      <img
-        src={thumbUrl}
-        alt="Ayla Property — Our Method video thumbnail"
-        class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-200"
-        loading="lazy"
-        width="1280"
-        height="720"
-        decoding="async"
-      />
-      <!-- Play button overlay -->
-      <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-red-600 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
-          <svg class="w-6 h-6 lg:w-8 lg:h-8 text-white ml-1" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z"/>
-          </svg>
+<section class="method" id="methodology">
+  <div class="container">
+    <div class="reveal section-head">
+      <span class="eyebrow">Our Method</span>
+      <h2>Our <span class="grad-text">Method</span></h2>
+      <p class="section-sub">First, watch the video. It's only 1 minute long…</p>
+    </div>
+    <div class="method-layout">
+      <div class="reveal method-video">
+        <div
+          class="video-card yt-facade"
+          data-yt-embed={embedUrl}
+          role="button"
+          tabindex="0"
+          aria-label="Play video: Ayla Property — Our Method"
+        >
+          <img src={thumbUrl} alt="Ayla Property — Our Method video thumbnail" loading="lazy" width="1280" height="720" decoding="async" />
+          <span class="play" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+        </div>
+        <p class="video-note">Watch: Our Method in 60 seconds</p>
+      </div>
+      <div class="steps reveal-stagger">
+        {steps.map((step) => (
+          <div class="step glass">
+            <div class="step-num">{step.number}</div>
+            <div>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </div>
+          </div>
+        ))}
+        <div class="method-cta">
+          <CalendlyButton text="Book a Call" variant="gold" />
         </div>
       </div>
-    </div>
-
-    <div class="text-center mb-12">
-      <h2 class="sr-only">Our Method</h2>
-      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-2">
-        Our Method
-      </p>
-      <p class="italic text-brown/80 text-lg">
-        First, watch the video. It's only 1 minute long…
-      </p>
-    </div>
-
-    <!-- Steps: 2x2 on mobile, 01+02 top row, 03 full width bottom row -->
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-      {steps.map((step) => (
-        <div class:list={[
-          "rounded-xl p-4 lg:p-6 text-center border",
-          step.featured
-            ? "col-span-2 lg:col-span-1 bg-brown border-brown text-white"
-            : "bg-cream border-beige"
-        ]}>
-          <p class:list={["text-lg lg:text-2xl font-display italic mb-1 lg:mb-2", step.featured ? "text-gold" : "text-gold-dark"]}>
-            {step.number}
-          </p>
-          <h3 class:list={["text-xs lg:text-base uppercase tracking-widest font-display mb-2 lg:mb-3", step.featured ? "text-white" : "text-brown"]}>
-            {step.title}
-          </h3>
-          <p class:list={["text-xs lg:text-sm leading-relaxed", step.featured ? "text-white/85" : "text-brown/75"]}>
-            {step.description}
-          </p>
-        </div>
-      ))}
-    </div>
-
-    <div class="text-center mt-10 mb-0">
-      <CalendlyButton text="Book a Call" variant="olive" />
     </div>
   </div>
 </section>
 
-<script>
+<script is:inline>
   // Replace YouTube facade with real iframe on click or Enter key
-  function activateFacade(el: HTMLElement) {
-    const embedUrl = el.dataset.ytEmbed;
-    if (!embedUrl) return;
-    const iframe = document.createElement('iframe');
-    iframe.src = embedUrl;
-    iframe.title = 'Ayla Property — Our Method';
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-    iframe.allowFullscreen = true;
-    iframe.className = 'w-full h-full';
-    iframe.style.border = 'none';
-    el.innerHTML = '';
-    el.appendChild(iframe);
-    el.classList.remove('cursor-pointer', 'group');
-  }
-
-  document.querySelectorAll<HTMLElement>('.yt-facade').forEach(el => {
-    el.addEventListener('click', () => activateFacade(el));
-    el.addEventListener('keydown', (e) => {
-      if ((e as KeyboardEvent).key === 'Enter' || (e as KeyboardEvent).key === ' ') {
-        e.preventDefault();
-        activateFacade(el);
-      }
+  (function () {
+    function activateFacade(el) {
+      var embedUrl = el.dataset.ytEmbed;
+      if (!embedUrl) return;
+      var iframe = document.createElement('iframe');
+      iframe.src = embedUrl;
+      iframe.title = 'Ayla Property — Our Method';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      el.innerHTML = '';
+      el.appendChild(iframe);
+      el.style.cursor = 'default';
+    }
+    document.querySelectorAll('.yt-facade').forEach(function (el) {
+      el.addEventListener('click', function () { activateFacade(el); });
+      el.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          activateFacade(el);
+        }
+      });
     });
-  });
+  })();
 </script>
 
 <Fragment set:html={`<script type="application/ld+json">${JSON.stringify({

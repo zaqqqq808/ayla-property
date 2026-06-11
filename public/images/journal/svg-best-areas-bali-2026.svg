@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="480" fill="#F5EDE0" rx="10"/>
+  <rect width="800" height="56" fill="#2A7A55" rx="10"/>
+  <rect y="44" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="34" text-anchor="middle" fill="white" font-size="17" font-weight="bold" letter-spacing="1">BALI TOP CAPITAL APPRECIATION AREAS 2026</text>
+
+  <!-- Column headers -->
+  <text x="30" y="82" fill="#5C2E1F" font-size="11" font-weight="bold">AREA</text>
+  <text x="200" y="82" fill="#5C2E1F" font-size="11" font-weight="bold">PROJECTED ANNUAL GROWTH</text>
+  <text x="600" y="82" fill="#5C2E1F" font-size="11" font-weight="bold">ENTRY PRICE</text>
+  <text x="730" y="82" fill="#5C2E1F" font-size="11" font-weight="bold">PLAY</text>
+
+  <!-- Row 1: Cemagi -->
+  <rect x="20" y="90" width="760" height="54" fill="white" rx="6"/>
+  <rect x="20" y="90" width="6" height="54" fill="#E85A3A" rx="3"/>
+  <text x="38" y="113" fill="#E85A3A" font-size="15" font-weight="bold">CEMAGI</text>
+  <text x="38" y="132" fill="#8B7355" font-size="10">North of Seseh · Road access incoming</text>
+  <rect x="195" y="104" width="330" height="22" fill="#E85A3A" rx="3"/>
+  <text x="360" y="119" text-anchor="middle" fill="white" font-size="13" font-weight="bold">20–35%</text>
+  <text x="600" y="113" fill="#5C2E1F" font-size="13" font-weight="bold">$120k – $200k</text>
+  <text x="600" y="130" fill="#8B7355" font-size="10">cheapest on list</text>
+  <text x="730" y="119" fill="#E85A3A" font-size="11" font-weight="bold">Speculative</text>
+
+  <!-- Row 2: Kedungu -->
+  <rect x="20" y="152" width="760" height="54" fill="#EEF7F2" rx="6"/>
+  <rect x="20" y="152" width="6" height="54" fill="#2A7A55" rx="3"/>
+  <text x="38" y="175" fill="#2A7A55" font-size="15" font-weight="bold">KEDUNGU ★</text>
+  <text x="38" y="194" fill="#8B7355" font-size="10">West coast · Nuanu City catalyst</text>
+  <rect x="195" y="166" width="264" height="22" fill="#2A7A55" rx="3"/>
+  <text x="327" y="181" text-anchor="middle" fill="white" font-size="13" font-weight="bold">15–20%</text>
+  <text x="600" y="175" fill="#5C2E1F" font-size="13" font-weight="bold">$180k – $280k</text>
+  <text x="600" y="192" fill="#8B7355" font-size="10">sweet spot now</text>
+  <text x="730" y="181" fill="#2A7A55" font-size="11" font-weight="bold">3-yr flip</text>
+
+  <!-- Row 3: Sanur -->
+  <rect x="20" y="214" width="760" height="54" fill="white" rx="6"/>
+  <rect x="20" y="214" width="6" height="54" fill="#C2A973" rx="3"/>
+  <text x="38" y="237" fill="#C2A973" font-size="15" font-weight="bold">SANUR</text>
+  <text x="38" y="256" fill="#8B7355" font-size="10">East coast · Island gateway · Medical tourism</text>
+  <rect x="195" y="228" width="198" height="22" fill="#C2A973" rx="3"/>
+  <text x="294" y="243" text-anchor="middle" fill="white" font-size="13" font-weight="bold">12–18%</text>
+  <text x="600" y="237" fill="#5C2E1F" font-size="13" font-weight="bold">$200k – $350k</text>
+  <text x="600" y="254" fill="#8B7355" font-size="10">below Canggu comparable</text>
+  <text x="730" y="243" fill="#C2A973" font-size="11" font-weight="bold">Defensive</text>
+
+  <!-- Row 4: The Bukit -->
+  <rect x="20" y="276" width="760" height="54" fill="#EEF7F2" rx="6"/>
+  <rect x="20" y="276" width="6" height="54" fill="#1E6244" rx="3"/>
+  <text x="38" y="299" fill="#1E6244" font-size="15" font-weight="bold">THE BUKIT</text>
+  <text x="38" y="318" fill="#8B7355" font-size="10">Uluwatu · Bingin · Ungasan · Scarcity driven</text>
+  <rect x="195" y="290" width="165" height="22" fill="#1E6244" rx="3"/>
+  <text x="277" y="305" text-anchor="middle" fill="white" font-size="13" font-weight="bold">10–15%</text>
+  <text x="600" y="299" fill="#5C2E1F" font-size="13" font-weight="bold">$250k – $600k+</text>
+  <text x="600" y="316" fill="#8B7355" font-size="10">clifftop premium</text>
+  <text x="730" y="305" fill="#1E6244" font-size="11" font-weight="bold">Yield + growth</text>
+
+  <!-- Strategy banner -->
+  <rect x="20" y="344" width="760" height="50" fill="#2A7A55" rx="6" opacity="0.12"/>
+  <rect x="20" y="344" width="4" height="50" fill="#2A7A55" rx="2"/>
+  <text x="44" y="364" fill="#2A7A55" font-size="12" font-weight="bold">RECOMMENDED STRATEGY</text>
+  <text x="44" y="384" fill="#5C2E1F" font-size="11">Target 15–20% annual return · Insist on 28+ year leasehold · Sell at year 3 · Roll profits into next emerging area</text>
+
+  <!-- Scale reference -->
+  <line x1="195" y1="406" x2="525" y2="406" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="195" y="420" fill="#8B7355" font-size="9">0%</text>
+  <text x="277" y="420" fill="#8B7355" font-size="9">10%</text>
+  <text x="360" y="420" fill="#8B7355" font-size="9">20%</text>
+  <text x="442" y="420" fill="#8B7355" font-size="9">30%</text>
+  <text x="524" y="420" fill="#8B7355" font-size="9">35%+</text>
+  <text x="400" y="438" text-anchor="middle" fill="#8B7355" font-size="9">projected annual capital appreciation</text>
+
+  <text x="400" y="468" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property broker analysis 2026 · Based on on-the-ground market activity and comparable sales data</text>
+</svg>

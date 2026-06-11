@@ -38,27 +38,28 @@ const {
   title        = 'What Our Investors Say',
   testimonials = defaultTestimonials,
 } = Astro.props;
----
-<section class="bg-white pt-8 pb-12 px-6 lg:px-12">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-8">
-      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">{eyebrow}</p>
-      <h2 class="text-brown text-3xl lg:text-4xl font-display uppercase tracking-wide">
-        {title}
-      </h2>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+const titleHtml = title === 'What Our Investors Say'
+  ? 'What Our <span class="grad-text">Investors Say</span>'
+  : title;
+---
+<section class="testimonials">
+  <div class="container">
+    <div class="reveal section-head">
+      <span class="eyebrow">{eyebrow}</span>
+      <h2 set:html={titleHtml} />
+    </div>
+    <div class="testi-grid reveal-stagger">
       {testimonials.map((t) => (
-        <div class="bg-cream rounded-xl p-5 border border-beige flex flex-col">
-          <p class="text-brown/80 text-sm leading-relaxed flex-1 italic">{t.quote}</p>
-          <div class="flex items-center gap-3 mt-5">
-            <div class="w-9 h-9 rounded-full bg-brown flex items-center justify-center text-gold font-display font-bold text-xs flex-shrink-0">
-              {t.initials}
-            </div>
+        <div class="testi-card glass">
+          <div class="quote-mark" aria-hidden="true">"</div>
+          <p>{t.quote}</p>
+          <div class="testi-author">
+            <div class="avatar" aria-hidden="true">{t.initials}</div>
             <div>
-              <p class="text-brown font-semibold text-sm">{t.name}</p>
-              <p class="text-brown/60 text-xs">{t.location}</p>
+              <div class="name">{t.name}</div>
+              <div class="loc">{t.location}</div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
             </div>
           </div>
         </div>

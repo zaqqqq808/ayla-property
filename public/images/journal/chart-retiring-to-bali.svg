@@ -1,0 +1,69 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="420" fill="#F5EDE0" rx="12"/>
+  <rect width="800" height="60" fill="#2A7A55" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">RETIRING TO BALI: THE FINANCIAL CASE FOR BUYING (2026 DATA)</text>
+
+  <!-- Buy vs Rent comparison -->
+  <text x="40" y="84" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">5-YEAR FINANCIAL SCENARIO: RENTING vs BUYING</text>
+
+  <!-- Renting scenario -->
+  <rect x="30" y="92" width="355" height="160" fill="white" rx="8" stroke="#8B7355" stroke-width="1.5"/>
+  <rect x="30" y="92" width="355" height="26" fill="#8B7355" rx="8"/>
+  <rect x="30" y="106" width="355" height="12" fill="#8B7355"/>
+  <text x="207" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">SCENARIO A: RENT A VILLA IN CANGGU</text>
+  <text x="60" y="136" fill="#5C2E1F" font-size="11">Monthly rent:</text>
+  <text x="365" y="136" text-anchor="end" fill="#5C2E1F" font-size="12" font-weight="bold">$2,500/month</text>
+  <text x="60" y="156" fill="#5C2E1F" font-size="11">Over 5 years:</text>
+  <text x="365" y="156" text-anchor="end" fill="#5C2E1F" font-size="12" font-weight="bold">$150,000 paid out</text>
+  <text x="60" y="176" fill="#5C2E1F" font-size="11">Asset at end of 5 years:</text>
+  <text x="365" y="176" text-anchor="end" fill="#E85A3A" font-size="12" font-weight="bold">$0</text>
+  <text x="60" y="196" fill="#5C2E1F" font-size="11">Passive income generated:</text>
+  <text x="365" y="196" text-anchor="end" fill="#E85A3A" font-size="12" font-weight="bold">$0</text>
+  <text x="60" y="216" fill="#5C2E1F" font-size="11">Net position after 5 years:</text>
+  <text x="365" y="216" text-anchor="end" fill="#E85A3A" font-size="14" font-weight="bold">-$150,000</text>
+  <text x="207" y="242" text-anchor="middle" fill="#8B7355" font-size="10">No equity. No asset. All money gone.</text>
+
+  <!-- Buying scenario -->
+  <rect x="415" y="92" width="355" height="160" fill="white" rx="8" stroke="#2A7A55" stroke-width="2"/>
+  <rect x="415" y="92" width="355" height="26" fill="#2A7A55" rx="8"/>
+  <rect x="415" y="106" width="355" height="12" fill="#2A7A55"/>
+  <text x="592" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">SCENARIO B: BUY A VILLA ($350K)</text>
+  <text x="445" y="136" fill="#5C2E1F" font-size="11">Annual rental income (67% occupancy):</text>
+  <text x="750" y="136" text-anchor="end" fill="#2A7A55" font-size="12" font-weight="bold">$34,000/yr</text>
+  <text x="445" y="156" fill="#5C2E1F" font-size="11">Over 5 years rental income:</text>
+  <text x="750" y="156" text-anchor="end" fill="#2A7A55" font-size="12" font-weight="bold">~$170,000</text>
+  <text x="445" y="176" fill="#5C2E1F" font-size="11">Asset value retained:</text>
+  <text x="750" y="176" text-anchor="end" fill="#2A7A55" font-size="12" font-weight="bold">~$350,000–$420,000</text>
+  <text x="445" y="196" fill="#5C2E1F" font-size="11">Living costs covered by rental:</text>
+  <text x="750" y="196" text-anchor="end" fill="#2A7A55" font-size="12" font-weight="bold">Effectively yes</text>
+  <text x="445" y="216" fill="#5C2E1F" font-size="11">Net position after 5 years:</text>
+  <text x="750" y="216" text-anchor="end" fill="#2A7A55" font-size="14" font-weight="bold">+$170k income + asset</text>
+  <text x="592" y="242" text-anchor="middle" fill="#2A7A55" font-size="10">Income offsets living costs. Asset holds value.</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="260" x2="760" y2="260" stroke="#DCD4C4" stroke-width="1.5"/>
+
+  <!-- Visa comparison -->
+  <text x="40" y="280" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">RETIREMENT VISA OPTIONS FOR FOREIGN BUYERS (2026)</text>
+
+  <rect x="30" y="288" width="352" height="96" fill="white" rx="8" stroke="#C2A973" stroke-width="1.5"/>
+  <rect x="30" y="288" width="352" height="24" fill="#C2A973" rx="8"/>
+  <rect x="30" y="300" width="352" height="12" fill="#C2A973"/>
+  <text x="206" y="304" text-anchor="middle" fill="white" font-size="12" font-weight="bold">SECOND HOME VISA</text>
+  <text x="50" y="326" fill="#5C2E1F" font-size="11">Requirement: IDR 2B property or bank deposit (~$125k USD)</text>
+  <text x="50" y="344" fill="#5C2E1F" font-size="11">Duration: 5 years + 1 renewal (5 more years)</text>
+  <text x="50" y="362" fill="#5C2E1F" font-size="11">Includes: spouse and dependents · No work permitted</text>
+  <text x="206" y="378" text-anchor="middle" fill="#C2A973" font-size="10" font-weight="bold">Most accessible retirement option</text>
+
+  <rect x="418" y="288" width="352" height="96" fill="white" rx="8" stroke="#2A7A55" stroke-width="1.5"/>
+  <rect x="418" y="288" width="352" height="24" fill="#2A7A55" rx="8"/>
+  <rect x="418" y="300" width="352" height="12" fill="#2A7A55"/>
+  <text x="594" y="304" text-anchor="middle" fill="white" font-size="12" font-weight="bold">GOLDEN VISA</text>
+  <text x="438" y="326" fill="#5C2E1F" font-size="11">Requirement: USD $350,000+ property investment</text>
+  <text x="438" y="344" fill="#5C2E1F" font-size="11">Duration: 5 years (pathway to 10 for larger investments)</text>
+  <text x="438" y="362" fill="#5C2E1F" font-size="11">Higher-tier · Still bedding in administratively</text>
+  <text x="594" y="378" text-anchor="middle" fill="#2A7A55" font-size="10" font-weight="bold">Best for serious long-term buyers</text>
+
+  <text x="400" y="412" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property 2026 · Indonesian Immigration Directorate · Canggu rental market data (14.8% gross yield basis)</text>
+</svg>

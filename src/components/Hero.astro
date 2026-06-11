@@ -1,7 +1,9 @@
 ---
-import CalendlyButton from './CalendlyButton.astro';
+import { CALENDLY_URL } from '@/config';
 
 interface Props {
+  /** 'sequence' = homepage scroll-built canvas hero; 'static' = image hero (invest pages) */
+  variant?:       'sequence' | 'static';
   eyebrow?:       string;
   headlineHtml?:  string;
   subline?:       string;
@@ -13,8 +15,9 @@ interface Props {
 }
 
 const {
+  variant       = 'static',
   eyebrow       = 'Bali Real Estate Investment',
-  headlineHtml  = 'Earn 15%+<br />Returns in Bali',
+  headlineHtml  = 'Earn <span class="grad-text">15%+ Returns</span><br />in Bali',
   subline       = 'We find, vet and negotiate you the best deal for your individual needs',
   image         = '/images/hero-villa-landscape.webp',
   imageMobile   = '/images/hero-villa-portrait.webp',
@@ -22,39 +25,229 @@ const {
   imagePosition = '70% 50%',
   ctaText       = 'Book a Free Investment Call',
 } = Astro.props;
+
+const isSequence = variant === 'sequence';
+
+const stats = [
+  { count: 50, suffix: '+',  initial: '0+',  label: 'Investors Helped' },
+  { count: 15, suffix: '%+', initial: '0%+', label: 'Avg Rental Yield' },
+  { count: null, suffix: '', initial: '5★',  label: 'Client Rating' },
+  { count: 3,  suffix: '',   initial: '0',   label: 'Years in Bali' },
+];
 ---
-<section class="relative overflow-hidden min-h-screen flex items-center justify-center">
-
-  <picture>
-    <source media="(max-width: 767px)" srcset={imageMobile} />
-    <img
-      src={image}
-      alt={imageAlt}
-      class="absolute inset-0 w-full h-full object-cover"
-      style={`object-position: ${imagePosition};`}
-      loading="eager"
-      fetchpriority="high"
-      width="1440"
-      height="810"
-    />
-  </picture>
-
-  <div class="absolute inset-0 bg-black/30"></div>
-
-  <div class="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 py-40 text-center flex flex-col items-center space-y-6">
-    <p class="text-white uppercase tracking-widest text-sm font-semibold">
-      {eyebrow}
-    </p>
-    <h1
-      class="text-white/85 text-5xl md:text-6xl lg:text-7xl font-display leading-tight uppercase"
-      set:html={headlineHtml}
-    />
-    <p class="text-white uppercase tracking-widest text-sm font-semibold">
-      {subline}
-    </p>
-    <div class="pt-10">
-      <CalendlyButton text={ctaText} variant="olive" />
-    </div>
+{isSequence ? (
+  <div class="hero-scroll" id="top">
+    <section class="hero">
+      <canvas class="hero-canvas" id="heroSeq" aria-label="Timelapse of a luxury Bali villa being constructed in a rice field as you scroll"></canvas>
+      <noscript>
+        <img src={image} alt={imageAlt} style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2" />
+      </noscript>
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content hero-fade-out">
+          <span class="eyebrow">{eyebrow}</span>
+          <h1 set:html={headlineHtml} />
+          <p class="lede">{subline}</p>
+          <div class="hero-cta">
+            <button type="button" class="btn btn-gold" data-calendly-url={CALENDLY_URL}>
+              {ctaText}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <a class="btn btn-ghost" href="/#methodology">Our Method</a>
+          </div>
+        </div>
+        <div class="hero-stats hero-fade-in">
+          {stats.map((s) => (
+            <div class="hero-stat">
+              {s.count !== null ? (
+                <div class="num" data-count={s.count} data-suffix={s.suffix}>{s.initial}</div>
+              ) : (
+                <div class="num">{s.initial}</div>
+              )}
+              <div class="lbl">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">Scroll to build</div>
+      <div class="seq-loading" id="seqLoading" aria-hidden="true">Loading film…</div>
+    </section>
   </div>
+) : (
+  <div class="hero-scroll static">
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 767px)" srcset={imageMobile} />
+        <img
+          src={image}
+          alt={imageAlt}
+          class="hero-canvas"
+          style={`object-fit:cover;object-position:${imagePosition};`}
+          loading="eager"
+          fetchpriority="high"
+          width="1440"
+          height="810"
+        />
+      </picture>
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">{eyebrow}</span>
+          <h1 set:html={headlineHtml} />
+          <p class="lede">{subline}</p>
+          <div class="hero-cta">
+            <button type="button" class="btn btn-gold" data-calendly-url={CALENDLY_URL}>
+              {ctaText}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+)}
 
-</section>
+{isSequence && (
+  <script is:inline>
+    // ===== Hero scroll-scrubbed frame sequence (responsive sets, AVIF first) =====
+    (function () {
+      function heroSequence(SET) {
+        const FRAMES = [];
+        SET.segs.forEach(([s, n]) => { for (let i = 1; i <= n; i++) FRAMES.push(SET.pre + '_' + s + '_' + String(i).padStart(3, '0') + SET.ext); });
+        const N = FRAMES.length;
+
+        const wrap = document.querySelector('.hero-scroll');
+        const canvas = document.getElementById('heroSeq');
+        const loadingEl = document.getElementById('seqLoading');
+        if (!wrap || !canvas) return;
+        const ctx = canvas.getContext('2d');
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const imgs = new Array(N);
+        let loadedCount = 0;
+
+        function drawFrame(i) {
+          const img = nearestLoaded(i);
+          if (!img) return;
+          const cw = canvas.width, ch = canvas.height;
+          const s = Math.max(cw / img.naturalWidth, ch / img.naturalHeight);
+          const w = img.naturalWidth * s, h = img.naturalHeight * s;
+          ctx.drawImage(img, (cw - w) / 2, (ch - h) / 2, w, h);
+        }
+        function nearestLoaded(i) {
+          if (imgs[i] && imgs[i].complete && imgs[i].naturalWidth) return imgs[i];
+          for (let d = 1; d < N; d++) {
+            const a = imgs[i - d], b = imgs[i + d];
+            if (a && a.complete && a.naturalWidth) return a;
+            if (b && b.complete && b.naturalWidth) return b;
+          }
+          return null;
+        }
+        function resize() {
+          const dpr = Math.min(window.devicePixelRatio || 1, 2);
+          canvas.width = Math.round(canvas.clientWidth * dpr);
+          canvas.height = Math.round(canvas.clientHeight * dpr);
+          drawFrame(Math.round(current));
+        }
+
+        function load(i, cb) {
+          if (imgs[i]) return;
+          const im = new Image();
+          im.decoding = 'async';
+          im.src = FRAMES[i];
+          im.onload = () => {
+            loadedCount++;
+            if (cb) cb();
+            if (loadedCount === N && loadingEl) loadingEl.classList.add('done');
+          };
+          imgs[i] = im;
+        }
+
+        let current = 0, target = 0, raf = null;
+
+        if (reduce) {
+          wrap.classList.add('static');
+          load(N - 1, () => { resize(); current = target = N - 1; drawFrame(N - 1); });
+          if (loadingEl) loadingEl.classList.add('done');
+          window.addEventListener('resize', resize);
+          return;
+        }
+
+        // progressive load: first frame, then every 6th (instant coarse scrub), then the rest
+        load(0, () => { resize(); drawFrame(0); });
+        for (let i = 6; i < N; i += 6) load(i);
+        let fill = 0;
+        (function fillRest() {
+          let done = 0;
+          while (fill < N && done < 10) { if (!imgs[fill]) { load(fill); done++; } fill++; }
+          if (fill < N) setTimeout(fillRest, 120);
+        })();
+
+        function progress() {
+          const rect = wrap.getBoundingClientRect();
+          const total = rect.height - window.innerHeight;
+          return Math.min(1, Math.max(0, -rect.top / total));
+        }
+
+        function tick() {
+          const diff = target - current;
+          if (Math.abs(diff) < 0.05) { current = target; }
+          else { current += diff * 0.22; }
+          drawFrame(Math.round(current));
+          if (current !== target) raf = requestAnimationFrame(tick);
+          else raf = null;
+        }
+
+        function onScroll() {
+          const p = progress();
+          target = p * (N - 1);
+          wrap.style.setProperty('--hp', p.toFixed(4));
+          wrap.dataset.p = p > 0.3 ? 'deep' : 'top';
+          if (!raf) raf = requestAnimationFrame(tick);
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', resize);
+        resize();
+        onScroll();
+      }
+
+      const HD = { pre: '/hero_hd/h', segs: [[0, 73], [1, 74]], ext: '.avif' };        // desktop, 1440px 16:9
+      const PORTRAIT = { pre: '/hero_p2/p', segs: [[0, 73], [1, 74]], ext: '.avif' };  // mobile, AI-reframed 810x1440 9:16
+      const FALLBACK = { pre: '/hero_m/m', segs: [[0, 149]], ext: '.webp' };           // no-AVIF browsers
+      const isMobile = window.innerWidth <= 768;
+      const probe = new Image();
+      probe.onload = () => heroSequence(isMobile ? PORTRAIT : HD);
+      probe.onerror = () => heroSequence(FALLBACK);
+      probe.src = 'data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAEAAAABAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIABoAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgABogQEAwgMg8f8D///8WfhwB8+ErK42A=';
+    })();
+  </script>
+)}
+
+{isSequence && (
+  <script is:inline>
+    // count-up hero stats
+    (function () {
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      document.querySelectorAll('[data-count]').forEach(function (el) {
+        var target = parseInt(el.dataset.count, 10);
+        var suffix = el.dataset.suffix || '';
+        if (reduceMotion) { el.textContent = target + suffix; return; }
+        var started = false;
+        var obs = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting && !started) {
+            started = true;
+            var t0 = performance.now(), dur = 1400;
+            var tick = function (now) {
+              var p = Math.min((now - t0) / dur, 1);
+              el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+              if (p < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+            obs.disconnect();
+          }
+        }, { threshold: 0.4 });
+        obs.observe(el);
+      });
+    })();
+  </script>
+)}

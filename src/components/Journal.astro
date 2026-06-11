@@ -5,50 +5,36 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
   .slice(0, 3);
 ---
-<section id="journal" class="bg-beige/60 section-pad px-6 lg:px-12">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">Ayla Journal</p>
-      <h2 class="text-brown text-4xl lg:text-5xl font-display uppercase tracking-wide">
-        Stay in the Know
-      </h2>
+<section class="journal" id="journal">
+  <div class="container">
+    <div class="reveal section-head">
+      <span class="eyebrow">Ayla Journal</span>
+      <h2>Stay in the <span class="grad-text">Know</span></h2>
     </div>
 
     {posts.length === 0 ? (
-      <p class="text-brown/60 text-center">Posts coming soon.</p>
+      <p class="section-sub" style="margin:40px auto 0;text-align:center">Posts coming soon.</p>
     ) : (
       <>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="journal-grid reveal-stagger">
           {posts.map((post) => (
-            <a href={`/journal/${post.slug}/`} class="block group">
-              <div class="aspect-video bg-beige rounded-lg mb-4 overflow-hidden">
-                {post.data.image && (
-                  <img
-                    src={post.data.image}
-                    alt={post.data.title}
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                )}
-              </div>
-              <p class="text-brown/60 text-xs uppercase tracking-wider">
+            <a class="journal-card glass" href={`/journal/${post.slug}/`}>
+              <span class="date">
                 {post.data.publishDate.toLocaleDateString('en-GB', {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
                 })}
-              </p>
-              <h3 class="text-brown text-lg font-semibold mt-2 group-hover:text-olive transition-colors">
-                {post.data.title}
-              </h3>
+              </span>
+              <h3>{post.data.title}</h3>
+              <span class="read">Read article
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
             </a>
           ))}
         </div>
-
-        <div class="text-center mt-12">
-          <a href="/journal/" class="btn btn-outline">
-            View All Articles
-          </a>
+        <div class="journal-more reveal">
+          <a class="btn btn-ghost" href="/journal/">View All Articles</a>
         </div>
       </>
     )}

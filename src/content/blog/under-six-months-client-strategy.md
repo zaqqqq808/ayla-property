@@ -19,7 +19,21 @@ To me, this translated to a particular checklist:
 
 Here is how we turned that brief into a massive win.
 
+<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
+  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
+  <ul class="space-y-2 text-sm text-brown">
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Negotiated 20% below list price:</strong> $163,000 listed → $130,000 secured. A single lump-sum cash payment created the leverage. $33,000 saved before the investment even started.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>The "runt of the litter" strategy:</strong> Pooled income development means every owner earns the same regardless of unit position. Buy the cheapest unit, earn the same yield as the most expensive.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>$50,000 equity at completion:</strong> Property worth $180k–$190k at handover on a $130k purchase. Capital returned + $50k gain before a single guest checked in.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>15% net ROI projected:</strong> ~$19,500/year. Capital payback period of 6.7 years. Everything after that is profit with the asset still generating income.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Speed matters:</strong> First contact to signed agreement in 11 days. The best off-plan deals reprice or disappear fast. Analysis paralysis is expensive in this market.</span></li>
+  </ul>
+</div>
+
 ## The "Uber Spreadsheet"
+
+<img src="/images/journal/svg-case-study-6-months.svg" alt="Bali property case study 50000 dollar profit 6 months deal numbers infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+
 Here at Ayla, we pride ourselves on our data. We don't just guess; we track everything. We have an "Uber spreadsheet" containing information on almost every credible developer in Bali and every active project.
 
 We started filtering. We looked for a minimum 28-year leaseholds (to maximise ROI runway) and filtered the market down to 6 specific developments that fit the criteria.
@@ -60,7 +74,6 @@ But the real win is the equity. As soon as the apartment is completed and ready 
 Because we bought well and negotiated hard, our clients are sitting on an immediate **$50,000 profit** if they choose to flip it the day they get the keys.
 
 Not bad, eh?
-
 
 ## The Due Diligence Process
 

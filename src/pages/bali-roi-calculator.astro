@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { SITE_URL } from '@/config';
+import { SITE_URL, CALENDLY_URL } from '@/config';
 import Header from '@/components/Header.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
 import Footer from '@/components/Footer.astro';
@@ -28,285 +28,329 @@ const breadcrumbSchema = JSON.stringify({
 
   <Header />
 
-  <!-- Hero -->
-  <section class="relative bg-brown pt-40 pb-16 px-6 lg:px-12 overflow-hidden">
-    <div class="absolute inset-0 bg-[url('/images/hero-villa.jpg')] bg-cover bg-center opacity-20"></div>
-    <div class="relative max-w-3xl mx-auto text-center">
-      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Free Tool · 2026</p>
-      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-display uppercase leading-tight mb-6">
-        Bali Property<br />ROI Calculator
-      </h1>
-      <p class="text-white/75 text-lg max-w-2xl mx-auto">
-        Enter your numbers to see gross yield, net yield, annual income, and how long until your investment pays for itself.
-      </p>
+  <main>
+
+  <section class="calc-hero">
+    <div class="container">
+      <span class="eyebrow">Free Tool · 2026</span>
+      <h1>Bali Property<br /><span class="grad-text">ROI Calculator</span></h1>
+      <p>Enter your numbers to see gross yield, net yield, annual income, and how long until your investment pays for itself.</p>
     </div>
   </section>
 
-  <!-- Calculator -->
-  <div class="bg-cream min-h-screen py-16 px-6 lg:px-12">
-    <div class="max-w-5xl mx-auto">
+  <section class="container calc-layout">
 
-      <div class="grid lg:grid-cols-2 gap-10 items-start">
+    <!-- ===== INPUTS ===== -->
+    <div class="panel glass">
+      <h2>Your Investment Details</h2>
 
-        <!-- Inputs -->
-        <div class="bg-white rounded-2xl border border-beige p-8 shadow-sm">
-          <h2 class="text-brown font-display uppercase text-2xl tracking-wide mb-8">Your Investment Details</h2>
-
-          <div class="space-y-6">
-
-            <div>
-              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">Purchase Price (USD)</label>
-              <div class="relative">
-                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-brown/40 font-semibold">$</span>
-                <input id="purchase" type="number" value="290000" min="50000" max="5000000" step="5000"
-                  class="w-full pl-8 pr-4 py-3 border border-beige rounded-xl text-brown font-semibold focus:outline-none focus:border-olive transition-colors" />
-              </div>
-              <p class="text-xs text-brown/40 mt-1">2026 market median is $290,000 USD</p>
-            </div>
-
-            <div>
-              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">Average Nightly Rate (USD)</label>
-              <div class="relative">
-                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-brown/40 font-semibold">$</span>
-                <input id="nightly" type="number" value="250" min="50" max="5000" step="10"
-                  class="w-full pl-8 pr-4 py-3 border border-beige rounded-xl text-brown font-semibold focus:outline-none focus:border-olive transition-colors" />
-              </div>
-              <p class="text-xs text-brown/40 mt-1">Canggu villas average $200 to $350 per night</p>
-            </div>
-
-            <div>
-              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">
-                Occupancy Rate: <span id="occupancyLabel" class="text-olive">72%</span>
-              </label>
-              <input id="occupancy" type="range" min="20" max="100" value="72" step="1"
-                class="w-full accent-olive" />
-              <div class="flex justify-between text-xs text-brown/40 mt-1">
-                <span>20%</span><span>Conservative 55% | Market avg 72% | Top 90%</span><span>100%</span>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">
-                Management Fee: <span id="mgmtLabel" class="text-olive">20%</span>
-              </label>
-              <input id="mgmt" type="range" min="10" max="35" value="20" step="1"
-                class="w-full accent-olive" />
-              <div class="flex justify-between text-xs text-brown/40 mt-1">
-                <span>10%</span><span>Typical 15–25%</span><span>35%</span>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">
-                Annual Maintenance: <span id="maintLabel" class="text-olive">4%</span> of property value
-              </label>
-              <input id="maint" type="range" min="1" max="10" value="4" step="0.5"
-                class="w-full accent-olive" />
-              <div class="flex justify-between text-xs text-brown/40 mt-1">
-                <span>1%</span><span>Tropical climate typical 3–5%</span><span>10%</span>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs uppercase tracking-widest text-brown/60 font-semibold mb-2">Indonesian Withholding Tax on Rental</label>
-              <select id="tax" class="w-full px-4 py-3 border border-beige rounded-xl text-brown font-semibold focus:outline-none focus:border-olive transition-colors">
-                <option value="10" selected>10% (standard for foreign owners)</option>
-                <option value="0">0% (PT PMA corporate — check with advisor)</option>
-              </select>
-            </div>
-
-          </div>
+      <div class="field">
+        <label for="price">Purchase Price (USD)</label>
+        <div class="input-wrap">
+          <span class="prefix" aria-hidden="true">$</span>
+          <input type="number" id="price" value="290000" min="10000" step="5000" inputmode="numeric" />
         </div>
+        <p class="hint">2026 market median is $290,000 USD</p>
+      </div>
 
-        <!-- Results -->
-        <div class="space-y-4 lg:sticky lg:top-8">
+      <div class="field">
+        <label for="nightly">Average Nightly Rate (USD)</label>
+        <div class="input-wrap">
+          <span class="prefix" aria-hidden="true">$</span>
+          <input type="number" id="nightly" value="250" min="20" step="10" inputmode="numeric" />
+        </div>
+        <p class="hint">Canggu villas average $200 to $350 per night</p>
+      </div>
 
-          <!-- Yield cards -->
-          <div class="grid grid-cols-2 gap-4">
-            <div class="bg-brown rounded-2xl p-6 text-center">
-              <p class="text-white/60 text-xs uppercase tracking-widest mb-2">Gross Yield</p>
-              <p id="grossYield" class="text-white text-4xl font-display font-bold">—</p>
-              <p class="text-white/40 text-xs mt-1">Before costs</p>
-            </div>
-            <div class="bg-olive rounded-2xl p-6 text-center">
-              <p class="text-white/70 text-xs uppercase tracking-widest mb-2">Net Yield</p>
-              <p id="netYield" class="text-white text-4xl font-display font-bold">—</p>
-              <p class="text-white/50 text-xs mt-1">After all costs</p>
-            </div>
-          </div>
+      <div class="field">
+        <label for="occupancy">Occupancy Rate: <span class="slider-val" id="occVal">72%</span></label>
+        <input type="range" id="occupancy" min="20" max="100" value="72" step="1" aria-describedby="occHint" />
+        <div class="range-row" id="occHint"><span>20%</span><span>Conservative 55% · Market avg 72% · Top 90%</span><span>100%</span></div>
+      </div>
 
-          <!-- Income breakdown -->
-          <div class="bg-white rounded-2xl border border-beige p-6 space-y-4">
-            <h3 class="text-brown font-semibold uppercase tracking-widest text-sm">Annual Income Breakdown</h3>
+      <div class="field">
+        <label for="mgmt">Management Fee: <span class="slider-val" id="mgmtVal">20%</span></label>
+        <input type="range" id="mgmt" min="10" max="35" value="20" step="1" aria-describedby="mgmtHint" />
+        <div class="range-row" id="mgmtHint"><span>10%</span><span>Typical 15–25%</span><span>35%</span></div>
+      </div>
 
-            <div class="space-y-3">
-              <div class="flex justify-between items-center py-2 border-b border-beige/50">
-                <span class="text-sm text-brown/70">Gross Rental Income</span>
-                <span id="grossIncome" class="font-semibold text-brown">—</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-beige/50">
-                <span class="text-sm text-brown/70">Management Fees</span>
-                <span id="mgmtCost" class="font-semibold text-red-500">—</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-beige/50">
-                <span class="text-sm text-brown/70">Maintenance & Repairs</span>
-                <span id="maintCost" class="font-semibold text-red-500">—</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-beige/50">
-                <span class="text-sm text-brown/70">Indonesian Withholding Tax</span>
-                <span id="taxCost" class="font-semibold text-red-500">—</span>
-              </div>
-              <div class="flex justify-between items-center py-3 bg-olive/5 rounded-xl px-3 -mx-3">
-                <span class="font-semibold text-brown">Net Annual Income</span>
-                <span id="netIncome" class="font-bold text-olive text-lg">—</span>
-              </div>
-            </div>
-          </div>
+      <div class="field">
+        <label for="maint">Annual Maintenance: <span class="slider-val" id="maintVal">4%</span> of property value</label>
+        <input type="range" id="maint" min="1" max="10" value="4" step="0.5" aria-describedby="maintHint" />
+        <div class="range-row" id="maintHint"><span>1%</span><span>Tropical climate typical 3–5%</span><span>10%</span></div>
+      </div>
 
-          <!-- Payback + 5-year -->
-          <div class="grid grid-cols-2 gap-4">
-            <div class="bg-white rounded-2xl border border-beige p-5 text-center">
-              <p class="text-brown/60 text-xs uppercase tracking-widest mb-2">Payback Period</p>
-              <p id="payback" class="text-brown text-3xl font-display font-bold">—</p>
-              <p class="text-brown/40 text-xs mt-1">Years to recoup capital</p>
-            </div>
-            <div class="bg-white rounded-2xl border border-beige p-5 text-center">
-              <p class="text-brown/60 text-xs uppercase tracking-widest mb-2">5-Year Net Income</p>
-              <p id="fiveYear" class="text-brown text-3xl font-display font-bold">—</p>
-              <p class="text-brown/40 text-xs mt-1">Cumulative net returns</p>
-            </div>
-          </div>
+      <div class="field">
+        <label id="taxLabel">Indonesian Withholding Tax on Rental</label>
+        <div class="radio-group" role="radiogroup" aria-labelledby="taxLabel">
+          <label class="radio-card selected">
+            <input type="radio" name="tax" value="10" checked />
+            10% (standard for foreign owners)
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="tax" value="0" />
+            0% (PT PMA corporate — check with advisor)
+          </label>
+        </div>
+      </div>
+    </div>
 
-          <!-- Benchmark comparison -->
-          <div class="bg-white rounded-2xl border border-beige p-6">
-            <h3 class="text-brown font-semibold uppercase tracking-widest text-sm mb-4">How This Compares</h3>
-            <div class="space-y-3">
-              <div class="flex items-center gap-3">
-                <div class="flex-1">
-                  <div class="flex justify-between text-xs mb-1">
-                    <span class="text-brown/70">Your Bali villa</span>
-                    <span id="barLabel" class="font-semibold text-olive">—</span>
-                  </div>
-                  <div class="h-2 bg-beige rounded-full overflow-hidden">
-                    <div id="barBali" class="h-full bg-olive rounded-full transition-all duration-500" style="width:0%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="flex-1">
-                  <div class="flex justify-between text-xs mb-1">
-                    <span class="text-brown/70">Dubai residential</span>
-                    <span class="font-semibold text-brown/50">6.5%</span>
-                  </div>
-                  <div class="h-2 bg-beige rounded-full overflow-hidden">
-                    <div class="h-full bg-brown/20 rounded-full" style="width:43%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="flex-1">
-                  <div class="flex justify-between text-xs mb-1">
-                    <span class="text-brown/70">Sydney residential</span>
-                    <span class="font-semibold text-brown/50">3.2%</span>
-                  </div>
-                  <div class="h-2 bg-beige rounded-full overflow-hidden">
-                    <div class="h-full bg-brown/20 rounded-full" style="width:21%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="flex-1">
-                  <div class="flex justify-between text-xs mb-1">
-                    <span class="text-brown/70">Singapore residential</span>
-                    <span class="font-semibold text-brown/50">2.8%</span>
-                  </div>
-                  <div class="h-2 bg-beige rounded-full overflow-hidden">
-                    <div class="h-full bg-brown/20 rounded-full" style="width:19%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="text-xs text-brown/40 mt-4 italic">Benchmark figures are gross residential yields 2026. Your Bali figure is net after costs.</p>
-          </div>
-
-          <!-- CTA -->
-          <div class="bg-brown rounded-2xl p-6 text-center">
-            <p class="text-white font-semibold mb-1">Want us to find a property that hits these numbers?</p>
-            <p class="text-white/60 text-sm mb-4">Book a free 30-minute call. We will show you what is live in the market right now.</p>
-            <a href="https://calendly.com/ayla-teamoperations/30min"
-              class="inline-block bg-gold hover:bg-gold-dark text-brown font-semibold uppercase tracking-widest text-sm px-6 py-3 rounded-full transition-colors">
-              Book a Free Call
-            </a>
-          </div>
-
+    <!-- ===== RESULTS ===== -->
+    <div class="results">
+      <div class="yield-grid">
+        <div class="yield-card glass">
+          <div class="lbl">Gross Yield</div>
+          <div class="val" id="grossYield">—</div>
+          <div class="sub">Before costs</div>
+        </div>
+        <div class="yield-card glass net">
+          <div class="lbl">Net Yield</div>
+          <div class="val" id="netYield">—</div>
+          <div class="sub">After all costs</div>
         </div>
       </div>
 
-      <!-- Disclaimer -->
-      <p class="text-xs text-brown/40 text-center mt-12 max-w-2xl mx-auto">
-        This calculator provides indicative estimates only. Actual returns depend on property location, condition, management quality, seasonal occupancy patterns, and market conditions. Figures do not constitute financial advice. Always conduct independent due diligence before investing.
-      </p>
+      <div class="breakdown glass">
+        <h3>Annual Income Breakdown</h3>
+        <div class="row"><span class="k">Gross Rental Income</span><span class="v" id="grossIncome">—</span></div>
+        <div class="row neg"><span class="k">Management Fees</span><span class="v" id="mgmtFees">—</span></div>
+        <div class="row neg"><span class="k">Maintenance &amp; Repairs</span><span class="v" id="maintCost">—</span></div>
+        <div class="row neg"><span class="k">Indonesian Withholding Tax</span><span class="v" id="taxCost">—</span></div>
+        <div class="row total"><span class="k">Net Annual Income</span><span class="v" id="netIncome">—</span></div>
+      </div>
 
+      <div class="duo">
+        <div class="mini-card glass">
+          <div class="lbl">Payback Period</div>
+          <div class="val" id="payback">—</div>
+          <div class="sub">Years to recoup capital</div>
+        </div>
+        <div class="mini-card glass">
+          <div class="lbl">5-Year Net Income</div>
+          <div class="val" id="fiveYear">—</div>
+          <div class="sub">Cumulative net returns</div>
+        </div>
+      </div>
+
+      <div class="compare glass">
+        <h3>How This Compares</h3>
+        <div class="bar-row">
+          <div class="bar-head"><span>Your Bali villa</span><span class="v" id="youVal">—</span></div>
+          <div class="bar-track"><div class="bar-fill you" id="youBar"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-head"><span>Dubai residential</span><span class="v">6.5%</span></div>
+          <div class="bar-track"><div class="bar-fill bench" data-w="6.5"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-head"><span>Sydney residential</span><span class="v">3.2%</span></div>
+          <div class="bar-track"><div class="bar-fill bench" data-w="3.2"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-head"><span>Singapore residential</span><span class="v">2.8%</span></div>
+          <div class="bar-track"><div class="bar-fill bench" data-w="2.8"></div></div>
+        </div>
+        <p class="compare-note">Benchmark figures are gross residential yields 2026. Your Bali figure is net after costs.</p>
+      </div>
+
+      <div class="calc-cta glass">
+        <h3>Want us to find a property that hits these numbers?</h3>
+        <p>Book a free 30-minute call. We will show you what is live in the market right now.</p>
+        <button type="button" class="btn btn-gold" data-calendly-url={CALENDLY_URL}>Book a Free Call</button>
+      </div>
+
+      <p class="disclaimer">This calculator provides indicative estimates only. Actual returns depend on property location, condition, management quality, seasonal occupancy patterns, and market conditions. Figures do not constitute financial advice. Always conduct independent due diligence before investing.</p>
     </div>
-  </div>
+  </section>
 
   <ContactCTA />
+
+  </main>
+
   <Footer />
   <StickyButton />
 
 </BaseLayout>
 
-<script>
-  function fmt(n: number): string {
-    return '$' + Math.round(n).toLocaleString('en-US');
-  }
-  function pct(n: number): string {
-    return n.toFixed(1) + '%';
-  }
+<style is:global>
+/* ===== Bali ROI Calculator — page-specific styles (redesign 2026) ===== */
+.calc-hero{padding:170px 0 60px;text-align:center}
+.calc-hero .eyebrow{justify-content:center}
+.calc-hero h1,.calc-hero p,.calc-hero .eyebrow{opacity:0;animation:fadeUp .9s var(--ease) forwards}
+.calc-hero h1{animation-delay:.1s}
+.calc-hero p{animation-delay:.25s;color:var(--text-muted);font-size:1.12rem;max-width:620px;margin:20px auto 0}
 
-  function calc() {
-    const purchase   = parseFloat((document.getElementById('purchase') as HTMLInputElement).value) || 0;
-    const nightly    = parseFloat((document.getElementById('nightly') as HTMLInputElement).value) || 0;
-    const occupancy  = parseFloat((document.getElementById('occupancy') as HTMLInputElement).value) / 100;
-    const mgmtPct    = parseFloat((document.getElementById('mgmt') as HTMLInputElement).value) / 100;
-    const maintPct   = parseFloat((document.getElementById('maint') as HTMLInputElement).value) / 100;
-    const taxPct     = parseFloat((document.getElementById('tax') as HTMLSelectElement).value) / 100;
+.calc-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:40px 24px 90px;align-items:start}
+.panel{padding:38px 34px}
+.panel h2{font-size:1.5rem;margin-bottom:26px}
 
-    const grossIncome = nightly * 365 * occupancy;
-    const mgmtCost    = grossIncome * mgmtPct;
-    const taxCost     = grossIncome * taxPct;
-    const maintCost   = purchase * maintPct;
-    const netIncome   = grossIncome - mgmtCost - taxCost - maintCost;
+.field{margin-bottom:26px}
+.field label{display:block;font-weight:600;font-size:.95rem;margin-bottom:9px}
+.input-wrap{position:relative}
+.input-wrap .prefix{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--accent);font-weight:600}
+.input-wrap input[type="number"]{
+  width:100%;padding:15px 18px 15px 38px;font-size:1.05rem;font-weight:600;color:var(--text);
+  background:rgba(255,255,255,0.75);border:1px solid var(--glass-border);border-radius:13px;
+  font-family:var(--font-body);transition:border-color .25s,box-shadow .25s,background .25s;
+  -moz-appearance:textfield;appearance:textfield;
+}
+.input-wrap input::-webkit-outer-spin-button,.input-wrap input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.input-wrap input:focus{outline:none;border-color:rgba(180,80,42,0.6);box-shadow:0 0 0 4px rgba(180,80,42,0.14);background:#FFFFFF}
+.hint{font-size:.83rem;color:var(--text-muted);margin-top:7px}
+.range-row{display:flex;justify-content:space-between;font-size:.8rem;color:var(--text-muted);margin-top:8px}
+input[type="range"]{
+  width:100%;height:6px;border-radius:99px;appearance:none;-webkit-appearance:none;cursor:pointer;
+  background:linear-gradient(to right,var(--terra) var(--fill,50%),rgba(122,92,52,0.18) var(--fill,50%));
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:24px;height:24px;border-radius:50%;
+  background:var(--grad-gold);border:3px solid #FBF7EC;
+  box-shadow:0 2px 14px rgba(180,80,42,0.55);transition:transform .2s var(--ease);
+}
+input[type="range"]::-webkit-slider-thumb:hover{transform:scale(1.15)}
+input[type="range"]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#C26430;border:3px solid #FBF7EC;box-shadow:0 2px 14px rgba(180,80,42,0.55)}
+input[type="range"]:focus-visible{outline:3px solid rgba(180,80,42,0.5);outline-offset:4px}
+.slider-val{color:var(--terra)}
+.radio-group{display:flex;flex-direction:column;gap:10px}
+.radio-card{
+  display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:13px;cursor:pointer;
+  background:rgba(255,255,255,0.55);border:1px solid var(--glass-border);
+  font-size:.92rem;transition:border-color .25s,background .25s;
+}
+.radio-card:hover{background:rgba(255,255,255,0.85)}
+.radio-card input{accent-color:var(--terra);width:17px;height:17px;flex-shrink:0}
+.radio-card.selected{border-color:rgba(180,80,42,0.55);background:rgba(180,80,42,0.08)}
 
-    const grossYield  = purchase > 0 ? (grossIncome / purchase) * 100 : 0;
-    const netYield    = purchase > 0 ? (netIncome / purchase) * 100 : 0;
-    const payback     = netIncome > 0 ? purchase / netIncome : 0;
-    const fiveYear    = netIncome * 5;
+.results{display:flex;flex-direction:column;gap:22px;position:sticky;top:96px}
+.yield-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.yield-card{padding:30px 26px;text-align:center;position:relative;overflow:hidden}
+.yield-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad-gold)}
+.yield-card.net::before{background:linear-gradient(120deg,#0D5F58,#14A091)}
+.yield-card .lbl{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted)}
+.yield-card .val{font-family:var(--font-display);font-size:2.7rem;font-weight:600;margin:8px 0 4px;background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:tabular-nums;transition:opacity .3s}
+.yield-card.net .val{background:linear-gradient(120deg,#0D5F58,#0F766E);-webkit-background-clip:text;background-clip:text}
+.yield-card .sub{font-size:.83rem;color:var(--text-muted)}
+.breakdown{padding:30px 28px}
+.breakdown h3{font-size:1.15rem;margin-bottom:18px}
+.row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid rgba(122,92,52,0.12);font-size:.95rem}
+.row .k{color:var(--text-muted)}
+.row .v{font-weight:600;font-variant-numeric:tabular-nums}
+.row.neg .v{color:#A93B26}
+.row.total{border-bottom:none;padding-top:16px;font-size:1.05rem}
+.row.total .k{color:var(--text);font-weight:600}
+.row.total .v{color:var(--teal);font-size:1.15rem}
+.mini-card .val{color:var(--accent) !important}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.mini-card{padding:26px 24px;text-align:center}
+.mini-card .lbl{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted)}
+.mini-card .val{font-family:var(--font-display);font-size:1.9rem;font-weight:600;color:var(--gold-light);margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.mini-card .sub{font-size:.8rem;color:var(--text-muted)}
 
-    (document.getElementById('grossIncome') as HTMLElement).textContent  = fmt(grossIncome);
-    (document.getElementById('mgmtCost') as HTMLElement).textContent     = '-' + fmt(mgmtCost);
-    (document.getElementById('taxCost') as HTMLElement).textContent      = '-' + fmt(taxCost);
-    (document.getElementById('maintCost') as HTMLElement).textContent    = '-' + fmt(maintCost);
-    (document.getElementById('netIncome') as HTMLElement).textContent    = fmt(netIncome);
-    (document.getElementById('grossYield') as HTMLElement).textContent   = pct(grossYield);
-    (document.getElementById('netYield') as HTMLElement).textContent     = pct(netYield);
-    (document.getElementById('payback') as HTMLElement).textContent      = payback > 0 ? payback.toFixed(1) + ' yrs' : '—';
-    (document.getElementById('fiveYear') as HTMLElement).textContent     = fmt(fiveYear);
+.compare{padding:30px 28px}
+.compare h3{font-size:1.15rem;margin-bottom:20px}
+.bar-row{margin-bottom:16px}
+.bar-row .bar-head{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:7px}
+.bar-row .bar-head .v{font-weight:600;font-variant-numeric:tabular-nums}
+.bar-track{height:10px;border-radius:99px;background:rgba(122,92,52,0.12);overflow:hidden}
+.bar-fill{height:100%;border-radius:99px;width:0;transition:width 1s var(--ease)}
+.bar-fill.you{background:var(--grad-display)}
+.bar-fill.bench{background:rgba(122,92,52,0.35)}
+.compare-note{font-size:.8rem;color:var(--text-muted);margin-top:14px}
 
-    // Comparison bar — scale against 15% as 100%
-    const barPct = Math.min((netYield / 15) * 100, 100);
-    (document.getElementById('barBali') as HTMLElement).style.width = barPct + '%';
-    (document.getElementById('barLabel') as HTMLElement).textContent = pct(netYield) + ' net';
+.calc-cta{padding:34px 30px;text-align:center;background:linear-gradient(135deg,rgba(180,80,42,0.08),rgba(15,118,110,0.08)),var(--glass)}
+.calc-cta h3{font-family:var(--font-display);font-size:1.4rem;margin-bottom:10px}
+.calc-cta p{color:var(--text-muted);font-size:.95rem;margin-bottom:22px}
+.disclaimer{font-size:.8rem;color:var(--text-muted);padding:0 6px;line-height:1.6}
 
-    // Slider labels
-    (document.getElementById('occupancyLabel') as HTMLElement).textContent = Math.round(occupancy * 100) + '%';
-    (document.getElementById('mgmtLabel') as HTMLElement).textContent      = Math.round(mgmtPct * 100) + '%';
-    (document.getElementById('maintLabel') as HTMLElement).textContent     = (maintPct * 100).toFixed(1) + '%';
-  }
+/* tighter bottom CTA on this page */
+.contact-cta{padding:30px 0 110px}
 
-  ['purchase','nightly','occupancy','mgmt','maint','tax'].forEach(id => {
-    document.getElementById(id)?.addEventListener('input', calc);
-  });
+@media(max-width:980px){
+  .calc-layout{grid-template-columns:1fr}
+  .results{position:static}
+}
+@media(max-width:560px){
+  .yield-grid,.duo{grid-template-columns:1fr}
+  .panel{padding:28px 22px}
+}
+@media(prefers-reduced-motion:reduce){
+  .calc-hero h1,.calc-hero p,.calc-hero .eyebrow{opacity:1}
+}
+</style>
 
-  calc();
+<script is:inline>
+  // ===== Bali ROI calculator =====
+  (function () {
+    var $ = function (id) { return document.getElementById(id); };
+    var fmtUSD = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
+    var els = {
+      price: $('price'), nightly: $('nightly'),
+      occupancy: $('occupancy'), mgmt: $('mgmt'), maint: $('maint')
+    };
+
+    function sliderFill(slider) {
+      var pct = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+      slider.style.setProperty('--fill', pct + '%');
+    }
+
+    function getTaxRate() {
+      return parseFloat(document.querySelector('input[name="tax"]:checked').value) / 100;
+    }
+
+    function calc() {
+      var price = parseFloat(els.price.value) || 0;
+      var nightly = parseFloat(els.nightly.value) || 0;
+      var occ = parseFloat(els.occupancy.value) / 100;
+      var mgmtRate = parseFloat(els.mgmt.value) / 100;
+      var maintRate = parseFloat(els.maint.value) / 100;
+      var taxRate = getTaxRate();
+
+      $('occVal').textContent = els.occupancy.value + '%';
+      $('mgmtVal').textContent = els.mgmt.value + '%';
+      $('maintVal').textContent = els.maint.value + '%';
+      [els.occupancy, els.mgmt, els.maint].forEach(sliderFill);
+
+      if (price <= 0 || nightly <= 0) {
+        ['grossYield', 'netYield', 'grossIncome', 'mgmtFees', 'maintCost', 'taxCost', 'netIncome', 'payback', 'fiveYear', 'youVal'].forEach(function (id) { $(id).textContent = '—'; });
+        $('youBar').style.width = '0';
+        return;
+      }
+
+      var grossIncome = nightly * 365 * occ;
+      var mgmtFees = grossIncome * mgmtRate;
+      var maintCost = price * maintRate;
+      var taxCost = grossIncome * taxRate;
+      var netIncome = grossIncome - mgmtFees - maintCost - taxCost;
+      var grossYield = grossIncome / price * 100;
+      var netYield = netIncome / price * 100;
+
+      $('grossYield').textContent = grossYield.toFixed(1) + '%';
+      $('netYield').textContent = netYield.toFixed(1) + '%';
+      $('grossIncome').textContent = fmtUSD(grossIncome);
+      $('mgmtFees').textContent = '−' + fmtUSD(mgmtFees);
+      $('maintCost').textContent = '−' + fmtUSD(maintCost);
+      $('taxCost').textContent = '−' + fmtUSD(taxCost);
+      $('netIncome').textContent = fmtUSD(netIncome);
+      $('payback').textContent = netIncome > 0 ? (price / netIncome).toFixed(1) : '—';
+      $('fiveYear').textContent = fmtUSD(netIncome * 5);
+
+      // comparison bars (scale: max of your yield and 6.5, plus headroom)
+      var maxScale = Math.max(netYield, 6.5) * 1.15;
+      $('youVal').textContent = netYield.toFixed(1) + '%';
+      $('youBar').style.width = Math.max(netYield / maxScale * 100, 0) + '%';
+      document.querySelectorAll('.bar-fill.bench').forEach(function (b) {
+        b.style.width = (parseFloat(b.dataset.w) / maxScale * 100) + '%';
+      });
+    }
+
+    [els.price, els.nightly, els.occupancy, els.mgmt, els.maint].forEach(function (el) { el.addEventListener('input', calc); });
+    document.querySelectorAll('input[name="tax"]').forEach(function (r) {
+      r.addEventListener('change', function () {
+        document.querySelectorAll('.radio-card').forEach(function (c) { c.classList.toggle('selected', c.querySelector('input').checked); });
+        calc();
+      });
+    });
+
+    calc();
+  })();
 </script>

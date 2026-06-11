@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="400" fill="#F5EDE0" rx="10"/>
+  <rect width="800" height="56" fill="#2A7A55" rx="10"/>
+  <rect y="44" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="34" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">CASE STUDY — $50,000 PROFIT IN UNDER 6 MONTHS</text>
+
+  <!-- Negotiation flow -->
+  <text x="30" y="82" fill="#5C2E1F" font-size="11" font-weight="bold">NEGOTIATION TIMELINE</text>
+
+  <rect x="20" y="90" width="174" height="52" fill="#8B7355" rx="6"/>
+  <text x="107" y="111" text-anchor="middle" fill="white" font-size="10">Listed asking price</text>
+  <text x="107" y="132" text-anchor="middle" fill="white" font-size="18" font-weight="bold">$163,000</text>
+
+  <text x="207" y="120" text-anchor="middle" fill="#8B7355" font-size="18">→</text>
+
+  <rect x="220" y="90" width="174" height="52" fill="#C2A973" rx="6"/>
+  <text x="307" y="111" text-anchor="middle" fill="white" font-size="10">Developer Black Friday</text>
+  <text x="307" y="132" text-anchor="middle" fill="white" font-size="18" font-weight="bold">$145,000</text>
+
+  <text x="407" y="120" text-anchor="middle" fill="#8B7355" font-size="18">→</text>
+
+  <rect x="420" y="90" width="174" height="52" fill="#2A7A55" rx="6"/>
+  <text x="507" y="111" text-anchor="middle" fill="white" font-size="10">Ayla negotiated</text>
+  <text x="507" y="132" text-anchor="middle" fill="white" font-size="18" font-weight="bold">$130,000</text>
+
+  <rect x="608" y="90" width="172" height="52" fill="#1E6244" rx="6"/>
+  <text x="694" y="108" text-anchor="middle" fill="#C2A973" font-size="11" font-weight="bold">SAVING</text>
+  <text x="694" y="126" text-anchor="middle" fill="white" font-size="18" font-weight="bold">$33,000</text>
+  <text x="694" y="138" text-anchor="middle" fill="#DCD4C4" font-size="10">20% below list price</text>
+
+  <!-- Results table -->
+  <text x="30" y="168" fill="#5C2E1F" font-size="11" font-weight="bold">DEAL RESULTS</text>
+
+  <rect x="20" y="176" width="480" height="26" fill="#2A7A55" rx="4"/>
+  <text x="100" y="194" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Net ROI</text>
+  <text x="220" y="194" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Annual Income</text>
+  <text x="340" y="194" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Capital Payback</text>
+  <text x="462" y="194" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Completion Value</text>
+
+  <rect x="20" y="202" width="480" height="36" fill="white" rx="4" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="100" y="226" text-anchor="middle" fill="#2A7A55" font-size="18" font-weight="bold">15%</text>
+  <text x="220" y="226" text-anchor="middle" fill="#5C2E1F" font-size="15" font-weight="bold">$19,500</text>
+  <text x="340" y="226" text-anchor="middle" fill="#5C2E1F" font-size="15" font-weight="bold">6.7 years</text>
+  <text x="462" y="226" text-anchor="middle" fill="#5C2E1F" font-size="13" font-weight="bold">$180k–$190k</text>
+
+  <!-- Equity callout -->
+  <rect x="516" y="176" width="264" height="62" fill="#2A7A55" rx="6"/>
+  <text x="648" y="200" text-anchor="middle" fill="#DCD4C4" font-size="11">IMMEDIATE EQUITY AT COMPLETION</text>
+  <text x="648" y="232" text-anchor="middle" fill="white" font-size="32" font-weight="bold">$50,000</text>
+
+  <!-- Pooled income strategy -->
+  <rect x="20" y="252" width="760" height="62" fill="white" rx="6" stroke="#C2A973" stroke-width="1.5"/>
+  <text x="36" y="272" fill="#5C2E1F" font-size="11" font-weight="bold">THE "RUNT OF THE LITTER" STRATEGY</text>
+  <text x="36" y="292" fill="#5C2E1F" font-size="11">In a pooled-income development, every unit owner earns the same monthly return regardless of unit position.</text>
+  <text x="36" y="308" fill="#5C2E1F" font-size="11">Buying the cheapest unit gets you identical yield to the premium unit — at a significantly lower entry price.</text>
+
+  <!-- Timeline callout -->
+  <rect x="20" y="328" width="760" height="44" fill="#EEF7F2" rx="6"/>
+  <text x="36" y="346" fill="#2A7A55" font-size="11" font-weight="bold">SPEED MATTERS:</text>
+  <text x="150" y="346" fill="#5C2E1F" font-size="11">First contact to signed agreement: 11 days. Best off-plan deals reprice or disappear fast.</text>
+  <text x="36" y="364" fill="#2A7A55" font-size="11" font-weight="bold">LEVERAGE:</text>
+  <text x="124" y="364" fill="#5C2E1F" font-size="11">A single lump-sum cash payment was the negotiation tool that secured $33,000 off the asking price.</text>
+
+  <text x="400" y="392" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property client case study · Umalas development · Revenue data from Airbnb + Booking.com comparables</text>
+</svg>

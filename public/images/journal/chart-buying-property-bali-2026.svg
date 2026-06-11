@@ -1,0 +1,115 @@
+<svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="440" fill="#F5EDE0" rx="12"/>
+  <rect width="800" height="60" fill="#2A7A55" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">BALI PROPERTY MARKET SNAPSHOT: 511 LISTINGS, 80 DEVELOPERS, 15 AREAS (2026)</text>
+
+  <!-- Left column: yield bars -->
+  <text x="40" y="84" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">GROSS YIELD BY AREA</text>
+
+  <!-- Canggu -->
+  <text x="40" y="104" fill="#5C2E1F" font-size="11">Canggu</text>
+  <rect x="130" y="92" width="340" height="20" fill="#2A7A55" rx="3"/>
+  <text x="478" y="106" fill="#2A7A55" font-size="12" font-weight="bold"> 14.8%</text>
+
+  <!-- Seminyak -->
+  <text x="40" y="128" fill="#5C2E1F" font-size="11">Seminyak</text>
+  <rect x="130" y="116" width="300" height="20" fill="#2A7A55" rx="3" opacity="0.85"/>
+  <text x="438" y="130" fill="#2A7A55" font-size="12" font-weight="bold"> 13.1%</text>
+
+  <!-- Kedungu -->
+  <text x="40" y="152" fill="#5C2E1F" font-size="11">Kedungu</text>
+  <rect x="130" y="140" width="257" height="20" fill="#C2A973" rx="3"/>
+  <text x="395" y="154" fill="#C2A973" font-size="12" font-weight="bold"> 11.2%</text>
+
+  <!-- Market avg -->
+  <text x="40" y="176" fill="#5C2E1F" font-size="11">Market avg</text>
+  <rect x="130" y="164" width="243" height="20" fill="#8B7355" rx="3"/>
+  <text x="381" y="178" fill="#8B7355" font-size="12" font-weight="bold"> 10.6%</text>
+
+  <!-- Ubud -->
+  <text x="40" y="200" fill="#5C2E1F" font-size="11">Ubud</text>
+  <rect x="130" y="188" width="220" height="20" fill="#8B7355" rx="3" opacity="0.7"/>
+  <text x="358" y="202" fill="#8B7355" font-size="12" font-weight="bold"> 9.6%</text>
+
+  <!-- East Bali -->
+  <text x="40" y="224" fill="#5C2E1F" font-size="11">East Bali</text>
+  <rect x="130" y="212" width="165" height="20" fill="#8B7355" rx="3" opacity="0.5"/>
+  <text x="303" y="226" fill="#8B7355" font-size="12" font-weight="bold"> 7.2%</text>
+
+  <!-- Right column: price table -->
+  <rect x="545" y="74" width="220" height="168" fill="white" rx="8" stroke="#DCD4C4" stroke-width="1"/>
+  <rect x="545" y="74" width="220" height="28" fill="#2A7A55" rx="8"/>
+  <rect x="545" y="90" width="220" height="12" fill="#2A7A55"/>
+  <text x="655" y="91" text-anchor="middle" fill="white" font-size="11" font-weight="bold">MEDIAN ENTRY PRICE (USD)</text>
+  <text x="565" y="116" fill="#8B7355" font-size="10">Seminyak</text>
+  <text x="745" y="116" text-anchor="end" fill="#5C2E1F" font-size="11" font-weight="bold">$420,000</text>
+  <text x="565" y="132" fill="#8B7355" font-size="10">Canggu</text>
+  <text x="745" y="132" text-anchor="end" fill="#5C2E1F" font-size="11" font-weight="bold">$380,000</text>
+  <text x="565" y="148" fill="#8B7355" font-size="10">Ubud</text>
+  <text x="745" y="148" text-anchor="end" fill="#5C2E1F" font-size="11" font-weight="bold">$290,000</text>
+  <text x="565" y="164" fill="#8B7355" font-size="10">Kedungu</text>
+  <text x="745" y="164" text-anchor="end" fill="#5C2E1F" font-size="11" font-weight="bold">$245,000</text>
+  <text x="565" y="180" fill="#8B7355" font-size="10">East Bali</text>
+  <text x="745" y="180" text-anchor="end" fill="#5C2E1F" font-size="11" font-weight="bold">$165,000</text>
+  <line x1="565" y1="194" x2="745" y2="194" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="565" y="210" fill="#2A7A55" font-size="10" font-weight="bold">MARKET MEDIAN</text>
+  <text x="745" y="210" text-anchor="end" fill="#2A7A55" font-size="13" font-weight="bold">$290,000</text>
+  <text x="565" y="232" fill="#8B7355" font-size="9">Source: Ayla Property 2026 dataset</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="250" x2="760" y2="250" stroke="#DCD4C4" stroke-width="1.5"/>
+
+  <!-- Buying process timeline -->
+  <text x="40" y="270" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">THE 6-STEP BUYING PROCESS (TYPICAL: 4–8 WEEKS)</text>
+
+  <rect x="40" y="280" width="109" height="50" fill="#2A7A55" rx="6"/>
+  <text x="94" y="298" text-anchor="middle" fill="white" font-size="9" font-weight="bold">STEP 1</text>
+  <text x="94" y="312" text-anchor="middle" fill="white" font-size="9">Brief</text>
+  <text x="94" y="324" text-anchor="middle" fill="#DCD4C4" font-size="8">Goals + budget</text>
+
+  <rect x="158" y="280" width="109" height="50" fill="#C2A973" rx="6"/>
+  <text x="212" y="298" text-anchor="middle" fill="white" font-size="9" font-weight="bold">STEP 2</text>
+  <text x="212" y="312" text-anchor="middle" fill="white" font-size="9">Selection</text>
+  <text x="212" y="324" text-anchor="middle" fill="#F5EDE0" font-size="8">Shortlist + inspect</text>
+
+  <rect x="276" y="280" width="109" height="50" fill="#2A7A55" rx="6"/>
+  <text x="330" y="298" text-anchor="middle" fill="white" font-size="9" font-weight="bold">STEP 3</text>
+  <text x="330" y="312" text-anchor="middle" fill="white" font-size="9">Due Diligence</text>
+  <text x="330" y="324" text-anchor="middle" fill="#DCD4C4" font-size="8">Title, zone, PBG, SLF</text>
+
+  <rect x="394" y="280" width="109" height="50" fill="#C2A973" rx="6"/>
+  <text x="448" y="298" text-anchor="middle" fill="white" font-size="9" font-weight="bold">STEP 4</text>
+  <text x="448" y="312" text-anchor="middle" fill="white" font-size="9">Legal</text>
+  <text x="448" y="324" text-anchor="middle" fill="#F5EDE0" font-size="8">Notary + agreement</text>
+
+  <rect x="512" y="280" width="109" height="50" fill="#2A7A55" rx="6"/>
+  <text x="566" y="298" text-anchor="middle" fill="white" font-size="9" font-weight="bold">STEP 5</text>
+  <text x="566" y="312" text-anchor="middle" fill="white" font-size="9">Payment</text>
+  <text x="566" y="324" text-anchor="middle" fill="#DCD4C4" font-size="8">Deposit + staged</text>
+
+  <rect x="630" y="280" width="109" height="50" fill="#C2A973" rx="6"/>
+  <text x="684" y="298" text-anchor="middle" fill="white" font-size="9" font-weight="bold">STEP 6</text>
+  <text x="684" y="312" text-anchor="middle" fill="white" font-size="9">Handover</text>
+  <text x="684" y="324" text-anchor="middle" fill="#F5EDE0" font-size="8">Keys + management</text>
+
+  <!-- Red flags box -->
+  <rect x="40" y="346" width="350" height="74" fill="white" rx="8" stroke="#E85A3A" stroke-width="1.5"/>
+  <rect x="40" y="346" width="350" height="24" fill="#E85A3A" rx="8"/>
+  <rect x="40" y="358" width="350" height="12" fill="#E85A3A"/>
+  <text x="215" y="362" text-anchor="middle" fill="white" font-size="11" font-weight="bold">3 DEAL-KILLERS TO AVOID</text>
+  <text x="56" y="382" fill="#5C2E1F" font-size="11">✗ Wrong zoning (agricultural land = no rental)</text>
+  <text x="56" y="398" fill="#5C2E1F" font-size="11">✗ Missing PBG permit or SLF certificate</text>
+  <text x="56" y="414" fill="#5C2E1F" font-size="11">✗ Weak lease (no renewal clause or ambiguous pricing)</text>
+
+  <!-- Compliance box -->
+  <rect x="406" y="346" width="354" height="74" fill="white" rx="8" stroke="#2A7A55" stroke-width="1.5"/>
+  <rect x="406" y="346" width="354" height="24" fill="#2A7A55" rx="8"/>
+  <rect x="406" y="358" width="354" height="12" fill="#2A7A55"/>
+  <text x="583" y="362" text-anchor="middle" fill="white" font-size="11" font-weight="bold">2026 COMPLIANCE REQUIREMENTS</text>
+  <text x="422" y="382" fill="#5C2E1F" font-size="11">✓ NIB business identification number required</text>
+  <text x="422" y="398" fill="#5C2E1F" font-size="11">✓ KBLI 55203 classification for villa STR</text>
+  <text x="422" y="414" fill="#5C2E1F" font-size="11">✓ Platforms delisting non-compliant properties</text>
+
+  <text x="400" y="432" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property 2026 dataset · 511 listings · 80 developers · 15 areas across Bali</text>
+</svg>

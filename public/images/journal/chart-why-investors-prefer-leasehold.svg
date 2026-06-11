@@ -1,0 +1,87 @@
+<svg viewBox="0 0 800 430" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="430" fill="#F5EDE0" rx="12"/>
+  <rect width="800" height="60" fill="#5C2E1F" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#5C2E1F"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="15" font-weight="bold" letter-spacing="1">THE FREEHOLD TRAP: WHY LEASEHOLD DELIVERS HIGHER ROI IN BALI</text>
+
+  <!-- ROI comparison: central visual -->
+  <text x="40" y="84" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">THE MATH THAT CHANGES MINDS</text>
+
+  <!-- Freehold scenario box -->
+  <rect x="30" y="92" width="355" height="130" fill="white" rx="8" stroke="#5C2E1F" stroke-width="1"/>
+  <rect x="30" y="92" width="355" height="26" fill="#5C2E1F" rx="8"/>
+  <rect x="30" y="106" width="355" height="12" fill="#5C2E1F"/>
+  <text x="207" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">FREEHOLD (Via PT PMA, Pererenan)</text>
+  <text x="207" y="138" text-anchor="middle" fill="#5C2E1F" font-size="10">Entry price</text>
+  <text x="207" y="158" text-anchor="middle" fill="#5C2E1F" font-size="22" font-weight="bold">$500,000</text>
+  <text x="207" y="176" text-anchor="middle" fill="#8B7355" font-size="11">Net income/year: $40,000</text>
+  <text x="207" y="196" text-anchor="middle" fill="#5C2E1F" font-size="12">ROI:</text>
+  <text x="207" y="214" text-anchor="middle" fill="#5C2E1F" font-size="26" font-weight="bold">8%</text>
+
+  <!-- Leasehold scenario box -->
+  <rect x="415" y="92" width="355" height="130" fill="#2A7A55" rx="8"/>
+  <text x="592" y="109" text-anchor="middle" fill="white" font-size="12" font-weight="bold">LEASEHOLD (Same street, same villa)</text>
+  <text x="592" y="138" text-anchor="middle" fill="#DCD4C4" font-size="10">Entry price</text>
+  <text x="592" y="158" text-anchor="middle" fill="white" font-size="22" font-weight="bold">$200,000</text>
+  <text x="592" y="176" text-anchor="middle" fill="#DCD4C4" font-size="11">Net income/year: $40,000</text>
+  <text x="592" y="196" text-anchor="middle" fill="white" font-size="12">ROI:</text>
+  <text x="592" y="214" text-anchor="middle" fill="#C2A973" font-size="36" font-weight="bold">20%</text>
+
+  <!-- Connector -->
+  <text x="400" y="160" text-anchor="middle" fill="#5C2E1F" font-size="24" font-weight="bold">vs</text>
+  <text x="400" y="185" text-anchor="middle" fill="#8B7355" font-size="9">Same villa · Same rental income</text>
+  <text x="400" y="200" text-anchor="middle" fill="#8B7355" font-size="9">Airbnb guest pays same rate</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="236" x2="760" y2="236" stroke="#DCD4C4" stroke-width="1.5"/>
+
+  <!-- 4 reasons -->
+  <text x="40" y="256" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">4 REASONS SMART INVESTORS CHOOSE LEASEHOLD</text>
+
+  <rect x="30" y="264" width="168" height="80" fill="white" rx="6" stroke="#2A7A55" stroke-width="1"/>
+  <rect x="30" y="264" width="168" height="22" fill="#2A7A55" rx="6"/>
+  <rect x="30" y="274" width="168" height="12" fill="#2A7A55"/>
+  <text x="114" y="278" text-anchor="middle" fill="white" font-size="9" font-weight="bold">1. LOWER ENTRY = HIGHER YIELD</text>
+  <text x="46" y="302" fill="#5C2E1F" font-size="9">Same villa, 20–40% lower</text>
+  <text x="46" y="316" fill="#5C2E1F" font-size="9">entry than freehold equiv.</text>
+  <text x="46" y="330" fill="#2A7A55" font-size="9" font-weight="bold">Capital recouped in 3–5 yrs</text>
+  <text x="46" y="340" fill="#8B7355" font-size="8">vs 8–10 yrs for freehold</text>
+
+  <rect x="208" y="264" width="168" height="80" fill="white" rx="6" stroke="#2A7A55" stroke-width="1"/>
+  <rect x="208" y="264" width="168" height="22" fill="#2A7A55" rx="6"/>
+  <rect x="208" y="274" width="168" height="12" fill="#2A7A55"/>
+  <text x="292" y="278" text-anchor="middle" fill="white" font-size="9" font-weight="bold">2. MARKET AGILITY</text>
+  <text x="224" y="302" fill="#5C2E1F" font-size="9">Hot spots shift fast in Bali.</text>
+  <text x="224" y="316" fill="#5C2E1F" font-size="9">Leasehold: ride the wave,</text>
+  <text x="224" y="330" fill="#5C2E1F" font-size="9">exit, roll into next area.</text>
+  <text x="224" y="340" fill="#8B7355" font-size="8">Freehold locks you in forever</text>
+
+  <rect x="386" y="264" width="186" height="80" fill="white" rx="6" stroke="#C2A973" stroke-width="1"/>
+  <rect x="386" y="264" width="186" height="22" fill="#C2A973" rx="6"/>
+  <rect x="386" y="274" width="186" height="12" fill="#C2A973"/>
+  <text x="479" y="278" text-anchor="middle" fill="white" font-size="9" font-weight="bold">3. BALI CLIMATE REALITY</text>
+  <text x="402" y="302" fill="#5C2E1F" font-size="9">Tropical sun, humidity, monsoon</text>
+  <text x="402" y="316" fill="#5C2E1F" font-size="9">= villas need major renovation</text>
+  <text x="402" y="330" fill="#5C2E1F" font-size="9">every 15–20 years.</text>
+  <text x="402" y="340" fill="#8B7355" font-size="8">Why pay freehold premium for perishable structure?</text>
+
+  <rect x="582" y="264" width="188" height="80" fill="white" rx="6" stroke="#C2A973" stroke-width="1"/>
+  <rect x="582" y="264" width="188" height="22" fill="#C2A973" rx="6"/>
+  <rect x="582" y="274" width="188" height="12" fill="#C2A973"/>
+  <text x="676" y="278" text-anchor="middle" fill="white" font-size="9" font-weight="bold">4. FLIP AND ROLL STRATEGY</text>
+  <text x="598" y="302" fill="#5C2E1F" font-size="9">Off-plan leasehold → 15–20%</text>
+  <text x="598" y="316" fill="#5C2E1F" font-size="9">ROI for 3–5 yrs → sell at</text>
+  <text x="598" y="330" fill="#5C2E1F" font-size="9">appreciated value → reinvest</text>
+  <text x="598" y="340" fill="#8B7355" font-size="8">Compound gains every cycle</text>
+
+  <!-- Good lease checklist -->
+  <rect x="30" y="358" width="740" height="56" fill="white" rx="8" stroke="#2A7A55" stroke-width="1.5"/>
+  <text x="46" y="376" fill="#2A7A55" font-size="11" font-weight="bold">WHAT A GOOD LEASE MUST HAVE:</text>
+  <text x="46" y="394" fill="#5C2E1F" font-size="10">✓ BPN registration (non-negotiable)</text>
+  <text x="234" y="394" fill="#5C2E1F" font-size="10">✓ Clear renewal clause with locked pricing formula</text>
+  <text x="500" y="394" fill="#5C2E1F" font-size="10">✓ Fixed 25+25 yr structure (not rolling)</text>
+  <text x="46" y="408" fill="#5C2E1F" font-size="10">✓ Right to sell without landowner approval</text>
+  <text x="280" y="408" fill="#5C2E1F" font-size="10">✓ Force majeure / government acquisition protection clause</text>
+
+  <text x="400" y="424" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property 2026 · Indonesian property law · Broker analysis of 511 active listings</text>
+</svg>

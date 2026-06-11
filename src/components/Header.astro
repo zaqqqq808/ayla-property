@@ -1,10 +1,6 @@
 ---
 import CalendlyButton from './CalendlyButton.astro';
 
-const navItems = [
-  { label: 'Our Method', href: '/#methodology' },
-];
-
 const locations = [
   { label: 'Invest in Canggu',    href: '/invest/canggu/' },
   { label: 'Invest in Uluwatu',   href: '/invest/uluwatu/' },
@@ -15,9 +11,9 @@ const locations = [
 ];
 
 const guides = [
-  { label: 'Foreigners Buying Guide',    href: '/guides/foreigners-buying-property-bali/' },
-  { label: 'Bali Property Investment',   href: '/guides/bali-property-investment/' },
-  { label: 'Bali Developer Report 2026', href: '/guides/bali-developer-report-2026/' },
+  { label: 'Foreigners Buying Guide',         href: '/guides/foreigners-buying-property-bali/' },
+  { label: 'Bali Property Investment',        href: '/guides/bali-property-investment/' },
+  { label: 'Bali Developer Report 2026',      href: '/guides/bali-developer-report-2026/' },
   { label: 'Foreign Investor Checklist 2026', href: '/guides/indonesia-foreign-investor-checklist-2026/' },
 ];
 
@@ -25,358 +21,89 @@ const tools = [
   { label: 'Bali ROI Calculator', href: '/bali-roi-calculator/' },
 ];
 ---
-<header class="absolute top-0 left-0 right-0 z-50 px-6 lg:px-12 py-6">
-  <div class="max-w-7xl mx-auto flex items-center justify-between">
-    <a href="/" class="flex items-center" aria-label="Ayla Property — home">
-      <img src="/logo.png" alt="Ayla Property" class="h-12 lg:h-14 w-auto" />
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Ayla Property home">
+      <img src="/logo.png" alt="Ayla Property" />
     </a>
-
-    <!-- Desktop nav -->
-    <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
-
-      <!-- Invest by Location dropdown -->
-      <div class="relative group">
-        <button
-          class="text-white hover:text-gold transition-colors text-sm uppercase tracking-widest font-semibold drop-shadow-sm flex items-center gap-1"
-          aria-haspopup="true"
-          aria-expanded="false"
-          id="location-menu-btn"
-        >
-          Invest by Location
-          <svg class="w-3 h-3 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div
-          class="absolute top-full left-1/2 -translate-x-1/2 w-52 pt-2
-                 opacity-0 -translate-y-1 pointer-events-none
-                 group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
-                 transition-all duration-200 ease-out"
-          role="menu"
-        >
-          <div class="rounded-xl bg-cream shadow-2xl border border-beige/60 py-2">
-            {locations.map(({ label, href }) => (
-              <a href={href} role="menuitem" class="block px-5 py-3 text-brown hover:bg-beige hover:text-olive transition-colors text-sm uppercase tracking-widest font-semibold">
-                {label}
-              </a>
-            ))}
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li>
+          <button class="navlink" aria-haspopup="true">Invest by Location <span class="caret" aria-hidden="true"></span></button>
+          <div class="dropdown">
+            {locations.map(({ label, href }) => <a href={href}>{label}</a>)}
           </div>
-        </div>
-      </div>
-
-      {navItems.map(({ label, href }) => (
-        <a href={href} class="text-white hover:text-gold transition-colors text-sm uppercase tracking-widest font-semibold drop-shadow-sm">
-          {label}
-        </a>
-      ))}
-
-      <!-- Guides dropdown -->
-      <div class="relative group">
-        <button
-          class="text-white hover:text-gold transition-colors text-sm uppercase tracking-widest font-semibold drop-shadow-sm flex items-center gap-1"
-          aria-haspopup="true"
-          aria-expanded="false"
-          id="guides-menu-btn"
-        >
-          Guides
-          <svg class="w-3 h-3 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div
-          class="absolute top-full left-1/2 -translate-x-1/2 w-60 pt-2
-                 opacity-0 -translate-y-1 pointer-events-none
-                 group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
-                 transition-all duration-200 ease-out"
-          role="menu"
-        >
-          <div class="rounded-xl bg-cream shadow-2xl border border-beige/60 py-2">
-            {guides.map(({ label, href }) => (
-              <a href={href} role="menuitem" class="block px-5 py-3 text-brown hover:bg-beige hover:text-olive transition-colors text-sm uppercase tracking-widest font-semibold">
-                {label}
-              </a>
-            ))}
+        </li>
+        <li><a href="/#methodology">Our Method</a></li>
+        <li>
+          <button class="navlink" aria-haspopup="true">Guides <span class="caret" aria-hidden="true"></span></button>
+          <div class="dropdown">
+            {guides.map(({ label, href }) => <a href={href}>{label}</a>)}
           </div>
-        </div>
-      </div>
-
-      <!-- Tools dropdown -->
-      <div class="relative group">
-        <button
-          class="text-white hover:text-gold transition-colors text-sm uppercase tracking-widest font-semibold drop-shadow-sm flex items-center gap-1"
-          aria-haspopup="true"
-          aria-expanded="false"
-          id="tools-menu-btn"
-        >
-          Tools
-          <svg class="w-3 h-3 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div
-          class="absolute top-full left-1/2 -translate-x-1/2 w-52 pt-2
-                 opacity-0 -translate-y-1 pointer-events-none
-                 group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
-                 transition-all duration-200 ease-out"
-          role="menu"
-        >
-          <div class="rounded-xl bg-cream shadow-2xl border border-beige/60 py-2">
-            {tools.map(({ label, href }) => (
-              <a href={href} role="menuitem" class="block px-5 py-3 text-brown hover:bg-beige hover:text-olive transition-colors text-sm uppercase tracking-widest font-semibold">
-                {label}
-              </a>
-            ))}
+        </li>
+        <li>
+          <button class="navlink" aria-haspopup="true">Tools <span class="caret" aria-hidden="true"></span></button>
+          <div class="dropdown">
+            {tools.map(({ label, href }) => <a href={href}>{label}</a>)}
           </div>
-        </div>
-      </div>
-
-      <a href="/#contact" class="text-white hover:text-gold transition-colors text-sm uppercase tracking-widest font-semibold drop-shadow-sm">
-        Contact
-      </a>
-
-      <a href="/journal/" class="inline-block bg-brown hover:bg-brown-dark text-white text-sm uppercase tracking-widest font-semibold px-5 py-2.5 rounded-full transition-colors">
-        Journal
-      </a>
-
-      <CalendlyButton text="Schedule a Call" variant="olive" />
+        </li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/journal/">Journal</a></li>
+        <li class="nav-cta"><CalendlyButton text="Schedule a Call" variant="gold" /></li>
+      </ul>
     </nav>
-
-    <!-- Hamburger -->
-    <button
-      id="mobile-menu-toggle"
-      class="md:hidden text-white w-8 h-8 flex flex-col justify-center items-center gap-[5px] relative"
-      aria-label="Open menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <span id="bar-top" class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300 origin-center"></span>
-      <span id="bar-mid" class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300"></span>
-      <span id="bar-bot" class="block w-6 h-[2px] bg-current rounded-full transition-all duration-300 origin-center"></span>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
     </button>
   </div>
-
-  <!-- Mobile menu -->
-  <div
-    id="mobile-menu"
-    class="md:hidden absolute top-full left-0 right-0 mx-6 mt-2 rounded-xl overflow-hidden
-           bg-cream shadow-2xl border border-beige/60
-           transition-all duration-300 ease-out
-           opacity-0 -translate-y-2 pointer-events-none"
-    aria-hidden="true"
-  >
-    <nav class="flex flex-col py-3 pb-6" aria-label="Mobile">
-
-      <!-- Invest by Location accordion -->
-      <div class="border-b border-beige/50">
-        <button
-          id="mobile-location-toggle"
-          class="menu-item w-full px-6 py-4 text-brown uppercase tracking-widest text-sm font-semibold opacity-0 translate-x-2 transition-all duration-200 relative flex items-center justify-center"
-          style="transition-delay: 60ms"
-          aria-expanded="false"
-        >
-          Invest by Location
-          <svg id="mobile-location-chevron" class="w-3 h-3 transition-transform duration-200 absolute right-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div id="mobile-location-sub" class="hidden flex-col bg-beige/40">
-          {locations.map(({ label, href }) => (
-            <a href={href} class="mobile-sub-item px-8 py-3 text-brown/80 hover:text-olive uppercase tracking-widest text-xs font-semibold transition-colors">
-              {label}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      {navItems.map(({ label, href }, i) => (
-        <a
-          href={href}
-          style={`transition-delay: ${100 + i * 40}ms`}
-          class="menu-item px-6 py-4 text-brown hover:bg-beige uppercase tracking-widest text-sm font-semibold border-b border-beige/50 last:border-0 transition-all duration-200 opacity-0 translate-x-2 text-center"
-        >
-          {label}
-        </a>
-      ))}
-
-      <!-- Guides accordion -->
-      <div class="border-b border-beige/50">
-        <button
-          id="mobile-guides-toggle"
-          class="menu-item w-full px-6 py-4 text-brown uppercase tracking-widest text-sm font-semibold opacity-0 translate-x-2 transition-all duration-200 relative flex items-center justify-center"
-          style="transition-delay: 220ms"
-          aria-expanded="false"
-        >
-          Guides
-          <svg id="mobile-guides-chevron" class="w-3 h-3 transition-transform duration-200 absolute right-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div id="mobile-guides-sub" class="hidden flex-col bg-beige/40">
-          {guides.map(({ label, href }) => (
-            <a href={href} class="mobile-sub-item px-8 py-3 text-brown/80 hover:text-olive uppercase tracking-widest text-xs font-semibold transition-colors">
-              {label}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <!-- Tools accordion (mobile) -->
-      <div class="border-b border-beige/50">
-        <button
-          id="mobile-tools-toggle"
-          class="menu-item w-full px-6 py-4 text-brown uppercase tracking-widest text-sm font-semibold opacity-0 translate-x-2 transition-all duration-200 relative flex items-center justify-center"
-          style="transition-delay: 240ms"
-          aria-expanded="false"
-        >
-          Tools
-          <svg id="mobile-tools-chevron" class="w-3 h-3 transition-transform duration-200 absolute right-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div id="mobile-tools-sub" class="hidden flex-col bg-beige/40">
-          {tools.map(({ label, href }) => (
-            <a href={href} class="mobile-sub-item px-8 py-3 text-brown/80 hover:text-olive uppercase tracking-widest text-xs font-semibold transition-colors">
-              {label}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <div class="menu-item px-6 pt-6 pb-8 opacity-0 translate-x-2 transition-all duration-200 flex flex-col items-center gap-4" style="transition-delay: 280ms">
-        <a href="/journal/" class="inline-block bg-brown hover:bg-brown-dark text-white text-sm uppercase tracking-widest font-semibold px-8 py-3 rounded-full transition-colors w-full text-center">
-          Journal
-        </a>
-        <CalendlyButton text="Schedule a Call" variant="olive" />
-        <a href="/#contact" class="text-brown/50 hover:text-brown text-xs uppercase tracking-widest font-semibold transition-colors mt-2">
-          Contact
-        </a>
-        <a href="/" class="mt-6 opacity-40 hover:opacity-70 transition-opacity">
-          <img src="/logo.png" alt="Ayla Property" class="h-10 w-auto" />
-        </a>
-      </div>
-    </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <div class="group">
+      <div class="group-title">Invest by Location</div>
+      {locations.map(({ label, href }) => <a href={href}>{label}</a>)}
+    </div>
+    <div class="group">
+      <div class="group-title">Guides</div>
+      {guides.map(({ label, href }) => <a href={href}>{label}</a>)}
+    </div>
+    <div class="group">
+      <div class="group-title">Tools</div>
+      {tools.map(({ label, href }) => <a href={href}>{label}</a>)}
+    </div>
+    <div class="group">
+      <a href="/#methodology">Our Method</a>
+      <a href="/#contact">Contact</a>
+      <a href="/journal/">Journal</a>
+    </div>
+    <CalendlyButton text="Schedule a Call" variant="gold" />
   </div>
 </header>
 
-<script>
-  // ── Hamburger ────────────────────────────────────────────────────────────────
-  const toggle = document.getElementById('mobile-menu-toggle');
-  const menu   = document.getElementById('mobile-menu');
-  const barTop = document.getElementById('bar-top');
-  const barMid = document.getElementById('bar-mid');
-  const barBot = document.getElementById('bar-bot');
-  const items  = menu?.querySelectorAll('.menu-item');
-  const sticky = document.getElementById('sticky-cta');
-
-  let isOpen = false;
-
-  function openMenu() {
-    isOpen = true;
-    toggle?.setAttribute('aria-expanded', 'true');
-    menu?.setAttribute('aria-hidden', 'false');
-    menu?.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
-    menu?.classList.add('opacity-100', 'translate-y-0');
-    items?.forEach(item => {
-      item.classList.remove('opacity-0', 'translate-x-2');
-      item.classList.add('opacity-100', 'translate-x-0');
-    });
-    barTop?.classList.add('rotate-45', 'translate-y-[7px]');
-    barMid?.classList.add('opacity-0', 'scale-x-0');
-    barBot?.classList.add('-rotate-45', '-translate-y-[7px]');
-    document.body.classList.add('mobile-menu-open');
-  }
-
-  function closeMenu() {
-    isOpen = false;
-    toggle?.setAttribute('aria-expanded', 'false');
-    menu?.setAttribute('aria-hidden', 'true');
-    menu?.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
-    menu?.classList.remove('opacity-100', 'translate-y-0');
-    items?.forEach(item => {
-      item.classList.add('opacity-0', 'translate-x-2');
-      item.classList.remove('opacity-100', 'translate-x-0');
-    });
-    barTop?.classList.remove('rotate-45', 'translate-y-[7px]');
-    barMid?.classList.remove('opacity-0', 'scale-x-0');
-    barBot?.classList.remove('-rotate-45', '-translate-y-[7px]');
-    document.body.classList.remove('mobile-menu-open');
-  }
-
-  toggle?.addEventListener('click', () => isOpen ? closeMenu() : openMenu());
-  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-
-  // ── Mobile location accordion ────────────────────────────────────────────────
-  const locToggle  = document.getElementById('mobile-location-toggle');
-  const locSub     = document.getElementById('mobile-location-sub');
-  const locChevron = document.getElementById('mobile-location-chevron');
-  let locOpen = false;
-
-  locToggle?.addEventListener('click', () => {
-    locOpen = !locOpen;
-    locToggle.setAttribute('aria-expanded', String(locOpen));
-    if (locOpen) {
-      locSub?.classList.remove('hidden');
-      locSub?.classList.add('flex');
-      locChevron?.classList.add('rotate-180');
-    } else {
-      locSub?.classList.add('hidden');
-      locSub?.classList.remove('flex');
-      locChevron?.classList.remove('rotate-180');
+<script is:inline>
+  (function () {
+    // nav scroll state
+    var nav = document.getElementById('nav');
+    function onScroll() {
+      if (nav) nav.classList.toggle('scrolled', window.scrollY > 24);
     }
-  });
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
-  // ── Mobile guides accordion ───────────────────────────────────────────────────
-  const guidesToggle  = document.getElementById('mobile-guides-toggle');
-  const guidesSub     = document.getElementById('mobile-guides-sub');
-  const guidesChevron = document.getElementById('mobile-guides-chevron');
-  let guidesOpen = false;
-
-  guidesToggle?.addEventListener('click', () => {
-    guidesOpen = !guidesOpen;
-    guidesToggle.setAttribute('aria-expanded', String(guidesOpen));
-    if (guidesOpen) {
-      guidesSub?.classList.remove('hidden');
-      guidesSub?.classList.add('flex');
-      guidesChevron?.classList.add('rotate-180');
-    } else {
-      guidesSub?.classList.add('hidden');
-      guidesSub?.classList.remove('flex');
-      guidesChevron?.classList.remove('rotate-180');
+    // mobile menu
+    var toggle = document.getElementById('menuToggle');
+    var mobileNav = document.getElementById('mobileNav');
+    if (toggle && mobileNav) {
+      toggle.addEventListener('click', function () {
+        var open = mobileNav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+        document.body.style.overflow = open ? 'hidden' : '';
+      });
+      mobileNav.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          mobileNav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        });
+      });
     }
-  });
-
-  // ── Mobile tools accordion ────────────────────────────────────────────────────
-  const toolsToggle  = document.getElementById('mobile-tools-toggle');
-  const toolsSub     = document.getElementById('mobile-tools-sub');
-  const toolsChevron = document.getElementById('mobile-tools-chevron');
-  let toolsOpen = false;
-
-  toolsToggle?.addEventListener('click', () => {
-    toolsOpen = !toolsOpen;
-    toolsToggle.setAttribute('aria-expanded', String(toolsOpen));
-    if (toolsOpen) {
-      toolsSub?.classList.remove('hidden');
-      toolsSub?.classList.add('flex');
-      toolsChevron?.classList.add('rotate-180');
-    } else {
-      toolsSub?.classList.add('hidden');
-      toolsSub?.classList.remove('flex');
-      toolsChevron?.classList.remove('rotate-180');
-    }
-  });
-
-  // ── Desktop dropdown aria-expanded sync ─────────────────────────────────────
-  const desktopLocationBtn = document.getElementById('location-menu-btn');
-  const desktopLocationParent = desktopLocationBtn?.closest('.group');
-  if (desktopLocationParent && desktopLocationBtn) {
-    desktopLocationParent.addEventListener('mouseenter', () => desktopLocationBtn.setAttribute('aria-expanded', 'true'));
-    desktopLocationParent.addEventListener('mouseleave', () => desktopLocationBtn.setAttribute('aria-expanded', 'false'));
-  }
-
-  const desktopGuidesBtn = document.getElementById('guides-menu-btn');
-  const desktopGuidesParent = desktopGuidesBtn?.closest('.group');
-  if (desktopGuidesParent && desktopGuidesBtn) {
-    desktopGuidesParent.addEventListener('mouseenter', () => desktopGuidesBtn.setAttribute('aria-expanded', 'true'));
-    desktopGuidesParent.addEventListener('mouseleave', () => desktopGuidesBtn.setAttribute('aria-expanded', 'false'));
-  }
+  })();
 </script>

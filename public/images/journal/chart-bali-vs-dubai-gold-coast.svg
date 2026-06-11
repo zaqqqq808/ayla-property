@@ -1,0 +1,80 @@
+<svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <!-- Background -->
+  <rect width="800" height="460" fill="#F5EDE0" rx="12"/>
+  <!-- Header band -->
+  <rect width="800" height="60" fill="#2A7A55" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="17" font-weight="bold" letter-spacing="1">REAL ESTATE ROI COMPARISON: BALI vs DUBAI vs GOLD COAST (2026)</text>
+
+  <!-- Section: Net Yield Comparison -->
+  <text x="40" y="92" fill="#5C2E1F" font-size="12" font-weight="bold" letter-spacing="1" text-transform="uppercase">NET RENTAL YIELD AFTER ALL COSTS</text>
+
+  <!-- Bali bar -->
+  <rect x="40" y="104" width="420" height="38" fill="#2A7A55" rx="4"/>
+  <text x="56" y="128" fill="white" font-size="15" font-weight="bold">BALI</text>
+  <text x="472" y="128" fill="#2A7A55" font-size="20" font-weight="bold">12%</text>
+  <text x="530" y="128" fill="#5C2E1F" font-size="12">net avg</text>
+
+  <!-- Dubai bar -->
+  <rect x="40" y="152" width="224" height="38" fill="#C2A973" rx="4"/>
+  <text x="56" y="176" fill="white" font-size="15" font-weight="bold">DUBAI</text>
+  <text x="276" y="176" fill="#C2A973" font-size="20" font-weight="bold">6.7%</text>
+  <text x="338" y="176" fill="#5C2E1F" font-size="12">net avg</text>
+
+  <!-- Gold Coast bar -->
+  <rect x="40" y="200" width="140" height="38" fill="#8B7355" rx="4"/>
+  <text x="56" y="224" fill="white" font-size="14" font-weight="bold">GOLD COAST</text>
+  <text x="192" y="224" fill="#8B7355" font-size="20" font-weight="bold">4.2%</text>
+  <text x="252" y="224" fill="#5C2E1F" font-size="12">net avg</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="258" x2="760" y2="258" stroke="#DCD4C4" stroke-width="1.5"/>
+
+  <!-- Section: Entry Cost & Tax -->
+  <text x="40" y="280" fill="#5C2E1F" font-size="12" font-weight="bold" letter-spacing="1">ENTRY COST &amp; TAX BURDEN COMPARISON</text>
+
+  <!-- Table headers -->
+  <text x="40" y="302" fill="#8B7355" font-size="11" font-weight="bold"></text>
+  <rect x="40" y="306" width="220" height="30" fill="#2A7A55" rx="3"/>
+  <rect x="270" y="306" width="220" height="30" fill="#C2A973" rx="3"/>
+  <rect x="500" y="306" width="220" height="30" fill="#8B7355" rx="3"/>
+  <text x="150" y="325" text-anchor="middle" fill="white" font-size="13" font-weight="bold">BALI</text>
+  <text x="380" y="325" text-anchor="middle" fill="white" font-size="13" font-weight="bold">DUBAI</text>
+  <text x="610" y="325" text-anchor="middle" fill="white" font-size="13" font-weight="bold">GOLD COAST</text>
+
+  <!-- Row 1: Entry Cost -->
+  <rect x="40" y="336" width="220" height="26" fill="#E8F4EE" rx="2"/>
+  <rect x="270" y="336" width="220" height="26" fill="#FDF6EC" rx="2"/>
+  <rect x="500" y="336" width="220" height="26" fill="#F0EBE3" rx="2"/>
+  <text x="150" y="353" text-anchor="middle" fill="#2A7A55" font-size="12" font-weight="bold">$150k – $500k</text>
+  <text x="380" y="353" text-anchor="middle" fill="#C2A973" font-size="12" font-weight="bold">$300k – $1M+</text>
+  <text x="610" y="353" text-anchor="middle" fill="#8B7355" font-size="12" font-weight="bold">$600k – $1.5M+</text>
+  <text x="150" y="368" text-anchor="middle" fill="#5C2E1F" font-size="10">typical entry range</text>
+  <text x="380" y="368" text-anchor="middle" fill="#5C2E1F" font-size="10">typical entry range</text>
+  <text x="610" y="368" text-anchor="middle" fill="#5C2E1F" font-size="10">typical entry range</text>
+
+  <!-- Row 2: Stamp duty / Tax -->
+  <rect x="40" y="374" width="220" height="26" fill="#E8F4EE" rx="2"/>
+  <rect x="270" y="374" width="220" height="26" fill="#FDF6EC" rx="2"/>
+  <rect x="500" y="374" width="220" height="26" fill="#F0EBE3" rx="2"/>
+  <text x="150" y="391" text-anchor="middle" fill="#2A7A55" font-size="12" font-weight="bold">None (0%)</text>
+  <text x="380" y="391" text-anchor="middle" fill="#C2A973" font-size="12" font-weight="bold">4% DLD fee</text>
+  <text x="610" y="391" text-anchor="middle" fill="#8B7355" font-size="12" font-weight="bold">3–5% stamp duty</text>
+  <text x="150" y="406" text-anchor="middle" fill="#5C2E1F" font-size="10">stamp duty on entry</text>
+  <text x="380" y="406" text-anchor="middle" fill="#5C2E1F" font-size="10">stamp duty on entry</text>
+  <text x="610" y="406" text-anchor="middle" fill="#5C2E1F" font-size="10">stamp duty on entry</text>
+
+  <!-- Row 3: Rental Income Tax -->
+  <rect x="40" y="412" width="220" height="26" fill="#E8F4EE" rx="2"/>
+  <rect x="270" y="412" width="220" height="26" fill="#FDF6EC" rx="2"/>
+  <rect x="500" y="412" width="220" height="26" fill="#F0EBE3" rx="2"/>
+  <text x="150" y="429" text-anchor="middle" fill="#2A7A55" font-size="12" font-weight="bold">10% (fixed)</text>
+  <text x="380" y="429" text-anchor="middle" fill="#C2A973" font-size="12" font-weight="bold">0% (free zone)</text>
+  <text x="610" y="429" text-anchor="middle" fill="#8B7355" font-size="12" font-weight="bold">Up to 47%</text>
+  <text x="150" y="444" text-anchor="middle" fill="#5C2E1F" font-size="10">rental income tax</text>
+  <text x="380" y="444" text-anchor="middle" fill="#5C2E1F" font-size="10">rental income tax</text>
+  <text x="610" y="444" text-anchor="middle" fill="#5C2E1F" font-size="10">rental income tax (marginal)</text>
+
+  <!-- Source note -->
+  <text x="400" y="458" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property 2026 Data · Global Property Guide · Property Finder 2025</text>
+</svg>

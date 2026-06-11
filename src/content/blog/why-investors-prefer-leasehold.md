@@ -16,7 +16,21 @@ While you *can* buy Freehold (Hak Milik) in Bali, usually through a PT PMA compa
 
 Here is why the smartest money in Bali is often flowing into Leasehold.
 
+<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
+  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
+  <ul class="space-y-2 text-sm text-brown">
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Freehold costs 2–3x more for identical rental income:</strong> $500k freehold = 8% ROI. $200k leasehold on the same street = 20% ROI. The Airbnb guest pays the same rate regardless of your title.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Bali's hot spots shift fast:</strong> Leasehold gives you the agility to enter a high-growth area, ride the appreciation wave for 5–7 years, and exit before the "cool factor" fades. Freehold marries you to a postcode.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>The tropical climate reality:</strong> Intense sun, humidity, monsoon rains mean villas need major renovation every 15–20 years. Paying a freehold premium to own a structure that will need gutting is poor capital allocation.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>The flip and roll strategy works:</strong> Buy off-plan leasehold → 15–20% ROI for 3–5 years → sell at appreciated value → reinvest in the next emerging area. Compound your gains every cycle.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>A good lease must have:</strong> BPN registration, locked renewal pricing, a fixed 25+25 term structure (not rolling), and explicit right to sell without landowner approval.</span></li>
+  </ul>
+</div>
+
 ## 1. The ROI Math (Lower Entry, Higher Yield)
+
+<img src="/images/journal/svg-why-investors-prefer-leasehold.svg" alt="Freehold trap Bali same villa leasehold vs freehold ROI comparison infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+
 The math is simple. A Freehold property in a prime area like Pererenan might cost you double or triple the price of a Leasehold property on the exact same street.
 
 However, the **rental income** you generate is precisely the same. A tourist on Airbnb doesn't care if you own the land forever or for 25 years; they pay the same nightly rate.
@@ -53,7 +67,6 @@ The play works like this:
 - **Sell the remaining lease.**
 
 Even with fewer years left on the lease, the rise in daily land prices often means you can sell for a profit. You then take that capital and roll it into the *next* emerging area (like Kedungu or the West).
-
 
 ## What a Good Lease Agreement Actually Looks Like
 

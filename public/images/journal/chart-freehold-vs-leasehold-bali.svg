@@ -1,0 +1,81 @@
+<svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="440" fill="#F5EDE0" rx="12"/>
+  <rect width="800" height="60" fill="#5C2E1F" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#5C2E1F"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">FREEHOLD vs LEASEHOLD IN BALI: THE YIELD IMPACT EXPLAINED</text>
+
+  <!-- ROI comparison: same villa, different structures -->
+  <text x="40" y="84" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">THE SAME VILLA. SAME RENTAL INCOME. DIFFERENT RETURN ON CAPITAL.</text>
+
+  <!-- Freehold scenario -->
+  <rect x="30" y="92" width="355" height="140" fill="white" rx="8" stroke="#5C2E1F" stroke-width="1.5"/>
+  <rect x="30" y="92" width="355" height="28" fill="#5C2E1F" rx="8"/>
+  <rect x="30" y="108" width="355" height="12" fill="#5C2E1F"/>
+  <text x="207" y="111" text-anchor="middle" fill="white" font-size="13" font-weight="bold">FREEHOLD SCENARIO (HGB via PT PMA)</text>
+  <text x="207" y="134" text-anchor="middle" fill="#5C2E1F" font-size="22" font-weight="bold">$500,000</text>
+  <text x="207" y="150" text-anchor="middle" fill="#8B7355" font-size="11">entry price (Canggu prime example)</text>
+  <line x1="50" y1="158" x2="365" y2="158" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="50" y="175" fill="#5C2E1F" font-size="11">Annual net income:</text>
+  <text x="365" y="175" text-anchor="end" fill="#5C2E1F" font-size="13" font-weight="bold">$50,000</text>
+  <text x="50" y="195" fill="#5C2E1F" font-size="11">Return on capital:</text>
+  <text x="365" y="195" text-anchor="end" fill="#5C2E1F" font-size="18" font-weight="bold">10%</text>
+  <text x="50" y="215" fill="#5C2E1F" font-size="11">Capital payback:</text>
+  <text x="365" y="215" text-anchor="end" fill="#5C2E1F" font-size="13" font-weight="bold">~10 years</text>
+  <text x="207" y="228" text-anchor="middle" fill="#8B7355" font-size="10">You own the land forever but capital works harder in leasehold</text>
+
+  <!-- Leasehold scenario -->
+  <rect x="415" y="92" width="355" height="140" fill="white" rx="8" stroke="#2A7A55" stroke-width="2"/>
+  <rect x="415" y="92" width="355" height="28" fill="#2A7A55" rx="8"/>
+  <rect x="415" y="108" width="355" height="12" fill="#2A7A55"/>
+  <text x="592" y="111" text-anchor="middle" fill="white" font-size="13" font-weight="bold">LEASEHOLD SCENARIO (25–30 yr Hak Sewa)</text>
+  <text x="592" y="134" text-anchor="middle" fill="#2A7A55" font-size="22" font-weight="bold">$300,000</text>
+  <text x="592" y="150" text-anchor="middle" fill="#8B7355" font-size="11">entry price (same villa)</text>
+  <line x1="435" y1="158" x2="750" y2="158" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="435" y="175" fill="#5C2E1F" font-size="11">Annual net income:</text>
+  <text x="750" y="175" text-anchor="end" fill="#5C2E1F" font-size="13" font-weight="bold">$50,000</text>
+  <text x="435" y="195" fill="#5C2E1F" font-size="11">Return on capital:</text>
+  <text x="750" y="195" text-anchor="end" fill="#2A7A55" font-size="22" font-weight="bold">16.7%</text>
+  <text x="435" y="215" fill="#5C2E1F" font-size="11">Capital payback:</text>
+  <text x="750" y="215" text-anchor="end" fill="#2A7A55" font-size="13" font-weight="bold">~6 years</text>
+  <text x="592" y="228" text-anchor="middle" fill="#2A7A55" font-size="10">Same villa, same income, 67% more return on your capital</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="248" x2="760" y2="248" stroke="#DCD4C4" stroke-width="1.5"/>
+
+  <!-- Title types table -->
+  <text x="40" y="268" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">BALI PROPERTY TITLE TYPES FOR FOREIGNERS</text>
+
+  <rect x="30" y="276" width="215" height="100" fill="white" rx="6" stroke="#8B7355" stroke-width="1"/>
+  <rect x="30" y="276" width="215" height="24" fill="#8B7355" rx="6"/>
+  <rect x="30" y="288" width="215" height="12" fill="#8B7355"/>
+  <text x="137" y="291" text-anchor="middle" fill="white" font-size="11" font-weight="bold">HAK SEWA (LEASEHOLD)</text>
+  <text x="46" y="314" fill="#5C2E1F" font-size="10">Civil notarial contract</text>
+  <text x="46" y="330" fill="#5C2E1F" font-size="10">25–30 yrs + renewal option</text>
+  <text x="46" y="346" fill="#5C2E1F" font-size="10">No BPN registration</text>
+  <text x="46" y="362" fill="#2A7A55" font-size="10" font-weight="bold">Best for 1st-time investors</text>
+
+  <rect x="258" y="276" width="215" height="100" fill="white" rx="6" stroke="#C2A973" stroke-width="1"/>
+  <rect x="258" y="276" width="215" height="24" fill="#C2A973" rx="6"/>
+  <rect x="258" y="288" width="215" height="12" fill="#C2A973"/>
+  <text x="365" y="291" text-anchor="middle" fill="white" font-size="11" font-weight="bold">HAK PAKAI (INDIVIDUAL)</text>
+  <text x="274" y="314" fill="#5C2E1F" font-size="10">BPN-registered title</text>
+  <text x="274" y="330" fill="#5C2E1F" font-size="10">Requires KITAS residency permit</text>
+  <text x="274" y="346" fill="#5C2E1F" font-size="10">Minimum IDR 5B (~$300k) value</text>
+  <text x="274" y="362" fill="#C2A973" font-size="10" font-weight="bold">Niche use cases only</text>
+
+  <rect x="486" y="276" width="284" height="100" fill="white" rx="6" stroke="#2A7A55" stroke-width="1"/>
+  <rect x="486" y="276" width="284" height="24" fill="#2A7A55" rx="6"/>
+  <rect x="486" y="288" width="284" height="12" fill="#2A7A55"/>
+  <text x="628" y="291" text-anchor="middle" fill="white" font-size="11" font-weight="bold">HGB VIA PT PMA (FREEHOLD-EQUIV.)</text>
+  <text x="502" y="314" fill="#5C2E1F" font-size="10">BPN-registered, strongest legal standing</text>
+  <text x="502" y="330" fill="#5C2E1F" font-size="10">Paid-up capital: IDR 2.5B (~$155k) from 2025</text>
+  <text x="502" y="346" fill="#5C2E1F" font-size="10">Setup: $2k–$5k · Annual compliance: $500–$1.5k</text>
+  <text x="502" y="362" fill="#2A7A55" font-size="10" font-weight="bold">Multi-property portfolios + 30yr+ holds</text>
+
+  <!-- Sweet spot sell note -->
+  <rect x="30" y="388" width="740" height="36" fill="#E8F4EE" rx="6"/>
+  <text x="400" y="402" text-anchor="middle" fill="#2A7A55" font-size="11" font-weight="bold">LEASEHOLD SWEET SPOT TO SELL: Years 7–10</text>
+  <text x="400" y="418" text-anchor="middle" fill="#5C2E1F" font-size="10">Rental track record established · Substantial lease life remaining · Buyers can verify occupancy data before committing</text>
+
+  <text x="400" y="434" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property · Indonesian property law · BKPM 2025 regulations</text>
+</svg>

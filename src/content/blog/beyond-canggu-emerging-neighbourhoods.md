@@ -12,7 +12,21 @@ And you know what? Investing in Canggu and Uluwatu is definitely not a bad idea.
 
 We are seeing a shift. The developers and investors who built Canggu five years ago are now looking at new postcodes. Here is where they are going.
 
+<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
+  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
+  <ul class="space-y-2 text-sm text-brown">
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>4 emerging areas beating Canggu:</strong> Seseh, Bukit (Ungasan/Melasti), Kedungu, and Sanur. All pass the infrastructure, developer activity, and rental comparable test.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Kedungu is the top long-hold pick:</strong> Nuanu City as anchor catalyst, wide roads already built, and pricing still where Canggu was 7 years ago. Target 2x–3x land value growth.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Seseh captures the "graduated" crowd:</strong> Buyers who have outgrown Canggu's noise but still want proximity to it. Boutique luxury, premium daily rates, strong short-term rental profile.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Sanur is the defensive choice:</strong> Medical tourism, island gateway, family expat demand. Lower volatility, strong year-round occupancy, price has not yet caught up with fundamentals.</span></li>
+    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>The window is narrowing:</strong> Pererenan was "next Canggu" in 2020. Today it is Canggu prices. The investors who waited for more certainty are paying a premium that has already been baked in.</span></li>
+  </ul>
+</div>
+
 ## 1. Seseh
+
+<img src="/images/journal/svg-beyond-canggu.svg" alt="Bali area investment lifecycle 2026 - market maturity timeline infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+
 Think of Seseh as the bougie cousin of Canggu. It sits right on the edge of the action, just north of Pererenan.
 
 In fact, it feels precisely like Pererenan did three years ago. It is quickly becoming the "quiet rich" neighbourhood for digital nomads and expats who want the quality of life without the chaos. You won't find the late-night clubs or the traffic jams here. Leave that to Berawa.
@@ -43,7 +57,6 @@ Kedungu is shaping up to be a high-net-worth area. It feels spacious and premium
 
 **The Investment Play:** Long-term hold. Kedungu is currently where Canggu was 7 years ago. If you are looking for that 2x or 3x land value growth over the next cycle, this is the one to watch.
 
-
 ## 4. Sanur: The Quiet Achiever
 
 Every list of emerging Bali areas should include Sanur, and it's consistently underrated. Traditionally known as a calm, family-oriented beach town on Bali's east coast, Sanur is undergoing a quiet but significant transformation.
@@ -67,7 +80,6 @@ Not every "up and coming" area actually comes up. Here is the framework we use a
 **5. Rental comparables.** Can you find rental data, even limited, for the area? Even a few comparable properties on Airbnb showing strong occupancy is meaningful evidence. No rentals at all means you're too early. A dozen properties averaging 70%+ occupancy means you're still in time.
 
 All four areas above (Seseh, Bukit, Kedungu, and Sanur) pass this framework. Which one is right for your budget and timeline is a conversation worth having.
-
 
 ## What Makes a Bad Emerging Area Investment
 

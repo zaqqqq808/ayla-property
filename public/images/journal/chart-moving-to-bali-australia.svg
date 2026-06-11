@@ -1,0 +1,56 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="400" fill="#F5EDE0" rx="12"/>
+  <rect width="800" height="60" fill="#2A7A55" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">MOVING FROM AUSTRALIA TO BALI: MONTHLY COST COMPARISON (2026)</text>
+
+  <!-- Cost columns -->
+  <text x="250" y="84" text-anchor="middle" fill="#2A7A55" font-size="12" font-weight="bold">BALI LIFESTYLE</text>
+  <text x="600" y="84" text-anchor="middle" fill="#8B7355" font-size="12" font-weight="bold">SYDNEY / MELBOURNE</text>
+
+  <!-- Row headers and values -->
+  <!-- Villa / Rent -->
+  <rect x="30" y="90" width="740" height="32" fill="white" rx="4"/>
+  <text x="40" y="111" fill="#5C2E1F" font-size="11" font-weight="bold">Private villa rental (pool included)</text>
+  <text x="250" y="111" text-anchor="middle" fill="#2A7A55" font-size="13" font-weight="bold">$2,000–$3,000/mo</text>
+  <text x="600" y="111" text-anchor="middle" fill="#8B7355" font-size="13" font-weight="bold">$3,500–$5,500/mo</text>
+
+  <!-- Housekeeper -->
+  <rect x="30" y="126" width="740" height="32" fill="#E8F4EE" rx="4"/>
+  <text x="40" y="147" fill="#5C2E1F" font-size="11" font-weight="bold">Full-time housekeeper</text>
+  <text x="250" y="147" text-anchor="middle" fill="#2A7A55" font-size="13" font-weight="bold">~$250/mo</text>
+  <text x="600" y="147" text-anchor="middle" fill="#8B7355" font-size="13" font-weight="bold">N/A ($3,000–$5,000+ if rare)</text>
+
+  <!-- Healthcare -->
+  <rect x="30" y="162" width="740" height="32" fill="white" rx="4"/>
+  <text x="40" y="183" fill="#5C2E1F" font-size="11" font-weight="bold">Private healthcare / health insurance</text>
+  <text x="250" y="183" text-anchor="middle" fill="#2A7A55" font-size="13" font-weight="bold">$80–$150/mo</text>
+  <text x="600" y="183" text-anchor="middle" fill="#8B7355" font-size="13" font-weight="bold">$350–$700/mo</text>
+
+  <!-- Food & dining -->
+  <rect x="30" y="198" width="740" height="32" fill="#E8F4EE" rx="4"/>
+  <text x="40" y="219" fill="#5C2E1F" font-size="11" font-weight="bold">Food and dining out (daily)</text>
+  <text x="250" y="219" text-anchor="middle" fill="#2A7A55" font-size="13" font-weight="bold">$500–$800/mo</text>
+  <text x="600" y="219" text-anchor="middle" fill="#8B7355" font-size="13" font-weight="bold">$1,500–$3,000/mo</text>
+
+  <!-- Gym/wellness -->
+  <rect x="30" y="234" width="740" height="32" fill="white" rx="4"/>
+  <text x="40" y="255" fill="#5C2E1F" font-size="11" font-weight="bold">World-class gym / wellness</text>
+  <text x="250" y="255" text-anchor="middle" fill="#2A7A55" font-size="13" font-weight="bold">$80–$120/mo</text>
+  <text x="600" y="255" text-anchor="middle" fill="#8B7355" font-size="13" font-weight="bold">$100–$250/mo</text>
+
+  <!-- Total -->
+  <rect x="30" y="272" width="740" height="36" fill="#2A7A55" rx="4"/>
+  <text x="40" y="295" fill="white" font-size="12" font-weight="bold">TOTAL MONTHLY (estimated all-in)</text>
+  <text x="250" y="295" text-anchor="middle" fill="white" font-size="16" font-weight="bold">$2,500–$4,000</text>
+  <text x="600" y="295" text-anchor="middle" fill="#DCD4C4" font-size="16" font-weight="bold">$6,000–$12,000+</text>
+
+  <!-- Visa options -->
+  <rect x="30" y="320" width="740" height="64" fill="white" rx="8" stroke="#C2A973" stroke-width="1.5"/>
+  <text x="40" y="340" fill="#5C2E1F" font-size="11" font-weight="bold">VISA OPTIONS FOR AUSTRALIANS MOVING TO BALI (2026)</text>
+  <line x1="40" y1="346" x2="760" y2="346" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="40" y="364" fill="#5C2E1F" font-size="10">Second Home Visa:  IDR 2B property or bank deposit (~$125k USD)  →  5+5 years legal stay with spouse/dependents</text>
+  <text x="40" y="380" fill="#5C2E1F" font-size="10">Golden Visa:  USD $350,000+ property investment  →  5–10 year visa  ·  Higher tier, still bedding in administratively</text>
+
+  <text x="400" y="396" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property 2026 · Indonesian Immigration Directorate · BIMC Hospital Bali pricing data</text>
+</svg>

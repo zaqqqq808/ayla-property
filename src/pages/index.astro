@@ -2,7 +2,6 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Header from '@/components/Header.astro';
 import Hero from '@/components/Hero.astro';
-import StatsBar from '@/components/StatsBar.astro';
 import WhyBali from '@/components/WhyBali.astro';
 import PropertyCarousel from '@/components/PropertyCarousel.astro';
 import Methodology from '@/components/Methodology.astro';
@@ -18,13 +17,9 @@ import StickyButton from '@/components/StickyButton.astro';
   title="Buy Property in Bali | 15%+ Yields | Ayla Property"
   description="Looking to buy property in Bali? We specialise in Bali property investment, finding villas with 15%+ rental yields for foreign buyers. Free consultation."
 >
-  <Fragment slot="head">
-    <link rel="preload" as="image" href="/images/hero-villa-landscape.webp" fetchpriority="high" />
-  </Fragment>
   <Header />
   <main>
-    <Hero />
-    <StatsBar />
+    <Hero variant="sequence" />
     <WhyBali />
     <PropertyCarousel />
     <Methodology />

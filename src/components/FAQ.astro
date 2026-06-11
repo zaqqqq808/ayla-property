@@ -43,6 +43,10 @@ const {
   faqs    = defaultFaqs,
 } = Astro.props;
 
+const titleHtml = title === 'Common Questions'
+  ? 'Common <span class="grad-text">Questions</span>'
+  : title;
+
 const faqSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -56,29 +60,44 @@ const faqSchema = JSON.stringify({
   }))
 });
 ---
-<section class="bg-cream pt-8 pb-20 lg:pt-12 lg:pb-32 px-6 lg:px-12">
-  <div class="max-w-4xl mx-auto">
-    <div class="text-center mb-16">
-      <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-3">{eyebrow}</p>
-      <h2 class="text-brown text-4xl lg:text-5xl font-display uppercase tracking-wide">
-        {title}
-      </h2>
+<section class="faq">
+  <div class="container">
+    <div class="reveal section-head">
+      <span class="eyebrow">{eyebrow}</span>
+      <h2 set:html={titleHtml} />
     </div>
-
-    <div class="space-y-4">
-      {faqs.map((faq, i) => (
-        <details class="bg-white border border-beige rounded-xl overflow-hidden group" open={i === 0}>
-          <summary class="flex items-center justify-between px-8 py-6 cursor-pointer text-brown font-semibold uppercase tracking-wide text-sm list-none select-none hover:text-olive transition-colors">
-            {faq.q}
-            <span class="text-gold text-xl ml-4 flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
-          </summary>
-          <div class="px-8 pb-6 text-brown/80 leading-relaxed border-t border-beige pt-4">
-            {faq.a}
-          </div>
-        </details>
+    <div class="faq-list reveal">
+      {faqs.map((faq) => (
+        <div class="faq-item glass">
+          <button class="faq-q" aria-expanded="false">{faq.q}<span class="icon" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>{faq.a}</p></div>
+        </div>
       ))}
     </div>
   </div>
 </section>
+
+<script is:inline>
+  // FAQ accordion
+  (function () {
+    document.querySelectorAll('.faq-q').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var item = btn.parentElement;
+        var answer = item.querySelector('.faq-a');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function (o) {
+          o.classList.remove('open');
+          o.querySelector('.faq-a').style.maxHeight = null;
+          o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+</script>
 
 <Fragment set:html={`<script type="application/ld+json">${faqSchema}</script>`} />

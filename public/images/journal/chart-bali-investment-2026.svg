@@ -1,0 +1,79 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="800" height="420" fill="#F5EDE0" rx="12"/>
+  <rect width="800" height="60" fill="#2A7A55" rx="12"/>
+  <rect y="48" width="800" height="12" fill="#2A7A55"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="16" font-weight="bold" letter-spacing="1">IS BALI STILL A GOOD INVESTMENT? THE DATA SAYS YES.</text>
+
+  <!-- Tourism growth chart -->
+  <text x="40" y="84" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">INTERNATIONAL ARRIVALS TO BALI (MILLIONS)</text>
+
+  <!-- Y axis labels -->
+  <text x="32" y="190" text-anchor="end" fill="#8B7355" font-size="9">8M</text>
+  <text x="32" y="165" text-anchor="end" fill="#8B7355" font-size="9">7M</text>
+  <text x="32" y="140" text-anchor="end" fill="#8B7355" font-size="9">6M</text>
+  <text x="32" y="115" text-anchor="end" fill="#8B7355" font-size="9">5M</text>
+  <text x="32" y="90" text-anchor="end" fill="#8B7355" font-size="9">4M</text>
+  <!-- Grid lines -->
+  <line x1="40" y1="190" x2="530" y2="190" stroke="#DCD4C4" stroke-width="0.5"/>
+  <line x1="40" y1="165" x2="530" y2="165" stroke="#DCD4C4" stroke-width="0.5"/>
+  <line x1="40" y1="140" x2="530" y2="140" stroke="#DCD4C4" stroke-width="0.5"/>
+  <line x1="40" y1="115" x2="530" y2="115" stroke="#DCD4C4" stroke-width="0.5"/>
+  <line x1="40" y1="90" x2="530" y2="90" stroke="#DCD4C4" stroke-width="0.5"/>
+
+  <!-- Bars -->
+  <rect x="60" y="127" width="60" height="63" fill="#2A7A55" rx="3" opacity="0.6"/>
+  <text x="90" y="203" text-anchor="middle" fill="#8B7355" font-size="9">2023</text>
+  <text x="90" y="120" text-anchor="middle" fill="#2A7A55" font-size="9" font-weight="bold">5.3M</text>
+
+  <rect x="160" y="115" width="60" height="75" fill="#2A7A55" rx="3" opacity="0.8"/>
+  <text x="190" y="203" text-anchor="middle" fill="#8B7355" font-size="9">2024</text>
+  <text x="190" y="108" text-anchor="middle" fill="#2A7A55" font-size="9" font-weight="bold">6.3M</text>
+
+  <rect x="260" y="101" width="60" height="89" fill="#2A7A55" rx="3"/>
+  <text x="290" y="203" text-anchor="middle" fill="#8B7355" font-size="9">2025P</text>
+  <text x="290" y="94" text-anchor="middle" fill="#2A7A55" font-size="9" font-weight="bold">7.0M</text>
+
+  <rect x="360" y="90" width="60" height="100" fill="#C2A973" rx="3"/>
+  <text x="390" y="203" text-anchor="middle" fill="#8B7355" font-size="9">2026E</text>
+  <text x="390" y="83" text-anchor="middle" fill="#C2A973" font-size="9" font-weight="bold">7.7M+</text>
+
+  <!-- Visitor mix change -->
+  <rect x="555" y="74" width="215" height="140" fill="white" rx="8" stroke="#DCD4C4"/>
+  <text x="662" y="92" text-anchor="middle" fill="#5C2E1F" font-size="10" font-weight="bold">VISITOR PROFILE SHIFT</text>
+  <line x1="570" y1="98" x2="755" y2="98" stroke="#DCD4C4" stroke-width="1"/>
+  <text x="570" y="114" fill="#8B7355" font-size="9">Pre-2019 (package tourists)</text>
+  <rect x="570" y="120" width="180" height="12" fill="#8B7355" rx="2" opacity="0.4"/>
+  <text x="570" y="148" fill="#2A7A55" font-size="9">2024 (high-spend, long-stay)</text>
+  <rect x="570" y="154" width="180" height="12" fill="#2A7A55" rx="2"/>
+  <text x="570" y="180" fill="#5C2E1F" font-size="9">Avg daily villa rates +25–35%</text>
+  <text x="570" y="194" fill="#5C2E1F" font-size="9">since 2021 (demand-led)</text>
+  <text x="570" y="206" fill="#2A7A55" font-size="9" font-weight="bold">Digital Nomad Visa: structural</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="218" x2="760" y2="218" stroke="#DCD4C4" stroke-width="1.5"/>
+
+  <!-- Two strategy boxes -->
+  <text x="40" y="238" fill="#5C2E1F" font-size="11" font-weight="bold" letter-spacing="1">TWO PROVEN INVESTMENT STRATEGIES IN 2026</text>
+
+  <rect x="30" y="246" width="358" height="120" fill="white" rx="8" stroke="#2A7A55" stroke-width="1.5"/>
+  <rect x="30" y="246" width="358" height="26" fill="#2A7A55" rx="8"/>
+  <rect x="30" y="260" width="358" height="12" fill="#2A7A55"/>
+  <text x="209" y="263" text-anchor="middle" fill="white" font-size="12" font-weight="bold">STRATEGY 1: CASH-FLOW ENGINE</text>
+  <text x="209" y="282" text-anchor="middle" fill="#C2A973" font-size="13" font-weight="bold">30-Year Leasehold + Short-Term Rental</text>
+  <text x="50" y="302" fill="#5C2E1F" font-size="11">→ 15%+ annual yield in high-demand areas</text>
+  <text x="50" y="320" fill="#5C2E1F" font-size="11">→ Recoup capital in 5–7 years via rental income</text>
+  <text x="50" y="338" fill="#5C2E1F" font-size="11">→ Sell as a "turnkey cash-flowing business"</text>
+  <text x="50" y="356" fill="#8B7355" font-size="10">Best for: passive income, hands-off investors</text>
+
+  <rect x="412" y="246" width="358" height="120" fill="white" rx="8" stroke="#C2A973" stroke-width="1.5"/>
+  <rect x="412" y="246" width="358" height="26" fill="#C2A973" rx="8"/>
+  <rect x="412" y="260" width="358" height="12" fill="#C2A973"/>
+  <text x="591" y="263" text-anchor="middle" fill="white" font-size="12" font-weight="bold">STRATEGY 2: CAPITAL APPRECIATION</text>
+  <text x="591" y="282" text-anchor="middle" fill="#2A7A55" font-size="13" font-weight="bold">Off-Plan Flip in Emerging Areas</text>
+  <text x="432" y="302" fill="#5C2E1F" font-size="11">→ Buy off-plan at pre-construction discount</text>
+  <text x="432" y="320" fill="#5C2E1F" font-size="11">→ Value increases as build + area develops</text>
+  <text x="432" y="338" fill="#5C2E1F" font-size="11">→ Flip at completion, roll into next project</text>
+  <text x="432" y="356" fill="#8B7355" font-size="10">Best for: Kedungu, Bukit, Sanur entry in 2026</text>
+
+  <text x="400" y="390" text-anchor="middle" fill="#8B7355" font-size="9">Source: Ayla Property analysis 2026 · Ngurah Rai Airport immigration data · Indonesia Digital Nomad Visa statistics</text>
+</svg>
