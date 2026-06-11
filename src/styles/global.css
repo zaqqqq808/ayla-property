@@ -171,7 +171,7 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
 
 /* ============ NAV ============ */
 .nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
+  position:fixed;top:0;left:0;right:0;z-index:1000;
   background:rgba(251,247,236,0.78);
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
   border-bottom:1px solid rgba(122,92,52,0.12);
@@ -211,7 +211,7 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
 
 /* mobile nav */
 .mobile-nav{
-  display:none;position:fixed;top:76px;left:0;right:0;bottom:0;z-index:99;
+  display:none;position:fixed;top:76px;left:0;right:0;bottom:0;z-index:999;
   background:rgba(251,247,236,0.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
   padding:28px 24px;overflow-y:auto;
 }
