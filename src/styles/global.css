@@ -80,7 +80,7 @@
   --font-display:'Playfair Display',Georgia,serif;
   --font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
 }
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:clip}
 body{
   font-family:var(--font-body);
   background:var(--bg-deep);
