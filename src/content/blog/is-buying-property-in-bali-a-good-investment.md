@@ -54,14 +54,14 @@ Bali is not marginally better. It is in a different category. Even at the lower 
 Our data shows a clear pattern: the highest yields come from areas with high tourist footfall and strong short-term rental demand. The lower yields come from lifestyle areas where buyers pay a premium for exclusivity.
 
 **Highest yielding areas (gross, 2026 data):**
-- Canggu: 14.8%, driven by digital nomad demand and year-round occupancy
+- [Canggu](/invest/canggu/): 14.8%, driven by digital nomad demand and year-round occupancy
 - Seminyak: 13.1%, established luxury short-stay market
-- Uluwatu / The Bukit: 12.4%, premium cliffside villas and high nightly rates
+- [Uluwatu / The Bukit](/invest/uluwatu/): 12.4%, premium cliffside villas and high nightly rates
 
 **Strong mid-tier areas:**
 - Ubud: 9.6%, cultural tourism with strong occupancy but lower nightly rates
-- Sanur: 8.9%, family market with longer-stay guests and lower management intensity
-- Kedungu: 11.2%, emerging area where supply is still tight relative to demand
+- [Sanur](/invest/sanur/): 8.9%, family market with longer-stay guests and lower management intensity
+- [Kedungu](/invest/kedungu/): 11.2%, emerging area where supply is still tight relative to demand
 
 **Important caveat:** these are gross yields. Net yields after management fees (typically 15% to 25% of gross), maintenance, and tax run approximately 20% to 30% below gross. A 14.8% gross yield in Canggu translates to roughly 10% to 12% net, which is still exceptional by any global benchmark.
 
@@ -108,7 +108,7 @@ If you invest USD $290,000 in a Canggu villa at 14.8% gross yield, the rough mat
 - **Capital appreciation on the villa:** typically 8% to 15% over the leasehold period in established areas
 - **Net position:** you have returned your full capital from rental income alone, plus retained the remaining 15 to 20 years of leasehold to sell
 
-This is not a speculative play. It is a cash-flow-positive asset from year one, with leasehold resale value on top.
+This is not a speculative play. It is a cash-flow-positive asset from year one, with leasehold resale value on top. If you want to model these numbers against your own budget and target area, our free [Bali ROI calculator](/bali-roi-calculator/) uses the same dataset.
 
 ---
 
@@ -128,7 +128,7 @@ The complete Bali Property Market Report 2026, including area-by-area price brea
   <a href="/guides/bali-developer-report-2026/" class="inline-block bg-olive text-white uppercase tracking-widest text-sm font-semibold px-8 py-4 rounded-full hover:bg-brown transition-colors">View the Full Report</a>
 </div>
 
-If you would like to talk through what these numbers mean for your specific situation, a free 30-minute call with Ayla is the best starting point.
+New to the Bali market? Start with our [complete guide to buying property in Bali as a foreigner](/guides/foreigners-buying-property-bali/). If you would like to talk through what these numbers mean for your specific situation, a free 30-minute call with Ayla is the best starting point.
 
 <div class="not-prose my-6 text-center">
   <a href="https://calendly.com/ayla-teamoperations/30min" class="inline-block border-2 border-olive text-olive uppercase tracking-widest text-sm font-semibold px-8 py-4 rounded-full hover:bg-olive hover:text-white transition-colors">Book a Free Call</a>

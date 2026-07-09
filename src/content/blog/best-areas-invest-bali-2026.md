@@ -29,9 +29,9 @@ So I told them what I am about to tell you.
 
 <img src="/images/journal/svg-best-areas-bali-2026.svg" alt="Top Bali capital appreciation areas 2026 - projected growth infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
-If you have been paying attention to Bali's property scene over the past 18 months, you have probably heard Kedungu mentioned. Some people dismiss it because it is still relatively undeveloped. That is exactly why I like it.
+If you have been paying attention to Bali's property scene over the past 18 months, you have probably heard [Kedungu](/invest/kedungu/) mentioned. Some people dismiss it because it is still relatively undeveloped. That is exactly why I like it.
 
-Kedungu sits on the west coast, north of Seseh, and what immediately stands out when you drive through it are the roads. Wide, well laid out, clearly built with growth in mind. Bali's infrastructure tells you a lot about where money is heading, and the infrastructure in Kedungu is telling a very clear story.
+Kedungu sits on the west coast, north of [Seseh](/invest/seseh/), and what immediately stands out when you drive through it are the roads. Wide, well laid out, clearly built with growth in mind. Bali's infrastructure tells you a lot about where money is heading, and the infrastructure in Kedungu is telling a very clear story.
 
 The wealthy are already moving there. I have seen it firsthand. High-net-worth buyers, developers, and people who have made serious money in Canggu and are now rotating their capital into the next wave. When the money moves first, and the crowds follow, that is when you make the real gains. Kedungu is right in that window right now. It is no longer a secret, but it is not yet saturated. That is the sweet spot.
 
@@ -39,7 +39,7 @@ Surf culture is strong there too, which brings in a reliable, spending demograph
 
 ## Sanur: The Hidden Gem That Most Foreign Investors Completely Overlook
 
-I want to talk about Sanur because I genuinely believe it is one of the most underrated investment locations in Bali right now.
+I want to talk about [Sanur](/invest/sanur/) because I genuinely believe it is one of the most underrated investment locations in Bali right now.
 
 Most foreign buyers skip Sanur because it has a reputation for being quiet. Slower. A bit older. And yes, compared to Canggu it has a different energy. But here is what those investors are missing: Sanur is positioned right by the port. Fast boat access to Nusa Penida, Nusa Lembongan, and the Gilis. That connectivity matters enormously, and as those island destinations continue to grow, Sanur's position as the gateway becomes more valuable, not less.
 
@@ -55,7 +55,7 @@ The amenities have matured considerably over the past few years. You now have pr
 
 Supply constraints are also working in buyers' favour. Clifftop land is finite by definition. There is only so much of it, and the best parcels are going fast. Scarcity plus growing demand is as simple as property investment gets.
 
-For clients who want strong short-term rental income alongside capital appreciation, The Bukit continues to perform well. Premium properties in prime Uluwatu locations consistently achieve high occupancy rates that justify the entry price. This is not a speculative bet. It is a proven market with a very clear upward trajectory.
+For clients who want strong short-term rental income alongside capital appreciation, The Bukit continues to perform well. Premium properties in prime [Uluwatu](/invest/uluwatu/) locations consistently achieve high occupancy rates that justify the entry price. This is not a speculative bet. It is a proven market with a very clear upward trajectory.
 
 ## Cemagi: The One I Am Most Excited About Right Now
 
@@ -65,7 +65,7 @@ Cemagi sits just north of Seseh, on the west coast. Right now, it is genuinely c
 
 But here is what changes everything: the shortcuts.
 
-Once the new road connections open up, Cemagi will have fast, direct access to both Pererenan and Canggu. Those two areas are among the most in demand on the island. Right now, Cemagi feels distant. In a couple of years, it will feel like it is right next door to one of the most popular corridors in Bali.
+Once the new road connections open up, Cemagi will have fast, direct access to both [Pererenan](/invest/pererenan/) and [Canggu](/invest/canggu/). Those two areas are among the most in demand on the island. Right now, Cemagi feels distant. In a couple of years, it will feel like it is right next door to one of the most popular corridors in Bali.
 
 I have seen this play out before. An area looks remote, prices stay low, then infrastructure closes the gap, and the market reprices almost overnight. The investors who got in early are suddenly sitting on significant gains while the latecomers pay a premium they did not have to.
 
@@ -77,7 +77,7 @@ After walking through the four areas, the couple asked me the second question I 
 
 Here is the strategy I laid out for them, and it is the same one that has repeatedly worked for foreign investors who come to Bali with capital appreciation as their goal.
 
-Target areas like the ones above, where you can realistically get 15 to 20% annual returns on a well-located, well-managed property. Make absolutely sure you are getting a leasehold of at least 28 years, ideally longer with an extension option already written into the contract. You do not want to be holding a short lease when you go to sell, because buyers will discount it hard.
+Target areas like the ones above, where you can realistically get 15 to 20% annual returns on a well-located, well-managed property. You can stress-test those numbers against your own budget with our free [Bali ROI calculator](/bali-roi-calculator/). Make absolutely sure you are getting a leasehold of at least 28 years, ideally longer with an extension option already written into the contract. You do not want to be holding a short lease when you go to sell, because buyers will discount it hard.
 
 Then, after three years, you sell.
 

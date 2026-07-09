@@ -58,7 +58,7 @@ Every lease agreement my clients sign goes through our independent notary for ex
 
 This is where it gets interesting. The rental income a villa generates is identical regardless of whether you hold it on a leasehold or freehold. A guest on Airbnb does not pay more because you own the land title.
 
-But the entry price is completely different. A leasehold property in a prime Canggu location will typically cost 20 to 40 percent less than an equivalent freehold title. So your yield on invested capital is substantially higher on leasehold.
+But the entry price is completely different. A leasehold property in a prime [Canggu](/invest/canggu/) location will typically cost 20 to 40 percent less than an equivalent freehold title. So your yield on invested capital is substantially higher on leasehold.
 
 To put numbers on it: if a freehold villa is priced at USD $500,000 and generates USD $50,000 per year in net income, that is a 10 percent yield. The same villa on leasehold at USD $300,000 generating the same income is a 16 percent yield. That is the same villa. That is the argument for leasehold in one paragraph.
 
@@ -88,7 +88,7 @@ If you are buying your first Bali property on a 25-year leasehold as an investme
 
 I get this every call. The honest answer is that the people asking me this question in 2021 who decided to wait are now looking at prices that have moved 30 to 40 percent in the areas that were emerging then.
 
-Based on our analysis of 511 active listings across 80 developers right now, the median entry price sits at USD $290,000 with average gross yields of 10.6 percent. The areas with the strongest appreciation potential, places like Kedungu where infrastructure is moving fast, are still at early pricing. That window does not stay open indefinitely.
+Based on our analysis of 511 active listings across 80 developers right now, the median entry price sits at USD $290,000 with average gross yields of 10.6 percent. The areas with the strongest appreciation potential, places like [Kedungu](/invest/kedungu/) where infrastructure is moving fast, are still at early pricing. That window does not stay open indefinitely.
 
 If you want to see the full market data before making any decisions, the [Bali Developer Report 2026](/guides/bali-developer-report-2026/) is free to download. And if you want to have this conversation with me directly, a [free 30-minute call](https://calendly.com/ayla-teamoperations/30min) is the fastest way to work out whether buying in Bali makes sense for your specific situation.
 

@@ -34,7 +34,7 @@ Here is where it gets interesting. If you are going to be in Bali for a decade, 
 
 Let us say you lease a villa in Canggu for $2,500 per month. Over 5 years that is $150,000 paid in rent, with zero asset at the end. No equity, no income, nothing.
 
-Alternatively, you buy a leasehold villa for $350,000. You live in it part of the year and put it on the short-term rental market for the rest. In Canggu, gross yields average 14.8% on our current listings data. On a $350K villa, that is $51,800 per year in gross rental income if the property is managed commercially while you are not using it.
+Alternatively, you buy a leasehold villa for $350,000. You live in it part of the year and put it on the short-term rental market for the rest. In [Canggu](/invest/canggu/), gross yields average 14.8% on our current listings data. Quieter areas popular with retirees, like [Sanur](/invest/sanur/) on the east coast, trade a little yield for lower volatility and a more residential pace. On a $350K villa, that is $51,800 per year in gross rental income if the property is managed commercially while you are not using it.
 
 Even running the property conservatively, occupying it yourself for 4 months and renting for 8, you are looking at roughly $34,000 per year in rental income on 67% of peak occupancy. That income offsets or entirely covers your cost of living in Bali. You are effectively living here for free while your asset holds its value.
 

@@ -42,9 +42,9 @@ For foreign investors, the leasehold model is the absolute sweet spot for maximi
 
 If you are looking for aggressive capital growth rather than passive income, the off-plan flipping strategy in Bali's emerging micro-markets is unmatched.
 While established areas like Canggu and Seminyak offer stability, the massive capital appreciation opportunities have moved to high-growth zones:
-- **Kedungu:** The next frontier of the West Coast. It offers the lush, peaceful rice-field charm that Canggu had 10 years ago, but with modern infrastructure quickly catching up.
+- **[Kedungu](/invest/kedungu/):** The next frontier of the West Coast. It offers the lush, peaceful rice-field charm that Canggu had 10 years ago, but with modern infrastructure quickly catching up.
 - **The Bukit (Uluwatu & Bingin):** The luxury capital of Bali. High-end cliffside developments and dramatic ocean views command premium prices, and land scarcity is driving valuations skyward.
-- **Sanur:** Traditionally a sleepy family destination, Sanur is undergoing a massive revitalisation. With the new international hospital and harbour upgrades, it has become a highly sought-after defensive investment zone with immense upside.
+- **[Sanur](/invest/sanur/):** Traditionally a sleepy family destination, Sanur is undergoing a massive revitalisation. With the new international hospital and harbour upgrades, it has become a highly sought-after defensive investment zone with immense upside.
 
 **The Playbook:**
 - **Buy Off-Plan:** Secure an unbuilt villa at a heavily discounted pre-construction price in Kedungu, the Bukit, or Sanur.
@@ -88,7 +88,7 @@ A common question we hear is: "Have I missed the window?"
 
 The honest answer is that the window for buying any property in Bali at 2018 prices has passed. But that is true of every market that performs well: early buyers got in cheaper.
 
-What matters is whether today's entry price still generates a return that justifies the investment. At 15%+ gross yields, strong capital appreciation trajectories in emerging areas, and a tourism economy that is structurally growing, the answer is yes. Today's prices still work.
+What matters is whether today's entry price still generates a return that justifies the investment. At 15%+ gross yields, strong capital appreciation trajectories in emerging areas, and a tourism economy that is structurally growing, the answer is yes. Today's prices still work. You can test that claim against your own budget with our free [Bali ROI calculator](/bali-roi-calculator/).
 
 The investors who are asking "have I missed it?" will ask the same question in three years, looking back at today's prices wishing they had moved. The ones who act now are the ones those future investors will envy.
 

@@ -4,6 +4,7 @@ description: "We analysed 511 active listings across 80 Bali developers. Here is
 publishDate: 2026-06-02
 image: /images/journal/buying-property-bali-2026.jpg
 tags: ["market-analysis", "buyers-guide", "2026"]
+draft: true
 ---
 
 I spend a lot of time listening to people describe the Bali property market based on what they read two years ago. The blogs talking about hidden gem prices and undiscovered yields. The forums with advice from investors who bought in 2019. The general sense that Bali is still a frontier market where you can pick up something amazing for $150,000 if you just know where to look.

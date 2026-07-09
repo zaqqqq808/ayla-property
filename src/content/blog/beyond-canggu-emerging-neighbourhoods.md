@@ -27,7 +27,7 @@ We are seeing a shift. The developers and investors who built Canggu five years 
 
 <img src="/images/journal/svg-beyond-canggu.svg" alt="Bali area investment lifecycle 2026 - market maturity timeline infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
-Think of Seseh as the bougie cousin of Canggu. It sits right on the edge of the action, just north of Pererenan.
+Think of [Seseh](/invest/seseh/) as the bougie cousin of Canggu. It sits right on the edge of the action, just north of [Pererenan](/invest/pererenan/).
 
 In fact, it feels precisely like Pererenan did three years ago. It is quickly becoming the "quiet rich" neighbourhood for digital nomads and expats who want the quality of life without the chaos. You won't find the late-night clubs or the traffic jams here. Leave that to Berawa.
 
@@ -36,7 +36,7 @@ Instead, you find a peaceful, green belt of rice paddies meeting the ocean. But 
 **The Investment Play:** For the investor who wants premium daily rates. Seseh is attracting the crowd that has "graduated" from Canggu: people with money who want luxury but value their sleep and privacy.
 
 ## 2. Bukit (Ungasan & Melasti)
-When people say "The Bukit," they often mean the expensive cliffs of Uluwatu or Bingin. But if you look slightly West of Uluwatu, towards Ungasan and the Melasti coastline, and you find a massive opportunity.
+When people say "The Bukit," they often mean the expensive cliffs of [Uluwatu](/invest/uluwatu/) or Bingin. But if you look slightly West of Uluwatu, towards Ungasan and the Melasti coastline, and you find a massive opportunity.
 
 This area is strategic gold. You are closer to the airport than Uluwatu, minutes from **Savaya** (the biggest club in Bali), and near the pristine beaches of Nusa Dua and Melasti.
 
@@ -47,7 +47,7 @@ The land here is still significantly cheaper than Bingin, yet the infrastructure
 **The Investment Play:** Capital appreciation. You are buying land or villas here at a discount compared to the cliff-fronts, but you are capturing the spillover demand from the Savaya/Beach Club crowd.
 
 ## 3. Kedungu 
-If you keep driving north past Seseh, you hit Kedungu. And the first thing you notice? The roads.
+If you keep driving north past Seseh, you hit [Kedungu](/invest/kedungu/). And the first thing you notice? The roads.
 
 Kedungu already boasts wider, nicer roads than Pererenan or Canggu, a rare luxury in Bali. It has great surf, quiet streets, and a very distinct "up-and-coming" energy.
 
@@ -59,7 +59,7 @@ Kedungu is shaping up to be a high-net-worth area. It feels spacious and premium
 
 ## 4. Sanur: The Quiet Achiever
 
-Every list of emerging Bali areas should include Sanur, and it's consistently underrated. Traditionally known as a calm, family-oriented beach town on Bali's east coast, Sanur is undergoing a quiet but significant transformation.
+Every list of emerging Bali areas should include [Sanur](/invest/sanur/), and it's consistently underrated. Traditionally known as a calm, family-oriented beach town on Bali's east coast, Sanur is undergoing a quiet but significant transformation.
 
 The opening of the Bali International Hospital, one of Southeast Asia's most advanced medical facilities, has repositioned Sanur as a destination for medical tourism and longer-stay visitors who need quality healthcare nearby. The upgraded harbour has increased connectivity to Nusa Penida and Lombok. And a growing number of boutique hotels and internationally-minded restaurants are shifting the demographic upwards.
 

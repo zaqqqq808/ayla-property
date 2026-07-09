@@ -31,7 +31,7 @@ Here is why the smartest money in Bali is often flowing into Leasehold.
 
 <img src="/images/journal/svg-why-investors-prefer-leasehold.svg" alt="Freehold trap Bali same villa leasehold vs freehold ROI comparison infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
-The math is simple. A Freehold property in a prime area like Pererenan might cost you double or triple the price of a Leasehold property on the exact same street.
+The math is simple. A Freehold property in a prime area like [Pererenan](/invest/pererenan/) might cost you double or triple the price of a Leasehold property on the exact same street.
 
 However, the **rental income** you generate is precisely the same. A tourist on Airbnb doesn't care if you own the land forever or for 25 years; they pay the same nightly rate.
 
@@ -43,7 +43,7 @@ By insisting on Freehold, you are often killing your cash flow efficiency. Lease
 ## 2. The "Moving Target" Market
 The landscape of Bali changes fast. It is booming, and the "hot spots" shift rapidly.
 
-Ten years ago, nobody was investing in Canggu. Five years ago, nobody was looking at Seseh. High-yield areas right now might not be the "place to be" in 10 or 15 years.
+Ten years ago, nobody was investing in Canggu. Five years ago, nobody was looking at [Seseh](/invest/seseh/). High-yield areas right now might not be the "place to be" in 10 or 15 years.
 
 Freehold marries you to a location forever. Leasehold gives you agility. The strategy for many savvy investors is to enter a high-growth area, ride the wave of popularity for 5-7 years, and then exit. You aren't tied down to a location that might lose its "cool factor" in a decade.
 
@@ -66,7 +66,7 @@ The play works like this:
 - Enjoy capital appreciation as land values in the area spike.
 - **Sell the remaining lease.**
 
-Even with fewer years left on the lease, the rise in daily land prices often means you can sell for a profit. You then take that capital and roll it into the *next* emerging area (like Kedungu or the West).
+Even with fewer years left on the lease, the rise in daily land prices often means you can sell for a profit. You then take that capital and roll it into the *next* emerging area (like [Kedungu](/invest/kedungu/) or the West).
 
 ## What a Good Lease Agreement Actually Looks Like
 

@@ -106,6 +106,16 @@
       "permanent": true
     },
     {
+      "source": "/journal/buying-property-in-bali-guide",
+      "destination": "/journal/buying-property-in-bali-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/journal/buying-property-in-bali-guide/",
+      "destination": "/journal/buying-property-in-bali-2026-guide/",
+      "permanent": true
+    },
+    {
       "source": "/alpha-villas-mare-nost",
       "destination": "/",
       "permanent": true

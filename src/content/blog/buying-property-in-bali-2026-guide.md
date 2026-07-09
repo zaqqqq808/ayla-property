@@ -29,7 +29,7 @@ The median entry price across our active listings is $290,000. That is the midpo
 
 Average gross yield across the market is 10.6%. That is meaningfully higher than most comparable markets globally: Australian residential yields are running at 3 to 4%, UK yields are similar, Dubai is at 6 to 7%, and Lisbon is down to 4 to 5%. Bali's yield premium exists because the tourism demand that drives short-term rental income remains strong and the property prices have not yet fully caught up with that income potential.
 
-The top end of the yield range is 15% or above in Canggu, Pererenan, and parts of East Bali where entry prices are still relatively contained. The average masks a significant spread between well-positioned properties and poorly managed ones.
+The top end of the yield range is 15% or above in [Canggu](/invest/canggu/), [Pererenan](/invest/pererenan/), and parts of East Bali where entry prices are still relatively contained. The average masks a significant spread between well-positioned properties and poorly managed ones.
 
 ## Why 2026 Is Still a Reasonable Entry Point
 
@@ -48,12 +48,12 @@ The market is not uniform and pretending it is will cost you money. Here is wher
 | Seminyak | $420,000 | 13.1% | Mature luxury market, premium guests, reliable cash flow |
 | Canggu | $380,000 | 14.8% | Highest yield, strongest demand, digital nomad hub |
 | Ubud | $290,000 | 9.6% | Cultural tourism, longer-stay guests, lower management intensity |
-| Kedungu | $245,000 | 11.2% | Emerging west coast, most new developer launches in 2026 |
+| [Kedungu](/invest/kedungu/) | $245,000 | 11.2% | Emerging west coast, most new developer launches in 2026 |
 | East Bali | $165,000 | 7.2% | Lowest entry, diving and eco tourism, yield depends heavily on operator |
 
 *Source: Ayla Property 2026 dataset, 511 active listings across 80 developers and 15 areas. Yields are gross projections.*
 
-A few things worth knowing about this table. Canggu delivering 14.8% at a $380,000 entry is a function of extremely high short-term rental demand and year-round occupancy. Kedungu's 11.2% is an early-adopter figure that reflects constrained supply, not developed rental infrastructure, so it is for investors who are comfortable with a 12 to 18 month ramp-up period. East Bali yields vary more than anywhere else on the island and depend heavily on the quality of the management operator.
+A few things worth knowing about this table (you can model any of these scenarios with our [Bali ROI calculator](/bali-roi-calculator/)). Canggu delivering 14.8% at a $380,000 entry is a function of extremely high short-term rental demand and year-round occupancy. Kedungu's 11.2% is an early-adopter figure that reflects constrained supply, not developed rental infrastructure, so it is for investors who are comfortable with a 12 to 18 month ramp-up period. East Bali yields vary more than anywhere else on the island and depend heavily on the quality of the management operator.
 
 ## The Buying Process in Plain Terms
 

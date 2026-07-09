@@ -123,7 +123,7 @@ For those who want the numbers summarised cleanly:
 | Estimated completion value | $180,000–$190,000 |
 | Immediate equity on completion | ~$50,000 |
 
-The payback period is particularly important. When a property returns your full initial investment within 7 years, everything after that is pure profit, and you still own the asset with years of lease remaining.
+The payback period is particularly important. When a property returns your full initial investment within 7 years, everything after that is pure profit, and you still own the asset with years of lease remaining. You can model payback periods like this for any budget with our free [Bali ROI calculator](/bali-roi-calculator/).
 
 ## Who This Strategy Works For
 

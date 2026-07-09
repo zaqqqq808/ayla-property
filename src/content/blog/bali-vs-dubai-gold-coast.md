@@ -70,7 +70,7 @@ The Gold Coast is often cited as a high-yield Australian alternative. And to be 
 
 Short-term rental regulations in Queensland have tightened significantly. Council restrictions, body corporate rules, and the introduction of licensing requirements for Airbnb properties have introduced friction that simply doesn't exist in Bali. Property taxes, land taxes, and capital gains tax eat further into returns.
 
-Net yields on Gold Coast investment properties typically land between **3.5% and 5.5%** after costs. Compare that to Bali's 10–14% net and the conversation becomes short.
+Net yields on Gold Coast investment properties typically land between **3.5% and 5.5%** after costs. Compare that to Bali's 10–14% net and the conversation becomes short. If you want to see what those Bali numbers look like on your budget, run them through our free [Bali ROI calculator](/bali-roi-calculator/).
 
 ## Currency & Exchange Rate Considerations
 

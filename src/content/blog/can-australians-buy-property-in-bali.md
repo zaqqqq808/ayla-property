@@ -65,7 +65,7 @@ Based on our 2026 analysis of 511 active listings across 80 developers and 15 Ba
 - 25 to 30 year leasehold
 - Fully furnished and rental-ready
 
-Prime areas like Canggu and Seminyak command higher entry points (USD $350,000 to $600,000+), while emerging areas like Kedungu and East Bali offer strong opportunities from USD $180,000.
+Prime areas like [Canggu](/invest/canggu/) and Seminyak command higher entry points (USD $350,000 to $600,000+), while emerging areas like [Kedungu](/invest/kedungu/) and East Bali offer strong opportunities from USD $180,000.
 
 ---
 
@@ -73,7 +73,7 @@ Prime areas like Canggu and Seminyak command higher entry points (USD $350,000 t
 
 Rental yields across the island average **10.6% per annum** based on our 2026 dataset, with well-managed villas in high-demand areas achieving 15%+ consistently. Compare this to Sydney or Melbourne where gross yields on residential property typically sit between 3% and 4%.
 
-The investment case for Bali is compelling precisely because of this yield gap. An AUD $450,000 villa in Bali generating 12% gross yield returns AUD $54,000 per year. The same capital in a Sydney apartment might generate AUD $16,000.
+The investment case for Bali is compelling precisely because of this yield gap. An AUD $450,000 villa in Bali generating 12% gross yield returns AUD $54,000 per year. The same capital in a Sydney apartment might generate AUD $16,000. You can run this comparison for your own budget with our free [Bali ROI calculator](/bali-roi-calculator/).
 
 ---
 
