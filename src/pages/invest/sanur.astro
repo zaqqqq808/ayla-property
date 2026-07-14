@@ -12,6 +12,7 @@ import Team from '@/components/Team.astro';
 import Journal from '@/components/Journal.astro';
 import FAQ from '@/components/FAQ.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
+import AreaLinks from '@/components/AreaLinks.astro';
 import Footer from '@/components/Footer.astro';
 import StickyButton from '@/components/StickyButton.astro';
 
@@ -91,7 +92,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 <BaseLayout
-  title="Invest in Sanur, Bali | 8–12% Yields | Stable Income | Ayla Property"
+  title="Sanur Property Investment | 8–12% Yields, Stable Income | Ayla Property"
   description="Buy a villa in Sanur, Bali's most stable investment area. Lower entry than Canggu, 8–12% reliable yields, year-round expat and medical tourism demand. Free consultation."
   ogType="website"
   ogImage="/og-image.jpg"
@@ -153,6 +154,17 @@ const breadcrumbSchema = JSON.stringify({
       eyebrow="Sanur Property FAQ"
       title="Sanur Investment Questions Answered"
       faqs={sanurFaqs}
+    />
+
+    <AreaLinks
+      links={[
+        { href: '/invest/canggu/', label: 'Canggu Property Investment', note: 'Higher yields, higher intensity, 15–20%' },
+        { href: '/invest/uluwatu/', label: 'Uluwatu Property Investment', note: 'Premium clifftop villas, 15–18% yields' },
+        { href: '/invest/kedungu/', label: 'Kedungu Property Investment', note: 'Early-mover pricing on the west coast' },
+        { href: '/bali-roi-calculator/', label: 'Bali ROI Calculator', note: 'Model your Sanur villa returns' },
+        { href: '/journal/best-areas-invest-bali-2026/', label: 'Best Areas to Invest in Bali 2026', note: 'Why Sanur is the defensive pick' },
+        { href: '/guides/foreigners-buying-property-bali/', label: 'Foreigners Buying Guide', note: 'The legal process step by step' },
+      ]}
     />
 
     <ContactCTA />

@@ -1,0 +1,27 @@
+---
+interface Link {
+  href: string;
+  label: string;
+  note?: string;
+}
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  links: Link[];
+}
+const { eyebrow = 'Keep Exploring', title = 'Compare Bali Investment Areas', links } = Astro.props;
+---
+<section class="bg-beige/40 py-16 px-6 lg:px-12">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="text-gold-dark uppercase tracking-widest text-sm font-semibold mb-4">{eyebrow}</p>
+    <h2 class="text-brown text-3xl lg:text-4xl font-display uppercase tracking-wide mb-10">{title}</h2>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {links.map((l) => (
+        <a href={l.href} class="block rounded-lg border border-gold/40 bg-white px-6 py-5 text-left hover:border-gold transition-colors">
+          <span class="block font-semibold text-brown">{l.label}</span>
+          {l.note && <span class="mt-1 block text-sm text-brown/70">{l.note}</span>}
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

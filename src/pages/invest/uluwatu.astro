@@ -12,6 +12,7 @@ import Team from '@/components/Team.astro';
 import Journal from '@/components/Journal.astro';
 import FAQ from '@/components/FAQ.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
+import AreaLinks from '@/components/AreaLinks.astro';
 import Footer from '@/components/Footer.astro';
 import StickyButton from '@/components/StickyButton.astro';
 
@@ -88,7 +89,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 <BaseLayout
-  title="Invest in Uluwatu, Bali | 15–18% Yields | Ayla Property"
+  title="Uluwatu Property Investment | Villas with 15–18% Yields | Ayla Property"
   description="Buy a villa in Uluwatu, Bali's premium clifftop investment area. Dramatic ocean views, 15–18% rental yields, and scarce land supply. Free consultation with Ayla Property."
   ogType="website"
   ogImage="/og-uluwatu.jpg"
@@ -146,6 +147,17 @@ const breadcrumbSchema = JSON.stringify({
       eyebrow="Uluwatu Property FAQ"
       title="Uluwatu Questions Answered"
       faqs={uluwatuFaqs}
+    />
+
+    <AreaLinks
+      links={[
+        { href: '/invest/canggu/', label: 'Canggu Property Investment', note: "Bali's most liquid villa market, 15–20% yields" },
+        { href: '/invest/sanur/', label: 'Sanur Property Investment', note: 'The stable, defensive pick on the east coast' },
+        { href: '/invest/seseh/', label: 'Seseh Villa Investment', note: 'Premium boutique market on the west coast' },
+        { href: '/bali-roi-calculator/', label: 'Bali ROI Calculator', note: 'Model your Uluwatu villa returns' },
+        { href: '/journal/best-areas-invest-bali-2026/', label: 'Best Areas to Invest in Bali 2026', note: 'Where our clients are buying now' },
+        { href: '/guides/foreigners-buying-property-bali/', label: 'Foreigners Buying Guide', note: 'The legal process step by step' },
+      ]}
     />
 
     <ContactCTA />

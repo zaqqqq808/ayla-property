@@ -111,6 +111,36 @@
       "permanent": true
     },
     {
+      "source": "/ananti-apt",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ananti-apt/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-real-estate-investment-roi-comparison-2026",
+      "destination": "/journal/bali-vs-dubai-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-real-estate-investment-roi-comparison-2026/",
+      "destination": "/journal/bali-vs-dubai-gold-coast/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-leasehold-vs-freehold-investment-roi",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-leasehold-vs-freehold-investment-roi/",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
       "source": "/journal/buying-property-in-bali-guide/",
       "destination": "/journal/buying-property-in-bali-2026-guide/",
       "permanent": true

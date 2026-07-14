@@ -12,6 +12,7 @@ import Team from '@/components/Team.astro';
 import Journal from '@/components/Journal.astro';
 import FAQ from '@/components/FAQ.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
+import AreaLinks from '@/components/AreaLinks.astro';
 import Footer from '@/components/Footer.astro';
 import StickyButton from '@/components/StickyButton.astro';
 
@@ -95,7 +96,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 <BaseLayout
-  title="Invest in Kedungu, Bali | 11–15% Yields | Early-Mover Opportunity | Ayla Property"
+  title="Kedungu Property Investment | 11–15% Yields, Early-Mover Pricing | Ayla Property"
   description="Kedungu is where Canggu was 7 years ago. Early-mover entry prices, 11–15% gross yields, and Nuanu City as a demand catalyst. Free investment consultation with Ayla."
   ogType="website"
   ogImage="/og-image.jpg"
@@ -155,6 +156,17 @@ const breadcrumbSchema = JSON.stringify({
       eyebrow="Kedungu Property FAQ"
       title="Kedungu Investment Questions Answered"
       faqs={kedunguFaqs}
+    />
+
+    <AreaLinks
+      links={[
+        { href: '/invest/seseh/', label: 'Seseh Villa Investment', note: 'The premium boutique market to the south' },
+        { href: '/invest/canggu/', label: 'Canggu Property Investment', note: 'What Kedungu is on track to become' },
+        { href: '/invest/pererenan/', label: 'Pererenan Property Investment', note: 'The proven middle ground, 12–16% yields' },
+        { href: '/bali-roi-calculator/', label: 'Bali ROI Calculator', note: 'Model your Kedungu villa returns' },
+        { href: '/journal/beyond-canggu-emerging-neighbourhoods/', label: 'Beyond Canggu: Emerging Areas', note: 'Why smart money is moving to Kedungu' },
+        { href: '/guides/foreigners-buying-property-bali/', label: 'Foreigners Buying Guide', note: 'The legal process step by step' },
+      ]}
     />
 
     <ContactCTA />

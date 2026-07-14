@@ -12,6 +12,7 @@ import Team from '@/components/Team.astro';
 import Journal from '@/components/Journal.astro';
 import FAQ from '@/components/FAQ.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
+import AreaLinks from '@/components/AreaLinks.astro';
 import Footer from '@/components/Footer.astro';
 import StickyButton from '@/components/StickyButton.astro';
 
@@ -94,7 +95,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 <BaseLayout
-  title="Invest in Seseh, Bali | 13–17% Yields | Premium Villa Investment | Ayla Property"
+  title="Seseh Property Investment | Premium Villas, 13–17% Yields | Ayla Property"
   description="Seseh is Bali's new premium investment area. Big money is moving in early. 13–17% gross yields, rapid land appreciation, and a high-spending guest profile. Free investment consultation."
   ogType="website"
   ogImage="/og-image.jpg"
@@ -157,6 +158,17 @@ const breadcrumbSchema = JSON.stringify({
       eyebrow="Seseh Property FAQ"
       title="Seseh Investment Questions Answered"
       faqs={seshFaqs}
+    />
+
+    <AreaLinks
+      links={[
+        { href: '/invest/pererenan/', label: 'Pererenan Property Investment', note: 'The established neighbour, 12–16% yields' },
+        { href: '/invest/canggu/', label: 'Canggu Property Investment', note: "Bali's most liquid villa market" },
+        { href: '/invest/kedungu/', label: 'Kedungu Property Investment', note: 'The next emerging area up the coast' },
+        { href: '/bali-roi-calculator/', label: 'Bali ROI Calculator', note: 'Model your Seseh villa returns' },
+        { href: '/journal/beyond-canggu-emerging-neighbourhoods/', label: 'Beyond Canggu: Emerging Areas', note: 'Why smart money is moving to Seseh' },
+        { href: '/guides/foreigners-buying-property-bali/', label: 'Foreigners Buying Guide', note: 'The legal process step by step' },
+      ]}
     />
 
     <ContactCTA />

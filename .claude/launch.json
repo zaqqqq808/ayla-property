@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ayla-dev",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "npx astro dev --port ${PORT:-4323}"],
+      "autoPort": true,
+      "port": 4323
+    }
+  ]
+}
