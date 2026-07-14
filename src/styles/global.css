@@ -80,13 +80,14 @@
   --font-display:'Playfair Display',Georgia,serif;
   --font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
 }
-html{scroll-behavior:smooth;overflow-x:clip}
+html{scroll-behavior:smooth;overscroll-behavior-x:none}
 body{
   font-family:var(--font-body);
   background:var(--bg-deep);
   color:var(--text);
   line-height:1.65;
   overflow-x:hidden;
+  overscroll-behavior-x:none;
   -webkit-font-smoothing:antialiased;
 }
 ::selection{background:rgba(180,80,42,0.28);color:var(--text)}
