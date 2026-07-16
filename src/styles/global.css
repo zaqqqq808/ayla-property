@@ -126,6 +126,7 @@ h3{font-size:1.3rem}
 .hero .grad-text{background:var(--grad-hero);-webkit-background-clip:text;background-clip:text}
 @keyframes shimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .section-sub{color:var(--text-muted);font-size:1.08rem;max-width:640px}
+.method-intro{color:var(--text);font-size:1.18rem;max-width:680px;margin:12px auto 6px;line-height:1.6;text-align:center}
 .section-head{text-align:center}
 .section-head .eyebrow{justify-content:center}
 .section-head .section-sub{margin-left:auto;margin-right:auto}
