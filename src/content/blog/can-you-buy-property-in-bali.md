@@ -111,8 +111,6 @@ box-shadow:0 14px 32px -14px rgba(42,122,85,.45)}
 box-shadow:0 9px 22px -9px rgba(92,46,31,.55)}
 .bfc-back:hover:before{transform:translateX(-3px)}
 .bfc-btn:hover{transform:translateY(-2px)}}
-@media(min-width:1000px){
-.bfc{width:min(1040px,calc(100vw - 6rem));margin-left:calc(50% - min(520px,calc(50vw - 3rem)))}}
 @media(max-width:640px){
 .bfc{margin:2.25rem 0}
 .bfc-shell{padding:22px 16px 20px;border-radius:16px}
