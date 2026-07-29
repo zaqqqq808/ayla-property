@@ -1,14 +1,11 @@
 ---
 title: "Can Foreigners Buy Property in Bali? Interactive Legal Guide 2026"
-description: "Yes, and you can lease land or a villa on nothing but a passport. Answer four questions in our interactive flowchart to see which ownership structure applies to you, the visa you need, and the minimum values involved."
+description: "Yes, and a leasehold needs nothing but a passport. Answer four questions to see which ownership structure applies to you, the visa you need, and what it costs."
 publishDate: 2026-07-29
 image: /images/journal/can-you-buy-property-in-bali.jpg
+hideHeroImage: true
 tags: ["legal", "leasehold", "freehold", "kitas", "investment"]
 ---
-
-Yes, foreigners can buy property in Bali. What you cannot do, under any structure, is hold freehold land in your own name. What surprises most people is that a leasehold on land or a villa needs nothing more than a valid passport and a tourist stamp.
-
-Which route applies to you depends on four things. Work through them below.
 
 <style>
 .bfc{--bfc-brown:#5C2E1F;--bfc-olive:#2A7A55;--bfc-gold:#C2A973;--bfc-cream:#F5EDE0;--bfc-ink:#3A2318;
