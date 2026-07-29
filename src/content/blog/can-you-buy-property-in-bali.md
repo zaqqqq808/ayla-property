@@ -1,16 +1,14 @@
 ---
-title: "Can You Actually Buy Property in Bali? An Interactive Guide to Every Legal Route"
-description: "Foreigners can lease land and hold apartments in Bali with nothing more than a passport. Answer four questions and this interactive flowchart shows exactly which ownership structure applies to you, what visa you need, and what it costs."
+title: "Can Foreigners Buy Property in Bali? Interactive Legal Guide 2026"
+description: "Yes, and you can lease land or a villa on nothing but a passport. Answer four questions in our interactive flowchart to see which ownership structure applies to you, the visa you need, and the minimum values involved."
 publishDate: 2026-07-29
 image: /images/journal/can-you-buy-property-in-bali.jpg
 tags: ["legal", "leasehold", "freehold", "kitas", "investment"]
 ---
 
-Most people arrive at this question with one of two wrong assumptions. Either they believe foreigners cannot touch Bali property at all, or they believe they can walk in and buy freehold like they would at home. Both are wrong, and the gap between them costs people money.
+Yes, foreigners can buy property in Bali. What you cannot do, under any structure, is hold freehold land in your own name. What surprises most people is that a leasehold on land or a villa needs nothing more than a valid passport and a tourist stamp.
 
-The truth sits in the middle and it is more generous than most expect. You can sign a leasehold on land or a villa with nothing more than a valid passport and a tourist visa. No residency permit, no company, no Indonesian partner. What you cannot do, ever, under any structure, is hold freehold title in your own name as a foreign national.
-
-Everything else depends on four things: what you are buying, your citizenship status, your visa, and whether you plan to rent it out. Work through the flowchart below and the reference panel underneath will update as you go.
+Which route applies to you depends on four things. Work through them below.
 
 <style>
 .bfc{--bfc-brown:#5C2E1F;--bfc-olive:#2A7A55;--bfc-gold:#C2A973;--bfc-cream:#F5EDE0;--bfc-ink:#3A2318;
@@ -319,13 +317,156 @@ window.scrollTo({top:top,behavior:"smooth"});});
 render();
 })();
 </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can foreigners buy property in Bali?","acceptedAnswer":{"@type":"Answer","text":"Yes. Foreign nationals can hold property in Bali through several legal structures: Hak Sewa leasehold, which requires only a passport, Hak Pakai right of use, which requires a stay permit, HMSRS strata title on apartments, and Hak Guna Bangunan held through a PT PMA company. What no foreigner can hold is Hak Milik freehold, which Article 21 of the Basic Agrarian Law 1960 reserves for Indonesian citizens."}},{"@type":"Question","name":"Can foreigners own land in Bali?","acceptedAnswer":{"@type":"Answer","text":"Not as freehold. Hak Milik, the absolute freehold title, is restricted to Indonesian citizens permanently. Foreigners can lease land under Hak Sewa for terms of 25 to 30 years with extensions commonly taking the total to 70 or 80 years, or hold Hak Guna Bangunan through a PT PMA company for up to 80 years."}},{"@type":"Question","name":"Can you buy property in Bali on a tourist visa?","acceptedAnswer":{"@type":"Answer","text":"You can sign a Hak Sewa leasehold on a tourist visa or visa on arrival. It is a notarised contract in your own name, fully recognised under Indonesian law, and it does not lapse if your visa expires. You cannot register Hak Pakai or hold strata title in your own name without a stay permit such as a KITAS, KITAP, Second Home Visa or Golden Visa."}},{"@type":"Question","name":"What is the difference between Hak Pakai and Hak Sewa?","acceptedAnswer":{"@type":"Answer","text":"Hak Sewa is a lease contract. It needs only a passport, has no minimum property value, and survives your visa lapsing. Hak Pakai is a registered land title in your own name at the BPN land office, running up to 80 years in total, but it requires a valid stay permit, carries a minimum property value of IDR 5 billion for a landed house in Bali, and is intended for personal residence rather than rental business."}},{"@type":"Question","name":"Do I need a KITAS to buy property in Bali?","acceptedAnswer":{"@type":"Answer","text":"Only for certain structures. Leasehold requires no visa at all. Hak Pakai and strata title both require a valid stay permit, which can be a KITAS, a KITAP, a Second Home Visa or a Golden Visa. If you plan to run a rental business you will need a PT PMA, which in turn can sponsor an investor KITAS for you as a shareholder."}},{"@type":"Question","name":"Can foreigners buy an apartment in Bali?","acceptedAnswer":{"@type":"Answer","text":"Yes, and apartments are the most straightforward route to real ownership. With a valid stay permit a foreigner can hold HMSRS strata title on a unit in their own name, subject to a minimum value of around IDR 2 billion in Bali. You own the unit plus a share of the common areas. Without a stay permit you can still take a leasehold on an apartment unit using only your passport."}},{"@type":"Question","name":"What is the minimum property value for foreigners in Bali?","acceptedAnswer":{"@type":"Answer","text":"For Hak Pakai on a landed house in Bali the published minimum is IDR 5 billion, roughly USD 310,000. For an apartment unit under strata title it is around IDR 2 billion, roughly USD 124,000. Leasehold carries no minimum value threshold. These figures are periodically revised, so confirm the current position with a notary before you transact."}},{"@type":"Question","name":"Can I legally rent out my villa in Bali?","acceptedAnswer":{"@type":"Answer","text":"Renting out is a commercial activity and needs a licensed entity. For foreigners that means a PT PMA holding the correct KBLI classification, typically 55193 for villa operations. Running short stay rentals on a Hak Pakai residential title or an unlicensed lease is outside what those structures permit, and enforcement in Bali has tightened considerably."}},{"@type":"Question","name":"How long does a Bali leasehold last?","acceptedAnswer":{"@type":"Answer","text":"A typical Hak Sewa lease runs 25 to 30 years initially, with extension options that commonly take the total to 70 or 80 years. The critical detail is that extension terms and pricing should be fixed in writing in the original contract. Leaving the extension price to be negotiated in year 29 is the most common and most expensive mistake in Bali leasehold."}},{"@type":"Question","name":"Is nominee ownership legal in Bali?","acceptedAnswer":{"@type":"Answer","text":"No. A nominee arrangement, where an Indonesian holds freehold title on your behalf under a private side agreement, is void and unenforceable under Indonesian law. Indonesian courts have consistently ruled that the foreign party loses both the land and the money paid for it. There is no version of this structure that survives a legal challenge."}}]}</script>
+
+## Can foreigners buy property in Bali?
+
+Yes. The question is never whether you can, it is which structure you use. Indonesian law offers foreign nationals four legitimate routes, and the flowchart above points you to the right one. What follows is the detail behind each.
+
+The one thing no structure changes is this: **Article 21 of the Basic Agrarian Law 1960 reserves Hak Milik, the absolute freehold title, for Indonesian citizens.** No visa unlocks it. No amount of money unlocks it. Any arrangement that claims to give a foreigner freehold is either a different title being described loosely, or it is a nominee structure, which is void.
+
+## Can foreigners own land in Bali?
+
+Not as freehold, and this is where most confusion starts. You can control land, develop it, live on it, rent it out and sell your interest in it. You cannot hold the freehold certificate in your own name.
+
+The practical routes to land are a Hak Sewa lease in your personal name, or Hak Guna Bangunan held through a company you own. Both give you a long horizon. Neither makes you the freehold owner.
+
+## The four ways a foreigner can hold Bali property
+
+### Hak Sewa, leasehold, passport only
+
+This is the route almost nobody knows about before they arrive. A leasehold agreement can be signed by any foreign national on a tourist visa or visa on arrival. No KITAS, no company, no Indonesian partner.
+
+It is a notarised contract, recognised in full under Indonesian law, and it gives you exclusive use of the property for the term. Typical initial terms run 25 to 30 years, with extension options commonly taking the total to 70 or 80 years. Your lease is unaffected if your visa lapses or you leave the country.
+
+The critical detail is the extension. Fix the terms and the price in the original contract. A lease that says extension will be "negotiated at market rate" in year 29 is not a 70 year lease, it is a 29 year lease with a hope attached.
+
+### Hak Pakai, right of use, requires a stay permit
+
+Hak Pakai is a registered land title issued in your own personal name at the BPN land office. It runs 30 years, extends by 20, and renews for a further 30, reaching 80 years in total. It is the closest a foreign individual gets to owning.
+
+The conditions are real. You need a valid stay permit and it must remain valid. The property must meet a minimum value of **IDR 5 billion in Bali for a landed house**, roughly USD 310,000. It is intended as your residence, not as a rental business. It is generally limited to one residential property, with a land area ceiling commonly applied around 2,000 square metres.
+
+Worth weighing honestly: leasehold is often cheaper, has no minimum value, and survives your visa lapsing. Hak Pakai is stronger on paper and easier to finance. Model both before deciding.
+
+### Strata title, HMSRS, the apartment exception
+
+Apartments sit under a separate and far more relaxed regime. With a valid stay permit you can hold HMSRS strata title on a unit in your own name. You own the unit itself plus a proportional share of the common areas. The land beneath stays with the developer or the owners association.
+
+The minimum value in Bali is around **IDR 2 billion**, roughly USD 124,000, which is a materially lower entry point than the landed threshold. Units are sellable, inheritable and financeable.
+
+Check the building as carefully as the unit. How many years are left on the developer's HGB, what the service charges and sinking fund look like, whether the owners association actually functions, and whether foreign ownership quotas apply to the development.
+
+### PT PMA with HGB, for rental businesses
+
+If you want rental income, you are running a business, and a business needs a licensed entity. A PT PMA is an Indonesian foreign investment company that you own and control. It can hold Hak Guna Bangunan, the right to build, for up to 80 years, and it can legally operate the rental business.
+
+The 2026 requirements, after BKPM Regulation 5 of 2025:
+
+- Minimum paid up capital of **IDR 2.5 billion**, around USD 155,000, cut from IDR 10 billion on 2 October 2025
+- That capital must sit in the company account at incorporation and be declared through the OSS system
+- A **12 month lock up** applies. The money cannot leave the account for a year except for asset purchase, construction or genuine operating costs
+- A separate minimum investment value of **IDR 10 billion**, around USD 620,000, excluding land and buildings, applied per business line and per project location
+- Minimum two shareholders, and KBLI 55193 in the articles of association for villa operations
+
+That last point on investment value catches people out. It is not one flat figure. Run two business lines or two sites and it multiplies.
+
+Read our [full PT PMA setup and cost breakdown](/journal/pt-pma-bali-setup-costs-guide/) if this is your route.
+
+## What visa do you need to buy property in Bali?
+
+Your visa is the gate that decides which titles you can hold.
+
+**Tourist visa or visa on arrival.** Unlocks Hak Sewa leasehold on anything. Nothing else. You cannot register Hak Pakai or hold strata title in your own name on a tourist stamp.
+
+**KITAS, the temporary stay permit.** Several routes exist: E23 sponsored by an employer, E28A for shareholders of your own PT PMA, E33F for retirees aged 55 and over, and E33G for remote workers earning from a foreign company. Any of them unlocks Hak Pakai and strata title.
+
+**KITAP, the permanent stay permit.** Available after roughly three to four consecutive years on a KITAS. Valid five years and renewable.
+
+**Second Home Visa, E33.** Five or ten years. Requires either IDR 2 billion, around USD 126,000, held in an Indonesian state bank, or ownership of property valued at IDR 5 billion or more. No minimum age and no physical presence requirement.
+
+**Golden Visa, E28C.** Investment led residency from around USD 350,000 for five years or USD 700,000 for ten, with the property route near USD 1,000,000. The investment must be maintained for the life of the visa.
+
+## If you are married to an Indonesian citizen
+
+This is its own legal category and it is where the most expensive mistakes happen.
+
+Under **Article 35 of the Indonesian Marriage Law**, everything acquired during a marriage becomes joint marital property automatically. Combine that with the rule that only Indonesian citizens can hold Hak Milik, and the problem appears: if your Indonesian spouse buys freehold during the marriage, that land is legally half yours, and you are a foreigner who cannot hold any interest in it. The title becomes vulnerable to forced divestment.
+
+The fix is a **prenuptial agreement** separating marital assets, signed before the wedding and notarised. With it, your spouse buys in their own name and holds clean freehold entirely outside the joint estate.
+
+Already married without one? Constitutional Court ruling **69/PUU-XIII/2015** opened the door to postnuptial agreements. They are not quite as strong as a prenup and they do not reliably reach backwards over property already bought, but they work going forward.
+
+## Renting your Bali property out legally
+
+Indonesian law treats a home and an income producing asset as two different things, and the structure that suits one will fail the other.
+
+Hak Pakai is a residential title granted so a foreign resident can live in their own home. Running short stay rentals on it sits outside what the title contemplates, and enforcement has tightened considerably across Bali in recent years.
+
+Renting out requires a business licence. For Indonesians that is usually a Pondok Wisata homestay licence. For foreigners it means a PT PMA with the correct KBLI classification.
+
+On tax, presence matters more than ownership. **Spend 183 days or more in Indonesia within a twelve month period and you become an Indonesian tax resident**, assessed on worldwide income rather than only what you earn here. Below that threshold non residents face withholding on Indonesian sourced rental income. Plan your days deliberately, because this is the detail people discover a year too late.
+
+If you want the numbers on what a rental actually returns, our [Bali ROI calculator](/bali-roi-calculator/) models gross yield, net yield and payback period.
+
+## Nominee arrangements: do not
+
+A nominee structure, where an Indonesian holds freehold on your behalf under a private side agreement, is **void and unenforceable**. Indonesian courts have consistently ruled that the foreign party loses both the land and the money paid for it.
+
+It does not matter how well you know the person, how carefully the side letter is drafted, or how many other people tell you it is standard practice. There is no version of this that survives a challenge. Every legitimate structure on this page exists precisely so you do not need one.
+
+## Frequently asked questions
+
+### Can foreigners buy property in Bali?
+
+Yes. Foreign nationals can hold property in Bali through several legal structures: Hak Sewa leasehold, which requires only a passport, Hak Pakai right of use, which requires a stay permit, HMSRS strata title on apartments, and Hak Guna Bangunan held through a PT PMA company. What no foreigner can hold is Hak Milik freehold, which Article 21 of the Basic Agrarian Law 1960 reserves for Indonesian citizens.
+
+### Can foreigners own land in Bali?
+
+Not as freehold. Hak Milik, the absolute freehold title, is restricted to Indonesian citizens permanently. Foreigners can lease land under Hak Sewa for terms of 25 to 30 years with extensions commonly taking the total to 70 or 80 years, or hold Hak Guna Bangunan through a PT PMA company for up to 80 years.
+
+### Can you buy property in Bali on a tourist visa?
+
+You can sign a Hak Sewa leasehold on a tourist visa or visa on arrival. It is a notarised contract in your own name, fully recognised under Indonesian law, and it does not lapse if your visa expires. You cannot register Hak Pakai or hold strata title in your own name without a stay permit such as a KITAS, KITAP, Second Home Visa or Golden Visa.
+
+### What is the difference between Hak Pakai and Hak Sewa?
+
+Hak Sewa is a lease contract. It needs only a passport, has no minimum property value, and survives your visa lapsing. Hak Pakai is a registered land title in your own name at the BPN land office, running up to 80 years in total, but it requires a valid stay permit, carries a minimum property value of IDR 5 billion for a landed house in Bali, and is intended for personal residence rather than rental business.
+
+### Do I need a KITAS to buy property in Bali?
+
+Only for certain structures. Leasehold requires no visa at all. Hak Pakai and strata title both require a valid stay permit, which can be a KITAS, a KITAP, a Second Home Visa or a Golden Visa. If you plan to run a rental business you will need a PT PMA, which in turn can sponsor an investor KITAS for you as a shareholder.
+
+### Can foreigners buy an apartment in Bali?
+
+Yes, and apartments are the most straightforward route to real ownership. With a valid stay permit a foreigner can hold HMSRS strata title on a unit in their own name, subject to a minimum value of around IDR 2 billion in Bali. You own the unit plus a share of the common areas. Without a stay permit you can still take a leasehold on an apartment unit using only your passport.
+
+### What is the minimum property value for foreigners in Bali?
+
+For Hak Pakai on a landed house in Bali the published minimum is IDR 5 billion, roughly USD 310,000. For an apartment unit under strata title it is around IDR 2 billion, roughly USD 124,000. Leasehold carries no minimum value threshold. These figures are periodically revised, so confirm the current position with a notary before you transact.
+
+### Can I legally rent out my villa in Bali?
+
+Renting out is a commercial activity and needs a licensed entity. For foreigners that means a PT PMA holding the correct KBLI classification, typically 55193 for villa operations. Running short stay rentals on a Hak Pakai residential title or an unlicensed lease is outside what those structures permit, and enforcement in Bali has tightened considerably.
+
+### How long does a Bali leasehold last?
+
+A typical Hak Sewa lease runs 25 to 30 years initially, with extension options that commonly take the total to 70 or 80 years. The critical detail is that extension terms and pricing should be fixed in writing in the original contract. Leaving the extension price to be negotiated in year 29 is the most common and most expensive mistake in Bali leasehold.
+
+### Is nominee ownership legal in Bali?
+
+No. A nominee arrangement, where an Indonesian holds freehold title on your behalf under a private side agreement, is void and unenforceable under Indonesian law. Indonesian courts have consistently ruled that the foreign party loses both the land and the money paid for it. There is no version of this structure that survives a legal challenge.
 
 ## Before you act on any of this
 
-The flowchart above narrows you to a structure. It does not replace the two people you actually need: an independent notary, and someone who knows the specific plot or building you are looking at.
+The flowchart narrows you to a structure. It does not replace the two people you actually need: an independent notary, and someone who knows the specific plot or building in front of you.
 
 The notary matters more than most buyers realise. In Indonesia the notary, or PPAT, does the title verification, drafts the deed and registers it. Using the seller's notary is the single most common unforced error in Bali property. Appoint your own.
 
-And on the property itself, structure is only half the risk. A perfectly executed lease on a plot in a green zone, or a strata unit in a building whose HGB expires in eleven years, is still a bad deal. That is the part we spend our time on.
+Structure is only half the risk. A perfectly executed lease on a plot in a green zone, or a strata unit in a building whose HGB expires in eleven years, is still a bad deal. That is the part we spend our time on.
 
 Ayla holds data on almost every developer operating in Bali and we are contracted to none of them. If you want the structure above pressure tested against a real property, [book a call](/#contact) or message us on [WhatsApp](https://wa.me/447928668478).
+
+**Related reading:** [Freehold vs leasehold in Bali](/journal/freehold-vs-leasehold-bali/) · [Why investors prefer leasehold](/journal/why-investors-prefer-leasehold/) · [How to vet a Bali developer](/journal/how-to-vet-a-bali-developer/) · [Can Australians buy property in Bali](/journal/can-australians-buy-property-in-bali/)
+
+*Accurate as at July 2026. Indonesian property regulation is revised regularly and thresholds in particular get adjusted. Treat this as an accurate map of the terrain, not as a substitute for a notary confirming the current position on the day you transact. Ayla Property is not a law firm and this is not legal advice.*
