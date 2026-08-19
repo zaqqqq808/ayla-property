@@ -29,6 +29,8 @@ Here is why the smartest money in Bali is often flowing into Leasehold.
 
 ## 1. The ROI Math (Lower Entry, Higher Yield)
 
+You can model every scenario below on your own numbers with our free [Bali ROI calculator](/bali-roi-calculator/).
+
 <img src="/images/journal/svg-why-investors-prefer-leasehold.svg" alt="Freehold trap Bali same villa leasehold vs freehold ROI comparison infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 The math is simple. A Freehold property in a prime area like [Pererenan](/invest/pererenan/) might cost you double or triple the price of a Leasehold property on the exact same street.

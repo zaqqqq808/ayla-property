@@ -17,7 +17,7 @@ The median entry price across our active listings is $290,000. That is the midpo
 
 Average gross yield across the market is 10.6%. That is meaningfully higher than most comparable markets globally: Australian residential yields are running at 3 to 4%, UK yields are similar, Dubai is at 6 to 7%, and Lisbon is down to 4 to 5%. Bali's yield premium exists because the tourism demand that drives short-term rental income remains strong and the property prices have not yet fully caught up with that income potential.
 
-The top end of the yield range is 15% or above in Canggu, Pererenan, and parts of East Bali where entry prices are still relatively contained. The average masks a significant spread between well-positioned properties and poorly managed ones.
+The top end of the yield range is 15% or above in Canggu, Pererenan, and parts of East Bali where entry prices are still relatively contained. The average masks a significant spread between well-positioned properties and poorly managed ones. Run your own budget through our free [Bali ROI calculator](/bali-roi-calculator/) to see where you land.
 
 ## Why 2026 Is Still a Reasonable Entry Point
 

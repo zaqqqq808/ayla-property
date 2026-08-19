@@ -60,7 +60,7 @@ This is where it gets interesting. The rental income a villa generates is identi
 
 But the entry price is completely different. A leasehold property in a prime [Canggu](/invest/canggu/) location will typically cost 20 to 40 percent less than an equivalent freehold title. So your yield on invested capital is substantially higher on leasehold.
 
-To put numbers on it: if a freehold villa is priced at USD $500,000 and generates USD $50,000 per year in net income, that is a 10 percent yield. The same villa on leasehold at USD $300,000 generating the same income is a 16 percent yield. That is the same villa. That is the argument for leasehold in one paragraph.
+To put numbers on it: if a freehold villa is priced at USD $500,000 and generates USD $50,000 per year in net income, that is a 10 percent yield. The same villa on leasehold at USD $300,000 generating the same income is a 16 percent yield. That is the same villa. That is the argument for leasehold in one paragraph. Plug your own numbers into our free [Bali ROI calculator](/bali-roi-calculator/) to see the gap on a specific property.
 
 There is also a practical point about the Bali climate. Buildings here face intense tropical sun, humidity, salt air and monsoon rains. A villa generally needs a substantial renovation every 15 to 20 years. Paying a significant premium to own the land forever when the structure on it will need to be gutted in 15 years is a trade-off worth thinking about carefully.
 

@@ -34,7 +34,7 @@ Setup costs for a PT PMA via a reputable Indonesian legal firm run approximately
 
 Budget at the lower end if you have a straightforward structure and one KBLI code. Budget at the higher end if you are operating across multiple activities, have multiple foreign shareholders with varying ownership percentages, or need additional regulatory approvals for your business activity.
 
-Annual compliance costs run $500 to $1,500 per year. This covers annual reporting obligations to BKPM (Indonesia's Investment Coordinating Board), tax compliance (PT PMA must file annual corporate tax returns), and any ongoing regulatory filings. If you are not generating income in the early years, there is still a compliance burden you need to budget for.
+Annual compliance costs run $500 to $1,500 per year. This covers annual reporting obligations to BKPM (Indonesia's Investment Coordinating Board), tax compliance (PT PMA must file annual corporate tax returns), and any ongoing regulatory filings. If you are not generating income in the early years, there is still a compliance burden you need to budget for. Factor these costs into your projections using our free [Bali ROI calculator](/bali-roi-calculator/).
 
 ## When You DO Need a PT PMA
 

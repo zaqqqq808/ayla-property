@@ -47,7 +47,7 @@ The numbers make the case more clearly in a table:
 | Passive Cash Flow | 0% (pure expense) | 14.8% average gross yield when renting out |
 | Asset at End of Term | None | Realisable secondary market resale value |
 
-The practical upside is significant. When you are travelling or back in Australia visiting family, you put the property on the short-term rental market. In Canggu, average gross yields are running at 14.8% across current data. On a $300,000 villa, that is $44,400 per year in gross rental income at full commercial occupancy. Even at 60% occupancy during your absent months, you are generating $15,000 to $20,000 per year that offsets your cost of ownership entirely.
+The practical upside is significant. When you are travelling or back in Australia visiting family, you put the property on the short-term rental market. In Canggu, average gross yields are running at 14.8% across current data. On a $300,000 villa, that is $44,400 per year in gross rental income at full commercial occupancy. Even at 60% occupancy during your absent months, you are generating $15,000 to $20,000 per year that offsets your cost of ownership entirely. Model your own budget with our free [Bali ROI calculator](/bali-roi-calculator/).
 
 You are not just saving rent. You are generating income. That is the real difference between renting and owning in Bali.
 

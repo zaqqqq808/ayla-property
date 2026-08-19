@@ -91,7 +91,7 @@ It is worth knowing the failure modes too. Not every area that looks promising d
 
 **Agricultural zoning.** Some of the most aesthetically beautiful land in Bali is zoned for agriculture. Villas cannot be legally rented on agricultural land. Always verify zoning before getting excited about a plot. This is a step we handle for every Ayla client, but self-directed buyers regularly get caught out.
 
-**No comparable rental data.** If there are no comparable short-term rentals within 2km producing trackable occupancy data, the yield projections you're being shown are theoretical. We only present yield figures backed by actual market comparables.
+**No comparable rental data.** If there are no comparable short-term rentals within 2km producing trackable occupancy data, the yield projections you're being shown are theoretical. We only present yield figures backed by actual market comparables, and you can stress-test any of them yourself with our free [Bali ROI calculator](/bali-roi-calculator/).
 
 The difference between a great emerging area investment and an expensive mistake often comes down to the quality of due diligence before you sign anything.
 

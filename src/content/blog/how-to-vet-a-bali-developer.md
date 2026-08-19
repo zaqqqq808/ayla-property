@@ -46,7 +46,7 @@ Equally important is what the contract says if the developer misses a milestone.
 
 The developer builds the villa. Someone else runs it. And the person running it determines whether your projected 12% yield actually lands in your account or sits as a number in a marketing brochure.
 
-Ask the developer directly: who is the property management company, how long have they been operating in Bali, and can you provide rental performance data from other villas currently under their management? Projected yields from a developer's own materials are frequently optimistic. Actual performance data from an established operator, occupancy rates, average daily rates, monthly disbursements, is what you should be underwriting.
+Ask the developer directly: who is the property management company, how long have they been operating in Bali, and can you provide rental performance data from other villas currently under their management? Projected yields from a developer's own materials are frequently optimistic. Actual performance data from an established operator, occupancy rates, average daily rates, monthly disbursements, is what you should be underwriting. Our free [Bali ROI calculator](/bali-roi-calculator/) is a useful sense-check against whatever figures they hand you.
 
 If the developer cannot name a management company, or if their current portfolio is unmanaged while they "figure out operations," factor that into your risk assessment. A great building managed poorly will underperform a good building managed well. The management question is not a secondary consideration. It is the variable that most directly determines your return.
 

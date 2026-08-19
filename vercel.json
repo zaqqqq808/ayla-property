@@ -169,6 +169,546 @@
       "source": "/2-br-free-hold-villas-ubud/",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/bali-good-investment-2026",
+      "destination": "/journal/is-bali-still-good-investment-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-good-investment-2026/",
+      "destination": "/journal/is-bali-still-good-investment-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-good-investment-2026/feed",
+      "destination": "/journal/is-bali-still-good-investment-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-good-investment-2026/feed/",
+      "destination": "/journal/is-bali-still-good-investment-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/best-areas-to-invest-bali-2026-seseh-kedungu",
+      "destination": "/journal/best-areas-invest-bali-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/best-areas-to-invest-bali-2026-seseh-kedungu/",
+      "destination": "/journal/best-areas-invest-bali-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/best-areas-to-invest-bali-2026-seseh-kedungu/feed",
+      "destination": "/journal/best-areas-invest-bali-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/best-areas-to-invest-bali-2026-seseh-kedungu/feed/",
+      "destination": "/journal/best-areas-invest-bali-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-investment-case-study-50k-profit",
+      "destination": "/journal/under-six-months-client-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-investment-case-study-50k-profit/",
+      "destination": "/journal/under-six-months-client-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-investment-case-study-50k-profit/feed",
+      "destination": "/journal/under-six-months-client-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-investment-case-study-50k-profit/feed/",
+      "destination": "/journal/under-six-months-client-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/hak-sewa-vs-hak-milik",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/hak-sewa-vs-hak-milik/",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/hak-sewa-vs-hak-milik/feed",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/hak-sewa-vs-hak-milik/feed/",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/leasehold-vs-freehold-bali",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/leasehold-vs-freehold-bali/",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/leasehold-vs-freehold-bali/feed",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/leasehold-vs-freehold-bali/feed/",
+      "destination": "/journal/freehold-vs-leasehold-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/best-up-and-coming-areas-bali",
+      "destination": "/journal/best-areas-invest-bali-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/best-up-and-coming-areas-bali/",
+      "destination": "/journal/best-areas-invest-bali-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/best-up-and-coming-areas-bali/feed",
+      "destination": "/journal/best-areas-invest-bali-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/best-up-and-coming-areas-bali/feed/",
+      "destination": "/journal/best-areas-invest-bali-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/kedungu-land-for-sale",
+      "destination": "/invest/kedungu/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/kedungu-land-for-sale/",
+      "destination": "/invest/kedungu/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/kedungu-land-for-sale/feed",
+      "destination": "/invest/kedungu/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/kedungu-land-for-sale/feed/",
+      "destination": "/invest/kedungu/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/seseh-real-estate",
+      "destination": "/invest/seseh/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/seseh-real-estate/",
+      "destination": "/invest/seseh/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/seseh-real-estate/feed",
+      "destination": "/invest/seseh/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/seseh-real-estate/feed/",
+      "destination": "/invest/seseh/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-bukit-bali",
+      "destination": "/invest/uluwatu/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-bukit-bali/",
+      "destination": "/invest/uluwatu/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-bukit-bali/feed",
+      "destination": "/invest/uluwatu/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-bukit-bali/feed/",
+      "destination": "/invest/uluwatu/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-bali-property",
+      "destination": "/guides/bali-property-investment/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-bali-property/",
+      "destination": "/guides/bali-property-investment/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-bali-property/feed",
+      "destination": "/guides/bali-property-investment/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-bali-property/feed/",
+      "destination": "/guides/bali-property-investment/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-off-plan-roi",
+      "destination": "/journal/buying-property-in-bali-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-off-plan-roi/",
+      "destination": "/journal/buying-property-in-bali-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-off-plan-roi/feed",
+      "destination": "/journal/buying-property-in-bali-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-off-plan-roi/feed/",
+      "destination": "/journal/buying-property-in-bali-2026-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-property-case-study",
+      "destination": "/journal/under-six-months-client-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-property-case-study/",
+      "destination": "/journal/under-six-months-client-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-property-case-study/feed",
+      "destination": "/journal/under-six-months-client-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-property-case-study/feed/",
+      "destination": "/journal/under-six-months-client-strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-property-investment-roi-2026",
+      "destination": "/bali-roi-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-property-investment-roi-2026/",
+      "destination": "/bali-roi-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-property-investment-roi-2026/feed",
+      "destination": "/bali-roi-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-property-investment-roi-2026/feed/",
+      "destination": "/bali-roi-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-real-estate-roi-strategies",
+      "destination": "/bali-roi-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-real-estate-roi-strategies/",
+      "destination": "/bali-roi-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-real-estate-roi-strategies/feed",
+      "destination": "/bali-roi-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/bali-real-estate-roi-strategies/feed/",
+      "destination": "/bali-roi-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-umalas",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-umalas/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-umalas/feed",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/investing-in-umalas/feed/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/author/admin",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/author/admin/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/author/admin/feed",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/author/admin/feed/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/author/team-operations",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/author/team-operations/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/author/team-operations/feed",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/author/team-operations/feed/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/category/uncategorized",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/category/uncategorized/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/category/uncategorized/feed",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/category/uncategorized/feed/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/comments/feed",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/comments/feed/",
+      "destination": "/journal/",
+      "permanent": true
+    },
+    {
+      "source": "/hello-world",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/hello-world/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/hello-world/feed",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/hello-world/feed/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sample-page",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sample-page/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sample-page/feed",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sample-page/feed/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/html-sitemap",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/html-sitemap/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-beauty",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-beauty/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-beauty/feed",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-beauty/feed/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-summer",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-summer/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-summer/feed",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-summer/feed/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-vibes",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-vibes/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-vibes/feed",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/bali-vibes/feed/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/teete",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/teete/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-admin",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-admin/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-comments-post.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-comments-post.php/",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
