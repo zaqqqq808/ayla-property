@@ -84,9 +84,8 @@ const agentSchema = JSON.stringify({
         <span class="lp-eyebrow">Independent buying agency &middot; Bali</span>
         <h1>Bali Villas <span class="grad-text">for Sale</span></h1>
         <p class="lp-lede">
-          We are the only buying agency in Bali with no ties to any developer. We track over 80 of them,
-          represent none of them, and negotiate on your side of the table. That is how our clients end up
-          on deals the listing sites never show them.
+          We are the only buying agency in Bali with no ties to any developer. We track 80+ developers,
+          represent none of them, and negotiate on your side, which is how clients get deals the listing sites never show.
         </p>
         <div class="lp-hero-cta">
           <a class="lp-btn lp-btn-gold" href="#matcher">Find my match in 30 seconds</a>
@@ -109,36 +108,32 @@ const agentSchema = JSON.stringify({
             <span class="lp-num">01</span>
             <h3>We are genuinely unbiased</h3>
             <p>
-              Most Bali agencies either are a developer or hold exclusivity with a few. The shortlist you get is
-              the one they are paid to show you. We have no exclusivity with anyone, which means we are equally
-              unsentimental about all 80 developers we track. If a project is weak, we will say so.
+              Most Bali agencies are a developer or have exclusivity with a few, so their shortlist is the one they are
+              paid to show you. We have no ties to anyone, so if a project is weak, we will say so.
             </p>
           </div>
           <div class="lp-card">
             <span class="lp-num">02</span>
             <h3>We built an algorithm for this</h3>
             <p>
-              Our backgrounds are in maths, engineering and data science, not estate agency. We scored the entire
-              tracked market on yield, delivery record, price per square metre, lease terms and area trajectory,
-              then built a model that ranks deals against your specific brief rather than our commission.
+              Our backgrounds are maths, engineering and data science, not estate agency. We built a model that
+              scores every developer we track and ranks deals against your brief, not our commission.
             </p>
           </div>
           <div class="lp-card">
             <span class="lp-num">03</span>
             <h3>We actually live here</h3>
             <p>
-              Not a two week scouting trip. Properly, for years. There is a fair chance our vice president has
-              thrown up in a bush behind your future villa. That does not make the brochure, but it does mean when
-              we tell you a road floods in February or a beach club is about to open next door, we know.
+              Not a two week scouting trip, properly, for years. There is a fair chance our vice president has
+              thrown up in a bush behind your future villa, which is why we know which roads flood and what is opening next door.
             </p>
           </div>
           <div class="lp-card">
             <span class="lp-num">04</span>
             <h3>We negotiate, you do not</h3>
             <p>
-              We know what each developer has actually accepted on recent units, so we know where the floor is.
-              One client came to us on a villa listed at USD 163,000. We closed it at USD 130,000 and it valued at
-              USD 180,000 on handover. Negotiation is the part most buyers skip and it is where the money is.
+              We know what developers actually accept on recent units, so we know where the floor is. One client's
+              villa went from USD 163,000 to USD 130,000, and valued at USD 180,000 on handover.
             </p>
           </div>
         </div>
@@ -148,7 +143,7 @@ const agentSchema = JSON.stringify({
     <section class="lp-video">
       <div class="lp-wrap">
         <h2>How it works, in 60 seconds</h2>
-        <p class="lp-sub">Silvia explains the process from first call to keys.</p>
+        <p class="lp-sub">Zaq explains the process from first call to keys.</p>
         <div class="lp-video-card" id="lpVideo" data-yt="T7At3AGvuHo">
           <img src="https://img.youtube.com/vi/T7At3AGvuHo/maxresdefault.jpg" alt="Ayla Property explains how buying a villa in Bali works" loading="lazy" width="1280" height="720" decoding="async" />
           <button type="button" class="lp-play" aria-label="Play video">
@@ -161,7 +156,7 @@ const agentSchema = JSON.stringify({
     <section class="lp-matcher" id="matcher">
       <div class="lp-wrap">
         <h2>What are you actually looking for?</h2>
-        <p class="lp-sub">Three questions. We will tell you what fits, roughly how much inventory sits in that bracket, and what it realistically returns.</p>
+        <p class="lp-sub">Three questions. We will tell you what fits, what is available, and what it realistically returns.</p>
         <div class="lp-quiz">
           <div class="lp-quiz-top">
             <span class="lp-quiz-kicker">Property matcher</span>
@@ -194,8 +189,8 @@ const agentSchema = JSON.stringify({
       <div class="lp-wrap lp-narrow">
         <h2>Tell us what you want. We will go and find it.</h2>
         <p>
-          A free 30 minute call. No pitch, no pressure. If Bali is the wrong move for you we will say that too,
-          and you will have lost half an hour instead of USD 300,000.
+          A free 30 minute call, no pitch, no pressure. If Bali is wrong for you we will say that too,
+          so you lose half an hour, not USD 300,000.
         </p>
         <div class="lp-hero-cta lp-center">
           <a class="lp-btn lp-btn-gold" href={CALENDLY_URL} target="_blank" rel="noopener">Book your free call</a>
@@ -323,26 +318,52 @@ border-top:1px solid rgba(194,169,115,.35)}
 .lp-play:hover{transform:translate(-50%,-50%) scale(1.08)}
 .lp-fine a:hover{text-decoration:underline}}
 @media(max-width:860px){
-.lp-hero{padding:120px 0 60px}
+.lp-hero{padding:100px 0 36px}
 .lp-hero h1{font-size:2.9rem}
 .lp h2{font-size:1.9rem}
-.lp-why-grid,.lp-rgrid{grid-template-columns:1fr}
-.lp-trust{grid-template-columns:repeat(2,1fr);gap:18px}
-.lp-why,.lp-matcher,.lp-faq{padding:64px 0}
-.lp-final{padding:64px 0 76px}}
+.lp-sub{font-size:.86rem;margin-bottom:22px}
+.lp-lede{font-size:1rem;margin-bottom:22px}
+.lp-eyebrow{font-size:.63rem;margin-bottom:12px}
+.lp-hero-cta{margin-bottom:22px}
+.lp-why-grid,.lp-rgrid{grid-template-columns:1fr;gap:12px}
+.lp-trust{grid-template-columns:repeat(2,1fr);gap:12px;padding-top:16px}
+.lp-trust strong{font-size:1.45rem}
+.lp-trust span{font-size:.68rem}
+.lp-why,.lp-matcher,.lp-faq{padding:40px 0}
+.lp-video{padding:0 0 40px}
+.lp-final{padding:40px 0 48px}
+.lp-card{padding:18px 16px}
+.lp-card h3{font-size:1.15rem;margin:0 0 6px}
+.lp-card p{font-size:.86rem;line-height:1.55}
+.lp-quiz{padding:20px 16px}
+.lp-rs{font-size:.85rem;margin-bottom:16px}
+.lp-rcard{padding:14px}
+.lp-rcard p{font-size:.83rem}
+.lp-faq-item p{font-size:.88rem}
+.lp-final p{font-size:.92rem;margin-bottom:18px}
+.lp-eyebrow,.lp-hero h1,.lp-lede,.lp h2,.lp-video .lp-sub,.lp-matcher .lp-sub{text-align:center}
+.lp-hero .lp-wrap{display:flex;flex-direction:column;align-items:center}
+.lp-trust{justify-items:center;text-align:center}
+.lp-card{text-align:center}
+.lp-quiz-top{justify-content:center;flex-direction:column;text-align:center;gap:8px}}
 @media(max-width:560px){
-.lp-wrap{padding:0 18px}
+.lp-wrap{padding:0 16px}
+.lp-hero{padding:88px 0 28px}
 .lp-hero h1{font-size:2.3rem}
-.lp-lede{font-size:1.04rem}
+.lp-lede{font-size:.92rem;margin-bottom:18px}
 .lp h2{font-size:1.6rem}
+.lp-sub{font-size:.82rem;margin-bottom:18px}
 .lp-qh{font-size:1.35rem}
 .lp-rh{font-size:1.5rem}
-.lp-quiz{padding:24px 18px;border-radius:16px}
-.lp-card{padding:24px 20px}
+.lp-quiz{padding:18px 14px;border-radius:14px}
+.lp-card{padding:16px 14px}
 .lp-btn{width:100%}
-.lp-hero-cta{flex-direction:column}
-.lp-trust strong{font-size:1.6rem}
-.lp-play{width:60px;height:60px}}
+.lp-hero-cta{flex-direction:column;gap:10px;margin-bottom:18px}
+.lp-trust{gap:10px;padding-top:14px}
+.lp-trust strong{font-size:1.25rem}
+.lp-trust span{font-size:.64rem}
+.lp-play{width:56px;height:56px}
+.lp-rgrid{gap:10px}}
 @media(prefers-reduced-motion:reduce){.lp *{animation:none !important;transition:none !important}}
 </style>
 
