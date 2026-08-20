@@ -488,6 +488,8 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-top:48px;padding-top:28px;border-top:1px solid var(--glass-border);color:var(--text-muted);font-size:.88rem}
 .social{display:inline-flex;align-items:center;gap:8px;color:var(--text-muted);transition:color .2s}
 .social:hover{color:var(--terra)}
+.footer-legal-link{color:var(--text-muted);text-decoration:none;transition:color .2s}
+.footer-legal-link:hover{color:var(--terra)}
 
 /* floating buttons */
 .float-cta-group{

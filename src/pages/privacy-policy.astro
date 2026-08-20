@@ -1,0 +1,187 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE_URL } from '@/config';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` },
+    { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": `${SITE_URL}/privacy-policy/` },
+  ]
+});
+---
+
+<BaseLayout
+  title="Privacy Policy | Ayla Property"
+  description="How Ayla Property collects, uses and protects your personal data, in line with Indonesia's Personal Data Protection Law (UU No. 27 of 2022)."
+  ogType="website"
+  ogImage="/og-image.jpg"
+>
+  <Fragment slot="head">
+    <Fragment set:html={`<script type="application/ld+json">${breadcrumbSchema}</script>`} />
+    <meta name="robots" content="noindex, follow" />
+  </Fragment>
+
+  <Header />
+
+  <main class="bg-white pt-32 pb-20 px-6 lg:px-12">
+    <article class="max-w-3xl mx-auto">
+
+      <header class="mb-12">
+        <p class="text-brown/60 uppercase tracking-wider text-xs mb-4">Last updated: 20 August 2026</p>
+        <h1 class="text-brown text-3xl lg:text-5xl font-display leading-tight">Privacy Policy</h1>
+      </header>
+
+      <div class="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-brown prose-headings:tracking-wide prose-a:text-olive prose-a:no-underline hover:prose-a:underline prose-strong:text-brown prose-blockquote:border-olive prose-blockquote:text-brown/80">
+
+        <p>
+          Ayla Property ("Ayla", "we", "us") is a property buying and investment advisory business operating in Bali,
+          Indonesia. This policy explains what personal data we collect through aylaproperty.com and our advertising,
+          how we use it, who we share it with, and the rights you have over it.
+        </p>
+        <p>
+          We are based in Indonesia and this policy is written to comply with Indonesia's Personal Data Protection Law,
+          Law No. 27 of 2022 ("UU PDP"). If you are contacting us from outside Indonesia, your data may still be
+          processed in Indonesia and, where relevant below, in other countries where our service providers operate.
+        </p>
+
+        <h2>1. Who we are</h2>
+        <p>
+          Ayla Property, Bali, Indonesia. For any question about this policy or your personal data, contact us at
+          <a href="mailto:zaq@aylaproperty.com">zaq@aylaproperty.com</a>.
+        </p>
+
+        <h2>2. What personal data we collect</h2>
+        <p>Depending on how you interact with us, we may collect:</p>
+        <ul>
+          <li><strong>Contact details</strong> you give us through a lead form, contact form, WhatsApp message, or when booking a call: your name, email address, phone or WhatsApp number, and country.</li>
+          <li><strong>Enquiry details</strong> you choose to share: your budget, the type of property you are interested in, your intended use (living in it, renting it out, or both), and any preferences you tell us about during a call or in messages.</li>
+          <li><strong>Booking details</strong> when you schedule a call through Calendly: your name, email, phone number, and the appointment time.</li>
+          <li><strong>Technical data</strong> collected automatically when you visit our website: IP address, browser type, device type, pages viewed, and how you arrived at the site, collected through standard analytics and advertising cookies.</li>
+        </ul>
+        <p>
+          Our website also includes an ROI calculator and a property matching tool. The figures and answers you enter
+          into these tools stay in your browser to produce your result. We do not receive or store what you type into
+          them unless you separately choose to contact us.
+        </p>
+        <p>
+          We do not intentionally collect sensitive personal data (health, biometric, religious, or financial account
+          information) and ask that you do not include this in any message to us.
+        </p>
+
+        <h2>3. How we use your personal data</h2>
+        <ul>
+          <li>To respond to your enquiry and answer questions about Bali property investment</li>
+          <li>To book, confirm and remind you of calls scheduled through Calendly</li>
+          <li>To match you with properties that fit the budget, type and goals you have told us</li>
+          <li>To communicate with you by email, phone or WhatsApp about your enquiry or, where you have agreed to this, about new opportunities</li>
+          <li>To measure and improve our advertising, including understanding which ads led to a genuine enquiry</li>
+          <li>To meet our legal and accounting obligations</li>
+        </ul>
+        <p>
+          Where we rely on your consent, for example to send you marketing messages, you can withdraw that consent at
+          any time by contacting us or using the unsubscribe link in any email.
+        </p>
+
+        <h2>4. Sharing your personal data</h2>
+        <p>
+          We do not sell your personal data. We share it only in the following circumstances:
+        </p>
+        <ul>
+          <li>
+            <strong>With a property developer or seller</strong>, but only your name and contact details, and only
+            when you have asked us to arrange a viewing, request more information, or begin a negotiation on a
+            specific property. We do not pass your details to developers speculatively.
+          </li>
+          <li>
+            <strong>With service providers</strong> who help us run our business, including Calendly for scheduling
+            calls and WhatsApp (Meta) for messaging. These providers process your data under their own privacy
+            policies and only to the extent needed to provide the service to us.
+          </li>
+          <li>
+            <strong>With advertising platforms</strong> such as Meta and Google, in aggregated or pseudonymised form,
+            to measure the performance of our advertising and to avoid showing you ads that are not relevant to you.
+          </li>
+          <li>
+            <strong>Where required by law</strong>, for example in response to a valid request from an Indonesian
+            authority.
+          </li>
+        </ul>
+
+        <h2>5. International data transfers</h2>
+        <p>
+          Some of the service providers listed above, including Calendly and Meta, are based outside Indonesia and
+          may process your data on servers in other countries. Where this happens, we rely on those providers'
+          contractual and security commitments to keep your data protected to a standard consistent with UU PDP.
+        </p>
+
+        <h2>6. How long we keep your data</h2>
+        <p>
+          We keep enquiry and contact data for as long as we have an active or reasonably prospective relationship
+          with you, and for a reasonable period afterwards in case you get back in touch. Where you have asked us
+          to stop contacting you, we keep the minimum information needed to honour that request. We delete or
+          anonymise data we no longer have a genuine business or legal reason to keep.
+        </p>
+
+        <h2>7. Your rights</h2>
+        <p>Under UU PDP, you have the right to:</p>
+        <ul>
+          <li>Know what personal data we hold about you and why</li>
+          <li>Access a copy of your personal data</li>
+          <li>Correct personal data that is inaccurate or incomplete</li>
+          <li>Withdraw consent and object to processing based on consent or legitimate interest</li>
+          <li>Ask us to delete your personal data, subject to any legal reason we may have to keep it</li>
+          <li>Ask us to stop or restrict certain processing, including marketing</li>
+          <li>Request your data in a portable format</li>
+          <li>Lodge a complaint with Indonesia's data protection supervisory authority</li>
+        </ul>
+        <p>
+          To exercise any of these rights, email <a href="mailto:zaq@aylaproperty.com">zaq@aylaproperty.com</a>. We
+          will respond within a reasonable time and may need to verify your identity first.
+        </p>
+
+        <h2>8. Cookies and advertising</h2>
+        <p>
+          Our website uses cookies and similar technologies for essential site functionality, to understand how the
+          site is used, and to measure and improve advertising on platforms including Meta and Google. You can
+          control cookies through your browser settings. Turning off non-essential cookies will not affect your
+          ability to contact us or use the ROI calculator.
+        </p>
+
+        <h2>9. Children</h2>
+        <p>
+          Our services are directed at adults considering a property investment. We do not knowingly collect
+          personal data from anyone under 18.
+        </p>
+
+        <h2>10. Data security</h2>
+        <p>
+          We use reasonable technical and organisational measures to protect the personal data we hold, including
+          restricting who has access to enquiry data. No method of transmission or storage is completely secure,
+          and we cannot guarantee absolute security.
+        </p>
+
+        <h2>11. Changes to this policy</h2>
+        <p>
+          We may update this policy from time to time, for example if we start using a new tool or service. The
+          date at the top of this page shows when it was last updated. Material changes will be reflected here
+          before they take effect.
+        </p>
+
+        <h2>12. Contact us</h2>
+        <p>
+          Ayla Property, Bali, Indonesia<br />
+          Email: <a href="mailto:zaq@aylaproperty.com">zaq@aylaproperty.com</a><br />
+          WhatsApp: <a href="https://wa.me/447928668478" target="_blank" rel="noopener noreferrer">+44 7928 668478</a>
+        </p>
+
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+
+</BaseLayout>
