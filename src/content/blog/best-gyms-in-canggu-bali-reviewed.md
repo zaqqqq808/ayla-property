@@ -1,6 +1,6 @@
 ---
-title: "The Ultimate Bali Gym Review: All 8 Canggu and Pererenan Gyms Scored, September 2026"
-description: "An honest, weighted review of the 8 best gyms in Canggu and Pererenan. Equipment, hygiene, recovery, pool, combat, community and vibes all scored out of 5. No sponsorships, no favours."
+title: "The Ultimate Bali Gym Snob's Guide to Canggu Gyms"
+description: "Updated September 2026. The 8 best gyms in Canggu and Pererenan, scored across 12 weighted categories. No sponsorships, no favours."
 publishDate: 2026-09-01
 image: /images/journal/bali-gym-reviews-2026.jpg
 tags: ["canggu", "lifestyle", "pererenan", "reviews"]
