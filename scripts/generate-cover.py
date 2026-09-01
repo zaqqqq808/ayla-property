@@ -27,10 +27,10 @@ Category tag examples:
 # CONFIG - edit these for each new article
 # ============================================================
 
-TITLE_LINE_1 = 'Can You Buy'
-TITLE_LINE_2 = 'Property in Bali?'
-CATEGORY_TAG = 'LEGAL GUIDE'
-OUTPUT_FILE  = 'can-you-buy-property-in-bali.jpg'
+TITLE_LINE_1 = 'The Ultimate Bali'
+TITLE_LINE_2 = 'Gym Review 2026'
+CATEGORY_TAG = 'CANGGU LIFESTYLE'
+OUTPUT_FILE  = 'bali-gym-reviews-2026.jpg'
 
 # ============================================================
 
