@@ -81,113 +81,113 @@ Three things worth saying before the list.
 
 ## 8. Undefeated, 6.3/10
 
-**The bodybuilder's quiet room, and not much else.**
+**A quiet room with the right machines, and not much else.**
 
-**Location and the building.** Tumbuk Bayuh, slightly out of the way from the main hustle, though nothing you would actually complain about. The building is a good one and the anime artwork running through it is the whole personality of the place, done properly rather than as a gimmick. It is the smallest space on this list, which is the honest reason space scores a 3 rather than anything to do with how it is laid out.
+**Location and the building.** Undefeated sits in Tumbuk Bayuh, slightly out of the way from the main hustle, though nothing you would complain about. The anime artwork running through it is the whole personality of the place and it has been committed to properly. It is the smallest room on this list, which is the honest reason space scores a 3. The layout is fine. There is simply less of it.
 
-**What it gets right.** The machines. Exactly the right ones for bodybuilders and nothing you do not need, which puts it in the better equipment tier alongside Reload and Obsidian II. The recovery is indoors, which I braced for and then stopped cringing at immediately, because they make it work and the whole thing has a futuristic feel to it. The pool out the back is nice. And it is never rammed, which on a Tuesday at 5pm is worth more than a smoothie bar. It is also the cheapest membership on this list by a wide margin, roughly 1,500,000 IDR a month before tax and service.
+**What it gets right.** The machines are exactly the ones a bodybuilder wants, which puts Undefeated in the better equipment tier with Reload and Obsidian II. The recovery is indoors, which sounds wrong in this climate and then works, with a pleasingly futuristic look to it. The pool round the back is good. And the place is never busy, which at five on a Tuesday afternoon is worth more than marble.
 
-**What it gets wrong.** The food is limited. There is no space worth the name to sit and work. And there are no classes at all, which I checked properly, the website, Instagram, a straight search, nothing. Community is a 2, the lowest here, which is the flip side of a quiet room. You will get your session done and probably leave without speaking to anybody.
+**What it gets wrong.** The food is limited and there is nowhere to sit and work. There are also no classes at all, which I checked on the website, on Instagram and through a straight search. Community scores a 2, the lowest here, and that is the cost of all the quiet. You will train and leave without speaking to anybody.
 
-**My take.** It is a cool gym and I like what it is trying to be. Out the way and quiet is the appeal for a lot of people, and I understand it. It is just not well rounded enough to sit any higher on a list that rewards breadth, and the empty classes column is the clearest single example of that. If you are a hardcore bodybuilder, though, I would probably send you to Obsidian II over this.
+**My take.** I like what this gym is and what it declines to be. Quiet and out of the way is the appeal, and for plenty of people that is the right appeal. It cannot climb a table that rewards breadth when it has chosen not to have any, and the empty classes column is the clearest example. If you are a serious bodybuilder, I would still point you at Obsidian II first.
 
 **Score:** Equipment 4, Space 3, Hygiene 4, Recovery 4, Location 3, Restaurant 3, Vibes 4, Extras 2, Building 4, Combat 2, Community 2, Pool 3, Classes 0, Price 5.
 
 ## 7. Obsidian II, 7.2/10
 
-**A warehouse full of iron, run by people who do not care what it looks like.**
+**A warehouse of excellent iron, with no interest in how any of it looks.**
 
-**Location and the building.** The location is good and easy, no complaints there. The building is warehouse style and everything lives in one big room, the calisthenics section included, which is a format that works better than it sounds. What it does not have is a design idea. The additions feel bolted on rather than planned, chief among them a water slide I have never once seen anybody use. Vibes is a 2, the lowest on this list, and the building a 3.
+**Location and the building.** Easy to reach, no complaints. Inside it is a warehouse, with everything happening in one large room, calisthenics rig included, and that works better than it sounds. What the building lacks is an idea. Things have been added over time without much thought, the water slide being the clearest example. Vibes scores a 2, the lowest on this list, and the building a 3.
 
-**What it gets right.** The equipment is excellent, one of the best sets of iron in Bali, and the room is big enough to actually move it around. It is a bodybuilder's gym and it attracts that crowd, which is why community is a genuine 4. Serious rooms tend to attract serious regulars, and regulars recognise each other. The restaurant is one of only two 5s for food on this list, with a huge range, build your own, and a proper run of protein desserts. There is also a cave style hot pool that is a nice bit of theatre.
+**What it gets right.** The equipment is among the best in Bali, in a room big enough to use it properly. Serious kit attracts serious regulars, which is why community lands on a 4. The restaurant is one of two 5s for food here, with a large menu, build your own, and a strong run of protein desserts. The cave style hot pool is a good touch.
 
-**What it gets wrong.** The recovery is old and gross looking, a 3 and the joint weakest here. Outdoor showers with no gel or shampoo. The changing rooms are grim, nowhere to sit and nowhere to put your things down, which is what pulls the combined space score to a 3. Classes are barely documented, Hyrox and yoga are the only two named anywhere public, so the 3 reflects what I could verify rather than what may be happening on the floor. And at roughly $172 a month it is not cheap either.
+**What it gets wrong.** The recovery area looks tired on a building that is not old. The outdoor showers have no gel or shampoo. The changing rooms are grim, with nowhere to sit and nowhere to put anything down, which is what drags the combined space score to a 3. Classes barely exist on paper, with Hyrox and yoga the only two named anywhere public, so a 3 reflects what I could verify. At roughly $172 a month it is not cheap either.
 
-**My take.** They messed up the small stuff and I suspect they know it. It fits the no nonsense hardcore appeal, and for a certain kind of lifter that trade is worth making. Seventh, just 0.2 of a point behind Nirvana. I want to be fair to it, so I am going to visit again before I lock the rest of this score in.
+**My take.** They got the small things wrong and I doubt it keeps anyone there awake. It fits the hardcore, no nonsense appeal, and for a certain kind of lifter that is a fair trade. Seventh, 0.2 of a point behind Nirvana. I will go back before I lock the rest of this in.
 
 **Score:** Equipment 5, Space 3, Hygiene 4, Recovery 3, Location 4, Restaurant 5, Vibes 2, Extras 3, Building 3, Combat 4, Community 4, Pool 3, Classes 3, Price 4.
 
 ## 6. Nirvana, 7.2/10
 
-**A social club that happens to own dumbbells, and the easiest place in Canggu to make friends.**
+**A social club that happens to own dumbbells.**
 
-**Location and the building.** The location is awful. It sits right in the tourist part, which is exactly why it is permanently busy, but getting there is a chore and getting out of the car park is worse. The building is nothing special either. No architectural idea, no material anybody agonised over. Both score a 3 and neither is what people come for.
+**Location and the building.** The location is poor. Nirvana sits in the thick of the tourist strip, which is why it is always full, and the drive in is a chore that the car park then compounds. The building is unremarkable, with no architectural idea behind it. Both score a 3 and neither is why anybody joins.
 
-**What it gets right.** The community, which is a 5 and the only one in that category on this entire list. The recovery is genuinely great, one of only two 5s there. And the class programme is enormous, comfortably over a hundred sessions a week, with real depth across vinyasa, power, yin, hatha and gentle flow yoga, pilates, sculpt, barre, splits, handstands, and dance styles nothing else here touches.
+**What it gets right.** The community, a 5 and the only one on this list. Arrive in Bali knowing nobody and you will have found people here within a week. The recovery is excellent, one of only two 5s in that category. And the timetable is enormous, comfortably past a hundred sessions a week, with real range across vinyasa, power, yin and hatha yoga, pilates, sculpt, barre, splits, handstands and dance styles nobody else here attempts.
 
-**What it gets wrong.** The equipment is the weakest on this list. Enough to train, not enough to progress on if you are serious about lifting. There is zero combat. And there is not a single class branded HIIT anywhere on the timetable, nothing boxing or kickboxing adjacent either, which is why classes lands on a 4 rather than a 5. Enormous variety, all pointed the same direction.
+**What it gets wrong.** The equipment is the weakest on this list. You can train on it, but if you lift seriously you will find the ceiling quickly. There is no combat of any kind. And for all that volume, there is not a single class branded HIIT and nothing boxing adjacent, which is why classes lands on a 4.
 
-**My take.** This is a gym that picked its demographic and honed in on it, the Berawa bougie crowd who are here for wellness and fitness rather than weights and aesthetics. That is a strategy, not a failure, and it works. Sixth, 0.2 of a point clear of Obsidian II. If you have just landed and know nobody, the total score is irrelevant to you and this is the answer.
+**My take.** This is a gym that picked a demographic and went after it, the Berawa wellness crowd who care more about feeling well than about weights and aesthetics. That is a strategy and it is working. Sixth, 0.2 of a point clear of Obsidian II. If you are new here and know nobody, ignore the ranking entirely.
 
 **Score:** Equipment 3, Space 4, Hygiene 4, Recovery 5, Location 3, Restaurant 4, Vibes 3, Extras 4, Building 3, Combat 2, Community 5, Pool 3, Classes 4, Price 3.
 
 ## 5. Surya Gym, 7.5/10
 
-**The best fight gym in Bali, and it is not close.**
+**The best fight focused gym on this list, though not where the island's best fighters train.**
 
-**Location and the building.** Decent location, and a properly built building, solid and well made, which is why building scores a 5. What it is not is designed. Nobody has thought about the light or the sound or what walking in should feel like, so vibes is a 3. What it does have is space, and space is a bigger factor than people give it credit for.
+**Location and the building.** Decent location, and a building that has been properly made, which is why it scores a 5. It has not been designed, though. No thought has gone into the light or the sound, so vibes settles at a 3. What Surya has instead is space, which never appears on a website and which everybody notices.
 
-**What it gets right.** The fighting. Not a bag in the corner, an actual [fight club programme](https://www.suryagymbali.com/fight-club/), a huge area to roll and spar, their own octagon and a full schedule of fight classes running from six in the morning to nine at night. It is the only 5 for combat on this list and it deserves it. The rooftop recovery is the other standout, sitting in the pool overlooking Canggu at sunset, directly above the octagon so you can watch people spar while you soak. There is a big calisthenics area too, and pool tables on the ground floor are a genuinely nice touch.
+**What it gets right.** The fighting. A full [fight club programme](https://www.suryagymbali.com/fight-club/), a large mat area to roll and spar on, their own octagon, and classes running from six in the morning until nine at night. It is the only 5 for combat on this list. The rooftop recovery is the other reason to come, sitting in the pool as the sun goes down over Canggu, directly above the octagon so you can watch the sparring below. The calisthenics area is generous and the pool tables on the ground floor are a good touch.
 
-**What it gets wrong.** The equipment is good but old, and when your competition keeps rolling out brand new machines, old starts to show. The changing rooms are grim, dingy and not clean enough for a gym charging what it charges in this climate. The food is limited. And outside the fight programme there is very little built around the gym rather than inside it, no co working worth the name, no run club, which is why extras is a 2.
+**What it gets wrong.** The equipment is good and old, and age shows now that the competition unwraps new machines every quarter. The changing rooms are dingy and not clean enough for the climate or the price. The food is limited. And almost nothing has been built around the gym itself, no co working worth the name and no run club, which is how a gym this good at one thing ends up with a 2 for extras.
 
-**My take.** This is a specialist and it should be judged as one. The fight club is also the entire class timetable, so its combat score and its classes score are drawing on the same asset viewed two ways rather than two separate strengths. Fifth overall, and it is the extras column that keeps a gym this good at one thing out of the top four. If you fight, or you want to, this is the conversation and everywhere else is a footnote.
+**My take.** Surya is a specialist and should be read as one. Its fight club is also its entire class timetable, so the combat score and the classes score lean on the same asset seen from two angles. Worth being precise about what it is, though. If you want to train alongside genuinely world class fighters, dedicated gyms like Soma and Bali MMA are grittier, simpler and better at exactly that. What Surya offers is a proper gym with a serious fight programme attached, and on that basis nothing else in Canggu is close. Fifth overall, with the extras column the only thing keeping it out of the top four.
 
 **Score:** Equipment 4, Space 4, Hygiene 4, Recovery 4, Location 4, Restaurant 4, Vibes 3, Extras 2, Building 5, Combat 5, Community 3, Pool 3, Classes 4, Price 3.
 
 ## 4. Rite Gym, 7.7/10
 
-**The most beautiful building on this list, and the best location by a distance.**
+**The best building on this list, in the best location.**
 
-**Location and the building.** Brutalist concrete done properly rather than done as a mood board, by Indonesian architects 2M Studio, with the proportions actually thought through. And it is a stone's throw from the beach in [Pererenan](/invest/pererenan/). There is something about finishing a session with a jog straight down to the water that no other gym here can offer you. Best location on this list.
+**Location and the building.** Brutalist concrete by the Indonesian studio 2M, done with conviction and with the proportions properly thought through. It also sits a short walk from the sand in [Pererenan](/invest/pererenan/), close enough to finish a session and jog straight into the sea. Best location here by a comfortable margin.
 
-**What it gets right.** The recovery is the only one in Canggu genuinely trying to be zen. Relaxing music, a Japanese style garden, a secluded ice bath, essential oils in the steam room. Everywhere else seems to want to turn recovery into a beach club, and Bali has enough beach clubs. The classes are the joint best score here, a 5, touching combat, HYROX, 5x5 metcon, a proper calisthenics and handstand programme nothing else on this list runs, yoga and pilates morning and evening, even sound baths and breath work. The new boxing room is top notch. And they get the little details right, q-tips, micellar water and lotion in the changing rooms.
+**What it gets right.** The recovery is the only one in Canggu aiming at calm. Quiet music, a Japanese style garden, a secluded ice bath, oils in the steam room. Everywhere else is trying to turn recovery into a beach club, and Bali has plenty of those already. The classes are the joint best score on this list, a 5, covering boxing and muay thai, HYROX, 5x5 metcon, a calisthenics and handstand programme nobody else runs, yoga and pilates twice a day, plus sound baths and breath work. The new boxing room is superb. And the details land, with q-tips, micellar water and hand lotion in the changing rooms.
 
-**What it gets wrong.** They run yoga classes in that boxing room, so you cannot always use it, which defeats the point of building it. They do the same thing upstairs, running classes in the space normal people are trying to train in. Equipment is a 4, good rather than remarkable, with plenty on the roof, a dedicated booty room and new machines on the ground floor. I preferred the ground floor when it was for heavy deadlifts, and they seem to have run out of space, because that room barely gets used now. Hygiene was not great when I went. The changing rooms are too dark to spot dirt in, and there are no spray wipes on the gym floor, which in a hot country is not a small thing. And the food is terrible, the lowest restaurant score on this list by a distance, with mosquitos eating you while you eat it.
+**What it gets wrong.** They book yoga classes into that boxing room, so much of the time you cannot use it, and they do the same upstairs by running classes in the space people are training in. Equipment is a 4, good without being memorable, spread across the roof, a dedicated booty room and new machines downstairs. I preferred the ground floor when it was where the heavy deadlifts happened, and it now sits largely unused. Hygiene was poor the last few times I went, the dark changing rooms hide dirt, and there are no spray wipes on the floor. The food is the lowest restaurant score on this list, eaten in the evening while the mosquitos eat you.
 
-**My take.** This was my personal favourite for years, so understand that all of the above is said with affection. It is the only gym in Canggu where somebody has thought about what the place smells like. Fourth, 0.2 of a point behind House of Kairos. Renovations are underway and I will re review at Christmas, and I expect this score to move.
+**My take.** Rite was my favourite gym for years, so read the above as family criticism. It is still the only place in Canggu where somebody has thought about what the building smells like. Fourth, 0.2 of a point behind House of Kairos. Renovations are under way and I expect this score to move by Christmas.
 
 **Score:** Equipment 4, Space 4, Hygiene 3, Recovery 4, Location 5, Restaurant 2, Vibes 5, Extras 4, Building 5, Combat 4, Community 3, Pool 3, Classes 5, Price 3.
 
 ## 3. House of Kairos, 7.7/10
 
-**If there were a Soho House in Bali, this would be the closest thing to it.**
+**The closest thing Bali has to a Soho House, with a squat rack in it.**
 
-**Location and the building.** Great location, just down the road from Open House. And then the most beautiful gym in Bali, which is not close. Luxury art deco through the restaurant and the co working space, a spiral staircase, a level of finish nothing else here comes near. You feel like you are part of a club rather than a membership, and that is worth something.
+**Location and the building.** Great spot, just down the road from Open House, and then the most beautiful gym on the island by a distance. Art deco through the restaurant and the co working space, a spiral staircase, and a level of finish nothing else here approaches. It feels less like a membership than a club.
 
-**What it gets right.** The pool is incredible, the best I have seen in any gym in Bali and the only 5 for pool on this list. Best loungers too. The food is top notch, gym focused, high end and genuinely delicious rather than gym canteen fare. The co working space is stylish and usable. Hygiene across the gym floor itself is the joint best here.
+**What it gets right.** The pool is extraordinary, the best I have seen in any gym in Bali and the only 5 in that column, with the best loungers too. The food is exceptional, gym focused and cooked properly, closer to a good restaurant than a gym kitchen. The co working space is handsome and usable. The gym floor itself is spotless.
 
-**What it gets wrong.** No combat at all. Not one punching bag. Sometimes you just want to hit something for a while and you cannot. The equipment is Technogym, brand new and more than enough for 95% of people, but if you are on the stronger side you will max it out. The steam room was a little gross, and it is not hard to keep it clean and put some lavender oil in it. There is nowhere to hang a towel and no shampoo at the outdoor showers. Classes are limited, about thirteen sessions across five weekdays, members only and booked through the app rather than published anywhere. Community is only a 3, a beautiful room full of people having a nice time separately. And it sits in the expensive tier, on a rate it does not publish.
+**What it gets wrong.** There is no combat. Not a heavy bag, not a speed bag, nothing. The equipment is brand new Technogym, more than enough for almost everybody and slightly short for the strong, who will meet its ceiling. The steam room was grubby when I used it, which in a building this considered is jarring. There is nowhere to hang a towel at the outdoor showers and no shampoo when you get there. The timetable is thin, around thirteen sessions across five weekdays, members only through the app. Community is a 3, a beautiful room full of people enjoying themselves separately. And it sits in the expensive tier on a price it does not publish.
 
-**My take.** This had very strong potential and it is the small things holding it back. I also wish they would put the macros on the menu. Third, 0.8 of a point behind Reload and 0.2 ahead of Rite Gym, which is as tight as this table gets.
+**My take.** This place had every chance to win and lost it on small things. I would also like the macros on the menu. Third, 0.8 of a point behind Reload and 0.2 ahead of Rite Gym, which is the tightest corner of this table.
 
 **Score:** Equipment 4, Space 4, Hygiene 5, Recovery 4, Location 5, Restaurant 4, Vibes 5, Extras 4, Building 5, Combat 0, Community 3, Pool 5, Classes 3, Price 2.
 
 ## 2. Reload, 7.8/10
 
-**The gym that could have been number one.**
+**The gym that should have won.**
 
-**Location and the building.** Great location, easy to get to. Walking in feels like arriving at a leisure centre, with clothes and jewellery for sale in the foyer. The rooftop is amazing and the room is big. Underneath that, though, it feels cheaply built, and the stairs look like something out of a haunted house.
+**Location and the building.** Easy to get to, though you arrive past a rail of clothes and a cabinet of jewellery, which makes the entrance feel more like a leisure centre. The rooftop is superb and the main room is big. Underneath that it feels cheaply built, and the stairwell is grim.
 
-**What it gets right.** The machines are the best of any gym in Bali, full stop, with really good ergonomics. Bodybuilder approved. If you care about the quality of the iron above everything else, you go here and you stop reading. The restaurant is genuinely excellent, good enough to stand on its own without a gym attached, build your own or a la carte, macro counted, huge variety, and the only 5 for food on this list. The pool is a proper 4. The class programme is a real one too, Hyrox most days, boxing, a serious pilates rotation across four formats, yoga and mobility through the week.
+**What it gets right.** The machines are the best of any gym in Bali, with ergonomics that suggest an actual lifter was consulted. If the quality of the iron is what matters most to you, you can stop reading here. The restaurant is superb and would stand on its own without a gym attached, with build your own or a la carte, macros counted and enough variety to eat there four times a week. It is the only 5 for food on this list. The pool is a solid 4. The timetable is a real one too, with Hyrox most days, boxing, a serious pilates rotation across four formats, and enough yoga and mobility to fill out the week.
 
-**What it gets wrong.** Recovery is a 3 and the joint weakest here. The steam room is a hot mess and has been sitting empty for months. There is no shower gel at the showers, so you end up round the back near the bin bags to wash properly. The wood around the recovery area is already coming apart on a building that is not old. The blue lights in the evening are harsh and flattering to nobody. The punch bags are in an impractical spot, with a change in flooring and awkward space around them that makes it hard to work for any length of time. And the artwork is abysmal. An AI woman staring into the distance. No taste, tacky, and it drags the whole room down.
+**What it gets wrong.** Recovery is a 3 and joint worst here. The steam room is a mess and has been out of action for months. There is no shower gel at the showers, so washing properly means a trip round the back past the bins. The woodwork around the recovery area is already coming apart. The blue lighting in the evening is unflattering. The punch bags sit in an awkward spot where the flooring changes, which makes working them for any length of time difficult. And the artwork is poor throughout, including a computer generated woman staring into the middle distance, which is tacky in a room this expensive.
 
-**My take.** This had the potential to be the best gym on this list and it has real moments of greatness. They are attempting the next level of gym experience and in many ways they have got there. It is the little details Omni and Rite Gym get right that this place does not. With better guidance it is number one. Second, 6.8 points behind Omni and 0.8 clear of House of Kairos, and they are expanding, so who knows what turns up next.
+**My take.** Reload could have been the best gym on this list and has real flashes of it. They are reaching for a higher tier of gym experience and in most respects they have got there. What they keep missing are the small things Omni and Rite Gym get right, and small things are what separate a great gym from an expensive one. Second, 6.8 points behind Omni and 0.8 clear of House of Kairos. They are expanding, so there is time.
 
 **Score:** Equipment 5, Space 4, Hygiene 5, Recovery 3, Location 5, Restaurant 5, Vibes 3, Extras 3, Building 4, Combat 3, Community 4, Pool 4, Classes 4, Price 2.
 
 ## 1. Omni, 8.7/10
 
-**Everything about this place just oozes class.**
+**The most complete gym in Canggu, and priced accordingly.**
 
-**Location and the building.** The location is not amazing, out at the end of the Seseh road just beyond the traffic lights, but the vibes more than make up for it. Good quality building, stylish without being smug, which is a harder balance to strike around here than it sounds. Some gyms empty out and die at 6pm. Omni gets better.
+**Location and the building.** The location is fine and no better, out at the end of the Seseh road just past the traffic lights. The building makes up for it, well made and stylish without being pleased with itself. Most gyms empty out at six in the evening. Omni gets better.
 
-**What it gets right.** There is no weak category anywhere. Space 5, hygiene 5, recovery 5, three of the four heaviest weighted categories, and nothing else on this list manages that. The infrared sauna is a genuine differentiator rather than a marketing line. The co working is the best in Canggu, and I mean the best co working, not the best gym co working. There are two separate calisthenics areas, so when a class books one you use the other. The most classes by miles, more than 65 a week covering every base going. Nice food with build your own. And two outdoor training areas, which in this climate is the correct decision almost nobody else makes.
+**What it gets right.** There is no weak category anywhere on the card. Space 5, hygiene 5, recovery 5, three of the four heaviest weighted columns, and nobody else here manages two of them. The infrared sauna does what it claims. The co working is the best in Canggu, and I mean the best co working in Canggu, not the best one attached to a gym. There are two separate calisthenics areas, so a class taking one does not cost you your session, which is the most considerate piece of gym design in this town. The timetable is the biggest here by miles, more than 65 sessions a week covering everything. The food is good with build your own. And there are two outdoor training areas, the obviously correct call in this climate.
 
-**What it gets wrong.** The equipment is a 4, roughly on par with Rite Gym and nothing close to Obsidian II. Combat is a 3. And it is expensive, sitting in the same tier as Reload and House of Kairos.
+**What it gets wrong.** The equipment is a 4, roughly level with Rite Gym and nowhere near Obsidian II, so the purists will always have somewhere else to be. Combat is a 3. And it is expensive, sitting in the top price tier with Reload and House of Kairos.
 
-**My take.** It never gives you a reason to complain, which sounds like faint praise until you try to find another gym here you can say it about. Every other gym on this list has a hole in it somewhere. Omni has a combat score of 3, iron that is merely good, and a price tag to match its ambitions. That is the whole list. It wins by 6.8 points, the second largest gap on this table after the one separating seventh place from last, because it is still the only gym here that is bad at nothing.
+**My take.** Omni never gives you a reason to complain, which is harder to say about anywhere else on this page. Every other gym here has a hole in it somewhere. Omni has a combat score of 3, iron that is merely good, and a price that knows what it is. That is the entire list. It wins by 6.8 points, the second biggest gap on this table after the one between seventh and last, because it remains the only gym in Canggu that is bad at nothing.
 
 **Score:** Equipment 4, Space 5, Hygiene 5, Recovery 5, Location 4, Restaurant 4, Vibes 5, Extras 5, Building 5, Combat 3, Community 4, Pool 4, Classes 5, Price 2.
 
@@ -195,7 +195,7 @@ Three things worth saying before the list.
 
 - **You want the fewest compromises:** Omni. It is first for a reason, and by the biggest margin near the top of the table.
 - **You have just arrived and know nobody:** Nirvana. Sixth on this list and the correct answer for you by a mile.
-- **You fight, or you want to:** Surya Gym. Not a debate. Bring your own flip flops.
+- **You fight, or you want to:** Surya Gym, if you want a full gym around the fight programme. If fighting is the whole point, look at the dedicated fight gyms like Soma or Bali MMA instead.
 - **You train in the morning and work all afternoon:** Omni. The co working alone justifies it.
 - **You actually swim:** House of Kairos, then Omni or Reload. Nothing else here has a pool worth planning your day around.
 - **You want to feel like your life is going well:** House of Kairos.
@@ -205,9 +205,9 @@ Three things worth saying before the list.
 - **You want to train hard, cheap, with no queue:** Undefeated.
 - **You want the cheapest membership on the list:** Undefeated, by a wide margin, then Obsidian II.
 
-Which is the real lesson of this list. The winner is the gym with no weaknesses, but the right gym for you is almost always the one that is brilliant at the single thing you actually care about. Nirvana is sixth and it is the best answer for a lot of people reading this. Read the category scores, not the total.
+Which is the real lesson of this list. The winner is the gym with no weaknesses, but the right gym for you is usually the one that is brilliant at the single thing you care about. Nirvana is sixth and it is still the best answer for a lot of people reading this. Read the category scores, not the total.
 
-And if you can afford two memberships, the honest answer that nobody wants to hear is Surya plus House of Kairos. One for training, one for living.
+And if you can afford two memberships, the answer is Surya plus House of Kairos. One for training, one for living.
 
 ## A note on why a property broker is reviewing gyms
 
@@ -245,7 +245,7 @@ Reload, comfortably. The machines there are the best on the island. Obsidian II 
 
 **Which is the best gym in Bali for boxing and muay thai?**
 
-Surya Gym, and it is not close. It is the only gym here scoring a perfect 5 for combat, with a proper fight club programme rather than a bag in the corner. It finishes fifth overall only because it offers very little outside the fighting. Rite Gym has the best single boxing room, though it also gets used for yoga classes.
+Of the eight gyms on this list, Surya Gym, and it is not close. It is the only one scoring a perfect 5 for combat, with a full fight club programme, a large mat area and its own octagon. Worth saying plainly though, this list covers gyms rather than dedicated fight schools. If your goal is to train with the best fighters on the island, specialist gyms such as Soma and Bali MMA are simpler, grittier and better at that specific job. Surya is the best option if you want a proper gym wrapped around a serious fight programme. Rite Gym has the best single boxing room, though it also gets used for yoga classes.
 
 **Which Canggu gym has the best changing rooms?**
 
