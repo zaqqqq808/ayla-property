@@ -14,19 +14,6 @@ We are going to work up from the bottom, so stick around for the top three.
 
 Let's begin the review.
 
-<div class="not-prose my-8 rounded-lg border border-gold bg-cream px-6 py-5">
-  <p class="mb-3 font-display text-xs font-bold uppercase tracking-widest text-gold">Key Takeaways</p>
-  <ul class="space-y-2 text-sm text-brown">
-    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Omni wins, 8.7/10.</strong> Still the only gym on the list with no weak category anywhere, classes included, and the best co working space in Canggu regardless of the gym attached to it. Price is the one column where it is not near the top, sitting in the expensive tier alongside Reload and Kairos.</span></li>
-    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>House of Kairos and Rite Gym are now separated by just 0.2 of a point,</strong> third and fourth on the table. Price closed most of the gap that classes had opened up between them. Kairos still owns the only 5 for the pool and still scores an actual zero for combat, Rite still has the best building here, neither of those strengths moved, the margin between the two of them just got tight.</span></li>
-    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Reload holds second,</strong> on the back of its class programme and despite sitting in the same expensive price tier as Omni and Kairos.</span></li>
-    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Nirvana and Obsidian II are also separated by just 0.2 of a point now,</strong> sixth and seventh. Nirvana still runs the biggest class programme on this list. Obsidian II is the more expensive of the two, which is most of why the gap did not close any further.</span></li>
-    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Surya Gym has the best fight setup in Bali</strong> and finishes fifth, because outside the fighting there is very little there, including on the class timetable.</span></li>
-    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Undefeated is the cheapest gym on this list by a wide margin,</strong> and it still finishes last, because price is one category out of fourteen and everything else here rewards breadth over a bare bones membership.</span></li>
-    <li class="flex gap-2"><span class="mt-0.5 font-bold text-olive">✓</span><span><strong>Not one gym in Canggu has good changing rooms.</strong> Not one. It is the running theme of this entire review.</span></li>
-  </ul>
-</div>
-
 ## How I actually scored these
 
 Every gym review you read in Bali is either a paid post or somebody's mate doing them a favour. So before I tear into anyone, here is exactly how the numbers were made.
@@ -58,23 +45,13 @@ Fourteen categories, each scored out of 5. Then weighted, because not everything
 
 That gives a maximum of 81 points, which I have converted to a score out of 10 so it reads like a normal review. Because a couple of gyms land within a rounding error of each other, I have put the raw points in the table too.
 
-Eight things worth saying before the list.
+Three things worth saying before the list.
 
 **The pool is not recovery, so I stopped scoring them together.** Recovery is the ice bath, the sauna, the steam room, the cold plunge. The stuff that is actually doing something to your body after you train. A pool is a pool. It is lovely, it is why half of Canggu picks a gym, and it belongs in the scorecard, but it belongs at 1x alongside the other nice to haves rather than sitting at 1.4x pretending to be a recovery protocol. Splitting them cost three gyms a point of recovery they were only holding because they had a nice pool.
 
 **Vibes and community are not the same thing either.** Vibes is how a place feels while you are in it. The smell, the sound, the light, the aesthetic. Community is whether you belong. Whether anyone learns your name, whether it is easy to make friends, whether you would still turn up if you had nobody to meet. A gym can nail one and completely miss the other, and two of the gyms below do exactly that in opposite directions.
 
-**Nothing gets counted twice, with one deliberate exception.** That is the rule that runs through this whole scorecard. A busy, sociable room scores under community and does not also inflate vibes. A nice pool scores under pool and does not also inflate recovery. The exception is Surya Gym, where the class timetable and the fight programme are the same thing. Its combat score and its classes score are both drawing on that one fight club, because for a gym whose entire schedule is boxing and muay thai, those really are the same asset viewed two ways rather than two separate strengths.
-
 **Changing rooms sit inside gym space, at the heaviest weighting.** You spend real time in there, usually at your least comfortable, and it is the single most reliable tell of whether a gym actually respects the people paying it.
-
-**Combat is only weighted at 1x and it still swings the mid table harder than almost anything else.** It has the widest spread of anything here, a perfect 5 down to an actual zero.
-
-**Classes is scored differently to most of the others, and I want to be upfront about that.** Everything else in this list comes from actually training there. I have not sat through enough classes at all eight gyms to fairly judge whether an instructor is any good, so this category is scored on the breadth and specialisation of each gym's published timetable instead, how much is on offer and whether a gym is trying to do one thing well or everything reasonably. It says nothing about whether the classes themselves are good. And because gym timetables in Bali live half on outdated websites and half on Instagram Stories that vanish after 24 hours, treat this one column as a snapshot pulled in early September 2026 rather than something that will still be true by Christmas.
-
-**Price is also scored differently, and it runs backwards to everything else.** Every other category rewards more. Price rewards less, because a lower monthly membership fee is a genuine point in a gym's favour rather than a compromise. I pulled the standard published monthly rate for six of these gyms straight from their own websites. Reload and House of Kairos do not publish a monthly rate anywhere, so those two are scored on direct enquiry rather than a public page, and I have placed them alongside Omni based on what I was told. Surya Gym and Nirvana both run several membership tiers at different prices, so I used the tier that matches what everyone else here bundles as standard, VIP for Surya and Life for Nirvana, rather than the cheapest option either one offers. Prices in Bali move often and without much notice, so treat this column the same way as classes, a snapshot from early September 2026 rather than something fixed.
-
-**Ties break on equipment, then combat.** If two gyms land on the exact same number of points, the better actual gym wins, so I break it on equipment first and combat second. Nobody has needed it so far, though a couple of gyms below have come close enough on points to round to the same score out of 10, which is exactly why the points column sits next to it.
 
 ## The table
 
@@ -87,18 +64,17 @@ Eight things worth saying before the list.
         <th class="py-3 pr-3 font-display text-xs uppercase tracking-widest text-gold">Area</th>
         <th class="py-3 pr-3 font-display text-xs uppercase tracking-widest text-gold">Score</th>
         <th class="py-3 pr-3 font-display text-xs uppercase tracking-widest text-gold">Points</th>
-        <th class="py-3 font-display text-xs uppercase tracking-widest text-gold">In one line</th>
       </tr>
     </thead>
     <tbody class="text-brown">
-      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">1</td><td class="py-3 pr-3 font-semibold">Omni</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">8.7</td><td class="py-3 pr-3">70.2</td><td class="py-3">No weak category anywhere</td></tr>
-      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">2</td><td class="py-3 pr-3 font-semibold">Reload</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.8</td><td class="py-3 pr-3">63.4</td><td class="py-3">Best machines, busiest room</td></tr>
-      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">3</td><td class="py-3 pr-3 font-semibold">House of Kairos</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.7</td><td class="py-3 pr-3">62.6</td><td class="py-3">The most beautiful, and no combat</td></tr>
-      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">4</td><td class="py-3 pr-3 font-semibold">Rite Gym</td><td class="py-3 pr-3">Pererenan</td><td class="py-3 pr-3 font-bold">7.7</td><td class="py-3 pr-3">62.4</td><td class="py-3">Best building, most well rounded classes</td></tr>
-      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">5</td><td class="py-3 pr-3 font-semibold">Surya Gym</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.5</td><td class="py-3 pr-3">60.6</td><td class="py-3">Best fight gym, little else</td></tr>
-      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">6</td><td class="py-3 pr-3 font-semibold">Nirvana</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.2</td><td class="py-3 pr-3">58.4</td><td class="py-3">The best community in Canggu</td></tr>
-      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">7</td><td class="py-3 pr-3 font-semibold">Obsidian II</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.2</td><td class="py-3 pr-3">58.2</td><td class="py-3">Great iron, great food, still no taste</td></tr>
-      <tr><td class="py-3 pr-3 font-bold text-olive">8</td><td class="py-3 pr-3 font-semibold">Undefeated</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">6.3</td><td class="py-3 pr-3">51.0</td><td class="py-3">Quirky, focused, no frills</td></tr>
+      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">1</td><td class="py-3 pr-3 font-semibold">Omni</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">8.7</td><td class="py-3">70.2</td></tr>
+      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">2</td><td class="py-3 pr-3 font-semibold">Reload</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.8</td><td class="py-3">63.4</td></tr>
+      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">3</td><td class="py-3 pr-3 font-semibold">House of Kairos</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.7</td><td class="py-3">62.6</td></tr>
+      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">4</td><td class="py-3 pr-3 font-semibold">Rite Gym</td><td class="py-3 pr-3">Pererenan</td><td class="py-3 pr-3 font-bold">7.7</td><td class="py-3">62.4</td></tr>
+      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">5</td><td class="py-3 pr-3 font-semibold">Surya Gym</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.5</td><td class="py-3">60.6</td></tr>
+      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">6</td><td class="py-3 pr-3 font-semibold">Nirvana</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.2</td><td class="py-3">58.4</td></tr>
+      <tr class="border-b border-beige"><td class="py-3 pr-3 font-bold text-olive">7</td><td class="py-3 pr-3 font-semibold">Obsidian II</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">7.2</td><td class="py-3">58.2</td></tr>
+      <tr><td class="py-3 pr-3 font-bold text-olive">8</td><td class="py-3 pr-3 font-semibold">Undefeated</td><td class="py-3 pr-3">Canggu</td><td class="py-3 pr-3 font-bold">6.3</td><td class="py-3">51.0</td></tr>
     </tbody>
   </table>
 </div>
@@ -175,7 +151,7 @@ The equipment is a little old. Perfectly good, but a little old. Nothing about t
 
 Here is the key point, and it is a big one. Surya has the best fight facilities in Bali and it is not close. Not "there is a bag in the corner" level. Proper equipment, proper space, an actual [fight club programme](https://www.suryagymbali.com/fight-club/). If you want to box or do muay thai seriously in Canggu, this is the conversation and everywhere else is a footnote. It is the only 5 for combat on this list and it deserves it.
 
-The fight club programme is also the entire class schedule, and there is nothing else on it. Boxing, muay thai, K1 and sparring, running from six in the morning to nine at night most days, open gym blocks filling every gap in between. No yoga, no pilates, no general fitness class of any kind. It is a deep, specialised programme rather than a broad one, and it earns a 4 rather than the 5 Rite Gym and Omni get precisely because broad is not what it is trying to be. This is also the one place on the scorecard where combat and classes are drawing on the same underlying strength rather than two separate ones, as explained above.
+The fight club programme is also the entire class schedule, and there is nothing else on it. Boxing, muay thai, K1 and sparring, running from six in the morning to nine at night most days, open gym blocks filling every gap in between. No yoga, no pilates, no general fitness class of any kind. It is a deep, specialised programme rather than a broad one, and it earns a 4 rather than the 5 Rite Gym and Omni get precisely because broad is not what it is trying to be. This is also the one place on the scorecard where combat and classes are drawing on the same underlying strength rather than two separate ones.
 
 On food and extras, this is where it thins out fast. The restaurant is fine. Outside the fight programme there are pool tables on the ground floor and not a lot more. No co working worth the name, no run club, nothing built around the gym rather than inside it. Scored honestly, extras is a 2, and that is what puts a gym this good at one thing down in fifth.
 
