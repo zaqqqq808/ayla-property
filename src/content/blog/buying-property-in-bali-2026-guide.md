@@ -95,4 +95,6 @@ Both of these are navigable with the right legal team. They become expensive sur
 
 For a full breakdown of the developer landscape, our [Bali Developer Report 2026](/guides/bali-developer-report-2026/) covers the 80-plus developers we track and what to look for when evaluating a new build. The [Indonesia Foreign Investor Checklist 2026](/guides/indonesia-foreign-investor-checklist-2026/) is the most practical pre-purchase document we produce.
 
+If you are not yet sure which ownership structure you qualify for, our [free ownership checker](/can-foreigners-buy-property-in-bali/) sorts that in four questions before you speak to anyone.
+
 If you are actively looking and want a current market briefing, book a call: [calendly.com/ayla-teamoperations/30min](https://calendly.com/ayla-teamoperations/30min). I will tell you exactly where the value is right now based on what is live in our pipeline.

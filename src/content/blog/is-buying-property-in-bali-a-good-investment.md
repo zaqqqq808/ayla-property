@@ -128,7 +128,7 @@ The complete Bali Property Market Report 2026, including area-by-area price brea
   <a href="/guides/bali-developer-report-2026/" class="inline-block bg-olive text-white uppercase tracking-widest text-sm font-semibold px-8 py-4 rounded-full hover:bg-brown transition-colors">View the Full Report</a>
 </div>
 
-New to the Bali market? Start with our [complete guide to buying property in Bali as a foreigner](/guides/foreigners-buying-property-bali/). If you would like to talk through what these numbers mean for your specific situation, a free 30-minute call with Ayla is the best starting point.
+New to the Bali market? Start with our [complete guide to buying property in Bali as a foreigner](/guides/foreigners-buying-property-bali/). If you would like to talk through what these numbers mean for your specific situation, a free 30-minute call with Ayla is the best starting point. If you are still at the stage of working out what you are legally allowed to buy, start with our [free ownership checker](/can-foreigners-buy-property-in-bali/) instead.
 
 <div class="not-prose my-6 text-center">
   <a href="https://calendly.com/ayla-teamoperations/30min" class="inline-block border-2 border-olive text-olive uppercase tracking-widest text-sm font-semibold px-8 py-4 rounded-full hover:bg-olive hover:text-white transition-colors">Book a Free Call</a>

@@ -709,6 +709,16 @@
       "source": "/wp-comments-post.php/",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/journal/can-you-buy-property-in-bali",
+      "destination": "/can-foreigners-buy-property-in-bali/",
+      "permanent": true
+    },
+    {
+      "source": "/journal/can-you-buy-property-in-bali/",
+      "destination": "/can-foreigners-buy-property-in-bali/",
+      "permanent": true
     }
   ]
 }

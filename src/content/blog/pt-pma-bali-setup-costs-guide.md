@@ -16,7 +16,7 @@ PT PMA stands for Perseroan Terbatas Penanaman Modal Asing, which translates rou
 
 The reason it matters for property is this: a PT PMA can hold land title under HGB (Hak Guna Bangunan), which is a right to build and use land registered with Indonesia's national land registry (BPN). This gives a company-held, BPN-registered title that is more formally secure than a leasehold agreement, which is a civil contract and sits outside the BPN system.
 
-In practical terms, a PT PMA is how a foreign investor holds property in Indonesia in a structure that most closely resembles freehold ownership, without being an Indonesian citizen.
+In practical terms, a PT PMA is how a foreign investor holds property in Indonesia in a structure that most closely resembles freehold ownership, without being an Indonesian citizen. Not everyone needs one, and our [free ownership checker](/can-foreigners-buy-property-in-bali/) will tell you in four questions whether your situation actually calls for a company or whether a simple leasehold covers it.
 
 ## The 2025 Capital Change You Need to Know
 

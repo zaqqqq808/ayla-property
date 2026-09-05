@@ -92,4 +92,6 @@ Based on our analysis of 511 active listings across 80 developers right now, the
 
 If you want to see the full market data before making any decisions, the [Bali Developer Report 2026](/guides/bali-developer-report-2026/) is free to download. And if you want to have this conversation with me directly, a [free 30-minute call](https://calendly.com/ayla-teamoperations/30min) is the fastest way to work out whether buying in Bali makes sense for your specific situation.
 
+Before that call, it is worth running your situation through our [free ownership checker](/can-foreigners-buy-property-in-bali/). It takes four questions and tells you which of these titles you can actually hold, based on your citizenship, your visa and what you plan to do with the property.
+
 The Melbourne guy, by the way, bought in Kedungu three weeks later.

@@ -27,7 +27,7 @@ This guide covers everything an Australian buyer needs to know in 2026.
 
 <img src="/images/journal/dataviz-australians-buying-bali.png" alt="AUD $450,000 invested: Bali villa vs Australian property yield comparison infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
-The short answer is yes, with the right structure. Indonesian law does not permit foreigners to hold freehold (Hak Milik) title on land or property. This is the same for all foreign nationals, not just Australians. However, there are two well-established, legally recognised pathways that Australian investors use every day.
+The short answer is yes, with the right structure. Indonesian law does not permit foreigners to hold freehold (Hak Milik) title on land or property. This is the same for all foreign nationals, not just Australians. However, there are two well-established, legally recognised pathways that Australian investors use every day. If you want the answer for your exact situation, run it through our [free ownership checker](/can-foreigners-buy-property-in-bali/), which asks four questions and tells you which structure applies.
 
 ### Option 1: Leasehold (Hak Sewa)
 

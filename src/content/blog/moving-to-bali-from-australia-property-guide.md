@@ -93,4 +93,6 @@ On the other hand, imported goods, certain electronics, good wine, and anything 
 
 For Australians thinking seriously about buying, the next step is understanding the process and what due diligence looks like. Our [property investment guide](/guides/bali-property-investment/) covers the full framework, and I am always available for a direct conversation about whether a specific property or area makes sense for your situation.
 
+You can also check which ownership structure applies to you as an Australian buyer with our [free ownership checker](/can-foreigners-buy-property-in-bali/), which takes about thirty seconds.
+
 Book a 30-minute call here: [calendly.com/ayla-teamoperations/30min](https://calendly.com/ayla-teamoperations/30min). No obligation, no pitch. If it is not the right move, I will tell you that too.

@@ -12,7 +12,7 @@ It makes sense. In Europe, Australia, or the US, owning the land forever is the 
 
 But here is the truth that many new investors miss: **In Bali, "Forever" is expensive.**
 
-While you *can* buy Freehold (Hak Milik) in Bali, usually through a PT PMA company, it comes with a massive premium. And if your goal is pure Return on Investment (ROI), that premium can actually be a trap.
+While you *can* buy Freehold (Hak Milik) in Bali, usually through a PT PMA company, it comes with a massive premium. And if your goal is pure Return on Investment (ROI), that premium can actually be a trap. Not sure which title you are eligible for? Our [free ownership checker](/can-foreigners-buy-property-in-bali/) answers that in about thirty seconds.
 
 Here is why the smartest money in Bali is often flowing into Leasehold.
 

@@ -64,4 +64,6 @@ For the right person: yes, clearly. If you plan to spend meaningful time in Bali
 
 It is not the right call if you are uncertain about committing to Bali, if you want to stay flexible, or if you are not willing to accept the leasehold structure and its implications. In that case, rent and take your time. There is no rush.
 
+If the leasehold question is what is holding you up, our [free ownership checker](/can-foreigners-buy-property-in-bali/) explains exactly which titles you can hold on a retirement KITAS versus a tourist visa.
+
 If you are closer to the buying decision and want to talk through the numbers specific to your situation, book a 30-minute call here: [calendly.com/ayla-teamoperations/30min](https://calendly.com/ayla-teamoperations/30min). No sales pitch. Just a straight conversation about whether it makes sense for you.
