@@ -7,37 +7,37 @@ import Footer from '@/components/Footer.astro';
 import StickyButton from '@/components/StickyButton.astro';
 
 // ── Default scenario, computed at build time so the numbers ship in the HTML ──
-const D = { price: 290000, nightly: 250, occ: 0.72, mgmt: 0.20, maint: 0.04, tax: 0.10 };
+const D = { price: 290000, nightly: 250, occ: 0.72, mgmt: 0.20, fixed: 450, tax: 0.10 };
 const dGross = D.nightly * 365 * D.occ;
 const dMgmt = dGross * D.mgmt;
-const dMaint = D.price * D.maint;
+const dFixed = D.fixed * 12;
 const dTax = dGross * D.tax;
-const dNet = dGross - dMgmt - dMaint - dTax;
+const dNet = dGross - dMgmt - dFixed - dTax;
 const usd = (n: number) => '$' + Math.round(n).toLocaleString('en-US');
 const def = {
   grossYield: (dGross / D.price * 100).toFixed(1) + '%',
   netYield: (dNet / D.price * 100).toFixed(1) + '%',
   grossIncome: usd(dGross),
   mgmtFees: '\u2212' + usd(dMgmt),
-  maintCost: '\u2212' + usd(dMaint),
+  fixedCost: '\u2212' + usd(dFixed),
   taxCost: '\u2212' + usd(dTax),
   netIncome: usd(dNet),
   payback: (D.price / dNet).toFixed(1),
   fiveYear: usd(dNet * 5),
   leverRate: ((dNet + 25 * 365 * D.occ * (1 - D.mgmt - D.tax)) / D.price * 100).toFixed(1) + '%',
   leverOcc: ((dNet + D.nightly * 365 * 0.05 * (1 - D.mgmt - D.tax)) / D.price * 100).toFixed(1) + '%',
-  leverPrice: ((dNet + dMaint * 0.1) / (D.price * 0.9) * 100).toFixed(1) + '%',
+  leverPrice: (dNet / (D.price * 0.9) * 100).toFixed(1) + '%',
 };
 
 const roiLevers = [
-  { t: 'Negotiate the price. It beats every upgrade on this list.', lead: true,
-    d: 'Yield is income divided by what you paid, so the cheapest way to raise it is to pay less. At the market median, 10 percent off a $290,000 villa lifts net yield from 11.9 to 13.6 percent and cuts payback from 8.4 to 7.3 years. That is worth more than an extra $25 a night, every night, and there is nothing to build. Developers rarely move for buyers who walk in off a listing. They move for buyers who arrive with comparable sales, know what the developer needs, and can say no. That is the part we do for you.' },
+  { t: 'Negotiate the price. It is worth as much as any upgrade on this list.', lead: true,
+    d: 'Yield is income divided by what you paid, so the cheapest way to raise it is to pay less. At the market median, 10 percent off a $290,000 villa lifts net yield from 14.0 to 15.6 percent and cuts payback from 7.1 to 6.4 years. That is the same as charging an extra $25 a night, every night, for the life of the lease, except there is nothing to build and it is locked in the day you sign. Developers rarely move for buyers who walk in off a listing. They move for buyers who arrive with comparable sales, know what the developer needs, and can say no. That is the part we do for you.' },
   { t: 'Pick your guest first: tourist, nomad or both',
     d: 'Holidaymakers pay the highest nightly rates but are seasonal and turn over weekly. Digital nomads stay one to three months, keep occupancy up through the quiet months and cost far less in cleaning and platform commission. The strongest villas are designed for one, or deliberately for both.' },
   { t: 'Let the guest choose the area',
     d: 'Canggu and Pererenan have the deepest demand from both groups. Uluwatu suits surfers and premium couples. Sanur is families and long stays. Kedungu is cheaper to enter but takes 12 to 18 months to ramp up. Check guests can walk to cafés and the beach, and that the rice field view is protected by zoning.' },
   { t: 'Design and furnish for that guest',
-    d: 'Nomads need a real desk and ergonomic chair, fibre with a backup connection and a UPS. Holidaymakers need a hero living space onto the pool and an ensuite for every bedroom. For both, teak and outdoor rated fabrics cut the maintenance line every year.' },
+    d: 'Nomads need a real desk and ergonomic chair, fibre with a backup connection and a UPS. Holidaymakers need a hero living space onto the pool and an ensuite for every bedroom. For both, teak and outdoor rated fabrics cut the repair bill every year.' },
   { t: 'Add a hot tub or heated plunge pool',
     d: 'It is a searchable amenity filter on the booking platforms, so it puts the villa in front of guests who would otherwise never see it.' },
   { t: 'Build an outdoor cinema',
@@ -45,7 +45,7 @@ const roiLevers = [
   { t: 'Sunset decks and wellness',
     d: 'A rooftop or sunset deck on the west coast, an ice bath, sauna or yoga shala. Each one speaks to a guest segment willing to pay more per night.' },
   { t: 'Buy the longest lease you can',
-    d: 'Lease length does not change your yield in a single year. It changes how many years you collect it. At an 8.4 year payback, a 25 year lease leaves about 16 years of profit and a 45 year lease more than 36. Longer leases also resell far more easily.' },
+    d: 'Lease length does not change your yield in a single year. It changes how many years you collect it. At a 7 year payback, a 25 year lease leaves about 18 years of profit and a 45 year lease about 38. Longer leases also resell far more easily.' },
   { t: 'Get licensed, and judge the operator on results',
     d: 'A licensed villa cannot be removed from the booking platforms. And 20 percent to an operator who fills the calendar beats 15 percent to one who does not. Ask for twelve months of real occupancy data on comparable villas.' },
 ];
@@ -60,27 +60,14 @@ const areaYields = [
 ];
 
 const hiddenCosts = [
-  { stage: 'When you buy', items: [
-    { c: 'VAT on new builds', note: 'Check whether the developer\'s price includes it', calc: 'Add to purchase price' },
-    { c: 'Notary and land office fees', note: 'Payable on signing', calc: 'Add to purchase price' },
-    { c: 'Legal due diligence', note: 'Land certificate, zoning and building permit checks', calc: 'Add to purchase price' },
-    { c: 'PT PMA company setup', note: 'Needed by most foreign owners to rent legally', calc: 'Add to purchase price' },
-    { c: 'Furniture pack', note: 'Often priced separately from the villa', calc: 'Add to purchase price' },
-    { c: 'Lease extension premium', note: 'Agreed now, or paid later at the landowner\'s price', calc: 'Add to purchase price' },
-    { c: 'Currency conversion and transfer fees', note: 'Bank spread on a six figure transfer adds up', calc: 'Add to purchase price' },
-  ]},
-  { stage: 'Every year', items: [
-    { c: 'Management fee', note: 'Typically 15 to 25 percent of rental income', calc: 'Included' },
-    { c: 'Maintenance and repairs', note: 'Typically 3 to 5 percent of property value', calc: 'Included' },
-    { c: 'Withholding tax on rental income', note: '10 percent for foreign individual owners', calc: 'Included' },
-    { c: 'Booking platform commission', note: 'Ask whether the management fee is charged before or after it', calc: 'Lower your nightly rate' },
-    { c: 'Company accounting and licence renewals', note: 'Ongoing PT PMA reporting and tourism licence', calc: 'Add to maintenance' },
-    { c: 'Banjar (village) contributions', note: 'Local community fees, set by each village', calc: 'Add to maintenance' },
-    { c: 'Utilities, internet, pool and garden', note: 'Ask whether your operator covers them', calc: 'Add to maintenance' },
-    { c: 'Insurance', note: 'Building, contents and public liability', calc: 'Add to maintenance' },
-    { c: 'Land and building tax (PBB)', note: 'Small, but annual', calc: 'Add to maintenance' },
-    { c: 'Furniture and linen replacement', note: 'Guests wear through soft furnishings quickly', calc: 'Add to maintenance' },
-  ]},
+  { c: 'Housekeeping', range: '$80 to $150', note: 'Usually a freelancer shared across several villas, on a flat monthly fee' },
+  { c: 'Pool and garden', range: '$30 to $60', note: 'Freelance, flat monthly fee. Rentals need the pool serviced about twice a week' },
+  { c: 'Electricity', range: '$100 to $200', note: 'Air conditioning and the pool pump. The biggest bill, and it rises in the hot months' },
+  { c: 'Internet', range: '$30 to $60', note: 'Fibre plus a backup connection if you want nomads to book' },
+  { c: 'Water, gas and rubbish', range: '$20 to $40', note: 'Ask whether the villa is on mains water or a well' },
+  { c: 'Pool chemicals', range: '$15 to $30', note: 'Check whether your pool freelancer includes them' },
+  { c: 'Banjar (village) fee', range: '$10 to $20', note: 'Mandatory community contribution, set by each village' },
+  { c: 'Land and building tax (PBB)', range: '$15 to $50', note: 'Paid once a year, shown here per month' },
 ];
 
 const benchmarks = [
@@ -95,23 +82,23 @@ const benchmarks = [
 const calcFaqs = [
   {
     q: 'What is a good rental yield in Bali?',
-    a: 'Gross yields average 10.6 percent across the 511 listings we track. Anything above 12 percent gross is a strong result, and well positioned villas in Canggu and Pererenan run 14 to 15 percent. Net of management, maintenance and withholding tax, expect roughly two thirds of the gross figure to land in your account.',
+    a: 'Gross yields average 10.6 percent across the 511 listings we track. Anything above 12 percent gross is a strong result, and well positioned villas in Canggu and Pererenan run 14 to 15 percent. Net of management, fixed running costs and tax, expect roughly 60 percent of the gross figure to land in your account.',
   },
   {
     q: 'How do you calculate ROI on a Bali villa?',
-    a: 'Gross yield is annual rental income divided by purchase price. Annual rental income is your nightly rate multiplied by 365 and then by your occupancy rate. Net yield subtracts management fees, annual maintenance and Indonesian withholding tax before dividing by purchase price. Payback period is purchase price divided by net annual income.',
+    a: 'Gross yield is annual rental income divided by purchase price. Annual rental income is your nightly rate multiplied by 365 and then by your occupancy rate. Net yield subtracts management fees, fixed monthly running costs and tax before dividing by purchase price. Payback period is purchase price divided by net annual income.',
   },
   {
     q: 'What is the average ROI on a Bali villa?',
-    a: 'On the market median of roughly USD 290,000, a villa running at a 250 dollar nightly rate and 72 percent occupancy produces about USD 65,700 gross and USD 34,390 net per year. That is a 22.7 percent gross and 11.9 percent net yield, with capital paid back in roughly 8.4 years. Weaker occupancy or a lower nightly rate moves those figures down quickly, which is why the calculator lets you change both.',
+    a: 'On the market median of roughly USD 290,000, a villa running at a 250 dollar nightly rate and 72 percent occupancy produces about USD 65,700 gross and USD 40,590 net per year, after 450 dollars a month in fixed running costs. That is a 22.7 percent gross and 14.0 percent net yield, with capital paid back in roughly 7.1 years. Weaker occupancy or a lower nightly rate moves those figures down quickly, which is why the calculator lets you change both.',
   },
   {
     q: 'How can I increase the rental yield on a Bali villa?',
-    a: 'Start with the purchase price, because yield is income divided by what you paid. At the market median, 10 percent off the price lifts net yield from 11.9 to 13.6 percent, more than an extra 25 dollars a night would. Then decide whether you are hosting holidaymakers, digital nomads or both, then choose the area and design around them. Nomads need a proper workspace and reliable internet with a backup connection. Holidaymakers pay more for an ensuite to every bedroom, a hot tub, an outdoor cinema or a sunset deck. Buy the longest lease available, get the villa licensed, and pick your operator on real occupancy data rather than the lowest fee. At the market median, each extra 10 dollars a night adds about 2,630 dollars a year.',
+    a: 'Start with the purchase price, because yield is income divided by what you paid. At the market median, 10 percent off the price lifts net yield from 14.0 to 15.6 percent, the same as charging an extra 25 dollars a night for the life of the lease. Then decide whether you are hosting holidaymakers, digital nomads or both, then choose the area and design around them. Nomads need a proper workspace and reliable internet with a backup connection. Holidaymakers pay more for an ensuite to every bedroom, a hot tub, an outdoor cinema or a sunset deck. Buy the longest lease available, get the villa licensed, and pick your operator on real occupancy data rather than the lowest fee. At the market median, each extra 10 dollars a night adds about 2,630 dollars a year.',
   },
   {
-    q: 'What hidden costs come with buying a villa in Bali?',
-    a: 'When you buy: VAT on new builds if the price excludes it, notary and land office fees, legal due diligence, PT PMA company setup, a furniture pack priced separately, any lease extension premium and currency transfer costs. Every year: booking platform commission, company accounting and licence renewals, banjar village contributions, utilities, pool and garden care, insurance, land and building tax and furniture replacement, on top of management, maintenance and withholding tax. Add one-off costs to the purchase price and yearly costs to maintenance in the calculator.',
+    q: 'What are the hidden monthly costs of owning a villa in Bali?',
+    a: 'Beyond management fees and tax, a typical two to three bedroom rental villa pays around 300 to 600 dollars a month in fixed costs, whether or not it is booked. That covers freelance housekeeping at 80 to 150 dollars, freelance pool and garden care at 30 to 60 dollars, electricity at 100 to 200 dollars, internet at 30 to 60 dollars, water, gas and rubbish at 20 to 40 dollars, pool chemicals, the banjar village fee and annual land and building tax. Booking platforms also take a commission on each booking.',
   },
   {
     q: 'What occupancy rate should I assume for a Bali villa?',
@@ -119,11 +106,11 @@ const calcFaqs = [
   },
   {
     q: 'What are the ongoing costs of owning a villa in Bali?',
-    a: 'Budget 15 to 25 percent of gross rental income for professional management, 3 to 5 percent of property value per year for maintenance because the tropical climate is hard on buildings, and 10 percent withholding tax on rental income for foreign individual owners. A PT PMA structure is taxed differently and you should confirm the current position with an advisor.',
+    a: 'Budget 15 to 25 percent of gross rental income for professional management, around 300 to 600 dollars a month in fixed running costs for freelance housekeeping, pool and garden care, electricity, internet, the banjar fee and land tax, and 10 percent tax on room revenue (PB1, the regional hotel tax in Badung). A PT PMA also pays corporate tax on its profit, so confirm your position with an advisor.',
   },
   {
     q: 'Is rental income in Bali taxed?',
-    a: 'Yes. Foreign individual owners face a 10 percent withholding tax on rental income. If you hold the property through a PT PMA company, the company is assessed under corporate tax rules instead. Separately, spending 183 days or more in Indonesia in a twelve month period makes you an Indonesian tax resident, assessed on worldwide income.',
+    a: 'Yes. Short-term villa rentals in Badung, which covers Canggu, Seminyak and Uluwatu, pay a 10 percent regional hotel tax (PB1) on room revenue. Individuals who let property also face a 10 percent final income tax on rental income. A PT PMA company is assessed under corporate tax rules on its profit as well. Confirm your own position with a tax advisor. Separately, spending 183 days or more in Indonesia in a twelve month period makes you an Indonesian tax resident, assessed on worldwide income.',
   },
 ];
 
@@ -135,7 +122,7 @@ const softwareSchema = JSON.stringify({
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Any",
   "browserRequirements": "Requires JavaScript",
-  "description": "Free calculator for Bali villa investments. Enter purchase price, nightly rate, occupancy, management fee, maintenance and withholding tax to see gross yield, net yield, annual income and payback period.",
+  "description": "Free calculator for Bali villa investments. Enter purchase price, nightly rate, occupancy, management fee, fixed monthly running costs and rental tax to see gross yield, net yield, annual income and payback period.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "provider": { "@type": "Organization", "name": "Ayla Property", "url": SITE_URL }
 });
@@ -220,21 +207,24 @@ const breadcrumbSchema = JSON.stringify({
       </div>
 
       <div class="field">
-        <label for="maint">Annual Maintenance: <span class="slider-val" id="maintVal">4%</span> of property value</label>
-        <input type="range" id="maint" min="1" max="10" value="4" step="0.5" aria-describedby="maintHint" />
-        <div class="range-row" id="maintHint"><span>1%</span><span>Tropical climate typical 3–5%</span><span>10%</span></div>
+        <label for="fixed">Fixed Monthly Running Costs (USD)</label>
+        <div class="input-wrap">
+          <span class="prefix" aria-hidden="true">$</span>
+          <input type="number" id="fixed" value="450" min="0" step="25" inputmode="numeric" />
+        </div>
+        <p class="hint">Typical 2 to 3 bedroom villa pays $300 to $600. <a href="#hidden-costs">See what is in it</a></p>
       </div>
 
       <div class="field">
-        <label id="taxLabel">Indonesian Withholding Tax on Rental</label>
+        <label id="taxLabel">Tax on Rental Income</label>
         <div class="radio-group" role="radiogroup" aria-labelledby="taxLabel">
           <label class="radio-card selected">
             <input type="radio" name="tax" value="10" checked />
-            10% (standard for foreign owners)
+            10% (PB1 hotel tax on short stays in Badung)
           </label>
           <label class="radio-card">
             <input type="radio" name="tax" value="0" />
-            0% (PT PMA corporate — check with advisor)
+            0% (compare before tax)
           </label>
         </div>
       </div>
@@ -259,8 +249,8 @@ const breadcrumbSchema = JSON.stringify({
         <h3>Annual Income Breakdown</h3>
         <div class="row"><span class="k">Gross Rental Income</span><span class="v" id="grossIncome">{def.grossIncome}</span></div>
         <div class="row neg"><span class="k">Management Fees</span><span class="v" id="mgmtFees">{def.mgmtFees}</span></div>
-        <div class="row neg"><span class="k">Maintenance &amp; Repairs</span><span class="v" id="maintCost">{def.maintCost}</span></div>
-        <div class="row neg"><span class="k">Indonesian Withholding Tax</span><span class="v" id="taxCost">{def.taxCost}</span></div>
+        <div class="row neg"><span class="k">Fixed Running Costs</span><span class="v" id="fixedCost">{def.fixedCost}</span></div>
+        <div class="row neg"><span class="k">Tax on Rental Income</span><span class="v" id="taxCost">{def.taxCost}</span></div>
         <div class="row total"><span class="k">Net Annual Income</span><span class="v" id="netIncome">{def.netIncome}</span></div>
       </div>
 
@@ -304,7 +294,7 @@ const breadcrumbSchema = JSON.stringify({
         <div class="row lead"><span class="k">10% negotiated off the price</span><span class="v" id="leverPrice">{def.leverPrice}</span></div>
         <div class="row"><span class="k">+$25 on the nightly rate</span><span class="v" id="leverRate">{def.leverRate}</span></div>
         <div class="row"><span class="k">+5 points of occupancy</span><span class="v" id="leverOcc">{def.leverOcc}</span></div>
-        <p class="levers-note">The biggest lever is the price you pay, and it is set before you own anything. <a href="#increase-roi">See all the levers</a>.</p>
+        <p class="levers-note">The price lever is the only one you get just once: before you sign. <a href="#increase-roi">See all the levers</a>.</p>
       </div>
 
       <div class="calc-cta glass">
@@ -322,8 +312,8 @@ const breadcrumbSchema = JSON.stringify({
 
       <h2 id="increase-roi">How to increase ROI on a Bali villa</h2>
       <p>
-        Most advice on Bali villa returns is about what you add after you buy. The biggest gain comes earlier, from
-        the price you pay. After that, every lever works by lifting the nightly rate or the occupancy rate, and at the
+        Most advice on Bali villa returns is about what you add after you buy. One of the biggest gains comes earlier, from
+        the price you pay, and it is the only one you cannot add later. After that, every lever works by lifting the nightly rate or the occupancy rate, and at the
         market median each extra <strong>$10 a night is worth about $2,630 a year</strong> in gross rent and each extra
         <strong>five points of occupancy about $4,560</strong>.
       </p>
@@ -337,8 +327,8 @@ const breadcrumbSchema = JSON.stringify({
         ))}
       </div>
       <p>
-        Test every upgrade before you pay for it. If a $12,000 feature adds $20 a night at 70 percent occupancy, it earns
-        about $5,100 a year and pays for itself in under two and a half years. Put the new nightly rate into the
+        Test every upgrade before you pay for it. If a $12,000 feature adds $20 a night at 70 percent occupancy, it brings in
+        about $3,600 a year after management and tax, and pays for itself in about three and a half years. Put the new nightly rate into the
         calculator above and see what it does to your net yield.
       </p>
       <div class="lever-cta">
@@ -349,35 +339,38 @@ const breadcrumbSchema = JSON.stringify({
         <button type="button" class="btn btn-gold" data-calendly-url={CALENDLY_URL}>Book a Free Call</button>
       </div>
 
-      <h2 id="hidden-costs">Hidden costs to check before you buy</h2>
+      <h2 id="hidden-costs">The monthly costs listings leave out</h2>
       <p>
-        Headline yields in Bali villa listings rarely include every cost. These are the ones we check on every villa,
-        and how to put each one into the calculator so the yield you see is the yield you get. Add one-off purchase
-        costs to the purchase price. Add yearly costs to the maintenance percentage.
+        Management fees and tax come out as a share of your rent. These do not. They are fixed bills a villa pays every
+        month, booked or empty, and they are the costs most yield projections quietly skip. Figures are for a typical two
+        to three bedroom rental villa in 2026.
       </p>
       <div class="table-wrap">
         <table class="calc-table cost-table">
-          <caption class="sr-only">Costs of buying and owning a Bali villa, and how to include each in the ROI calculator</caption>
+          <caption class="sr-only">Typical fixed monthly running costs of a Bali rental villa, 2026</caption>
           <thead>
-            <tr><th scope="col">Cost</th><th scope="col">What to check</th><th scope="col">In the calculator</th></tr>
+            <tr><th scope="col">Cost</th><th scope="col">Per month</th><th scope="col">What to check</th></tr>
           </thead>
-          {hiddenCosts.map((g) => (
-            <tbody>
-              <tr class="cost-stage"><th scope="rowgroup" colspan="3">{g.stage}</th></tr>
-              {g.items.map((i) => (
-                <tr>
-                  <th scope="row">{i.c}</th>
-                  <td class="note">{i.note}</td>
-                  <td class={i.calc === 'Included' ? 'num' : 'note'}>{i.calc}</td>
-                </tr>
-              ))}
-            </tbody>
-          ))}
+          <tbody>
+            {hiddenCosts.map((i) => (
+              <tr>
+                <th scope="row">{i.c}</th>
+                <td class="num">{i.range}</td>
+                <td class="note">{i.note}</td>
+              </tr>
+            ))}
+            <tr class="cost-total">
+              <th scope="row">Typical total</th>
+              <td class="num">$300 to $600</td>
+              <td class="note">The calculator uses $450. Change it to match the villa you are looking at.</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <p class="table-note">
-        Ask the seller for every one of these in writing. A villa that still yields well once they are all in is a
-        genuinely good villa. We check each line for our clients before anything is signed.
+        Two more to ask about. Booking platforms take a commission on each booking, so check whether the management fee is
+        charged before or after it. And on the purchase itself, ask for the all-in price including VAT, notary fees and the
+        furniture pack, and enter that as your purchase price. We check every one of these for our clients before anything is signed.
       </p>
 
       <h2>What is a good rental yield in Bali?</h2>
@@ -431,12 +424,12 @@ const breadcrumbSchema = JSON.stringify({
       <ol class="calc-steps">
         <li><strong>Annual gross income.</strong> Nightly rate multiplied by 365, multiplied by your occupancy rate. At 250 dollars a night and 72 percent occupancy that is 65,700 dollars.</li>
         <li><strong>Gross yield.</strong> Annual gross income divided by purchase price. On a 290,000 dollar villa that is 22.7 percent.</li>
-        <li><strong>Deduct real costs.</strong> Management at 15 to 25 percent of rental income, maintenance at 3 to 5 percent of property value per year, and 10 percent withholding tax on rental income for foreign individual owners.</li>
-        <li><strong>Net yield and payback.</strong> What is left divided by purchase price gives net yield, 11.9 percent in that example. Purchase price divided by net annual income gives payback, roughly 8.4 years.</li>
+        <li><strong>Deduct real costs.</strong> Management at 15 to 25 percent of rental income, fixed running costs of around 450 dollars a month, and 10 percent tax on rental income for foreign individual owners.</li>
+        <li><strong>Net yield and payback.</strong> What is left divided by purchase price gives net yield, 14.0 percent in that example. Purchase price divided by net annual income gives payback, roughly 7.1 years.</li>
       </ol>
       <p>
         The step most buyers skip is the third. A developer brochure quoting a headline yield is almost always quoting gross,
-        before management, before maintenance and before tax. The gap between the two is large, and it is the difference
+        before management, before running costs and before tax. The gap between the two is large, and it is the difference
         between a good investment and an average one.
       </p>
 
@@ -444,12 +437,12 @@ const breadcrumbSchema = JSON.stringify({
       <p>
         Defaults are set to the current market median so the output means something before you change anything.
         Purchase price 290,000 dollars, nightly rate 250 dollars, occupancy 72 percent, management 20 percent,
-        maintenance 4 percent of property value, and 10 percent withholding tax.
+        fixed running costs 450 dollars a month, and 10 percent tax on rental income.
       </p>
       <p>
         Two things it deliberately does not model. It excludes capital appreciation, because that is a projection rather
         than income, and prime Bali land has historically moved 3 to 5 times over a decade in the strongest areas.
-        It also excludes purchase costs such as notary fees and any lease extension premium, which vary by structure. The <a href="#hidden-costs">hidden costs checklist</a> above shows how to add them.
+        It also has no separate line for purchase costs such as VAT, notary fees or the furniture pack. Enter the all-in price as your purchase price and they are covered. The <a href="#hidden-costs">monthly costs table</a> above shows what the running cost figure is made of.
         Both work in your favour when comparing against the residential markets in the table below, which are also
         quoted gross.
       </p>
@@ -642,6 +635,7 @@ list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:
 .calc-next a:hover{text-decoration:underline}
 #increase-roi,#hidden-costs{scroll-margin-top:110px}
 .cost-table tbody th{white-space:normal}
+.cost-table tr.cost-total th,.cost-table tr.cost-total td{border-bottom:none;padding-top:16px;font-weight:700;color:var(--text)}
 .cost-table tr.cost-stage th{padding:22px 0 8px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);border-bottom:1px solid rgba(122,92,52,.28)}
 .lever-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:8px 0 22px}
 .lever-card{padding:22px 22px 18px;border-radius:16px;background:rgba(255,255,255,0.55);border:1px solid var(--glass-border)}
@@ -690,7 +684,7 @@ background:linear-gradient(135deg,rgba(180,80,42,0.08),rgba(15,118,110,0.08)),va
     var fmtUSD = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
     var els = {
       price: $('price'), nightly: $('nightly'),
-      occupancy: $('occupancy'), mgmt: $('mgmt'), maint: $('maint')
+      occupancy: $('occupancy'), mgmt: $('mgmt'), fixed: $('fixed')
     };
 
     function sliderFill(slider) {
@@ -707,25 +701,24 @@ background:linear-gradient(135deg,rgba(180,80,42,0.08),rgba(15,118,110,0.08)),va
       var nightly = parseFloat(els.nightly.value) || 0;
       var occ = parseFloat(els.occupancy.value) / 100;
       var mgmtRate = parseFloat(els.mgmt.value) / 100;
-      var maintRate = parseFloat(els.maint.value) / 100;
+      var fixedMonthly = Math.max(parseFloat(els.fixed.value) || 0, 0);
       var taxRate = getTaxRate();
 
       $('occVal').textContent = els.occupancy.value + '%';
       $('mgmtVal').textContent = els.mgmt.value + '%';
-      $('maintVal').textContent = els.maint.value + '%';
-      [els.occupancy, els.mgmt, els.maint].forEach(sliderFill);
+      [els.occupancy, els.mgmt].forEach(sliderFill);
 
       if (price <= 0 || nightly <= 0) {
-        ['grossYield', 'netYield', 'grossIncome', 'mgmtFees', 'maintCost', 'taxCost', 'netIncome', 'payback', 'fiveYear', 'youVal', 'leverRate', 'leverOcc', 'leverPrice', 'leverBase'].forEach(function (id) { $(id).textContent = '—'; });
+        ['grossYield', 'netYield', 'grossIncome', 'mgmtFees', 'fixedCost', 'taxCost', 'netIncome', 'payback', 'fiveYear', 'youVal', 'leverRate', 'leverOcc', 'leverPrice', 'leverBase'].forEach(function (id) { $(id).textContent = '—'; });
         $('youBar').style.width = '0';
         return;
       }
 
       var grossIncome = nightly * 365 * occ;
       var mgmtFees = grossIncome * mgmtRate;
-      var maintCost = price * maintRate;
+      var fixedCost = fixedMonthly * 12;
       var taxCost = grossIncome * taxRate;
-      var netIncome = grossIncome - mgmtFees - maintCost - taxCost;
+      var netIncome = grossIncome - mgmtFees - fixedCost - taxCost;
       var grossYield = grossIncome / price * 100;
       var netYield = netIncome / price * 100;
 
@@ -733,7 +726,7 @@ background:linear-gradient(135deg,rgba(180,80,42,0.08),rgba(15,118,110,0.08)),va
       $('netYield').textContent = netYield.toFixed(1) + '%';
       $('grossIncome').textContent = fmtUSD(grossIncome);
       $('mgmtFees').textContent = '−' + fmtUSD(mgmtFees);
-      $('maintCost').textContent = '−' + fmtUSD(maintCost);
+      $('fixedCost').textContent = '−' + fmtUSD(fixedCost);
       $('taxCost').textContent = '−' + fmtUSD(taxCost);
       $('netIncome').textContent = fmtUSD(netIncome);
       $('payback').textContent = netIncome > 0 ? (price / netIncome).toFixed(1) : '—';
@@ -743,7 +736,7 @@ background:linear-gradient(135deg,rgba(180,80,42,0.08),rgba(15,118,110,0.08)),va
       var keep = Math.max(1 - mgmtRate - taxRate, 0);
       var pct = function (n) { return n.toFixed(1) + '%'; };
       $('leverBase').textContent = pct(netYield);
-      $('leverPrice').textContent = pct((netIncome + maintCost * 0.1) / (price * 0.9) * 100);
+      $('leverPrice').textContent = pct(netIncome / (price * 0.9) * 100);
       $('leverRate').textContent = pct((netIncome + 25 * 365 * occ * keep) / price * 100);
       $('leverOcc').textContent = occ >= 1 ? '—' : pct((netIncome + nightly * 365 * Math.min(0.05, 1 - occ) * keep) / price * 100);
 
@@ -756,7 +749,7 @@ background:linear-gradient(135deg,rgba(180,80,42,0.08),rgba(15,118,110,0.08)),va
       });
     }
 
-    [els.price, els.nightly, els.occupancy, els.mgmt, els.maint].forEach(function (el) { el.addEventListener('input', calc); });
+    [els.price, els.nightly, els.occupancy, els.mgmt, els.fixed].forEach(function (el) { el.addEventListener('input', calc); });
     document.querySelectorAll('input[name="tax"]').forEach(function (r) {
       r.addEventListener('change', function () {
         document.querySelectorAll('.radio-card').forEach(function (c) { c.classList.toggle('selected', c.querySelector('input').checked); });

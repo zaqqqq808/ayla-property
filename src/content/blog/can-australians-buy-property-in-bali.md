@@ -128,7 +128,7 @@ The Australia-Indonesia double tax agreement (DTA) means you generally receive a
 
 ## Ready to Take the Next Step?
 
-Ayla Property works exclusively with Australian, Singaporean and regional Asian investors entering the Bali market. We have direct relationships with the island's most reputable developers and provide independent guidance. We do not take commissions from developers.
+Ayla Property works exclusively with Australian, Singaporean and regional Asian investors entering the Bali market. We have direct relationships with the island's most reputable developers, represent none of them, and negotiate on the buyer's side. Our fee is paid by the developer on completion, never by you.
 
 If you are considering buying property in Bali as an Australian, the best first step is a free 30-minute call to walk through your specific situation, budget and goals.
 
