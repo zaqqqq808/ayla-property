@@ -59,6 +59,30 @@ const areaYields = [
   { area: 'Kedungu',    entry: '$240,000', gross: '11.2%', note: 'Early pricing, 12 to 18 month rental ramp-up' },
 ];
 
+const hiddenCosts = [
+  { stage: 'When you buy', items: [
+    { c: 'VAT on new builds', note: 'Check whether the developer\'s price includes it', calc: 'Add to purchase price' },
+    { c: 'Notary and land office fees', note: 'Payable on signing', calc: 'Add to purchase price' },
+    { c: 'Legal due diligence', note: 'Land certificate, zoning and building permit checks', calc: 'Add to purchase price' },
+    { c: 'PT PMA company setup', note: 'Needed by most foreign owners to rent legally', calc: 'Add to purchase price' },
+    { c: 'Furniture pack', note: 'Often priced separately from the villa', calc: 'Add to purchase price' },
+    { c: 'Lease extension premium', note: 'Agreed now, or paid later at the landowner\'s price', calc: 'Add to purchase price' },
+    { c: 'Currency conversion and transfer fees', note: 'Bank spread on a six figure transfer adds up', calc: 'Add to purchase price' },
+  ]},
+  { stage: 'Every year', items: [
+    { c: 'Management fee', note: 'Typically 15 to 25 percent of rental income', calc: 'Included' },
+    { c: 'Maintenance and repairs', note: 'Typically 3 to 5 percent of property value', calc: 'Included' },
+    { c: 'Withholding tax on rental income', note: '10 percent for foreign individual owners', calc: 'Included' },
+    { c: 'Booking platform commission', note: 'Ask whether the management fee is charged before or after it', calc: 'Lower your nightly rate' },
+    { c: 'Company accounting and licence renewals', note: 'Ongoing PT PMA reporting and tourism licence', calc: 'Add to maintenance' },
+    { c: 'Banjar (village) contributions', note: 'Local community fees, set by each village', calc: 'Add to maintenance' },
+    { c: 'Utilities, internet, pool and garden', note: 'Ask whether your operator covers them', calc: 'Add to maintenance' },
+    { c: 'Insurance', note: 'Building, contents and public liability', calc: 'Add to maintenance' },
+    { c: 'Land and building tax (PBB)', note: 'Small, but annual', calc: 'Add to maintenance' },
+    { c: 'Furniture and linen replacement', note: 'Guests wear through soft furnishings quickly', calc: 'Add to maintenance' },
+  ]},
+];
+
 const benchmarks = [
   { market: 'Bali (market average)', yieldPct: '10.6%', note: 'Across the 511 listings we track' },
   { market: 'Dubai residential',     yieldPct: '6.5%',  note: 'Gross residential yield 2026' },
@@ -84,6 +108,10 @@ const calcFaqs = [
   {
     q: 'How can I increase the rental yield on a Bali villa?',
     a: 'Start with the purchase price, because yield is income divided by what you paid. At the market median, 10 percent off the price lifts net yield from 11.9 to 13.6 percent, more than an extra 25 dollars a night would. Then decide whether you are hosting holidaymakers, digital nomads or both, then choose the area and design around them. Nomads need a proper workspace and reliable internet with a backup connection. Holidaymakers pay more for an ensuite to every bedroom, a hot tub, an outdoor cinema or a sunset deck. Buy the longest lease available, get the villa licensed, and pick your operator on real occupancy data rather than the lowest fee. At the market median, each extra 10 dollars a night adds about 2,630 dollars a year.',
+  },
+  {
+    q: 'What hidden costs come with buying a villa in Bali?',
+    a: 'When you buy: VAT on new builds if the price excludes it, notary and land office fees, legal due diligence, PT PMA company setup, a furniture pack priced separately, any lease extension premium and currency transfer costs. Every year: booking platform commission, company accounting and licence renewals, banjar village contributions, utilities, pool and garden care, insurance, land and building tax and furniture replacement, on top of management, maintenance and withholding tax. Add one-off costs to the purchase price and yearly costs to maintenance in the calculator.',
   },
   {
     q: 'What occupancy rate should I assume for a Bali villa?',
@@ -321,6 +349,37 @@ const breadcrumbSchema = JSON.stringify({
         <button type="button" class="btn btn-gold" data-calendly-url={CALENDLY_URL}>Book a Free Call</button>
       </div>
 
+      <h2 id="hidden-costs">Hidden costs to check before you buy</h2>
+      <p>
+        Headline yields in Bali villa listings rarely include every cost. These are the ones we check on every villa,
+        and how to put each one into the calculator so the yield you see is the yield you get. Add one-off purchase
+        costs to the purchase price. Add yearly costs to the maintenance percentage.
+      </p>
+      <div class="table-wrap">
+        <table class="calc-table cost-table">
+          <caption class="sr-only">Costs of buying and owning a Bali villa, and how to include each in the ROI calculator</caption>
+          <thead>
+            <tr><th scope="col">Cost</th><th scope="col">What to check</th><th scope="col">In the calculator</th></tr>
+          </thead>
+          {hiddenCosts.map((g) => (
+            <tbody>
+              <tr class="cost-stage"><th scope="rowgroup" colspan="3">{g.stage}</th></tr>
+              {g.items.map((i) => (
+                <tr>
+                  <th scope="row">{i.c}</th>
+                  <td class="note">{i.note}</td>
+                  <td class={i.calc === 'Included' ? 'num' : 'note'}>{i.calc}</td>
+                </tr>
+              ))}
+            </tbody>
+          ))}
+        </table>
+      </div>
+      <p class="table-note">
+        Ask the seller for every one of these in writing. A villa that still yields well once they are all in is a
+        genuinely good villa. We check each line for our clients before anything is signed.
+      </p>
+
       <h2>What is a good rental yield in Bali?</h2>
       <p>
         Gross yields average <strong>10.6 percent</strong> across the 511 active listings we track from more than 80 developers.
@@ -390,7 +449,7 @@ const breadcrumbSchema = JSON.stringify({
       <p>
         Two things it deliberately does not model. It excludes capital appreciation, because that is a projection rather
         than income, and prime Bali land has historically moved 3 to 5 times over a decade in the strongest areas.
-        It also excludes purchase costs such as notary fees and any lease extension premium, which vary by structure.
+        It also excludes purchase costs such as notary fees and any lease extension premium, which vary by structure. The <a href="#hidden-costs">hidden costs checklist</a> above shows how to add them.
         Both work in your favour when comparing against the residential markets in the table below, which are also
         quoted gross.
       </p>
@@ -579,9 +638,11 @@ list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:
 .calc-faq-item[open] summary:after{content:"\2013"}
 .calc-faq-item p{margin:0 0 20px;font-size:.95rem;line-height:1.72}
 .calc-next{margin-top:34px;padding-top:22px;border-top:1px solid rgba(122,92,52,.16);font-size:.95rem !important}
-.calc-next a{color:var(--teal);font-weight:600;text-decoration:none}
+.calc-next a,.calc-prose p a{color:var(--teal);font-weight:600;text-decoration:none}
 .calc-next a:hover{text-decoration:underline}
-#increase-roi{scroll-margin-top:110px}
+#increase-roi,#hidden-costs{scroll-margin-top:110px}
+.cost-table tbody th{white-space:normal}
+.cost-table tr.cost-stage th{padding:22px 0 8px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);border-bottom:1px solid rgba(122,92,52,.28)}
 .lever-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:8px 0 22px}
 .lever-card{padding:22px 22px 18px;border-radius:16px;background:rgba(255,255,255,0.55);border:1px solid var(--glass-border)}
 .lever-num{display:block;font-family:var(--font-display);font-size:.85rem;font-weight:600;color:var(--terra);letter-spacing:.08em;margin-bottom:6px}
