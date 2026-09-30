@@ -24,7 +24,28 @@ const def = {
   netIncome: usd(dNet),
   payback: (D.price / dNet).toFixed(1),
   fiveYear: usd(dNet * 5),
+  leverRate: '+' + usd(25 * 365 * D.occ * (1 - D.mgmt - D.tax)) + '/yr',
+  leverOcc: '+' + usd(D.nightly * 365 * 0.05 * (1 - D.mgmt - D.tax)) + '/yr',
 };
+
+const roiLevers = [
+  { t: 'Pick your guest first: tourist, nomad or both',
+    d: 'Holidaymakers pay the highest nightly rates but are seasonal and turn over weekly. Digital nomads stay one to three months, keep occupancy up through the quiet months and cost far less in cleaning and platform commission. The strongest villas are designed for one, or deliberately for both.' },
+  { t: 'Let the guest choose the area',
+    d: 'Canggu and Pererenan have the deepest demand from both groups. Uluwatu suits surfers and premium couples. Sanur is families and long stays. Kedungu is cheaper to enter but takes 12 to 18 months to ramp up. Check guests can walk to cafés and the beach, and that the rice field view is protected by zoning.' },
+  { t: 'Design and furnish for that guest',
+    d: 'Nomads need a real desk and ergonomic chair, fibre with a backup connection and a UPS. Holidaymakers need a hero living space onto the pool and an ensuite for every bedroom. For both, teak and outdoor rated fabrics cut the maintenance line every year.' },
+  { t: 'Add a hot tub or heated plunge pool',
+    d: 'It is a searchable amenity filter on the booking platforms, so it puts the villa in front of guests who would otherwise never see it.' },
+  { t: 'Build an outdoor cinema',
+    d: 'A projector aimed across the pool onto a smooth white wall costs little, photographs beautifully at dusk and gets posted by guests. That is marketing for your next booking.' },
+  { t: 'Sunset decks and wellness',
+    d: 'A rooftop or sunset deck on the west coast, an ice bath, sauna or yoga shala. Each one speaks to a guest segment willing to pay more per night.' },
+  { t: 'Buy the longest lease you can',
+    d: 'Lease length does not change your yield in a single year. It changes how many years you collect it. At an 8.4 year payback, a 25 year lease leaves about 16 years of profit and a 45 year lease more than 36. Longer leases also resell far more easily.' },
+  { t: 'Get licensed, and judge the operator on results',
+    d: 'A licensed villa cannot be removed from the booking platforms. And 20 percent to an operator who fills the calendar beats 15 percent to one who does not. Ask for twelve months of real occupancy data on comparable villas.' },
+];
 
 const areaYields = [
   { area: 'Canggu',     entry: '$380,000', gross: '14.8%', note: 'Deepest short-term rental demand, year-round occupancy' },
@@ -56,6 +77,10 @@ const calcFaqs = [
   {
     q: 'What is the average ROI on a Bali villa?',
     a: 'On the market median of roughly USD 290,000, a villa running at a 250 dollar nightly rate and 72 percent occupancy produces about USD 65,700 gross and USD 34,390 net per year. That is a 22.7 percent gross and 11.9 percent net yield, with capital paid back in roughly 8.4 years. Weaker occupancy or a lower nightly rate moves those figures down quickly, which is why the calculator lets you change both.',
+  },
+  {
+    q: 'How can I increase the rental yield on a Bali villa?',
+    a: 'Decide whether you are hosting holidaymakers, digital nomads or both, then choose the area and design around them. Nomads need a proper workspace and reliable internet with a backup connection. Holidaymakers pay more for an ensuite to every bedroom, a hot tub, an outdoor cinema or a sunset deck. Buy the longest lease available, get the villa licensed, and pick your operator on real occupancy data rather than the lowest fee. At the market median, each extra 10 dollars a night adds about 2,630 dollars a year.',
   },
   {
     q: 'What occupancy rate should I assume for a Bali villa?',
@@ -242,9 +267,17 @@ const breadcrumbSchema = JSON.stringify({
         <p class="compare-note">Benchmark figures are gross residential yields 2026. Your Bali figure is net after costs.</p>
       </div>
 
+      <div class="levers glass">
+        <h3>Where your extra return comes from</h3>
+        <p class="levers-intro">At your numbers, after management and tax:</p>
+        <div class="row"><span class="k">+$25 on the nightly rate</span><span class="v" id="leverRate">{def.leverRate}</span></div>
+        <div class="row"><span class="k">+5 points of occupancy</span><span class="v" id="leverOcc">{def.leverOcc}</span></div>
+        <p class="levers-note">Design, area and guest choice move these two numbers. <a href="#increase-roi">See what lifts them</a>.</p>
+      </div>
+
       <div class="calc-cta glass">
-        <h3>Want us to find a property that hits these numbers?</h3>
-        <p>Book a free 30-minute call. We will show you what is live in the market right now.</p>
+        <h3>Want a villa that beats these numbers?</h3>
+        <p>Book a free 30-minute call. We will show you live villas already built for the guests who pay most.</p>
         <button type="button" class="btn btn-gold" data-calendly-url={CALENDLY_URL}>Book a Free Call</button>
       </div>
 
@@ -254,6 +287,35 @@ const breadcrumbSchema = JSON.stringify({
 
   <section class="calc-content">
     <div class="container calc-prose">
+
+      <h2 id="increase-roi">How to increase ROI on a Bali villa</h2>
+      <p>
+        Two villas on the same street, bought for the same price, can return very different numbers. Almost every
+        reason is decided before you sign. Each one works by lifting the nightly rate or the occupancy rate, and at the
+        market median each extra <strong>$10 a night is worth about $2,630 a year</strong> in gross rent and each extra
+        <strong>five points of occupancy about $4,560</strong>.
+      </p>
+      <div class="lever-grid">
+        {roiLevers.map((l, i) => (
+          <div class="lever-card">
+            <span class="lever-num">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{l.t}</h3>
+            <p>{l.d}</p>
+          </div>
+        ))}
+      </div>
+      <p>
+        Test every upgrade before you pay for it. If a $12,000 feature adds $20 a night at 70 percent occupancy, it earns
+        about $5,100 a year and pays for itself in under two and a half years. Put the new nightly rate into the
+        calculator above and see what it does to your net yield.
+      </p>
+      <div class="lever-cta">
+        <div>
+          <h3>Found a villa? We will tell you what it is missing.</h3>
+          <p>Send us the listing on a free 30-minute call. We will model it, show you which of these levers it already has, and show you live villas that have all of them.</p>
+        </div>
+        <button type="button" class="btn btn-gold" data-calendly-url={CALENDLY_URL}>Book a Free Call</button>
+      </div>
 
       <h2>What is a good rental yield in Bali?</h2>
       <p>
@@ -466,6 +528,15 @@ input[type="range"]:focus-visible{outline:3px solid rgba(180,80,42,0.5);outline-
 .bar-fill.bench{background:rgba(122,92,52,0.35)}
 .compare-note{font-size:.8rem;color:var(--text-muted);margin-top:14px}
 
+.levers{padding:28px 28px 24px}
+.levers h3{font-size:1.15rem;margin-bottom:6px}
+.levers-intro{font-size:.85rem;color:var(--text-muted);margin-bottom:6px}
+.levers .row .v{color:var(--teal)}
+.levers .row:last-of-type{border-bottom:none}
+.levers-note{font-size:.85rem;color:var(--text-muted);margin-top:10px}
+.levers-note a{color:var(--teal);font-weight:600;text-decoration:none}
+.levers-note a:hover{text-decoration:underline}
+
 .calc-cta{padding:34px 30px;text-align:center;background:linear-gradient(135deg,rgba(180,80,42,0.08),rgba(15,118,110,0.08)),var(--glass)}
 .calc-cta h3{font-family:var(--font-display);font-size:1.4rem;margin-bottom:10px}
 .calc-cta p{color:var(--text-muted);font-size:.95rem;margin-bottom:22px}
@@ -503,6 +574,21 @@ list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:
 .calc-next{margin-top:34px;padding-top:22px;border-top:1px solid rgba(122,92,52,.16);font-size:.95rem !important}
 .calc-next a{color:var(--teal);font-weight:600;text-decoration:none}
 .calc-next a:hover{text-decoration:underline}
+#increase-roi{scroll-margin-top:110px}
+.lever-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:8px 0 22px}
+.lever-card{padding:22px 22px 18px;border-radius:16px;background:rgba(255,255,255,0.55);border:1px solid var(--glass-border)}
+.lever-num{display:block;font-family:var(--font-display);font-size:.85rem;font-weight:600;color:var(--terra);letter-spacing:.08em;margin-bottom:6px}
+.lever-card h3{font-size:1.02rem;line-height:1.35;margin-bottom:8px;color:var(--text)}
+.calc-prose .lever-card p{font-size:.92rem;line-height:1.65;margin:0}
+.lever-cta{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:8px 0 12px;padding:28px 30px;border-radius:18px;
+background:linear-gradient(135deg,rgba(180,80,42,0.08),rgba(15,118,110,0.08)),var(--glass);border:1px solid var(--glass-border)}
+.lever-cta h3{font-family:var(--font-display);font-size:1.3rem;line-height:1.3;margin-bottom:8px;color:var(--text)}
+.calc-prose .lever-cta p{margin:0;font-size:.95rem}
+.lever-cta .btn{flex-shrink:0}
+@media(max-width:700px){
+.lever-grid{grid-template-columns:1fr}
+.lever-cta{flex-direction:column;align-items:flex-start;padding:24px 22px}
+}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:640px){
 .calc-prose h2{font-size:1.45rem;margin:38px 0 12px}
@@ -560,7 +646,7 @@ list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:
       [els.occupancy, els.mgmt, els.maint].forEach(sliderFill);
 
       if (price <= 0 || nightly <= 0) {
-        ['grossYield', 'netYield', 'grossIncome', 'mgmtFees', 'maintCost', 'taxCost', 'netIncome', 'payback', 'fiveYear', 'youVal'].forEach(function (id) { $(id).textContent = '—'; });
+        ['grossYield', 'netYield', 'grossIncome', 'mgmtFees', 'maintCost', 'taxCost', 'netIncome', 'payback', 'fiveYear', 'youVal', 'leverRate', 'leverOcc'].forEach(function (id) { $(id).textContent = '—'; });
         $('youBar').style.width = '0';
         return;
       }
@@ -582,6 +668,11 @@ list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:
       $('netIncome').textContent = fmtUSD(netIncome);
       $('payback').textContent = netIncome > 0 ? (price / netIncome).toFixed(1) : '—';
       $('fiveYear').textContent = fmtUSD(netIncome * 5);
+
+      // what the two main levers are worth, net of management and tax
+      var keep = Math.max(1 - mgmtRate - taxRate, 0);
+      $('leverRate').textContent = '+' + fmtUSD(25 * 365 * occ * keep) + '/yr';
+      $('leverOcc').textContent = occ >= 1 ? '—' : '+' + fmtUSD(nightly * 365 * Math.min(0.05, 1 - occ) * keep) + '/yr';
 
       // comparison bars (scale: max of your yield and 6.5, plus headroom)
       var maxScale = Math.max(netYield, 6.5) * 1.15;
