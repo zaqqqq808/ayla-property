@@ -66,6 +66,26 @@
       "permanent": true
     },
     {
+      "source": "/bali-roi-calculator/hidden-costs",
+      "destination": "/bali-roi-calculator/#hidden-costs",
+      "permanent": true
+    },
+    {
+      "source": "/hidden-costs/",
+      "destination": "/bali-roi-calculator/#hidden-costs",
+      "permanent": true
+    },
+    {
+      "source": "/hidden-costs",
+      "destination": "/bali-roi-calculator/#hidden-costs",
+      "permanent": true
+    },
+    {
+      "source": "/bali-roi-calculator/hidden-costs/",
+      "destination": "/bali-roi-calculator/#hidden-costs",
+      "permanent": true
+    },
+    {
       "source": "/writer/",
       "destination": "/",
       "permanent": true
