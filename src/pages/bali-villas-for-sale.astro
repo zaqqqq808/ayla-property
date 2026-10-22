@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { SITE_URL, CALENDLY_URL } from '@/config';
+import { SITE_URL, CALENDLY_URL, whatsappUrl } from '@/config';
+
+const WA_URL = whatsappUrl("Hi Ayla, I'm looking at villas for sale in Bali.");
 import Header from '@/components/Header.astro';
 import Testimonials from '@/components/Testimonials.astro';
 import Footer from '@/components/Footer.astro';
@@ -194,7 +196,7 @@ const agentSchema = JSON.stringify({
         </p>
         <div class="lp-hero-cta lp-center">
           <a class="lp-btn lp-btn-gold" href={CALENDLY_URL} target="_blank" rel="noopener">Book your free call</a>
-          <a class="lp-btn lp-btn-wa" href="https://wa.me/447928668478" target="_blank" rel="noopener">Message on WhatsApp</a>
+          <a class="lp-btn lp-btn-wa" href={WA_URL} target="_blank" rel="noopener">Message on WhatsApp</a>
         </div>
         <p class="lp-fine">
           New to Bali property? Start with our <a href="/can-foreigners-buy-property-in-bali/">free ownership checker</a>,
@@ -367,9 +369,9 @@ border-top:1px solid rgba(194,169,115,.35)}
 @media(prefers-reduced-motion:reduce){.lp *{animation:none !important;transition:none !important}}
 </style>
 
-<script is:inline define:vars={{ CALENDLY_URL }}>
+<script is:inline define:vars={{ CALENDLY_URL, WA_URL }}>
 (function(){
-var WA="https://wa.me/447928668478";
+var WA=WA_URL;
 var Q={
 goal:{n:"Question 1 of 3",h:"What is this property for?",cols:3,opts:[
 {v:"home",t:"A home to live in",d:"You will be there most of the year."},

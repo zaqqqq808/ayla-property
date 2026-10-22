@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { SITE_URL } from '@/config';
+import { SITE_URL, whatsappUrl } from '@/config';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 
@@ -175,7 +175,7 @@ const breadcrumbSchema = JSON.stringify({
         <p>
           Ayla Property, Bali, Indonesia<br />
           Email: <a href="mailto:zaq@aylaproperty.com">zaq@aylaproperty.com</a><br />
-          WhatsApp: <a href="https://wa.me/447928668478" target="_blank" rel="noopener noreferrer">+44 7928 668478</a>
+          WhatsApp: <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer">+44 7928 668478</a>
         </p>
 
       </div>

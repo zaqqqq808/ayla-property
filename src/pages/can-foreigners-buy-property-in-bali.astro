@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { SITE_URL, CALENDLY_URL } from '@/config';
+import { SITE_URL, CALENDLY_URL, whatsappUrl } from '@/config';
+
+const WA_URL = whatsappUrl("Hi Ayla, I have a question about buying property in Bali as a foreigner.");
 import Header from '@/components/Header.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
 import Footer from '@/components/Footer.astro';
@@ -436,7 +438,7 @@ box-shadow:0 9px 22px -9px rgba(92,46,31,.55)}
 <p>The flowchart narrows you to a structure. It does not replace the two people you actually need: an independent notary, and someone who knows the specific plot or building in front of you.</p>
 <p>The notary matters more than most buyers realise. In Indonesia the notary, or PPAT, does the title verification, drafts the deed and registers it. Using the seller's notary is the single most common unforced error in Bali property. Appoint your own.</p>
 <p>Structure is only half the risk. A perfectly executed lease on a plot in a green zone, or a strata unit in a building whose HGB expires in eleven years, is still a bad deal. That is the part we spend our time on.</p>
-<p>Ayla holds data on almost every developer operating in Bali and we are contracted to none of them. If you want the structure above pressure tested against a real property, <a href="/#contact">book a call</a> or message us on <a href="https://wa.me/447928668478">WhatsApp</a>.</p>
+<p>Ayla holds data on almost every developer operating in Bali and we are contracted to none of them. If you want the structure above pressure tested against a real property, <a href="/#contact">book a call</a> or message us on <a href={WA_URL}>WhatsApp</a>.</p>
 <p><strong>Related reading:</strong> <a href="/journal/freehold-vs-leasehold-bali/">Freehold vs leasehold in Bali</a> · <a href="/journal/why-investors-prefer-leasehold/">Why investors prefer leasehold</a> · <a href="/journal/how-to-vet-a-bali-developer/">How to vet a Bali developer</a> · <a href="/journal/can-australians-buy-property-in-bali/">Can Australians buy property in Bali</a></p>
 <p><em>Accurate as at July 2026. Indonesian property regulation is revised regularly and thresholds in particular get adjusted. Treat this as an accurate map of the terrain, not as a substitute for a notary confirming the current position on the day you transact. Ayla Property is not a law firm and this is not legal advice.</em></p>
         <div class="own-related">
@@ -460,9 +462,9 @@ box-shadow:0 9px 22px -9px rgba(92,46,31,.55)}
   <Footer />
   <StickyButton />
 
-<script is:inline>
+<script is:inline define:vars={{ WA_URL }}>
 (function(){
-var WA="https://wa.me/447928668478";
+var WA=WA_URL;
 var CAL="/#contact";
 var Q={
 goal:{q:"Question 1 of 4",h:"What do you want to buy?",cols:3,opts:[
