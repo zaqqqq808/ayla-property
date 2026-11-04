@@ -72,7 +72,6 @@ const listings: Listing[] = [
 <section class="hot-listings" id="listings">
   <div class="container">
     <div class="reveal section-head">
-      <span class="eyebrow">The Hot 4</span>
       <h2>{TOTAL_LISTINGS} listings.<br /><span class="grad-text">These 4 made the cut.</span></h2>
       <p class="section-sub">We track {TOTAL_LISTINGS} live listings across Bali. These are our top four right now. We match the other {TOTAL_LISTINGS - 4} to your budget on a call.</p>
     </div>
@@ -107,8 +106,9 @@ const listings: Listing[] = [
       ))}
     </div>
 
-    <div class="reveal section-head">
-      <CalendlyButton text={`See the other ${TOTAL_LISTINGS - 4}`} variant="orange" />
+    <div class="reveal section-head listing-close">
+      <h2>Let us find the perfect deal,<br /><span class="grad-text">customised to your exact needs.</span></h2>
+      <CalendlyButton text="Book a Call" variant="orange" />
     </div>
   </div>
 </section>

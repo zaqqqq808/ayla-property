@@ -521,13 +521,13 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
 
 /* ============ HOT LISTINGS ============ */
 .hot-listings{background:linear-gradient(to bottom,var(--bg-base),var(--bg-deep));padding:104px 0}
-.listing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:52px 0 44px}
+.listing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin:52px 0 64px}
 .listing-card{
   display:flex;flex-direction:column;overflow:hidden;padding:0;
   transition:transform .35s var(--ease),border-color .35s,box-shadow .35s;
 }
 .listing-card:hover{transform:translateY(-8px);border-color:rgba(180,80,42,0.4);box-shadow:0 28px 56px -20px rgba(122,82,32,0.45)}
-.listing-media{position:relative;aspect-ratio:1/1;overflow:hidden;background:#3d1c10}
+.listing-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#3d1c10}
 .listing-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
 .listing-card:hover .listing-media img{transform:scale(1.05)}
 .listing-media::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(30,21,9,0.5),transparent 45%);pointer-events:none}
@@ -541,8 +541,9 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
   position:absolute;left:16px;bottom:12px;z-index:1;
   font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#FFF8EC;
 }
-.listing-body{display:flex;flex-direction:column;gap:10px;padding:22px 22px 24px;flex:1}
-.listing-body h3{font-size:1.25rem}
+.listing-body{display:flex;flex-direction:column;gap:12px;padding:26px 28px 28px;flex:1}
+.listing-body h3{font-size:1.5rem}
+.listing-close h2{font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:28px}
 .listing-price{font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--terra-deep);line-height:1.2}
 .listing-price span{display:block;font-family:var(--font-body);font-size:.78rem;font-weight:500;color:var(--text-muted);margin-top:2px}
 .listing-specs{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
@@ -587,7 +588,6 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
   .journal-grid{grid-template-columns:1fr;max-width:620px;margin-left:auto;margin-right:auto}
   .steps{grid-template-columns:repeat(2,1fr)}
   .step:last-child{grid-column:1/-1}
-  .listing-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:880px){
   .nav-links{display:none}
