@@ -6,55 +6,66 @@ import { whatsappUrl } from '@/config';
 const TOTAL_LISTINGS = 673;
 
 interface Listing {
-  name:      string;
-  developer: string;
-  area:      string;
-  priceUsd:  string;
-  priceIdr:  string;
-  image?:    string;
-  specs:     string[];
-  take:      string;
+  name:     string;
+  area:     string;
+  priceUsd: string;
+  priceIdr: string;
+  image:    string;
+  specs:    string[];
+  points:   string[];
 }
 
 const listings: Listing[] = [
   {
     name: 'Pantai Lima Residence',
-    developer: 'Azimut Development',
     area: 'Pererenan',
     priceUsd: '$250,000',
     priceIdr: 'Rp 4.5B',
     image: '/listings/pantai-lima.webp',
     specs: ['2 bed', 'Private pool', 'Rooftop ocean view'],
-    take: "Around $2,043 per m², 500 m from Lima Beach. Only five villas in the complex, so you aren't competing with 40 identical units on Airbnb.",
+    points: [
+      'Around $2,043 per m²',
+      '500 m from Lima Beach',
+      'Only 5 villas in the complex',
+    ],
   },
   {
     name: 'Origins',
-    developer: 'Bali Baza',
     area: 'Nuanu City',
     priceUsd: 'From $600,000',
     priceIdr: 'Rp 10.8B',
     image: '/listings/origins-nuanu.webp',
     specs: ['2–4 bed', 'Leasehold to 2062', 'Handover Q2 2027'],
-    take: 'Pink-zone tourism land with the PBG building permit already issued. Those are two of the first things we check, and plenty of off-plan projects can’t show you either.',
+    points: [
+      'Pink-zone tourism land',
+      'PBG building permit already issued',
+      'Furnished, run by a hotel operator',
+    ],
   },
   {
     name: 'Riverland, Villa Baru',
-    developer: 'Bali Home Base',
     area: 'Cepaka',
     priceUsd: 'From $99,000',
     priceIdr: 'Rp 1.7B',
     image: '/listings/riverland-cepaka.webp',
     specs: ['1–3 bed', 'Fully furnished', '30 + 20 yr lease'],
-    take: 'A furnished villa for under $100K, 8 minutes from Pererenan. It sits on yellow-zone land, and we’ll explain what that means for rental licensing before you commit a rupiah.',
+    points: [
+      'A furnished villa for under $100K',
+      '8 minutes from Pererenan',
+      'Yellow-zone land: we explain the rental licensing first',
+    ],
   },
   {
     name: 'The Ease Villa',
-    developer: 'Murino Group',
     area: 'Canggu',
     priceUsd: '$562,500',
     priceIdr: 'Rp 10.1B',
-    specs: ['Canggu', 'Price list on request', 'Live build photos'],
-    take: 'Central Canggu from an active builder. Ask us for the full sales pack, the price list and this month’s construction progress photos.',
+    image: '/listings/the-ease.webp',
+    specs: ['Villas & apartments', 'Wellness facilities'],
+    points: [
+      'Full sales pack and price list available',
+      'Monthly construction progress photos',
+    ],
   },
 ];
 ---
@@ -70,28 +81,26 @@ const listings: Listing[] = [
       {listings.map((l, i) => (
         <article class="listing-card glass">
           <div class="listing-media">
-            {l.image
-              ? <img src={l.image} alt={`${l.name} by ${l.developer}, ${l.area}`} loading="lazy" width="1200" height="900" decoding="async" />
-              : <div class="listing-media-empty" aria-hidden="true"><span>{l.area}</span></div>}
+            <img src={l.image} alt={`${l.name}, ${l.area}`} loading="lazy" width="1000" height="1000" decoding="async" />
             <span class="listing-rank">{String(i + 1).padStart(2, '0')}</span>
             <span class="listing-area">{l.area}</span>
           </div>
           <div class="listing-body">
-            <p class="listing-dev">{l.developer}</p>
             <h3>{l.name}</h3>
             <p class="listing-price">{l.priceUsd} <span>{l.priceIdr}</span></p>
             <ul class="listing-specs">
               {l.specs.map((s) => <li>{s}</li>)}
             </ul>
-            <p class="listing-take"><strong>Why it's here:</strong> {l.take}</p>
+            <ul class="listing-points">
+              {l.points.map((pt) => <li>{pt}</li>)}
+            </ul>
             <a
               class="listing-ask"
               href={whatsappUrl(`Hi Ayla, I'd like details on ${l.name} (${l.area}).`)}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Ask about this one
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              Enquire about this
             </a>
           </div>
         </article>
