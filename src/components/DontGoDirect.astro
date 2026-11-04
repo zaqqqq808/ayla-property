@@ -1,0 +1,61 @@
+---
+import CalendlyButton from './CalendlyButton.astro';
+
+const rows = [
+  {
+    topic: 'Choice',
+    developer: 'Can only sell you their own project.',
+    ayla: 'We can put you in any of 673 listings, and we\u2019ll tell you when none of them fit.',
+  },
+  {
+    topic: 'Who pays',
+    developer: 'Their sales team is paid to close you on their units.',
+    ayla: 'We’re paid by dozens of developers, so no single project has to win for us to get paid.',
+  },
+  {
+    topic: 'Price',
+    developer: 'Going direct rarely gets you a discount. The agent fee is already in their marketing budget, so they just keep it.',
+    ayla: 'Same list price, and then we negotiate on top of it.',
+  },
+  {
+    topic: 'Due diligence',
+    developer: 'Will tell you their own permits are fine.',
+    ayla: 'We check the land zoning, PBG permit, lease terms and the developer’s finished projects ourselves.',
+  },
+  {
+    topic: 'Returns',
+    developer: 'Their ROI projection is a sales document.',
+    ayla: 'We rerun it with realistic occupancy and running costs in our <a href="/bali-roi-calculator/">ROI calculator</a>.',
+  },
+];
+---
+<section class="go-direct">
+  <div class="container">
+    <div class="go-direct-card">
+      <div class="go-direct-head reveal">
+        <span class="eyebrow">Before you email a developer</span>
+        <h2>Don't go direct to developers.</h2>
+        <p class="go-direct-why">Why? Simple. <span>They're biased.</span></p>
+      </div>
+
+      <div class="go-direct-table reveal-stagger" role="table" aria-label="Buying direct from a developer compared with buying through Ayla">
+        <div class="gd-row gd-row-head" role="row">
+          <span role="columnheader"></span>
+          <span role="columnheader">The developer</span>
+          <span role="columnheader">Ayla</span>
+        </div>
+        {rows.map((r) => (
+          <div class="gd-row" role="row">
+            <span class="gd-topic" role="rowheader">{r.topic}</span>
+            <span class="gd-dev" role="cell" data-label="The developer">{r.developer}</span>
+            <span class="gd-ayla" role="cell" data-label="Ayla" set:html={r.ayla} />
+          </div>
+        ))}
+      </div>
+
+      <div class="go-direct-cta reveal">
+        <CalendlyButton text="Get an Unbiased Shortlist" variant="gold" />
+      </div>
+    </div>
+  </div>
+</section>
