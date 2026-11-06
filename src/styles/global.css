@@ -521,7 +521,15 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
 
 /* ============ HOT LISTINGS ============ */
 .hot-listings{background:linear-gradient(to bottom,var(--bg-base),var(--bg-deep));padding:104px 0}
-.listing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin:52px 0 64px}
+/* Why Bali flows straight into the listings on the same background, so the
+   usual double section padding read as dead space. Only this pairing is tightened. */
+.opportunity:has(+ .hot-listings){padding-bottom:40px}
+.opportunity + .hot-listings{padding-top:40px}
+@media(max-width:768px){
+  .opportunity:has(+ .hot-listings){padding-bottom:24px}
+  .opportunity + .hot-listings{padding-top:24px}
+}
+.listing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin:52px 0 64px}
 .listing-card{
   display:flex;flex-direction:column;overflow:hidden;padding:0;
   transition:transform .35s var(--ease),border-color .35s,box-shadow .35s;
@@ -542,8 +550,9 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
   font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#FFF8EC;
 }
 .listing-body{display:flex;flex-direction:column;gap:12px;padding:26px 28px 28px;flex:1}
-.listing-body h3{font-size:1.5rem}
+.listing-body h3{font-size:1.35rem}
 .listing-close h2{font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:28px}
+.u-line{text-decoration:underline;text-decoration-color:var(--terra);text-decoration-thickness:.07em;text-underline-offset:.14em}
 .listing-price{font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--terra-deep);line-height:1.2}
 .listing-price span{display:block;font-family:var(--font-body);font-size:.78rem;font-weight:500;color:var(--text-muted);margin-top:2px}
 .listing-specs{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
@@ -582,6 +591,7 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
 
 /* responsive */
 @media(max-width:1024px){
+  .listing-grid{grid-template-columns:repeat(2,1fr)}
   .opp-grid{grid-template-columns:repeat(2,1fr)}
   .testi-grid{grid-template-columns:1fr;max-width:620px;margin-left:auto;margin-right:auto}
   .team-grid{grid-template-columns:repeat(2,1fr)}

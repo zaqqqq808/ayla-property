@@ -67,13 +67,39 @@ const listings: Listing[] = [
       'Monthly construction progress photos',
     ],
   },
+  {
+    name: 'Villa Alive',
+    area: 'Tibubeneng, Canggu',
+    priceUsd: '$225,000',
+    priceIdr: 'Rp 3.1B',
+    image: '/listings/villa-alive.webp',
+    specs: ['2 bed', 'Private pool', '30 yr lease'],
+    points: [
+      '110 m² villa on a 97 m² plot',
+      'Fully furnished, ready to rent out',
+      'Payments tied to construction progress',
+    ],
+  },
+  {
+    name: 'Riviera Esmeralda',
+    area: 'Sanur',
+    priceUsd: '$358,000',
+    priceIdr: 'Rp 6.5B',
+    image: '/listings/riviera-sanur.webp',
+    specs: ['3 bed + optional 4th', 'Private pool', '254 m² build'],
+    points: [
+      'One of 15 villas around a shared garden',
+      'Carport and 128 m² of land included',
+      'Sanur: the calmer, family side of Bali',
+    ],
+  },
 ];
 ---
 <section class="hot-listings" id="listings">
   <div class="container">
     <div class="reveal section-head">
-      <h2>{TOTAL_LISTINGS} listings.<br /><span class="grad-text">These 4 made the cut.</span></h2>
-      <p class="section-sub">We track {TOTAL_LISTINGS} live listings across Bali. These are our top four right now. We match the other {TOTAL_LISTINGS - 4} to your budget on a call.</p>
+      <h2>{TOTAL_LISTINGS} listings.<br /><span class="grad-text">These {listings.length} made the cut.</span></h2>
+      <p class="section-sub">We track {TOTAL_LISTINGS} live listings across Bali. These are our top {listings.length} right now. We match the other {TOTAL_LISTINGS - listings.length} to your budget on a call.</p>
     </div>
 
     <div class="listing-grid reveal-stagger">
@@ -107,7 +133,7 @@ const listings: Listing[] = [
     </div>
 
     <div class="reveal section-head listing-close">
-      <h2>Let us find the perfect deal,<br /><span class="grad-text">customised to your exact needs.</span></h2>
+      <h2>Let us find the perfect deal,<br /><span class="grad-text">customised to <span class="u-line">your</span> exact needs.</span></h2>
       <CalendlyButton text="Book a Call" variant="orange" />
     </div>
   </div>
