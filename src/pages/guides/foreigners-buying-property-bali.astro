@@ -10,7 +10,7 @@ import CalendlyButton from '@/components/CalendlyButton.astro';
 
 
 const sections = [
-  { id: 'can-foreigners-buy',    label: 'Can Foreigners Buy?' },
+  { id: 'ownership-route',       label: 'Your Ownership Route' },
   { id: 'freehold-vs-leasehold', label: 'Freehold vs Leasehold' },
   { id: 'individual-vs-ptpma',   label: 'Individual vs PT PMA' },
   { id: 'payment-methods',       label: 'Payment Methods' },
@@ -25,25 +25,25 @@ const breadcrumbSchema = JSON.stringify({
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` },
-    { "@type": "ListItem", "position": 2, "name": "Bali Property Ownership Guide for Foreigners 2026", "item": `${SITE_URL}/guides/foreigners-buying-property-bali/` },
+    { "@type": "ListItem", "position": 2, "name": "How to Buy Property in Bali (2026 Guide)", "item": `${SITE_URL}/guides/foreigners-buying-property-bali/` },
   ]
 });
 
 const articleSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Can Foreigners Buy Property in Bali? Complete 2026 Guide",
-  "description": "A complete guide to buying property in Bali as a foreigner, covering freehold vs leasehold, PT PMA setup, payment methods, legal due diligence, and rental management.",
+  "headline": "How to Buy Property in Bali as a Foreigner: The 2026 Guide",
+  "description": "How to buy property in Bali as a foreigner, step by step: choosing leasehold or a PT PMA, paying, due diligence, tax, rental management and the buying timeline.",
   "author": { "@type": "Organization", "name": "Ayla Property", "url": SITE_URL },
   "publisher": { "@type": "Organization", "name": "Ayla Property", "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png` } },
   "datePublished": "2026-01-01",
-  "dateModified": "2026-05-02",
+  "dateModified": "2026-11-06",
   "url": `${SITE_URL}/guides/foreigners-buying-property-bali/`,
 });
 ---
 <BaseLayout
-  title="Can Foreigners Buy Property in Bali? (2026 Legal Guide) | Ayla Property"
-  description="Yes. Foreigners can legally buy property in Bali. This 2026 guide covers leasehold vs freehold, PT PMA, payment methods, due diligence, and rental management."
+  title="How to Buy Property in Bali as a Foreigner (2026 Guide) | Ayla Property"
+  description="How to buy property in Bali, start to finish: leasehold or PT PMA, how to pay, what to check before you sign, the tax you will owe and how long it all takes."
   ogType="article"
   ogImage="/og-guide.jpg"
 >
@@ -60,10 +60,10 @@ const articleSchema = JSON.stringify({
     <div class="relative max-w-4xl mx-auto text-center">
       <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Investor Guide · 2026</p>
       <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-display uppercase leading-tight mb-6">
-        Can Foreigners Buy<br />Property in Bali?
+        How to Buy<br />Property in Bali
       </h1>
       <p class="text-white/75 text-lg max-w-2xl mx-auto mb-8">
-        Yes, and thousands do every year. This guide covers everything you need to know: ownership structures, legal process, payment methods, and how to manage your investment from anywhere in the world.
+        The whole process, start to finish: which ownership structure to use, how to pay, what to check before you sign, the tax you will owe and how to run the property from anywhere in the world.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a
@@ -116,10 +116,10 @@ const articleSchema = JSON.stringify({
       <article class="flex-1 max-w-3xl guide-content">
 
         <!-- Section 1 -->
-        <section id="can-foreigners-buy" class="guide-section mb-16">
-          <h2>Can Foreigners Buy Property in Bali?</h2>
-          <p>The short answer is yes, and doing so is more straightforward than most people expect. Indonesia has clear legal frameworks for foreign property ownership, and Bali's villa market has been built substantially on foreign investment over the past two decades.</p>
-          <p><strong>Want the answer for your specific situation?</strong> Our <a href="/can-foreigners-buy-property-in-bali/">free ownership checker</a> asks four questions and tells you exactly which structure applies to you, the visa you need and the minimum property values involved. This guide covers the full process in depth once you know your route.</p>
+        <section id="ownership-route" class="guide-section mb-16">
+          <h2>Step One: Pick Your Ownership Route</h2>
+          <p>Buying property in Bali as a foreigner is more straightforward than most people expect, but the first decision shapes everything after it: which legal structure you will hold the property under.</p>
+          <p><strong>Not sure which route applies to you?</strong> Our <a href="/can-foreigners-buy-property-in-bali/">free ownership checker</a> asks four questions and tells you exactly which structure fits, the visa you need and the minimum property values involved. The rest of this guide walks through the buying process once you know your route.</p>
           <p>What foreigners cannot do is hold <strong>Hak Milik</strong> (freehold land title) directly in their own name. That is reserved for Indonesian citizens. However, there are two fully legal and widely used structures that give foreign investors secure, bankable property rights:</p>
           <ul>
             <li><strong>Leasehold (Hak Sewa / Hak Pakai)</strong>, the most common investment route, giving you full rights to a property for a fixed term (typically 25 to 30 years, renewable)</li>

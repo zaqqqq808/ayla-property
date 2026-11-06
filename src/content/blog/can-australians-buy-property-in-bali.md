@@ -4,6 +4,7 @@ description: "Yes, Australians can buy property in Bali, but the rules matter. T
 publishDate: 2026-06-01
 image: /images/journal/best-areas-bali-2026.jpg
 tags: ["legal", "australia", "buyers-guide"]
+draft: true
 ---
 
 Australia is Bali's single largest source of foreign property buyers. Thousands of Australians own villas, investment properties and holiday homes across the island. So yes, Australians can absolutely buy property in Bali. What matters is understanding *how* the ownership structures work, what the legal protections look like, and how to avoid the common mistakes that trip up first-time buyers.

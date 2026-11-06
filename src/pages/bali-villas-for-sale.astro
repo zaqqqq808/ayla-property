@@ -5,6 +5,8 @@ import { SITE_URL, CALENDLY_URL, whatsappUrl } from '@/config';
 const WA_URL = whatsappUrl("Hi Ayla, I'm looking at villas for sale in Bali.");
 import Header from '@/components/Header.astro';
 import Testimonials from '@/components/Testimonials.astro';
+import HotListings from '@/components/HotListings.astro';
+import { listings, TOTAL_LISTINGS } from '@/data/listings';
 import Footer from '@/components/Footer.astro';
 import StickyButton from '@/components/StickyButton.astro';
 
@@ -15,7 +17,7 @@ const faqs = [
   },
   {
     q: 'How much does a villa in Bali cost?',
-    a: 'The median entry price across the 511 listings we track is around USD 290,000. Realistically the market starts near USD 150,000 for a one bedroom in an emerging area and runs past USD 800,000 for prime Canggu and clifftop Uluwatu. Most of our investor clients transact between USD 250,000 and USD 450,000.',
+    a: 'The median entry price across the 511 listings in our 2026 market analysis was around USD 290,000. Realistically the market starts near USD 150,000 for a one bedroom in an emerging area and runs past USD 800,000 for prime Canggu and clifftop Uluwatu. Most of our investor clients transact between USD 250,000 and USD 450,000.',
   },
   {
     q: 'What rental yield can I actually expect?',
@@ -67,7 +69,7 @@ const agentSchema = JSON.stringify({
 
 <BaseLayout
   title="Bali Villas for Sale | Buy a Villa in Bali | Ayla Property"
-  description="Looking to buy a villa in Bali? We track 511 listings across 80+ developers, represent none of them, and negotiate on your behalf. Answer three questions to see what fits your budget."
+  description={`Looking to buy a villa in Bali? We track ${TOTAL_LISTINGS} listings across 80+ developers, represent none of them, and negotiate on your behalf. Answer three questions to see what fits your budget.`}
   ogType="website"
   ogImage="/og-image.jpg"
 >
@@ -94,13 +96,18 @@ const agentSchema = JSON.stringify({
           <a class="lp-btn lp-btn-ghost" href={CALENDLY_URL} target="_blank" rel="noopener">Book a free call</a>
         </div>
         <ul class="lp-trust">
-          <li><strong>511</strong><span>Listings tracked</span></li>
+          <li><strong>{TOTAL_LISTINGS}</strong><span>Listings tracked</span></li>
           <li><strong>80+</strong><span>Developers monitored</span></li>
           <li><strong>12%+</strong><span>Average client yield</span></li>
           <li><strong>0</strong><span>Developer ties</span></li>
         </ul>
       </div>
     </section>
+
+    <HotListings
+      heading={`${listings.length} Bali villas for sale right now,<br /><span class="grad-text">out of ${TOTAL_LISTINGS} we track.</span>`}
+      sub="Ask about any of them and we will send the full sales pack, the floor plans and our own numbers on the returns."
+    />
 
     <section class="lp-why">
       <div class="lp-wrap">

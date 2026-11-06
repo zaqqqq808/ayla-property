@@ -26,11 +26,11 @@ const { Content } = await post.render();
 const articleSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": post.data.title,
+  "headline": post.data.seoTitle ?? post.data.title,
   "description": post.data.description ?? '',
   "image": post.data.image ? `${SITE_URL}${post.data.image}` : `${SITE_URL}/og-image.jpg`,
   "datePublished": post.data.publishDate.toISOString(),
-  "dateModified": post.data.publishDate.toISOString(),
+  "dateModified": (post.data.updatedDate ?? post.data.publishDate).toISOString(),
   "author": {
     "@type": "Organization",
     "name": "Ayla Property",
@@ -54,7 +54,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 <BaseLayout
-  title={`${post.data.title} | Ayla Property`}
+  title={`${post.data.seoTitle ?? post.data.title} | Ayla Property`}
   description={post.data.description}
   ogImage={post.data.image}
   ogType="article"
