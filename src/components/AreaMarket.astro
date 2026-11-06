@@ -1,0 +1,105 @@
+---
+// Area-specific market data for the /invest/<area>/ pages: what a villa costs,
+// what it earns, how the area compares with its neighbours, and what to check.
+interface PriceTier { label: string; price: string; note: string; }
+interface CompareArea { name: string; href?: string; current?: boolean; values: string[]; }
+interface Check { title: string; body: string; }
+
+interface Props {
+  area: string;
+  tiers: PriceTier[];
+  grossYield: string;
+  netYield: string;
+  compareRows: string[];
+  compareAreas: CompareArea[];
+  checks: Check[];
+}
+
+const { area, tiers, grossYield, netYield, compareRows, compareAreas, checks } = Astro.props;
+---
+<section class="area-market" id="prices">
+  <div class="container">
+    <div class="reveal section-head">
+      <span class="eyebrow">{area} prices, 2026</span>
+      <h2>What a villa in {area}<br /><span class="grad-text">actually costs</span></h2>
+      <p class="section-sub">Leasehold prices in USD, from the listings we track. Off-plan is where the margin is.</p>
+    </div>
+
+    <div class="area-tiers reveal-stagger">
+      {tiers.map((t) => (
+        <div class="area-tier glass">
+          <span class="area-tier-label">{t.label}</span>
+          <strong class="area-tier-price">{t.price}</strong>
+          <p>{t.note}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="area-yield glass reveal">
+      <div>
+        <span class="area-tier-label">Typical gross yield</span>
+        <strong class="area-yield-num">{grossYield}</strong>
+      </div>
+      <div>
+        <span class="area-tier-label">After management and running costs</span>
+        <strong class="area-yield-num">{netYield}</strong>
+      </div>
+      <a class="area-yield-cta" href="/bali-roi-calculator/">Run a {area} villa through the ROI calculator</a>
+    </div>
+  </div>
+</section>
+
+<section class="area-compare">
+  <div class="container">
+    <div class="reveal section-head">
+      <span class="eyebrow">{area} vs its neighbours</span>
+      <h2>Is {area} the right area<br /><span class="grad-text">for your money?</span></h2>
+    </div>
+
+    <div class="area-table-wrap reveal">
+      <table class="area-table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            {compareAreas.map((a) => (
+              <th scope="col" class={a.current ? 'is-current' : undefined}>
+                {a.href && !a.current ? <a href={a.href}>{a.name}</a> : a.name}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {compareRows.map((row, r) => (
+            <tr>
+              <th scope="row">{row}</th>
+              {compareAreas.map((a) => (
+                <td class={a.current ? 'is-current' : undefined}>{a.values[r]}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="area-checks">
+  <div class="container">
+    <div class="reveal section-head">
+      <span class="eyebrow">Due diligence</span>
+      <h2>{checks.length} things to check<br /><span class="grad-text">before you buy in {area}</span></h2>
+    </div>
+
+    <ol class="area-check-list reveal-stagger">
+      {checks.map((c, i) => (
+        <li class="glass">
+          <span class="area-check-num">{String(i + 1).padStart(2, '0')}</span>
+          <div>
+            <h3>{c.title}</h3>
+            <p set:html={c.body} />
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

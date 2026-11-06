@@ -5,11 +5,8 @@ import Header from '@/components/Header.astro';
 import Hero from '@/components/Hero.astro';
 import StatsBar from '@/components/StatsBar.astro';
 import WhyBali from '@/components/WhyBali.astro';
-import PropertyCarousel from '@/components/PropertyCarousel.astro';
-import Methodology from '@/components/Methodology.astro';
-import Testimonials from '@/components/Testimonials.astro';
-import Team from '@/components/Team.astro';
-import Journal from '@/components/Journal.astro';
+import HotListings from '@/components/HotListings.astro';
+import AreaMarket from '@/components/AreaMarket.astro';
 import FAQ from '@/components/FAQ.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
 import AreaLinks from '@/components/AreaLinks.astro';
@@ -84,19 +81,62 @@ const seshFaqs = [
   },
 ];
 
+// ── Seseh market data ────────────────────────────────────────────────────────
+const sesehTiers = [
+  { label: 'Entry boutique villa', price: '$250K–$280K', note: 'Usually 2 bed with a private pool and a rice field outlook.' },
+  { label: 'Investment grade', price: '$350K–$550K', note: 'Rice field frontage, a private pool and a premium finish.' },
+  { label: 'Ocean view and clifftop', price: '$700K+', note: 'Limited stock on the coast, and priced like it.' },
+  { label: 'Off-plan at launch', price: '15–20% less', note: 'Below completed value, from developers with finished projects to inspect.' },
+];
+
+const compareRows = ['Typical entry', 'Gross yield', 'Land growth', 'Best for'];
+const compareAreas = [
+  { name: 'Seseh', current: true, values: ['$250K–$280K', '13–17%', '60–90% since 2022', 'Premium boutique villas and private guests'] },
+  { name: 'Pererenan', href: '/invest/pererenan/', values: ['$120K–$180K', '12–16%', '50–70% since 2021', 'Canggu demand for 20–30% less'] },
+  { name: 'Canggu', href: '/invest/canggu/', values: ['$150K–$200K', '15–20%', 'Most mature market', 'Liquidity and an easy resale'] },
+  { name: 'Kedungu', href: '/invest/kedungu/', values: ['Around $245K median', '11–15%', '40–70% since 2022', 'A longer hold with an earlier entry'] },
+];
+
+const sesehChecks = [
+  {
+    title: 'The zoning, before the view',
+    body: 'A lot of Seseh is still rice field, and green-zone farmland cannot legally host a tourist rental however good the villa looks. Ask for the zoning on the official spatial plan and make sure the PBG building permit matches what you intend to do with it.',
+  },
+  {
+    title: 'The beach setback',
+    body: 'Coastal plots sit under the beach setback rule (sempadan pantai), which limits building close to the high-tide line. Ask the developer to show the setback on the site plan. If they cannot, walk away.',
+  },
+  {
+    title: 'The road in',
+    body: 'Some Seseh plots are reached down narrow village lanes. Check that a construction truck can get in during the build and that a guest in a car can get in afterwards. Both affect your price and your reviews.',
+  },
+  {
+    title: 'The rental licence',
+    body: 'Renting to holiday guests needs the right business licence, usually through a PT PMA or a licensed operator. Our <a href="/can-foreigners-buy-property-in-bali/">ownership checker</a> shows which structure fits you.',
+  },
+  {
+    title: 'The lease you are actually buying',
+    body: 'Check the years remaining, not the years advertised, and get the extension terms and price in writing before you pay a deposit.',
+  },
+  {
+    title: 'The developer’s last project',
+    body: 'Off-plan discounts only pay if the villa gets finished. Visit something they have already delivered. Our guide to <a href="/journal/how-to-vet-a-bali-developer/">vetting a Bali developer</a> lists the questions to ask.',
+  },
+];
+
 // ── Schema ────────────────────────────────────────────────────────────────────
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home",             "item": `${SITE_URL}/` },
-    { "@type": "ListItem", "position": 2, "name": "Invest in Seseh",  "item": `${SITE_URL}/invest/seseh/` },
+    { "@type": "ListItem", "position": 2, "name": "Seseh Villas for Sale",  "item": `${SITE_URL}/invest/seseh/` },
   ]
 });
 ---
 <BaseLayout
-  title="Seseh Property Investment | Premium Villas, 13–17% Yields | Ayla Property"
-  description="Seseh is Bali's new premium investment area. Big money is moving in early. 13–17% gross yields, rapid land appreciation, and a high-spending guest profile. Free investment consultation."
+  title="Seseh Villas for Sale: 2026 Prices, Yields and Listings | Ayla Property"
+  description="What a villa in Seseh, Bali costs in 2026: from about $250K leasehold, 13–17% gross yields, how Seseh compares with Pererenan and Canggu, and what to check before you buy."
   ogType="website"
   ogImage="/og-image.jpg"
 >
@@ -108,9 +148,9 @@ const breadcrumbSchema = JSON.stringify({
   <Header />
   <main>
     <Hero
-      eyebrow="Bali Real Estate Investment: Seseh"
-      headlineHtml="Invest in<br />Seseh"
-      subline="Where Bali's serious money is moving. Premium boutique villas, privacy-seeking guests, and early-mover land prices."
+      eyebrow="Seseh, Bali: villas and land"
+      headlineHtml="Seseh Villas<br />for Sale"
+      subline="What a villa here costs, what it earns, and the listings we would put a client into this month."
       ctaText="Book a Free Investment Call"
     />
 
@@ -139,6 +179,23 @@ const breadcrumbSchema = JSON.stringify({
       </div>
     </section>
 
+    <HotListings
+      areas={['Pererenan', 'Nuanu City', 'Cepaka']}
+      showClose={false}
+      heading={'Nothing in Seseh made our top six this month.<br /><span class="grad-text">These three are just down the road.</span>'}
+      sub="Pererenan, Nuanu and Cepaka are all a short drive from Seseh. Ask us and we will send what we are tracking inside Seseh itself."
+    />
+
+    <AreaMarket
+      area="Seseh"
+      tiers={sesehTiers}
+      grossYield="13–17%"
+      netYield="9–13%"
+      compareRows={compareRows}
+      compareAreas={compareAreas}
+      checks={sesehChecks}
+    />
+
     <WhyBali
       eyebrow="The Seseh Opportunity"
       titleHtml="Why Serious Money<br />Is Moving to Seseh"
@@ -147,13 +204,6 @@ const breadcrumbSchema = JSON.stringify({
       reasons={seshReasons}
     />
 
-    <PropertyCarousel />
-
-    <Methodology />
-    <Testimonials />
-    <Team />
-
-    <Journal />
     <FAQ
       eyebrow="Seseh Property FAQ"
       title="Seseh Investment Questions Answered"
@@ -167,7 +217,7 @@ const breadcrumbSchema = JSON.stringify({
         { href: '/invest/kedungu/', label: 'Kedungu Property Investment', note: 'The next emerging area up the coast' },
         { href: '/bali-roi-calculator/', label: 'Bali ROI Calculator', note: 'Model your Seseh villa returns' },
         { href: '/journal/beyond-canggu-emerging-neighbourhoods/', label: 'Beyond Canggu: Emerging Areas', note: 'Why smart money is moving to Seseh' },
-        { href: '/guides/foreigners-buying-property-bali/', label: 'Foreigners Buying Guide', note: 'The legal process step by step' },
+        { href: '/guides/foreigners-buying-property-bali/', label: 'How to Buy Property in Bali', note: 'The legal process step by step' },
       ]}
     />
 

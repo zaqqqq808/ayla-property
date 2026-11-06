@@ -1,14 +1,21 @@
 ---
 import CalendlyButton from './CalendlyButton.astro';
 import { whatsappUrl } from '@/config';
-import { listings, TOTAL_LISTINGS } from '@/data/listings';
+import { listings as allListings, TOTAL_LISTINGS } from '@/data/listings';
 
 interface Props {
   /** Section heading, as HTML. Defaults to the homepage wording. */
   heading?: string;
   /** Intro line under the heading. */
   sub?: string;
+  /** Only show listings in these areas. Shows all when omitted. */
+  areas?: string[];
+  /** Show the closing headline and call button. */
+  showClose?: boolean;
 }
+
+const { areas, showClose = true } = Astro.props;
+const listings = areas ? allListings.filter((l) => areas.includes(l.area)) : allListings;
 
 const {
   heading = `${TOTAL_LISTINGS} listings.<br /><span class="grad-text">These ${listings.length} made the cut.</span>`,
@@ -23,11 +30,11 @@ const {
     </div>
 
     <div class="listing-grid reveal-stagger">
-      {listings.map((l, i) => (
+      {listings.map((l) => (
         <article class="listing-card glass">
           <div class="listing-media">
             <img src={l.image} alt={`${l.title} in ${l.area}`} loading="lazy" width="1000" height="1000" decoding="async" />
-            <span class="listing-rank">{String(i + 1).padStart(2, '0')}</span>
+            <span class="listing-rank">{String(allListings.indexOf(l) + 1).padStart(2, '0')}</span>
             <span class="listing-area">{l.area}</span>
           </div>
           <div class="listing-body">
@@ -41,7 +48,7 @@ const {
             </ul>
             <a
               class="listing-ask"
-              href={whatsappUrl(`Hi Ayla, I'd like details on listing ${String(i + 1).padStart(2, '0')}: the ${l.title} in ${l.area} (${l.priceUsd}).`)}
+              href={whatsappUrl(`Hi Ayla, I'd like details on listing ${String(allListings.indexOf(l) + 1).padStart(2, '0')}: the ${l.title} in ${l.area} (${l.priceUsd}).`)}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -52,9 +59,11 @@ const {
       ))}
     </div>
 
-    <div class="reveal section-head listing-close">
-      <h2>Let us find the perfect deal,<br /><span class="grad-text">customised to <span class="u-line">your</span> exact needs.</span></h2>
-      <CalendlyButton text="Book a Call" variant="orange" />
-    </div>
+    {showClose && (
+      <div class="reveal section-head listing-close">
+        <h2>Let us find the perfect deal,<br /><span class="grad-text">customised to <span class="u-line">your</span> exact needs.</span></h2>
+        <CalendlyButton text="Book a Call" variant="orange" />
+      </div>
+    )}
   </div>
 </section>

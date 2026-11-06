@@ -589,8 +589,42 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
 .gd-ayla a{color:var(--gold-light);text-decoration:underline;text-underline-offset:3px}
 .go-direct-cta{text-align:center}
 
+/* ============ AREA MARKET (invest/<area> pages) ============ */
+.area-market{background:linear-gradient(to bottom,var(--bg-base),var(--bg-deep));padding:96px 0}
+.area-tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:48px 0 22px}
+.area-tier{padding:24px 22px;border-radius:var(--radius);display:flex;flex-direction:column;gap:6px}
+.area-tier-label{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.area-tier-price{font-family:var(--font-display);font-size:1.7rem;font-weight:600;color:var(--terra-deep);line-height:1.15}
+.area-tier p{font-size:.88rem;color:var(--text-muted);line-height:1.5}
+.area-yield{border-radius:var(--radius);padding:24px 28px;display:flex;align-items:center;gap:40px;flex-wrap:wrap}
+.area-yield>div{display:flex;flex-direction:column;gap:2px}
+.area-yield-num{font-family:var(--font-display);font-size:2.2rem;font-weight:600;color:var(--teal-deep);line-height:1.1}
+.area-yield-cta{margin-left:auto;padding:12px 22px;border-radius:999px;background:var(--grad-gold);color:#fff;font-weight:600;font-size:.92rem;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.area-yield-cta:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(180,80,42,0.65)}
+
+.area-compare{background:var(--bg-deep);padding:88px 0}
+.area-table-wrap{margin-top:44px;overflow-x:auto;border-radius:var(--radius);border:1px solid var(--glass-border);background:var(--glass-strong)}
+.area-table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:640px}
+.area-table th,.area-table td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--glass-border);vertical-align:top}
+.area-table tbody tr:last-child th,.area-table tbody tr:last-child td{border-bottom:none}
+.area-table thead th{font-family:var(--font-display);font-size:1.1rem;font-weight:600;color:var(--text)}
+.area-table thead th a{color:var(--terra);text-decoration:underline;text-underline-offset:3px}
+.area-table tbody th{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.area-table td{color:var(--text-muted)}
+.area-table .is-current{background:rgba(180,80,42,0.07);color:var(--text)}
+.area-table thead .is-current{color:var(--terra-deep)}
+
+.area-checks{background:linear-gradient(to bottom,var(--bg-deep),var(--bg-base));padding:88px 0 104px}
+.area-check-list{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:44px}
+.area-check-list li{display:flex;gap:18px;padding:24px;border-radius:var(--radius)}
+.area-check-num{font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--terra);line-height:1.2}
+.area-check-list h3{font-size:1.15rem;margin-bottom:6px}
+.area-check-list p{font-size:.92rem;color:var(--text-muted);line-height:1.55}
+.area-check-list a{color:var(--terra);text-decoration:underline;text-underline-offset:3px}
+
 /* responsive */
 @media(max-width:1024px){
+  .area-tiers{grid-template-columns:repeat(2,1fr)}
   .listing-grid{grid-template-columns:repeat(2,1fr)}
   .opp-grid{grid-template-columns:repeat(2,1fr)}
   .testi-grid{grid-template-columns:1fr;max-width:620px;margin-left:auto;margin-right:auto}
@@ -625,6 +659,9 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
   .hero-scroll.static{height:100dvh}
 }
 @media(max-width:560px){
+  .area-tiers,.area-check-list{grid-template-columns:1fr}
+  .area-yield{gap:18px}
+  .area-yield-cta{margin-left:0}
   .opp-grid{grid-template-columns:1fr}
   .team-grid{grid-template-columns:1fr}
   .marquee-item{width:300px;height:210px}
