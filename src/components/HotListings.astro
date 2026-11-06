@@ -6,7 +6,7 @@ import { whatsappUrl } from '@/config';
 const TOTAL_LISTINGS = 673;
 
 interface Listing {
-  name:     string;
+  title:    string;
   area:     string;
   priceUsd: string;
   priceIdr: string;
@@ -17,11 +17,11 @@ interface Listing {
 
 const listings: Listing[] = [
   {
-    name: 'Pantai Lima Residence',
+    title: '2 Bed Villa',
     area: 'Pererenan',
     priceUsd: '$250,000',
     priceIdr: 'Rp 4.5B',
-    image: '/listings/pantai-lima.webp',
+    image: '/listings/listing-01.webp',
     specs: ['2 bed', 'Private pool', 'Rooftop ocean view'],
     points: [
       'Around $2,043 per m²',
@@ -30,11 +30,11 @@ const listings: Listing[] = [
     ],
   },
   {
-    name: 'Origins',
+    title: '2–4 Bed Villa',
     area: 'Nuanu City',
     priceUsd: 'From $600,000',
     priceIdr: 'Rp 10.8B',
-    image: '/listings/origins-nuanu.webp',
+    image: '/listings/listing-02.webp',
     specs: ['2–4 bed', 'Leasehold to 2062', 'Handover Q2 2027'],
     points: [
       'Pink-zone tourism land',
@@ -43,11 +43,11 @@ const listings: Listing[] = [
     ],
   },
   {
-    name: 'Riverland, Villa Baru',
+    title: '1 Bed Villa',
     area: 'Cepaka',
     priceUsd: 'From $99,000',
     priceIdr: 'Rp 1.7B',
-    image: '/listings/riverland-cepaka.webp',
+    image: '/listings/listing-03.webp',
     specs: ['1 bed', '65 m² build', '30 + 20 yr lease'],
     points: [
       'A furnished villa for under $100K',
@@ -56,23 +56,24 @@ const listings: Listing[] = [
     ],
   },
   {
-    name: 'The Ease Villa',
+    title: '2 Bed Villa',
     area: 'Canggu',
     priceUsd: '$562,500',
     priceIdr: 'Rp 10.1B',
-    image: '/listings/the-ease.webp',
-    specs: ['Villas & apartments', 'Wellness facilities'],
+    image: '/listings/listing-04.webp',
+    specs: ['2 bed', '284 m² build', 'Fully furnished'],
     points: [
-      'Full sales pack and price list available',
-      'Monthly construction progress photos',
+      'Lowest-priced villa still available in the complex',
+      '20% down, the rest monthly until handover',
+      'Price already includes VAT',
     ],
   },
   {
-    name: 'Villa Alive',
+    title: '2 Bed Villa',
     area: 'Tibubeneng, Canggu',
     priceUsd: '$225,000',
     priceIdr: 'Rp 3.1B',
-    image: '/listings/villa-alive.webp',
+    image: '/listings/listing-05.webp',
     specs: ['2 bed', 'Private pool', '30 yr lease'],
     points: [
       '110 m² villa on a 97 m² plot',
@@ -81,11 +82,11 @@ const listings: Listing[] = [
     ],
   },
   {
-    name: 'Riviera Esmeralda',
+    title: '3 Bed Villa',
     area: 'Sanur',
     priceUsd: '$358,000',
     priceIdr: 'Rp 6.5B',
-    image: '/listings/riviera-sanur.webp',
+    image: '/listings/listing-06.webp',
     specs: ['3 bed + optional 4th', 'Private pool', '254 m² build'],
     points: [
       'One of 15 villas around a shared garden',
@@ -106,12 +107,12 @@ const listings: Listing[] = [
       {listings.map((l, i) => (
         <article class="listing-card glass">
           <div class="listing-media">
-            <img src={l.image} alt={`${l.name}, ${l.area}`} loading="lazy" width="1000" height="1000" decoding="async" />
+            <img src={l.image} alt={`${l.title} in ${l.area}`} loading="lazy" width="1000" height="1000" decoding="async" />
             <span class="listing-rank">{String(i + 1).padStart(2, '0')}</span>
             <span class="listing-area">{l.area}</span>
           </div>
           <div class="listing-body">
-            <h3>{l.name}</h3>
+            <h3>{l.title}</h3>
             <p class="listing-price">{l.priceUsd} <span>{l.priceIdr}</span></p>
             <ul class="listing-specs">
               {l.specs.map((s) => <li>{s}</li>)}
@@ -121,7 +122,7 @@ const listings: Listing[] = [
             </ul>
             <a
               class="listing-ask"
-              href={whatsappUrl(`Hi Ayla, I'd like details on ${l.name} (${l.area}).`)}
+              href={whatsappUrl(`Hi Ayla, I'd like details on listing ${String(i + 1).padStart(2, '0')}: the ${l.title} in ${l.area} (${l.priceUsd}).`)}
               target="_blank"
               rel="noopener noreferrer"
             >
