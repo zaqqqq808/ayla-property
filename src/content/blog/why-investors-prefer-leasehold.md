@@ -12,7 +12,7 @@ It makes sense. In Europe, Australia, or the US, owning the land forever is the 
 
 But here is the truth that many new investors miss: **In Bali, "Forever" is expensive.**
 
-While you *can* buy Freehold (Hak Milik) in Bali, usually through a PT PMA company, it comes with a massive premium. And if your goal is pure Return on Investment (ROI), that premium can actually be a trap. Not sure which title you are eligible for? Our [free ownership checker](/can-foreigners-buy-property-in-bali/) answers that in about thirty seconds.
+Freehold (Hak Milik) is reserved for Indonesian citizens. The closest a foreigner can get is Hak Guna Bangunan, held through a PT PMA company, and it comes with a massive premium. And if your goal is pure Return on Investment (ROI), that premium can actually be a trap. Not sure which title you are eligible for? Our [free ownership checker](/can-foreigners-buy-property-in-bali/) answers that in about thirty seconds.
 
 Here is why the smartest money in Bali is often flowing into Leasehold.
 
@@ -86,9 +86,9 @@ Not all leasehold agreements are equal. The quality of the lease document itself
 
 At Ayla, every lease our clients sign has been reviewed by our independent notary for all of the above points. We reject or renegotiate leases that don't meet the standard before recommending a purchase.
 
-## When Freehold (PT PMA) Does Make Sense
+## When a PT PMA Does Make Sense
 
-It would be misleading to suggest leasehold is always the answer. There are specific scenarios where setting up a PT PMA and acquiring freehold title (Hak Guna Bangunan) is the right move:
+It would be misleading to suggest leasehold is always the answer. There are specific scenarios where setting up a PT PMA and acquiring Hak Guna Bangunan title is the right move:
 
 **You're planning to hold the property for 30+ years.** If this is a true forever investment, not something you intend to exit, the ongoing certainty of freehold and elimination of renewal risk may justify the higher entry cost.
 
