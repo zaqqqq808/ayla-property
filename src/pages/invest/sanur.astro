@@ -5,12 +5,10 @@ import Header from '@/components/Header.astro';
 import Hero from '@/components/Hero.astro';
 import StatsBar from '@/components/StatsBar.astro';
 import WhyBali from '@/components/WhyBali.astro';
-import PropertyCarousel from '@/components/PropertyCarousel.astro';
-import Methodology from '@/components/Methodology.astro';
-import Testimonials from '@/components/Testimonials.astro';
-import Team from '@/components/Team.astro';
-import Journal from '@/components/Journal.astro';
 import FAQ from '@/components/FAQ.astro';
+import HotListings from '@/components/HotListings.astro';
+import AreaMarket from '@/components/AreaMarket.astro';
+import { compareFor, compareRows } from '@/data/areas';
 import ContactCTA from '@/components/ContactCTA.astro';
 import AreaLinks from '@/components/AreaLinks.astro';
 import Footer from '@/components/Footer.astro';
@@ -82,18 +80,55 @@ const sanurFaqs = [
   },
 ];
 
+// ── Sanur market data ────────────────────────────────────────────────────────
+const areaTiers = [
+  { label: "Entry villa", price: "$150K–$180K", note: "2 bed on leasehold." },
+  { label: "Investment grade", price: "$200K–$350K", note: "The middle of the market. The median sits at $220K." },
+  { label: "Beachfront", price: "$400K+", note: "Direct beach access, usually with a rental history." },
+  { label: "Off-plan", price: "Rare", note: "Most Sanur sales are finished villas, so you can check real bookings." },
+];
+
+const compareAreas = compareFor('sanur', ["canggu", "uluwatu", "kedungu"]);
+
+const areaChecks = [
+  {
+    title: "Twelve months of bookings",
+    body: "Most Sanur villas already rent, so ask for a year of real booking data instead of a projection. If the seller will not share it, assume the worst.",
+  },
+  {
+    title: "Monthly rates, not nightly",
+    body: "Sanur demand leans towards longer stays. Model the villa on monthly rates in the <a href=\"/bali-roi-calculator/\">ROI calculator</a>, because that is how it will mostly let.",
+  },
+  {
+    title: "The building’s age",
+    body: "Older Sanur stock needs more upkeep. Get an inspection of the roof, the pool and the plumbing before you agree a price.",
+  },
+  {
+    title: "The beach setback",
+    body: "Beachfront plots sit under the beach setback rule (sempadan pantai), which limits building close to the high-tide line. Make sure anything near the sand was built inside the rules.",
+  },
+  {
+    title: "The rental licence",
+    body: "Renting to holiday guests needs the right business licence, usually through a PT PMA or a licensed operator. Our <a href=\"/can-foreigners-buy-property-in-bali/\">ownership checker</a> shows which structure fits you.",
+  },
+  {
+    title: "The lease you are actually buying",
+    body: "Check the years remaining, not the years advertised, and get the extension terms and price in writing before you pay a deposit.",
+  },
+];
+
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home",           "item": `${SITE_URL}/` },
-    { "@type": "ListItem", "position": 2, "name": "Invest in Sanur","item": `${SITE_URL}/invest/sanur/` },
+    { "@type": "ListItem", "position": 2, "name": "Sanur Villas for Sale", "item": `${SITE_URL}/invest/sanur/` },
   ]
 });
 ---
 <BaseLayout
-  title="Sanur Property Investment | 8–12% Yields, Stable Income | Ayla Property"
-  description="Buy a villa in Sanur, Bali's most stable investment area. Lower entry than Canggu, 8–12% reliable yields, year-round expat and medical tourism demand. Free consultation."
+  title="Sanur Villas for Sale: 2026 Prices, Yields and Listings | Ayla Property"
+  description="What a villa in Sanur, Bali costs in 2026: from about $150K leasehold, a $220K median, 8–12% gross yields from long-stay guests, and what to check before you buy."
   ogType="website"
   ogImage="/og-image.jpg"
 >
@@ -105,9 +140,9 @@ const breadcrumbSchema = JSON.stringify({
   <Header />
   <main>
     <Hero
-      eyebrow="Bali Real Estate Investment: Sanur"
-      headlineHtml="Invest in<br />Sanur"
-      subline="Bali's most stable investment market. Lower entry, reliable income, and a guest profile that stays longer and spends more."
+      eyebrow="Sanur, Bali: villas and land"
+      headlineHtml="Sanur Villas<br />for Sale"
+      subline="Calm water, long stays and lower prices than the west coast. What a villa here costs and what it earns in 2026."
       ctaText="Book a Free Investment Call"
     />
 
@@ -136,6 +171,23 @@ const breadcrumbSchema = JSON.stringify({
       </div>
     </section>
 
+    <HotListings
+      areas={["Sanur"]}
+      showClose={false}
+      heading={"One Sanur villa made our top six this month."}
+      sub="Ask about it and we will send the full sales pack, the floor plans and our own numbers on the returns."
+    />
+
+    <AreaMarket
+      area="Sanur"
+      tiers={areaTiers}
+      grossYield="8–12%"
+      priceSub="Leasehold prices in USD, from the listings we track. Most Sanur stock is already built and renting."
+      compareRows={compareRows}
+      compareAreas={compareAreas}
+      checks={areaChecks}
+    />
+
     <WhyBali
       eyebrow="The Sanur Opportunity"
       titleHtml="Why Sanur Is Bali's<br />Most Reliable Income Market"
@@ -144,11 +196,6 @@ const breadcrumbSchema = JSON.stringify({
       reasons={sanurReasons}
     />
 
-    <PropertyCarousel />
-    <Methodology />
-    <Testimonials />
-    <Team />
-    <Journal />
 
     <FAQ
       eyebrow="Sanur Property FAQ"
@@ -163,7 +210,7 @@ const breadcrumbSchema = JSON.stringify({
         { href: '/invest/kedungu/', label: 'Kedungu Property Investment', note: 'Early-mover pricing on the west coast' },
         { href: '/bali-roi-calculator/', label: 'Bali ROI Calculator', note: 'Model your Sanur villa returns' },
         { href: '/journal/best-areas-invest-bali-2026/', label: 'Best Areas to Invest in Bali 2026', note: 'Why Sanur is the defensive pick' },
-        { href: '/guides/foreigners-buying-property-bali/', label: 'Foreigners Buying Guide', note: 'The legal process step by step' },
+        { href: '/guides/foreigners-buying-property-bali/', label: 'How to Buy Property in Bali', note: 'The legal process step by step' },
       ]}
     />
 

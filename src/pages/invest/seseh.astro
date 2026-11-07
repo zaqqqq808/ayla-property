@@ -7,6 +7,7 @@ import StatsBar from '@/components/StatsBar.astro';
 import WhyBali from '@/components/WhyBali.astro';
 import HotListings from '@/components/HotListings.astro';
 import AreaMarket from '@/components/AreaMarket.astro';
+import { compareFor, compareRows } from '@/data/areas';
 import FAQ from '@/components/FAQ.astro';
 import ContactCTA from '@/components/ContactCTA.astro';
 import AreaLinks from '@/components/AreaLinks.astro';
@@ -89,13 +90,7 @@ const sesehTiers = [
   { label: 'Off-plan at launch', price: '15–20% less', note: 'Below completed value, from developers with finished projects to inspect.' },
 ];
 
-const compareRows = ['Typical entry', 'Gross yield', 'Land growth', 'Best for'];
-const compareAreas = [
-  { name: 'Seseh', current: true, values: ['$250K–$280K', '13–17%', '60–90% since 2022', 'Premium boutique villas and private guests'] },
-  { name: 'Pererenan', href: '/invest/pererenan/', values: ['$120K–$180K', '12–16%', '50–70% since 2021', 'Canggu demand for 20–30% less'] },
-  { name: 'Canggu', href: '/invest/canggu/', values: ['$150K–$200K', '15–20%', 'Most mature market', 'Liquidity and an easy resale'] },
-  { name: 'Kedungu', href: '/invest/kedungu/', values: ['Around $245K median', '11–15%', '40–70% since 2022', 'A longer hold with an earlier entry'] },
-];
+const compareAreas = compareFor('seseh', ['pererenan', 'canggu', 'kedungu']);
 
 const sesehChecks = [
   {

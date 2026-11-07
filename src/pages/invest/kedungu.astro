@@ -5,12 +5,10 @@ import Header from '@/components/Header.astro';
 import Hero from '@/components/Hero.astro';
 import StatsBar from '@/components/StatsBar.astro';
 import WhyBali from '@/components/WhyBali.astro';
-import PropertyCarousel from '@/components/PropertyCarousel.astro';
-import Methodology from '@/components/Methodology.astro';
-import Testimonials from '@/components/Testimonials.astro';
-import Team from '@/components/Team.astro';
-import Journal from '@/components/Journal.astro';
 import FAQ from '@/components/FAQ.astro';
+import HotListings from '@/components/HotListings.astro';
+import AreaMarket from '@/components/AreaMarket.astro';
+import { compareFor, compareRows } from '@/data/areas';
 import ContactCTA from '@/components/ContactCTA.astro';
 import AreaLinks from '@/components/AreaLinks.astro';
 import Footer from '@/components/Footer.astro';
@@ -84,6 +82,43 @@ const kedunguFaqs = [
   },
 ];
 
+// ── Kedungu market data ────────────────────────────────────────────────────────
+const areaTiers = [
+  { label: "Entry and off-plan", price: "From $180K", note: "Smaller villas and early off-plan launches." },
+  { label: "Investment grade", price: "$220K–$350K", note: "The middle of the market. The median sits at $245K." },
+  { label: "Coastal and next to Nuanu", price: "$400K+", note: "The premium end of an early market." },
+  { label: "Off-plan at launch", price: "20–25% less", note: "Below completed value. Off-plan is most of what sells here right now." },
+];
+
+const compareAreas = compareFor('kedungu', ["seseh", "pererenan", "canggu"]);
+
+const areaChecks = [
+  {
+    title: "The zoning, before the view",
+    body: "Kedungu is still mostly rice field, and green-zone farmland cannot legally host a tourist rental. Ask for the zoning on the official spatial plan and make sure the PBG building permit matches what you intend to do with it.",
+  },
+  {
+    title: "Whether the developer finishes things",
+    body: "Most Kedungu stock is off-plan, so your risk is the build. Visit something the developer has already delivered. Our guide to <a href=\"/journal/how-to-vet-a-bali-developer/\">vetting a Bali developer</a> lists the questions to ask.",
+  },
+  {
+    title: "Pay for what is open, not for the render",
+    body: "Being close to Nuanu City adds value, but only for what is built and running. Check what is open today before you pay a Nuanu premium.",
+  },
+  {
+    title: "Real bookings, not projections",
+    body: "Kedungu rental data is still thin. Ask for actual occupancy on finished villas nearby, then run those numbers through the <a href=\"/bali-roi-calculator/\">ROI calculator</a> instead of the brochure’s.",
+  },
+  {
+    title: "The road in",
+    body: "Some plots are reached down narrow village lanes. Check that a construction truck can get in during the build and that a guest in a car can get in afterwards.",
+  },
+  {
+    title: "The lease you are actually buying",
+    body: "Check the years remaining, not the years advertised, and get the extension terms and price in writing before you pay a deposit.",
+  },
+];
+
 // ── Schema ────────────────────────────────────────────────────────────────────
 
 const breadcrumbSchema = JSON.stringify({
@@ -91,13 +126,13 @@ const breadcrumbSchema = JSON.stringify({
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home",               "item": `${SITE_URL}/` },
-    { "@type": "ListItem", "position": 2, "name": "Invest in Kedungu", "item": `${SITE_URL}/invest/kedungu/` },
+    { "@type": "ListItem", "position": 2, "name": "Kedungu Villas for Sale", "item": `${SITE_URL}/invest/kedungu/` },
   ]
 });
 ---
 <BaseLayout
-  title="Kedungu Property Investment | 11–15% Yields, Early-Mover Pricing | Ayla Property"
-  description="Kedungu is where Canggu was 7 years ago. Early-mover entry prices, 11–15% gross yields, and Nuanu City as a demand catalyst. Free investment consultation with Ayla."
+  title="Kedungu Villas for Sale: 2026 Prices, Yields and Listings | Ayla Property"
+  description="What a villa in Kedungu, Bali costs in 2026: from about $180K, a $245K median, 11–15% gross yields, what Nuanu City means for prices, and what to check before you buy."
   ogType="website"
   ogImage="/og-image.jpg"
 >
@@ -109,9 +144,9 @@ const breadcrumbSchema = JSON.stringify({
   <Header />
   <main>
     <Hero
-      eyebrow="Bali Real Estate Investment: Kedungu"
-      headlineHtml="Invest in<br />Kedungu"
-      subline="The next Canggu. Wide roads, surf, and Nuanu City as a demand engine. Buy before the market reprices."
+      eyebrow="Kedungu, Bali: villas and land"
+      headlineHtml="Kedungu Villas<br />for Sale"
+      subline="The west-coast early-mover market next to Nuanu City. What a villa here costs and what it earns in 2026."
       ctaText="Book a Free Investment Call"
     />
 
@@ -137,6 +172,23 @@ const breadcrumbSchema = JSON.stringify({
       </div>
     </section>
 
+    <HotListings
+      areas={["Nuanu City", "Pererenan"]}
+      showClose={false}
+      heading={"Nothing in Kedungu made our top six this month.<br /><span class=\"grad-text\">These two are on the same stretch of coast.</span>"}
+      sub="Nuanu City sits right next to Kedungu and Pererenan is a short drive south. Ask us and we will send what we are tracking inside Kedungu itself."
+    />
+
+    <AreaMarket
+      area="Kedungu"
+      tiers={areaTiers}
+      grossYield="11–15%"
+      netYield="7–11%"
+      compareRows={compareRows}
+      compareAreas={compareAreas}
+      checks={areaChecks}
+    />
+
     <WhyBali
       eyebrow="The Kedungu Opportunity"
       titleHtml="Why Kedungu Is Bali's<br />Best Early-Mover Play"
@@ -145,13 +197,8 @@ const breadcrumbSchema = JSON.stringify({
       reasons={kedunguReasons}
     />
 
-    <PropertyCarousel />
 
-    <Methodology />
-    <Testimonials />
-    <Team />
 
-    <Journal />
     <FAQ
       eyebrow="Kedungu Property FAQ"
       title="Kedungu Investment Questions Answered"
@@ -165,7 +212,7 @@ const breadcrumbSchema = JSON.stringify({
         { href: '/invest/pererenan/', label: 'Pererenan Property Investment', note: 'The proven middle ground, 12–16% yields' },
         { href: '/bali-roi-calculator/', label: 'Bali ROI Calculator', note: 'Model your Kedungu villa returns' },
         { href: '/journal/beyond-canggu-emerging-neighbourhoods/', label: 'Beyond Canggu: Emerging Areas', note: 'Why smart money is moving to Kedungu' },
-        { href: '/guides/foreigners-buying-property-bali/', label: 'Foreigners Buying Guide', note: 'The legal process step by step' },
+        { href: '/guides/foreigners-buying-property-bali/', label: 'How to Buy Property in Bali', note: 'The legal process step by step' },
       ]}
     />
 

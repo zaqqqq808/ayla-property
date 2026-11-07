@@ -5,12 +5,10 @@ import Header from '@/components/Header.astro';
 import Hero from '@/components/Hero.astro';
 import StatsBar from '@/components/StatsBar.astro';
 import WhyBali from '@/components/WhyBali.astro';
-import PropertyCarousel from '@/components/PropertyCarousel.astro';
-import Methodology from '@/components/Methodology.astro';
-import Testimonials from '@/components/Testimonials.astro';
-import Team from '@/components/Team.astro';
-import Journal from '@/components/Journal.astro';
 import FAQ from '@/components/FAQ.astro';
+import HotListings from '@/components/HotListings.astro';
+import AreaMarket from '@/components/AreaMarket.astro';
+import { compareFor, compareRows } from '@/data/areas';
 import ContactCTA from '@/components/ContactCTA.astro';
 import AreaLinks from '@/components/AreaLinks.astro';
 import Footer from '@/components/Footer.astro';
@@ -80,6 +78,43 @@ const cangguFaqs = [
   },
 ];
 
+// ── Canggu market data ────────────────────────────────────────────────────────
+const areaTiers = [
+  { label: "Entry villa", price: "$150K–$200K", note: "1–2 bed on leasehold, usually a short ride from the beach." },
+  { label: "Mid-range", price: "$300K–$500K", note: "3 bed in a premium location with a private pool." },
+  { label: "Large compounds", price: "$600K+", note: "4–5 bed estates on bigger plots." },
+  { label: "Off-plan at launch", price: "15–20% less", note: "Below completed value, from developers with finished projects to inspect." },
+];
+
+const compareAreas = compareFor('canggu', ["pererenan", "seseh", "uluwatu"]);
+
+const areaChecks = [
+  {
+    title: "How many villas are on your lane",
+    body: "New supply keeps arriving in Canggu. Count the villas within a few hundred metres on Airbnb, check how booked they are, and price your own nightly rate against them, not against the developer’s brochure.",
+  },
+  {
+    title: "The zoning, not just the address",
+    body: "Canggu still has green-zone pockets between the villas. Ask for the zoning on the official spatial plan and make sure the PBG building permit matches a tourist rental.",
+  },
+  {
+    title: "The drive at 5pm",
+    body: "Canggu traffic is real. Time the drive from the villa to the beach and the main cafe strips at rush hour. Guests mention it in reviews, and reviews set your rate.",
+  },
+  {
+    title: "What is being built next door",
+    body: "A rice field view in Canggu can turn into a construction site within a year. Ask what the neighbouring plots are zoned for before you pay for the view.",
+  },
+  {
+    title: "The rental licence",
+    body: "Renting to holiday guests needs the right business licence, usually through a PT PMA or a licensed operator. Our <a href=\"/can-foreigners-buy-property-in-bali/\">ownership checker</a> shows which structure fits you.",
+  },
+  {
+    title: "The lease you are actually buying",
+    body: "Check the years remaining, not the years advertised, and get the extension terms and price in writing before you pay a deposit.",
+  },
+];
+
 // ── Schema ────────────────────────────────────────────────────────────────────
 
 const breadcrumbSchema = JSON.stringify({
@@ -87,13 +122,13 @@ const breadcrumbSchema = JSON.stringify({
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home",            "item": `${SITE_URL}/` },
-    { "@type": "ListItem", "position": 2, "name": "Invest in Canggu","item": `${SITE_URL}/invest/canggu/` },
+    { "@type": "ListItem", "position": 2, "name": "Canggu Villas for Sale", "item": `${SITE_URL}/invest/canggu/` },
   ]
 });
 ---
 <BaseLayout
-  title="Canggu Property Investment | Villas with 15–20% Yields | Ayla Property"
-  description="Canggu villa investment made simple. Buy property in Bali's most in-demand investment location and earn 15–20% rental yields with year-round occupancy. Free consultation with Ayla Property."
+  title="Canggu Villas for Sale: 2026 Prices, Yields and Listings | Ayla Property"
+  description="What a villa in Canggu, Bali costs in 2026: from about $150K leasehold, 15–20% gross yields, how Canggu compares with Pererenan and Uluwatu, and what to check before you buy."
   ogType="website"
   ogImage="/og-canggu.jpg"
 >
@@ -105,9 +140,9 @@ const breadcrumbSchema = JSON.stringify({
   <Header />
   <main>
     <Hero
-      eyebrow="Bali Real Estate Investment: Canggu"
-      headlineHtml="Invest in<br />Canggu"
-      subline="Bali's #1 investment area. 15–20% yields, year-round rental demand"
+      eyebrow="Canggu, Bali: villas and land"
+      headlineHtml="Canggu Villas<br />for Sale"
+      subline="What a villa here costs, what it earns, and the two Canggu listings we would buy this month."
       ctaText="Book a Free Investment Call"
     />
 
@@ -132,6 +167,23 @@ const breadcrumbSchema = JSON.stringify({
       </div>
     </section>
 
+    <HotListings
+      areas={["Canggu", "Tibubeneng, Canggu"]}
+      showClose={false}
+      heading={"Two Canggu villas made our top six this month.<br /><span class=\"grad-text\">Here they are.</span>"}
+      sub="Ask about either and we will send the full sales pack, the floor plans and our own numbers on the returns."
+    />
+
+    <AreaMarket
+      area="Canggu"
+      tiers={areaTiers}
+      grossYield="15–20%"
+      netYield="10–14%"
+      compareRows={compareRows}
+      compareAreas={compareAreas}
+      checks={areaChecks}
+    />
+
     <WhyBali
       eyebrow="The Canggu Opportunity"
       titleHtml="Why Investors<br />Choose Canggu"
@@ -140,13 +192,8 @@ const breadcrumbSchema = JSON.stringify({
       reasons={cangguReasons}
     />
 
-    <PropertyCarousel />
 
-    <Methodology />
-    <Testimonials />
-    <Team />
 
-    <Journal />
     <FAQ
       eyebrow="Canggu Property FAQ"
       title="Canggu Questions Answered"
@@ -160,7 +207,7 @@ const breadcrumbSchema = JSON.stringify({
         { href: '/invest/kedungu/', label: 'Kedungu Property Investment', note: 'The next Canggu — early-mover pricing' },
         { href: '/bali-roi-calculator/', label: 'Bali ROI Calculator', note: 'Model your Canggu villa returns' },
         { href: '/journal/best-areas-invest-bali-2026/', label: 'Best Areas to Invest in Bali 2026', note: 'Where our clients are buying now' },
-        { href: '/guides/foreigners-buying-property-bali/', label: 'Foreigners Buying Guide', note: 'The legal process step by step' },
+        { href: '/guides/foreigners-buying-property-bali/', label: 'How to Buy Property in Bali', note: 'The legal process step by step' },
       ]}
     />
 

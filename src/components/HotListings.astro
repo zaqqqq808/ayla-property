@@ -29,7 +29,7 @@ const {
       <p class="section-sub">{sub}</p>
     </div>
 
-    <div class="listing-grid reveal-stagger">
+    <div class:list={["listing-grid reveal-stagger", { "listing-grid-few": listings.length < 3 }]}>
       {listings.map((l) => (
         <article class="listing-card glass">
           <div class="listing-media">

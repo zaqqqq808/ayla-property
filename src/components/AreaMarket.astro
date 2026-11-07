@@ -9,20 +9,25 @@ interface Props {
   area: string;
   tiers: PriceTier[];
   grossYield: string;
-  netYield: string;
+  netYield?: string;
+  /** Line under the price heading. */
+  priceSub?: string;
   compareRows: string[];
   compareAreas: CompareArea[];
   checks: Check[];
 }
 
-const { area, tiers, grossYield, netYield, compareRows, compareAreas, checks } = Astro.props;
+const {
+  area, tiers, grossYield, netYield, compareRows, compareAreas, checks,
+  priceSub = 'Leasehold prices in USD, from the listings we track. Off-plan is where the margin is.',
+} = Astro.props;
 ---
 <section class="area-market" id="prices">
   <div class="container">
     <div class="reveal section-head">
       <span class="eyebrow">{area} prices, 2026</span>
       <h2>What a villa in {area}<br /><span class="grad-text">actually costs</span></h2>
-      <p class="section-sub">Leasehold prices in USD, from the listings we track. Off-plan is where the margin is.</p>
+      <p class="section-sub">{priceSub}</p>
     </div>
 
     <div class="area-tiers reveal-stagger">
@@ -40,10 +45,12 @@ const { area, tiers, grossYield, netYield, compareRows, compareAreas, checks } =
         <span class="area-tier-label">Typical gross yield</span>
         <strong class="area-yield-num">{grossYield}</strong>
       </div>
-      <div>
-        <span class="area-tier-label">After management and running costs</span>
-        <strong class="area-yield-num">{netYield}</strong>
-      </div>
+      {netYield && (
+        <div>
+          <span class="area-tier-label">After management and running costs</span>
+          <strong class="area-yield-num">{netYield}</strong>
+        </div>
+      )}
       <a class="area-yield-cta" href="/bali-roi-calculator/">Run a {area} villa through the ROI calculator</a>
     </div>
   </div>

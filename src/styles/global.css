@@ -530,6 +530,7 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
   .opportunity + .hot-listings{padding-top:24px}
 }
 .listing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin:52px 0 64px}
+.listing-grid.listing-grid-few{grid-template-columns:repeat(auto-fit,minmax(0,380px));justify-content:center}
 .listing-card{
   display:flex;flex-direction:column;overflow:hidden;padding:0;
   transition:transform .35s var(--ease),border-color .35s,box-shadow .35s;
