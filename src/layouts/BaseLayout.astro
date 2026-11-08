@@ -1,6 +1,7 @@
 ---
 import '@/styles/global.css';
 import { SITE_URL } from '@/config';
+import ConversionTracking from '@/components/ConversionTracking.astro';
 
 interface Props {
   title?: string;
@@ -111,6 +112,7 @@ const schemas = [
     <div class="blob blob-3"></div>
   </div>
   <slot />
+  <ConversionTracking />
   <script is:inline>
     // Scroll-reveal animations (redesign 2026)
     (function () {

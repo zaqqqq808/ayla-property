@@ -1,0 +1,75 @@
+---
+// Sends enquiry events to the Meta pixel (loaded by GTM) and to the GTM dataLayer.
+//   Calendly call booked     -> Lead + Schedule   (calendly_scheduled)
+//   WhatsApp / email / phone -> Contact           (contact_click)
+//   Calendly opened          -> BookingStarted    (calendly_open)
+//   PDF downloaded           -> GuideDownload     (guide_download)
+---
+<script is:inline>
+  (function () {
+    var pending = [];
+
+    function sendToMeta(args) {
+      if (typeof window.fbq === 'function') {
+        window.fbq.apply(null, args);
+        return true;
+      }
+      return false;
+    }
+
+    // GTM loads the pixel asynchronously, so hold early events until fbq exists.
+    function flush() {
+      pending = pending.filter(function (args) { return !sendToMeta(args); });
+      if (pending.length) setTimeout(flush, 500);
+    }
+
+    function track(metaEvent, params, dlEvent, custom) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(Object.assign({ event: dlEvent }, params));
+      var args = [custom ? 'trackCustom' : 'track', metaEvent, params];
+      if (!sendToMeta(args)) {
+        pending.push(args);
+        setTimeout(flush, 500);
+      }
+    }
+
+    var page = location.pathname;
+
+    // Plain calendly.com links open the popup too, so the booking can be tracked.
+    function upgradeCalendlyLinks() {
+      document.querySelectorAll('a[href*="calendly.com"]:not([data-calendly-url])').forEach(function (a) {
+        a.setAttribute('data-calendly-url', a.href);
+      });
+    }
+    upgradeCalendlyLinks();
+    document.addEventListener('DOMContentLoaded', upgradeCalendlyLinks);
+
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest && e.target.closest('a, button');
+      if (!el) return;
+      var href = el.getAttribute('href') || '';
+
+      if (/wa\.me|api\.whatsapp\.com/.test(href)) {
+        track('Contact', { content_name: 'WhatsApp', content_category: page }, 'contact_click');
+      } else if (/^mailto:/.test(href)) {
+        track('Contact', { content_name: 'Email', content_category: page }, 'contact_click');
+      } else if (/^tel:/.test(href)) {
+        track('Contact', { content_name: 'Phone', content_category: page }, 'contact_click');
+      } else if (el.hasAttribute('data-calendly-url')) {
+        track('BookingStarted', { content_name: 'Calendly', content_category: page }, 'calendly_open', true);
+      } else if (/\.pdf($|\?)/.test(href)) {
+        track('GuideDownload', { content_name: href.split('/').pop(), content_category: page }, 'guide_download', true);
+      }
+    }, true);
+
+    var booked = false;
+    window.addEventListener('message', function (e) {
+      if (e.origin !== 'https://calendly.com' || !e.data || e.data.event !== 'calendly.event_scheduled') return;
+      if (booked) return;
+      booked = true;
+      var params = { content_name: 'Calendly call', content_category: page };
+      track('Lead', params, 'calendly_scheduled');
+      track('Schedule', params, 'calendly_scheduled_schedule');
+    });
+  })();
+</script>
