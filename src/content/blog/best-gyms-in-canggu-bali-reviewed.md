@@ -4,7 +4,7 @@ seoTitle: "Best Gyms in Canggu (2026): 8 Gyms Reviewed and Scored"
 description: "Updated November 2026. The 8 best gyms in Canggu and Pererenan, scored across 14 weighted categories. No sponsorships, no favours."
 publishDate: 2026-09-01
 updatedDate: 2026-11-06
-image: /images/journal/bali-gym-reviews-2026.jpg
+image: /images/journal/bali-gym-reviews-2026.webp
 tags: ["canggu", "lifestyle", "pererenan", "reviews"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Best Areas to Invest in Bali 2026: Where I'm Actually Telling My Clients to Put Their Money"
 description: "Forget the obvious picks. As a Bali property broker I reveal the four areas offering the best capital appreciation in 2026, and the exact strategy to turn them into serious profit."
 publishDate: 2026-05-06
-image: /images/journal/best-areas-bali-2026.jpg
+image: /images/journal/best-areas-bali-2026.webp
 tags: ["areas", "investment", "capital-appreciation", "strategy"]
 ---
 
@@ -27,7 +27,7 @@ So I told them what I am about to tell you.
 
 ## Kedungu: The Quiet One That is Already Turning Loud
 
-<img src="/images/journal/svg-best-areas-bali-2026.svg" alt="Top Bali capital appreciation areas 2026 - projected growth infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+<img width="800" height="480" src="/images/journal/svg-best-areas-bali-2026.svg" alt="Top Bali capital appreciation areas 2026 - projected growth infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 If you have been paying attention to Bali's property scene over the past 18 months, you have probably heard [Kedungu](/invest/kedungu/) mentioned. Some people dismiss it because it is still relatively undeveloped. That is exactly why I like it.
 

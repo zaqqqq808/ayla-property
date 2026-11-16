@@ -2,7 +2,7 @@
 title: "Case Study: How We Made $50k Profit in Under 6 Months For a Client (And The Exact Strategy We Used)"
 description: "We negotiated a villa from $163k to $130k, secured 15% net ROI, and added $50k equity before completion. All in under six months. Here is the exact strategy."
 publishDate: 2025-12-04
-image: /images/journal/six-months-client.jpg
+image: /images/journal/six-months-client.webp
 tags: ["case-study", "roi", "strategy"]
 ---
 
@@ -32,7 +32,7 @@ Here is how we turned that brief into a massive win.
 
 ## The "Uber Spreadsheet"
 
-<img src="/images/journal/svg-case-study-6-months.svg" alt="Bali property case study 50000 dollar profit 6 months deal numbers infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+<img width="800" height="400" src="/images/journal/svg-case-study-6-months.svg" alt="Bali property case study 50000 dollar profit 6 months deal numbers infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 Here at Ayla, we pride ourselves on our data. We don't just guess; we track everything. We have an "Uber spreadsheet" containing information on almost every credible developer in Bali and every active project.
 

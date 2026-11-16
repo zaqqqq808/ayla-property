@@ -2,7 +2,7 @@
 title: "Bali vs Dubai vs Gold Coast Property ROI: Real Numbers for 2026"
 description: "I own investment properties in both Bali and Dubai. Here is the real 2026 ROI comparison covering yields, legal structures and which market actually wins."
 publishDate: 2025-12-04
-image: /images/journal/bali-vs-world.jpg
+image: /images/journal/bali-vs-world.webp
 tags: ["comparison", "roi", "global"]
 ---
 
@@ -21,7 +21,7 @@ I am not going to drop a bunch of stats and run away. I want to explain precisel
 
 ## My own portfolio: Dubai vs. Bali
 
-<img src="/images/journal/dataviz-bali-vs-dubai-gold-coast.png" alt="Bali vs Dubai vs Gold Coast rental yield and entry cost comparison infographic 2026" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+<img width="1408" height="768" src="/images/journal/dataviz-bali-vs-dubai-gold-coast.webp" alt="Bali vs Dubai vs Gold Coast rental yield and entry cost comparison infographic 2026" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 I don't just advise clients on this. I put my own money into these markets. I currently own investment properties in both Dubai and Bali, so I can give you a direct comparison based on what hits my bank account every month.
 My Dubai investment is a solid 2-bedroom apartment. It is a stable asset and has definitely benefited from capital appreciation over the last few years. However, when I look at the cash flow, it usually sits around **8% ROI, after all fees and taxes.**

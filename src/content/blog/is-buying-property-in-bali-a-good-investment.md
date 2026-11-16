@@ -2,7 +2,7 @@
 title: "Is Buying Property in Bali a Good Investment? Real Data from 511 Listings"
 description: "We analysed 511 active property listings across 80 Bali developers and 15 areas. Here is what the data actually says about yields, entry prices, and whether Bali property is worth it in 2026."
 publishDate: 2026-06-01
-image: /images/journal/bali-investment-2026.jpg
+image: /images/journal/bali-investment-2026.webp
 tags: ["market-analysis", "roi", "data"]
 ---
 

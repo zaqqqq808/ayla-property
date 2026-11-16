@@ -2,7 +2,7 @@
 title: "Can Foreigners Buy Property in Bali? Interactive Legal Guide 2026"
 description: "Moved. This content now lives as a standalone tool at /can-foreigners-buy-property-in-bali/"
 publishDate: 2026-07-29
-image: /images/journal/can-you-buy-property-in-bali.jpg
+image: /images/journal/can-you-buy-property-in-bali.webp
 hideHeroImage: true
 draft: true
 tags: ["legal", "leasehold", "freehold", "kitas", "investment"]

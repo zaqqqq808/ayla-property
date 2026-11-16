@@ -2,7 +2,7 @@
 title: "Is Bali Still A Good Investment In 2026?"
 description: "Is Bali still a good investment in 2026? With 15%+ rental yields and a booming economy, the answer is yes. Here are the strategies top investors are using."
 publishDate: 2026-02-19
-image: /images/journal/bali-investment-2026.jpg
+image: /images/journal/bali-investment-2026.webp
 tags: ["market-analysis", "roi", "bali"]
 ---
 
@@ -22,7 +22,7 @@ At Ayla Property, we've watched this island transform from a seasonal holiday de
 
 ## The Macro Picture: Why Indonesia is an Economic Juggernaut
 
-<img src="/images/journal/dataviz-bali-investment-2026.png" alt="Bali international arrivals growth and investment strategies 2026 infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+<img width="1408" height="768" src="/images/journal/dataviz-bali-investment-2026.webp" alt="Bali international arrivals growth and investment strategies 2026 infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 Before looking at a single villa, you have to look at the country backing it. Indonesia is no longer just a developing nation; it is a global economic anchor.
 - **A Safe Haven Amidst Global Turmoil:** With ongoing geopolitical tensions and war uncertainty involving Russia, Ukraine, and other regions, global capital is seeking safe, alternative havens. Investors are actively shifting their funds away from volatile European and Western markets into Southeast Asia. Indonesia, with its neutral political stance and booming domestic market, is thriving as a premier alternative investment destination.

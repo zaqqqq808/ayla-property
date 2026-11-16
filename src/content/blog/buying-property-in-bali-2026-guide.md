@@ -2,7 +2,7 @@
 title: "Buying Property in Bali in 2026: What the Market Actually Looks Like Right Now"
 description: "We analysed 511 active listings across 80 Bali developers. Here is what buying property in Bali actually looks like in 2026: prices, yields, process, and what to avoid."
 publishDate: 2026-06-02
-image: /images/journal/buying-property-bali-2026.jpg
+image: /images/journal/buying-property-bali-2026.webp
 tags: ["market-analysis", "buyers-guide", "2026"]
 ---
 
@@ -23,7 +23,7 @@ Here is what the market actually looks like in 2026, drawn from 511 active listi
 
 ## The Current Market Snapshot
 
-<img src="/images/journal/svg-buying-property-bali-2026.svg" alt="Bali property market data 2026 yields and prices 511 listings infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+<img width="800" height="420" src="/images/journal/svg-buying-property-bali-2026.svg" alt="Bali property market data 2026 yields and prices 511 listings infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 The median entry price across our active listings is $290,000. That is the midpoint of the market right now for a purchase-ready investment villa. Quality stock in strong locations starts around $250,000. Premium properties in Canggu and Seminyak sit at $400,000 to $600,000 and above.
 

@@ -2,7 +2,7 @@
 title: "How to Vet a Bali Developer Before You Buy: Five Questions Every Investor Must Ask"
 description: "Off-plan villas in Bali can deliver exceptional returns. They can also go badly wrong. Here are the five questions that separate the developers worth backing from the ones to walk away from."
 publishDate: 2026-06-04
-image: /images/journal/how-to-vet-bali-developer.jpg
+image: /images/journal/how-to-vet-bali-developer.webp
 tags: ["due-diligence", "off-plan", "investment"]
 ---
 

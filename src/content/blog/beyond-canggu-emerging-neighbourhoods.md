@@ -2,7 +2,7 @@
 title: "Beyond Canggu: The 3 Emerging Neighbourhoods Where Smart Money is Moving in 2026"
 description: "Canggu is established. We reveal the three emerging Bali areas (Seseh, Kedungu, and The Bukit) where smart money is moving for maximum upside in 2026."
 publishDate: 2025-12-04
-image: /images/journal/emerging-neighbourhoods.jpg
+image: /images/journal/emerging-neighbourhoods.webp
 tags: ["neighbourhoods", "canggu", "investment"]
 ---
 
@@ -25,7 +25,7 @@ We are seeing a shift. The developers and investors who built Canggu five years 
 
 ## 1. Seseh
 
-<img src="/images/journal/svg-beyond-canggu.svg" alt="Bali area investment lifecycle 2026 - market maturity timeline infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+<img width="800" height="460" src="/images/journal/svg-beyond-canggu.svg" alt="Bali area investment lifecycle 2026 - market maturity timeline infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 Think of [Seseh](/invest/seseh/) as the bougie cousin of Canggu. It sits right on the edge of the action, just north of [Pererenan](/invest/pererenan/).
 

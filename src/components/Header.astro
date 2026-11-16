@@ -25,7 +25,9 @@ const tools = [
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="/" class="nav-logo" aria-label="Ayla Property home">
-      <img src="/logo.png" alt="Ayla Property" />
+      <!-- Intrinsic size of logo.webp; CSS scales it to 40px tall. The attributes
+           are here so the browser reserves the right box before it loads. -->
+      <img src="/logo.webp" alt="Ayla Property" width="240" height="173" fetchpriority="high" />
     </a>
     <nav aria-label="Main navigation">
       <ul class="nav-links">

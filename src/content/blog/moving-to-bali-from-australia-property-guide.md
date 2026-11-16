@@ -2,7 +2,7 @@
 title: "Moving to Bali from Australia: 2026 Buying & Property Guide"
 description: "Thousands of Australians move to Bali every year. Here is why buying property makes more financial sense than renting long term, and exactly how to do it."
 publishDate: 2026-06-02
-image: /images/journal/moving-to-bali-australia.jpg
+image: /images/journal/moving-to-bali-australia.webp
 tags: ["australia", "expat", "buyers-guide"]
 ---
 
@@ -22,7 +22,7 @@ Australians are the largest single group of foreign buyers I work with in Bali, 
 
 ## The Scale of Australian Migration to Bali
 
-<img src="/images/journal/svg-moving-to-bali-australia.svg" alt="Monthly cost of living Bali vs Sydney Melbourne 2026 infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+<img width="800" height="420" src="/images/journal/svg-moving-to-bali-australia.svg" alt="Monthly cost of living Bali vs Sydney Melbourne 2026 infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 Indonesian immigration data consistently shows Australians as one of the top nationalities taking longer-term stay visas in Bali. The shift accelerated post-2020 as remote work normalised and Australians realised they could earn in AUD while living in a place where that income goes three to four times as far.
 

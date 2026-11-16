@@ -2,7 +2,7 @@
 title: "The Freehold Trap: Why Smart Foreign Investors Actually Prefer Leasehold for Higher ROI"
 description: "Most foreign investors demand freehold. In Bali, that is a mistake. Discover why leasehold delivers higher ROI and how smart investors use it."
 publishDate: 2025-12-04
-image: /images/journal/leasehold-vs-freehold.jpg
+image: /images/journal/leasehold-vs-freehold.webp
 tags: ["leasehold", "investment", "legal"]
 ---
 
@@ -31,7 +31,7 @@ Here is why the smartest money in Bali is often flowing into Leasehold.
 
 You can model every scenario below on your own numbers with our free [Bali ROI calculator](/bali-roi-calculator/).
 
-<img src="/images/journal/svg-why-investors-prefer-leasehold.svg" alt="Freehold trap Bali same villa leasehold vs freehold ROI comparison infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
+<img width="800" height="430" src="/images/journal/svg-why-investors-prefer-leasehold.svg" alt="Freehold trap Bali same villa leasehold vs freehold ROI comparison infographic" class="my-8 w-full rounded-lg shadow-sm" loading="lazy" />
 
 The math is simple. A Freehold property in a prime area like [Pererenan](/invest/pererenan/) might cost you double or triple the price of a Leasehold property on the exact same street.
 
