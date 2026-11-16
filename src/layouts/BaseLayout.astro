@@ -2,6 +2,7 @@
 import '@/styles/global.css';
 import { SITE_URL } from '@/config';
 import ConversionTracking from '@/components/ConversionTracking.astro';
+import WhatsAppQualifier from '@/components/WhatsAppQualifier.astro';
 
 interface Props {
   title?: string;
@@ -113,6 +114,7 @@ const schemas = [
   </div>
   <slot />
   <ConversionTracking />
+  <WhatsAppQualifier />
   <script is:inline>
     // Scroll-reveal animations (redesign 2026)
     (function () {

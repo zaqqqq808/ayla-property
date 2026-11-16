@@ -1,0 +1,266 @@
+---
+// Every WhatsApp link on the site opens this short qualifier first.
+// Pass   -> WhatsApp opens with the answers typed into the first message.
+// Fail   -> a polite screen with something useful instead (guide, calculator, email).
+//
+// To change a question, an option or a rule, edit QUESTIONS below.
+// An option with `dq: '<reason>'` disqualifies; the reason picks the screen in OUTCOMES.
+//
+// Meta pixel events (via window.aylaTrack from ConversionTracking):
+//   WhatsAppQualifierStart (custom)  - qualifier opened
+//   Contact + WhatsAppQualified      - passed, WhatsApp opened
+//   WhatsAppDisqualified (custom)    - failed, with the reason
+---
+<div id="waq" class="waq" hidden>
+  <div class="waq-backdrop" data-waq-close></div>
+  <div class="waq-sheet" role="dialog" aria-modal="true" aria-labelledby="waq-title">
+    <button type="button" class="waq-x" data-waq-close aria-label="Close">&times;</button>
+    <div class="waq-body" id="waq-body"></div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var QUESTIONS = [
+      {
+        id: 'intent', label: 'Looking to',
+        q: 'What are you looking for?',
+        options: [
+          { v: 'Buy to invest' },
+          { v: 'Buy a home to live in' },
+          { v: 'Both' },
+          { v: 'Rent a villa', dq: 'rent' },
+          { v: "I'm an agent, developer or job seeker", dq: 'trade' }
+        ]
+      },
+      {
+        id: 'budget', label: 'Budget',
+        q: "What's your budget in US dollars?",
+        options: [
+          { v: 'Under $100k', dq: 'budget' },
+          { v: '$100k to $250k' },
+          { v: '$250k to $500k' },
+          { v: '$500k+' }
+        ]
+      },
+      {
+        id: 'timeline', label: 'Buying',
+        q: 'When are you planning to buy?',
+        options: [
+          { v: 'Within 3 months' },
+          { v: 'In 3 to 6 months' },
+          { v: 'In 6 to 12 months' },
+          { v: 'Just researching for now', dq: 'early' }
+        ]
+      },
+      {
+        id: 'funding', label: 'Funding',
+        q: 'How would you pay for it?',
+        options: [
+          { v: 'Cash or savings ready' },
+          { v: 'Selling another property first' },
+          { v: 'Developer payment plan' },
+          { v: 'Not sure yet' }
+        ]
+      }
+    ];
+
+    var OUTCOMES = {
+      rent: {
+        h: 'We only work with buyers',
+        p: "Ayla helps people buy property in Bali, so we can't help with rentals. Thanks for thinking of us.",
+        links: []
+      },
+      trade: {
+        h: 'Partnerships go by email',
+        p: 'For developer, agent or job enquiries, email the team and we will reply there.',
+        links: [{ t: 'Email zaq@aylaproperty.com', href: 'mailto:zaq@aylaproperty.com' }]
+      },
+      budget: {
+        h: 'Most of what we cover starts around $100k',
+        p: 'Below that, the options in Bali get thin. The calculator and guide show what different budgets buy and what they return.',
+        links: [
+          { t: 'Bali ROI calculator', href: '/bali-roi-calculator/' },
+          { t: 'Bali investment guide', href: '/guides/bali-property-investment/' }
+        ]
+      },
+      early: {
+        h: 'Start with the research',
+        p: "When you're ready to look at real properties, come back and message us. These two answer most early questions.",
+        links: [
+          { t: 'Can foreigners buy in Bali?', href: '/can-foreigners-buy-property-in-bali/' },
+          { t: 'Bali ROI calculator', href: '/bali-roi-calculator/' }
+        ]
+      }
+    };
+
+    var root = document.getElementById('waq');
+    var body = document.getElementById('waq-body');
+    if (!root || !body) return;
+
+    var state = { step: 0, answers: {}, href: '', lastFocus: null };
+    var page = location.pathname;
+
+    function track(name, params, dl, custom) {
+      if (typeof window.aylaTrack === 'function') window.aylaTrack(name, params, dl, custom);
+    }
+
+    function esc(s) {
+      return String(s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    function render() {
+      var q = QUESTIONS[state.step];
+      var dots = QUESTIONS.map(function (_, i) {
+        return '<span class="waq-dot' + (i <= state.step ? ' on' : '') + '"></span>';
+      }).join('');
+      body.innerHTML =
+        '<p class="waq-kicker">Before we chat · ' + (state.step + 1) + ' of ' + QUESTIONS.length + '</p>' +
+        '<div class="waq-dots" aria-hidden="true">' + dots + '</div>' +
+        '<h2 class="waq-h" id="waq-title">' + esc(q.q) + '</h2>' +
+        '<div class="waq-opts">' +
+        q.options.map(function (o, i) {
+          return '<button type="button" class="waq-opt" data-i="' + i + '">' + esc(o.v) + '</button>';
+        }).join('') +
+        '</div>' +
+        (state.step > 0 ? '<button type="button" class="waq-back" data-waq-back>&larr; Back</button>' : '');
+      var first = body.querySelector('.waq-opt');
+      if (first) first.focus();
+    }
+
+    function renderOutcome(reason) {
+      var o = OUTCOMES[reason];
+      body.innerHTML =
+        '<h2 class="waq-h" id="waq-title">' + esc(o.h) + '</h2>' +
+        '<p class="waq-p">' + esc(o.p) + '</p>' +
+        '<div class="waq-links">' +
+        o.links.map(function (l) {
+          return '<a class="waq-link" href="' + esc(l.href) + '">' + esc(l.t) + ' &rarr;</a>';
+        }).join('') +
+        '</div>' +
+        '<button type="button" class="waq-done" data-waq-close>Close</button>';
+      var focusEl = body.querySelector('.waq-link, .waq-done');
+      if (focusEl) focusEl.focus();
+    }
+
+    function buildWhatsAppUrl() {
+      var url;
+      try { url = new URL(state.href, location.href); } catch (e) { return state.href; }
+      var opening = url.searchParams.get('text') || "Hi Ayla, I'm interested in property in Bali.";
+      var lines = QUESTIONS.map(function (q) { return q.label + ': ' + state.answers[q.id]; });
+      // Build the query by hand: URLSearchParams encodes spaces as "+", which WhatsApp can show literally.
+      url.search = '?text=' + encodeURIComponent(opening + '\n\n' + lines.join('\n'));
+      return url.toString();
+    }
+
+    function pass() {
+      var params = {
+        content_name: 'WhatsApp', content_category: page,
+        intent: state.answers.intent, budget: state.answers.budget,
+        timeline: state.answers.timeline, funding: state.answers.funding
+      };
+      track('Contact', params, 'contact_click');
+      track('WhatsAppQualified', params, 'whatsapp_qualified', true);
+      var url = buildWhatsAppUrl();
+      close();
+      var win = window.open(url, '_blank', 'noopener');
+      if (!win) location.href = url;
+    }
+
+    function choose(i) {
+      var q = QUESTIONS[state.step];
+      var opt = q.options[i];
+      state.answers[q.id] = opt.v;
+      if (opt.dq) {
+        track('WhatsAppDisqualified', { content_category: page, reason: opt.dq, question: q.id }, 'whatsapp_disqualified', true);
+        renderOutcome(opt.dq);
+        return;
+      }
+      if (state.step < QUESTIONS.length - 1) {
+        state.step++;
+        render();
+      } else {
+        pass();
+      }
+    }
+
+    function open(href) {
+      state = { step: 0, answers: {}, href: href, lastFocus: document.activeElement };
+      root.hidden = false;
+      document.documentElement.classList.add('waq-lock');
+      render();
+      track('WhatsAppQualifierStart', { content_category: page }, 'whatsapp_qualifier_start', true);
+    }
+
+    function close() {
+      root.hidden = true;
+      document.documentElement.classList.remove('waq-lock');
+      if (state.lastFocus && state.lastFocus.focus) state.lastFocus.focus();
+    }
+
+    // Window capture runs before ConversionTracking's document listener,
+    // so a WhatsApp click no longer counts as Contact until the person qualifies.
+    window.addEventListener('click', function (e) {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a || !/wa\.me|api\.whatsapp\.com/.test(a.getAttribute('href') || '')) return;
+      if (a.closest('#waq')) return;
+      e.preventDefault();
+      e.stopPropagation();
+      open(a.href);
+    }, true);
+
+    root.addEventListener('click', function (e) {
+      var t = e.target;
+      if (t.closest('[data-waq-close]')) { close(); return; }
+      if (t.closest('[data-waq-back]')) { state.step = Math.max(0, state.step - 1); render(); return; }
+      var opt = t.closest('.waq-opt');
+      if (opt) choose(Number(opt.getAttribute('data-i')));
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (!root.hidden && e.key === 'Escape') close();
+    });
+
+  })();
+</script>
+
+<style is:global>
+  .waq-lock { overflow: hidden; }
+  .waq[hidden] { display: none; }
+  .waq { position: fixed; inset: 0; z-index: 2147483000; display: flex; align-items: center; justify-content: center; padding: 16px; }
+  .waq-backdrop { position: absolute; inset: 0; background: rgba(45, 39, 24, 0.55); backdrop-filter: blur(3px); }
+  .waq-sheet {
+    position: relative; width: 100%; max-width: 440px; max-height: calc(100vh - 32px); overflow-y: auto;
+    background: var(--bg-base, #FBF7EC); color: var(--text, #2D2718);
+    border: 1px solid var(--glass-border, rgba(122, 92, 52, 0.16)); border-radius: var(--radius, 18px);
+    box-shadow: var(--shadow-card, 0 18px 44px -18px rgba(122, 82, 32, 0.28));
+    padding: 28px 24px 24px; font-family: var(--font-body, Inter, sans-serif);
+  }
+  @media (max-width: 560px) {
+    .waq { align-items: flex-end; padding: 0; }
+    .waq-sheet { max-width: none; border-radius: 20px 20px 0 0; padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+  }
+  .waq-x { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; border: 0; background: transparent; font-size: 26px; line-height: 1; color: var(--text-muted, #75684E); cursor: pointer; border-radius: 50%; }
+  .waq-x:hover { background: rgba(122, 92, 52, 0.08); }
+  .waq-kicker { margin: 0 0 8px; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted, #75684E); }
+  .waq-dots { display: flex; gap: 6px; margin-bottom: 16px; }
+  .waq-dot { height: 4px; flex: 1; border-radius: 2px; background: rgba(122, 92, 52, 0.16); }
+  .waq-dot.on { background: var(--terra, #B4502A); }
+  .waq-h { margin: 0 0 18px; font-family: var(--font-display, 'Playfair Display', serif); font-size: 24px; line-height: 1.25; color: var(--text, #2D2718); }
+  .waq-p { margin: -6px 0 18px; font-size: 15px; line-height: 1.55; color: var(--text-muted, #75684E); }
+  .waq-opts { display: grid; gap: 10px; }
+  .waq-opt {
+    width: 100%; text-align: left; padding: 14px 16px; font: inherit; font-size: 15px; color: var(--text, #2D2718);
+    background: var(--bg-elev, #fff); border: 1px solid var(--glass-border, rgba(122, 92, 52, 0.16)); border-radius: 12px; cursor: pointer;
+    transition: border-color .15s, background .15s, transform .15s;
+  }
+  .waq-opt:hover, .waq-opt:focus-visible { border-color: var(--terra, #B4502A); background: #fff; outline: none; transform: translateY(-1px); }
+  .waq-back { margin-top: 14px; border: 0; background: none; padding: 6px 0; font: inherit; font-size: 14px; color: var(--text-muted, #75684E); cursor: pointer; }
+  .waq-links { display: grid; gap: 10px; margin-bottom: 14px; }
+  .waq-link { display: block; padding: 14px 16px; border-radius: 12px; background: var(--bg-elev, #fff); border: 1px solid var(--glass-border, rgba(122, 92, 52, 0.16)); color: var(--terra-deep, #9A4220); font-weight: 600; font-size: 15px; text-decoration: none; }
+  .waq-link:hover { border-color: var(--terra, #B4502A); }
+  .waq-done { width: 100%; padding: 12px; border: 0; border-radius: 999px; background: rgba(122, 92, 52, 0.1); font: inherit; font-weight: 600; color: var(--text, #2D2718); cursor: pointer; }
+</style>

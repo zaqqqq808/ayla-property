@@ -33,6 +33,9 @@
       }
     }
 
+    // Shared with WhatsAppQualifier so its events go through the same queue.
+    window.aylaTrack = track;
+
     var page = location.pathname;
 
     // Plain calendly.com links open the popup too, so the booking can be tracked.
