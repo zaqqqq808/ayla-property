@@ -8,7 +8,7 @@
 //
 // Meta pixel events (via window.aylaTrack from ConversionTracking):
 //   WhatsAppQualifierStart (custom)  - qualifier opened
-//   Contact + WhatsAppQualified      - passed, WhatsApp opened
+//   Contact + Lead + WhatsAppQualified - passed, WhatsApp opened
 //   WhatsAppDisqualified (custom)    - failed, with the reason
 ---
 <div id="waq" class="waq" hidden>
@@ -180,6 +180,9 @@
         language: state.answers.language
       };
       track('Contact', params, 'contact_click');
+      // Lead = a real enquiry: a booked Calendly call (ConversionTracking) or a qualified
+      // WhatsApp chat (here). Website ad sets can optimise for this one event.
+      track('Lead', params, 'whatsapp_lead');
       track('WhatsAppQualified', params, 'whatsapp_qualified', true);
       var url = buildWhatsAppUrl();
       close();
