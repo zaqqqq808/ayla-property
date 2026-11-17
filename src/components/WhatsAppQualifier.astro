@@ -63,6 +63,14 @@
           { v: 'Developer payment plan' },
           { v: 'Not sure yet' }
         ]
+      },
+      {
+        id: 'language', label: 'Language',
+        q: 'Which language would you like to chat in?',
+        options: [
+          { v: 'English' },
+          { v: 'Bahasa Indonesia' }
+        ]
       }
     ];
 
@@ -168,7 +176,8 @@
       var params = {
         content_name: 'WhatsApp', content_category: page,
         intent: state.answers.intent, budget: state.answers.budget,
-        timeline: state.answers.timeline, funding: state.answers.funding
+        timeline: state.answers.timeline, funding: state.answers.funding,
+        language: state.answers.language
       };
       track('Contact', params, 'contact_click');
       track('WhatsAppQualified', params, 'whatsapp_qualified', true);
