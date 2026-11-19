@@ -1,0 +1,59 @@
+---
+/**
+ * Credibility band between WhyBali and HotListings.
+ *
+ * Deliberately a dark section: it breaks the run of cream between the two
+ * cream-gradient sections either side, so the claim reads as a statement
+ * rather than another card grid. Same treatment as the hero (light display
+ * numerals on dark), so it stays inside the brand rather than shouting.
+ *
+ * Numbers are claims about the business — keep them in step with the hero
+ * stats in Hero.astro and the "15%+" figures in the page title and WhyBali.
+ */
+interface Props {
+  eyebrow?:   string;
+  titleHtml?: string;
+  intro?:     string;
+  ctaText?:   string;
+  ctaHref?:   string;
+}
+
+const {
+  eyebrow   = 'Track Record',
+  titleHtml = "We've placed 50+ investors.<br /><span class=\"tr-grad\">They're earning 10&ndash;20%.</span>",
+  intro     = 'Six years on the ground in Bali, buying for clients in Australia, the UK and the Gulf. Every developer vetted, every contract checked by an independent notary, every villa managed after handover.',
+  ctaText   = 'Read their testimonials',
+  ctaHref   = '#testimonials',
+} = Astro.props;
+
+const stats = [
+  { value: '50+',     label: 'Investors placed' },
+  { value: '10–20%',  label: 'Client ROI range' },
+  { value: '12%+',    label: 'Average rental yield' },
+];
+---
+<section class="track-record">
+  <div class="container">
+    <div class="reveal tr-head">
+      <span class="eyebrow tr-eyebrow">{eyebrow}</span>
+      <h2 set:html={titleHtml} />
+      <p class="tr-intro">{intro}</p>
+    </div>
+
+    <dl class="tr-stats reveal-stagger">
+      {stats.map((s) => (
+        <div class="tr-stat">
+          <dt class="tr-num">{s.value}</dt>
+          <dd class="tr-lbl">{s.label}</dd>
+        </div>
+      ))}
+    </dl>
+
+    <div class="reveal tr-cta">
+      <a href={ctaHref} class="btn tr-btn">
+        {ctaText}
+        <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>

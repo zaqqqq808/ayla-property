@@ -519,6 +519,51 @@ a:focus-visible{outline:2px solid rgba(180,80,42,0.55);outline-offset:3px;border
 @keyframes floatPulse{0%,100%{box-shadow:0 10px 30px -8px rgba(180,80,42,0.5)}50%{box-shadow:0 10px 44px -4px rgba(180,80,42,0.8)}}
 @keyframes floatPulseGreen{0%,100%{box-shadow:0 10px 30px -8px rgba(37,211,102,0.45)}50%{box-shadow:0 10px 44px -4px rgba(37,211,102,0.75)}}
 
+/* ============ TRACK RECORD ============ */
+/* Dark band between Why Bali and the listings. Both neighbours are cream
+   gradients, so this breaks the run and lets the numbers carry the claim.
+   It sits on a flat dark field rather than a gradient so the edges meet the
+   cream sections cleanly on both sides. */
+.track-record{background:linear-gradient(135deg,#2D2718 0%,#3B301C 55%,#2A2316 100%);padding:96px 0;color:#F7F1E4}
+/* Every other section head on the page is centred, so this one is too —
+   a left-aligned band between two centred sections reads as a mistake. */
+.tr-head{max-width:760px;margin:0 auto;text-align:center}
+.tr-head .eyebrow{justify-content:center}
+.tr-eyebrow{color:var(--gold-light)}
+.track-record h2{color:#FFF8EC;margin-bottom:20px}
+.tr-grad{
+  background:var(--grad-hero);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.tr-intro{color:rgba(247,241,228,0.76);font-size:1.08rem;line-height:1.65;max-width:680px;margin:0 auto}
+.tr-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:28px;
+  margin:52px 0 44px;padding:0;
+  border-top:1px solid rgba(232,201,126,0.22);
+}
+.tr-stat{padding-top:30px;text-align:center}
+.tr-num{font-family:var(--font-display);font-weight:600;font-size:3rem;line-height:1;color:var(--gold-light)}
+.tr-lbl{
+  margin:12px 0 0;font-size:.78rem;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:rgba(247,241,228,0.6);
+}
+.tr-cta{text-align:center}
+.tr-btn{
+  background:rgba(247,241,228,0.07);color:#FFF8EC;
+  border:1px solid rgba(232,201,126,0.38);
+}
+.tr-btn:hover{background:rgba(232,201,126,0.16);border-color:rgba(232,201,126,0.6);transform:translateY(-2px)}
+/* The nav is fixed at 76px, so an anchor jump would tuck the heading under it. */
+#testimonials{scroll-margin-top:96px}
+@media(max-width:768px){
+  .track-record{padding:64px 0}
+  .tr-stats{grid-template-columns:1fr;gap:0;margin:36px 0 32px}
+  .tr-stat{padding:22px 0;border-bottom:1px solid rgba(232,201,126,0.14)}
+  .tr-stat:last-child{border-bottom:none}
+  .tr-num{font-size:2.5rem}
+  .tr-btn{width:100%}
+}
+
 /* ============ HOT LISTINGS ============ */
 .hot-listings{background:linear-gradient(to bottom,var(--bg-base),var(--bg-deep));padding:104px 0}
 /* Why Bali flows straight into the listings on the same background, so the
